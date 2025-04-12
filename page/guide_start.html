@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-12T17:24:04UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-04-12T17:24:04UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>入门引导</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>入门引导</span><small>(模式介绍)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 前言简介</h2>
+
+<p><img loading="lazy" style="width:960px;height:320px;" src="../static/image/poster/poster02.jpg" /></p>
+
+<!-- <p>内容概述: 从水下第一个生命的萌芽开始, 到石器时代的巨型野兽, 再到人类第一次直立行走, 您已经历许多, 现在, 似乎串台了, 但没有关系, 开启您最伟大的探索吧, 从早期文明的摇篮到浩瀚星宇(神经错乱)… 该页面对游戏起始界面的各种模式和功能都做了介绍, 不过重点还是放在了剧情模式上, 你可以在此了解到相关场景的任务列表, 以及一些通关要点, 此外还会涉及到游戏一些机制和细节的内容;</p> -->
+
+<p>内容概述: 这个页面对游戏起始界面的各种模式和功能都做了介绍, 不过重点还是放在了剧情模式上, 你可以在此了解到相关场景的任务列表, 以及一些通关要点, 此外还会涉及到游戏的一些机制与细节, 虽说限于篇幅, 无法面面俱到, 但还是能帮你解答一些数据与算法的问题, 你当然也可以选择自行探索, 这样也能避免被剧透(假如你确实关心 RTS 游戏剧情的话), 亦或是通关后再来查阅内容, 相互验证;</p>
+
+<p>重要提示: 深暗森林尽管是款有别于传统 RTS 游戏的新作, 但它的设定也是颇为硬核, 与其他即时战略游戏一样, 上手是有一定门槛的, 因此, <span class="code">如果你是刚接触到这款游戏的新手, XJ 强烈建议你从游戏的"剧情模式"开始</span>, 跟随着教程逐步了解游戏的各种基本概念和操作, 而不是一开始就尝试 PVE 或 PVP, 如果因不熟悉机制而被敌人反复蹂躏, 有可能会让你心情糟糕, 甚至丧失从游戏中获取乐趣的可能性;</p>
+
+<p>小心操作: 在通过某些挑战后, 可能得到"字节数据"或"中枢数据"作为奖励, 在你没有搞懂这些是什么之前, 千万别随意使用它们, 因为这些数据可用于创建文明, 而剧情模式后面的两个大关, 需要拥有特殊主义的文明才能继续游玩, 如果你将这些资源挥霍一空, 之后无法创建对应的文明, 则关卡就无法被启动, 尽管这些数据也能在战场模式中获取, 但你也不希望体验剧情时被卡住吧, 所以还请务必慎重;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 基础教程</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover01.jpg" />起航(教程一): 这是剧情模式下的第一个章节, 而该章节又被细分成了四个场景, 游戏非常好的将故事背景和新手引导结合到了一起, 在这些场景中, 我们将扮演一个文明的领袖, 在执政官顾问的引导下学习[探索/扩张/内政/军事], 你也不是非得按照顺序去游玩这些场景, 但是考虑到剧情的连贯性和上手的难度, 还是推荐按部就班地过一回它们;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">1</span>场景名称: 第一次接触;<br />关卡地图: 太阳系;<br />文明数量: 2;</p>
+
+<p>剧情描述: 随着科技发展, 我们终于升格成星际文明, 再之后, 我们发现了其他文明的踪迹, 于是向他们发出了友好的问候, 但随着他们的舰队出现在了我们的母星系周围, 压倒性的军事力量将我们所引以为傲的文明摧毁殆尽, 这时我们才明白, 漫天繁星, 为何选择沉默…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 发现一个太空文明并与之建立贸易关系(奖励: 中枢数据 +50) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 该任务没有任何的难度, 跟随教程指引进行操作就可以完成了, (每个贸易协议可 <code>+10</code> 凝聚力, 可同时与多个高等文明签订协议, 但最多只能 <code>+30</code> 凝聚力, 并非每次外交行动对方都会回应);</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 游戏的某些按钮和机制, 需要随教程的推进才会出现, 所以如果你看不懂下面的某些 Tip, 也不用急, 继续做任务就是了, 点击界面顶部的"任务"按钮即可查看关卡需求, 全部完成就能通关, 不过任务也是随剧情和流程逐步出现的, 不会在一开始就全部展现出来;</p>
+
+<p>Tips02. 当前游戏只在弹出 <kbd>ESC</kbd> 菜单时才会暂停时间流逝, 但是可在界面右上角对速度进行减速或加速(对应的快捷键为 <kbd>Z</kbd> 和 <kbd>C</kbd>), 默认的游戏速度, 是现实世界的 1 秒对应游戏的 1 年, 而另外 4 档速度, 是现实世界的 1 秒分别对应游戏的 [0.25/0.5/2/3] 年;</p>
+
+<p>Tips03. 剧情模式下的每个场景地图都是固定的(战场模式的地图则是随机生成的), 所以即使重开, 星系的位置和属性也不会变化, 只是部分地图会随机旋转, 经过探索, 你会发现地图上有圈红线, 那便是主星团的边缘, 星系只会在红圈以内生成(所以外部就无需理会了);</p>
+
+<p>Tips04. 资源是执行一切行动的基础, 每个"工厂"建筑每年默认可采集 <code>200</code> 单位的资源, 但最终的收益结果还需要 <code>× (凝聚力÷100)</code>, 既凝聚力会影响到资源的最终收益, 它的范围值被限定在 <code>5 ~ 100</code> 之间, 可通过建造"栖息地"或解锁"扩张"科技类型里的科技提升;</p>
+
+<p>Tips05. 首次与原始文明所在星系交流, 可得到科技点, 如果选择获得科技增长则收益翻倍, 但就需要耗费较长的时间, 原始文明所在星系无法被直接殖民, 但可通过"整合"变成我方殖民地, 所需资源为 <code>星系的星球数量 × 4500</code>, 所需时间为 <code>星系的星球数量 × 40</code> 年;</p>
+
+<p>Tips06. 在完成了所有的任务后, 游戏就会弹出结算页面, 可以看到关于生存时间和运营数据等内容, 此时就可以退出场景了, 当然如果你意犹未尽, 也可继续在这个场景里看看各种信息, 例如[科技/建筑]的细节, 不过该场景的内容都是一次性的, 无法带到下个场景里去;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">2</span>场景名称: 背水的一战;<br />关卡地图: 太阳系;<br />文明数量: 2;</p>
+
+<p>剧情描述: 我们遭遇了前所未有的失败, 敌人的力量远胜我方, 但他们所展露的一切, 也让我们的科技在短期内得到了极大的进步, 之后我们通过伪装的手段, 争取到了宝贵的发展时间, 最终, 我们成功发起了反攻, 但却发现, 对方跟我们相似, 也遭到过高等文明的打击…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 收复大阳系(奖励: 中枢数据 +50) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 任意军事行动, 都需要有"军事基地"建筑才可执行, 但即便建立了军事基地, 也不要着急着进攻, 因为对方的军事科技比我们高, 不想失败的话, 最好是先提升一下军事里与舰队相关的科技, 作战成功即可重新殖民太阳系;</p>
+
+<p>关键任务: 消灭谜之军政府位于唧筒座的殖民地(奖励: 中枢数据 +50) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 舰队可能需要耗费数百年才能抵达目的地, 而在此期间, 敌人的军事科技可能会远超我方, 为了避免夜长梦多, 可以点击舰队, 在界面中使用"跃迁"缩短航程, 但这也会导致位置的暴露, 需要慎重;</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 如果关卡地图的名称相同, 则场景地图也就基本相同, 只是星系和迷雾都被重置了, 对于拥有多个关键任务的场景, 如果只完成了部分任务, 中途退出是不算数的, 也无法获得奖励, 鉴于当前游戏并没无存档功能, 所以还是尽量尝试一次性通关吧, 免得还得从来;</p>
+
+<p>Tips02. 当星系被毁, 就可能会迎来一波技术爆炸(能获得大量科技点, 具体数值和被毁星系的建筑数量以及价值相关), 实际上, 除了交流和星际探索之外, 像爆发内战, 乃至于文明覆灭, 也都可能迎来技术爆炸, 危机里总是潜藏着机遇, 所以即便是绝境, 也请不要放弃;</p>
+
+<p>Tips03. 星系中的每个星球, 默认状态下都只有一个建筑槽位, 但绝大多数的星球([小行星/中子星/脉冲星/黑洞/残骸]除外), 都可以使用资源开发出更多槽位, 只是不同星球的槽位开发成本是不同的, 一般潜在槽位数越多的星球, 所需的成本就会越低, 也应该优先开发;</p>
+
+<p>Tips04. 当高等文明的星系面对外来交流时, 均可选择[响应(可建立外交)/伪装(成原始文明)/沉默(不做任何回应)], 伪装则对方会触发原始交流事件, 继而获得一些科技点, 看似便宜了对方, 但如果对方误判后采取"整合", 则可以耗费对方的资源并得到一段时间的安稳;</p>
+
+<p>Tips05. 舰队登陆的攻击方式, 最终会根据舰队的[规模/装甲/闪避]来判断胜负, 带有一定随机性, 如果你发现了敌军来袭, 可及时通过"移民管理"的"征兵"操作来加强防御(让舰队规模临时翻倍), 但它的有效年份和冷却年份分别为 <code>60</code> 和 <code>120</code>, 所以需要把握好时机;</p>
+
+<p>Tips06. 舰队的属性会被固定在出航的那刻, 也就是说, 后续即便升级了相关的科技, 也无法影响到那些已在路上的舰队, 假若距离遥远, 可考虑让舰船跃迁(每 <code>3</code> 年可执行一次, 每次可让航程 <code>÷2</code>), 尽管这有暴露的危险, 但拖久了科技产生代差, 舰队就无法取胜了;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">3</span>场景名称: 生存的压力;<br />关卡地图: 太阳系;<br />文明数量: 2;</p>
+
+<p>剧情描述: 在经历过迷之军政府的事件后, 我们放缓了殖民扩张的步伐, 然而, 管理太空文明的难度, 超乎想象, 不断消耗的资源, 难以维持的凝聚力与日益膨胀的压力, 正不断从内部侵蚀着我们, 敌人的残兵甚至还向我们发动了进攻, 在内忧外患之下, 我们爆发了内战…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 开发 1 次星球(奖励: 中枢数据 +50) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 绝大多数的行星([类木行星/冰巨行星/气陨星核/小行星]除外)都可通过开发, 一次性实现数千压力的降低, 但一个行星可被开发的次数是有限的, 且开发一个星球所需要的资源和时间, 还会随着开发次数的增多而上涨;</p>
+
+<p>关键任务: 存活超过 1000 年(奖励: 中枢数据 +50) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 当另外两个任务都实现后, 还得等到时间到达 1000 年才会触发结算, 由于压力是会逐步上升的, 所以需要时刻关注这点, 如果开着十倍速狂飙, 有可能在时间到达之前又因压力陷入内战, 那样反而会耗费更多时间;</p>
+
+<p>关键任务: 拥有殖民地数量 >=5(奖励: 中枢数据 +150) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 这个场景里尽管标注着还有另一个文明, 但实际上对方也就只剩下 1 只舰队了, 在向我方发动了最后一次攻击, 那个文明就彻底消失了, 因此星系中其实已经没有其他敌人, 在解决好压力问题后, 就随便殖民吧;</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 除了外部敌人, 还得时刻关注压力值, 当压力值 <code>>50000</code>, 文明就可能爆发内战, 选择"战争到底"是耗费 <code>20000</code> 资源以降低 <code>5000</code> 压力, 若资源不够就只能选择"分割文明", 降低 <code>25000</code> 压力但同时失去一半殖民地(向下取整, 若只剩一个星系则直接暴毙);</p>
+
+<p>Tips02. 被分割出去的殖民地会变成类似原始文明所在的星系那样, 可进行交流并整合, 但对方面对交流也可能保持沉默, 此时如果想将其占回, 就只能派舰队进攻再殖民了(必定胜利但可能破坏原有建筑), 尽管内战也可能带来科技增长, 但还是要尽量避免出现这种内耗;</p>
+
+<p>Tips03. 压力来源包括, 游戏每过六十年则每年 <code>+1</code>, 殖民星系的每个星球会导致每年 <code>+2</code>, 敌对文明还会导致每年再增加 <code>21×(存活的玩家数-1)÷(玩家总数-1)</code>, 当某个星系遭受舰队攻击而沦陷, 也可能产生避难者事件, 将带来大量压力(可用 <code>压力×2</code> 的资源抵消);</p>
+
+<p>Tips04. 原始星系遭受舰队攻击沦陷, 就只有攻击方会触发避难者事件, 且带来 <code>1000</code> 压力值, 高等文明占有的星系遭受舰队攻击沦陷, 所有玩家得到的压力为 <code>沦陷星系通过星球开发所降低的压力值总数÷当前的玩家人数</code>, 但如果星系没被开发过, 就不会触发事件了;</p>
+
+<p>Tips05. 降低压力值的常用方法有[开发星球/建造居住区/解锁降压科技], 此外还可利用该场景新解锁的议院系统, 在完成某些任务后即可得到奖励, 包括降压和资源等, 需要注意的是, 上议院任务别乱接, 因为完成不了会有惩罚(之前的任务面板被移到下议院的界面里);</p>
+
+<p>Tips06. 在这个场景中, 我们可以使用所有的通用科技类型了(共 <code>10</code> 种), 科技项被包含在科技类型中, 科技项需要解锁, 科技类型也需要解锁, 而科技类型解锁需要的科技点为 <code>已解锁的科技类型数 ×100</code>, 也就是说, 越晚被解锁的科技类型, 需求的科技点也就越多;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">4</span>场景名称: 战争的艺术;<br />关卡地图: 水瓶座;<br />文明数量: 2;</p>
+
+<p>剧情描述: 在经历过重重挑战后, 一个叫做宇宙掠夺者的武装组织又一次威胁到了我们的生存, 他们实力强大且行迹莫测, 为了防御, 我们动用了各种技术, 但依然难以正面抗衡, 最终, 我们研发了质量弹, 这是种可将星系完全摧毁的武器, 双方对抗的烈度还在不断上升…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 消灭宇宙掠夺者(奖励: 中枢数据 + 400) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 与之前的敌人相比, 这个文明颇为强大, 不单科技水平在我方之上, 且拥有多个殖民星系, 在短期内想要依靠舰队正面战胜对方是比较困难的, 如果不想花时间去攀科技, 那就只能用质量弹打爆对方的所有殖民地了;</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 在过去, 这个场景里标注有三个文明, 除了你自己外, 还有宇宙掠夺者和宁静爆破者, 但后来这两个势力被统合成了宇宙掠夺者, 该文明会主动攻击我方, 尽管在正式建交后, 也可跟对方发起贸易请求或科技合作, 但你的最终目标还是消灭对方, 没有和解的可能;</p>
+
+<p>Tips02. 我们可以搭建人造星系了, 共有[小型空间城/人造星系/大型人造星系]三种(场景只开放了"人造星系"), 三者的区别在于建造所需资源和时间不同, 槽位数量和引力半径也不同, 需要注意, 人造星系的总数不能多于殖民星系, 也不能建在其他星系的引力范围之内;</p>
+
+<p>Tips03. 人造星系可以作为探索或者进攻的跳板, 许多高级建筑也只能建在人造星系上, 例如传感阵列(可检测靠近的敌人)和低光速屏障(可拦截经过的高速物体), 所以也一种防御手段, 另外就是, 人造星系无法被攻占, 一旦沦陷了就会彻底消失, 而不是变成无主的星系;</p>
+
+<p>Tips04. 我们可以用质量弹攻击了, 相比于派遣舰队进行登陆攻击, 质量弹价格较低(为舰队的 <code>1/3</code>), 但速度也较慢(为舰队的 <code>2/5</code>), 它会忽略敌人的舰队实力, 只要没被拦截则攻击必定成功(目标星系会被直接摧毁), 因而是军事实力差距较大时一种以弱胜强的手段;</p>
+
+<p>Tips05. 质量弹会将常规的星系打成残骸或黑洞, 如果星系已经是残骸或黑洞, 则星系会完全消失, 无论是那种情况, 星系上的所有建筑都会被毁灭, 且星系拥有者会丢失该星系的所有权, 如果你本来就没打算攻占星系, 那这些就都无所谓了, 它每 <code>10</code> 年可被使用一次;</p>
+
+<p>Tips06. 能量防护罩(有时也被称之为"低光速屏障"或"能量护盾"), 可防御除[广播/登陆攻击/神级文明打击]以外任意形式的攻击, 需要注意的是, 在它范围内进行了跃迁的飞船也会被毁灭(不分敌我), 且它的有效期仅为 <code>30</code> 年而冷却期却为 <code>90</code> 年, 需要把握好时机;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading03">03. 进阶教程</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover02.jpg" />远航(教程二): 这是剧情模式下的第二个章节, 而该章节又被细分成了两个场景, 我们继续扮演地球这个文明的领袖, 去面对更加严峻的挑战, 例如逃离天灾和建造方舟, 这些场景会开放更多机制与功能, 实际上和 PVE 或 PVP 已经较为近似, 由于更多的聚焦于生存与战争, 所以压力和紧迫感也随之递增, 总之, 更加深入体验黑暗森林的法则吧;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">1</span>场景名称: 闪烁的星空;<br />关卡地图: 阿尔法星区;<br />文明数量: 6;</p>
+
+<p>剧情描述: 随着可开采资源的极速减少, 我们文明所在的母星系曾陷入一场相当严重的能源危机, 好在我们发现了一片资源丰富的区域并通过建造戴森球缓解了问题, 但戴森球所发出的巨大噪音也让部分人担忧, 因为也这使得我们更容易暴露, 果然, 我们的处境越发险峻…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 建造出一座戴森球(奖励: 中枢数据 + 100) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 解锁"进阶发展"的科技类型后, 再解锁"恒星资源利用"科技项, 就能在恒星槽位建造戴森球, 它无需消耗星系资源就能有资源收入, 你还可以通过解锁"零号元素提取"科技项, 让首个戴森球免费(可省 5000 资源);</p>
+
+<p>关键任务: 存活超过 1500 年(奖励: 中枢数据 + 400) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 即便完成了其他任务, 也需要在这个场景中生存 1500 年才能通关, 尽管这个场景中的敌人几乎不会主动向你发起进攻, 但二维空间会不断膨胀并吞噬一切, 你最好是在主星团的边缘建造一个人造星系, 尽量拖延;</p>
+
+<p>可选任务: 介入战争(奖励: 中枢数据 + 200) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 攻击指定星系, 并作战成功即可完成该任务, 派遣舰队实现登陆攻击, 或者使用质量弹摧毁目标星系都可以, 实际上剧情模式下的可选任务, 是否完成都不会影响通关, 不过还是尽量争取完成吧, 因为能得到中枢数据奖励;</p>
+
+<p>可选任务: 消灭银河帝国(奖励: 中枢数据 + 300) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 一般来讲, 你并不需要理会这个任务, 因为银河帝国的殖民地到了中后期, 很可能都会被二维空间吞噬掉, 也有可能会被其他势力消灭, 这两种情况下任务也算完成, 所以不是非得我们自己出手, 我们只要苟住就够了;</p>
+
+<p>可选任务: 使用一次广播攻击(奖励: 中枢数据 + 300) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 你的星系需要同时存在"军事基地"和"广播站"这两个建筑, 才能发起广播攻击, 广播攻击会同时暴露发出攻击的信息和遭受攻击的星系, 如果你发出广播攻击那个星系噪音较高, 可能受到天灾攻击的反而是你自己;</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 戴森球和环世界都是巨构建筑, 巨构建筑的特点是只能建造在恒星槽位上(残骸和黑洞的槽位也算恒星槽位), 虽然这些建筑的收益很高, 但它们所产生的噪音也很高(60), 因此在对战中很容易引来敌人的广播攻击, 如果没有降噪的手段, 那么建造就要非常慎重了;</p>
+
+<p>Tips02. 在剧情模式中, 由于敌人都经过了特殊设置, 所以他们几乎是不会主动向你发起广播攻击的, 只要你不是主动发起广播而暴露了自己的星系就没问题, 因此你可以随便建造戴森球和环世界, 并且不用理会噪音问题, 降噪的科技不需要点, 降噪的建筑自然也不用造;</p>
+
+<p>Tips03. 在游戏中, 文明实际上是被分成了[原始文明/高等文明/神级文明]三种, 其中的神级文明被设定为科技远超高等文明, 他们彻底隐藏了自身, 且不屑与我们交流, 我们也无法发现他们的身影, 但是当我们星系噪音过高且遭受了广播时, 神级文明就会对其发动攻击;</p>
+
+<p>Tips04. 神级文明的攻击无法被防御, 当星系遭受到广播攻击时, <code>50<= 噪音值 <75</code> 会遭受光粒打击(效果类似质量弹不过速度会更快), <code>75<= 噪音值 <100</code> 会遭受复归器打击(生成小型二维空间), <code>噪音值 >=100</code> 会遭受天灾打击(生成大型二维空间且范围不断膨胀);</p>
+
+<p>Tips05. 二维空间的概念应该来自于著名科幻小说《三体》, 也是目前网络上"降维打击"这个名词的由来, 在游戏中它表现为会吞噬范围里的一切, 星系会被不可逆的完全摧毁, 舰船触碰到也会被吞噬, 你也无法通过折跃穿过二维空间, 唯一不会被吞噬的例外只有扫描船;</p>
+
+<p>Tips06. 这个场景还会解锁"军事命令"的功能(有军事基地于大地图点击右键便可执行), 该功能包含舰队巡逻和尘埃区域两个操作, 这两个操作都可持续性获取范围里通过的事物信息, 包括各种舰船和武器, 只是前者获取的信息只会报告给发起方, 后者则所有人都会知道;</p>
+
+<p>————</p>
+
+<p style="position:relative;"><img style="float:left;width:72px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/icon00.png" /><span style="position:absolute;top:12px;left:12px;width:48px;height:48px;text-align:center;font-size:48px;line-height:48px;color:#383838;background-color:#ffc350;border-radius:24px;">2</span>场景名称: 远航的方舟;<br />关卡地图: 天鹅座星系;<br />文明数量: 6;</p>
+
+<p>剧情描述: 数百年前, 我们的家园附近出现了不断扩大的低维空间, 它吞噬着一切, 先辈们只得开始了漫长的逃亡, 最终在此安身, 当我们的文明休养生息之时, 低维区域的扩张却从未停止, 如今它再次逼近了我们的栖身之地, 我们的安稳时日所剩无多了, 需要早做打算…</p>
+
+<p>场景任务↓</p>
+
+<p>关键任务: 建造方舟并带领文明逃亡(奖励: 中枢数据 + 400) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 在人造星系建造好了观测站, 得知二维空间到来的时间后, 科学家顾问就会提议我们修建方舟逃离此处, 为此你需要先造一个方舟船坞(方舟船坞和人造星系的选项在同个界面里, 但需要拖曳界面才能看到);</p>
+
+<p>关键任务: 远航距离达到 1000 光年(奖励: 中枢数据 + 100) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 升级过方舟的龙骨后, 我们就需要选择要航行距离了, 共有[1000/3000/5000]三个选项, 最近的距离当然也最容易, 但如果选择最远的距离, 则可以同时完成前面两个距离的任务, 不想重复挑战的可试一下;</p>
+
+<p>可选任务: 远航距离达到 3000 光年(奖励: 中枢数据 + 200) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 你需要先升级方舟的"龙骨", 提供更多的模块修建"区域", 然后再升级[燃料提取/动力炉/武器/居住]模块, 确保方舟足以支撑迁徙距离, 准备充分后再起航(理论航行距离至少需要达到 1000 光年才能启航);</p>
+
+<p>可选任务: 远航距离达到 5000 光年(奖励: 中枢数据 + 500) <i class="fas fa-arrow-right" style="display:inline-block;width:16px;color:#999;text-align:center;"></i> 场景会不断弹出事件, 让方舟接纳更多人员, 如果选了最远距离, 就不能把所有人都带上, 因为方舟的燃料模块&动力模块是有上限的, 人口过多最终会导致航行距离不够, 这样方舟无法起航, 挑战也会失败;</p>
+
+<p>场景提示↓</p>
+
+<p>Tips01. 在这个场景里面, 还存在着名为"星际海盗"的文明, 他们每隔一段时间就会向我们索要 5000 资源, 只要给了, 他们就不会主动攻击我方, 由于我们的首要任务是建造方舟逃离, 所以建议直接给资源, 这样也就无需投资军事科技和军事建筑了, 反而会更省事一点;</p>
+
+<p>Tips02. 尽管深暗森林是即时战略的对抗游戏, 但它的获胜方法并非是只有消灭对手而已, 实际上在 PVE 或 PVP 的对战中, 当时间超过了 1000 年, 也会解锁方舟机制, 而方舟可航行的距离, 也是判断胜负的因素, 因此这个场景的内容, 其实也是在预演战场模式的实况;</p>
+
+<p>Tips03. 一个文明只能建造一个方舟船坞, 方舟船坞跟人造星系一样, 受到攻击并沦陷, 就会被彻底毁灭, 也就是说它无法被占据, 当方舟船坞被毁后, 可以重新再建一个, 且方舟上已经造好的设施也能保留, 不过方舟船坞毁灭前那些升级到一半的项目进程就无法保留了;</p>
+
+<p>Tips04. 方舟的模块被分成了基础模块和生产模块两大类, 其中的基础模块跟航程相关, 而生产模块则是能带来[资源/科技/凝聚力]收益, 但生产模块非但对方舟的远航没有帮助, 反而还会缩短航程, 且无法拆除, 如果你是想挑战最远航程, 那最好就不要贪图这些收益了;</p>
+
+<p>Tips05. 方舟上修建任意模块, 都需要占据一个区域, 而区域数量则靠升级龙骨获得, 每级龙骨可提供 <code>5</code> 个区域, 最多可升到 <code>9</code> 级, 共计有 <code>45</code> 个区域, 但这个数量不足以将所有模块都修到满级, 且每个模块都会导致方舟"启动所需动力" <code>+1</code>, 所以需要慎重取舍;</p>
+
+<p>Tips06. 方舟的航程算法如下, <code>最远航行距离 = (方舟动力[:动力炉模块等级×8] - 启动所需动力[:区域总数×1]) × 燃料可持续时间</code>, <code>燃料可持续时间 = 燃料数量[:燃料提取模块等级×5000] ÷ 燃料消耗[:燃料提取模块等级×40]</code>, 没有多余模块时, 极限航程为 <code>6250</code>;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading04">04. 唯物探索</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover03.jpg" />科学官之章: 这是剧情模式下的第三个章节, 而该章节又被细分成了五个场景, 你将扮演一个物质主义文明的科学官, 在浩瀚的宇宙中尝试寻找关于逆转维度的技术, 这是一场关于探索求生的旅途, 场景还会出现一些有趣的特殊机制, 不过这个场景需要有物质主义的文明才能开始, 尝试在文明系统中, 创建一个物质主义或狂热物质主义的文明吧;</p>
+
+<p>————</p>
+
+<p>场景尚未正式开放…</p>
+
+<!--◇
+最后面两个章节的 Tips 就要尽量简单的
+例如说以单行的形式存在, 不要写那么多东西了, 页面内容超长了
+
+$Mission_Des_Title_2_1,历史博物馆,Museum of History
+$Mission_Des_Title_2_2,古代遗迹群,Ancient Ruins
+$Mission_Des_Title_2_3,低维试验场,Low Dimension Testing Ground
+$Mission_Des_Title_2_4,神秘三角区,Triangle of the Devil
+$Mission_Des_Title_2_5,最后的答案,The Final Answer
+
+$Mission_Des_Title_3_1,主神的贡品,Offerings for the Prime Creator
+$Mission_Des_Title_3_2,远方的来客,Visitors from Afar
+$Mission_Des_Title_3_3,福神或瘟神,Blessings or Curses
+$Mission_Des_Title_3_4,沸腾的星区,Zone on Fire
+$Mission_Des_Title_3_5,锈蚀的战舰,Rusty Ship
+
+$Mission_Des_Map_2_1,大麦哲伦星系,Dorado
+$Mission_Des_Map_2_2,山案座,Large Magellanic Cloud
+$Mission_Des_Map_2_3,绘架座,Mensa
+$Mission_Des_Map_2_4,飞鱼座,Pictor
+$Mission_Des_Map_2_5,蟹状星云,Volans
+
+$Mission_Des_Map_3_1,英仙座,Crab Nebula
+$Mission_Des_Map_3_2,仙女座,Perseus
+$Mission_Des_Map_3_3,贝塔星区,Andromeda
+$Mission_Des_Map_3_4,鹿豹座,Beta Centauri
+$Mission_Des_Map_3_5,鹿豹座,Camelopardalis
+
+$Mission_Des_Target_2_1,建造8个博物馆|(可选)营救所有贫民|(可选)凝聚力不要低于50
+$Mission_Des_Target_2_2,完成基础维度科学理论的研究|(可选)找到至少4个古代图书馆|(可选)找到至少8个古代图书馆|(可选)凝聚力不要低于50
+$Mission_Des_Target_2_3,到达目标遗迹星系|(可选)获得低维看护者的信任|(可选)在1500年内完成任务
+$Mission_Des_Target_2_4,到达目标遗迹星系|(可选)交流至少8个原始星系|(可选)在1500年内完成任务
+$Mission_Des_Target_2_5,同时保持在3个遗迹星系建造有发掘设施 | 不能让警觉思考者关闭三个遗迹 |(可选)消灭警觉思考者
+
+$Mission_Des_Target_3_1,建造6个沉思殿|不要让科技增速变为负数|(可选)在1700年内完成|(可选)重建静思广场
+$Mission_Des_Target_3_2,消灭背叛者|消灭圣地守卫者和主神祭拜者|与出现虫洞的星系交流|(可选)凝聚力不要低于50
+$Mission_Des_Target_3_3,消灭背叛者和伦布探险团|(可选)1000年内不要让堡垒星系被背叛者占领
+$Mission_Des_Target_3_4,消灭伦布探险团和卡斯蒂亚远征军|(可选)摧毁伦布探险团的所有人造星系|(可选)夺回首都(移民获得所有权)
+$Mission_Des_Target_3_5,消灭卡斯蒂亚远征军、背叛者和卡斯蒂亚科学理事会|(可选)不要失去首都|(可选)凝聚力不低于80
+◇-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading05">05. 唯心抗争</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover04.jpg" />领思长之章: 这是剧情模式下的第四个章节, 而该章节又被细分成了五个场景, 剧情大致是隐射西方殖民者入侵美洲的历史, 你将扮演一个精神主义文明的大祭司, 对抗心怀不轨的外来者, 尽管文明的科技落后, 但也绝不会坐以待毙, 不过这个场景需要有精神主义的文明才能开始, 尝试在文明系统中, 创建一个精神主义或狂热精神主义的文明吧;</p>
+
+<p>————</p>
+
+<p>场景尚未正式开放…</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading06">06. 文明系统</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover05.jpg" />生成文明: 在进行对战之前, 都需要选择文明, 游戏初始自带了个地球文明, 它没有主义(所以不能用任何特殊科技), 也没文明特性, 总之, 平平无奇, 不过你可以通过文明系统生成属于自己的文明, 通过各种主义(也就是意识形态)与文明特性的搭配, 游戏会出现各种变数, 而生成文明的手段包括培育文明和创造文明两种, 下面将进行深入解析;</p>
+
+<p>————</p>
+
+<p><img style="float:left;width:72px;height:72px;margin-right: 8px;" loading="lazy" src="../static/image/guide/01/icon01.png" />字节数据: 无论是培育文明还是创建文明, 都需要用到它, 游戏初始会给予 <code>1000</code> 点, 此外的获取途径, 便是在战场模式中进行对战(根据对战人数和难度决定收益), 但每天的收益上限为 <code>1000</code> 点, 还可通过回收文明来赚取字节数据, 但是这种操作费时且风险大, 因为不同文明的回收价值不同, 很难保证回收字节数据能覆盖生成的成本(初始自带的地球文明无法回收);</p>
+
+<p><img style="float:left;width:72px;height:72px;margin-right: 8px;" loading="lazy" src="../static/image/guide/01/icon02.png" />中枢数据: 培育文明或创建文明不需要它, 但拓展文明的培育槽位, 增加可拥有的文明上限, 获得文明库模版以及文明头像框, 都需要用到它, 游戏初始会给予 <code>10000</code> 点, 此外的获取途径, 便是完成剧情模式的关卡挑战, 还有就是, 通过战场模式>多人模式的战场商店, 用中枢数据购买字节数据, 不过由于中枢数据可兑换的内容也没有那么多, 只要不乱用, 一般也不缺;</p>
+
+<p>————</p>
+
+<p>创造文明: 这是得到文明的一种方法, 你可以自由选择文明的头像框(头像内部图标则是随机的), 甚至还有个选择文明模版的功能, 文明必定会出现文明模版描述的特性(当然也可以不选), 每次创造需要耗费 <code>60</code> 字节数据, 通过回答三组共计 <code>17</code> 个问题(第 <code>1~5</code> 题是古典时代的, 第 <code>6~11</code> 题是产业时代的, 第 <code>12~17</code> 题是前太空时代的), 根据答案来决定[本质/统治/军事/对外/发展]这五项属性;</p>
+
+<p>创造限制: 在回答问题后, 系统会根据你的答案不断改变[本质/统治/军事/对外/发展]这五项属性, 它们的值都是介于 <code>-10 ~ 10</code> 之间, 你需要什么主义的文明, 就得让属性值偏到那个主义的方向, 但是不能让属性值超出范围(不能超出 <code>-10 ~ 10</code> 以外), 除此之外, 你还得保持稳定性始终 <code>>=1</code> 且技术进程最终 <code>>=15</code>, 否则创建都会失败(失败会返回 <code>30</code> 字节数据, 既亏损 <code>60-30=30</code> 字节数据);</p>
+
+<p>创建结果: 当属性绝对值 <code>>4</code>, 就能得到所属主义的普通文明, 当属性绝对值 <code>>8</code>, 就能得到所属主义的狂热文明, 若有多个属性满足条件, 就先获取绝对值最大的两个(如果存在相同值就随机获取), 如果第一个值 <code>>8</code> 就直接判断为该项所属的狂热主义, 如果有多个值 <code>>4</code> 或 <code>>8</code>, 就先取最高值, 值相同就取随机, 最后文明再根据主义随机取一个对应的文明故事, 每个文明故事和一个文明特性挂钩;</p>
+
+<p>回收文明: 文明被创造后如果不想要了可进行回收, 还能得到字节数据(回收价值和主义类型挂钩, 跟文明故事和文明特性无关), 具体为, 无主义价值 <code>5</code>, 单主义价值 <code>44</code>, 双主义价值 <code>120</code>, 狂热主义价值 <code>195</code>, 还有就是, 在创造文明时, 如果得到的是无主义文明, 最好是点击返回按钮, 直接放弃这个文明, 这样能回收 <code>30</code> 字节数据, 如果点击确定后再回收, 这个文明就只能得到 <code>5</code> 字节数据了;</p>
+
+<p>其他细节: 首先是, 在默认状态下, 稳定性初始值为 <code>4</code>, 技术进程初始值和五项属性初始值都为 <code>0</code>, 但是有些文明模版可以改变它们, 其次是, 一个文明最多只能拥有两个主义槽位(狂热主义算两个), 一个文明最多只能有两个文明特性, 一个来自主义, 另一个来自文明故事(没文明故事则没第二个文明特性), 最后是, 文明的主义也被称为意识形态, 文明的特性也被称之为文明思潮, 只是描述上的区别;</p>
+
+<p>————</p>
+
+<p>培育文明: 这是得到文明的一种方法, 通过投入字节数据来实现文明的生成, 培育槽位的初始数量为 <code>2</code>, 可用中枢数据增加新培育槽位(需求在 <code>100</code> 到 <code>300</code> 间递增, 最多可拥有 <code>10</code> 个培育槽位), 培育文明相对省事, 没那么多操作, 但随机性较大, 且发展需要等待一定时间(不需要一直开着游戏, 游戏关闭时间也照算), 不过培育是必定成功的(质量高低另说), 不会像创建文明那样存在失败的情况;</p>
+
+<p>培育成本: 培育的时候, 你可以自由选择文明的头像框(头像内部图标则是随机的), 而对[本质/统治/军事/对外/发展]这五项属性的投入, 将决定最终生成的结果, 每项属性首次投入需要 <code>15</code> 字节数据, 之后再投入则需要的字节数据为 <code>5</code>, 每项属性能投入的最大数值为 <code>10</code>, 既每项属性最多可投入 <code>60</code> 字节数据, 最少要投入一项属性才可开始培育, 既培育一个文明所需字节数据在 <code>15 ~ 300</code> 之间;</p>
+
+<p>培育算法: 对于[本质/统治/军事/对外/发展]这五项属性的投入, 范围介于 <code>0 ~ 10</code> 之间, 假设投入数值分别为 <code>[X1/X2/X3/X4/X5]</code>, 投入数值合计 Sum 为 <code>X1+X2+X3+X4+X5</code>, 投入数值平均 Avg 为 <code>Sum÷6</code>, 之后取五个随机数, 例如随机数 R1 为 <code>Random(Avg, X1)</code>, 既 R1 的数值将介于平均数 Avg 和投入数值 X1 之间, 按 <code>50%</code> 的概率取正值或负值, 但如果 <code>X1 < Avg</code>, 则随机数 R1 必定为 <code>0</code>;</p>
+
+<p>培育结果: 如果 <code>R1绝对值 > 8</code> 就是狂热, 若 <code>R1>0</code> 是狂热物质主义而 <code>R1<0</code> 是狂热精神主义, 如果多个值满足条件, 就选择绝对值最大那个(值相同则随机获取), 如果 <code>4< R1绝对值 <=8</code>, 就是普通, 若 <code>R1>0</code> 是物质主义而 <code>R1<0</code> 是精神主义, 如果多个值满足条件, 就选择绝对值最大两个(值相同则随机获取), 如果 <code>R1绝对值 <= 4</code> 就是无主义, 文明还会根据主义, 随机获取对应的文明故事;</p>
+
+<p>培育时间: 实际上在开始培育那瞬间, 文明的结果就已经被确定了, 文明也会根据它所属的主义, 在故事库里面随机选中一个对应的故事(当前故事库共有 <code>152</code> 个故事), 而培育时间的长短是跟故事挂钩的, 具体介于 <code>8 ~ 290</code> 分钟之间, 但可用字节数据让培育瞬间完成, 每个字节数据可加速 <code>25</code> 秒, 例如剩余培育时间为 <code>10</code> 分钟, 则即刻完成所需字节数据为 <code>10×60÷25=24</code>, 最终再 <code>+1</code> 为 <code>25</code>;</p>
+
+<p>实际案例: 假设投入 <code>60</code> 字节数据到本质属性, 将其升到 <code>10</code>, 根据算法, Sum 为 <code>10+0+0+0+0=10</code>, Avg 为 <code>10/6≈1.7</code>, 既随机数 R1 将介于 <code>1.7 ~ 10</code> 之间, 由于 <code>10-1.7=8.3</code>, 所以, 无主义文明概率为 <code>(4-1.7=2.3)÷8.3=27.7%</code>, 物质或精神主义的文明概率为 <code>(8-4=4)÷8.3=48.2%</code>, 狂热主义的文明概率为 <code>(10-8=4)÷8.3=24.1%</code>, 由于此处只投入了本质属性, 所以不会出现双主义文明的情况;</p>
+
+<p>建议方案: 耗费 <code>155</code> 字节数据, 将两个属性投入 <code>10</code>, 第三个属性投入 <code>5</code>, 既 <code>60+60+35=155</code>, 此时 Avg 平均数为 <code>25/6≈4.17</code>, 既随机数介于 <code>4.17 ~ 10</code> 之间, 由于随机数 <code>>4</code>, 所以不会出现无主义的文明, 必定只会出现双主义文明或狂热文明, 这种投入的平均收益为 <code>0.5685×195+0.4315×120≈162.64</code>, 也就是能赚到 <code>162.64-155≈7.64</code> 字节数据, 这或许不是最优价, 但起码能保证不亏;</p>
+
+<p>补充信息: 初始能够拥有的文明数量上限为 <code>10</code>, 初始的头像框数量为 <code>21</code>, 初始的文明库模版数量为 <code>0</code>, 以上的这些都可以用中枢数据得到更多(不过文明库模版只能在创建文明的时候使用, 培育文明就用不上了), 故事库是存储文明故事的地方, 已获得过了的文明故事会在这里展示, 即便该文明已经被我们回收了也不影响展示, 但文明故事只能通过创建文明随机获取, 就无法用中枢数据进行兑换了;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading07">07. 挑战模式</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover06.jpg" />特殊场景: 该模式目前尚未开放, 它的主要玩法是, 在一场对局中完成某些特定任务, 例如要求凝聚力到达目标值或是每年的科技增长到达一定程度, 或者是拥有 N 个殖民星系并与 N 个原始星系进行过交流, 不过由于年代较为久远(游戏早在 2018 年就已经立项, 只是一直拿不到版号)且一直没完工, 目前处于半废弃的状态, 未来如何尚不可知;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading08">08. 战场模式</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover07.jpg" />公平竞技: 你可以在这个模式下, 选择自己偏好的文明, 设定星系地图以及初始资源等参数, 进行 PVE 或 PVP 对战, PVE 无需联网, 单机也能运行, PVP 则有本地局域网和在线联机两种模式, 前者在同个路由环境下就能运行, 后者则需要依靠线上的服务器, 关于单机和联机的差异, 以及该模式的更多细节, 可以查阅新手指南 > <a href="./guide_operation.html">操作细节.html</a>;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading09">09. 成就机制</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover08.jpg" />历史记录: 游戏成就被分成了[文明库/历史博物馆/战场中枢]三大类, 其中的文明库是和文明创建相关的内容, 目前共计有 24 项, 历史博物馆是完成剧情模式的任务才能解锁的内容(包含可选任务), 目前共计有 37 项, 战场中枢是些和运营或战斗相关的内容, 例如[收集了多少资源/拥有过多少个殖民地/消灭过多少个文明], 目前共计有 56 项;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading10">10. 个人中心</h2>
+
+<p><img style="float:left;width:128px;height:72px;margin-right:16px;" loading="lazy" src="../static/image/guide/01/cover09.jpg" />喜好定义: 你可以在这里改变[游戏音量/窗口分辨率], 也可以设置个人的[头像/勋章/签名/背景], 这些个人的内容对游戏并没有任何实质性影响, 但是会在联机时被其他玩家看到(相当于皮肤), 其中的[勋章/签名/背景], 可在战场模式>多人模式>战场商店购入, 购物需要用字节数据, 字节数据可通过游玩战场模式获得(每日获取上限为 <code>1000</code>);</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.0</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 前言简介</a>
+			<a href="#heading02">02. 基础教程</a>
+			<a href="#heading03">03. 进阶教程</a>
+			<a href="#heading04">04. 唯物探索</a>
+			<a href="#heading05">05. 唯心抗争</a>
+			<a href="#heading06">06. 文明系统</a>
+			<a href="#heading07">07. 挑战模式</a>
+			<a href="#heading08">08. 战场模式</a>
+			<a href="#heading09">09. 历史成就</a>
+			<a href="#heading10">10. 个人中心</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

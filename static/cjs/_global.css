@@ -1,0 +1,201 @@
+/*--------------------------------------------------------------------------------------------*/
+
+/* 设置等宽字体 */
+/* xj.base 默认字体并不是等间距的，但做文档还是等间距字体更好，所以在这里重新设置一次 Iosevka */
+/* 黑白主题的内容还不完善，不少插件有待改进就暂不启用了，把文本打散换行在移动端小屏幕会好看些 */
+
+@font-face{font-family:Iosevka;font-weight:normal;font-style:normal; src:url("../font/iosevka/30.2.0/IosevkaFixed-Regular.woff2") format('woff2');} /*font-display:swap;*/
+@font-face{font-family:Iosevka;font-weight:bold;  font-style:normal; src:url("../font/iosevka/30.2.0/IosevkaFixed-Bold.woff2") format('woff2');} /*font-display:swap;*/
+@font-face{font-family:Iosevka;font-weight:normal;font-style:oblique;src:url("../font/iosevka/30.2.0/IosevkaFixed-Oblique.woff2") format('woff2');} /*font-display:swap;*/
+@font-face{font-family:Iosevka;font-weight:bold;  font-style:oblique;src:url("../font/iosevka/30.2.0/IosevkaFixed-BoldOblique.woff2") format('woff2');} /*font-display:swap;*/
+
+html{overflow-x:auto;overflow-y:scroll;}
+body{background-repeat:no-repeat;background-position:center left, center right;background-size:4px 100%, 4px 100%;}
+html:not([class*="xj-base"]) body{background-color:#f0f0f0;background-image:linear-gradient(90deg, rgba(204,204,204,0.5) 0%, transparent 100%), linear-gradient(90deg, transparent 0%, rgba(204,204,204,0.5) 100%);}
+
+/* 仅对中文用等宽的 Iosevka */
+html[lang^="zh"]{font-family:Iosevka,"Microsoft YaHei","Hiragino Sans GB",Monospace;}
+html[lang^="zh"] body{word-break:break-all;line-break:anywhere;}
+
+/* 适配 Edge 翻译之后的字体 */
+[_msthash]{font-family:"-apple-system", "Segoe UI", "Roboto", 
+"Hiragino Sans GB", "Microsoft YaHei", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;}
+
+/* 自定义中日韩英文控制标签 */
+
+zh-i, jp-i, ko-i, en-i{display:inline;}
+zh-b, jp-b, ko-b, en-b{display:block;}
+zh-t, jp-t, ko-t, en-t{display:table;}
+zh-f, jp-f, ko-f, en-f{display:flex;}
+zh-g, jp-g, ko-g, en-g{display:grid;}
+
+zh-ib, jp-ib, ko-ib, en-ib{display:inline-block;}
+zh-it, jp-it, ko-it, en-it{display:inline-table;}
+zh-if, jp-if, ko-if, en-if{display:inline-flex;}
+zh-ig, jp-ig, ko-ig, en-ig{display:inline-grid;}
+
+html:not(.lang-zh) zh-i, html:not(.lang-zh) zh-b, html:not(.lang-zh) zh-ib, html:not(.lang-zh) zh-t, html:not(.lang-zh) zh-it, 
+html:not(.lang-zh) zh-f, html:not(.lang-zh) zh-if, html:not(.lang-zh) zh-g, html:not(.lang-zh) zh-ig{display:none;}
+
+html:not(.lang-jp) jp-i, html:not(.lang-jp) jp-b, html:not(.lang-jp) jp-ib, html:not(.lang-jp) jp-t, html:not(.lang-jp) jp-it, 
+html:not(.lang-jp) jp-f, html:not(.lang-jp) jp-if, html:not(.lang-jp) jp-g, html:not(.lang-jp) jp-ig{display:none;}
+
+html:not(.lang-ko) ko-i, html:not(.lang-ko) ko-b, html:not(.lang-ko) ko-ib, html:not(.lang-ko) ko-t, html:not(.lang-ko) ko-it, 
+html:not(.lang-ko) ko-f, html:not(.lang-ko) ko-if, html:not(.lang-ko) ko-g, html:not(.lang-ko) ko-ig{display:none;}
+
+html:not(.lang-en) en-i, html:not(.lang-en) en-b, html:not(.lang-en) en-ib, html:not(.lang-en) en-t, html:not(.lang-en) en-it, 
+html:not(.lang-en) en-f, html:not(.lang-en) en-if, html:not(.lang-en) en-g, html:not(.lang-en) en-ig{display:none;}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 左边的侧边栏 */
+#pub_pack{display:flex;margin:0 auto;width:1280px;}
+
+#pub_side{flex:0 0 auto;position:sticky;
+top:0px;align-self:flex-start;width:240px;background-color:#fff;}
+#pub_wrap{display:flex;flex-direction:column;flex:0 0 auto;margin-left:16px;width:1024px;}
+
+
+
+/* 顶部的导航栏 */
+#pub_head{display:flex;align-items:center;flex:0 0 auto;padding:0 32px;height:64px;background-color:#fff;}
+
+#pub_headText{flex:1 1 auto;margin-bottom:0;font-weight:normal;line-height:1;}
+#pub_headText a{display:inline-block;}
+#pub_headText span{display:inline-block;font-size:32px;line-height:40px;}
+#pub_headText small{position:relative;top:2px;display:inline-block;margin-left:8px;font-size:16px;line-height:16px;}
+
+#pub_headForm{position:relative;flex:0 0 auto;margin-left:8px;width:200px;height:40px;}
+#pub_headFormText{width:200px;}
+#pub_headFormIcon{position:absolute;top:0;right:0;z-index:40;width:40px;
+padding:0;color:#999;}
+
+#pub_headCode{flex:0 0 auto;margin-left:8px;padding:0;width:40px;color:#999;}
+
+#pub_headLang{position:relative;flex:0 0 auto;margin-left:8px;}
+#pub_headLangIcon{padding:0;width:40px;color:#999;}
+#pub_headLangMenu{position:absolute;top:48px;right:0;z-index:40;visibility:hidden;padding:4px;width:88px;border:1px solid #ccc;border-radius:4px;background-color:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.5);font-size:14px;line-height:24px;opacity:0;transition:all 250ms;}
+#pub_headLangMenu:before{position:absolute;top:-8px;right:10px;width:0;height:0;border:8px solid transparent;border-top:0;border-bottom-color:#ccc;content:"";}
+#pub_headLangMenu:after{position:absolute;top:-6px;right:12px;width:0;height:0;border:6px solid transparent;border-top:0;border-bottom-color:#fff;content:"";}
+#pub_headLangMenu a{display:block;padding:8px 0;text-align:center;}
+#pub_headLangMenu a:hover{background-color:#f0f0f0;}
+#pub_headLang:hover #pub_headLangMenu, 
+#pub_headLangIcon:focus ~ #pub_headLangMenu{visibility:visible;opacity:1;}
+
+
+
+/* 中间主体部分 */
+#pub_main{flex:1 1 auto;margin:16px 0;background-color:#fff;padding:32px;}
+
+#pub_main > section:not(:last-of-type) > hr:last-of-type{margin:32px 0;}
+#pub_main > section:last-of-type > hr:last-of-type{margin:32px 0 0;}
+
+#pub_main h2{font-weight:normal;}
+#pub_main h3{font-weight:normal;}
+#pub_main h4{font-weight:normal;}
+#pub_main h5{font-weight:normal;}
+#pub_main h6{font-weight:normal;}
+
+
+
+/* 最后面的注脚 */
+#pub_foot{flex:0 0 auto;height:64px;background-color:#fff;line-height:20px;padding:12px 32px;}
+
+
+
+/* 左侧的工具栏 */
+#pub_tool{position:fixed;bottom:0;left:0;z-index:40;width:100%;height:4px;background-color:transparent;}
+#pub_toolPack{position:relative;margin:0 auto;max-width:1280px;height:4px;background-color:transparent;}
+
+#pub_toolBackToTop{position:absolute;bottom:12px;padding:0;width:40px;right:80px;box-shadow:0 4px 8px rgba(0,0,0,0.5);color:#999;}
+#pub_toolNavigated{position:absolute;bottom:12px;padding:0;width:40px;right:32px;box-shadow:0 4px 8px rgba(0,0,0,0.5);color:#999;}
+
+#pub_toolAnchorTip{position:absolute;right:32px;bottom:60px;padding:4px;min-width:88px;border:1px solid #ccc;border-radius:4px;background-color:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.5);font-size:12px;line-height:16px;transition:all 250ms;opacity:0.5;}
+#pub_toolAnchorTip:before{position:absolute;right:10px;bottom:-8px;width:0;height:0;border:8px solid transparent;border-top-color:#ccc;border-bottom:0;content:"";}
+#pub_toolAnchorTip:after{position:absolute;right:12px;bottom:-6px;width:0;height:0;border:6px solid transparent;border-top-color:#fff;border-bottom:0;content:"";}
+#pub_toolAnchorTip:hover{opacity:1;}
+
+#pub_toolAnchorTip a{display:block;padding:4px 2px;text-align:right;transition:all 250ms;}
+#pub_toolAnchorTip a:hover{background-color:#f0f0f0;}
+
+
+
+/* 全局宽高尺寸 */
+#pub_size{position:fixed;top:0;right:0;bottom:0;left:0;
+z-index:-1;background-color:#ccc;box-shadow:0 0 0 10px #f00 inset;font-size:36px;opacity:0;pointer-events:none;}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* 在 xj.theme 的基础上为 table 增加 sm 和 xs 尺寸 */
+.table-sm{font-size:14px;}
+.table-sm th{padding:6px;} .table-sm td{padding:6px;}
+.table-xs{font-size:12px;}
+.table-xs th{padding:4px;} .table-xs td{padding:4px;}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* 只有当 summary 的 display:list-item 才会有 ::marker 伪元素, 它仅支持字体属性, white-space, */
+/* color, text-combine-upright, unicode-bidi, direction, content 这些样式, 并不支持背景的设置 */
+/* summary 里有 block 标签如 h2, 文本过长会导致小三角和文本换行, 所以改用伪元素背景实现小三角 */
+/* summary 使用 flex 布局, 以便换行时小三角能够垂直居中, summary 此时就只能有单个直接子元素了 */
+/* 如果没有明文设置 summary, 浏览器也会自动帮忙补上, 但样式可能就不生效了, 所以千万不要这样做 */
+/* 内容复杂时在 summary 后面用 div 包裹内容, 因为使用了通配符 * 所以用单个 p 标签放内容也可以 */
+details{display:block;margin:0px 0px 16px 0px;}
+
+details > summary{display:flex;list-style:none;counter-increment:none;padding:8px;cursor:pointer;box-shadow:0 0 0 1px #ccc inset;}
+details[open] > summary{background-color:#f0f0f0;}
+details > summary > *{margin-bottom:0;}
+
+details > summary::marker{display:none;}
+details > summary::before{flex:0 0 24px;content:" ";background-position:left center;background-repeat:no-repeat;background-image:
+url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23999' d='M4 14V2l8 6z'/%3E%3C/svg%3E");}
+details[open] > summary::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23999' d='M2 4h12l-6 8-6-8z'/%3E%3C/svg%3E");}
+
+details > content{display:block;margin-top:-1px;padding:16px;box-shadow:0 0 0 1px #ccc inset;}
+details > content > *:last-child{margin-bottom:0;}
+
+/* 紧凑模式, 用 div 容器包裹, 就无须每个标签都添加类名了, xj.theme 其他标签包裹也改用 pack 吧 */
+.details-pack{padding-top:1px;margin-bottom:16px;}
+.details-pack > details{margin-top:-1px;margin-bottom:0;}
+
+/* 也许全部改成 revert, 具体等 xj.theme 重构再决定吧 */
+.details-unset{margin-bottom:0;}
+.details-unset > summary{padding:0;border:none;}
+.details-unset > content{margin-top:0;padding:0;border:0;}
+.details-unset > content > *:last-child{margin-bottom:revert;}
+
+.summary-unset{padding:0;border:none;}
+.summary-unset + *{margin-top:0;padding:0;border:0;}
+.summary-unset + * > *:last-child{margin-bottom:revert;}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* IE11- 和 Edge15- 完全不支持 sticky 属性 */
+/* Safari V12.1- 的 sticky 属性值需要添加 -webkit- 前缀 */
+/* Chrome V56~90 和 Edge V16~18, 只支持 th 标签实现 sticky 属性值定位 */
+
+/* 必须为 th 设置背景色, 否则往下滚后, 内容会重叠, 但 Chrome 的背景色会覆盖掉边框, 得另想办法 */
+/* 最后发现可以使用 border-collapse:separate 让边框不折叠, 再单独设置表格的边框, 就能解决问题 */
+
+.powerTable{border-collapse:separate;}
+
+.powerTable thead th{position:sticky;top:0;background-color:#fff;cursor:pointer;z-index:32;}
+.powerTable thead th .icon{margin-left:2px;color:#ccc;}
+.powerTable thead th span{display:inline-block;vertical-align:middle;}
+.powerTable thead th .fa-sort-down, .powerTable thead th .fa-sort-up{color:#39f;}
+
+.powerTable thead th{border:none;border-right:1px solid #ccc;border-bottom:3px solid #ccc;border-top:1px solid #ccc;}
+.powerTable thead th:first-child{border-left:1px solid #ccc;}
+
+.powerTable tbody td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle;}
+.powerTable tbody td:first-child{border-left:1px solid #ccc;}
+
+

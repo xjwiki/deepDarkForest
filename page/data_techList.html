@@ -1,0 +1,3087 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-12T17:24:04UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-04-12T17:24:04UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>科技列表</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>科技列表</span><small>(增益词条)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 当前游戏里共有 <code>358</code> 项科技(若不算同类项则数量为 <code>184</code>); <br />
+	02. 这些科技分属于 <code>30</code> 个科技类型(既科技树), 其中有 <code>10</code> 个通用, 其余仅限特殊主义文明使用; <br />
+	03. 下表中的"权重递减"属性, 是对战时 AI 解锁科技的优先级, 数值越低意味着会越早被解锁, 更多科技相关细节可查阅 <a href="#heading02"># 额外拓展</a>; <br />
+</p>
+
+<p class="typeFlex">
+	<span class="typeWrap">
+		<span value="101" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">发展    </span><span value="102" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right:-1px;">进阶发展</span>
+		<span value="107" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">扩张    </span><span value="134" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">探索    </span>
+		<span value="133" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:16px;">隐藏    </span>
+		
+		<span value="110" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">物质    </span><span value="122" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊物质</span>
+		<span value="114" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">尚武    </span><span value="126" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊尚武</span>
+		<span value="112" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">集中    </span><span value="124" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊集中</span>
+		<span value="117" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">亲外    </span><span value="129" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊亲外</span>
+		<span value="119" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">生产    </span><span value="131" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 0px;">特殊生产</span>
+		
+		<span value="104" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">军事    </span><span value="105" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right:-1px;">进阶军事</span>
+		<span value="120" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">压力    </span><span value="135" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">情报    </span>
+		<span value="136" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:16px;">暴露    </span>
+		
+		<span value="111" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">精神    </span><span value="123" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊精神</span>
+		<span value="115" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">和平    </span><span value="127" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊和平</span>
+		<span value="113" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">分权    </span><span value="125" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊分权</span>
+		<span value="116" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">孤立    </span><span value="128" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊孤立</span>
+		<span value="118" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">生态    </span><span value="130" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 0px;">特殊生态</span>
+	</span>
+	
+	<span class="typeWrap">
+		<span value="0"   class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 0px;">显示<br />所有<br />科技</span>
+	</span>
+</p>
+
+<p style="display:flex;justify-content:flex-start;align-items:center;">
+	
+	<label style="display:inline-flex;flex:0 0 auto;width:608px;margin-right:16px;order:2;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">名称描述: </span>
+		<input id="nameInput01" class="input-unset" type="search" 
+		style="flex:1 1 auto;width:116px;" placeholder="可以搜索名称或者描述, 多关键词使用空格隔开, 应显示所有科技再操作" />
+		<button id="nameCheck01" class="button-unset" type="button" style="flex:0 0 auto;width:32px;margin-left:-1px;font-size:14px;color:#999;"><i class="fas fa-magnifying-glass"></i></button>
+	</label>
+	
+	<label style="display:inline-flex;flex:0 0 auto;width:240px;margin-right:16px;order:1;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">所在等级: </span>
+		<select id="attrSelect01" class="needsclick select-unset" xj-focus="{ontabAlways:true}" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	
+	<span style="display:inline-flex;flex:0 0 auto;width: 80px;margin-right: 0px;;order:3;">
+		<button id="resetButton" class="button-unset" type="button" style="flex:0 0 auto;width:80px;margin-left:auto;order:1;">清空</button>
+	</span>
+	
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01"style="width:960px;line-height:14px;">
+	<thead>
+		<tr>
+			<th sorttype="string" style="width: 65px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目图片</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目序号</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目代码</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width:128px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目名称</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>所在等级</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>解锁需求</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技名称</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技类型</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技前置</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>权重递减</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>文本描述</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>科技类型: 游戏中的每个科技项都有它归属的科技类型, 而科技类型可被分为两大类, 既通用科技类型和特殊科技类型, 通用科技类型共有 <code>10</code> 个子类, 它们是所有文明都可以使用的, 特殊科技类型共有 <code>20</code> 个子类, 它们需要文明拥有特殊主义才可启用, 而特殊主义则取决于创建文明时, 某项主义是否达到了标准, 由于创建文明的机制颇为复杂, 此处无法展开描述, 更多细节可前往文明页面自行查阅;</p>
+
+<p>解锁类型: 科技项需要用科技点解锁, 科技项归属的科技类型, 也可能需要用科技点解锁(特殊科技类型除外, 它们是自动解锁的), 通用科技类型, 默认初始就只有"发展"是自动解锁的, 其余则需要耗费科技点, 首次解锁任意科技类型要 <code>100</code> 科技点, 第二次是 <code>100*2</code>, 第三次是 <code>100*3</code>, 以此类推, 越往后就需要越多的科技点, 解锁所有通用科技类型, 共计需要的科技点为 <code>100+200+…+800+900=4500</code>;</p>
+
+<p>————</p>
+
+<p>光墓屏障: 狂热孤立 > 光墓屏障, 该科技可解锁光墓建筑, 光墓的功能是拦截一切攻击, 既包括普通的登陆攻击, 也包括[质量弹/光粒/广播]等其它形式的攻击, 甚至神级文明的打击也无法生效(星系遭受敌人广播后, 虽然会弹出相关信息提示, 但实际上并没有任何影响), 但存在光墓的星球对外发动攻击也会被拦截下来, 尚武 > 背水一战, 该科技可让下次舰队登陆必定成功, 但对于有光墓建筑的星球无效;</p>
+
+<p>独善其身: 孤立 > 独善其身, 这项科技目前未被装实, 由于星系交互中的"交流"机制已经被重做过, 现在没有该项科技的文明也可以进行伪装操作, 所以这项技能目前处于被废弃的状态, 也因此导致了, 其他特殊主义的科技树都有 6 项科技, 但孤立主义目前仅有 5 项;</p>
+
+<p>不可登陆: 和平 > 和平追求 & 特殊和平 > 韬光养晦, 这些科技所描述的 N 年内不可登陆, 不单是指不能派出军舰攻击其他星系, 而且是指所有需要通过军事基地才能实现的军事行动都不可被执行, 也就是说, 任意类型的攻击, 乃至于巡逻或者广播, 都无法被实施, 不过文明依然可以通过建造"低维化装置"实现建筑所在星系的自爆(创建二维空间吞噬自我), 也可以通过建造"黑域装置"来实现星系的自毁;</p>
+
+<p>广播自己: 亲外 > 我在这里 & 特殊亲外 > 安全声明, 这些科技都可通过广播自己的星系来获得收益, 但是这个广播只包括"移民管理"菜单之中的"暴露坐标"行动, 不包括在广播别人的时候导致自己星系暴露的行为, 也就是说, 主动广播自己才算数, 被动暴露是无效的;</p>
+
+<p>特殊打击: 星系遭到广播后, 可能会引来神级文明的打击, 而神级文明根据噪音值高低所发起的攻击, 包括[粒子/复归器/天灾]均是无法被防御的, 但如果这些形式的攻击是由玩家发起的, 那情况又不一样了, 首先是玩家发起的粒子攻击均可被能量护盾所拦截, 特殊精神 > 意志的契约, 该科技给予的复归器, 机制类似质量弹, 可被能量护盾拦截, 特殊亲外 > 引力波天线, 该科技给予的天灾攻击, 无法防御;</p>
+
+<p>————</p>
+
+<p>科技获取: 尽管按现实世界的逻辑, 科技进步应该是多项并行的, 只是有快慢区别, 但深暗森林为了游戏性而简化了这点, 目前是任意的科技项, 只要有足够的科技点即可立即解锁, 而科技点的来历则多种多样, 除了初始自带的科技点外, 还有每年的科技点增长, 此外探索星系或与其他文明交流等事件也可能获得, 由于科技对于胜负的影响至关重要, 所以弄懂科技点的来源非常要紧, 下面将解析所有来历:</p>
+
+<p>01. 初始自带: 在剧情模式中, 我方初始自带的科技点并非固定的, 而是会根据场景变化, 但大约都在 <code>1000</code> 到 <code>3000</code> 之间, 而战场模式中, 玩家默认初始自带 <code>2000</code> 科技点, 不过该值在开始游戏前可通过"地图设置"改变, 范围介于 <code>1000</code> 到 <code>3000</code> 之间, 值得一提的是, AI 的初始科技点未必与玩家相同, 无论是剧情模式或战场模式, 高难度 AI 初始自带的科技点可能会比我们多数百到数千不等;</p>
+
+<p>02. 科技增长: 所有文明都有个基础的科技增长值, 默认为每年 <code>+ 5</code>, 有不少建筑或科技都能够影响到这个值(增减的都有), 而提升它的最常见方法, 便是修建"研究所", 每个每年 <code>+ 2</code>, 但在初期, 这也许不是个好主意, 因为建研究所是项长期投资, 需要 <code>8000</code> 资源且耗时长达 <code>400</code> 年, 成本高昂而回报周期漫长, 研究所还需要占据一个宝贵的建筑槽位, 这极有可能会拖慢你扩张的步伐, 需要慎重;</p>
+
+<p>03. 科研合作: 当我方与其他文明成功建交后, 即可在外交界面提出"科研合作", 尽管 AI 未必接受(但多尝试几次也许就能成功), 有时 AI 也会主动向我方发起该请求, 一旦达成合作, 则双方每年都会 <code>+ 4</code> 科技增长, 一个文明可同时与多个文明达成合作, 但科技合作的收益是有上限的, 当合作获取的科技点超过 <code>4000</code>(单个文明合作一千年即可达成, 两个文明合作五百年即可达成), 合作就会自动停止;</p>
+
+<p>04. 特殊建筑: 在对战模式下, 有时可能刷出射线风暴的事件, 如果选择引导磁场驻留, 则星球某个随机槽位上会出现一个"强磁场", 可以 <code>+ 1</code> 科技增长, 此外, 由特殊科技类型解锁的某些建筑, 例如[巨型科学枢纽/黑洞观测站/恒星观测站/虚空观测站/沉思殿/秘学坛/大图书馆], 也会影响到科技增长(有增加的也有减少的), 由于特殊建筑并不通用, 此处便不展开描述, 感兴趣可前往建筑页面自行查阅;</p>
+
+<p>05. 特殊科技: 某些特殊科技项也可带来科技收益, 例如物质主义的"额外科技增长", 或者特殊物质主义的"窥视深渊", 当然也存在一些以科技为代价换取其它收益的选项, 例如特殊精神主义的"探知真理", 值得注意的是, 由于科技项的解锁是永久性的, 科技增长的数值一旦被降低就无法恢复, 所以面对减益的就需要认真权衡, 你可以在上方表格的筛选工具中, 点击"显示所有科技" > 搜索"科技"进行总览;</p>
+
+<p>06. 文明特性: 某些文明特性也可能影响科技, 例如"图书馆国度", 科技增长 <code>+ 1</code> 但是初始科技 <code>-800</code>, 也就是前八百年是亏的, 后八百年才开始净赚, 例如"建筑师文明", 会自动解锁"超构材料"的科技项但初始科技 <code>-300</code>, 不过解锁该科技项原本需要 <code>800</code> 科技点, 所以还是能赚个 <code>500</code> 差价, 当然也存在一些会减少科技的特性, 限于篇幅, 此处无法全部罗列, 更多细节可前往相关页面自行查阅;</p>
+
+<p>07. 探索星系: 当派出探索船成功探索未知星系后, 有机会立即得到科技点, 具体是在 <code>150</code> 到 <code>200</code> 间取随机数, 该行为的触发概率衰减参数为 <code>0.5</code>, 根据算法 <code>1 - (衰减参数 × 成功触发次数)</code>, 也就是说, 首次探索必定能获取收益, 而第二次探索有收益的概率为 <code>1-(0.5×1)=0.5</code> 既 <code>50%</code>, 当成功获得过两次收益后, 概率变成 <code>1-(0.5×2)=0</code> 既 <code>0%</code>, 相当于单局游戏最多触发 <code>2</code> 次这种收益;</p>
+
+<p>08. 星系殖民: 当派出殖民船成功殖民某个星系后, 有机会立即得到科技点, 具体是在 <code>900</code> ~ <code>1000</code> 间取随机数, 该行为的触发概率衰减参数为 <code>1</code>, 根据"探索星系"相同算法, 首次必定会有收益, 但第二次探索, 根据算法, 触发的概率为 <code>1-(1×1)=0</code> 既 <code>0%</code>, 相当于单局游戏最多触发 <code>1</code> 次这种收益, 往后就不会再触发了, 之后即使由于某种原因而丢失了这个星系, 就算重新殖民也不会再次触发;</p>
+
+<p>09. 原始交流: 当派出交流船成功交流原始星系后, 有机会立即得到科技点, 具体是在 <code>100</code> 到 <code>150</code> 间取随机数, 最后的结果还会将随机数 <code>× 该星系的星球数量</code>, 而另一种选择, 则是将收益换成每年科技增长 <code>+2</code>, 持续的年份为一次性收益的数值, 也就是说这种方式可让收益翻倍, 不过期间如果原始星系被攻击或被殖民, 收益就会中断, 还有就是, 该行为的触发概率衰减参数为 <code>0</code> 所以总能生效;</p>
+
+<p>10. 星系被毁: 当文明的某个星系被毁之后(也包含人造星系), 有机会获得科技点, 收益数值与该星系的槽位数量和建筑类型相关, 具体算法如下 <code>每个建筑×10 + 每个有效槽位×50 + 每个巨型结构×200 + 每个建筑的建造成本÷100×200</code>, 其中的建筑并不包括景观障碍以及尚未修建完毕的, 其中的槽位并不包括尚未被拓展的和正在拓展中的, 每个建筑的建造成本÷100×200的最大结果值被限定在 <code>800</code>, 最终的结果还会再加上一个 <code>0</code> 到 <code>100</code> 的随机值, 这个事件每触发一次, 结果值就会 <code>-500</code>, 该事件的触发概率衰减参数为 <code>0.25</code>, 也就是说, 在一局游戏中最多可以触发 <code>4</code> 次, 每次触发后, 第二次触发的概率都会 <code>-25%</code>, 总之就是, 除了第一次以外, 之后星系被毁就不一定能获得收益了, 以上是选择一次性收益的情况, 你也可以将收益换成科技增长, 这个的算法可以看后面"14. 触发阈值"的内容;</p>
+
+<p>11. 爆发内战: 当文明爆发内战之后(压力值 <code>>50k</code> 所导致), 有机会获得科技点, 收益数值与此次丢失的星系数量相关, 具体算法如下 <code>失去的星系数量 × 500</code>, 最后再加上一个 <code>0</code> 到 <code>100</code> 的随机值, 该事件的触发概率衰减参数为 <code>0.5</code>, 也就是说, 一局游戏最多可以触发 <code>2</code> 次, 首次触发该事件必定会有收益, 触发过 2 次之后就再也不会触发了, 以上是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 关于内战的细节是, 当文明的压力值大于五万就会爆发内战, 尽管内战会直接降低压力, 但也会导致该文明立刻失去一半的星系(具体数量向下取整), 这些丢失的星系会变成有人在但无归属的情况, 尽管丢失的星系可通过登陆攻击并重新殖民占领回来, 但如果爆发内战时, 该文明只剩一个星系, 则这局游戏可能直接失败;</p>
+
+<p>12. 文明覆灭: 当文明被覆灭(在满足条件下触发了继承衣钵), 有机会获得科技点, 数值会在 <code>3000</code> 到 <code>3500</code> 之间取随机数, 该事件的触发概率衰减参数为 <code>1</code>, 也就是说, 一局游戏里虽然可能出现多次继承衣钵, 但奖励科技点的情况就仅限第一次, 以上是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 关于继承的细节是, 如果战场上还存在未被殖民的原始星系, 且游戏还处于限定的年份内(具体年份不详), 则该文明就有可能触发"继承衣钵"事件, 文明会转移到随机的原始星系重新开始(会保留已解锁的科技项), 你也可以将它称为"秽土转生", 总之, 深暗森林是存在绝境反杀的, 并非丢失所有星系就直接完蛋, 如果初期触发了这个事件, 可能反而更赚, 但不要尝试入场就直接废弃所在星系求死, 这种行为是不会触事件的;</p>
+
+<p>13. 科技交流: 当两个高级文明成功建交后, 有机会迎来一波科技爆炸(一次性获得大量科技点), 算法为  <code>Basis × DisFix × RateFix</code>, <code>Basis</code> 取决于双方的实力差距, [卑如蝼蚁/略显弱小/难分伯仲/略显强大/宛如天神] 这五档分别对应的数值为 <code>0/0/500/2000/5000</code>, 也就是说, 实力越低的那方能获取的好处就越多, 如果实力远高于对方, 则可能毫无收获, 因为如果为 0 则后面两个参数也就没意义了, <code>DisFix</code> 为距离修正, 算法为 <code>(1 - (1 ÷ 140) × (Dis × 60)</code>, 其中的 <code>Dis</code> 为交流的两个星系间距离, 结果被限定在 <code>0.1</code> ~ <code>1</code> 之间, 也就是说, 发出交流和接受交流的两个星系, 距离越远则收益就越大, 但由于有最小值/最大值的限制, 所以该参数影响反而较小, <code>RateFix</code> 为年份修正值, 算法为 <code>(MaxYear-CurrentYear) ÷ (MaxYear-MinYear)</code>, 其中的 <code>CurrentYear</code> 是发生交流时的游戏年份, <code>MaxYear</code> 代表最大年份系数(固定为 <code>600</code>), <code>MinYear</code> 代表最小年份系数(固定为 <code>100</code>), 最终结果被限定在 <code>0</code> 到 <code>1</code> 之间, 相当于 <code>100</code> 年内交流到就取最大值(1), <code>100 ~ 600</code> 年间逐渐减少, <code>600</code> 年后交流到就取最小值(0), 600 年后再触发就没有意义了, 系统在算出了最终的结果之后, 还会再加上一个 <code>0</code> 到 <code>100</code> 的随机数, 所以即使参数都相同, 结果也会有一定的随机性变化, 该事件的触发概率衰减参数为 <code>0</code>, 这也就是说, 如果遇到了不同的文明, 只要有足够的实力差距, 并且年份在范围的时间之内, 该事件就有可能被再次触发, 以上算法均是是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 而关于两个文明之间的"卑如蝼蚁"或"宛如天神"等实力差距的描述, 具体的算法可查阅后面的"15. 实力差距";</p>
+
+<p>14. 触发阈值: [星系被毁/爆发内战/文明覆灭/科技交流]这些事件, 如果一次性的科技点收益 <code><=1000</code>, 就是直接获得科技, 仅左上角提示, 如果收益 <code>>1000</code>, 就可能会在右下角弹出窗口, 让我们选择是获得一次性的科技点收益, 还是实现科技增长, 而具体增长的数值算法为, 假设一次性的科技点收益为 <code>X</code>, 当前游戏年份为 <code>CY</code>, 游戏总时长为 <code>TY</code>, 其中的 CY 既 CurrentYear, TY 既 TotalYear, TY 在对战模式下默认值为 <code>3000</code>, 如果 CY 没到 TY 的 <code>1/2</code>, 既 <code>1500</code> 年内, 则科技增长点为 <code>向上取整(X ÷ (0.9 × TY - CY))</code>, 如果当前年份为 <code>0.5×TY <= CY < 0.7×TY</code>, 既 <code>1500 ~ 2100</code> 年内, 则科技增长点为 <code>向上取整((X + 1250) ÷ (TY - CY))</code>, 只要年份未超过 <code>2100</code> 且科技增长大于 <code>0</code>, 就会显示弹窗(理论上最小值为 1), 否则就只有一次性的科技点收益, 没科技增长的选项了;</p>
+
+<p>15. 实力差距: 玩家的实力差距被分为了[卑如蝼蚁/略显弱小/难分伯仲/略显强大/宛如天神]总共五个档次, 在每局游戏中, 玩家都有个动态的强度分数值, 算法为 <code>殖民地数量×殖民地系数 + 资源产出×资源产出系数 + 凝聚力×凝聚力系数 + 军事基地数量×军事基地系数</code>, 算法中提到的 <code>4</code> 个系数, 依次分别为 <code>300/1/3/100</code>, 在算出结果后系统会对其进行比较, 算法为 <code>Rate = 对方分数 ÷ 我方分数</code>, 如果 <code>Rate >= 5</code>, 那实力差距就是"宛如天神", 如果 <code>2 <= Rate < 5</code>, 那实力差距就是"略显强大", 如果 <code>0.5 <= Rate < 2</code>, 那实力差距就是"难分伯仲", 如果 <code>0.2 <= Rate < 0.5</code>, 那实力差距就是"略显弱小", 如果 <code>Rate < 0.2</code>, 那实力差距就是"卑如蝼蚁", 以上所展示的都是敌人对我方而言的状态, 如果公式换成 <code>Rate = 我方分数 ÷ 对方分数</code>, 那么得到的结果就是我方对敌人而言的状态;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+
+.typeFlex{display:flex;justify-content:space-between;align-items:stretch;}
+.typeFlex > .typeWrap{flex:0 1 auto;display:inline-flex;flex-wrap:wrap;min-height:48px;font-size:12px;line-height:1;}
+.typeFlex > .typeWrap > span{flex:0 1 auto;display:inline-flex;justify-content:center;align-items:center;padding:0 2px;box-shadow:0 0 0 1px #ccc inset;cursor:pointer;}
+.typeFlex > .typeWrap > span:hover{box-shadow:0 0 0 1px #e6e6e6 inset;position:relative;z-index:1;}
+.typeFlex > .typeWrap > span.typeActive{background-color:#f0f0f0;}
+
+/*
+html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr).tr-active:hover{box-shadow: 68px 0 8px #f5f5f5 inset, 68px 0 8px rgba(0, 0, 0, 0.125) inset, 0px 0 8px rgba(0, 0, 0, 0.125) inset;}
+html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr):not(.tr-active):hover{box-shadow: 68px 0 8px #ffffff inset, 68px 0 8px rgba(0, 0, 0, 0.125) inset, 0px 0 8px rgba(0, 0, 0, 0.125) inset;}
+*/
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* ◆◆将原始文本也作为注释, 这样后续搜索的时候也可以被检索出来◆◆ */
+
+/* 数据注解
+
+不改变数据的水平排版内容, 这样方便后续更新, 但是可以用回车制造空行进行分割, 甚至上下调整数据位置
+如果判断到是空数组, 那就改变高亮的 flag 参数, 这样也能自动设置高亮, 就无需另外单独设置高亮内容了
+
+这个页面的表格还通过 rowSpan 属性合并了第一个 td 中相同的图片, 以及动态设置 tr-active 高亮的功能
+这得益于有相同的属性(科技名称), 如果没这种同类项属性存在, 就得依靠空行来切割群组, 设成 tr 的属性
+
+————
+
+科技树表格不在 Table, 而是位于 Assets\Resources\Text\Table\Remote\TechTree, 同组科技将按表格分类
+科技所属的[大类/小类/前提], 由科技树的[TechTree/Group/Necessary]属性控制, 这部分的数据需另行处理
+
+以下八个文件其实并没有被用到, 但也必须做出来防止后续需要查询
+它们有部分科技与后面重复, 所以放在前面, 可被后面的布尔覆盖掉
+{name:'管理', 		path:'Administration.csv', },
+{name:'狂热', 		path:'Extreme.csv', },
+{name:'探索', 		path:'Scan_Advanced.csv', },
+{name:'清理', 		path:'Exterminate_Advanced.csv', },
+{name:'中继', 		path:'Build_Advanced.csv', },
+{name:'文明', 		path:'CivilizationTechTree.csv', },
+{name:'科技大类', 	path:'TotalTechGroup.csv', },
+{name:'旧版尚武', 	path:'militarism.csv', },
+
+————
+
+科技Buff.csv 文件中目前有 592 条数据, 但并非每一条数据都有用, 有一部分被废弃, 还有部分是文明特性
+具体哪些被用到, 还得看这条数据是否存在于 TechTree 中(358 条数据), 所以 csv0 数据还得筛选才能使用
+
+04: Level 属性 > 旧版科技中, 科技具有等级区分, 相关逻辑已不再使用
+07: Condition 属性 > 旧版科技中, 用于表示科技的解锁条件, 相关逻辑已不再使用
+08: ResourceCost 属性 > 旧版科技中, 代表解锁需要消耗的资源, 相关逻辑已不再使用
+05: BaseTrigger 属性 > 旧版科技中, 不同科技可能通过不同的触发器获得, 相关逻辑已不再使用
+09: Weight 属性 > 旧版科技中, 该属性用于设置科技权重, 但现在改用 WeightReduce, 相关逻辑已经被废弃
+
+科技Buff.csv 的文件中还有 TechGroup 和 TechBuffConfig 的数据, 但是这两部分的数据并不需要做成表格
+其中的 TechBuffConfig 是科技点增加的相关参数, 被做成"科技增长", TechGroup 则被放在最后的额外拓展
+
+————
+
+科技Buff.csv 文件中 TechBuffConfig 分表, 其中的 Reduce, 是概率衰减, 既每次触发后下次再触发的概率
+其中的 Type, 为 0 时直接结算, 如果不为 0, 当获得科技点超过阈值时, 会弹出"增加科技增长"的选项事件
+其中的 MinPoint/MaxPoint, 有些情况下就是收益的范围值, 但有特殊算法的时候, 就只是最后添加的随机值
+这个表中不是每一行数据都有效, 例如 Init/TechnologyExplosion 这两行就没有意义, 只有中间的七行有效
+
+*/
+
+// csvN数据
+let csv0 = (`//Remote/TechBuff,//Name,Affect,TechPointCost,Level,BaseTrigger,Type,Condition,ResourceCost,Weight,WeightReduce,State,//计算方法
+
+//-- 发展(101)
+
+100010,大型钻机,FactoryExtraOutputAddRate:10,350,1//Normal,Tree,1//,,0,1,1,,增加值
+100020,极纯精炼设施,FactoryExtraOutputAddRate:25,900,1//Normal,Tree,1//,,0,1,2,,增加值
+100030,物质合成,FactoryExtraOutputAddRate:50,1500,1//Normal,Tree,1//,,0,1,3,,增加值
+
+100040,矿物存储,EnableBuilding:4,200,1//Normal,Tree,1//,,0,1,4,,指定ID
+
+100050,资源再利用,PlayerExtraOutputAdd:10,100,1//Normal,Tree,1//,,0,1,5,,增加值
+100051,资源回收运动,PlayerExtraOutputAdd:20,300,1//Normal,Tree,1//,,0,1,5,,增加值
+100060,财产公有制,PlayerExtraOutputAdd:40,900,1//Normal,Tree,1//,,0,1,6,,增加值
+100061,物质循环,PlayerExtraOutputAdd:60,1500,1//Normal,Tree,1//,,0,1,6,,增加值
+100070,物质合成,PlayerExtraOutputAdd:100,2500,1//Normal,Tree,1//,,0,1,7,,增加值
+100071,逆聚变技术,PlayerExtraOutputAdd:150,6000,1//Normal,Tree,1//,,0,1,7,,增加值
+
+100080,环境保护,SetOvermingReduce:1,100,1//Normal,Tree,1//,,0,1,8,,减少值
+100090,气候恢复,SetOvermingReduce:1,500,1//Normal,Tree,1//,,0,1,9,,减少值
+100100,生态创造,SetOvermingReduce:1,800,1//Normal,Tree,1//,,0,1,10,,减少值
+
+100110,地壳冲压采集,PlayerResourceAdd:5000,200,1//Normal,Tree,1//,,0,1,11,,增加值
+100120,地幔冲压采集,PlayerResourceAdd:5000,200,1//Normal,Tree,1//,,0,1,12,,增加值
+100130,地核冲压采集,PlayerResourceAdd:5000,600,1//Normal,Tree,1//,,0,1,13,,增加值
+100140,深空政府管理,PlayerResourceAdd:10000,1200,1//Normal,Tree,1//,,0,1,14,,增加值
+100150,逆裂变过程,PlayerResourceAdd:20000,1800,1//Normal,Tree,1//,,0,1,15,,增加值
+
+101170,超结构材料,AllBuildingTimeCostAddRate:-20,800,1//Normal,Tree,1//,,0,1,88,,乘以(100+x)%
+101180,模板化建造,AllBuildingTimeCostAddRate:-30,2000,1//Normal,Tree,1//,,0,1,89,,乘以(100+x)%
+101190,自复制体系,AllBuildingTimeCostAddRate:-40,4000,1//Normal,Tree,1//,,0,1,90,,乘以(100+x)%
+
+//-- 进阶发展(102)
+
+100160,恒星资源利用,EnableBuilding:5,1000,1//Normal,Tree,1//,,0,1,16,,指定ID
+
+100170,太空子民,EnableBuilding:6,1800,1//Normal,Tree,1//,,0,1,17,,指定ID
+
+100180,粒子重塑,EnableBuilding:13&FactoryExtraOutputAtBuff:1013_100,600,1//Normal,Tree,1//,,0,1,18,,增加值
+
+100190,视界观测,EnableBuilding:14&FactoryExtraOutputAtBuff:1012_100,1200,1//Normal,Tree,1//,,0,1,19,,增加值
+
+100200,零号元素提取,NextBuildingResourceRate:5_0_1,300,1//Normal,Tree,1//,,0,1,20,,乘以百分比0%
+
+//-- 军事(104)
+
+100340,高效军事ai,BuildingCdAddRate:1_-10,300,1//Normal,Tree,1//,,0,1,34,,乘以(100+x)%
+100350,知性军事ai,BuildingCdAddRate:1_-16,800,1//Normal,Tree,1//,,0,1,35,,乘以(100+x)%
+100360,理性军事ai,BuildingCdAddRate:1_-24,2000,1//Normal,Tree,1//,,0,1,36,,乘以(100+x)%
+100370,感性军事ai,BuildingCdAddRate:1_-40,6000,1//Normal,Tree,1//,,0,1,37,,乘以(100+x)%
+
+100380,星际作战理论,AddFleetCount:1,600,1//Normal,Tree,1//,,0,1,38,,增加值
+100390,空间作战学说,AddFleetCount:1,2100,1//Normal,Tree,1//,,0,1,39,,增加值
+100400,机动作战学说,AddFleetCount:1,3500,1//Normal,Tree,1//,,0,1,40,,增加值
+100410,跨星系作战学说,AddFleetCount:1,6000,1//Normal,Tree,1//,,0,1,41,,增加值
+
+100420,合金材料,AddFleetHp:100,3000,1//Normal,Tree,1//,,0,1,42,,增加值
+100430,纳米钢材料,AddFleetHp:100,2100,1//Normal,Tree,1//,,0,1,43,,增加值
+100440,中子装甲,AddFleetHp:100,600,1//Normal,Tree,1//,,0,1,44,,增加值
+
+100450,非工质引擎,AddFleetAvoidance:10,300,1//Normal,Tree,1//,,0,1,45,,增加值
+100460,离子引擎,AddFleetAvoidance:10,900,1//Normal,Tree,1//,,0,1,46,,增加值
+100470,反物质动力,AddFleetAvoidance:15,2100,1//Normal,Tree,1//,,0,1,47,,增加值
+100480,简易曲率引擎,AddFleetAvoidance:15,3000,1//Normal,Tree,1//,,0,1,48,,增加值
+
+100490,军事平台,EnableBuilding:11&AddFleetLocalCount:1,100,1//Normal,Tree,1//,,0,1,49,,增加值
+
+100500,星堡,AddFleetLocalHp:100,200,1//Normal,Tree,1//,,0,1,50,,增加值
+100510,要塞,AddFleetLocalAvoidance:10,400,1//Normal,Tree,1//,,0,1,51,,增加值
+100520,棱堡,AddFleetLocalCount:1,1200,1//Normal,Tree,1//,,0,1,52,,增加值
+
+100521,黑域装置,EnableBuilding:16,300,1//Normal,Tree,1//,,0,1,52,,解锁建筑
+
+101010,军用速度: 前进二,WeaponTimeAddRate:0_-5,100,1//Normal,Tree,1//,,0,1,76,,乘以(100+x)%
+101011,军用配件: 加速过载,WeaponTimeAddRate:0_-5,200,1//Normal,Tree,1//,,0,1,76,,乘以(100+x)%
+101020,军用速度: 前进三,WeaponTimeAddRate:0_-10,300,1//Normal,Tree,1//,,0,1,77,,乘以(100+x)%
+101021,军用配件: 减压舱,WeaponTimeAddRate:0_-16,500,1//Normal,Tree,1//,,0,1,77,,乘以(100+x)%
+101030,军用速度: 前进四,WeaponTimeAddRate:0_-24,1500,1//Normal,Tree,1//,,0,1,78,,乘以(100+x)%
+101031,军用配件: 深海液,WeaponTimeAddRate:0_-30,3500,1//Normal,Tree,1//,,0,1,78,,乘以(100+x)%
+
+//-- 进阶军事(105)
+
+100530,巨型质量物体,EnableWeapon:1,1800,1//Normal,Tree,1//,,0,1,53,,指定ID
+
+100570,奇点效应1,NextWeaponTimeCostRate:1_10_1,100,1//Normal,Tree,1//,,0,1,57,,乘以百分比0%
+100580,奇点效应2,NextWeaponTimeCostRate:1_10_1,300,1//Normal,Tree,1//,,0,1,58,,乘以百分比0%
+100581,奇点效应3,NextWeaponTimeCostRate:1_10_1,1000,1//Normal,Tree,1//,,0,1,58,,乘以百分比0%
+100582,奇点效应4,NextWeaponTimeCostRate:1_10_1,1500,1//Normal,Tree,1//,,0,1,58,,乘以百分比0%
+
+101040,奇点物质提取,WeaponTimeAddRate:1_-4,300,1//Normal,Tree,1//,,0,1,79,,乘以(100+x)%
+101041,奇点物质提取2,WeaponTimeAddRate:1_-8,800,1//Normal,Tree,1//,,0,1,79,,乘以(100+x)%
+101050,低维展开实验,WeaponTimeAddRate:1_-10,1200,1//Normal,Tree,1//,,0,1,80,,乘以(100+x)%
+101051,低维展开实验2,WeaponTimeAddRate:1_-16,2250,1//Normal,Tree,1//,,0,1,80,,乘以(100+x)%
+101060,高维展开实验,WeaponTimeAddRate:1_-24,4500,1//Normal,Tree,1//,,0,1,81,,乘以(100+x)%
+101061,高维展开实验2,WeaponTimeAddRate:1_-33,8400,1//Normal,Tree,1//,,0,1,81,,乘以(100+x)%
+
+100540,光速临界,EnableWeapon:2,6000,1//Normal,Tree,1//,,0,1,54,,指定ID
+
+100590,质量效应1,NextWeaponResourceCostRate:2_1_1,400,1//Normal,Tree,1//,,0,1,59,,乘以百分比0%
+100600,质量效应2,NextWeaponResourceCostRate:2_1_1,800,1//Normal,Tree,1//,,0,1,60,,乘以百分比0%
+100601,质量效应3,NextWeaponResourceCostRate:2_1_1,1200,1//Normal,Tree,1//,,0,1,60,,乘以百分比0%
+100602,质量效应4,NextWeaponResourceCostRate:2_1_1,1800,1//Normal,Tree,1//,,0,1,60,,乘以百分比0%
+
+101070,大型加速器,WeaponResourceCostAddRate:2_-4,240,1//Normal,Tree,1//,,0,1,82,,乘以(100+x)%
+101071,大型加速器2,WeaponResourceCostAddRate:2_-8,600,1//Normal,Tree,1//,,0,1,82,,乘以(100+x)%
+101080,环球加速器,WeaponResourceCostAddRate:2_-10,1000,1//Normal,Tree,1//,,0,1,83,,乘以(100+x)%
+101081,环球加速器2,WeaponResourceCostAddRate:2_-16,2000,1//Normal,Tree,1//,,0,1,83,,乘以(100+x)%
+101090,环日加速器,WeaponResourceCostAddRate:2_-24,4500,1//Normal,Tree,1//,,0,1,84,,乘以(100+x)%
+101091,环日加速器2,WeaponResourceCostAddRate:2_-33,10000,1//Normal,Tree,1//,,0,1,84,,乘以(100+x)%
+
+101200,绝对防御,EnableBuilding:202,2700,1//Normal,Tree,1//,,0,1,61,,乘以百分比0%
+
+101210,低维跌落,EnableBuilding:203,500,1//Normal,Tree,1//,,0,1,61,,乘以百分比0%
+
+//-- 扩张(107)
+
+100230,宇宙社会学,PlayerCohesionAdd:5,200,1//Normal,Tree,1//,,0,1,23,,增加值
+100240,宇宙社会学2,PlayerCohesionAdd:5,400,1//Normal,Tree,1//,,0,1,10,,增加值
+100250,总体战思想,PlayerCohesionAdd:10,1000,1//Normal,Tree,1//,,0,1,15,,增加值
+100260,移民主义,PlayerCohesionAdd:20,2400,1//Normal,Tree,1//,,0,1,26,,增加值
+100270,民族主义动员,PlayerCohesionAdd:40,5000,1//Normal,Tree,1//,,0,1,27,,增加值
+
+100310,民主制度,BuildingAddCohesion:3_1,100,1//Normal,Tree,1//,,0,1,31,,增加值
+100320,民主制度2,BuildingAddCohesion:3_2,300,1//Normal,Tree,1//,,0,1,32,,增加值
+100330,民主制度3,BuildingAddCohesion:3_5,1350,1//Normal,Tree,1//,,0,1,33,,增加值
+
+100680,商业移民船,BuildingCdAddRate:2_-5,100,1//Normal,Tree,1//,,0,1,68,,乘以(100+x)%
+100681,大型移民船,BuildingCdAddRate:2_-7,200,1//Normal,Tree,1//,,0,1,68,,乘以(100+x)%
+100690,巨型移民船,BuildingCdAddRate:2_-8,400,1//Normal,Tree,1//,,0,1,69,,乘以(100+x)%
+100691,模版化太空建设,BuildingCdAddRate:2_-10,900,1//Normal,Tree,1//,,0,1,69,,乘以(100+x)%
+100700,模版化太空建设2,BuildingCdAddRate:2_-10,1500,1//Normal,Tree,1//,,0,1,70,,乘以(100+x)%
+100701,星门调协,BuildingCdAddRate:2_-20,2500,1//Normal,Tree,1//,,0,1,70,,乘以(100+x)%
+100702,星门建造,BuildingCdAddRate:2_-25,5000,1//Normal,Tree,1//,,0,1,70,,乘以(100+x)%
+
+100710,总督制度,ColonizeCohesionCostAddRate:-10,300,1//Normal,Tree,1//,,0,1,71,,乘以(100+x)%
+100720,总督制度2,ColonizeCohesionCostAddRate:-20,1200,1//Normal,Tree,1//,,0,1,72,,乘以(100+x)%
+100730,总督制度3,ColonizeCohesionCostAddRate:-30,3000,1//Normal,Tree,1//,,0,1,73,,乘以(100+x)%
+
+101101,民用速度: 前进二,CommandTimeAddRate:102_-5,100,1//Normal,Tree,1//,,0,1,85,,乘以(100+x)%
+101110,民用配件: 加速过载,CommandTimeAddRate:102_-10,200,1//Normal,Tree,1//,,0,1,86,,乘以(100+x)%
+101111,民用速度: 前进三,CommandTimeAddRate:102_-15,400,1//Normal,Tree,1//,,0,1,86,,乘以(100+x)%
+101120,民用配件: 减压舱,CommandTimeAddRate:102_-20,900,1//Normal,Tree,1//,,0,1,87,,乘以(100+x)%
+101121,民用速度: 前进四,CommandTimeAddRate:102_-24,1600,1//Normal,Tree,1//,,0,1,87,,乘以(100+x)%
+101122,民用配件: 深海液,CommandTimeAddRate:102_-25,3000,1//Normal,Tree,1//,,0,1,87,,乘以(100+x)%
+
+//-- 压力(120)
+
+101301,救济制度1,PopulationReduce:2000,100,1,Tree,1//,,0,1,0,,消耗品
+101302,救济制度2,PopulationReduce:3000,200,1,Tree,1//,,0,1,0,,消耗品
+101303,救济制度3,PopulationReduce:5000,500,1,Tree,1//,,0,1,0,,消耗品
+101304,救济制度4,PopulationReduce:8000,1000,1,Tree,1//,,0,1,0,,消耗品
+101305,救济制度5,PopulationReduce:10000,1350,1,Tree,1//,,0,1,0,,消耗品
+
+101306,生育控制,PopulationAddReduce:8,500,1,Tree,1//,,0,1,0,,减少值
+101307,退休政策,PopulationAddReduce:15,1200,1,Tree,1//,,0,1,0,,减少值
+101308,福利改革,PopulationAddReduce:25,2000,1,Tree,1//,,0,1,0,,减少值
+
+101309,因地制宜,ReclaimTimeRateReduce:20,100,1,Tree,1//,,0,1,0,,乘以(100-x)%
+101310,联排房屋建造,ReclaimTimeRateReduce:30,200,1,Tree,1//,,0,1,0,,乘以(100-x)%
+101311,模板化住宅,ReclaimTimeRateReduce:40,300,1,Tree,1//,,0,1,0,,乘以(100-x)% -> 80%
+
+101312,复合型住宅,ReclaimExtraRelease:15,350,1,Tree,1//,,0,1,0,,乘以(100+x)%
+101313,超深住宅,ReclaimExtraRelease:25,650,1,Tree,1//,,0,1,0,,乘以(100+x)%
+101314,穹顶式城市,ReclaimExtraRelease:50,1200,1,Tree,1//,,0,1,0,,乘以(100+x)% -> 60%
+
+101315,改善逃难者营,ReceiveRefugeeReduceRate:50,750,1,Tree,1//,,0,1,0,,乘以x%
+
+//-- 探索(134)
+
+100640,四维碎片探测,CommandTimeAddRate:101_-20,100,1//Normal,Tree,1//,,0,1,64,,乘以(100+x)%
+100650,高维碎片探测,CommandTimeAddRate:101_-25,200,1//Normal,Tree,1//,,0,1,65,,乘以(100+x)%
+100660,量子共轭,CommandTimeAddRate:101_-50,800,1//Normal,Tree,1//,,0,1,66,,乘以(100+x)%
+
+101130,快子传感器,ScanAddRate:25,100,1//Normal,Tree,1//,,0,1,88,,乘以(100+x)%
+101140,速子传感器,ScanAddRate:30,400,1//Normal,Tree,1//,,0,1,89,,乘以(100+x)%
+101150,强子传感器,ScanAddRate:40,800,1//Normal,Tree,1//,,0,1,90,,乘以(100+x)%
+101160,亚空间传感器,ScanAddRate:75,1800,1//Normal,Tree,1//,,0,1,91,,乘以(100+x)%
+
+101431,星辰监测,CommandResourceAddRate:109_-15,200,1,Tree,1//,,0,1,0,,乘以(100+x)%
+101432,油膜物质,CommandResourceAddRate:109_-20,500,1,Tree,1//,,0,1,0,,乘以(100+x)%
+101433,力场监控,CommandResourceAddRate:109_-24,1000,1,Tree,1//,,0,1,0,,乘以(100+x)%
+
+101161,探险队,CommandTimeAddRate:109_-10,100,1//Normal,Tree,1//,,0,1,88,,乘以(100+x)%
+101162,高级探险队,CommandTimeAddRate:109_-10,400,1//Normal,Tree,1//,,0,1,89,,乘以(100+x)%
+101163,科考船,CommandTimeAddRate:109_-20,800,1//Normal,Tree,1//,,0,1,90,,乘以(100+x)%
+101164,高级科考船,CommandTimeAddRate:109_-20,1800,1//Normal,Tree,1//,,0,1,91,,乘以(100+x)%
+
+101430,扫描传感,CommandMakeArea:109_10,1200,1,Tree,1//,,0,1,0,,buff
+
+//-- 情报(135)
+
+101434,基层渗透,AddDiplomacyActionTimeChange:24_-10,300,1,Tree,1//,,0,1,0,,//情报网时间
+101435,管理层渗透,AddDiplomacyActionTimeChange:24_-12,800,1,Tree,1//,,0,1,0,,//情报网时间
+101436,领导层渗透,AddDiplomacyActionTimeChange:24_-15,1200,1,Tree,1//,,0,1,0,,//情报网时间
+
+101437,基层线人,AddDiplomacyActionTimeChange:2_-2,100,1,Tree,1//,,0,1,0,,//情报收集时间
+101438,中级间谍,AddDiplomacyActionTimeChange:2_-3,300,1,Tree,1//,,0,1,0,,//情报收集时间
+101439,王牌特工,AddDiplomacyActionTimeChange:2_-4,600,1,Tree,1//,,0,1,0,,//情报收集时间
+
+101442,知情人灭口,AddDiplomacyActionExposureRate:24_-33,500,1,Tree,1//,,0,1,0,,//间谍网暴露概率
+101443,记忆删除,AddDiplomacyActionExposureRate:24_-33,200,1,Tree,1//,,0,1,0,,//间谍网暴露概率
+101444,记忆伪造,AddDiplomacyActionExposureRate:24_-33,100,1,Tree,1//,,0,1,0,,//间谍网暴露概率
+
+101446,暴力破解,AddDiplomacyActionSuccessRate:25_16,300,1,Tree,1//,,0,1,0,,//刺探移民地成功率
+101447,密钥备份,AddDiplomacyActionSuccessRate:25_20,750,1,Tree,1//,,0,1,0,,//刺探移民地成功率
+101448,量子解锁,AddDiplomacyActionSuccessRate:25_24,1000,1,Tree,1//,,0,1,0,,//刺探移民地成功率
+
+101449,价值观输出,AddDiplomacyActionSuccessRate:26_10,300,1,Tree,1//,,0,1,0,,//文化入侵成功率
+101450,公知培养,AddDiplomacyActionSuccessRate:26_18,800,1,Tree,1//,,0,1,0,,//文化入侵成功率
+101451,舆论控制,AddDiplomacyActionSuccessRate:26_20,1500,1,Tree,1//,,0,1,0,,//文化入侵成功率
+
+101445,证据格式化,AddDiplomacyActionExposureRate:2_-100,200,1,Tree,1//,,0,1,0,,//情报收集暴露概率
+
+101440,资料销毁,AddDiplomacyActionExposureRate:25_-100,300,1,Tree,1//,,0,1,0,,//刺探移民地暴露概率
+
+101441,单向线人,AddDiplomacyActionExposureRate:26_-100,300,1,Tree,1//,,0,1,0,,//文化入侵暴露概率
+
+//-- 隐藏(133)
+
+100610,全频静默,EnableBuilding:9,300,1//Normal,Tree,1//,,0,1,61,,增加值
+
+100611,全频静默1,ShieldingDeviceEffectAdd:5,100,1//Normal,Tree,1//,,0,1,61,,增加值
+100612,全频静默2,ShieldingDeviceEffectAdd:10,400,1//Normal,Tree,1//,,0,1,61,,增加值
+100613,全频静默3,ShieldingDeviceEffectAdd:20,800,1//Normal,Tree,1//,,0,1,61,,增加值
+100614,全频静默4,ShieldingDeviceEffectAdd:50,2000,1//Normal,Tree,1//,,0,1,61,,增加值
+
+100300,军事管制,BuildingNoiseAddRate:1_-100&BuildingNoiseAddRate:2_-100&BuildingNoiseAddRate:11_-100,600,1//Normal,Tree,1//,,0,1,30,,乘以(100+x)%
+
+100280,自动化工厂,BuildingNoiseAddRate:10_-100&BuildingNoiseAddRate:13_-100&BuildingNoiseAddRate:14_-100,600,1//Normal,Tree,1//,,0,1,28,,乘以(100+x)%
+
+100290,穹顶式居住区,BuildingNoiseAddRate:3_-100&BuildingNoiseAddRate:12_-100&BuildingNoiseAddRate:15_-100,600,1//Normal,Tree,1//,,0,1,29,,乘以(100+x)%
+
+100630,暗物质研究,HideGalaxyBuff:7004,1500,1//Normal,Tree,1//,,0,1,63,,指定ID
+
+100620,信号散射,NextCommandDontExpose:101_9999,200,1//Normal,Tree,1//,,0,1,62,,指定ID和次数
+
+//-- 暴露(136)
+
+101627,降低暴露率 I,ReduceExposureRate:10,100,1,Tree,1,,0,1,0,,当前暴露率*(100-x)%
+101628,降低暴露率 II,ReduceExposureRate:20,500,1,Tree,1,,0,1,0,,当前暴露率*(100-x)%
+101629,降低暴露率 III,ReduceExposureRate:40,1000,1,Tree,1,,0,1,0,,当前暴露率*(100-x)%
+
+101630,清除暴露率 I,ClearBroadcastExposureRate,100,1,Tree,1,,0,1,0,,直接清除广播造成的暴露率
+101631,清除暴露率 II,ClearBroadcastExposureRate,300,1,Tree,1,,0,1,0,,直接清除广播造成的暴露率
+101632,清除暴露率 III,ClearBroadcastExposureRate,500,1,Tree,1,,0,1,0,,直接清除广播造成的暴露率
+
+101637,增加被打击概率,AddBroadcastGalaxyBeatedRate:5,300,1,Tree,1,,0,1,0,,增加
+101638,增加被打击概率,AddBroadcastGalaxyBeatedRate:10,900,1,Tree,1,,0,1,0,,增加
+101639,增加被打击概率,AddBroadcastGalaxyBeatedRate:15,2000,1,Tree,1,,0,1,0,,增加
+
+101640,清除航迹 I,ClearLeapExposureRate,100,1,Tree,1,,0,1,0,,直接清除折跃播造成的暴露率
+101641,清除航迹 II,ClearLeapExposureRate,300,1,Tree,1,,0,1,0,,直接清除折跃播造成的暴露率
+101642,清除航迹 III,ClearLeapExposureRate,500,1,Tree,1,,0,1,0,,直接清除折跃播造成的暴露率
+
+101633,减少广播冷却 I,ReduceWeaponCD:5_5,200,1,Tree,1,,0,1,0,,减少
+101634,减少广播冷却 II,ReduceWeaponCD:5_10,600,1,Tree,1,,0,1,0,,减少
+101635,减少广播冷却 III,ReduceWeaponCD:5_15,1000,1,Tree,1,,0,1,0,,减少
+101636,减少广播冷却 IV,ReduceWeaponCD:5_25,2000,1,Tree,1,,0,1,0,,减少
+
+101644,大功率广播,AddBeatedRateIfHasBuff:5006_20,600,1,Tree,1,,0,1,0,,增加值
+
+101643,脉冲星利用,,600,1,Tree,1,,0,1,0,,可以利用脉冲星发出广播
+
+//-- 物质(110)
+
+101225,启蒙运动,CommunicateTechPointRateAdd:20,800,1,Tree,110,,0,1,96,,乘以(100+x)%
+
+101220,科研传统,BuildingAddCohesion:12_2,400,1,Tree,110,,0,1,91,,增加值
+101221,学阀统治,BuildingAddCohesion:12_4,1500,1,Tree,110,,0,1,92,,增加值
+
+101222,学习运动,PlayerTechPointOutputAdd:1,500,1,Tree,110,,0,1,93,,增加值
+101223,教育运动,PlayerTechPointOutputAdd:1,800,1,Tree,110,,0,1,94,,增加值
+101224,科研津贴,PlayerTechPointOutputAdd:1,1200,1,Tree,110,,0,1,95,,增加值
+
+101226,巨型科学枢纽,EnableBuilding:204,1000,1,Tree,110,,0,1,97,,指定ID
+
+101227,科技窃取,UnlockDiplomacyAction:6,1000,1,Tree,110,,0,1,98,,指定ID
+
+101228,技术封锁,UnlockDiplomacyAction:7,100,1,Tree,110,,0,1,99,,指定ID
+
+//-- 特殊物质(122)
+
+101330,窥视深渊1,GetTechPoint:500&PopulationReduce:-10000,50,1,Tree,122,,0,1,0,,buff
+101331,窥视深渊2,GetTechPoint:1000&PopulationReduce:-25000,50,1,Tree,122,,0,1,0,,buff
+101332,窥视深渊3,GetTechPoint:2000&PopulationReduce:-50000,50,1,Tree,122,,0,1,0,,buff
+
+101333,朝闻道1,PlayerTechPointOutputAdd:1&PlayerCohesionAdd:-6,300,1,Tree,122,,0,1,0,,buff
+101334,朝闻道2,PlayerTechPointOutputAdd:1&PlayerCohesionAdd:-18,300,1,Tree,122,,0,1,0,,buff
+101335,朝闻道3,PlayerTechPointOutputAdd:2&PlayerCohesionAdd:-40,300,1,Tree,122,,0,1,0,,buff
+
+101336,黑洞观测,EnableBuilding:223,1000,1,Tree,122,,0,1,0,,解锁建筑
+
+101337,恒星观测,EnableBuilding:224,1000,1,Tree,122,,0,1,0,,解锁建筑
+
+101338,虚空观测,EnableBuilding:225,1000,1,Tree,122,,0,1,0,,解锁建筑
+
+101339,零点聚爆弹,EnableWeapon:7,2000,1,Tree,122,,0,1,0,,解锁武器
+
+//-- 精神(111)
+
+101230,奇迹,EnableBuilding:206,2000,1,Tree,111,,0,1,101,,指定ID
+
+101229,神殿,EnableBuilding:205,200,1,Tree,111,,0,1,100,,指定ID
+
+101231,弥撒,PlayerCohesionAdd:5,200,1,Tree,111,,0,1,102,,增加值
+101232,朝圣,PlayerCohesionAdd:8,500,1,Tree,111,,0,1,103,,增加值
+101233,封圣,PlayerCohesionAdd:12,900,1,Tree,111,,0,1,104,,增加值
+
+101234,布道,UnlockDiplomacyAction:8,1200,1,Tree,111,,0,1,105,,指定ID
+
+101235,圣战,UnlockDiplomacyAction:9,500,1,Tree,111,,0,1,106,,指定ID
+
+101236,殉教,ExchangeCohesion:1_100,50,1,Tree,111,,0,1,107,,指定ID
+
+//-- 特殊精神(123)
+
+100550,量子引擎,NextWeaponTimeCostRate:0_0_1,200,1//Normal,Tree,1//,,0,1,55,,乘以百分比0%
+100560,折跃效应,NextWeaponTimeCostRate:0_0_1,500,1//Normal,Tree,1//,,0,1,56,,乘以百分比0%
+
+101347,灵能引擎1,AddFleetAvoidance:5,800,1,Tree,123,,0,1,0,,buff
+101348,灵能引擎2,AddFleetAvoidance:5,1000,1,Tree,123,,0,1,0,,buff
+
+101343,礼拜1,BuildingAddCohesion:15_3,200,1,Tree,123,,0,1,0,,buff
+101344,礼拜2,BuildingAddCohesion:15_5,500,1,Tree,123,,0,1,0,,buff
+101345,礼拜3,BuildingAddCohesion:15_8,800,1,Tree,123,,0,1,0,,buff
+
+101340,探知真理1,PlayerCohesionAdd:20&PlayerTechPointOutputAdd:-1,50,1,Tree,123,,0,1,0,,buff
+101341,探知真理2,PlayerCohesionAdd:25&PlayerTechPointOutputAdd:-1,200,1,Tree,123,,0,1,0,,buff
+101342,探知真理3,PlayerCohesionAdd:36&PlayerTechPointOutputAdd:-1,800,1,Tree,123,,0,1,0,,buff
+
+1013491,大型降灵会,Gamble:20000_30_30_-2&EnableWeapon:15,500,1,Tree,123,,0,1,0,,消耗品
+1013492,遁入虚空,Gamble:40000_60_60_-4&EnableWeapon:15,200,1,Tree,123,,0,1,0,,消耗品
+1013493,邪恶存在,Gamble:60000_80_80_-6&EnableWeapon:15,50,1,Tree,123,,0,1,0,,消耗品
+1013494,轮回之终末,Gamble:60000_80_80_-6&EnableWeapon:15,50,1,Tree,123,,0,1,0,,消耗品
+
+101346,祭坛,EnableBuilding:226,500,1,Tree,123,,0,1,0,,解锁建筑
+
+//-- 尚武(114)
+
+101261,短期战争,FleetWarWinOverPlayerBonus:0_1&WeaponResourceCostAddRate:0_15&AddToCivilBuff,100,1,Tree,114,,0,1,108,,Buff
+101262,长期战争,FleetWarWinOverPlayerBonus:0_1&WeaponResourceCostAddRate:0_30&AddToCivilBuff,800,1,Tree,114,,0,1,108,,Buff
+101263,永远战争,FleetWarWinOverPlayerBonus:0_1&WeaponResourceCostAddRate:0_45&AddToCivilBuff,1500,1,Tree,114,,0,1,108,,Buff
+
+101266,背水一战,AddAbsoluteAttack:1,100,1,Tree,114,,0,1,108,,Buff
+101267,决一死战,AddAbsoluteAttack:1,400,1,Tree,114,,0,1,108,,Buff
+101268,你死我亡,AddAbsoluteAttack:1,1200,1,Tree,114,,0,1,108,,Buff
+
+101259,无敌舰队,InvincibleFleet,1000,1,Tree,114,,0,1,108,,Buff
+
+101260,海盗舰队,PirateBoat:50,250,1,Tree,114,,0,1,108,,Buff
+
+101264,尚武文化,BuildingAddCohesion:1_1&BuildingAddCohesion:11_3,500,1,Tree,114,,0,1,108,,Buff
+
+101265,全民皆兵,EnableBuilding:218&AllSoldiers:25,900,1,Tree,114,,0,1,108,,解锁建筑
+
+//-- 特殊尚武(126)
+
+101386,高吨位驱逐舰,AddFleetHp:100&WeaponTimeAddRate:0_20,2400,1,Tree,126,,0,1,0,,buff
+101387,超大型巡洋舰,AddFleetHp:100&WeaponTimeAddRate:0_30,1300,1,Tree,126,,0,1,0,,buff
+101388,泰坦级战列舰,AddFleetHp:100&WeaponTimeAddRate:0_40,200,1,Tree,126,,0,1,0,,buff
+
+101389,超限战理论,,300,1,Tree,126,,0,1,0,,buff
+
+101390,小型质量弹,EnableWeapon:10,500,1,Tree,126,,0,1,0,,解锁武器
+
+101391,相位裂解炮,EnableWeapon:11,500,1,Tree,126,,0,1,0,,解锁武器
+
+101392,电浆融合雷,EnableWeapon:12,800,1,Tree,126,,0,1,0,,解锁武器
+
+101393,慢中子光矛,EnableWeapon:13,1350,1,Tree,126,,0,1,0,,解锁武器
+
+//-- 和平(115)
+
+101256,众志成城,AddAbsoluteDefence:1,100,1,Tree,115,,0,1,107,,消耗品
+101257,全民动员,AddAbsoluteDefence:1,200,1,Tree,115,,0,1,107,,消耗品
+101258,绝对防御,AddAbsoluteDefence:1,300,1,Tree,115,,0,1,107,,消耗品
+
+101251,短期和平,AddToCivilBuff&PlayerCohesionAdd:5&AttackBlock:200&AddToRemovableCivilBuff:3,50,1,Tree,115,,0,1,107,,Buff
+101252,长期和平,AddToCivilBuff&PlayerCohesionAdd:15&AttackBlock:700&AddToRemovableCivilBuff:6,100,1,Tree,115,,0,1,107,,Buff
+101253,永远和平,AddToCivilBuff&PlayerCohesionAdd:20&AttackBlock:1500&AddToRemovableCivilBuff:9,150,1,Tree,115,,0,1,107,,Buff
+
+101249,永固堡垒,NextBuildingResourceRate:202_0_1,500,1,Tree,115,,0,1,107,,Buff
+
+101254,裁军行动,AddToCivilBuff&DisableBuilding:1,100,1,Tree,115,,0,1,107,,Buff
+
+101255,田园牧歌,EnableBuilding:213,500,1,Tree,115,,0,1,107,,解锁
+
+101250,不落要塞,AddToCivilBuff&EnableRepeatBuild:11,1250,1,Tree,115,,0,1,107,,Buff
+
+//-- 特殊和平(127)
+
+101374,局部动员,AttackBlock:-150,100,1,Tree,127,,0,1,0,,增加值
+101375,全民动员,AttackBlock:-300,250,1,Tree,127,,0,1,0,,增加值
+101376,重返战场,AttackBlock:-800,400,1,Tree,127,,0,1,0,,增加值
+
+101377,休养生息,PopulationAddReduce:5&AttackBlock:300,300,1,Tree,127,,0,1,0,,减少值
+101378,韬光养晦,PopulationAddReduce:10&AttackBlock:700,200,1,Tree,127,,0,1,0,,减少值
+101379,国安民乐,PopulationAddReduce:15&AttackBlock:1500,10,1,Tree,127,,0,1,0,,减少值
+
+101383,守护神系统1,GalaxyManagementDurationAddRate:4_10,100,1,Tree,127,,0,1,0,,消耗品
+101384,守护神系统2,GalaxyManagementDurationAddRate:4_20,900,1,Tree,127,,0,1,0,,消耗品
+101385,守护神系统3,GalaxyManagementDurationAddRate:4_20,1800,1,Tree,127,,0,1,0,,消耗品
+
+101380,退伍行动,PopulationReduce:15000&AddFleetAvoidance:-10,50,1,Tree,127,,0,1,0,,增加值
+101381,卸甲归田,PlayerTechPointOutputAdd:1&AddFleetCount:-1,50,1,Tree,127,,0,1,0,,增加值
+101382,歌舞升平,PlayerCohesionAdd:50&AddFleetHp:-100,50,1,Tree,127,,0,1,0,,增加值
+
+101372,黑洞力场,EnableBuilding:229,1000,1,Tree,127,,0,1,0,,解锁建筑
+
+101373,田园时代,AddToCivilBuff&EnableRepeatBuild:213,2500,1,Tree,127,,0,1,0,,buff
+
+//-- 集中(112)
+
+101237,报道管制,AddToCivilBuff,50,1,Tree,112,,0,1,107,,Buff
+
+101238,首都,EnableBuilding:208,1000,1,Tree,112,,0,1,107,,解锁
+
+101239,战争议事堂,EnableBuilding:215,500,1,Tree,112,,0,1,107,,解锁
+
+101240,帝国空港,EnableBuilding:209,500,1,Tree,112,,0,1,107,,解锁
+
+101241,证券中心,EnableBuilding:207,500,1,Tree,112,,0,1,107,,解锁
+
+101242,大图书馆,EnableBuilding:210,1000,1,Tree,112,,0,1,107,,解锁
+
+//-- 特殊集中(124)
+
+101350,联排房屋,ReclaimExtraRelease:20&ReclaimTimeRateReduce:-25,400,1,Tree,124,,0,1,0,,乘以(100+x)%
+101351,巨型社区,ReclaimExtraRelease:35&ReclaimTimeRateReduce:-40,800,1,Tree,124,,0,1,0,,乘以(100+x)%
+101352,亿万级城市,ReclaimExtraRelease:50&ReclaimTimeRateReduce:-60,1000,1,Tree,124,,0,1,0,,乘以(100+x)%
+
+101353,1984计划,PopulationAddReduce:5&PopulationReduce:-10000,300,1,Tree,124,,0,1,0,,减少值
+101354,监视国度,PopulationAddReduce:10&PopulationReduce:-20000,150,1,Tree,124,,0,1,0,,减少值
+101355,反乌托邦社会,PopulationAddReduce:20&PopulationReduce:-40000,50,1,Tree,124,,0,1,0,,减少值
+
+101356,奴隶工会,EnableBuilding:227,500,1,Tree,124,,0,1,0,,解锁建筑
+
+101357,阶级社会,BuildingAddCohesion:227_10,500,1,Tree,124,,0,1,0,,buff
+
+101358,首都阵列,EnableBuilding:228,1500,1,Tree,124,,0,1,0,,解锁建筑
+
+101359,帝国歼星炮,EnableWeapon:8,750,1,Tree,124,,0,1,0,,解锁武器
+
+//-- 分权(113)
+
+101244,议会,EnableBuilding:212,600,1,Tree,113,,0,1,107,,解锁
+
+101245,外星移民公司,EnableBuilding:217,300,1,Tree,113,,0,1,107,,解锁
+
+101246,战争承包商,EnableBuilding:216,600,1,Tree,113,,0,1,107,,解锁
+
+101243,百家争鸣,AddToCivilBuff,50,1,Tree,113,,0,1,107,,Buff
+
+101248,科学城,EnableBuilding:214,750,1,Tree,113,,0,1,107,,解锁
+
+101247,工会,EnableBuilding:211,100,1,Tree,113,,0,1,107,,解锁
+
+//-- 特殊分权(125)
+
+101361,虚拟社区,PopulationAddReduce:-5&PopulationReduce:10000,300,1,Tree,125,,0,1,0,,减少值
+101362,动物庄园,PopulationAddReduce:-10&PopulationReduce:20000,200,1,Tree,125,,0,1,0,,减少值
+101363,美丽新世界,PopulationAddReduce:-15&PopulationReduce:40000,100,1,Tree,125,,0,1,0,,减少值
+
+101364,移民招标1,NextCommandResourceRate:102_0_2,100,1,Tree,125,,0,1,0,,乘以百分比0%
+101365,移民招标2,NextCommandResourceRate:102_0_2,200,1,Tree,125,,0,1,0,,乘以百分比0%
+101366,移民招标3,NextCommandResourceRate:102_0_2,300,1,Tree,125,,0,1,0,,乘以百分比0%
+
+101367,超空间航道1,NextCommandTimeRate:102_0_1,100,1,Tree,125,,0,1,0,,乘以百分比0%
+101368,超空间航道2,NextCommandTimeRate:102_0_1,200,1,Tree,125,,0,1,0,,乘以百分比0%
+101369,超空间航道3,NextCommandTimeRate:102_0_1,300,1,Tree,125,,0,1,0,,乘以百分比0%
+
+101370,昭昭天命,ColonizeCohesionCostAddRate:-30,1500,1,Tree,125,,0,1,0,,乘以(100+x)%
+
+101360,人道主义,PlayerCohesionAdd:15&ReceiveRefugeeReduceRate:-50,300,1,Tree,125,,0,1,0,,乘以x%
+
+101371,质子灭杀光束,EnableWeapon:9,750,1,Tree,125,,0,1,0,,解锁武器
+
+//-- 亲外(117)
+
+101269,我在这里,SelfBoardcastAddCohesion:3,250,1,Tree,117,,0,1,108,,乘以(100+x)%
+
+101270,银河大同,DiplomacyInteractionMaxLimitAddRate:2_25,800,1,Tree,117,,0,1,108,,Buff
+
+101271,强制交流,AddToCivilBuff,1500,1,Tree,117,,0,1,108,,Buff;功能写在了交流系统里
+
+101272,信标,EnableWeapon:6,1000,1,Tree,117,,0,1,108,,
+
+101273,文化交流,UnlockDiplomacyAction:10,100,1,Tree,117,,0,1,108,,
+
+101274,物种保护,CohesionPerAboriginalGalaxyAdd:5,500,1,Tree,117,,0,1,108,,Buff
+
+//-- 特殊亲外(129)
+
+101394,多元文化,PopulationIncreasePerAboriginalGalaxyAdd:-5,1200,1,Tree,129,,0,1,0,,buff
+
+101397,银河卫士,AddFleetCount:1,1500,1,Tree,129,,0,1,0,ProtectKnownAborigion,buff
+
+101398,终结狂欢,ForceAllBoardcast:500,50,1,Tree,129,,0,1,0,,消耗品
+
+101396,展示欲,EnableBuilding:199&BuildingAddCohesion:199_12,800,1,Tree,129,,0,1,0,,解锁建筑
+
+101395,安全声明,SelfBoardcastAddPopulation:-4000,600,1,Tree,129,,0,1,0,,buff
+
+101399,引力波天线,EnableWeapon:3,3500,1,Tree,129,,0,1,0,,解锁武器
+
+//-- 孤立(116)
+
+101277,闭关锁国,BlockCommunicate,150,1,Tree,116,,0,1,108,,Buff;功能写在了系统里
+
+101278,掩体,EnableBuilding:200,300,1,Tree,116,,0,1,108,,
+
+101275,全频带静默,AddToCivilBuff&BuildingAddCohesion:9_5,500,1,Tree,116,,0,1,108,,Buff
+
+101276,海禁,ColonizeCohesionCostAddRate:100&PlayerCohesionAddIgnoreColonizeCost:100,100,1,Tree,116,,0,1,108,,Buff
+
+101282,种族净化,FleetWarWinOverPlayerBonus:0_2,400,1,Tree,116,,0,1,108,,Buff
+
+101279,星尘遮蔽,RemoveGalaxyFromOthersList,100,1,Tree,116,,0,1,108,,消耗品
+101280,电波屏蔽,RemoveGalaxyFromOthersList,200,1,Tree,116,,0,1,108,,消耗品
+101281,引力透镜,RemoveGalaxyFromOthersList,300,1,Tree,116,,0,1,108,,消耗品
+
+//-- 特殊孤立(128)
+
+1014010,广播屏蔽,AddBroadCastDefence,200,1,Tree,128,,0,1,0,,buff
+1014011,广播屏蔽,AddBroadCastDefence,400,1,Tree,128,,0,1,0,,buff
+1014012,广播屏蔽,AddBroadCastDefence,600,1,Tree,128,,0,1,0,,buff
+
+1014020,广播反射,AddBroadCastReflect,300,1,Tree,128,,0,1,0,,buff
+1014021,广播反射,AddBroadCastReflect,600,1,Tree,128,,0,1,0,,buff
+1014022,广播反射,AddBroadCastReflect,900,1,Tree,128,,0,1,0,,buff
+
+101400,天国王朝,FleetWarWinOverPlayerBonus:4_-3000,900,1,Tree,128,,0,1,0,,buff
+
+101403,回归运动,AddCohesionPerAbandon:10,800,1,Tree,128,,0,1,0,,buff
+
+101404,与世无争,EnableBuilding:233,1000,1,Tree,128,,0,1,0,,解锁建筑
+
+101405,光墓,EnableBuilding:234,1500,1,Tree,128,,0,1,0,,解锁建筑
+
+//-- 生产(119)
+
+101316,巨型工厂,EnableBuilding:219,500,1,Tree,1//,,0,1,0,,解锁建筑
+
+101317,行星钻机,EnableBuilding:220,500,1,Tree,1//,,0,1,0,,解锁建筑
+
+101318,有备无患,BuildingAddCohesion:4_3,300,1,Tree,1//,,0,1,0,,buff
+
+101319,研发基金,AllTrue:20000_2,600,1,Tree,1//,,0,1,0,(!ResourceStoreLessThan:20001)&AddTechIncrease:3,buff
+
+101323,企业国度,FirstTradeGainExtraResource:6000,300,1,Tree,1//,,0,1,0,,buff
+
+101320,贷款津贴,PlayerCohesionAdd:-3&PlayerResourceAdd:6000,100,1,Tree,1//,,0,1,0,,消耗品
+101321,发行国债,PlayerCohesionAdd:-5&PlayerResourceAdd:15000,300,1,Tree,1//,,0,1,0,,消耗品
+101322,量化宽松,PlayerCohesionAdd:-8&PlayerResourceAdd:40000,500,1,Tree,1//,,0,1,0,,消耗品
+
+//-- 特殊生产(131)
+
+101406,竭泽而渔1,PopulationReduce:-3000&PlayerResourceAdd:5000,400,1,Tree,131,,0,1,0,,buff
+101407,竭泽而渔2,PopulationReduce:-6000&PlayerResourceAdd:10000,200,1,Tree,131,,0,1,0,,buff
+101408,竭泽而渔3,PopulationReduce:-1500&PlayerResourceAdd:20000,100,1,Tree,131,,0,1,0,,buff
+
+101409,剥削价值1,PopulationAddReduce:-4&PlayerExtraOutputAdd:20,400,1,Tree,131,,0,1,0,,buff
+101410,剥削价值2,PopulationAddReduce:-8&PlayerExtraOutputAdd:40,200,1,Tree,131,,0,1,0,,buff
+101411,剥削价值3,PopulationAddReduce:-15&PlayerExtraOutputAdd:60,100,1,Tree,131,,0,1,0,,buff
+
+101414,理财公司,BuildingAddResource:4_20,800,1,Tree,131,,0,1,0,,buff
+
+101413,五谷丰登,(!ResourceStoreLessThan:20000)&PlayerPopulationAddReduce:6,800,1,Tree,131,,0,1,0,(!ResourceStoreLessThan:20000)&PlayerPopulationAddReduce:3,buff
+
+101412,虚无装置,EnableBuilding:235,1500,1,Tree,131,,0,1,0,,解锁建筑
+
+101415,结晶流束,AddToCivilBuff,500,1,Tree,131,,0,1,0,,buff
+
+//-- 生态(118)
+
+101324,资源回收,EnableBuilding:221,1500,1,Tree,1//,,0,1,0,,解锁建筑
+
+101325,地貌改造,ObstacleDemolishTimeCostAddRate:-100,500,1,Tree,1//,,0,1,0,,乘以(100+x)%
+
+101326,退耕还林,AllTrue:4,800,1,Tree,1//,,0,1,0,EmptySlotAddCohesion:4,buff
+
+101327,环境控制,EnableBuilding:222,1000,1,Tree,1//,,0,1,0,,解锁建筑
+
+101328,末世新生,GalaxyCohesionRate:1012_-50&GalaxyCohesionRate:1013_-50,1000,1,Tree,1//,,0,1,0,,buff
+
+101329,道法自然,AllTrue:75_-25,600,1,Tree,1//,,0,1,0,ResourceGalaxyCohesionRate:75_-25,buff
+
+//-- 特殊生态(130)
+
+101418,众生平等1,PopulationReduce:-5000&PlayerCohesionAdd:3,50,1,Tree,130,,0,1,0,,buff
+101419,众生平等2,PopulationReduce:-10000&PlayerCohesionAdd:7,50,1,Tree,130,,0,1,0,,
+101420,众生平等3,PopulationReduce:-20000&PlayerCohesionAdd:15,50,1,Tree,130,,0,1,0,,
+
+101422,环保神教1,PopulationAddReduce:-7&PlayerCohesionAdd:10,500,1,Tree,130,,0,1,0,,buff
+101423,环保神教2,PopulationAddReduce:-15&PlayerCohesionAdd:20,200,1,Tree,130,,0,1,0,,buff
+101424,环保神教3,PopulationAddReduce:-25&PlayerCohesionAdd:40,50,1,Tree,130,,0,1,0,,buff
+
+101421,土地回收,DemolitionResourceReduceRate:100,1000,1,Tree,130,,0,1,0,,buff
+
+101416,虚空之环,EnableBuilding:236,2000,1,Tree,130,,0,1,0,,解锁建筑
+
+101425,退化射线,EnableWeapon:14,1500,1,Tree,130,,0,1,0,,解锁武器
+
+101417,万物归零,EnableBuilding:237,600,1,Tree,130,,0,1,0,,解锁建筑
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// csvN数据
+let csv1 = (`TechTree,Group,Necessary,TechIds,PosX,PosY
+1001,101,,100010|100020|100030,1200,692.8203
+1002,101,,100040,600,0
+1003,101,1002,100050|100051|100060|100061|100070|100071,600,346.4102
+1004,101,,100080|100090|100100,0,692.8203
+1005,101,,100110|100120|100130|100140|100150,1200,0
+1039,101,,101170|101180|101190,0,0
+发展/DevelopTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1006,102,,100170,600,0
+1007,102,,100160,600,692.8203
+1008,102,1007,100200,300,866.0254
+1009,102,,100180,0,346.4102
+1010,102,,100190,1200,346.4102
+进阶发展/AdvancedDevelopTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1016,104,,100340|100350|100360|100370,300,866.0254
+1017,104,,100380|100390|100400|100410,300,-173.2051
+1018,104,,100420|100430|100440,600,0
+1019,104,,100450|100460|100470|100480,900,-173.2051
+1020,104,,100490,900,519.6152
+1021,104,1020,100500|100510|100520,1200,692.8203
+1034,104,,101010|101011|101020|101021|101030|101031,0,346.4102
+10211,104,,100521,300,519.6152
+军事/MilitaryTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1023,105,,100530,0,346.4102
+1024,105,1023,100570|100580|100581|100582,300,519.6152
+1025,105,,100540,1200,346.4102
+1026,105,1025,100590|100600|100601|100602,900,519.6152
+1035,105,1023,101040|101041|101050|101051|101060|101061,0,692.8203
+1036,105,1025,101070|101071|101080|101081|101090|101091,1200,692.8203
+1040,105,,101200,900,-173.2051
+1054,105,,101210,300,-173.2051
+进阶军事/AdvancedMilitaryTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1013,107,,100230|100240|100250|100260|100270,300,866.0254
+1015,107,,100310|100320|100330,900,866.0254
+1032,107,,100680|100681|100690|100691|100700|100701|100702,0,346.4102
+1033,107,,100710|100720|100730,600,0
+1037,107,,101101|101110|101111|101120|101121|101122,1200,346.4102
+扩张/DilatationTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1100,120,,101301|101302|101303|101304|101305,0,0
+1101,120,,101306|101307|101308,600,0
+1102,120,,101309|101310|101311,300,519.6152
+1103,120,,101312|101313|101314,1200,0
+1104,120,,101315,900,519.6152
+压力/Population.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1031,134,,100640|100650|100660,0,346.4102
+1038,134,,101130|101140|101150|101160,0,692.8203
+1181,134,,101430,900,866.0254
+1182,134,,101431|101432|101433,600,346.4102
+10381,134,,101161|101162|101163|101164,300,519.6152
+探索/AdvancedExploreTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1186,135,,101434|101435|101436,0,692.8203
+1187,135,,101437|101438|101439,300,866.0254
+1188,135,,101440,300,173.2051
+1189,135,,101441,900,173.2051
+1190,135,,101442|101443|101444,600,0
+1191,135,,101445,600,346.4102
+1192,135,,101446|101447|101448,1200,692.8203
+1193,135,,101449|101450|101451,900,866.0254
+情报/Diplomacy.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1028,133,,100610,600,346.4102
+1029,133,1028,100630,300,519.6152
+1030,133,,100620,600,692.8203
+1183,133,1028,100280,900,173.2051
+1184,133,1028,100290,600,0
+1185,133,1028,100300,300,173.2051
+10280,133,1028,100611|100612|100613|100614,900,519.6152
+隐藏/HideTechTree.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1300,136,,101627|101628|101629,0,0
+1301,136,,101630|101631|101632,0,346.4102
+1302,136,,101633|101634|101635|101636,900,866.0254
+1303,136,,101637|101638|101639,900,519.6152
+1304,136,,101640|101641|101642,300,173.2051
+1305,136,,101643,300,866.0254
+1306,136,,101644,1200,692.8203
+暴露/Exposure.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1042,110,,101220|101221,0,0
+1043,110,,101226,600,0
+1044,110,,101222|101223|101224,1200,692.8203
+1045,110,,101227,1200,0
+1046,110,,101228,0,692.8203
+1047,110,,101225,600,692.8203
+物质/Materialism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1117,122,,101330|101331|101332,0,692.8203
+1118,122,,101333|101334|101335,1200,692.8203
+1119,122,,101336,1200,0
+1120,122,,101337,600,0
+1121,122,,101338,0,0
+1122,122,,101339,600,692.8203
+特殊物质/ExtremeMaterialism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1048,111,,101229,0,0
+1049,111,,101230,600,0
+1050,111,,101231|101232|101233,1200,0
+1051,111,,101234,0,692.8203
+1052,111,,101235,600,692.8203
+1053,111,,101236,1200,692.8203
+精神/idealism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1022,123,,100550|100560,0,692.8203
+1123,123,,101340|101341|101342,0,0
+1124,123,,101343|101344|101345,600,0
+1125,123,,101346,1200,0
+1127,123,,101347|101348,1200,692.8203
+1128,123,,1013491|1013492|1013493|1013494,600,692.8203
+特殊精神/ExtremeIdealism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1073,114,,101259,0,692.8203
+1074,114,,101260,0,0
+1075,114,,101261|101262|101263,1200,0
+1078,114,,101264,600,692.8203
+1079,114,,101265,600,0
+1080,114,,101266|101267|101268,1200,692.8203
+尚武/Violence.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1147,126,,101386|101387|101388,1200,346.4102
+1148,126,,101389,300,519.6152
+1149,126,1148,101390,300,173.2051
+1150,126,1148,101391,0,692.8203
+1151,126,1148,101392,300,866.0254
+1152,126,1148,101393,600,692.8203
+特殊尚武/ExtremeMilitarism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1067,115,,101249,0,0
+1068,115,,101250,600,0
+1069,115,,101251|101252|101253,1200,0
+1070,115,,101254,0,692.8203
+1071,115,,101255,600,692.8203
+1072,115,,101256|101257|101258,1200,692.8203
+和平/pacifism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1141,127,,101372,0,692.8203
+1142,127,,101373,1200,692.8203
+1143,127,,101374|101375|101376,600,0
+1144,127,,101377|101378|101379,0,0
+1145,127,,101380|101381|101382,1200,0
+1146,127,,101383|101384|101385,600,692.8203
+特殊和平/ExtremePacifism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1055,112,,101237,0,0
+1056,112,,101238,600,0
+1057,112,,101239,1200,0
+1058,112,,101240,0,692.8203
+1059,112,,101241,600,692.8203
+1060,112,,101242,1200,692.8203
+集中/centralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1129,124,,101350|101351|101352,0,0
+1130,124,,101353|101354|101355,600,0
+1131,124,,101356,1200,0
+1132,124,,101357,0,692.8203
+1133,124,,101358,1200,692.8203
+1134,124,,101359,600,692.8203
+特殊集中/ExtremeCentralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1061,113,,101243,0,0
+1062,113,,101244,600,0
+1063,113,,101245,1200,0
+1064,113,,101246,0,692.8203
+1065,113,,101247,600,692.8203
+1066,113,,101248,1200,692.8203
+分权/decentralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1135,125,,101360,0,692.8203
+1136,125,,101361|101362|101363,600,0
+1137,125,,101364|101365|101366,0,0
+1138,125,,101367|101368|101369,1200,0
+1139,125,,101370,1200,692.8203
+1140,125,,101371,600,692.8203
+特殊分权/ExtremeDecentralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1081,117,,101269,0,0
+1082,117,,101270,600,0
+1083,117,,101271,1200,0
+1084,117,,101272,0,692.8203
+1085,117,,101273,600,692.8203
+1086,117,,101274,1200,692.8203
+亲外/pluralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1153,129,,101394,0,0
+1154,129,,101395,600,0
+1155,129,,101396,1200,0
+1156,129,,101397,0,692.8203
+1157,129,,101398,1200,692.8203
+1158,129,,101399,600,692.8203
+特殊亲外/Extremepluralism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1087,116,,101275,0,0
+1088,116,,101276,600,0
+1089,116,,101277,1200,0
+1090,116,,101278,0,692.8203
+1091,116,,101279|101280|101281,1200,692.8203
+1092,116,,101282,1200,0
+孤立/Exclusivity.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1159,128,,101400,600,0
+1160,128,,1014010|1014011|1014012,0,692.8203
+1161,128,,1014020|1014021|1014022,1200,692.8203
+1162,128,,101403,0,0
+1163,128,,101404,1200,0
+1164,128,,101405,600,692.8203
+特殊孤立/ExtremeExclusivity.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1105,119,,101316,0,0
+1106,119,,101317,600,0
+1107,119,,101318,1200,0
+1108,119,,101319,0,692.8203
+1109,119,,101320|101321|101322,600,692.8203
+1110,119,,101323,1200,692.8203
+生产/Industrialism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1165,131,,101406|101407|101408,0,0
+1166,131,,101409|101410|101411,600,0
+1167,131,,101412,1200,0
+1168,131,,101413,0,692.8203
+1169,131,,101414,1200,692.8203
+1170,131,,101415,600,692.8203
+特殊生产/ExtremeIndustrialism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1111,118,,101324,0,0
+1112,118,,101325,600,0
+1113,118,,101326,1200,0
+1114,118,,101327,0,692.8203
+1115,118,,101328,600,692.8203
+1116,118,,101329,1200,692.8203
+生态/Ecocriticism.csv
+
+TechTree,Group,Necessary,TechIds,PosX,PosY
+1171,130,,101416,0,0
+1172,130,,101417,600,0
+1173,130,,101418|101419|101420,0,692.8203
+1174,130,,101421,1200,0
+1175,130,,101422|101423|101424,1200,692.8203
+1176,130,,101425,600,692.8203
+特殊生态/ExtremeEcocriticism.csv
+`)
+.split(/\n/).filter(function(e){ return /^\d/.test(e) }).map(function(e){ return e.split(',') });
+
+// 分解数据
+csv1.result = {}, csv1.forEach(function(e01){ 
+if(e01[3] !== ''){ e01[3].split('|').forEach(function(e02){ csv1.result[e02] = [e01[0], e01[1], e01[2], ] }) } });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	//-- 发展(101)
+	
+	'100010' : `大型钻机`,				// Large Drill Rig
+	'100020' : `极纯精炼`,				// Refinement Facility
+	'100030' : `自动工厂`,				// Automated Factory
+	
+	'100040' : `矿物存储`,				// Ore Storage
+	
+	'100050' : `资源回收再利用`,		// Recycle Resources
+	'100051' : `资源回收运动`,			// Recycling
+	'100060' : `财产公有制`,			// Common Wealth Ownership
+	'100061' : `物质循环`,				// Substance Reuse
+	'100070' : `物质合成`,				// Substance Fusion
+	'100071' : `逆向聚变`,				// Reverse Fusion
+	
+	'100080' : `环境保护`,				// Environmental Protection
+	'100090' : `气候恢复`,				// Restore Climate
+	'100100' : `生态创造`,				// Create Ecology
+	
+	'100110' : `地壳冲压`,				// Crust Stamping
+	'100120' : `地幔冲压`,				// Mantle Stamping
+	'100130' : `地核冲压`,				// Core Stamping
+	'100140' : `深空政府`,				// Deep Space Government
+	'100150' : `逆向裂变`,				// Reverse Fission
+	
+	'101170' : `超构材料`,				// Super Structure Material
+	'101180' : `模板化建造`,			// Modular Construction
+	'101190' : `自动复制体系`,			// Self-Copy System
+	
+	//-- 进阶发展(102)
+	
+	'100160' : `恒星资源利用`,			// Star Resources
+	
+	'100170' : `太空子民`,				// Space Residents
+	
+	'100180' : `粒子重塑`,				// Particle Rebuild
+	
+	'100190' : `视界观测`,				// Viewport
+	
+	'100200' : `零号元素提取`,			// Zero Element Extraction
+	
+	//-- 军事(104)
+	
+	'100340' : `高效军事AI`,			// High Efficiency Military AI
+	'100350' : `知性军事AI`,			// Intellectual Military AI
+	'100360' : `理性军事AI`,			// Rational Military AI
+	'100370' : `感性军事AI`,			// Emotional Military AI
+	
+	'100380' : `星际作战理论`,			// Galactic Combat Theory
+	'100390' : `空间作战学说`,			// Dimensional Combat Theory
+	'100400' : `机动作战学说`,			// Mobilization Theory
+	'100410' : `星系作战学说`,			// Intergalactic Combat Theory
+	
+	'100420' : `合金材料`,				// Alloy
+	'100430' : `纳米材料`,				// Nano Steel Engine
+	'100440' : `中子装甲`,				// Neuron Armor
+	
+	'100450' : `非工质引擎`,			// EmDrive
+	'100460' : `离子引擎`,				// Plasma Engine
+	'100470' : `反物质动力`,			// Anti-Matter Propulsion
+	'100480' : `简易曲率引擎`,			// Simple Curvature Engine
+	
+	'100490' : `军事平台`,				// Military Platform
+	
+	'100500' : `太空星堡`,				// Star Fortress
+	'100510' : `太空要塞`,				// Stronghold
+	'100520' : `太空棱堡`,				// Bastion
+	
+	'100521' : `黑域装置`,				// Black Field Device
+	
+	'101010' : `速度: 前进二`,			// Speed: Forward 2
+	'101011' : `配件: 速过载`,			// Component: Speed Overload
+	'101020' : `速度: 前进三`,			// Speed: Forward 3
+	'101021' : `配件: 减压舱`,			// Component: Depressurizing Chamber
+	'101030' : `速度: 前进四`,			// Speed: Forward 4
+	'101031' : `配件: 深海液`,			// Component: Deep Sea Liquid
+	
+	//-- 进阶军事(105)
+	
+	'100530' : `质量弹`,				// Mass Projectile
+	
+	'100570' : `奇点效应01`,			// Singularity Effect 1
+	'100580' : `奇点效应02`,			// Singularity Effect 2
+	'100581' : `奇点效应03`,			// Singularity Effect 3
+	'100582' : `奇点效应04`,			// Singularity Effect 4
+	
+	'101040' : `奇点物质提取01`,		// Singularity Substance Extraction
+	'101041' : `奇点物质提取02`,		// Singularity Substance Extraction 2
+	'101050' : `低维展开实验01`,		// Low Dimension Expansion Experiment
+	'101051' : `低维展开实验02`,		// Low Dimension Expansion Experiment 2
+	'101060' : `高维展开实验01`,		// High Dimension Expansion Experiment
+	'101061' : `高维展开实验02`,		// High Dimension Expansion Experiment 2
+	
+	'100540' : `光速临界`,				// Lightspeed Critical Point
+	
+	'100590' : `质量效应01`,			// Substance Effect 1
+	'100600' : `质量效应02`,			// Substance Effect 2
+	'100601' : `质量效应03`,			// Substance Effect 3
+	'100602' : `质量效应04`,			// Substance Effect 4
+	
+	'101070' : `大型加速器01`,			// Large Accelerator 3
+	'101071' : `大型加速器02`,			// Large Accelerator 2
+	'101080' : `环球加速器01`,			// Universal Accelerator
+	'101081' : `环球加速器02`,			// Universal Accelerator 2
+	'101090' : `环日加速器01`,			// Solar Sail Accelerator
+	'101091' : `环日加速器02`,			// Solar Sail Accelerator 2
+	
+	'101200' : `绝对防御`,				// Absolute Defense 1
+	
+	'101210' : `低维跌落`,				// Low Dimension Collapse 1
+	
+	//-- 扩张(107)
+	
+	'100230' : `宇宙社会学01`,			// Universe Sociology
+	'100240' : `宇宙社会学02`,			// Universe Sociology 2
+	'100250' : `总体战争思想`,			// Total War Ideology
+	'100260' : `移民主义思潮`,			// Colonialism
+	'100270' : `民族主义动员`,			// Nationalism Rally
+	
+	'100310' : `民主制度01`,			// Democracy
+	'100320' : `民主制度02`,			// Democracy 2
+	'100330' : `民主制度03`,			// Democracy 3
+	
+	'100680' : `商业移民船`,			// Commercial Colony Ship
+	'100681' : `大型移民船`,			// Large Colony Ship
+	'100690' : `巨型移民船`,			// Colossal Colony Ship
+	'100691' : `太空建设01`,			// Modularized Space Construction
+	'100700' : `太空建设02`,			// Modularized Space Construction 2
+	'100701' : `星门间调协`,			// Stargate Coordination
+	'100702' : `星门的建造`,			// Stargate Construction
+	
+	'100710' : `总督制度01`,			// Admiral System
+	'100720' : `总督制度02`,			// Admiral System 2
+	'100730' : `总督制度03`,			// Admiral System 3
+	
+	'101101' : `民用速度: 前进二`,		// Civilian Speed: Forward 2
+	'101110' : `民用配件: 速过载`,		// Civilian component: Speed Overload
+	'101111' : `民用速度: 前进三`,		// Civilian Speed: Forward 3
+	'101120' : `民用配件: 减压舱`,		// Civilian Component: Depressurizing Chamber
+	'101121' : `民用速度: 前进四`,		// Civilian Speed: Forward 4
+	'101122' : `民用配件: 深海液`,		// Civilian Component: Deep Sea Liquid
+	
+	//-- 压力(120)
+	
+	'101301' : `救济制度01`,			// Welfare 1
+	'101302' : `救济制度02`,			// Welfare 2
+	'101303' : `救济制度03`,			// Welfare 3
+	'101304' : `救济制度04`,			// Welfare 4
+	'101305' : `救济制度05`,			// Welfare 5
+	
+	'101306' : `生育控制`,				// Birth Control
+	'101307' : `退休政策`,				// Retirement Policy
+	'101308' : `福利改革`,				// Benefit Reform
+	
+	'101309' : `因地制宜`,				// Terrain Advantage
+	'101310' : `联排房建造`,			// Build Townhouses
+	'101311' : `模板化住宅区`,			// Modular Residence
+	
+	'101312' : `复合型住宅`,			// Compound Residence
+	'101313' : `超深度住宅`,			// Deep Residence
+	'101314' : `穹顶式城市`,			// Dome City
+	
+	'101315' : `改善避难营地`,			// Improve Refugee Camps
+	
+	//-- 探索(134)
+	
+	'100640' : `四维碎片探测`,			// 4-Dimensional Shard Detection
+	'100650' : `高维碎片探测`,			// High Dimensional Shard Detection
+	'100660' : `量子共轭探测`,			// Quantum Conjugate
+	
+	'101130' : `快子传感器`,			// Tachyon Transducer
+	'101140' : `速子传感器`,			// Tachyon Transducer
+	'101150' : `强子传感器`,			// Hadron Transducer
+	'101160' : `空间传感器`,			// Sub-Space Sensor
+	
+	'101431' : `星辰监测`,				// Star Monitoring
+	'101432' : `油膜物质`,				// Oil Film Material
+	'101433' : `力场监控`,				// Field Control
+	
+	'101161' : `基础探险队`,			// Crew
+	'101162' : `高级探险队`,			// Advanced Crew
+	'101163' : `基础科考船`,			// Scientific Research Ship
+	'101164' : `高级科考船`,			// Advanced Scientific Research Ship
+	
+	'101430' : `扫描传感装置`,			// Sensor Scan
+	
+	//-- 情报(135)
+	
+	'101434' : `基层渗透`,				// Grassroot Infiltration
+	'101435' : `管理渗透`,				// Management Infiltration
+	'101436' : `领导渗透`,				// Leadership Infiltration
+	
+	'101437' : `基层线人`,				// Grassroot Informant
+	'101438' : `情报专员`,				// Intermediate Spy
+	'101439' : `王牌特工`,				// Master Agent
+	
+	'101442' : `消息抹除`,				// Kill Those Who Know
+	'101443' : `记忆删除`,				// Delete Memory
+	'101444' : `记忆伪造`,				// Forge Memory
+	
+	'101446' : `强制破解`,				// Brute Force
+	'101447' : `密钥备份`,				// Backup Key
+	'101448' : `量子解锁`,				// Quantum Unlock
+	
+	'101449' : `价值输出`,				// Value Export
+	'101450' : `文化培养`,				// Public Intellectual Training
+	'101451' : `模因裂变`,				// Public Opinion Control
+	
+	'101445' : `证据删除`,				// Format Evidence
+	
+	'101440' : `资料销毁`,				// Destroy Data
+	
+	'101441' : `单向线人`,				// One-Way Informant
+	
+	//-- 隐藏(133)
+	
+	'100610' : `全频静默`,				// All Spectrum Silence
+	
+	'100611' : `全频静默01`,			// ?
+	'100612' : `全频静默02`,			// ?
+	'100613' : `全频静默03`,			// ?
+	'100614' : `全频静默04`,			// ?
+	
+	'100300' : `军事管制`,				// Military Restriction
+	
+	'100280' : `自动化工厂`,			// Automated Factory
+	
+	'100290' : `穹顶式居住区`,			// Domed Residential Area
+	
+	'100630' : `暗物质研究`,			// Dark Matter Research
+	
+	'100620' : `信号散射`,				// Signal Scatter
+	
+	//-- 暴露(136)
+	
+	'101627' : `光学伪装`,				// 光学伪装
+	'101628' : `电磁屏蔽`,				// 电磁屏蔽
+	'101629' : `短波通讯`,				// 短波通讯
+	
+	'101630' : `通讯方向伪造`,			// 通讯方向伪造
+	'101631' : `电磁痕迹抹除`,			// 电磁痕迹抹除
+	'101632' : `空间坐标伪装`,			// 空间坐标伪装
+	
+	'101637' : `高密集度广播信息`,		// 高密度广播信息
+	'101638' : `超大功率广播基站`,		// 超大功率广播站
+	'101639' : `精准定位广播目标`,		// 诚意广播
+	
+	'101640' : `航迹点消除01`,			// 航迹消除1
+	'101641' : `航迹点消除02`,			// 航迹消除2
+	'101642' : `航迹点消除03`,			// 航迹消除3
+	
+	'101633' : `高效广播系统`,			// 高效广播系统
+	'101634' : `巨型天线`,				// 巨型天线
+	'101635' : `量子广播站`,			// 量子广播站
+	'101636' : `引力波广播站`,			// 引力波广播站
+	
+	'101644' : `大功率广播`,			// 大功率广播
+	
+	'101643' : `脉冲星利用`,			// 脉冲星利用
+	
+	//-- 物质(110)
+	
+	'101225' : `启蒙运动`,				// Enlightenment
+	
+	'101220' : `科研传统`,				// Scientific Research
+	'101221' : `学阀统治`,				// Faction Rule
+	
+	'101222' : `学习运动`,				// Studying Movement
+	'101223' : `教育运动`,				// Education Movement
+	'101224' : `科研津贴`,				// Scientific Grant
+	
+	'101226' : `科学枢纽`,				// Colossal Science Hub
+	
+	'101227' : `科技获取`,				// Steal Technology
+	
+	'101228' : `技术封锁`,				// Technology Block
+	
+	//-- 特殊物质(122)
+	
+	'101330' : `窥视深渊01`,			// Look into the Abyss 1
+	'101331' : `窥视深渊02`,			// Look into the Abyss 2
+	'101332' : `窥视深渊03`,			// Look into the Abyss 3
+	
+	'101333' : `朝闻道也01`,			// Morning Enlightenment 1
+	'101334' : `朝闻道也02`,			// Morning Enlightenment 2
+	'101335' : `朝闻道也03`,			// Morning Enlightenment 3
+	
+	'101336' : `黑洞观测`,				// Monitor Black Holes
+	
+	'101337' : `恒星观测`,				// Monitor Stars
+	
+	'101338' : `虚空观测`,				// Monitor the Void
+	
+	'101339' : `零点聚爆`,				// Zero Imploder
+	
+	//-- 精神(111)
+	
+	'101230' : `奇迹`,					// Miracle
+	
+	'101229' : `沉思殿`,				// Contemplation Temple
+	
+	'101231' : `共想仪式`,				// Mass
+	'101232' : `思维共融`,				// Pilgrimage
+	'101233' : `意识编织`,				// Canonize
+	
+	'101234' : `布施`,					// Preach
+	
+	'101235' : `讨伐`,					// Holy War
+	
+	'101236' : `顿悟`,					// Martyr
+	
+	//-- 特殊精神(123)
+	
+	'100550' : `量子引擎`,				// Quantum Engine
+	'100560' : `折跃效应`,				// Folding Effect
+	
+	'101347' : `灵能引擎01`,			// Chi Engine 1
+	'101348' : `灵能引擎02`,			// Chi Engine 2
+	
+	'101343' : `礼拜日01`,				// Mass 1
+	'101344' : `礼拜日02`,				// Mass 2
+	'101345' : `礼拜日03`,				// Mass 3
+	
+	'101340' : `探知真理01`,			// Seeking the Truth 1
+	'101341' : `探知真理02`,			// Seeking the Truth 2
+	'101342' : `探知真理03`,			// Seeking the Truth 3
+	
+	'1013491' : `大型秘会`,				// Large Seance
+	'1013492' : `遁入虚空`,				// Hiding in the Void
+	'1013493' : `异界存在`,				// Evil Presence
+	'1013494' : `轮回终末`,				// End of Reincarnation
+	
+	'101346' : `秘学融浸`,				// Altar
+	
+	//-- 尚武(114)
+	
+	'101261' : `短期战争`,				// Short war
+	'101262' : `长期战争`,				// Long War
+	'101263' : `永远战争`,				// Eternal War
+	
+	'101266' : `背水一战`,				// Last Stand
+	'101267' : `决一死战`,				// Final Battle
+	'101268' : `你死我亡`,				// Death Match
+	
+	'101259' : `无敌舰队`,				// Invincible Fleet
+	
+	'101260' : `机体回收`,				// Pirate Fleet
+	
+	'101264' : `尚武文化`,				// Militarism
+	
+	'101265' : `全民皆兵`,				// Civilian Soldiers
+	
+	//-- 特殊尚武(126)
+	
+	'101386' : `高吨位劝离舰`,			// High Tonnage Destroyer
+	'101387' : `超大型巡洋舰`,			// Colossal Cruiser
+	'101388' : `泰坦级战列舰`,			// Titan Battleship
+	
+	'101389' : `超限战理论`,			// Extreme War
+	
+	'101390' : `小型质量弹`,			// Small Mass Projectile
+	
+	'101391' : `相位裂解炮`,			// Phaser Cannon
+	
+	'101392' : `电浆融合雷`,			// Plasma Fusion Grenade
+	
+	'101393' : `慢中子光矛`,			// Slow Neuron Spear
+	
+	//-- 和平(115)
+	
+	'101256' : `众志成城`,				// United Will
+	'101257' : `全民动员`,				// All In
+	'101258' : `绝对防御`,				// Absolute Defense
+	
+	'101251' : `短期和平`,				// Short-Term Peace
+	'101252' : `长期和平`,				// Long-Term Peace
+	'101253' : `永远和平`,				// Eternal Peace
+	
+	'101249' : `永固堡垒`,				// Eternal Fortress
+	
+	'101254' : `裁军行动`,				// Demilitarization
+	
+	'101255' : `田园牧歌`,				// Countryside Ode
+	
+	'101250' : `不落要塞`,				// Impenetrable Stronghold
+	
+	//-- 特殊和平(127)
+	
+	'101374' : `局部动员`,				// Partial Mobilization
+	'101375' : `全民动员`,				// All In
+	'101376' : `重返战场`,				// Back to Battle
+	
+	'101377' : `休养生息`,				// Rest and Relaxation
+	'101378' : `韬光养晦`,				// Hidden Talent
+	'101379' : `国安民乐`,				// Satisfied Citizens
+	
+	'101383' : `守护措施`,				// Guardian System 1
+	'101384' : `守护机制`,				// Guardian System 2
+	'101385' : `守护系统`,				// Guardian System 3
+	
+	'101380' : `退伍行动`,				// Discharge Action
+	'101381' : `卸甲归田`,				// Putting Down Arms
+	'101382' : `歌舞升平`,				// Song and Dance
+	
+	'101372' : `黑洞力场`,				// Black Hole Gravitational Field
+	
+	'101373' : `田园时代`,				// Countryside Era
+	
+	//-- 集中(112)
+	
+	'101237' : `报道管制`,				// Report Restriction
+	
+	'101238' : `首都决议`,				// Capital
+	
+	'101239' : `战争议事`,				// War Hall
+	
+	'101240' : `帝国空港`,				// Imperial Airport
+	
+	'101241' : `证券中心`,				// Stock Exchange
+	
+	'101242' : `大图书馆`,				// Grand Library
+	
+	//-- 特殊集中(124)
+	
+	'101350' : `联排房屋`,				// Townhouses
+	'101351' : `巨型社区`,				// Colossal Community
+	'101352' : `都会阵列`,				// Billion Level City
+	
+	'101353' : `机密计划`,				// Plan 1984
+	'101354' : `高压国度`,				// Surveillance State
+	'101355' : `畸形社会`,				// Anti-Utopia Society
+	
+	'101356' : `福报工会`,				// Slave Union
+	
+	'101357' : `阶级社会`,				// Class-Based Society
+	
+	'101358' : `首都阵列`,				// Capital Array
+	
+	'101359' : `歼星巨炮`,				// Imperial Star Destroyer
+	
+	//-- 分权(113)
+	
+	'101244' : `议会`,					// Parliament
+	
+	'101245' : `外星移民公司`,			// Space Immigration Company
+	
+	'101246' : `战争承包商`,			// War Contractor
+	
+	'101243' : `百家争鸣`,				// A Hundred Schools of Thoughts
+	
+	'101248' : `科学城`,				// Science City
+	
+	'101247' : `工会`,					// Union
+	
+	//-- 特殊分权(125)
+	
+	'101361' : `虚拟社区`,				// Virtual Community
+	'101362' : `云上庄园`,				// Animal Farm
+	'101363' : `意识转移`,				// Beautiful New World
+	
+	'101364' : `移民招标01`,			// Colony Bid 1
+	'101365' : `移民招标02`,			// Colony Bid 2
+	'101366' : `移民招标03`,			// Colony Bid 3
+	
+	'101367' : `超空间航道01`,			// Hyperspace Lane 1
+	'101368' : `超空间航道02`,			// Hyperspace Lane 2
+	'101369' : `超空间航道03`,			// Hyperspace Lane 3
+	
+	'101370' : `昭昭天命`,				// Mandate of Heaven
+	
+	'101360' : `人道主义`,				// Humanitarianism
+	
+	'101371' : `毁灭光束`,				// Proton Destroyer Beam
+	
+	//-- 亲外(117)
+	
+	'101269' : `我在这里`,				// I'm Here
+	
+	'101270' : `银河大同`,				// Universal Peace
+	
+	'101271' : `强制交流`,				// Forced Communication
+	
+	'101272' : `信标攻击`,				// Beacon
+	
+	'101273' : `文化交流`,				// Cultural Exchange
+	
+	'101274' : `物种保护`,				// Species Protection
+	
+	//-- 特殊亲外(129)
+	
+	'101394' : `多元文化`,				// Diversity
+	
+	'101397' : `银河卫士`,				// Galactic Guard
+	
+	'101398' : `终结狂欢`,				// Ultimate Party
+	
+	'101396' : `展示欲`,				// Showing Off
+	
+	'101395' : `安全声明`,				// Safety Notice
+	
+	'101399' : `引力波天线`,			// Gravitational Wave Antenna
+	
+	//-- 孤立(116)
+	
+	'101277' : `独善其身`,				// Closed-door policy
+	
+	'101278' : `掩体措施`,				// Bunker
+	
+	'101275' : `全频静默`,				// Total Silence
+	
+	'101276' : `海禁政策`,				// Maritime Restriction
+	
+	'101282' : `种族净化`,				// Ethnic Cleansing
+	
+	'101279' : `星尘遮蔽`,				// Stardust Cover
+	'101280' : `电波屏蔽`,				// Signal Block
+	'101281' : `引力透镜`,				// Gravitational Lens
+	
+	//-- 特殊孤立(128)
+	
+	'1014010': `广播屏蔽01`,			// Block Broadcast 1
+	'1014011': `广播屏蔽02`,			// Block Broadcast 2
+	'1014012': `广播屏蔽03`,			// Block Broadcast 3
+	
+	'1014020': `广播反射01`,			// Reflect Broadcast 1
+	'1014021': `广播反射02`,			// Reflect Broadcast 2
+	'1014022': `广播反射03`,			// Reflect Broadcast 3
+	
+	'101400' : `天国王朝`,			// Heaven Dynasty
+	
+	'101403' : `回归运动`,			// Return Movement
+	
+	'101404' : `与世无争`,			// Peaceful Living
+	
+	'101405' : `光墓屏障`,			// Light Grave
+	
+	//-- 生产(119)
+	
+	'101316' : `巨型工厂`,				// Colossal Factory
+	
+	'101317' : `行星钻机`,				// Planet Drilling Rig
+	
+	'101318' : `有备无患`,				// Preparation
+	
+	'101319' : `研发基金`,				// Research Fund
+	
+	'101323' : `企业国度`,				// Nation of Enterprises
+	
+	'101320' : `贷款津贴`,				// Loan Allowance
+	'101321' : `发行国债`,				// Government Bond
+	'101322' : `量化宽松`,				// Quantitative Easing
+	
+	//-- 特殊生产(131)
+	
+	'101406' : `竭泽而渔01`,			// Instant Gratification 1
+	'101407' : `竭泽而渔02`,			// Instant Gratification 2
+	'101408' : `竭泽而渔03`,			// Instant Gratification 3
+	
+	'101409' : `榨取价值01`,			// Devalue 1
+	'101410' : `榨取价值02`,			// Devalue 2
+	'101411' : `榨取价值03`,			// Devalue 3
+	
+	'101414' : `理财公司`,				// Wealth Management
+	
+	'101413' : `五谷丰登`,				// Great Harvest
+	
+	'101412' : `虚无装置`,				// Void Device
+	
+	'101415' : `结晶流束`,				// Crystal Flux
+	
+	//-- 生态(118)
+	
+	'101324' : `资源回收`,				// Recycle Resource
+	
+	'101325' : `地貌改造`,				// Terraforming
+	
+	'101326' : `退耕还林`,				// Back to Nature
+	
+	'101327' : `环境控制`,				// Environmental Control
+	
+	'101328' : `末途新生`,				// Rebirth
+	
+	'101329' : `道法自然`,				// Tao of Nature
+	
+	//-- 特殊生态(130)
+	
+	'101418' : `众生平等01`,			// Equality 1
+	'101419' : `众生平等02`,			// Equality 2
+	'101420' : `众生平等03`,			// Equality 3
+	
+	'101422' : `环保主义01`,			// Environmental Worship 1
+	'101423' : `环保主义02`,			// Environmental Worship 2
+	'101424' : `环保主义03`,			// Environmental Worship 3
+	
+	'101421' : `土地回收`,				// Land Recycling
+	
+	'101417' : `万物归零`,				// The Great Reset
+	
+	'101416' : `虚空之环`,				// Ring of Void
+	
+	'101425' : `退化射线`,				// Degenerating Beam
+	},
+	
+	文本描述 : {
+	
+	//-- 发展(101)
+	
+	'100010' : `工厂产出 + 10%, 额外的产出并不会消耗星系资源, 该科技对巨型工厂也有效, Sum: + 10%`,		// Increases all types of factory yield by <<Param:1>>%
+	'100020' : `工厂产出 + 25%, 额外的产出并不会消耗星系资源, 该科技对巨型工厂也有效, Sum: + 35%`,		// Increases all types of factory yield by <<Param:1>>%
+	'100030' : `工厂产出 + 50%, 额外的产出并不会消耗星系资源, 该科技对巨型工厂也有效, Sum: + 85%`,		// Increases all types of factory yield by <<Param:1>>%
+	
+	'100040' : `解锁建筑"库存中心"(可以 +10000 存储上限)`,										// Unlocks building: Warehouse Center (increases storage limit)
+	
+	'100050' : `资源增长 +　10, Sum: +　10`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100051' : `资源增长 +　20, Sum: +　30`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100060' : `资源增长 +　40, Sum: +　70`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100061' : `资源增长 +　60, Sum: + 130`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100070' : `资源增长 + 100, Sum: + 230`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100071' : `资源增长 + 150, Sum: + 380`,													// Resource yield growth <quad name=Resource size=27 width=1 /> <<Param:0>>
+	
+	'100080' : `星系过度开采等级 - 1, Sum: - 1`,												// System has been over-excavated, level reduced by <<Param:0>>
+	'100090' : `星系过度开采等级 - 1, Sum: - 2`,												// System has been over-excavated, level reduced by <<Param:0>>
+	'100100' : `星系过度开采等级 - 1, Sum: - 3`,												// System has been over-excavated, level reduced by <<Param:0>>
+	
+	'100110' : `资源直接 +　5k, Sum: +　5k`,													// Get resources <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100120' : `资源直接 +　5k, Sum: + 10k`,													// Get resources <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100130' : `资源直接 +　5k, Sum: + 15k`,													// Get resources <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100140' : `资源直接 + 10k, Sum: + 25k`,													// Get resources <quad name=Resource size=27 width=1 /> <<Param:0>>
+	'100150' : `资源直接 + 20k, Sum: + 45k`,													// Get resources <quad name=Resource size=27 width=1 /> <<Param:0>>
+	
+	'101170' : `建造时间 - 20%(仅建筑), Sum: - 20%`,											// Construction time <<Param:1>>%
+	'101180' : `建造时间 - 30%(仅建筑), Sum: - 50%`,											// Construction time <<Param:1>>%
+	'101190' : `建造时间 - 40%(仅建筑), Sum: - 90%`,											// Construction time <<Param:1>>%
+	
+	//-- 进阶发展(102)
+	
+	'100160' : `解锁建筑"戴森球"(于恒星槽位开采恒星资源)`,										// Unlocks building: Dyson Sphere (enables excavating resources on a star)
+	
+	'100170' : `解锁建筑"环世界"(可以额外 +3 人造建筑槽)`,										// Unlocks building: Ring World (adds construction queues)
+	
+	'100180' : `工厂可以开采残骸资源(并不会消耗星系资源)`,										// Factories are able to excavate remnant resources (does not cost system resources)
+	
+	'100190' : `工厂可以开采黑洞资源(并不会消耗星系资源)`,										// Factories are able to excavate black hole resources (does not cost system resources)
+	
+	'100200' : `获得免费戴森球(下次建造戴森球时完全免费)`,										// Get a free Dyson Sphere (the next Dyson Sphere construction is free)
+	
+	//-- 军事(104)
+	
+	'100340' : `军事基地 CD - 10%, Sum: - 10%`,													// Military base cooldown <<Param:1>>%
+	'100350' : `军事基地 CD - 16%, Sum: - 26%`,													// Military base cooldown <<Param:1>>%
+	'100360' : `军事基地 CD - 24%, Sum: - 50%`,													// Military base cooldown <<Param:1>>%
+	'100370' : `军事基地 CD - 40%, Sum: - 90%`,													// Military base cooldown <<Param:1>>%
+	
+	'100380' : `星系舰队规模 + 1, Sum: + 1`,													// Fleet scale +<<Param:0>>
+	'100390' : `星系舰队规模 + 1, Sum: + 2`,													// Fleet scale +<<Param:0>>
+	'100400' : `星系舰队规模 + 1, Sum: + 3`,													// Fleet scale +<<Param:0>>
+	'100410' : `星系舰队规模 + 1, Sum: + 4`,													// Fleet scale +<<Param:0>>
+	
+	'100420' : `星系舰队装甲 + 100, Sum: +100`,													// Fleet HP +<<Param:0>>
+	'100430' : `星系舰队装甲 + 100, Sum: +200`,													// Fleet HP +<<Param:0>>
+	'100440' : `星系舰队装甲 + 100, Sum: +300`,													// Fleet HP +<<Param:0>>
+	
+	'100450' : `星系舰队闪避 +　10%, Sum: +　10%`,												// Fleet dodge +<<Param:0>>
+	'100460' : `星系舰队闪避 +　10%, Sum: +　20%`,												// Fleet dodge +<<Param:0>>
+	'100470' : `星系舰队闪避 +　15%, Sum: +　35%`,												// Fleet dodge +<<Param:0>>
+	'100480' : `星系舰队闪避 +　15%, Sum: +　50%`,												// Fleet dodge +<<Param:0>>
+	
+	'100490' : `解锁建筑"太空堡垒"(防御时, 舰队规模 + 1)`,										// Unlocks building: Space Fortress (system fleet size +1)
+	
+	'100500' : `太空堡垒可在防御时, 让星系舰队装甲 + 100`,										// Space Fortresses increase fleet HP by <<Param:0>>
+	'100510' : `太空堡垒可在防御时, 让星系舰队闪避 + 10%`,										// Space Fortresses increase fleet dodge by <<Param:0>>
+	'100520' : `太空堡垒可在防御时, 让星系舰队规模再 + 1`,										// Space Fortresses increase fleet scale by <<Param:0>>
+	
+	'100521' : `解锁建筑"黑域装置"(可用于所在星系的自毁)`,										// Unlocks building: Black Field Device (used in self-destruction of a system)
+	
+	'101010' : `星系舰队登陆耗时 - 5%, Sum: - 5%`,												// Fleet invasion time <<Param:1>>%
+	'101011' : `星系舰队登陆耗时 - 5%, Sum: -10%`,												// Fleet invasion time <<Param:1>>%
+	'101020' : `星系舰队登陆耗时 -10%, Sum: -20%`,												// Fleet invasion time <<Param:1>>%
+	'101021' : `星系舰队登陆耗时 -16%, Sum: -36%`,												// Fleet invasion time <<Param:1>>%
+	'101030' : `星系舰队登陆耗时 -24%, Sum: -60%`,												// Fleet invasion time <<Param:1>>%
+	'101031' : `星系舰队登陆耗时 -30%, Sum: -90%`,												// Fleet invasion time <<Param:1>>%
+	
+	//-- 进阶军事(105)
+	
+	'100530' : `解锁武器"质量弹"(可攻击星系, 但速度较慢)`,										// Unlocks weapon: Mass Projectile (destroys the target system, but travels at a low speed)
+	
+	'100570' : `下次质量弹的速度提高 10 倍`,													// Increases the traveling speed of the next Mass Projectile by 10 times
+	'100580' : `下次质量弹的速度提高 10 倍`,													// Increases the traveling speed of the next Mass Projectile by 10 times
+	'100581' : `下次质量弹的速度提高 10 倍`,													// Increases the traveling speed of the next Mass Projectile by 10 times
+	'100582' : `下次质量弹的速度提高 10 倍`,													// Increases the traveling speed of the next Mass Projectile by 10 times
+	
+	'101040' : `质量弹耗时 - 4%, Sum: - 4%`,													// Mass Projectile time <<Param:1>>%
+	'101041' : `质量弹耗时 - 8%, Sum: -12%`,													// Mass Projectile time <<Param:1>>%
+	'101050' : `质量弹耗时 -10%, Sum: -22%`,													// Mass Projectile time <<Param:1>>%
+	'101051' : `质量弹耗时 -16%, Sum: -38%`,													// Mass Projectile time <<Param:1>>%
+	'101060' : `质量弹耗时 -24%, Sum: -62%`,													// Mass Projectile time <<Param:1>>%
+	'101061' : `质量弹耗时 -33%, Sum: -95%`,													// Mass Projectile time <<Param:1>>%
+	
+	'100540' : `解锁武器"光粒"(可攻击星系, 但是开销极高)`,										// Unlocks weapon: Light Particle (destroys the target system, but has a high cost)
+	
+	'100590' : `下次发出光粒攻击不损耗资源`,													// Next Light Particle attack is free
+	'100600' : `下次发出光粒攻击不损耗资源`,													// Next Light Particle attack is free
+	'100601' : `下次发出光粒攻击不损耗资源`,													// Next Light Particle attack is free
+	'100602' : `下次发出光粒攻击不损耗资源`,													// Next Light Particle attack is free
+	
+	'101070' : `光粒的成本 - 4%, Sum: - 4%`,													// Light Particle cost <<Param:1>>%
+	'101071' : `光粒的成本 - 8%, Sum: -12%`,													// Light Particle cost <<Param:1>>%
+	'101080' : `光粒的成本 -10%, Sum: -22%`,													// Light Particle cost <<Param:1>>%
+	'101081' : `光粒的成本 -16%, Sum: -38%`,													// Light Particle cost <<Param:1>>%
+	'101090' : `光粒的成本 -24%, Sum: -62%`,													// Light Particle cost <<Param:1>>%
+	'101091' : `光粒的成本 -33%, Sum: -95%`,													// Light Particle cost <<Param:1>>%
+	
+	'101200' : `解锁高级建筑"低光速屏障", 可生成持久的能量防护罩(无需手动开启), 能自动拦截质量弹和光粒, 也会拦截在范围内跃迁的所有的飞船`,		// Unlocks advanced building: Low Lightspeed Shield (enables generation of energy shields)
+	
+	'101210' : `解锁高级建筑"低维化装置", 造好后会自动生成一个小范围二维化空间, 将自身和周围的事物完全吞噬掉(也就是说这其实就是个自爆弹)`,		// Unlocks advanced building: Low Dimensionalization Device (reduces the dimension of a space)
+	
+	//-- 扩张(107)
+	
+	'100230' : `凝聚力 +　5, Sum: +　5`,														// Get Unity <quad name=Cohesion size=27 width=1 /> <<Param:0>>
+	'100240' : `凝聚力 +　5, Sum: + 10`,														// Get Unity <quad name=Cohesion size=27 width=1 /> <<Param:0>>
+	'100250' : `凝聚力 + 10, Sum: + 20`,														// Get Unity <quad name=Cohesion size=27 width=1 /> <<Param:0>>
+	'100260' : `凝聚力 + 20, Sum: + 40`,														// Get Unity <quad name=Cohesion size=27 width=1 /> <<Param:0>>
+	'100270' : `凝聚力 + 40, Sum: + 80`,														// Get Unity <quad name=Cohesion size=27 width=1 /> <<Param:0>>
+	
+	'100310' : `栖息地凝聚力 + 1, Sum: + 1`,													// Habitat provides Unity increased by <quad name=Cohesion size=27 width=1 /> <<Param:1>>
+	'100320' : `栖息地凝聚力 + 2, Sum: + 3`,													// Habitat provides Unity increased by <quad name=Cohesion size=27 width=1 /> <<Param:1>>
+	'100330' : `栖息地凝聚力 + 5, Sum: + 8`,													// Habitat provides Unity increased by <quad name=Cohesion size=27 width=1 /> <<Param:1>>
+	
+	'100680' : `太空港CD时间 -　5%, Sum: -　5%`,												// Space Port cooldown <<Param:1>>%
+	'100681' : `太空港CD时间 -　7%, Sum: - 12%`,												// Space Port cooldown <<Param:1>>%
+	'100690' : `太空港CD时间 -　8%, Sum: - 20%`,												// Space Port cooldown <<Param:1>>%
+	'100691' : `太空港CD时间 - 10%, Sum: - 30%`,												// Space Port cooldown <<Param:1>>%
+	'100700' : `太空港CD时间 - 10%, Sum: - 40%`,												// Space Port cooldown <<Param:1>>%
+	'100701' : `太空港CD时间 - 20%, Sum: - 60%`,												// Space Port cooldown <<Param:1>>%
+	'100702' : `太空港CD时间 - 25%, Sum: - 85%`,												// Space Port cooldown <<Param:1>>%
+	
+	'100710' : `移民的凝聚力消耗 - 10%, Sum: - 10%`,											// Colonization Unity cost <quad name=Cohesion size=27 width=1 /> <<Param:0>>%
+	'100720' : `移民的凝聚力消耗 - 20%, Sum: - 30%`,											// Colonization Unity cost <quad name=Cohesion size=27 width=1 /> <<Param:0>>%
+	'100730' : `移民的凝聚力消耗 - 30%, Sum: - 60%`,											// Colonization Unity cost <quad name=Cohesion size=27 width=1 /> <<Param:0>>%
+	
+	'101101' : `移民耗时 -　5%, Sum: -　5%`,													// Colonization time <<Param:1>>%
+	'101110' : `移民耗时 - 10%, Sum: - 15%`,													// Colonization time <<Param:1>>%
+	'101111' : `移民耗时 - 15%, Sum: - 30%`,													// Colonization time <<Param:1>>%
+	'101120' : `移民耗时 - 20%, Sum: - 50%`,													// Colonization time <<Param:1>>%
+	'101121' : `移民耗时 - 24%, Sum: - 74%`,													// Colonization time <<Param:1>>%
+	'101122' : `移民耗时 - 25%, Sum: - 99%`,													// Colonization time <<Param:1>>%
+	
+	//-- 压力(120)
+	
+	'101301' : `压力值 -　2k, Sum: -　2k`,														// Reduces Stress by <<Param:0>> immediately
+	'101302' : `压力值 -　3k, Sum: -　5k`,														// Reduces Stress by <<Param:0>> immediately
+	'101303' : `压力值 -　5k, Sum: - 10k`,														// Reduces Stress by <<Param:0>> immediately
+	'101304' : `压力值 -　8k, Sum: - 18k`,														// Reduces Stress by <<Param:0>> immediately
+	'101305' : `压力值 - 10k, Sum: - 28k`,														// Reduces Stress by <<Param:0>> immediately
+	
+	'101306' : `压力值增长 -　8, Sum: -　8`,													// Reduces Stress growth by <<Param:0>>
+	'101307' : `压力值增长 - 15, Sum: - 23`,													// Reduces Stress growth by <<Param:0>>
+	'101308' : `压力值增长 - 25, Sum: - 48`,													// Reduces Stress growth by <<Param:0>>
+	
+	'101309' : `开发星球耗时 -20%, Sum: -20%`,													// Planet development time reduced by <<Param:0>>%
+	'101310' : `开发星球耗时 -30%, Sum: -50%`,													// Planet development time reduced by <<Param:0>>%
+	'101311' : `开发星球耗时 -40%, Sum: -90%`,													// Planet development time reduced by <<Param:0>>%
+	
+	'101312' : `开发星球可额外释放的压力值 + 15%, 额外释放的压力值不计入星球已释放压力数据的统计`,		// Each development release an additional <<Param:0>>% of Stress (not count in the transferred Stress)
+	'101313' : `开发星球可额外释放的压力值 + 25%, 额外释放的压力值不计入星球已释放压力数据的统计`,		// Each development release an additional <<Param:0>>% of Stress (not count in the transferred Stress)
+	'101314' : `开发星球可额外释放的压力值 + 50%, 额外释放的压力值不计入星球已释放压力数据的统计`,		// Each development release an additional <<Param:0>>% of Stress (not count in the transferred Stress)
+	
+	'101315' : `当避难者到达, 带来的压力值 - 50%, 如果选择耗费资源安置避难者, 则该科技不会有影响`,		// Reduces Stress when taking in refugees by 50%
+	
+	//-- 探索(134)
+	
+	'100640' : `探索时间 - 20%, Sum: - 20%`,													// Exploration time <<Param:1>>%
+	'100650' : `探索时间 - 25%, Sum: - 45%`,													// Exploration time <<Param:1>>%
+	'100660' : `探索时间 - 50%, Sum: - 95%`,													// Explorations are now immediate
+	
+	'101130' : `扫描范围 + 25%, Sum: + 25%`,													// Scan range increased by <<Param:0>>%
+	'101140' : `扫描范围 + 30%, Sum: + 55%`,													// Scan range increased by <<Param:0>>%
+	'101150' : `扫描范围 + 40%, Sum: + 95%`,													// Scan range increased by <<Param:0>>%
+	'101160' : `扫描范围 + 75%, Sum: +170%`,													// Scan range increased by <<Param:0>>%
+	
+	'101431' : `扫描消耗 - 15%, Sum: - 15%`,													// Scan cost <<Param:1>>
+	'101432' : `扫描消耗 - 20%, Sum: - 35%`,													// Scan cost <<Param:1>>
+	'101433' : `扫描消耗 - 24%, Sum: - 59%`,													// Scan cost <<Param:1>>
+	
+	'101161' : `扫描耗时 - 10%, Sum: - 10%`,													// Scan time reduced by <<Param:1>>%
+	'101162' : `扫描耗时 - 10%, Sum: - 20%`,													// Scan time reduced by <<Param:1>>%
+	'101163' : `扫描耗时 - 20%, Sum: - 40%`,													// Scan time reduced by <<Param:1>>%
+	'101164' : `扫描耗时 - 20%, Sum: - 60%`,													// Scan time reduced by <<Param:1>>%
+	
+	'101430' : `每次扫描都可以生成时长为 10 年的传感区域, 期间可监测区域内的[舰队/武器/移民船]等`,		// Each scan generates a sensor area for 8 years to monitor fleets, weapons and colony ships of the area
+	
+	//-- 情报(135)
+	
+	'101434' : `建立情报网所需年份 - 10, Sum: - 10`,											// <<Param:1>> years is required to establish an intelligence network
+	'101435' : `建立情报网所需年份 - 12, Sum: - 22`,											// <<Param:1>> years is required to establish an intelligence network
+	'101436' : `建立情报网所需年份 - 15, Sum: - 37`,											// <<Param:1>> years is required to establish an intelligence network
+	
+	'101437' : `情报收集所需要的年份 - 2, Sum: - 2`,											// Takes <<Param:1>> years to gather intelligence
+	'101438' : `情报收集所需要的年份 - 3, Sum: - 5`,											// Takes <<Param:1>> years to gather intelligence
+	'101439' : `情报收集所需要的年份 - 4, Sum: - 9`,											// Takes <<Param:1>> years to gather intelligence
+	
+	'101442' : `建立情报网暴露率 - 33%, Sum: - 33%`,											// There is a <<Param:1>>% chance to be exposed when spying
+	'101443' : `建立情报网暴露率 - 33%, Sum: - 66%`,											// There is a <<Param:1>>% chance to be exposed when spying
+	'101444' : `建立情报网暴露率 - 33%, Sum: - 99%`,											// There is a <<Param:1>>% chance to be exposed when spying
+	
+	'101446' : `刺探移民地成功率 + 16%, Sum: + 16%`,											// Scout colony success rate <<Param:1>>%
+	'101447' : `刺探移民地成功率 + 20%, Sum: + 36%`,											// Scout colony success rate <<Param:1>>%
+	'101448' : `刺探移民地成功率 + 24%, Sum: + 60%`,											// Scout colony success rate <<Param:1>>%
+	
+	'101449' : `文化登陆的成功率 + 10%, Sum: + 10%`,											// Cultural invasion success rate <<Param:1>>%
+	'101450' : `文化登陆的成功率 + 18%, Sum: + 28%`,											// Cultural invasion success rate <<Param:1>>%
+	'101451' : `文化登陆的成功率 + 20%, Sum: + 48%`,											// Cultural invasion success rate <<Param:1>>%
+	
+	'101445' : `情报收集的行为不再暴露`,														// Gathering intelligence will no longer expose yourself
+	
+	'101440' : `刺探移民地行为不再暴露`,														// Scouting colonies will no longer expose yourself
+	
+	'101441' : `文化登陆的行为不再暴露`,														// Cultural invasions will no longer expose yourself
+	
+	//-- 隐藏(133)
+	
+	'100610' : `解锁建筑"屏蔽器", 该建筑可以 - 10 的星系噪音(但是最多也只能将噪音降到 10 点而已)`,		// ?
+	
+	'100611' : `屏蔽器可以让星系噪音额外 -　5, Sum: -　5`, 										// ?
+	'100612' : `屏蔽器可以让星系噪音额外 - 10, Sum: - 15`, 										// ?
+	'100613' : `屏蔽器可以让星系噪音额外 - 20, Sum: - 35`, 										// ?
+	'100614' : `屏蔽器可以让星系噪音额外 - 50, Sum: - 85`, 										// ?
+	
+	'100300' : `屏蔽装置可消除[军事基地/太空港/太空堡垒]的噪音值`,								// Eliminates noise from Military Bases, Space Ports and Space Fortresses
+	
+	'100280' : `屏蔽装置可消除[工厂/黑洞工厂/残骸工厂]的噪音值`,								// Eliminates noise from Factories, Black Hole Factories and Remnant Factories
+	
+	'100290' : `屏蔽装置可消除[栖息地/研究所/居住区]的噪音值`,									// Reduces the noise from Habitats, Research Facilities and Residential Areas
+	
+	'100630' : `即使星系存在巨型结构, 被敌人探索也不会被发现(注: 并无法消除巨型结构所产生的噪音)`,		// 
+	
+	'100620' : `探索到敌对星系不再会被发现(没有提示信息)`,										// No longer be exposed when exploring a hostile system
+	
+	//-- 暴露(136)
+	
+	'101627' : `所有星系(含人造)的暴露值 - 10, Sum: - 10`,										// 降低当前暴露值<<Param:0>>, <<Final:TechReduceExposureRate>>
+	'101628' : `所有星系(含人造)的暴露值 - 20, Sum: - 30`,										// 降低当前暴露值<<Param:0>>, <<Final:TechReduceExposureRate>>
+	'101629' : `所有星系(含人造)的暴露值 - 40, Sum: - 70`,										// 降低当前暴露值<<Param:0>>, <<Final:TechReduceExposureRate>>
+	
+	'101630' : `清除当前所有因发出广播而造成的暴露值`,											// 清除当前所有因发出广播造成的暴露值, 
+	'101631' : `清除当前所有因发出广播而造成的暴露值`,											// 清除当前所有因发出广播造成的暴露值, 
+	'101632' : `清除当前所有因发出广播而造成的暴露值`,											// 清除当前所有因发出广播造成的暴露值, 
+	
+	'101637' : `被广播的星系暴露值 +　5, Sum: +　5`,											// 被广播星系额外增加<<Param:0>>暴露值, <<Final:BroadcastExtraExposureRate>>
+	'101638' : `被广播的星系暴露值 + 10, Sum: + 15`,											// 被广播星系额外增加<<Param:0>>暴露值, <<Final:BroadcastExtraExposureRate>>
+	'101639' : `被广播的星系暴露值 + 15, Sum: + 30`,											// 被广播星系额外增加<<Param:0>>暴露值, <<Final:BroadcastExtraExposureRate>>
+	
+	'101640' : `清除当前所有因折跃造成的暴露值`,												// 清除当前所有因折跃造成的暴露值, 
+	'101641' : `清除当前所有因折跃造成的暴露值`,												// 清除当前所有因折跃造成的暴露值, 
+	'101642' : `清除当前所有因折跃造成的暴露值`,												// 清除当前所有因折跃造成的暴露值, 
+	
+	'101633' : `广播冷却时间 -　5%, Sum: -　5%`,												// 减少广播冷却<<Param:1>>%, <<Final:WeaponCDReduceRate.5>>
+	'101634' : `广播冷却时间 - 10%, Sum: - 15%`,												// 减少广播冷却<<Param:1>>%, <<Final:WeaponCDReduceRate.5>>
+	'101635' : `广播冷却时间 - 15%, Sum: - 30%`,												// 减少广播冷却<<Param:1>>%, <<Final:WeaponCDReduceRate.5>>
+	'101636' : `广播冷却时间 - 25%, Sum: - 55%`,												// 减少广播冷却<<Param:1>>%, <<Final:WeaponCDReduceRate.5>>
+	
+	'101644' : `广播黑洞星系所造成的暴露值 +20`,												// 广播黑洞造成的暴露值增加<<Param:1>>, 
+	
+	'101643' : `如果星系里的恒星为脉冲星, 则无需广播站亦可发出广播(仍需要有军事基地才能发出攻击)`,		// 如果星系的恒星是脉冲星, 可以利用脉冲星发出广播而无需建造广播站, 
+	
+	//-- 物质(110)
+	
+	'101225' : `与原始星系交流获得科技点 + 20%`,												// Technology points from communicating with primitive systems +<<Param:0>>
+	
+	'101220' : `研究所凝聚力 + 2, Sum: + 2`,													// Research facility bonus Unity <<Param:1>>
+	'101221' : `研究所凝聚力 + 4, Sum: + 6`,													// Research facility bonus Unity <<Param:1>>
+	
+	'101222' : `科技增长 + 1, Sum: + 1`,														// Increases default technology growth
+	'101223' : `科技增长 + 1, Sum: + 2`,														// Increases default technology growth
+	'101224' : `科技增长 + 1, Sum: + 3`,														// Increases default technology growth
+	
+	'101226' : `解锁高级建筑"巨型科学枢纽", 一个文明只能建造一个, 科技点增长 + 5`,				// Unlocks advanced building: Colossal Science Hub
+	
+	'101227' : `解锁外交选项"科技获取", 能偷取对方当前科技点的 25%, 但每个敌人仅能偷一次`,			// Unlocks diplomatic option: Steal Technology (steals 25% of the target's technology points, one use only)
+	
+	'101228' : `解锁外交选项"技术封锁", 可以在 60 年使对方无法使用科技树(相当于无法解锁新科技了)`,	// Unlocks diplomatic option: Technology Block (stops the target from accessing their technology tree for a period of time)
+	
+	//-- 特殊物质(122)
+	
+	'101330' : `科技点 +　500(Sum: +　500)<br />压力值 +10000(Sum: +10000)`,					// Get <<Param:0>> technology points, increases Stress by 10, 000
+	'101331' : `科技点 + 1000(Sum: + 1500)<br />压力值 +25000(Sum: +35000)`,					// Get <<Param:0>> technology points, increases Stress by 25, 000
+	'101332' : `科技点 + 2000(Sum: + 3500)<br />压力值 +50000(Sum: +85000)`,					// Get <<Param:0>> technology points, increases Stress by 50, 000
+	
+	'101333' : `默认科技增长 + 1(Sum: + 1)<br />但凝聚力永久 - 6(Sum: - 6)`,					// Get <<Param:0>> technology point, Unity permanently <<Param:1>>
+	'101334' : `默认科技增长 + 1(Sum: + 2)<br />但凝聚力永久 -18(Sum: -24)`,					// Get <<Param:0>> technology point, Unity permanently <<Param:1>>
+	'101335' : `默认科技增长 + 2(Sum: + 4)<br />但凝聚力永久 -40(Sum: -64)`,					// Get <<Param:0>> technology point, Unity permanently <<Param:1>>
+	
+	'101336' : `解锁建筑: "黑洞观测站", 巨型建筑, 只能修建在黑洞星系, 该建筑可以让科技点增长 + 2`,		// Unlocks building: Black Hole Monitoring Station (black holes now yield technology points, counts as colossal building)
+	
+	'101337' : `解锁建筑: "恒星观测站", 巨型建筑, 只能修建在恒星槽位, 该建筑可以让科技点增长 + 2`,		// Unlocks building: Star Monitoring Station (stars now yield technology points, counts as colossal building)
+	
+	'101338' : `解锁建筑: "虚空观测站", 它只能人造星系的槽位上被建造, 该建筑可以让科技点增长 + 1`,		// Unlocks building: Void Monitoring Station (yields technology points, can only be built in Artificial systems)
+	
+	'101339' : `解锁武器: "零点聚爆弹", 制造小片低维空间`,										// Unlocks weapon: Zero Imploder (creates a small low dimensional space)
+	
+	//-- 精神(111)
+	
+	'101230' : `解锁高级建筑"奇迹", 只能建造在人造星系的槽位, 每个文明就只能建造一个, 凝聚力 +70`,		// Unlocks advanced building: Miracle (can only be build once, Unity +50)
+	
+	'101229' : `解锁建筑"沉思殿", 可重复建造, 但每个星系仅限建造一个, 凝聚力 + 20 但科技增长 - 1`,		// Unlocks building: Contemplation Temple (Unity +10, technology growth -1, one per system)
+	
+	'101231' : `凝聚力 + 5, Sum: + 5`,															// Get Unity <<Param:0>>
+	'101232' : `凝聚力 + 8, Sum: +13`,															// Get Unity <<Param:0>>
+	'101233' : `凝聚力 +12, Sum: +25`,															// Get Unity <<Param:0>>
+	
+	'101234' : `解锁外交选项"布施", 对每个敌人最多只能执行一次, 可以偷取到对方当前　15% 的凝聚力`,		// Unlocks diplomatic option: Preach (steals 15% Unity from the target, one use only)
+	
+	'101235' : `解锁外交选项"讨伐", 对每个敌人最多只能执行一次, 使对方所有的栖息地建筑都变为废墟`,		// Unlocks diplomatic option: Holy War (reduces all of the target's civilization habitats to ruins, one use only)
+	
+	'101236' : `以 50% 的凝聚力为代价, 获得 100 倍科技点(以科技增长值 ×100, 不是当前科技点 ×100)`,		// Loses 50% Unity, but immediately get technology points equal to <<Param:1>> times of the Unity lost
+	
+	//-- 特殊精神(123)
+	
+	'100550' : `下次舰队的登陆将会瞬间完成`,													// Get an instant fleet (next fleet invasion is completed immediately)
+	'100560' : `下次舰队的登陆将会瞬间完成`,													// Get an instant fleet (next fleet invasion is completed immediately)
+	
+	'101347' : `星际舰队闪避 + 5, Sum: + 5`,													// Increases fleet dodge by <<Param:0>>
+	'101348' : `星际舰队闪避 + 5, Sum: +10`,													// Increases fleet dodge by <<Param:0>>
+	
+	'101343' : `居住区凝聚力 + 3, Sum: + 3`,													// Residential area bonus Unity <<Param:1>>
+	'101344' : `居住区凝聚力 + 5, Sum: + 8`,													// Residential area bonus Unity <<Param:1>>
+	'101345' : `居住区凝聚力 + 8, Sum: +16`,													// Residential area bonus Unity <<Param:1>>
+	
+	'101340' : `凝聚力额外 + 20, Sum: + 20<br />科技点增长 -　1, Sum: -　1`,					// Increases Unity by <<Param:0>>, increases technology growth by <<Param:1>>
+	'101341' : `凝聚力额外 + 25, Sum: + 45<br />科技点增长 -　1, Sum: -　2`,					// Increases Unity by <<Param:0>>, increases technology growth by <<Param:1>>
+	'101342' : `凝聚力额外 + 36, Sum: + 81<br />科技点增长 -　1, Sum: -　3`,					// Increases Unity by <<Param:0>>, increases technology growth by <<Param:1>>
+	
+	'1013491' : `随机获得以下一项负面效果, 换取一枚复归器<br />01.压力值 + 20k; 02.压力增长 +30; <br />03.凝聚力 -　30; 04.科技增长 - 2;<br />(不可以同时持有多枚复归器)`,		// Get a random debuff from the following: Stress +<<Param:0>>, Unity -<<Param:1>>, Stress increase rate +<<Param:2>>, Technology growth <<Param:3>>. Also get a Dual Vector Foil (may only have up to 1 at any given time)
+	'1013492' : `随机获得以下一项负面效果, 换取一枚复归器<br />01.压力值 + 40k; 02.压力增长 +60; <br />03.凝聚力 -　60; 04.科技增长 - 4;<br />(不可以同时持有多枚复归器)`,		// Get a random debuff from the following: Stress +<<Param:0>>, Unity -<<Param:1>>, Stress increase rate +<<Param:2>>, Technology growth <<Param:3>>. Also get a Dual Vector Foil (may only have up to 1 at any given time)
+	'1013493' : `随机获得以下一项负面效果, 换取一枚复归器<br />01.压力值 + 60k; 02.压力增长 +80; <br />03.凝聚力 -　80; 04.科技增长 - 6;<br />(不可以同时持有多枚复归器)`,		// Get a random debuff from the following: Stress +<<Param:0>>, Unity -<<Param:1>>, Stress increase rate +<<Param:2>>, Technology growth <<Param:3>>. Also get a Dual Vector Foil (may only have up to 1 at any given time)
+	'1013494' : `随机获得以下一项负面效果, 换取一枚复归器<br />01.压力值 + 60k; 02.压力增长 +80; <br />03.凝聚力 -　80; 04.科技增长 - 6;<br />(不可以同时持有多枚复归器)`,		// Get a random debuff from the following: Stress +<<Param:0>>, Unity -<<Param:1>>, Stress increase rate +<<Param:2>>, Technology growth <<Param:3>>. Also get a Dual Vector Foil (may only have up to 1 at any given time)
+	
+	'101346' : `解锁建筑"秘学坛", 不限数量<br />压力增长 -40, 科技增长 - 1`,					// Unlocks building: Altar (reduces Stress growth, but also reduces technology growth)
+	
+	//-- 尚武(114)
+	
+	'101261' : `每次使用舰队登陆攻击成功则凝聚力 + 1, 但舰队的成本会额外 + 15%(Sum: + 1 / + 15%)`,	// Increases Unity by <<Param:1>> for every successful fleet invasion. Also increases fleet cost by <<Param:3>>%
+	'101262' : `每次使用舰队登陆攻击成功则凝聚力 + 1, 但舰队的成本会额外 + 30%(Sum: + 2 / + 45%)`,	// Increases Unity by <<Param:1>> for every successful fleet invasion. Also increases fleet cost by <<Param:3>>%
+	'101263' : `每次使用舰队登陆攻击成功则凝聚力 + 1, 但舰队的成本会额外 + 45%(Sum: + 3 / + 90%)`,	// Increases Unity by <<Param:1>> for every successful fleet invasion. Also increases fleet cost by <<Param:3>>%
+	
+	'101266' : `下次舰队登陆必定成功(除非对方有绝对防御)`,										// The next fleet invasion is guaranteed to succeed (unless the opponent has the Absolute Defense buff)
+	'101267' : `下次舰队登陆必定成功(除非对方有绝对防御)`,										// The next fleet invasion is guaranteed to succeed (unless the opponent has the Absolute Defense buff)
+	'101268' : `下次舰队登陆必定成功(除非对方有绝对防御)`,										// The next fleet invasion is guaranteed to succeed (unless the opponent has the Absolute Defense buff)
+	
+	'101259' : `舰队登陆则必定会破坏对方建筑`,													// Fleet attacks are guaranteed to destroy enemy buildings
+	
+	'101260' : `舰队登陆成功可收回该舰队一半成本`,												// Successful invasions get resources equal to <<Param:0>>% of the fleet cost
+	
+	'101264' : `军事基地凝聚力 +1, 太空堡垒凝聚力 +3`,											// Military Bases yield 1 Unity each, Space Fortresses yield 3 Unity each
+	
+	'101265' : `解锁建筑"兵营"(该星系的军事基地 CD -33%)`,										// Unlocks building: Barracks (cooldown of military bases in the same system as the barracks reduced by 33%)
+	
+	//-- 特殊尚武(126)
+	
+	'101386' : `舰队的生命值 + 100, Sum: + 100<br />舰队登陆时间 + 20%, Sum: + 20%`,			// Fleet HP +100, invasion speed -20%
+	'101387' : `舰队的生命值 + 100, Sum: + 200<br />舰队登陆时间 + 30%, Sum: + 50%`,			// Fleet HP +100, invasion speed -20%
+	'101388' : `舰队的生命值 + 100, Sum: + 300<br />舰队登陆时间 + 40%, Sum: + 90%`,			// Fleet HP +100, invasion speed -30%
+	
+	'101389' : `可以解锁更多高级武器`,															// Unlocks more advanced weapons
+	
+	'101390' : `解锁武器"小型质量弹", 中耗高速, 能够目标星系的每个空行星槽都制造一个"巨型陨石坑"`,		// Unlocks weapon: Small Mass Projectile (medium cost, high speed, creates a colossal crater on every empty planet slot of the target system)
+	
+	'101391' : `解锁武器"相位裂解炮", 低耗高速, 能够将目标星系随机某个有建筑的行星槽位清空`,		// Unlocks weapon: Phaser Cannon (low cost, high speed, clears a random slot of the target system that has buildings in them)
+	
+	'101392' : `解锁武器"电浆融合雷", 中耗中速, 无法攻击自然的星系, 仅能够破坏人造星系`,		// Unlocks weapon: Plasma Fusion Grenade (medium cost and speed, only destroys Artificial systems)
+	
+	'101393' : `解锁武器"慢中子光矛", 高耗低速, 能破坏低光速屏障以及产生屏障的装置`,		// Unlocks weapon: Slow Neuron Spear (high cost, low speed, damages low lightspeed shields and their generators)
+	
+	//-- 和平(115)
+	
+	'101256' : `下次防御舰队必定成功`,															// Next fleet defense is guaranteed to succeed
+	'101257' : `下次防御舰队必定成功`,															// Next fleet defense is guaranteed to succeed
+	'101258' : `下次防御舰队必定成功`,															// Next fleet defense is guaranteed to succeed
+	
+	'101251' : `凝聚力 + 5, 但未来　200 年内不可登陆, 既不可进行军事行动, Sum: -　5 / Sum: + 200`,		// Get <<Param:0>> Unity, unable to attack for the next <<Param:1>> years
+	'101252' : `凝聚力 +15, 但未来　700 年内不可登陆, 既不可进行军事行动, Sum: - 20 / Sum: + 900`,		// Get <<Param:0>> Unity, unable to attack for the next <<Param:1>> years
+	'101253' : `凝聚力 +20, 但未来 1500 年内不可登陆, 既不可进行军事行动, Sum: - 40 / Sum: +2400`,		// Get <<Param:0>> Unity, unable to attack for the next <<Param:1>> years
+	
+	'101249' : `获得免费的"低光速屏障", 需"进阶军事"<br />的"低光速屏障科技"(相当节省资源 20K)`,		// "Get a free LLVBarrier(should first unlock building ""LLVBarrier"")."
+	
+	'101254' : `每拆除一座"军事基地", 凝聚力 +20<br />但该文明从此不可以再建造军事基地`,			// Earn Unity each time a military base is dismantled. Unable to build more
+	
+	'101255' : `解锁建筑"田园", 限定星系唯一<br />每年资源增长 +30, 凝聚力 + 3`,				// Unlocks building: Countryside (continuous resource growth +20, Unity +2)
+	
+	'101250' : `可以建造复数的"太空堡垒"<br />(原本限制为每个星系一座)`,					// Able to build multiple Space Fortresses in a system
+	
+	//-- 特殊和平(127)
+	
+	'101374' : `和平时间年份限制 -150, Sum: - 150 年<br />可以用于减少因科技带来的禁止登陆时间`,		// Peaceful time <<Param:0>> years
+	'101375' : `和平时间年份限制 -300, Sum: - 450 年<br />可以用于减少因科技带来的禁止登陆时间`,		// Peaceful time <<Param:0>> years
+	'101376' : `和平时间年份限制 -800, Sum: -1250 年<br />可以用于减少因科技带来的禁止登陆时间`,		// Peaceful time <<Param:0>> years
+	
+	'101377' : `每年的压力值增长 -　5, Sum: -　5<br />但　300 年内不可登陆, Sum: + 300`,		// Reduces stress growth by <<Param:0>>, unable to attack for the next <<Param:1>> years
+	'101378' : `每年的压力值增长 - 10, Sum: - 15<br />但　700 年内不可登陆, Sum: +1000`,		// Reduces stress growth by <<Param:0>>, unable to attack for the next <<Param:1>> years
+	'101379' : `每年的压力值增长 - 15, Sum: - 30<br />但 1500 年内不可登陆, Sum: +2500`,		// Reduces stress growth by <<Param:0>>, unable to attack for the next <<Param:1>> years
+	
+	'101383' : `低光速屏障时间 + 10%, Sum: + 10%`,												// Low lightspeed shield duration +10%
+	'101384' : `低光速屏障时间 + 20%, Sum: + 30%`,												// Low lightspeed shield duration +20%
+	'101385' : `低光速屏障时间 + 20%, Sum: + 50%`,												// Low lightspeed shield duration +20%
+	
+	'101380' : `压力值 - 15k, 舰队闪避 - 10%`,													// Reduces Stress by <<Param:0>>, but fleet dodge -10
+	'101381' : `科技增长 +10, 但舰队规模 - 1`,													// Technology growth +<<Param:0>>, but fleet scale -1
+	'101382' : `凝聚力 +　50, 舰队装甲 - 100`,													// Increases Unity by <<Param:0>>, but fleet armor -100
+	
+	'101372' : `解锁建筑"黑洞力场", 可以在黑洞星系上生成小范围的低光速屏障(就类似能量防护罩那样)`,		// Unlocks building: Black Hole Gravitational Field (enables building of low lightspeed shields on black holes)
+	
+	'101373' : `在同个星系之中, 可以建造复数的"田园"建筑(需要先解锁"和平"科技类型中的"田园牧歌")`,		// System is able to accommodate multiple countrysides
+	
+	//-- 集中(112)
+	
+	'101237' : `敌方和自身如果建立起了情报网则必定会暴露(这项科技的优先级高于"百家争鸣"这项科技)`,		// Guaranteed to expose enemy's and your own spy network
+	
+	'101238' : `解锁建筑"首都", 文明唯一, 首都的能量护盾持续时间 +50%, 并且可额外提供 3 个建筑槽`,		// Unlocks capital (emergency shield duration in capital cluster increased by 50%, only one per civilization; also provides 3 construction queues)
+	
+	'101239' : `解锁建筑"战争议事堂", 在首都星系建造<br />才能生效, 首都军事基地冷却时间 - 60%`,	// Unlocks building: War Hall (cooldown of Military Bases in the capital -60%, only effective when built in capital system)
+	
+	'101240' : `解锁建筑"帝国空港", 仅在首都星系建造<br />才能生效, 首都太空港的冷却时间 - 60%`,	// Unlocks building: Imperial Airport (cooldown of Space Ports in the capital -60%, only effective when built in capital system)
+	
+	'101241' : `解锁建筑"证券中心", 资源增长+100<br />该建筑必须在首都星系建造才能生效`,		// Unlocks building: Stock Exchange (resources earned increased by 60%, only effective when built in capital system)
+	
+	'101242' : `解锁建筑"大图书馆", 科技增长 + 2<br />该建筑必须在首都星系建造才能生效`,		// Unlocks building: Grand Library (technology growth +2, only effective when built in capital system)
+	
+	//-- 特殊集中(124)
+	
+	'101350' : `星球开发释放的压力 + 20%, Sum: + 20%<br />但星球开发开发速度 - 25%, Sum: - 25%`,		// Increases Stress reduced by development by <<Param:0>>%, but decreases development speed by <<Param:1>>%
+	'101351' : `星球开发释放的压力 + 35%, Sum: + 55%<br />但星球开发开发速度 - 40%, Sum: - 65%`,		// Increases Stress reduced by development by <<Param:0>>%, but decreases development speed by <<Param:1>>%
+	'101352' : `星球开发释放的压力 + 50%, Sum: +105%<br />但星球开发开发速度 - 60%, Sum: -125%`,		// Increases Stress reduced by development by <<Param:0>>%, but decreases development speed by <<Param:1>>%
+	
+	'101353' : `压力值的增长 -　5, Sum: -　5<br />但压力值立即 +10k, Sum: +10k`,				// Stress growth -<<Param:0>>, immediately gains 10, 000 Stress
+	'101354' : `压力值的增长 - 10, Sum: - 15<br />但压力值立即 +20k, Sum: +30k`,				// Stress growth -<<Param:0>>, immediately gains 20, 000 Stress
+	'101355' : `压力值的增长 - 20, Sum: - 35<br />但压力值立即 +40k, Sum: +70k`,				// Stress growth -<<Param:0>>, immediately gains 40, 000 Stress
+	
+	'101356' : `解锁建筑"福报工会", 需要 2K 资源<br />压力值增长 + 6, 资源量产出 + 120`,		// Unlocks building: Slavery Union (increases Stress, yields resources)
+	
+	'101357' : `可让"福报工会"额外产出 10 凝聚力<br />(每个星系仅能够建造一个福报工会)`,		// Slavery Union yields additional <<Param:1>> Unity
+	
+	'101358' : `解锁高级建筑"首都阵列", 只能在首都星系建造, 是个小型"传感阵列", 可检测范围内事物`,		// Unlocks advanced building: Capital Array (small sensor device, can only be built in capitals)
+	
+	'101359' : `解锁武器"歼星巨炮", 高速低耗, 可破坏目标星系里的一颗行星(将被完全摧毁, 无法修复)`,		// Unlocks weapon: Star Destroyer (high speed, low cost, destroys a planet slot of the target system)
+	
+	//-- 分权(113)
+	
+	'101244' : `解锁建筑"议会", 星系唯一, 可以 +2 凝聚力, 并让该建筑所在的星系能够建造多个栖息地`,		// Unlocks building: Parliament (one per system, enables building multiple habitats, Unity +2)
+	
+	'101245' : `解锁建筑"外星移民公司", 星系唯一, 所在星系太空港冷却时间 -20%, 并额外 + 1 建筑槽`,		// Unlocks Space Colonization Company (one per system, space port cooldown -20%, adds a building slot)
+	
+	'101246' : `解锁建筑"战争承包商", 星系唯一, 所在星系军事基地冷却时间 -20%, 并额外 + 1 建筑槽`,		// Unlocks War Contractor (one per system, military base cooldown -20%, adds a building slot)
+	
+	'101243' : `敌方和自身如果建立起了情报网则必定不暴露(这项科技的优先级低于"报到管制"这项科技)`,		// Guaranteed to not expose enemy's or your own spy network
+	
+	'101248' : `解锁建筑"科学城", 星系唯一, 可让所在星系的"研究院"科技点 + 1`,					// Unlocks building: Science City (one per system, research facilities in the system grant 1 additional technology point)
+	
+	'101247' : `解锁建筑"工会", 星系唯一, 可让所在星系的"工厂"凝聚力额外 + 5`,					// Unlocks building: Union (one per system, factories in the system grant additional 3 Unity)
+	
+	//-- 特殊分权(125)
+	
+	'101361' : `压力值增长 +　5, Sum: +　5<br />压力值立即 -10k, Sum: -10k`,					// Stress growth +5, immediately reduces <<Param:1>> Stress
+	'101362' : `压力值增长 + 10, Sum: + 15<br />压力值立即 -20k, Sum: -30k`,					// Stress growth +10, immediately reduces <<Param:1>> Stress
+	'101363' : `压力值增长 + 15, Sum: + 30<br />压力值立即 -40k, Sum: -70k`,					// Stress growth +15, immediately reduces <<Param:1>> Stress
+	
+	'101364' : `获得免费移民(下次移民可免费)`,													// Get a free colonization (the next <<Param:2>> relocations are free)
+	'101365' : `获得免费移民(下次移民可免费)`,													// Get a free colonization (the next <<Param:2>> relocations are free)
+	'101366' : `获得免费移民(下次移民可免费)`,													// Get a free colonization (the next <<Param:2>> relocations are free)
+	
+	'101367' : `下次移民瞬间完成(0 年即可完工)`,												// Next relocation will complete immediately
+	'101368' : `下次移民瞬间完成(0 年即可完工)`,												// Next relocation will complete immediately
+	'101369' : `下次移民瞬间完成(0 年即可完工)`,												// Next relocation will complete immediately
+	
+	'101370' : `移民凝聚力消耗 - 30%`,															// Colonization Unity cost <quad name=Cohesion size=27 width=1 /> <<Param:0>>%
+	
+	'101360' : `凝聚力 +15, 但是避难者带来的压力会 + 50%`,										// Unity +<<Param:0>>, but takes in 25% more refugees each time
+	
+	'101371' : `解锁武器"毁灭光束", 低速中耗, 可让目标星系丧失归属权, 回归到未殖民状态但保留建筑`,		// ? 
+	
+	//-- 亲外(117)
+	
+	'101269' : `每次广播自己的非人造星系可让<br />凝聚力 + 3, 但每个星系限一次`,				// Earn <<Param:1>> Unity each time you broadcast your system (not Artificial, each system in your possession can only be broadcast once)
+	
+	'101270' : `与其他文明进行贸易的时候<br />获得凝聚力上限增加 + 25%`,						// Increases Unity limit from trade by <<Param:2>>%
+	
+	'101271' : `原始星系无法保持沉默<br />(交流会强制应答我方)`,								// Primitive systems can no longer remain silent when communicated with
+	
+	'101272' : `解锁武器"信标", 向目标星系发射"信标"建筑(如果没有空的建筑槽则强行拆掉一个), 目标星系将定期广播自己, 信标的广播并不会导致暴露值增加, 但暴露值高的时候仍会招致打击`,		// "Unlocks ""beacon"" (fires a beacon at the target system, making it broadcast itself periodically; forcibly removes a construction progress if there isn't an available queue)."
+	
+	'101273' : `解锁外交行为选项"文化交流", 如果对方同意, 双方登陆皆可见的移民地时, 将对对方报警`,						// Unlocks diplomatic option: Cultural Exchange. After entering an agreement, one side will be alerted when the other attacks its visible colonies
+	
+	'101274' : `每存在一个交流过的原始星系, 则凝聚力 + 5`,										// Increases Unity by <<Param:0>> for every primitive system that you have established communications with
+	
+	//-- 特殊亲外(129)
+	
+	'101394' : `每存在一个交流过的原始星系, 则压力值 - 5`,										// Stress growth -3 for each primitive system that you have communicated with
+	
+	'101397' : `舰队规模 + 1, 但是不可以再登陆原始星系了`,										// Fleet size +1, but unable to invade primitive systems again
+	
+	'101398' : `广播自己所有殖民地, 科技加殖民地数 × 500`,										// Randomly selects half of the systems with residents to broadcast themselves
+	
+	'101396' : `可以在自己的星球上主动建造"信标", 并且信标能够让凝聚力 +12, 信标的广播并不会导致暴露值增加, 但暴露值高的时候仍会招致打击`,		// ?
+	
+	'101395' : `广播自己的非人造星系可让压力值 -4000, 每个星系限一次(仅包括主动的"暴露坐标"行动)`,						// Stress <<Param:0>> each time you broadcast your system (not Artificial, each system in your possession can only be broadcast once)
+	
+	'101399' : `解锁武器"引力波天线"(召唤天灾, 但仅一次)`,										// Unlocks weapon: Gravitational Wave Antenna (summons Disaster, one use only)
+	
+	//-- 孤立(116)
+	
+	'101277' : `被交流时可以选择"伪装", 在对方视角中呈现为原始星系, 但无法再与其他星系进行沟通了`,		// After establishing communications, you may choose to disguise your system and appear as a primitive system to the other side. Unable to communicate after unlocking technology
+	
+	'101278' : `解锁建筑"掩体", 星系被毁灭为黑洞或残骸后, 仍能保留所有权, 但是舰队登陆的情况除外`,		// Unlocks building: Bunker (keeps possession of a system even after it's destroyed, unless attacked by a fleet; all buildings become ruins)
+	
+	'101275' : `屏蔽装置可 +5 凝聚力 `,															// Shielding devices now yield Unity
+	
+	'101276' : `凝聚力+100, 移民凝聚力惩罚翻倍`,												// Increases Unity by 100, but increases colonization Unity penalty by 100%
+	
+	'101282' : `我方舰队每击败一个有人的星系则凝聚力 + 2`,										// Earn Unity when the fleet destroys a system with inhabitants
+	
+	'101279' : `将我方的星系从已被扫描过的列表上消去痕迹`,										// Remove yourself from the scanned list
+	'101280' : `将我方的星系从已被扫描过的列表上消去痕迹`,										// Remove yourself from the scanned list
+	'101281' : `将我方的星系从已被扫描过的列表上消去痕迹`,										// Remove yourself from the scanned list
+	
+	//-- 特殊孤立(128)
+	
+	'1014010' : `防御敌人下次的广播攻击(但也仅限这种广播)`,										// ?
+	'1014011' : `防御敌人下次的广播攻击(但也仅限这种广播)`,										// ?
+	'1014012' : `防御敌人下次的广播攻击(但也仅限这种广播)`,										// ?
+	
+	'1014020' : `下次我方移民地遭受敌人的广播攻击后, 发出广播那一方的随机一个星系, 也同时会被广播`,		// ?
+	'1014021' : `下次我方移民地遭受敌人的广播攻击后, 发出广播那一方的随机一个星系, 也同时会被广播`,		// ?
+	'1014022' : `下次我方移民地遭受敌人的广播攻击后, 发出广播那一方的随机一个星系, 也同时会被广播`,		// ?
+	
+	'101400' : `每击败一个有人的星系, 则当前压力值 -3000`,										// Stress <<Param:1>> for every destroyed system that has inhabitants
+	
+	'101403' : `废弃移民地 + 10 凝聚力, 但每个星系限一次`,										// Increases Unity by <<Param:0>> for every colony abandoned. Limited to once per system
+	
+	'101404' : `解锁建筑"庇护所", 凝聚力 +　5<br />资源增长 +　20, 压力增长 -　3`,					// Unlocks building: Shelter (yields Unity and reduces Stress)
+	
+	'101405' : `解锁建筑"光墓", 文明唯一, 可拦截一切攻击(包括广播), 但压力值增长 +50, 凝聚力 -40`,		// Unlocks building: Light Grave (one per civilization, intercepts every attack but reduces Unity and increases Stress)
+	
+	//-- 生产(119)
+	
+	'101316' : `解锁建筑"巨型工厂", 是"工厂建筑"的加强版, 资源产出 + 500, 会导致过度开采等级 + 2`,		// Unlocks building: Colossal Factory (yield +200, over-excavation +2)
+	
+	'101317' : `解锁建筑"行星钻机", 资源 + 10k, 但星系资源 - 20k, 生效后建筑直接变废墟, 需要拆除`,		// Unlocks the Planet Drilling Rig (immediately get 10, 000 resources, system resources -20, 000, must be manually removed after constructing)
+	
+	'101318' : `"库存中心"凝聚力 + 3`,															// Warehouse Center grants <<Param:1>> bonus Unity
+	
+	'101319' : `库存资源 > 20k, 科技点增长 + 2`,												// Increases default technology growth by <<Param:1>> when resources in storage is at or above <<Param:0>>
+	
+	'101323' : `与其他文明贸易则资源 +6k, 一个文明限一次`,										// Earn <<Param:0>> resources immediately when trading with other civilizations (once per civilization)
+	
+	'101320' : `凝聚力 - 3, Sum: - 3<br />资源 +　6k, Sum:+ 6k`,								// Trade <<Param:0>> Unity for <<Param:1>> resources
+	'101321' : `凝聚力 - 5, Sum: - 8<br />资源 + 15k, Sum:+21k`,								// Trade <<Param:0>> Unity for <<Param:1>> resources
+	'101322' : `凝聚力 - 8, Sum: -16<br />资源 + 40k, Sum:+61k`,								// Trade <<Param:0>> Unity for <<Param:1>> resources
+	
+	//-- 特殊生产(131)
+	
+	'101406' : `压力值 +　5000, Sum: +　5000<br />资源数 +　5000, Sum: +　5000`,				// Increases Stress by 5, 000 immediately, but gains <<Param:1>> resources
+	'101407' : `压力值 + 10000, Sum: + 15000<br />资源数 + 10000, Sum: + 15000`,				// Increases Stress by 10, 000 immediately, but gains <<Param:1>> resources
+	'101408' : `压力值 + 20000, Sum: + 35000<br />资源数 + 20000, Sum: + 35000`,				// Increases Stress by 20, 000 immediately, but gains <<Param:1>> resources
+	
+	'101409' : `压力增长 +　4, Sum: +　4<br />资源增长 + 20, Sum: + 20`,						// Stress growth +5, resource growth +<<Param:1>>
+	'101410' : `压力增长 +　8, Sum: + 12<br />资源增长 + 40, Sum: + 60`,						// Stress growth +10, resource growth +<<Param:1>>
+	'101411' : `压力增长 + 15, Sum: + 27<br />资源增长 + 60, Sum: +120`,						// Stress growth +20, resource growth +<<Param:1>>
+	
+	'101414' : `"库存中心"建筑每年可以额外 + 20 资源收益`,										// Warehouse Center grants bonus yield
+	
+	'101413' : `当库存资源 > 20000 的时候, 压力值增长 -6`,										// Stress growth -<<Param:0>> when resources in storage is at or above <<Param:1>>
+	
+	'101412' : `解锁建筑"虚无装置", 建造完毕再拆除, 可得到 1.5 倍建造资源(每次可得到的资源为 5k)`,		// Builds a Void Device that grants 1.5x construction resources after dismantling
+	
+	'101415' : `使用"质量弹"或"光粒"轰炸目标星系后, 发出攻击的星系一次性 +50000 可开采的星系资源`,		// Earned 50k excavatable system resources after bombing the target system with Mass Projectiles or light particles
+	
+	//-- 生态(118)
+	
+	'101324' : `解锁建筑"资源回收站"(每年可以 + 50 资源)`,										// Unlocks building: Recycle Station (continuous resource growth +40)
+	
+	'101325' : `可以瞬间拆除障碍(地貌, 贫民窟和古代废墟)`,										// 
+	
+	'101326' : `星系上每个未被使用的建筑槽可以 +4 凝聚力`,										// Every unused construction slot grants <<Param:0>> Unity
+	
+	'101327' : `解锁建筑"生态环"(可以 +2 个额外的建筑槽)`,										// Unlocks building: Ecology (adds 2 construction queues)
+	
+	'101328' : `移民到黑洞或残骸的星系, 凝聚力惩罚 - 50%`,										// Colonizing a black hole / remnant Unity penalty <<Param:1>>%
+	
+	'101329' : `星系剩余资源 > 75%, 移民凝聚力惩罚 - 25%`,										// Colonization penalty increases by <<Param:1>>% when untapped resources is greater than <<Param:0>>%
+	
+	//-- 特殊生态(130)
+	
+	'101418' : `压力值 + 5k, Sum: + 5k<br />凝聚力 +　3, Sum: +　3`,							// Increases Stress by 5, 000 immediately, increases Unity by <<Param:1>>
+	'101419' : `压力值 +10k, Sum: +15k<br />凝聚力 +　7, Sum: + 10`,							// Increases Stress by 10, 000 immediately, increases Unity by <<Param:1>>
+	'101420' : `压力值 +20k, Sum: +35k<br />凝聚力 + 15, Sum: + 25`,							// Increases Stress by 20, 000 immediately, increases Unity by <<Param:1>>
+	
+	'101422' : `压力增长+ 7, Sum: +　7<br />凝聚力 + 10, Sum: + 10`,							// Stress growth +10, Unity +<<Param:1>>
+	'101423' : `压力增长+15, Sum: + 22<br />凝聚力 + 20, Sum: + 30`,							// Stress growth +20, Unity +<<Param:1>>
+	'101424' : `压力增长+25, Sum: + 47<br />凝聚力 + 40, Sum: + 70`,							// Stress growth +40, Unity +<<Param:1>>
+	
+	'101421' : `拆除建筑和障碍不再消耗任何资源, 但仍需要时间去执行`,			// Dismantling buildings and obstacles no longer cost resources
+	
+	'101416' : `解锁高级建筑"虚空环", 可以 +2 个建筑槽位(只能在人造星系建造)`,			// Unlocks advanced building: Void Ring (adds construction queues, but can only be built in Artificial systems)
+	
+	'101425' : `解锁武器"退化射线", 目标星系上每存在一个建筑, 会让目标文明压力值 +1000`,		// Unlocks building: Degenerating Beam (increases the target system's Stress by 1, 000 for every building in the system)
+	
+	'101417' : `解锁建筑"黑洞低维化装置", 建好后会制造一个小范围的二维空间(也就是说这是个自爆弹)`,		// Unlocks building: Black Hole Low Dimensionalization Device (only covers a small area)
+	},
+	
+	科技名称 : {
+	
+	//-- 发展(101)
+	'1001'	: `工厂产出`,			// Factory Yield
+	'1002'	: `资源上限`,			// Resource Limit
+	'1003'	: `持续增长`,			// Continued Growth
+	'1004'	: `持续发展`,			// Sustained Development
+	'1005'	: `取得资源`,			// Get Resources
+	'1039'	: `建造时间`,			// Construction Time
+	
+	//-- 进阶发展(102)
+	'1007'	: `可开采恒星`,			// Excavate Star
+	'1006'	: `额外建筑槽`,			// Additional Construction Queue
+	'1009'	: `可开采残骸`,			// Excavate Remnant
+	'1010'	: `可开采黑洞`,			// Excavate Black Hole
+	'1008'	: `免费戴森球`,			// Free Dyson Sphere
+	
+	//-- 军事(104)
+	'1016'	: `军事基地冷却`,		// Military base cooldown
+	'1017'	: `舰队规模`,			// Fleet Scale
+	'1018'	: `舰队装甲`,			// Fleet Armor
+	'1019'	: `舰队闪避`,			// Fleet Dodge
+	'1020'	: `防御建筑`,			// Defensive Buildings
+	'1021'	: `堡垒升级`,			// Upgrade Space Fortress
+	'10211'	: `焦土政策`,			// Scorched Earth
+	'1034'	: `舰队速度`,			// Fleet Speed
+	
+	//-- 进阶军事(105)
+	'1023'	: `质量弹`,				// Mass Projectile
+	'1024'	: `高速质量弹`,			// High Speed Mass Projectile
+	'1035'	: `质量弹速度`,			// Mass Projectile Speed
+	'1025'	: `光粒子`,				// Light Particle
+	'1026'	: `免费光粒子`,			// Low Cost Light Particle
+	'1036'	: `光粒子成本`,			// Light Particle Cost
+	'1040'	: `绝对防御`,			// Absolute Defense
+	'1054'	: `低维跌落`,			// Low Dimension Collapse
+	
+	//-- 扩张(107)
+	'1013'	: `取得凝聚力`,			// Get Unity
+	'1015'	: `栖息地产出`,			// Habitat Yield
+	'1032'	: `太空港冷却`,			// Space Port cooldown
+	'1033'	: `低移民消耗`,			// Reduced Colonization Cost
+	'1037'	: `移民加速度`,			// Colonization Speed
+	
+	//-- 压力(120)
+	'1100'	: `减少社会压力`,		// Reduce Stress
+	'1101'	: `降低压力增长`,		// Reduced Stress Growth
+	'1102'	: `星球快速开发`,		// Quick Development
+	'1103'	: `星球高效开发`,		// Efficient Development
+	'1104'	: `减少避难压力`,		// Reduce Refugees
+	
+	//-- 探索(134)
+	'1031'	: `加速探索`,			// Reduced Exploration Time
+	'1038'	: `扫描范围`,			// Scan Range
+	'1182'	: `扫描消耗`,			// Scan Cost
+	'10381'	: `扫描耗时`,			// Scan Duration
+	'1181'	: `扫描监测`,			// Scan for Surveillance
+	
+	//-- 情报(135)
+	'1186'	: `情报网时间`,			// Intelligence Network Duration
+	'1187'	: `情报收集时间`,		// Intelligence Gathering Permission
+	'1190'	: `情报网暴露率`,		// Intelligence Network exposure odds
+	'1188'	: `刺探移民暴露率`,		// Scout colony exposure odds
+	'1189'	: `文化登陆暴露率`,		// Cultural invasion exposure odds
+	'1191'	: `情报收集暴露率`,		// Gathering intelligence exposure odds
+	'1192'	: `刺探移民成功率`,		// Scout colony success odds
+	'1193'	: `文化登陆成功率`,		// Cultural invasion success rate
+	
+	//-- 隐藏(133)
+	'1028'	: `噪音降低`,			// Noise Reduction
+	'10280'	: `降低噪音`,			// ?
+	'1185'	: `军事噪音`,			// Military Facility Noise
+	'1183'	: `工业噪音`,			// Industrial Facility Noise
+	'1184'	: `民用噪音`,			// Civilian Facility Noise
+	'1029'	: `巨构隐藏`,			// Hide Colossal Buildings
+	'1030'	: `探索隐藏`,			// Hide Explorations
+	
+	//-- 暴露(136)
+	'1300'	: `降低暴露率`,			// 降低暴露率
+	'1301'	: `清除暴露率`,			// 清除暴露率
+	'1303'	: `增加广播成功率`,		// 增加广播成功率
+	'1304'	: `擦除跃迁的航迹`,		// 航迹擦除
+	'1302'	: `减少广播CD`,			// 减少广播冷却
+	'1306'	: `黑洞的广播`,			// 黑洞广播
+	'1305'	: `脉冲星利用`,			// 脉冲星利用
+	
+	//-- 物质(110)
+	'1047'	: `原始启蒙运动`,		// Enlightenment
+	'1042'	: `研究所凝聚力`,		// Research Facility Unity
+	'1044'	: `额外科技增长`,		// Bonus Technology Growth
+	'1043'	: `科学枢纽`,			// Colossal Science Hub
+	'1045'	: `科技获取`,			// Steal Technology
+	'1046'	: `技术封锁`,			// Technology Block
+	
+	//-- 特殊物质(122)
+	'1117'	: `窥视深渊`,			// Look into the Abyss
+	'1118'	: `朝闻道也`,			// Morning Enlightenment
+	'1119'	: `黑洞观测`,			// Monitor Black Holes
+	'1120'	: `恒星观测`,			// Monitor Stars
+	'1121'	: `虚空观测`,			// Monitor the Void
+	'1122'	: `零点聚爆`,			// Zero Imploder
+	
+	//-- 精神(111)
+	'1049'	: `奇迹`,				// Miracle
+	'1048'	: `沉思殿`,				// Contemplation Temple
+	'1050'	: `加凝聚力`,			// Get Unity
+	'1051'	: `布施`,				// Preach
+	'1052'	: `讨伐`,				// Holy War
+	'1053'	: `顿悟`,				// Martyr
+	
+	//-- 特殊精神(123)
+	'1022'	: `量子舰队`,			// Quantum Fleet
+	'1127'	: `灵能引擎`,			// Chi Engine
+	'1124'	: `礼拜日`,				// Sunday
+	'1123'	: `探知真理`,			// Truthseeker
+	'1128'	: `意志的契约`,			// Ancient Contract
+	'1125'	: `秘学坛`,				// Altar
+	
+	//-- 尚武(114)
+	'1075'	: `永恒战争`,			// Eternal War
+	'1080'	: `战争决心`,			// War Determination
+	'1073'	: `无敌舰队`,			// Invincible Fleet
+	'1074'	: `机体回收`,			// Pirate Ship
+	'1078'	: `尚武文化`,			// Militarism
+	'1079'	: `全民皆兵`,			// Civilian Soldiers
+	
+	//-- 特殊尚武(126)
+	'1147'	: `更高级战舰`,			// Advanced Warship
+	'1148'	: `超限战理论`,			// Extreme War
+	'1149'	: `小型质量弹`,			// Small Mass Projectile
+	'1150'	: `相位裂解炮`,			// Phaser Cannon
+	'1151'	: `电浆融合雷`,			// Plasma Fusion Grenade
+	'1152'	: `慢中子光矛`,			// Slow Neuron Spear
+	
+	//-- 和平(115)
+	'1072'	: `防御舰队`,			// Defense Fleet
+	'1069'	: `和平追求`,			// Peace
+	'1067'	: `永固堡垒`,			// Eternal Fortress
+	'1070'	: `裁军行动`,			// Demilitarization
+	'1071'	: `田园牧歌`,			// Countryside Ode
+	'1068'	: `不落要塞`,			// Impenetrable Stronghold
+	
+	//-- 特殊和平(127)
+	'1143'	: `重返战场`,			// Back to Battle
+	'1144'	: `韬光养晦`,			// Hidden Talent
+	'1146'	: `守护系统`,			// Guardian System
+	'1145'	: `卸甲归田`,			// Putting Down Arms
+	'1141'	: `黑洞力场`,			// Black Hole Gravitational Field
+	'1142'	: `田园时代`,			// Countryside Era
+	
+	//-- 集中(112)
+	'1055'	: `报道管制`,			// Report Restriction
+	'1056'	: `首都决议`,			// Capital
+	'1057'	: `战争议事`,			// War Hall
+	'1058'	: `帝国空港`,			// Imperial Airport
+	'1059'	: `证券中心`,			// Stock Exchange
+	'1060'	: `大图书馆`,			// Grand Library
+	
+	//-- 特殊集中(124)
+	'1129'	: `都会阵列`,			// Billion Level City
+	'1130'	: `机密计划`,			// Plan 1984
+	'1131'	: `福报工会`,			// Slave Union
+	'1132'	: `阶级社会`,			// Class-Based Society
+	'1133'	: `首都阵列`,			// Capital Array
+	'1134'	: `歼星巨炮`,			// Imperial Star Destroyer
+	
+	//-- 分权(113)
+	'1062'	: `议会`,				// Parliament
+	'1063'	: `外星移民公司`,		// Space Immigration Company
+	'1064'	: `战争承包商`,			// War Contractor
+	'1061'	: `百家争鸣`,			// A Hundred Schools of Thoughts
+	'1066'	: `科学城`,				// Science City
+	'1065'	: `工会`,				// Union
+	
+	//-- 特殊分权(125)
+	'1136'	: `新世界`,				// Beautiful New World
+	'1137'	: `移民招标`,			// Colony Bid
+	'1138'	: `超空间航道`,			// Hyperspace Lane
+	'1139'	: `昭昭天命`,			// Mandate of Heaven
+	'1135'	: `人道主义`,			// Humanitarianism
+	'1140'	: `毁灭光束`,			// Destroyer Beam
+	
+	//-- 亲外(117)
+	'1081'	: `我在这里`,			// I'm Here
+	'1082'	: `银河大同`,			// Universal Peace
+	'1083'	: `强制交流`,			// Forced Communication
+	'1084'	: `信标攻击`,			// Beacon
+	'1085'	: `文化交流`,			// Cultural Exchange
+	'1086'	: `物种保护`,			// Species Protection
+	
+	//-- 特殊亲外(129)
+	'1153'	: `多元文化`,			// Diversity
+	'1156'	: `银河卫士`,			// Galactic Guard
+	'1157'	: `终结狂欢`,			// Ultimate Party
+	'1155'	: `展示欲`,				// Showing Off
+	'1154'	: `安全声明`,			// Safety Notice
+	'1158'	: `引力波天线`,			// Gravitational Wave Antenna
+	
+	//-- 孤立(116)
+	'1089'	: `独善其身`,			// Closed-door policy
+	'1090'	: `掩体措施`,			// Bunker
+	'1087'	: `全频静默`,			// Total Silence
+	'1088'	: `海禁政策`,			// Maritime Restriction
+	'1092'	: `种族净化`,			// Ethnic Cleansing
+	'1091'	: `星系隐藏`,			// Hide System
+	
+	//-- 特殊孤立(128)
+	'1160'	: `广播屏蔽`,			// Block Broadcast
+	'1161'	: `广播反射`,			// Reflect Broadcast
+	'1159'	: `天国王朝`,			// Heaven Dynasty
+	'1162'	: `回归运动`,			// Return Movement
+	'1163'	: `与世无争`,			// Peaceful Living
+	'1164'	: `光墓屏障`,			// Light Grave
+	
+	//-- 生产(119)
+	'1105'	: `巨型工厂`,			// Colossal Factory
+	'1106'	: `行星钻机`,			// Planet Drilling Rig
+	'1107'	: `有备无患`,			// Preparation
+	'1108'	: `研发基金`,			// Research Fund
+	'1110'	: `企业国度`,			// Nation of Enterprises
+	'1109'	: `贷款津贴`,			// Loan Allowance
+	
+	//-- 特殊生产(131)
+	'1165'	: `竭泽而渔`,			// Instant Gratification
+	'1166'	: `榨取价值`,			// Devalue
+	'1169'	: `理财公司`,			// Wealth Management
+	'1168'	: `五谷丰登`,			// Great Harvest
+	'1167'	: `虚无装置`,			// Void Device
+	'1170'	: `结晶流束`,			// Crystal Flux
+	
+	//-- 生态(118)
+	'1111'	: `资源回收`,			// Recycle Resource
+	'1112'	: `地貌改造`,			// Terraforming
+	'1113'	: `退耕还林`,			// Back to Nature
+	'1114'	: `环境控制`,			// Environmental Control
+	'1115'	: `末世新生`,			// Rebirth
+	'1116'	: `道法自然`,			// Tao of Nature
+	
+	//-- 特殊生态(130)
+	'1173'	: `众生平等`,			// Equality
+	'1175'	: `环保主义`,			// Environmental Worship
+	'1174'	: `土地回收`,			// Land Recycling
+	'1171'	: `虚空之环`,			// Ring of Void
+	'1176'	: `退化射线`,			// Degenerating Beam
+	'1172'	: `万物归零`,			// The Great Reset
+	},
+	
+	科技类型 : {
+	// 总共有10类通用的科技
+	'101'	: `发展`,			// Development
+	'102'	: `进阶发展`,		// Advanced Dev
+	'104'	: `军事`,			// Military
+	'105'	: `进阶军事`,		// Advanced Military
+	'107'	: `扩张`,			// Expansion
+	'120'	: `压力`,			// Stress
+	'134'	: `探索`,			// Explore
+	'135'	: `情报`,			// Information
+	'133'	: `隐藏`,			// Hide
+	'136'	: `暴露`,			// Exposure
+	
+	// 总共有20类通用的科技
+	'110'	: `物质`,			// Material
+	'122'	: `特殊物质`,		// Fanatical Material
+	'111'	: `精神`,			// Spiritual
+	'123'	: `特殊精神`,		// Fanatical Spiritual
+	'114'	: `尚武`,			// Violence
+	'126'	: `特殊尚武`,		// Fanatical Violence
+	'115'	: `和平`,			// Peace
+	'127'	: `特殊和平`,		// Fanatical Pacifist
+	'112'	: `集中`,			// Concentrate
+	'124'	: `特殊集中`,		// Fanatical Concentration
+	'113'	: `分权`,			// Division
+	'125'	: `特殊分权`,		// Fanatical Division
+	'117'	: `亲外`,			// Tolerance
+	'129'	: `特殊亲外`,		// Fanatical Tolerance
+	'116'	: `孤立`,			// Xenophobia
+	'128'	: `特殊孤立`,		// Fanatical Xenophobia
+	'119'	: `生产`,			// Industrialization
+	'131'	: `特殊生产`,		// Fanatical Industrialization
+	'118'	: `生态`,			// Ecology
+	'130'	: `特殊生态`,		// Fanatical Ecology
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_index = -1;
+let powerTable01_group = -1;
+let powerTable01_level = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// 项目代码,			项目名称,		效果作用,							解锁需求,			科技等级,		触发获取,			科技类型,		
+	// Remote/TechBuff,		Name,			Affect,								TechPointCost,		Level,			BaseTrigger,		Type,			
+	// 100010,				大型钻机,		FactoryExtraOutputAddRate:10,		350,				1//Normal,		Tree,				1//,			
+	
+	// 判断条件,		资源消耗,			启用权重,		权重递减,			状态效果,		计算方法,		
+	// Condition,		ResourceCost,		Weight,			WeightReduce,		State,			computed,		
+	// ,				0,					1,				1,					,				增加值,			
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';		// 项目代码
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';		// 项目名称
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';		// 效果作用
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';		// 解锁需求
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';		// 科技等级
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';		// 触发获取
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';		// 科技类型
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';		// 判断条件
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';		// 资源消耗
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';		// 启用权重
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';	// 权重递减
+	// powerTable01_tbody_html += '<td>'+ item[11] +'</td>';	// 状态效果
+	// powerTable01_tbody_html += '<td>'+ item[12] +'</td>';	// 计算方法
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){ powerTable01_group+=1 };
+		powerTable01_level = 0;
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// 额外数据
+	item.项目名称 = textList.项目名称[item[0]];
+	item.文本描述 = textList.文本描述[item[0]];
+	item.科技名称 = csv1.result[item[0]][0];
+	item.科技类型 = csv1.result[item[0]][1];
+	item.科技前置 = csv1.result[item[0]][2];
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	item.所在等级 = (function(){
+		if(csv0[index-1] === 'blankRow' && csv0[index+1] === 'blankRow' ){ return -2 }else 		// -2 = 数据单独存在既不可升级
+		if(csv0[index-1] !== 'blankRow' && csv0[index+1] === 'blankRow' ){ return -1 }else 		// -1 = 上方有数据但下方没则为满级
+		{ return powerTable01_level+=1 };														// 不是以上 2 种情况则正常累计等级数值
+	})();
+	item.计算方法 = (function(){
+		// if(["减少", "减少值", "乘以(100-x)%", "乘以(100-x)% -> 80%", "当前暴露率*(100-x)%", "乘以x%", "//情报网时间", "//情报收集时间", "//间谍网暴露概率", ].includes(item[12])){ return '减少' }else 
+		// if(["增加", "增加值", "乘以(100+x)%", "乘以(100+x)% -> 60%", "//刺探移民地成功率", "//文化入侵成功率", ].includes(item[12])){ return '增加' }else 
+		// if(["乘以百分比0%", "//刺探移民地暴露概率", "//文化入侵暴露概率", "//情报收集暴露概率",].includes(item[12])){ return '为零' }else 
+		// if(["消耗品", "直接清除广播造成的暴露率", "直接清除折跃播造成的暴露率",].includes(item[12])){ return '消耗品' }else 
+		// if(["指定ID", "指定ID和次数", ].includes(item[12]) || item[0] === '101273'){ return '指定ID' }else 
+		// if(["解锁建筑", '解锁', ].includes(item[12]) || item[0] === '101278'){ return '解锁建筑' }else 
+		// if(["解锁武器", ].includes(item[12]) || item[0] === '101272'){ return '解锁武器' }else 
+		// if(["buff", "Buff", "Buff;功能写在了交流系统里", "Buff;功能写在了系统里", "可以利用脉冲星发出广播", ].includes(item[12]) || item[0] === '101419' || item[0] === '101420'){ return '设置Buff' };
+	 })();
+	
+	// 设置分组
+	powerTable01_tbody_html += '<tr index="'+ powerTable01_index +'" group="'+ powerTable01_group +'" style="height: 65px;">';
+	
+	// -----------------------------------------
+	
+	// 项目图片
+	powerTable01_tbody_html += /*html*/`<td class="followTip" style="position:relative;" onmouseleave="this.parentElement.style.outline=''" onmouseenter="this.parentElement.style.outline='none'"
+			xjTip-size="lg" xjTip-align="right" xjTip-duration="0" xjTip-ctrlEvent="hover" xjTip-maxWidth="640px" xjTip-maxHeight="640px" 
+			xjTip-color="black" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false"
+			xjTip-html="
+				<img loading='lazy' alt='bg' src='../static/image/techList/bg.png' style='width:128px;height:128px;' />
+				<img loading='lazy' alt='${textList.科技名称[item.科技名称]}' src='../static/image/techList/techTreeNode-${item.科技名称}.png' style='width:114px;height:114px;position:absolute;top:14px;left:19px;' />
+			">
+		<img loading="lazy" alt="bg" src="../static/image/techList/bg.png" style="width:64px;height:64px;position:absolute;top:calc(50% - 32px);left:calc(50% - 32px);" />
+		<img loading="lazy" alt="${textList.科技名称[item.科技名称]}" src="../static/image/techList/techTreeNode-${item.科技名称}.png" style="width:57px;height:57px;position:absolute;top:calc(50% - 28px);left:calc(50% - 28px);" />
+	</td>`;
+	
+	// 项目序号
+	powerTable01_tbody_html += '<td>'+ (powerTable01_index+1) +'</td>';
+	
+	// 项目代码
+	powerTable01_tbody_html += '<td>'+ item[0] +'</td>';
+	
+	// 项目名称
+	powerTable01_tbody_html += '<td>'+ item.项目名称 +'</td>';
+	
+	// 所在等级
+	powerTable01_tbody_html += '<td>'+ item.所在等级 +'</td>';
+	
+	// 解锁需求
+	powerTable01_tbody_html += '<td>'+ item[3] +'</td>';
+	
+	// 科技名称
+	powerTable01_tbody_html += '<td>'+ textList.科技名称[item.科技名称] +'</td>';
+	
+	// 科技类型
+	powerTable01_tbody_html += '<td>'+ textList.科技类型[item.科技类型] +'</td>';
+	
+	// 科技前置
+	powerTable01_tbody_html += '<td>'+ (item.科技前置 ? textList.科技名称[item.科技前置] : '-') +'</td>';
+	
+	// 权重递减
+	powerTable01_tbody_html += '<td>'+ item[10] +'</td>';
+	
+	// 文本描述
+	powerTable01_tbody_html += '<td>'+ item.文本描述 +'</td>';
+	
+	// -----------------------------------------
+	
+	// 闭合掉tr
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// ---------------------------------------------
+
+// 合并同类
+let rowSpanSet01 = function(jqi_powerTable_x){
+	
+	// 项目表格行和节点
+	let jqi_tr = jqi_powerTable_x.find('tbody tr');
+	let jqi_td0 = jqi_tr.find('td:nth-of-type(1)').removeClass('hideTd').removeAttr('rowSpan');
+	
+	// 遍历表格的所有行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		
+		// 当前行被隐藏, 那无需计算直接跳过
+		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
+		
+		// 创建 rowSpan, 获取"科技名称"的值
+		let rowSpanValue = 1, groupValue = jqi_tr.get(i01).getAttribute('group');
+		
+		// 从当前行开始, 再次遍历后面所有行
+		for(let i02=i01+1, l02=jqi_tr.length; i02<l02; i02++){
+			
+			// 下一行是被隐藏的那就直接跳过
+			if(jqi_tr.get(i02).classList.contains('hideTr') === true){ continue };
+			
+			// 下行不隐藏但不同组则循环终止
+			if(jqi_tr.get(i02).getAttribute('group') !== groupValue){ break };
+			
+			// 下行不隐藏且同组则 rowSpan+1
+			jqi_td0.get(i02).classList.add('hideTd'); rowSpanValue += 1;
+			
+		};
+		
+		// 设置 rowSpan, 循环跳过后面同组项
+		if(rowSpanValue === 1){ continue };
+		jqi_td0.get(i01).setAttribute
+		('rowSpan', rowSpanValue);
+		i01 = i01 + rowSpanValue - 1;
+		
+	};
+	
+};
+rowSpanSet01(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(
+function(event){ rowSpanSet01(jqi_powerTable01) });
+
+// 动态高亮
+let groupedSet01 = function(jqi_powerTable_x){
+	
+	// 获取行并移除高亮
+	let jqi_tr = jqi_powerTable_x
+	.find('tbody tr').removeClass('tr-active');
+	
+	// 高亮首个非隐藏行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
+		jqi_tr.eq(i01).addClass('tr-active');
+		break;
+	};
+	
+	// 遍历表格的所有行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		
+		// 当前行被隐藏, 那无需计算直接跳过
+		let thisRow = jqi_tr.get(i01), prevRow = 'ignore';
+		if(thisRow.classList.contains('hideTr') === true){ continue };
+		
+		// 从当前行开始, 再次遍历前面所有行
+		for(let i02=i01-1; i02>-1; i02--){
+			
+			// 如果上一行是隐藏的就直接跳过
+			let prevRow = jqi_tr.get(i02), oneGroup = false;
+			if(prevRow.classList.contains('hideTr') === true){ continue }else 
+			if(thisRow.getAttribute('group') === prevRow.getAttribute('group')){ oneGroup = true };
+			
+			// 如果上一行和当前行同类则同步
+			if(oneGroup === true ){ if(prevRow.classList.contains('tr-active') === true ){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+			// 如果非同类则高亮取反跳出循环
+			if(oneGroup === false){ if(prevRow.classList.contains('tr-active') === false){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+		};
+		
+	};
+	
+};
+groupedSet01(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click( 
+function(event){ groupedSet01(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 所在等级
+let attrSelect01_Option = [
+	['1',			'Level +1',						],		// 'Level +1',						'Level +1',						
+	['2',			'Level +2',						],		// 'Level +2',						'Level +2',						
+	['3',			'Level +3',						],		// 'Level +3',						'Level +3',						
+	['4',			'Level +4',						],		// 'Level +4',						'Level +4',						
+	['5',			'Level +5',						],		// 'Level +5',						'Level +5',						
+	['6',			'Level +6',						],		// 'Level +6',						'Level +6',						
+	['-1',			'Level -1(满级)',				],		// 'Level -1(最高)',				'Level -1(Full)',				
+	['-2',			'Level -2(不可升级)',			],		// 'Level -2(進階不可)',			'Level -2(AntiGoUp)',			
+	['-3',			'Level -3(-1 + -2 = -3)',		],		// 'Level -3(-1 + -2 = -3)',		'Level -3(-1 + -2 = -3)',		
+];
+
+// 选中类型
+let jqi_typeButton = $('.typeButton');
+jqi_typeButton.filter('[value="101"]').addClass('typeActive');
+
+// 获取对象
+let jqi_nameInput01 = $('#nameInput01'), jqi_nameCheck01 = $('#nameCheck01'), jqi_resetButton = $('#resetButton');
+let str_emptyOption = '<option value="empty" selected="selected" style="background-color:#f5f5f5;">None</option>';
+
+// 创建元素
+let jqi_attrSelect01 = $('#attrSelect01').html(str_emptyOption + attrSelect01_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+//l jqi_attrSelect02 = $('#attrSelect02').html(str_emptyOption + attrSelect02_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+
+// ---------------------------------------------
+
+// 获取 tbody 和 tr
+let jqi_table01_tbody = $('#powerTable01 tbody'), jqi_table01_tbody_tr = jqi_table01_tbody.find('tr');
+
+// 创建无结果的节点
+let jqi_empty_result_tr = $(/*html*/`<tr index="-1" group="-1" style="height: 65px;" class="emptyTr">
+<td colSpan="99"><span>没有任何匹配的结果!<br />There Are No Any Matching Results!</span></td></tr>`);
+
+// 创建总筛选的函数
+let filterFunction = function(event){
+	
+	// 表单元素当前的值
+	let trShowIndexArray = [];
+	let jqi_attrSelect01_value = jqi_attrSelect01.val();
+	let jqi_typeButtonActive_value = jqi_typeButton.filter('.typeActive').attr('value');
+	
+	// 获取匹配项的索引
+	jqi_nameInput01.val().trim()
+	.split(/ {1,}/).forEach(function(text){
+		csv0.forEach(function(item){
+			if(item !== 'blankRow' && (item.项目名称.includes(text) === true 
+			|| item.文本描述.includes(text) === true || textList.科技名称[item.科技名称].includes(text) === true)){
+				
+				// 所在等级
+				if(jqi_attrSelect01_value !== 'empty'){
+					if(jqi_attrSelect01_value !== '-3' 
+					&& jqi_attrSelect01_value !== String(item.所在等级)){ return }else 
+					if(jqi_attrSelect01_value === '-3' && String(item.所在等级) !== '-1' && String(item.所在等级) !== '-2'){ return };
+				};
+				
+				// 科技类型
+				if(jqi_typeButtonActive_value !== '0'){
+					if(jqi_typeButtonActive_value !== item.科技类型){ return };
+				};
+				
+				// 符合条件
+				trShowIndexArray.push(
+				String(item.项目序号));
+				
+			};
+		});
+	});
+	
+	// 根据结果显示隐藏
+	if(trShowIndexArray.length === 0){
+		jqi_table01_tbody_tr.addClass('hideTr');
+		jqi_empty_result_tr.removeClass('hideTr' );
+		jqi_table01_tbody.append(jqi_empty_result_tr);
+	}else{
+		jqi_empty_result_tr.remove();
+		jqi_table01_tbody_tr.each(function(index, value){
+			if(trShowIndexArray.includes(value.getAttribute('index')) 
+			=== true){ value.classList.remove('hideTr') }else{ value.classList.add('hideTr') };
+		});
+	};
+	
+	// 合并同类设置高亮
+	rowSpanSet01(jqi_powerTable01);
+	groupedSet01(jqi_powerTable01);
+	
+};
+
+// 绑定表单控件操作
+[jqi_attrSelect01, ].forEach(function(jqi_select){ jqi_select.on('change', function(event){ filterFunction(event) }) });
+jqi_nameInput01.on('keyup', function(event){ if(event.keyCode === 13){ filterFunction(event) } });
+jqi_nameInput01.on('blur' , function(event){ filterFunction(event) });
+jqi_nameCheck01.on('click', function(event){ filterFunction(event) });
+jqi_resetButton.on('click', function(){
+	jqi_nameInput01.val('');
+	[jqi_attrSelect01, ].forEach(function(
+	jqi_select){ jqi_select.find('option:first').prop('selected', true) });
+	jqi_empty_result_tr.remove();
+	jqi_typeButton.eq(0).click();
+});
+
+// 绑定类型点击事件
+jqi_typeButton.on('click', function(){
+	jqi_typeButton.removeClass('typeActive');
+	$(this).addClass('typeActive');
+	filterFunction(event);
+});
+
+// 自动执行一次筛选
+filterFunction();
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.0</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

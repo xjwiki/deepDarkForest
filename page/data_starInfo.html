@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-12T17:24:04UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-04-12T17:24:04UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>天体信息</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>天体信息</span><small>(星球数据)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>unFinish…</p>
+
+<!--◇
+◆未来将星球开发的压力数据也合并到这个页面中
+◇-->
+
+<!--◇
+<p class="typeFlex">
+	<span class="typeWrap">
+		<span value="101" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">发展    </span><span value="102" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right:-1px;">进阶发展</span>
+		<span value="107" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">扩张    </span><span value="134" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">探索    </span>
+		<span value="133" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:16px;">隐藏    </span>
+		
+		<span value="110" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">物质    </span><span value="122" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊物质</span>
+		<span value="114" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">尚武    </span><span value="126" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊尚武</span>
+		<span value="112" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">集中    </span><span value="124" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊集中</span>
+		<span value="117" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">亲外    </span><span value="129" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 2px;">特殊亲外</span>
+		<span value="119" class="xj-ripple typeButton" style="width:41px;margin-top: 0px;margin-right:-1px;">生产    </span><span value="131" class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 0px;">特殊生产</span>
+		
+		<span value="104" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">军事    </span><span value="105" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right:-1px;">进阶军事</span>
+		<span value="120" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">压力    </span><span value="135" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">情报    </span>
+		<span value="136" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:16px;">暴露    </span>
+		
+		<span value="111" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">精神    </span><span value="123" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊精神</span>
+		<span value="115" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">和平    </span><span value="127" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊和平</span>
+		<span value="113" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">分权    </span><span value="125" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊分权</span>
+		<span value="116" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">孤立    </span><span value="128" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 2px;">特殊孤立</span>
+		<span value="118" class="xj-ripple typeButton" style="width:41px;margin-top:-1px;margin-right:-1px;">生态    </span><span value="130" class="xj-ripple typeButton" style="width:80px;margin-top:-1px;margin-right: 0px;">特殊生态</span>
+	</span>
+	
+	<span class="typeWrap">
+		<span value="0"   class="xj-ripple typeButton" style="width:80px;margin-top: 0px;margin-right: 0px;">显示<br />所有<br />科技</span>
+	</span>
+</p>
+
+<p style="display:flex;justify-content:flex-start;align-items:center;">
+	
+	<label style="display:inline-flex;flex:0 0 auto;width:608px;margin-right:16px;order:2;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">名称描述: </span>
+		<input id="nameInput01" class="input-unset" type="search" 
+		style="flex:1 1 auto;width:116px;" placeholder="可以搜索名称或者描述, 多关键词使用空格隔开, 应显示所有科技再操作" />
+		<button id="nameCheck01" class="button-unset" type="button" style="flex:0 0 auto;width:32px;margin-left:-1px;font-size:14px;color:#999;"><i class="fas fa-magnifying-glass"></i></button>
+	</label>
+	
+	<label style="display:inline-flex;flex:0 0 auto;width:240px;margin-right:16px;order:1;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">所在等级: </span>
+		<select id="attrSelect01" class="needsclick select-unset" xj-focus="{ontabAlways:true}" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	
+	<span style="display:inline-flex;flex:0 0 auto;width: 80px;margin-right: 0px;;order:3;">
+		<button id="resetButton" class="button-unset" type="button" style="flex:0 0 auto;width:80px;margin-left:auto;order:1;">清空</button>
+	</span>
+	
+</p>
+◇-->
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01"style="width:960px;line-height:14px;">
+	<thead>
+		<tr>
+			
+			<th sorttype="string" style="width:129px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目图片</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目序号</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目代码</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目名称</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>模型尺寸</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>轨道远近</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>天体类型</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<!--◇◆得增加一个"槽位数量"的属性◆◇-->
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>槽位开发</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width:128px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>天体特性</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>文本描述</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			
+			<!--◇
+			<th sorttype="string" style="width: 65px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目图片</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目序号</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目代码</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width:128px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>项目名称</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>所在等级</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>解锁需求</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技名称</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技类型</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>科技前置</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;line-height:1;"><b>权重递减</b><i class="icon fa fa-sort" style="margin-left:0;"></i></span></th>
+			◇-->
+			
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>unFinish…</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+/*
+.typeFlex{display:flex;justify-content:space-between;align-items:stretch;}
+.typeFlex > .typeWrap{flex:0 1 auto;display:inline-flex;flex-wrap:wrap;min-height:48px;font-size:12px;line-height:1;}
+.typeFlex > .typeWrap > span{flex:0 1 auto;display:inline-flex;justify-content:center;align-items:center;padding:0 2px;box-shadow:0 0 0 1px #ccc inset;cursor:pointer;}
+.typeFlex > .typeWrap > span:hover{box-shadow:0 0 0 1px #e6e6e6 inset;position:relative;z-index:1;}
+.typeFlex > .typeWrap > span.typeActive{background-color:#f0f0f0;}
+
+html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr).tr-active:hover{box-shadow: 68px 0 8px #f5f5f5 inset, 68px 0 8px rgba(0, 0, 0, 0.125) inset, 0px 0 8px rgba(0, 0, 0, 0.125) inset;}
+html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr):not(.tr-active):hover{box-shadow: 68px 0 8px #ffffff inset, 68px 0 8px rgba(0, 0, 0, 0.125) inset, 0px 0 8px rgba(0, 0, 0, 0.125) inset;}
+*/
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+135,小行星带 / 201,戴森球 / 202,环世界
+这三种星体在小地图界面会被展示, 但并不作为独立星体出现
+也就是没法点击弹出微地图, 也就没有星体图片, 也没有什么有用的参数, 因而不显示
+
+1804,巨型人造星系 / 2024,种子飞船 / 2025,前哨
+这三种也都是人造星体, 它们使用的图片应该和现有人造星体相同
+但是当前游戏并没有开放这三种建筑, 也有可能是已经被废弃, 所以表格中也就没展示
+
+————
+
+15. 星系天体.csv > `GalaxyBuff` 属性是用来链接 `星系Buff.csv` 文件的?
+答：是的
+
+16. 星系天体.csv > `Building` 属性几乎都是 0, 只有戴森球和环世界分别是 5/6, 这个属性是做什么用的? 另外戴森球和环世界不是依附于恒星上的吗, 它们应该是建筑, 为什么会在这里出现?
+答：建造环世界或戴森球后, 星系中会出现相应建筑的模型（作为星系的天体出现）, 因此在天体表中对资源进行统一管理。5和6分别对应“建筑参数.csv”表中对应建筑的ID
+
+17. 星系天体.csv > `PrefabsName` 属性是链接另一个表用的? 具体是那个表? 还是说只是标明预设的名称?
+18. 星系天体.csv > `PrefabsName_HighRes` 属性是做什么用的?
+答：星系天体.csv > “Prefabs”和“PrefabsName_HighRes”都对应资源预设名称（星系界面和单独星球界面的资源）
+
+19. 星系天体.csv > `ImagePlus` 属性是做什么用的?
+答：对于部分星球, 无建筑/有建筑时, 调用的图像不同（星球界面UI上）, 由此参数进行控制
+
+20. 星系天体.csv > `Size` 属性是用于在恒星系界面控制星球大小尺寸的?
+答：用于控制生成的星球的模型大小
+
+21. 星系天体.csv > `Probability` 属性用途?
+答：相关代码段已经废弃
+
+22. 星系天体.csv > `PossibleOrbit` 属性用于设置轨道的远近, 同一条轨道有可能出现两颗行星吗? 定义轨道的规则的从里向外, 如果遇到值相同的则另一个行星就往外放? 例如值等于 2 则起码会在第二环开始出现?
+答：一个轨道只会容纳一颗星球。PossibleOrbit是指随机生成地图时, 当前天体在轨道上排列的优先级, 如恒星只会出现在中心（0轨道）, 而值为3的星球一定会比所有值为2的星球的外侧
+
+21.基本参数.csv > DefaultPlanetResources,50000,单颗星球的默认基础资源量, 也就是说, 没有其他参数的影响, 每个星系的基础资源是 5W, 星系除了恒星, 每多出一个星球, 资源数就 +5W?
+是的，基础资源+5W（不包括部分星系Buff给予的资源）
+
+————
+
+问题
+01. 首都建筑可以让所在星系获得"首都星系"特性, 文本描述写着首都圈护盾 +50%, 这个是指护盾持续时间还是指护盾半径?
+02. 掩体的星系, 当遭遇除攻击而毁灭, 仍能保留所有权, 这个攻击是指一切形式的攻击吗? 还是说如果是登陆攻击就不生效了?
+03. 虚无装置同时具备了 DontDestroy 和 LostDestory 两个函数, 星系丢失不会销毁 和 星系丢失立即销毁, 这不是矛盾吗?
+04. 为什么有两种贫瘠星球(Barren 和 Barren2), 它们的参数看着相同啊, 除了图片, 并没有什么区别了?
+05. 星系天体.csv, Tag 属性有 Planet 和 Star 两种, 既行星和恒星, 这个属性是用来做什么的?
+06. 地图生成星系有什么规律吗?, 例如说什么恒星的出现率更高, 行星具体数量取决于什么条件?
+
+*/
+
+// csvN数据
+let csv0 = (`//Remote/Celestia,//Name,GalaxyBuff,Tag,Building,PrefabsName,PrefabsName_HighRes,ImagePlus,Size,Probability,PossibleOrbit//轨道的远近,ExpandSlot
+
+100,类地行星,2,Planet,0,Earth,Earth,1,2,100,2,6000:60|15000:150|30000:200
+101,热带行星,2,Planet,0,Jungle,Jungle,1,2,100,2,6000:60|15000:150|30000:200
+102,海洋行星,2,Planet,0,Ocean,Ocean,1,2,100,2,6000:60|15000:150|30000:200
+
+103,苔原行星,2,Planet,0,Tundra,Tundra,1,2,100,3,8000:60|10000:150
+104,草原行星,2,Planet,0,Grassland,Grassland,1,2,100,2,8000:60|10000:150
+
+105,极寒行星,3,Planet,0,Arctic,Arctic,1,2,100,3,8000:60|10000:150
+106,荒漠行星,3,Planet,0,Desert,Desert,1,2,100,1,8000:60|10000:150
+107,废土行星,3,Planet,0,Watseland,Watseland,1,2,100,2,8000:60|10000:150
+
+108,乌托邦行星,1,Planet,0,Utopia,Utopia,1,2,100,2,5000:30|15000:60|30000:120
+
+109,金属行星,4,Planet,0,Metal,Metal,,2,90,1,10000:180
+110,碳化行星,5,Planet,0,Coal,Coal_,,2,0,1,10000:180
+
+111,贫瘠星球,6,Planet,0,Barren,Barren_,,2,0,1,4000:240
+112,贫瘠星球,6,Planet,0,Barren2,Barren2_,,2,0,1,4000:240
+
+113,类木行星,7,Planet,0,Jupiterlike,Jupiterlike_,,2.5,0,3,30000:80|30000:80
+114,冰巨行星,8,Planet,0,Icegaint,Icegaint_,,2.5,0,3,30000:80|30000:80
+
+115,气殒星核 ,9,Planet,0,Gaslesscore,Gaslesscore,,2,0,2,10000:180
+
+116,冰封行星,0,Planet,0,Frozen,Frozen_,,2,0,3,20000:90
+117,岩质行星,0,Planet,0,Rock,Rock,,2,0,1,20000:90
+118,熔融行星,0,Planet,0,Molten,Molten_,,2,0,1,20000:90
+119,剧毒行星,0,Planet,0,Toxic,Toxic,,2,0,1,20000:90
+
+120,小行星,0,Planet,0,Big Asteroid,,,2,0,3,
+
+121,O型恒星,1000,Star,0,Type O Star,Type O Star,,3,0,0,15000:120
+122,B型恒星,1001,Star,0,Type B Star,Type B Star,,3,0,0,15000:120
+123,A型恒星,1002,Star,0,Type A Star,Type A Star,,3,0,0,15000:120
+
+124,F型恒星,1003,Star,0,Type F Star,Type F Star,,3,0,0,15000:120
+125,G型恒星,1004,Star,0,Type G Star,Type G Star,,3,0,0,15000:120
+
+126,K型恒星,1005,Star,0,Type K Star,Type K Star,,3,0,0,15000:120
+127,M型恒星,1006,Star,0,Type M Star,Type M Star,,3,0,0,15000:120
+
+128,蓝巨星,1007,Star,0,BlueGiant,BlueGiant,,5,0,0,15000:120
+129,红巨星,1008,Star,0,RedGiant,RedGiant,,5,0,0,15000:120
+
+130,红超巨星,1009,Star,0,SuperRedGiant,SuperRedGiant,,5,0,0,15000:120
+
+131,中子星,1010,Star,0,pulsar,,,2,0,0,
+132,脉冲星,1011,Star,0,pulsar2,,,2,0,0,
+
+134,残骸,1013,Star,0,SmallRock,,,5,0,0,
+133,黑洞,1012,Star,0,backhole,,,10,0,0,
+
+1801,小型空间城,1801,Star,0,ManmadeGalaxy/sp-01_Prefab,,,1.5,0,0,
+1802,人造星系,1802,Star,0,ManmadeGalaxy/sp-02_Prefab,,,2.25,0,0,
+1803,大型人造星系,1803,Star,0,ManmadeGalaxy/sp-05_Prefab,,,1,0,0,
+8008,方舟,8008,Star,0,ManmadeGalaxy/sp-10_Prefab,,,11,0,0,
+
+// 135,小行星带,2003,Star,0,Asteroidbelt,,,2,0,0,
+
+// 201,戴森球,-1,Star,5,DysonSphere,,,1,0,0,
+// 202,环世界,-1,Star,6,RimWorld,,,1,0,0,
+
+// 1804,巨型人造星系,1804,Star,0,ManmadeGalaxy/sp-10_Prefab,,,11,0,0,
+// 2024,种子飞船,2024,Star,0,ManmadeGalaxy/sp-06_Prefab,,,8,0,0,
+// 2025,前哨,2025,Star,0,ManmadeGalaxy/sp-04_Prefab,,,6,0,0,
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// csvN数据
+let csv1 = (`//Description,IconName,Name,Description,Content,ShortDescription
+
+Earth,1_Continent,$/Description_Name_Earth,,$/Description_Content_Earth,
+Jungle,2_Tropic,$/Description_Name_Jungle,,$/Description_Content_Jungle,
+Ocean,3_Ocean,$/Description_Name_Ocean,,$/Description_Content_Ocean,
+
+Tundra,4_Tunda,$/Description_Name_Tundra,,$/Description_Content_Tundra,
+Grassland,5_Grass,$/Description_Name_Grassland,,$/Description_Content_Grassland,
+Arctic,6_Cold,$/Description_Name_Arctic,,$/Description_Content_Arctic,
+
+Desert,7_Desert,$/Description_Name_Desert,,$/Description_Content_Desert,
+Watseland,8_Waste,$/Description_Name_Watseland,,$/Description_Content_Watseland,
+Utopia,9_Utopia,$/Description_Name_Utopia,,$/Description_Content_Utopia,
+
+Metal,10_Metal,$/Description_Name_Metal,,$/Description_Content_Metal,
+Coal,11_Coal,$/Description_Name_Coal,,$/Description_Content_Coal,
+
+Barren,12_Barren,$/Description_Name_Barren,,$/Description_Content_Barren,
+Barren2,13_Barren2,$/Description_Name_Barren2,,$/Description_Content_Barren2,
+
+Jupiterlike,14_GasGiant,$/Description_Name_Jupiterlike,,$/Description_Content_Jupiterlike,
+Icegaint,15_IceGiant,$/Description_Name_Icegaint,,$/Description_Content_Icegaint,
+
+Gaslesscore,16_Core,$/Description_Name_Gaslesscore,,$/Description_Content_Gaslesscore,
+Frozen,17_Glacier,$/Description_Name_Frozen,,$/Description_Content_Frozen,
+
+Rock,18_Rock,$/Description_Name_Rock,,$/Description_Content_Rock,
+Molten,19_Lava,$/Description_Name_Molten,,$/Description_Content_Molten,
+Toxic,20_Toxic,$/Description_Name_Toxic,,$/Description_Content_Toxic,
+
+Big Asteroid,21_Aster,$/Description_Name_Big Asteroid,,$/Description_Content_Big Asteroid,
+
+Type O Star,S_O,$/Description_Name_Type O Star,,$/Description_Content_Type O Star,
+Type B Star,S_B,$/Description_Name_Type B Star,,$/Description_Content_Type B Star,
+Type A Star,S_A,$/Description_Name_Type A Star,,$/Description_Content_Type A Star,
+
+Type F Star,S_F,$/Description_Name_Type F Star,,$/Description_Content_Type F Star,
+
+Type G Star,S_G,$/Description_Name_Type G Star,,$/Description_Content_Type G Star,
+Type K Star,S_K,$/Description_Name_Type K Star,,$/Description_Content_Type K Star,
+Type M Star,S_M,$/Description_Name_Type M Star,,$/Description_Content_Type M Star,
+
+BlueGiant,S_BG,$/Description_Name_BlueGiant,,$/Description_Content_BlueGiant,
+RedGiant,S_RG,$/Description_Name_RedGiant,,$/Description_Content_RedGiant,
+SuperRedGiant,S_SRG,$/Description_Name_SuperRedGiant,,$/Description_Content_SuperRedGiant,
+
+pulsar,S_p,$/Description_Name_pulsar,,$/Description_Content_pulsar,
+pulsar2,S_p2,$/Description_Name_pulsar2,,$/Description_Content_pulsar2,
+
+SmallRock,S_R,$/Description_Name_SmallRock,,$/Description_Content_SmallRock,
+backhole,S_hole,$/Description_Name_backhole,,$/Description_Content_backhole,
+
+ManmadeGalaxy/sp-01_Prefab,A01_Station,$/Description_Name_ManmadeGalaxy/sp-01_Prefab,,$/Description_Content_ManmadeGalaxy/sp-01_Prefab,
+ManmadeGalaxy/sp-02_Prefab,A01_Station,$/Description_Name_ManmadeGalaxy/sp-02_Prefab,,$/Description_Content_ManmadeGalaxy/sp-02_Prefab,
+ManmadeGalaxy/sp-05_Prefab,A01_Station,$/Description_Name_ManmadeGalaxy/sp-05_Prefab,,$/Description_Content_ManmadeGalaxy/sp-05_Prefab,
+ManmadeGalaxy/sp-10_Prefab,A01_Station,$/Description_Name_ManmadeGalaxy/sp-10_Prefab,,$/Description_Content_ManmadeGalaxy/sp-10_Prefab,
+`)
+.split(/\n/).filter(function(e){ return /^\w/.test(e) }).map(function(e){ return e.split(',') });
+
+// csvN数据◆星系Buff
+
+// csvN数据◆随机建筑
+let csv3 = (`//Description,IconName,Name,Description,Content,ShortDescription
+
+100,类地行星,2,0,Earth,2,RandomFunc:80_103|RandomFunc:80_104
+101,热带行星,2,0,Jungle,2,RandomFunc:90_104
+102,海洋行星,2,0,Ocean,2,
+103,苔原行星,2,0,Tundra,2,RandomFunc:80_103|RandomFunc:80_106
+104,草原行星,2,0,Grassland,2,RandomFunc:80_103
+105,极寒行星,3,0,Arctic,2,RandomFunc:80_105|RandomFunc:80_109
+106,荒漠行星,3,0,Desert,2,RandomFunc:80_106
+107,废土行星,3,0,Watseland,2,RandomFunc:90_107
+108,乌托邦行星,1,0,Utopia,2,
+109,金属行星,4,0,Metal,2,RandomFunc:90_110
+110,碳化行星,5,0,Coal,2,RandomFunc:80_108|RandomFunc:80_109
+111,贫瘠星球,6,0,Barren,2,
+112,贫瘠星球,6,0,Barren2,2,
+113,类木行星,7,0,Jupiterlike,4,
+114,冰巨行星,8,0,Icegaint,4,RandomFunc:90_105
+115,气殒星核 ,9,0,Gaslesscore,2,
+116,冰封行星,0,0,Frozen,2,RandomFunc:70_105
+117,岩质行星,0,0,Rock,2,RandomFunc:80_108|RandomFunc:70_109
+118,熔融行星,0,0,Molten,2,RandomFunc:90_111|RandomFunc:70_112
+119,剧毒行星,0,0,Toxic,2,0
+120,小行星,0,0,Big Asteroid,0.25,0
+121,O型恒星,1000,0,Type O Star,4,0
+122,B型恒星,1001,0,Type B Star,4,0
+123,A型恒星,1002,0,Type A Star,4,0
+124,F型恒星,1003,0,Type F Star,4,0
+125,G型恒星,1004,0,Type G Star,4,0
+126,K型恒星,1005,0,Type K Star,4,0
+127,M型恒星,1006,0,Type M Star,4,0
+128,蓝巨星,1007,0,BlueGiant,5,0
+129,红巨星,1008,0,RedGiant,5,0
+130,红超巨星,1009,0,SuperRedGiant,5,0
+131,中子星,1010,0,pulsar,2,0
+132,脉冲星,1011,0,pulsar2,2,0
+133,黑洞,1012,0,backhole,5,0
+134,残骸,1013,0,SmallRock,2,0
+135,小行星带,2003,0,Asteroidbelt,2,0
+136,小型空间城,1801,0,ManmadeGalaxy/sp-01_Prefab,2,0
+137,人造星系,1802,0,ManmadeGalaxy/sp-02_Prefab,2,0
+138,大型人造星系,1803,0,ManmadeGalaxy/sp-03_Prefab,2,0
+201,戴森球,-1,5,DysonSphere,1,0
+202,环世界,-1,6,RimWorld,1,0
+`);
+
+// 分解数据
+csv1.result = new Object();
+csv1.forEach(function(e){ csv1.result[e[0]] = e });
+
+// console.log(csv1);
+
+// [Description,	IconName,		Name,						Description,	Content,						ShortDescription,	];
+// ['Earth',		'1_Continent',	'$/Description_Name_Earth',	'',				'$/Description_Content_Earth',	'',					];
+
+// 文本内容
+let textList = {
+	
+	// $/Description_Name_
+	项目名称 : {
+	'Earth'							: `类地行星`,			// Terrestrial Planet,		
+	'Jungle'						: `热带行星`,			// Tropical Planet,			
+	'Ocean'							: `海洋行星`,			// Ocean Planet,			
+	
+	'Tundra'						: `苔原行星`,			// Tundra Planet,			
+	'Grassland'						: `草原行星`,			// Grassland Planet,		
+	'Arctic'						: `极寒行星`,			// Frigid Planet,			
+	
+	'Desert'						: `荒漠行星`,			// Desert Planet,			
+	'Watseland'						: `废土行星`,			// Wasteland Planet,		
+	'Utopia'						: `理想行星`,			// Utopia Planet,			
+	
+	'Metal'							: `金属行星`,			// Iron Planet,				
+	'Coal'							: `碳化行星`,			// Carbon Planet,			
+	
+	'Barren'						: `贫瘠星球`,			// Lifeless Planet,			
+	'Barren2'						: `贫瘠星球`,			// Lifeless Planet,			
+	
+	'Jupiterlike'					: `类木行星`,			// Gas Giant,				
+	'Icegaint'						: `冰巨行星`,			// Ice Giant,				
+	
+	'Gaslesscore'					: `气陨星核`,			// Star Core,				
+	'Frozen'						: `冰封行星`,			// Ice Planet,				
+	
+	'Rock'							: `岩质行星`,			// Rocky Planet,			
+	'Molten'						: `熔融行星`,			// Lava Planet,				
+	'Toxic'							: `瓦斯行星`,			// Poison Planet,			
+	
+	'Big Asteroid'					: `小行星`,				// Small Planet,			
+	
+	'Type O Star'					: `蓝超巨星`,			// O-Type Star,				
+	'Type B Star'					: `蓝巨星`,				// B-Type Star,				
+	'Type A Star'					: `白色恒星`,			// A-Type Star,				
+	
+	'Type F Star'					: `黄白矮星`,			// F-Type Star,				
+	
+	'Type G Star'					: `黄矮星`,				// G-Type Star,				
+	'Type K Star'					: `橙矮星`,				// K-Type Star,				
+	'Type M Star'					: `红矮星`,				// M-Type Star,				
+	
+	'BlueGiant'						: `蓝巨星`,				// Blue Giant Star,			
+	'RedGiant'						: `红巨星`,				// Red Giant Star,			
+	'SuperRedGiant'					: `红超巨星`,			// Red Supergiant Star,		
+	
+	'pulsar'						: `中子星`,				// Neutron Star,			
+	'pulsar2'						: `脉冲星`,				// Pulsar,					
+	
+	'SmallRock'						: `残骸`,				// Remnant,					
+	'backhole'						: `黑洞`,				// Black Hole,				
+	
+	'ManmadeGalaxy/sp-01_Prefab'	: `小型空间城`,			// Small Space City,		
+	'ManmadeGalaxy/sp-02_Prefab'	: `人造星系`,			// Artificial System,		
+	'ManmadeGalaxy/sp-05_Prefab'	: `大型人造星系`,		// Large Artificial System,	
+	'ManmadeGalaxy/sp-10_Prefab'	: `末日方舟`,			// Ark,						
+	},
+	
+	// $/Description_Content_
+	文本描述 : {
+	'Earth'							: `存在各种气候圈, 不同的经纬形成了不同的气候, 四季变化分明, 巨大的陆地被海洋所分割, 生态循环积极而稳定`,								// Has a variety of climates.|Different latitudes and longitudes have different weather.|Visible seasons.|Land is divided by oceans.|Active and stable ecology,				
+	'Jungle'						: `有着及其潮湿大气圈, 拥有致密的大气层, 被茂密的热带雨林所覆盖, 丛林中有着活跃的动植生态圈, 气候常年皆相当炎热`,						// Has a humid atmosphere.|Thick and dense atmosphere.|Covered in tropical forests|Active ecology in the forests.|Very hot most of the year,				
+	'Ocean'							: `完全被海洋所覆盖, 少许的海岛与岛礁露出水面, 深海中存在巨型生物聚落, 大面积的大陆架被浅海所覆盖, 星球表面常常刮起巨大的风暴`,			// Covered in ocean.|Some islands are exposed.|Tribes of large creatures reside under the water.|A continental shelf with a large area is covered by shallow ocean.|Storms often rage across the surface,				
+	'Tundra'						: `表面覆盖了大量苔原与冻土, 山谷中充满着冻结的湖泊, 大量土地被永久冻土层覆盖, 积雪终年覆盖着高山, 两极气温极低且没有生态循环`,			// Covered in moss and permafrost.|Valleys are full of frozen lakes.|Most of the land is covered in permafrost.|Mountains are covered in snow.|The poles are cold and almost without life,				
+	'Grassland'						: `岩石行星上覆盖着干燥的平原, 少量的水圈形成了短暂的雨季, 存在一些台地与峡谷地形, 昼夜温差大, 部分地形为沙漠与戈壁`,					// A rocky planet covered in dry plains.|A short rainy season.|Has plateaus and valleys.|Drastic temperature difference between day and night.|Most of the terrain is desert,				
+	'Arctic'						: `冰雪覆盖了所有的地表, 冰冻湖泊下存在封闭的生态圈, 靠近赤道的地区存在耐寒植物, 峡谷与高山被冻土所覆盖, 大部分地区终年刮着暴风雪`,		// The terrain is completed covered in ice and snow.|A closed ecology survives under the frozen lake.|Cold-resistant plants thrive near the equator.|Valleys and mountains are covered in permafrost.|Blizzard is the only weather condition in most places,				
+	'Desert'						: `有着极为干燥的大气圈, 仅存在少量地表水形成极少绿洲, 岩质表面形成了部分戈壁, 昼夜温差极大, 绝大部分地表为荒漠`,						// Has a very dry atmosphere.|Small pockets of water form oasis across the terrain.|Rocky deserts.|Drastic temperature difference between day and night.|Most of the surface is desert,				
+	'Watseland'						: `岩质行星, 曾经为一颗宜居星球, 大气中充满了放射性粉尘, 正在经历一场漫长的核冬天, 可能经历过一场核大战, 充斥着难以估计的天气变化`,		// A rocky planet that was once habitable.|The air is filled with radioactive dust.|It's in the middle of a nuclear winter.|There might have been a nuclear war.|Full of unpredictable weather conditions,				
+	'Utopia'						: `极其理想而温和的气候, 星球上的景色极其壮美, 多样化的动物群及植被群, 存在某种自修复的气候圈, 适宜各种生物的生存`,						// Ideal weather.|Spectacular views.|Large variety of animals and vegetation.|Self-repairing climate.|Great for all kinds of life forms,				
+	'Metal'							: `存在少量岩质表面的金属行星, 有着极其富含铁的核心, 很少或没有地幔, 各种金属矿藏储量丰富, 没有板块构造或强磁场`,						// An iron planet with some rocks on the surface.|Contains an iron-rich core.|Little to no mantle.|Rich in all kinds of ores.|No tectonic plates or magnetic fields,				
+	'Coal'							: `富含碳但是缺乏氧, 有着富含铁或钢的核心, 表面存在烷烃组成的大气或海洋, 表面以下存在大量金刚石结构, 存在这一个非生物的碳循环圈`,		// Rich in carbon but lacks oxygen.|Has a core that is rich in iron or steel.|Covered in atmosphere or ocean that consists of alkane.|Lots of diamonds lie under the surface.|Exists a carbon ecology with no life,				
+	'Barren'						: `缺乏矿物的岩质行星, 完全没有大气覆盖, 表面仅有密集的陨石坑, 没有复杂的地形结构, 地质活动不活跃`,										// A rocky planet that lacks minerals.|No atmosphere.|Nothing but craters on the surface.|No complex terrain.|Not a lot of geological activities,				
+	'Barren2'						: `被未知文明开采过的岩质行星, 大气稀薄到几乎没有, 表面布满了各式矿坑, 磁场较弱, 宇宙辐射极强, 鲜有地质活动`,							// A rocky planet already excavated by an unknown civilization.|Thin atmosphere.|Mining shafts cover the surface.|Weak magnetic field, strong radiation|Little to no geological activities,				
+	'Jupiterlike'					: `巨型气态行星, 由巨量氢氦组成且无实体表面, 体积相当巨大, 拥有星环与极强磁场, 拥有数量庞大的卫星群`,									// Large gaseous planet.|Consists of hydrogen and helium, no visible surface.|Extremely large.|Has a ring and a powerful magnetic field.|Has a huge number of satellites,				
+	'Icegaint'						: `巨型冰晶行星, 由巨量碳氮氧硫等元素组成, 表面无实体但内部大部分为晶态, 拥有星环与较强磁场, 拥有较多卫星`,								// Enormous icy planet.|Consists of carbon, nitrogen, oxygen, sulfur and other elements.|No visible bodies on the surface, mostly crystals under.|Has a ring and a powerful magnetic field.|Has satellites,				
+	'Gaslesscore'					: `曾经是一颗巨行星的金属核心, 完全由金属构成, 恒星将其大气完全剥离`,																	// Was once the metal core of a giant planet.|Completely made of metal.|Stars stripped it of its atmosphere.|----|----,				
+	'Frozen'						: `岩质表面覆盖了极其厚的冰层, 大气极其稀薄, 表面温度极低, 接近星际空间, 星球表面存在活跃的冰川, 冰层下方可能存在某种海洋`,				// A thick layer of ice coats the terrain.|Thin atmosphere.|Low surface temperature, close to space.|Active glaciers on the surface.|Oceans might exist under the ice,				
+	'Rock'							: `有少量矿物的岩质行星, 大气稀薄到几乎没有, 存在部分山川峡谷的地形, 行星轨道散落着彗星, 撞击频繁, 较轻地质活动, 偶有火山喷发`,			// A rocky planet with some minerals.|Atmosphere is almost non-existent.|Valleys and rivers scatter across the surface.|Surrounded by comets that often smash into it.|Occasional volcano eruptions,				
+	'Molten'						: `表面高温的熔融行星, 大气被恒星所剥离, 火山喷发极其频繁, 熔岩肆意在星球表面流动, 地质构造极其不稳定, 地震频繁`,						// A lava planet with a high surface temperature.|Atmosphere is ripped away by stars.|Frequent volcano eruptions.|Lava flows freely on the surface.|Unstable geology, frequent earthquakes,				
+	'Toxic'							: `岩质表面的星球, 被有毒大气所覆盖, 存在某种形式的生物圈, 已知高等生命无法在星球上生存, 变化激烈的雷电雨云`,							// A planet with a rocky surface.|Covered in toxic air.|Contains some kind of ecology.|Advanced life forms cannot survive on this planet.|Raging storms,				
+	'Big Asteroid'					: `小行星带中的大型天体, 表面凹凸不平, 由于质量过小无法形成球体`,																		// A large celestial body in an asteroid belt.|Uneven surface.|Too small to form a sphere.|----|----,				
+	'Type O Star'					: `温度最高, 质量最大, 亮度最高的主序星, 高温使其呈漂亮的蓝色, 极其罕见`,																// Has the highest temperature and mass, and is the brightest main sequence, The temperature gives it a beautiful blue glow, Some O-Type stars have spectrums similar to B-Type stars,				
+	'Type B Star'					: `体积庞大, 表面泛蓝, 亮度较高, 谱线为氢氦, 比较罕见`,																					// These stars are large, low on the scale and mostly blue, Rare but bright, Contains a lot of hydrogen and helium,				
+	'Type A Star'					: `相对年轻, 白色或青白色, 它们体积巨大并且自转飞速, 但最终会演变成慢速的低温的红巨星, 氢线极强`,										// Relatively young, white or blue, They are large and has a fast revolution speed, but will eventually turn into red giants, Has powerful hydrogen lines,				
+	'Type F Star'					: `体积相当大, 通常被称为黄白矮星, 经常发射出大量的紫外线辐射, 金属元素谱线较多`,														// Has a large volume, often called yellow-white dwarves, Emits a large amount of ultraviolet rays, and has a lot of metal elements on the spectrum,				
+	'Type G Star'					: `往往有100亿年寿命, 虽然它们的寿命短于K型恒星, 但G型恒星往往被认为更加适合有机生命的存在`,											// Yellow dwarves often have a life of 10 billion years, which are shorter than K-Type stars, but G-Type stars are more appropriate for organic life,				
+	'Type K Star'					: `在宇宙中非常普遍, 它们可以在主序星列中至少存在三百亿年, 星系状态通常都非常稳定`,														// Often called orange dwarves, they are very common in the universe, They often survive for at least 30 billion years in main sequence, and are very stable,				
+	'Type M Star'					: `宇宙中最为普遍存在的恒星类型, 它们的亮度很低, 很难被肉眼观察到, 拥有非常长的寿命`,													// The most common star type of the universe, often called red dwarves, They are not very bright, and are hard to see with the naked eye, Has a very long life,				
+	'BlueGiant'						: `高质量的主序星, 其内部的核反应速率很大, 通常为质量较小的步入老年期的主序星`,															// A main sequence with a dense mass, with fast internal nuclear reaction, Usually an aging small main sequence,				
+	'RedGiant'						: `步入老年期的主序星, 恒星的体积将膨胀到原先的十亿倍, 朝下一阶段——白矮星或中子星进发`,													// An aging main sequence, The body will expand to a billion times its original, then it either becomes a white dwarf or a Neutron Star,				
+	'SuperRedGiant'					: `濒临死亡的大质量恒星, 温度很低, 是宇宙中体积最大的天体, 数量极为罕见, 非常容易观测`,													// A near-death star with a large mass and a low temperature, They're also the largest celestial bodies in the universe, rare but easily observed,				
+	'pulsar'						: `恒星演化到末期, 经由重力崩溃发生超新星爆炸后形成的天体, 完全由中子组成, 质量极高`,													// A celestial body formed when a star goes supernova due to a collapse of gravity, Consists of nothing but neurons, with a high mass,				
+	'pulsar2'						: `高速旋转的中子星, 会周期性发射脉冲信号的星体, 直径大多为10千米左右, 自转极快`,														// A Neutron Star with a fast revolution and fires pulse signals periodically, Has a diameter of 10 kilometers,				
+	'backhole'						: `通常是由非常大质量的恒星在死亡时坍塌而形成的, 具有极强的重力场, 能够阻止一切事物逃逸出其视界边界`,									// Usually formed by the collapse of stars with large masses, Has a powerful gravitational field that stops anything from escaping,				
+	'ManmadeGalaxy/sp-01_Prefab'	: `这是一个小型空间站, 巨大的支架支撑着中心结构, 维持着数百万人的居住`,																	// A small space station with a large beam that supports the surrounding structure, Able to hold millions of people,				
+	'ManmadeGalaxy/sp-02_Prefab'	: `这是一个大型空间站, 巨大的支架支撑着复数的环状结构, 中心用中子堆维持着整体结构的重力, 维持着千万人的居住`,							// An large space station, with beams that support several ring structures, The gravity is maintained by a neuron pile in the middle, Able to hold tens of millions of people,				
+	'ManmadeGalaxy/sp-05_Prefab'	: `这是一个巨型空间站, 巨大的支架支撑着复数的复杂延展结构, 中心用小型黑洞维持着整体结构的重力, 维持着数亿人的居住`,						// An enormous space station, with beams that support several extensions, The gravity is maintained by the small black hole in the middle, Able to hold hundreds of millions of people,				
+	'ManmadeGalaxy/sp-10_Prefab'	: `这是一个从末日时代幸存下来的方舟设施, 这些失传的技术使得整个星系如同正常的星系一般`,													// An ark facility that survived the apocalypse, The lost technology enables the system to function like any ordinary system,				
+	'ManmadeGalaxy/sp-04_Prefab'	: `未知高等文明的低级清理者的中继卫星`,																									// A relay satellite for the low level cleaners of an unknown advanced civilization,				
+	'ManmadeGalaxy/sp-06_Prefab'	: `未知高等文明的低级清理者所乘坐的飞船, 中心由一个小型黑洞维持着整体结构与重力, 具体情况不明`,											// A spaceship used by low-level cleaners of unknown advanced civilizations, with a black hole in the center to maintain its structure and gravity. No other information is available,				
+	'SmallRock'						: `这个星系饱经磨难, 某种巨大的灾难毁灭了它, 只留下各种残骸, 昔日的姿态已无法辨别`,														// This troubled system was destroyed by some kind of huge disaster, and only remnants of its former self remained,				
+	},
+	
+	// $/Description_Name_GalaxyBuff-
+	天体特性 : {
+		0		: `-`,					// 空特性不显示 // Empty buff
+		
+		1		: `宏伟景观`,			// Majestic View
+		2		: `宜居行星`,			// Habitable Planet
+		3		: `恶劣气候`,			// Harsh Weather
+		4		: `金属行星`,			// Iron Planet
+		5		: `碳化行星`,			// Carbon Planet
+		6		: `贫瘠星球`,			// Lifeless Planet
+		7		: `类木行星`,			// Gas Giant
+		8		: `类土行星`,			// Telluric Planet
+		9		: `气殒星核`,			// Star Core
+		
+		1000	: `蓝超巨星`,			// O-Type Star
+		1001	: `蓝巨星`,				// B-Type Star
+		1002	: `白色恒星`,			// A-Type Star
+		1003	: `黄白矮星`,			// F-Type Star
+		1004	: `黄矮星`,				// G-Type Star
+		1005	: `橙矮星`,				// K-Type Star
+		1006	: `红矮星`,				// M-Type Star
+		1007	: `蓝巨星`,				// Blue Giant Star
+		1008	: `红巨星`,				// Red Giant Star
+		1009	: `红超巨星`,			// Red Supergiant Star
+		1010	: `中子星`,				// Neutron Star
+		1011	: `脉冲星`,				// Pulsar
+		1012	: `黑洞`,				// Black Hole
+		1013	: `残骸`,				// Remnant
+		
+		1801	: `小型空间站`,			// Small Space Station
+		1802	: `人造星系`,			// Artificial System
+		1803	: `大型人造星系`,		// Large Artificial System
+		8008	: `方舟船坞`,			// Ark Dock
+	},
+	
+	// $/Description_Description_GalaxyBuff-
+	特性描述 : {
+		0		: `-`,																// 空特性不显示 // Empty buff
+		
+		1		:`凝聚力 +10<br />星系噪音 + 2`,										// 	Unity <quad name=Cohesion size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		2		:`凝聚力 + 5<br />星系噪音 + 2`,										// 	Unity <quad name=Cohesion size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		3		:`凝聚力 - 5<br />星系噪音 + 2`,										// 	Unity <quad name=Cohesion size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		
+		4		:`星系噪音 + 2<br />星系资源产出 +20%`,								//	System yield <quad name=Resource size=20 width=1 /> <<Param%:0>>\nNoise: <<Noise>>
+		6		:`星系噪音 + 2<br />星系资源产出 -10%`,								//	System resources yield <quad name=Resource size=20 width=1 /> <<Param%:0>>\nNoise: <<Noise>>
+		
+		5		:`星系噪音 + 2<br />星系资源额外 +30k`,								//	System resources <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		9		:`星系噪音 + 2<br />星系资源额外 +30k`,								// 	System resources <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		7		:`星系噪音 + 2<br />星系资源额外 +50k`,								// 	System resources <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		8		:`星系噪音 + 2<br />星系资源额外 +50k`,								// 	System resources <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+
+		1000	:`星系噪音 + 2<br />戴森球 + 250 资源`,								// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nSystem Resource <quad name=Resource size=20 width=1 /> <<Param:1>>\nNoise: <<Noise>>
+		1001	:`星系噪音 + 2<br />戴森球 + 250 资源`,								// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nSystem Resource <quad name=Resource size=20 width=1 /> <<Param:1>>\nNoise: <<Noise>>
+		1002	:`星系噪音 + 2<br />戴森球 + 250 资源`,								// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nSystem Resource <quad name=Resource size=20 width=1 /> <<Param:1>>\nNoise: <<Noise>>
+		1003	:`星系噪音 + 2<br />戴森球 + 200 资源`,								// Dyson Sphere yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		1004	:`星系噪音 + 2<br />戴森球 + 200 资源`,								// Dyson Sphere yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+
+		1005	:`星系噪音 + 2<br />戴森球 + 150 资源<br />星系资源额外 +25k`,		// Dyson Sphere yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		1006	:`星系噪音 + 2<br />戴森球 + 150 资源<br />星系资源额外 +25k`,		// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		1007	:`星系噪音 + 2<br />戴森球 + 100 资源<br />星系资源额外 +50k`,		// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		1008	:`星系噪音 + 2<br />戴森球 + 100 资源<br />星系资源额外 +50k`,		// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+		1009	:`星系噪音 + 2<br />戴森球 +　50 资源<br />星系资源额外 +90k`,		// Dyson Sphere Yield: <quad name=Resource size=20 width=1 /> <<Param:0>>\nNoise: <<Noise>>
+
+		1010	:`星系噪音 + 5<br />不可建戴森球<br />星系资源额外 +120k`,			// Unable to build Dyson Spheres\nNoise: <<Noise>>.
+		1011	:`星系噪音 +30<br />不可建戴森球<br />没广播站也能发广播`,			// Unable to build Dyson Spheres\nNoise: <<Noise>>.
+		1012	:`星系噪音 + 0<br />不可建戴森球<br />仅有一个黑洞的槽位`,			// Unable to build Dyson Spheres\nNoise: <<Noise>>.
+		1013	:`星系噪音 + 0<br />不可建戴森球<br />仅有一个恒星的槽位`,			// Unable to build Dyson Spheres\nNoise: <<Noise>>.
+
+		1801	:`星系噪音 + 0<br />拥有 1 个槽位<br />被登陆后立即销毁`,		// Unable to build Dyson Spheres\nDestroyed immediately after attacked.\nColony Unity <quad name=Cohesion size=20 width=1 /><<ColonialCohesion>>\nNoise: <<Noise>>
+		1802	:`星系噪音 + 0<br />拥有 2 个槽位<br />被登陆后立即销毁`,		// Unable to build Dyson Spheres\nDestroyed immediately after attacked. Colony Unity <quad name=Cohesion size=20 width=1 /><<ColonialCohesion>>\nNoise: <<Noise>>
+		1803	:`星系噪音 + 0<br />拥有 4 个槽位<br />被登陆后立即销毁`,		// Unable to build Dyson Spheres\nDestroyed immediately after attacked. Colony Unity <quad name=Cohesion size=20 width=1 /><<ColonialCohesion>>\nNoise: <<Noise>>
+		8008	:`星系噪音 + 0<br />拥有 1 个槽位<br />被登陆后立即销毁`,		// Artificial System for building Ark.
+	},
+	
+	// Custom
+	天体类型 : {
+		Planet : `行星`,		// Planet
+		Star : `恒星`,			// Star
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_index = -1;
+let powerTable01_group = -1;
+let powerTable01_level = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// 项目代码,			项目名称,		天体特性,		天体类型,	建筑类型,		数据预设,			数据预设,					有其他图,		
+	// Remote/Celestia,		Name,			GalaxyBuff,		Tag,		Building,		PrefabsName,		PrefabsName_HighRes,		ImagePlus,		
+	// 100,					类地行星,		2,				Planet,		0,				Earth,				Earth,						1,				
+	
+	// 模型尺寸,	已被废弃,			轨道远近,						槽位开发
+	// Size,		Probability,		PossibleOrbit//轨道的远近,		ExpandSlot
+	// 2,			100,				2,								6000:60|15000:150|30000:200
+
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';		// 项目代码
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';		// 项目名称
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';		// 天体特性
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';		// 天体类型
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';		// 建筑类型
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';		// 数据预设
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';		// 数据预设
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';		// 有其他图
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';		// 模型尺寸
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';		// 已被废弃
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';	// 轨道远近
+	// powerTable01_tbody_html += '<td>'+ item[11] +'</td>';	// 槽位开发
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){ powerTable01_group+=1 };
+		powerTable01_level = 0;
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// 额外数据
+	item.项目名称 = textList.项目名称[csv1.result[item[5]][2].replace('$/Description_Name_','')];
+	item.文本描述 = textList.文本描述[csv1.result[item[5]][4].replace('$/Description_Content_','')];
+	item.图片名称 = csv1.result[item[5]][1];
+	
+	console.log();
+	// item.科技名称 = csv1.result[item[0]][0];
+	// item.科技类型 = csv1.result[item[0]][1];
+	// item.科技前置 = csv1.result[item[0]][2];
+	// item.项目序号 = powerTable01_index;
+	// item.数据分组 = powerTable01_group;
+	
+	// 设置分组
+	powerTable01_tbody_html += '<tr index="'+ powerTable01_index +'" group="'+ powerTable01_group +'" style="height: 65px;">';
+	
+	// -----------------------------------------
+	
+	// 项目图片
+	let img2 = (item[7] !== '1' ? '' : `<img loading='lazy' alt='${item.项目名称}' src='../static/image/starInfo/${item.图片名称}_C.jpg' style='width:256px;height:128px;margin-left:12px;' />`);
+	powerTable01_tbody_html += /*html*/`<td class="followTip" style="padding:0;" xjTip-size="lg" xjTip-align="right" xjTip-duration="0" xjTip-ctrlEvent="hover" xjTip-maxWidth="640px" xjTip-maxHeight="640px" xjTip-color="black" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false"
+		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/starInfo/${item.图片名称}.jpg' style='width:256px;height:128px;' />${img2}">
+		<img loading="lazy" alt="${item.项目名称}" src="../static/image/starInfo/${item.图片名称}.jpg" style="width:128px;height:64px;" />
+	</td>`;
+	
+	// 项目图片
+	// powerTable01_tbody_html += /*html*/`<td class="followTip" style="position:relative;" onmouseleave="this.parentElement.style.boxShadow=''" onmouseenter="this.parentElement.style.boxShadow='none'"
+	// 		xjTip-size="lg" xjTip-align="right" xjTip-duration="0" xjTip-ctrlEvent="hover" xjTip-maxWidth="640px" xjTip-maxHeight="640px" 
+	// 		xjTip-color="black" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false"
+	// 		xjTip-html="
+	// 			<img loading='lazy' alt='bg' src='../static/image/techList/bg.png' style='width:128px;height:128px;' />
+	// 			<img loading='lazy' alt='${textList.科技名称[item.科技名称]}' src='../static/image/techList/techTreeNode-${item.科技名称}.png' style='width:114px;height:114px;position:absolute;top:14px;left:19px;' />
+	// 		">
+	// 	<img loading="lazy" alt="bg" src="../static/image/techList/bg.png" style="width:64px;height:64px;position:absolute;top:calc(50% - 32px);left:calc(50% - 32px);" />
+	// 	<img loading="lazy" alt="${textList.科技名称[item.科技名称]}" src="../static/image/techList/techTreeNode-${item.科技名称}.png" style="width:57px;height:57px;position:absolute;top:calc(50% - 28px);left:calc(50% - 28px);" />
+	// </td>`;
+	
+	// 项目序号
+	powerTable01_tbody_html += '<td>'+ (powerTable01_index+1) +'</td>';
+	
+	// 项目代码
+	powerTable01_tbody_html += '<td>'+ item[0] +'</td>';
+	
+	// 项目名称
+	powerTable01_tbody_html += '<td>'+ item.项目名称 +'</td>';
+	
+	// 模型尺寸
+	powerTable01_tbody_html += '<td>'+ item[8] +'</td>';
+
+	// 轨道远近
+	powerTable01_tbody_html += '<td>'+ item[10] +'</td>';
+	
+	// 天体类型
+	powerTable01_tbody_html += '<td>'+ textList.天体类型[item[3]] +'</td>';
+	
+	// 槽位开发
+	powerTable01_tbody_html += '<td>'+ (item[11] === '' ? '-' : item[11].split('|').map(function(e){
+		let result = e;
+		if(/^\d{4}\:/.test(e)){ result = result.replace('000:','000 :') };
+		if(/\:\d{2}$/.test(e)){ result = result.replace(':',': ') };
+		return result;
+	}).join('<br />')) +'</td>';
+	
+	// 天体特性
+	powerTable01_tbody_html += '<td>'+ (textList.天体特性[item[2]] === '-' ? '-' : (textList.天体特性[item[2]] +': <br />'+ textList.特性描述[item[2]])) +'</td>';
+	
+	// 文本描述
+	powerTable01_tbody_html += '<td>'+ item.文本描述 +'</td>';
+	
+	// -----------------------------------------
+	
+	// 闭合掉tr
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// ---------------------------------------------
+
+// 动态高亮
+let groupedSet01 = function(jqi_powerTable_x){
+	
+	// 获取行并移除高亮
+	let jqi_tr = jqi_powerTable_x
+	.find('tbody tr').removeClass('tr-active');
+	
+	// 高亮首个非隐藏行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
+		jqi_tr.eq(i01).addClass('tr-active');
+		break;
+	};
+	
+	// 遍历表格的所有行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		
+		// 当前行被隐藏, 那无需计算直接跳过
+		let thisRow = jqi_tr.get(i01), prevRow = 'ignore';
+		if(thisRow.classList.contains('hideTr') === true){ continue };
+		
+		// 从当前行开始, 再次遍历前面所有行
+		for(let i02=i01-1; i02>-1; i02--){
+			
+			// 如果上一行是隐藏的就直接跳过
+			let prevRow = jqi_tr.get(i02), oneGroup = false;
+			if(prevRow.classList.contains('hideTr') === true){ continue }else 
+			if(thisRow.getAttribute('group') === prevRow.getAttribute('group')){ oneGroup = true };
+			
+			// 如果上一行和当前行同类则同步
+			if(oneGroup === true ){ if(prevRow.classList.contains('tr-active') === true ){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+			// 如果非同类则高亮取反跳出循环
+			if(oneGroup === false){ if(prevRow.classList.contains('tr-active') === false){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+		};
+		
+	};
+	
+};
+groupedSet01(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click( 
+function(event){ groupedSet01(jqi_powerTable01) });
+
+// ---------------------------------------------
+/*
+// 所在等级
+let attrSelect01_Option = [
+	['1',			'Level +1',						],		// 'Level +1',						'Level +1',						
+	['2',			'Level +2',						],		// 'Level +2',						'Level +2',						
+	['3',			'Level +3',						],		// 'Level +3',						'Level +3',						
+	['4',			'Level +4',						],		// 'Level +4',						'Level +4',						
+	['5',			'Level +5',						],		// 'Level +5',						'Level +5',						
+	['6',			'Level +6',						],		// 'Level +6',						'Level +6',						
+	['-1',			'Level -1(满级)',				],		// 'Level -1(最高)',				'Level -1(Full)',				
+	['-2',			'Level -2(不可升级)',			],		// 'Level -2(進階不可)',			'Level -2(AntiGoUp)',			
+	['-3',			'Level -3(-1 + -2 = -3)',		],		// 'Level -3(-1 + -2 = -3)',		'Level -3(-1 + -2 = -3)',		
+];
+
+// 选中类型
+let jqi_typeButton = $('.typeButton');
+jqi_typeButton.filter('[value="101"]').addClass('typeActive');
+
+// 获取对象
+let jqi_nameInput01 = $('#nameInput01'), jqi_nameCheck01 = $('#nameCheck01'), jqi_resetButton = $('#resetButton');
+let str_emptyOption = '<option value="empty" selected="selected" style="background-color:#f5f5f5;">None</option>';
+
+// 创建元素
+let jqi_attrSelect01 = $('#attrSelect01').html(str_emptyOption + attrSelect01_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+//l jqi_attrSelect02 = $('#attrSelect02').html(str_emptyOption + attrSelect02_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+
+// ---------------------------------------------
+
+// 获取 tbody 和 tr
+let jqi_table01_tbody = $('#powerTable01 tbody'), jqi_table01_tbody_tr = jqi_table01_tbody.find('tr');
+*/
+// 创建无结果的节点
+// let jqi_empty_result_tr = $(/*html*/`<tr index="-1" group="-1" style="height: 65px;" class="emptyTr">
+// <td colSpan="99"><span>没有任何匹配的结果!<br />There Are No Any Matching Results!</span></td></tr>`);
+
+/*
+// 创建总筛选的函数
+let filterFunction = function(event){
+	
+	// 表单元素当前的值
+	let trShowIndexArray = [];
+	let jqi_attrSelect01_value = jqi_attrSelect01.val();
+	let jqi_typeButtonActive_value = jqi_typeButton.filter('.typeActive').attr('value');
+	
+	// 获取匹配项的索引
+	jqi_nameInput01.val().trim()
+	.split(/ {1,}/).forEach(function(text){
+		csv0.forEach(function(item){
+			if(item !== 'blankRow' && (item.项目名称.includes(text) === true 
+			|| item.文本描述.includes(text) === true || textList.科技名称[item.科技名称].includes(text) === true)){
+				
+				// 所在等级
+				if(jqi_attrSelect01_value !== 'empty'){
+					if(jqi_attrSelect01_value !== '-3' 
+					&& jqi_attrSelect01_value !== String(item.所在等级)){ return }else 
+					if(jqi_attrSelect01_value === '-3' && String(item.所在等级) !== '-1' && String(item.所在等级) !== '-2'){ return };
+				};
+				
+				// 科技类型
+				if(jqi_typeButtonActive_value !== '0'){
+					if(jqi_typeButtonActive_value !== item.科技类型){ return };
+				};
+				
+				// 符合条件
+				trShowIndexArray.push(
+				String(item.项目序号));
+				
+			};
+		});
+	});
+	
+	// 根据结果显示隐藏
+	if(trShowIndexArray.length === 0){
+		jqi_table01_tbody_tr.addClass('hideTr');
+		jqi_empty_result_tr.removeClass('hideTr' );
+		jqi_table01_tbody.append(jqi_empty_result_tr);
+	}else{
+		jqi_empty_result_tr.remove();
+		jqi_table01_tbody_tr.each(function(index, value){
+			if(trShowIndexArray.includes(value.getAttribute('index')) 
+			=== true){ value.classList.remove('hideTr') }else{ value.classList.add('hideTr') };
+		});
+	};
+	
+	// 合并同类设置高亮
+	rowSpanSet01(jqi_powerTable01);
+	groupedSet01(jqi_powerTable01);
+	
+};
+
+// 绑定表单控件操作
+[jqi_attrSelect01, ].forEach(function(jqi_select){ jqi_select.on('change', function(event){ filterFunction(event) }) });
+jqi_nameInput01.on('keyup', function(event){ if(event.keyCode === 13){ filterFunction(event) } });
+jqi_nameInput01.on('blur' , function(event){ filterFunction(event) });
+jqi_nameCheck01.on('click', function(event){ filterFunction(event) });
+jqi_resetButton.on('click', function(){
+	jqi_nameInput01.val('');
+	[jqi_attrSelect01, ].forEach(function(
+	jqi_select){ jqi_select.find('option:first').prop('selected', true) });
+	jqi_empty_result_tr.remove();
+	jqi_typeButton.eq(0).click();
+});
+
+// 绑定类型点击事件
+jqi_typeButton.on('click', function(){
+	jqi_typeButton.removeClass('typeActive');
+	$(this).addClass('typeActive');
+	filterFunction(event);
+});
+
+// 自动执行一次筛选
+filterFunction();
+*/
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.0</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+
