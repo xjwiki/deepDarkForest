@@ -1,4 +1,4 @@
-/** xj.base(CSS 样式基础) | V0.4.0 | Apache Licence 2.0 | 2015-2021 © XJ.Chen | https://github.com/xjZone/xj.base/ */
+/** xj.base(CSS 样式基础) | V0.4.1 | Apache Licence 2.0 | 2015-2025 © XJ.Chen | https://github.com/xjZone/xj.base/ */
 
 
 
@@ -685,7 +685,7 @@ html[class~="xj-base-black"] .table{border-color:#666;background-color:#333;}
 .th{display:table-cell;padding:8px;border-width:1px;border-style:solid;border-color:inherit;vertical-align:inherit;text-align:inherit;font-weight:inherit;}
 .td{display:table-cell;padding:8px;border-width:1px;border-style:solid;border-color:inherit;vertical-align:inherit;text-align:inherit;font-weight:inherit;}
 
-
+/* ------------------------------------------ */
 
 /* striped 和 hover 这两个类名不能颠倒位置，否则会因为权重的问题，导致 hover 的样式不会生效的 */
 /* striped 只针对 tbody 中的 tr 生效，如果 thead 中的 tr 想加深颜色，可用 .tr-active 类名实现 */
@@ -705,7 +705,7 @@ html:not([class*="xj-base"]) .table-striped .tbody tr.tr-active{background-color
 html:not([class*="xj-base"]) .table-striped .tbody .tr.tr-active{background-color:#f5f5f5;}
 
 /* 内阴影会被图片覆盖, 所以尝试用 th::after 伪元素实现, 但 Firefox 会出现 border 消失的渲染 BUG, 最后采用内嵌的 outline 实现 */
-html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/*box-shadow: 0 0 8px rgba(0,0,0,0.25) inset; background-color:#f0f0f0; */
+html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(0,0,0,0.25) inset; background-color:#f0f0f0; */
 html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody .tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(0,0,0,0.25) inset; background-color:#f0f0f0; */
 html:not([class*="xj-base"]).xj-operate-mouse .table-hover .tbody tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(0,0,0,0.25) inset; background-color:#f0f0f0; */
 html:not([class*="xj-base"]).xj-operate-mouse .table-hover .tbody .tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(0,0,0,0.25) inset; background-color:#f0f0f0; */
@@ -726,12 +726,10 @@ html[class~="xj-base-black"] .table-striped tbody .tr.tr-active{background-color
 html[class~="xj-base-black"] .table-striped .tbody tr.tr-active{background-color:#292929;}
 html[class~="xj-base-black"] .table-striped .tbody .tr.tr-active{background-color:#292929;}
 
-html[class~="xj-base-black"].xj-operate-mouse .table-hover tbody tr:hover{box-shadow: 0 0 8px rgba(255,255,255,0.25) inset;}/* background-color:#242424; */
-html[class~="xj-base-black"].xj-operate-mouse .table-hover tbody .tr:hover{box-shadow: 0 0 8px rgba(255,255,255,0.25) inset;}/* background-color:#242424; */
-html[class~="xj-base-black"].xj-operate-mouse .table-hover .tbody tr:hover{box-shadow: 0 0 8px rgba(255,255,255,0.25) inset;}/* background-color:#242424; */
-html[class~="xj-base-black"].xj-operate-mouse .table-hover .tbody .tr:hover{box-shadow: 0 0 8px rgba(255,255,255,0.25) inset;}/* background-color:#242424; */
-
-
+html[class~="xj-base-black"].xj-operate-mouse .table-hover tbody tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(255,255,255,0.25) inset; background-color:#242424; */
+html[class~="xj-base-black"].xj-operate-mouse .table-hover tbody .tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(255,255,255,0.25) inset; background-color:#242424; */
+html[class~="xj-base-black"].xj-operate-mouse .table-hover .tbody tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(255,255,255,0.25) inset; background-color:#242424; */
+html[class~="xj-base-black"].xj-operate-mouse .table-hover .tbody .tr:hover{outline:4px solid rgba(0,0,0,0.125);outline-offset:-4px;}/* box-shadow: 0 0 8px rgba(255,255,255,0.25) inset; background-color:#242424; */
 
 /* 当 borderless / bordered-x / bordered-y 和 scrollable 配合使用的时候，类名都得放到父标签去 */
 /* 很难让容器的上下边框也自适应，而且在移动端滚动不占体积，双下边框会显得很难看，所以只能这样 */
@@ -772,7 +770,28 @@ html[class~="xj-base-black"] .table-scrollable:not(.table-borderless):not(.table
 .table-scrollable:not(.table-borderless):not(.table-bordered-x) .td:last-child{border-right:0;}
 .table-scrollable > .table{margin-bottom:0;}
 
+/* 尽管一开始并不打算为 table 设置过多的类名, 但实测发现尺寸还是有必要的, 所以就都补上 */
+/* 但实际尺寸细节可能还需要再斟酌一下, 默认就是 md 的设置, 所以这个应该是用不上了 */
 
+.table-xl{font-size: 24px;}
+.table-xl th{padding:16px;}
+.table-xl td{padding:16px;}
+
+.table-lg{font-size: 20px;}
+.table-lg th{padding:12px;}
+.table-lg td{padding:12px;}
+
+.table-md{font-size: 16px;}
+.table-md th{padding: 8px;}
+.table-md td{padding: 8px;}
+
+.table-sm{font-size: 14px;}
+.table-sm th{padding: 6px;}
+.table-sm td{padding: 6px;}
+
+.table-xs{font-size: 12px;}
+.table-xs th{padding: 4px;}
+.table-xs td{padding: 4px;}
 
 /* unset 放在最后面，以便提升权重，避免嵌套的时候需要覆盖，但因为权重过低而导致覆盖失败的情况 */
 /* caption, thead, th, td 单独设置 unset 则 table 的 width:100% 和 margin:0 0 16px 样式会保留 */

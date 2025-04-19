@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-04-18T22:41:25UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -20,8 +20,8 @@
 <link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
 <script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
 
-<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
-<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
 
 <script>document.addEventListener('DOMContentLoaded', 
 function(){ FastClick.attach(document.body) }, false);</script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-12T17:24:04UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-04-12T17:24:04UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-18T22:41:25UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-04-18T22:41:25UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -228,6 +228,11 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>unFinish…</p>
 
+<!--◇
+金属行星 和 两种贫瘠星球 的 Buff, 既对资源生产的增益或减损, 不单对工厂或巨型工厂生效, 
+对那些不依靠星系资源产出的建筑, 例如戴森球, 也是有效
+◇-->
+
 <hr />
 </section>
 
@@ -265,6 +270,9 @@ html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr
 
 ————
 
+◆增加建筑槽位的属性
+◆数据分成两页, 将`随机建筑.csv` 和开发减压也给加上, 
+
 15. 星系天体.csv > `GalaxyBuff` 属性是用来链接 `星系Buff.csv` 文件的?
 答：是的
 
@@ -295,10 +303,12 @@ html:not([class*="xj-base"]).xj-operate-mouse .table-hover tbody tr:not(.emptyTr
 问题
 01. 首都建筑可以让所在星系获得"首都星系"特性, 文本描述写着首都圈护盾 +50%, 这个是指护盾持续时间还是指护盾半径?
 02. 掩体的星系, 当遭遇除攻击而毁灭, 仍能保留所有权, 这个攻击是指一切形式的攻击吗? 还是说如果是登陆攻击就不生效了?
-03. 虚无装置同时具备了 DontDestroy 和 LostDestory 两个函数, 星系丢失不会销毁 和 星系丢失立即销毁, 这不是矛盾吗?
+03. 虚无装置同时具备了 DontDestroy 和 LostDestory 两个函数, `星系丢失不会销毁`和`星系丢失立即销毁`, 这不是矛盾吗?
 04. 为什么有两种贫瘠星球(Barren 和 Barren2), 它们的参数看着相同啊, 除了图片, 并没有什么区别了?
 05. 星系天体.csv, Tag 属性有 Planet 和 Star 两种, 既行星和恒星, 这个属性是用来做什么的?
 06. 地图生成星系有什么规律吗?, 例如说什么恒星的出现率更高, 行星具体数量取决于什么条件?
+
+01. 解锁建筑修建速度的科技, 对那些当前处于修建状态中的建筑会有效果吗?
 
 */
 

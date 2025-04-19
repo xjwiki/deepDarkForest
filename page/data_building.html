@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-04-18T22:41:25UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -20,8 +20,8 @@
 <link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
 <script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
 
-<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
-<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
 
 <script>document.addEventListener('DOMContentLoaded', 
 function(){ FastClick.attach(document.body) }, false);</script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-12T17:24:04UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-04-12T17:24:04UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-18T22:41:25UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-04-18T22:41:25UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -133,9 +133,9 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <!--◇
 <p>
 	01. 以下是剧情模式的每日事件, 尽管该模式有 4 个难度, 不过"故事/正常"难度共用一张表(P01), "硬核/残酷"难度共用一张表(P02); <br />
-	02. 实际上剧情模式是从第 <span class="code">0</span> 天的教学关卡开始, 但事件是触发于整备阶段, 而教学关卡前并没有整备, 所以也就没第 0 天的内容; <br />
+	02. 实际上剧情模式是从第 <c>0</c> 天的教学关卡开始, 但事件是触发于整备阶段, 而教学关卡前并没有整备, 所以也就没第 0 天的内容; <br />
 	03. "日期标记"是用于切换工作日和休假日的(灰色背景是工作日/白色背景是休假日), "特殊逻辑"是系统触发内部某些机制变化的关键; <br /> 
-	04. "事件值一"&"事件值二"都是些会弹窗提示的内容, 某些值以 <span class="code">|</span> 符号隔开, 意思是系统会从这些事件中选一个触发, 带有随机性; <br />
+	04. "事件值一"&"事件值二"都是些会弹窗提示的内容, 某些值以 <c>|</c> 符号隔开, 意思是系统会从这些事件中选一个触发, 带有随机性; <br />
 </p>
 ◇-->
 
@@ -197,12 +197,31 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <p>unFinish…</p>
 
 <!--
-传感阵列, 人造卫星上的传感阵列建设完毕, 会自动探索周围的迷雾区域
+这个模型尺寸是不是有点问题, 怎么越大数值反而越小? [疑问]
+因为这个系数，是跟原模型的大小相关的
+靠这个系数，对原模型进行缩放，而达到一个合适的大小
+
+第二章第二个场景, 如果签署“关爱弱势”议案, 就会解锁敬老院的建筑, 
+
+建筑分类 : 普通建筑/高级建筑, 人造建筑/自然景观, 常规建筑/特殊建筑
+拆除建筑需要时间, 但点击拆除的那一刻, 建筑所带来的效果就会消失了, 但相反的, 建筑未建造好之前, 建筑的效果都不会生效
+
+人造星系的建造时间包含工程船前往的时间(根据距离而变化)和实际建造的时间(不同类型的人造星系各不相同), 
+但是一旦立项, 星域界面就会显示人造星系, 此时你就可以执行征兵或启动防护罩的防御操作, 也可以安排人造星系修建建筑了, 
+不过这些建筑得等到人造星系修建完毕才会开始建造, 相当于资源花了, 但是延迟执行, 
+一般不推荐这样做, 因为如果期间人造星系被摧毁, 则建筑耗费的资源不会退还, 会被完全浪费掉
+
+发展科技中, 减少建造时间的那项科技, 对于开发星球槽位和建人造星系的操作是无效的
+
+传感阵列, 人造卫星上的传感阵列建设完毕, 如果传感阵列范围内还存在战争迷雾, 将会被自动揭开
 
 <p>人造星系: 在星系的界面点击右键, 可在引力范围外修建人造星系(引力范围内是红色的), 可被修建的对象包括[小型空间站(1槽位)/人造星系(2槽位)/大型人造星系(4槽位)/方舟船坞(1槽位)]共 4 项, 有时星系中也会出现一些无人的人造星系, 可以派遣殖民队直接占领, 但如果人造星系是有归属的, 则对其发动攻击后, 无论是使用哪种攻击手段, 只要成功, 星系就会完全消失, 也就是说, 它们无法被敌方占领;</p> 
 
 14.特殊生产 > "虚无装置"建筑, 描述写着拆除可以获得 1.5 倍建造资源, 但实际上 AddGalaxyResouce 参数为 20, 所以究竟是多少? 这个增加的资源, 是指以当前我方的资源为基数, 还是以建造这个建筑物所需要的资源为基数?
 “AddGalaxyResouce”拼写错了，所以不会生效（因为设计上就是不会生效，所以没有删除）。因为建筑的建造成本为10000，拆除获得15000，所以是1.5倍。（以基础建造消耗10000为基准的1.5倍）
+
+拆除一座建筑, 需要耗费的时间是建造这桌建筑所需时间的一半?, 但最多不会超过 60 年
+
 -->
 
 <!-- <p>高级建筑: 在只能建造在人造星系上</p>

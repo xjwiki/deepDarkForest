@@ -130,16 +130,6 @@ z-index:-1;background-color:#ccc;box-shadow:0 0 0 10px #f00 inset;font-size:36px
 
 /*--------------------------------------------------------------------------------------------*/
 
-/* 在 xj.theme 的基础上为 table 增加 sm 和 xs 尺寸 */
-.table-sm{font-size:14px;}
-.table-sm th{padding:6px;} .table-sm td{padding:6px;}
-.table-xs{font-size:12px;}
-.table-xs th{padding:4px;} .table-xs td{padding:4px;}
-
-
-
-/*--------------------------------------------------------------------------------------------*/
-
 /* 只有当 summary 的 display:list-item 才会有 ::marker 伪元素, 它仅支持字体属性, white-space, */
 /* color, text-combine-upright, unicode-bidi, direction, content 这些样式, 并不支持背景的设置 */
 /* summary 里有 block 标签如 h2, 文本过长会导致小三角和文本换行, 所以改用伪元素背景实现小三角 */
@@ -197,5 +187,15 @@ details > content > *:last-child{margin-bottom:0;}
 
 .powerTable tbody td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle;}
 .powerTable tbody td:first-child{border-left:1px solid #ccc;}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* 使用自定义 c 标签代替 code, 一方面输入更短, 另一方面浏览器翻译的时候也不会当作代码而不翻译 */
+
+c{padding:0 8px;color:#f39;vertical-align:bottom;font-family:Iosevka,Menlo,Consolas,"Liberation Mono","Courier New","Hiragino Sans GB","Microsoft YaHei",monospace;}
+html:not([class*="xj-base"]) c{background-color:#f0f0f0;}
+html[class~="xj-base-black"] c{background-color:#242424;}
 
 

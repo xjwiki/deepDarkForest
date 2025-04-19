@@ -76,6 +76,12 @@ if(!xj.Button.option){ xj.Button.option = {} };
 xj.Button.config['0.4.0'] = {};
 xj.Button.option['0.4.0'] = {};
 
+// xjTip
+window.xj||(xj={}),xj.config||(xj.config={}),xj.config.xjTip={
+	size : 'lg',
+	ctrlEvent : 'hover',
+};
+
 })();
 
 
