@@ -78,8 +78,8 @@ xj.Button.option['0.4.0'] = {};
 
 // xjTip
 window.xj||(xj={}),xj.config||(xj.config={}),xj.config.xjTip={
-	size : 'lg',
-	ctrlEvent : 'hover',
+	maxWidth : '640px', maxHeight : '640px',
+	size : 'lg', ctrlEvent : 'hover',
 };
 
 })();

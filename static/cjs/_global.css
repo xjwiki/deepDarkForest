@@ -177,10 +177,11 @@ details > content > *:last-child{margin-bottom:0;}
 
 .powerTable{border-collapse:separate;}
 
-.powerTable thead th{position:sticky;top:0;background-color:#fff;cursor:pointer;z-index:32;}
-.powerTable thead th .icon{margin-left:2px;color:#ccc;}
+.powerTable thead th{position:sticky;top:0;z-index:32;background-color:#fff;cursor:pointer;}
+.powerTable thead th .icon{color:#ccc;}
+.powerTable thead th .icon.fa-sort-up{color:#39f;}
+.powerTable thead th .icon.fa-sort-down{color:#39f;}
 .powerTable thead th span{display:inline-block;vertical-align:middle;}
-.powerTable thead th .fa-sort-down, .powerTable thead th .fa-sort-up{color:#39f;}
 
 .powerTable thead th{border:none;border-right:1px solid #ccc;border-bottom:3px solid #ccc;border-top:1px solid #ccc;}
 .powerTable thead th:first-child{border-left:1px solid #ccc;}
@@ -188,14 +189,25 @@ details > content > *:last-child{margin-bottom:0;}
 .powerTable tbody td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle;}
 .powerTable tbody td:first-child{border-left:1px solid #ccc;}
 
+/* document.getElementById('trLength01').textContent = trShowIndexArray.length;
+<tfoot><tr><td>项目统计</td><td id="trLength01" colSpan="99"></td></tr></tfoot>
+.powerTable tfoot td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#fff;box-shadow:0 -1px 0 #ccc;}
+.powerTable tfoot td{vertical-align:middle;height:28px;position:sticky;bottom:0;z-index:32;color:#999;}
+.powerTable tfoot td:first-child{border-left:1px solid #ccc;text-align:center;}*/
+
 
 
 /*--------------------------------------------------------------------------------------------*/
 
 /* 使用自定义 c 标签代替 code, 一方面输入更短, 另一方面浏览器翻译的时候也不会当作代码而不翻译 */
 
-c{padding:0 8px;color:#f39;vertical-align:bottom;font-family:Iosevka,Menlo,Consolas,"Liberation Mono","Courier New","Hiragino Sans GB","Microsoft YaHei",monospace;}
+c{padding:0 8px;color:#f39;vertical-align:bottom;font-family:Iosevka,Menlo,Consolas,
+"Liberation Mono","Courier New","Hiragino Sans GB","Microsoft YaHei",monospace;}
 html:not([class*="xj-base"]) c{background-color:#f0f0f0;}
 html[class~="xj-base-black"] c{background-color:#242424;}
+
+/* 使用自定义 h 标签代替 <span style="display:none"></span> 和 <i hidden></i>, 尽量让文本更短 */
+
+h{display:none!important;}
 
 

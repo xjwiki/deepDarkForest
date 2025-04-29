@@ -78,8 +78,11 @@ $('#pub_toolNavigated').on('click', function(){
 
 
 // ---------------------------------------------------------------------------------------------
+// 全局方法所在对象
+window.xj2 = {};
+
 // 表格排序功能函数
-window.xj2 = { _buildPowerTable : function(tableID){
+window.xj2._buildPowerTable = function(tableID){
 	
 	// 获取相关节点
 	let ele_table = document.getElementById(tableID);
@@ -163,7 +166,98 @@ window.xj2 = { _buildPowerTable : function(tableID){
 	// 返回当前表格
 	return ele_table;
 	
-}, };
+};
+
+// 表格原始文本处理
+window.xj2._hideText = function(text, encode){
+	if(encode !== true){ return (text.replace('# ','<h>') + '</h>') };
+	return text.replace(/# ([\s\S]+)/, function($0, $1){ return ('<h>'+ $1.replace(/</g,'&lt;').replace(/>/g,'&gt;') +'</h>') });
+};
+
+// 动态高亮表格背景
+window.xj2._groupedSet = function(jqi_powerTable){
+	
+	// 获取行并移除高亮
+	let jqi_tr = jqi_powerTable
+	.find('tbody tr').removeClass('tr-active');
+	
+	// 高亮首个非隐藏行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
+		jqi_tr.eq(i01).addClass('tr-active');
+		break;
+	};
+	
+	// 遍历表格的所有行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		
+		// 当前行被隐藏, 那无需计算直接跳过
+		let thisRow = jqi_tr.get(i01), prevRow = 'ignore';
+		if(thisRow.classList.contains('hideTr') === true){ continue };
+		
+		// 从当前行开始, 再次遍历前面所有行
+		for(let i02=i01-1; i02>-1; i02--){
+			
+			// 如果上一行是隐藏的就直接跳过
+			let prevRow = jqi_tr.get(i02), oneGroup = false;
+			if(prevRow.classList.contains('hideTr') === true){ continue }else 
+			if(thisRow.getAttribute('group') === prevRow.getAttribute('group')){ oneGroup = true };
+			
+			// 如果上一行和当前行同类则同步
+			if(oneGroup === true ){ if(prevRow.classList.contains('tr-active') === true ){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+			// 如果非同类则高亮取反跳出循环
+			if(oneGroup === false){ if(prevRow.classList.contains('tr-active') === false){
+				thisRow.classList.add('tr-active') }; break;
+			};
+			
+		};
+		
+	};
+	
+};
+
+// 合并表格同类的行
+window.xj2._rowSpanSet = function(jqi_powerTable, nth){
+	
+	// 项目表格行和节点
+	let jqi_tr = jqi_powerTable.find('tbody tr');
+	let jqi_td0 = jqi_tr.find('td:nth-of-type('+nth+')').removeClass('hideTd').removeAttr('rowSpan');
+	
+	// 遍历表格的所有行
+	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
+		
+		// 当前行被隐藏, 那无需计算直接跳过
+		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
+		
+		// 创建 rowSpan, 获取"科技名称"的值
+		let rowSpanValue = 1, groupValue = jqi_tr.get(i01).getAttribute('group');
+		
+		// 从当前行开始, 再次遍历后面所有行
+		for(let i02=i01+1, l02=jqi_tr.length; i02<l02; i02++){
+			
+			// 下一行是被隐藏的那就直接跳过
+			if(jqi_tr.get(i02).classList.contains('hideTr') === true){ continue };
+			
+			// 下行不隐藏但不同组则循环终止
+			if(jqi_tr.get(i02).getAttribute('group') !== groupValue){ break };
+			
+			// 下行不隐藏且同组则 rowSpan+1
+			jqi_td0.get(i02).classList.add('hideTd'); rowSpanValue += 1;
+			
+		};
+		
+		// 设置 rowSpan, 循环跳过后面同组项
+		if(rowSpanValue === 1){ continue };
+		jqi_td0.get(i01).setAttribute
+		('rowSpan', rowSpanValue);
+		i01 = i01 + rowSpanValue - 1;
+		
+	};
+	
+};
 
 
 
