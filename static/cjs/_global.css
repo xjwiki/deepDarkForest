@@ -4,10 +4,10 @@
 /* xj.base 默认字体并不是等间距的，但做文档还是等间距字体更好，所以在这里重新设置一次 Iosevka */
 /* 黑白主题的内容还不完善，不少插件有待改进就暂不启用了，把文本打散换行在移动端小屏幕会好看些 */
 
-@font-face{font-family:Iosevka;font-weight:normal;font-style:normal; src:url("../font/iosevka/30.2.0/IosevkaFixed-Regular.woff2") format('woff2');} /*font-display:swap;*/
-@font-face{font-family:Iosevka;font-weight:bold;  font-style:normal; src:url("../font/iosevka/30.2.0/IosevkaFixed-Bold.woff2") format('woff2');} /*font-display:swap;*/
-@font-face{font-family:Iosevka;font-weight:normal;font-style:oblique;src:url("../font/iosevka/30.2.0/IosevkaFixed-Oblique.woff2") format('woff2');} /*font-display:swap;*/
-@font-face{font-family:Iosevka;font-weight:bold;  font-style:oblique;src:url("../font/iosevka/30.2.0/IosevkaFixed-BoldOblique.woff2") format('woff2');} /*font-display:swap;*/
+@font-face{font-family:Iosevka;font-weight:normal;font-style:normal; src:url("../font/iosevka/33.2.2/IosevkaFixed-Regular.woff2") format('woff2');}
+@font-face{font-family:Iosevka;font-weight:bold;  font-style:normal; src:url("../font/iosevka/33.2.2/IosevkaFixed-Bold.woff2") format('woff2');}
+@font-face{font-family:Iosevka;font-weight:normal;font-style:oblique;src:url("../font/iosevka/33.2.2/IosevkaFixed-Oblique.woff2") format('woff2');}
+@font-face{font-family:Iosevka;font-weight:bold;  font-style:oblique;src:url("../font/iosevka/33.2.2/IosevkaFixed-BoldOblique.woff2") format('woff2');}
 
 html{overflow-x:auto;overflow-y:scroll;}
 body{background-repeat:no-repeat;background-position:center left, center right;background-size:4px 100%, 4px 100%;}

@@ -92,7 +92,7 @@ window.xj2._buildPowerTable = function(tableID){
 	let ele_tbody_tr = Array.prototype.slice.apply(ele_tbody.querySelectorAll('tr'));
 	
 	let ele_thead_th_icon = ele_thead_th.map(
-	function(ele_th){ return ele_th.querySelector('i.icon.fa') });
+	function(ele_th){ return ele_th.querySelector('i.icon.fas') });
 	let ele_originalSort_th = ele_thead_th[ ele_table.getAttribute('originalSort') ];
 	
 	// 定义排序方法
@@ -103,19 +103,19 @@ window.xj2._buildPowerTable = function(tableID){
 			// case 'number' : { return a - b }; break;
 			case 'string' : { return a.localeCompare(b) }; break;
 			
-			// 当遭遇 a 或 b 不为 Number 的时候, 则直接将其视为大于所有的数值
-			case 'number' : { if(isNaN(Number(a))){ return 1 }else 
-				if(isNaN(Number(b))){ return -1 }
-				else{ return a - b };
+			// isNaN 时将其视为大于所有的数值
+			case 'number' : { 
+				if(isNaN(parseFloat(a))){ return 1 }
+				else if(isNaN(parseFloat(b))){ return -1 }
+				else{ return (parseFloat(a) - parseFloat(b)) };
 			}; break;
 			
 			// 日期排序, 因为 IE 始终无法处理 '2012-12-12' 这种格式的时间, 所以这里得将 '-' 替换成 '/'
 			case 'dateTime' : { return new Date(a.split('-').join('/')).getTime() - 
 			new Date(b.split('-').join('/')).getTime(); }; break;
 			
-			// 针对 '500 ~ 2000' 这种范围数的排序
-			case 'numberRange' : {
-				if(a.split(/ *~ */)[0] === b.split(/ *~ */)[0]){ return a.split(/ *~ */)[1] - b.split(/ *~ */)[1] }
+			// 针对 '500 ~ 2000' 范围数的排序
+			case 'numberRange' : { if(a.split(/ *~ */)[0] === b.split(/ *~ */)[0]){ return a.split(/ *~ */)[1] - b.split(/ *~ */)[1] }
 				else{ return a.split(/ *~ */)[0] - b.split(/ *~ */)[0] };
 			}; break;
 			
@@ -421,6 +421,8 @@ xj2._dirRepeatAnchor = $(/*html*/`
 			<li class="xjDir-divide"></li>
 			
 			<!--◇
+			天体特性 用这个图标? <i class="fa-solid fa-group-arrows-rotate"></i>
+			天体特性 用这个图标? <i class="fa-solid fa-plus-minus"></i>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-brain"></i>					<i class="xjDir-text"><span>${xj2.i18n.思潮特质}</span></i></a></li>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-explosion"></i>				<i class="xjDir-text"><span>${xj2.i18n.武器参数}</span></i></a></li>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-list-check"></i>			<i class="xjDir-text"><span>${xj2.i18n.议会任务}</span></i></a></li>
@@ -511,7 +513,7 @@ xj2._dirRepeatAnchor = $(/*html*/`
 	
 	<li class="xjDir-divide"></li>
 	<li class="xjDir-spread">
-		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-link"></i><i class="xjDir-text">${xj2.i18n.相关地址}</i><i class="xjDir-sign"></i></a>
+		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-signs-post"></i><i class="xjDir-text">${xj2.i18n.相关地址}</i><i class="xjDir-sign"></i></a>
 		<ul>
 			<li><a target="_blank" href="https://steamcommunity.com/app/1312900/eventcomments/">	<i class="xjDir-icon fas fa-clock-rotate-left"></i>		<i class="xjDir-text"><span>${xj2.i18n.游戏更新}</span></i></a></li>
 			<li><a target="_blank" href="https://steamcommunity.com/app/1312900/discussions/">		<i class="xjDir-icon fab fa-steam"></i>					<i class="xjDir-text"><span>${xj2.i18n.蒸汽社区}</span></i></a></li>
@@ -523,7 +525,7 @@ xj2._dirRepeatAnchor = $(/*html*/`
 	</li>
 	
 	<li class="xjDir-spread">
-		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon far fa-handshake" style="transform:rotate(-30deg);"></i><i class="xjDir-text">${xj2.i18n.友情链接}</i><i class="xjDir-sign"></i></a>
+		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-handshake-simple"></i><i class="xjDir-text">${xj2.i18n.友情链接}</i><i class="xjDir-sign"></i></a>
 		<ul>
 			<li><a target="_blank" href="https://xjwiki.github.io/wastelandExpress/">				<i class="xjDir-icon fas fa-hand-point-right"></i>		<i class="xjDir-text"><span>${xj2.i18n.废土快递}</span></i></a></li>
 			<li><a target="_blank" href="https://xjwiki.github.io/cavalryGirls/">					<i class="xjDir-icon fas fa-hand-point-right"></i>		<i class="xjDir-text"><span>${xj2.i18n.铁骑少女}</span></i></a></li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-04-30T03:00:00UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-08T12:13:30UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-04-30T03:00:00UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-04-30T03:00:00UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-08T12:13:30UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-05-08T12:13:30UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -146,6 +146,10 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <p>————</p>
 
 <p>01. 扫描: 以点击位置为圆心, 生成一个扫描区域, 可以揭开战争迷雾, 默认半径是 <c>40</c>, 需要的资源固定为 <c>1000</c>, 距离不影响资源, 只影响前往时间(每单位距离 <c>+0.1</c> 年), 可以通过"探索"科技类型中的各种科技项, 降低扫描所需资源(Max <c>-59%</c>)和所需时间(Max <c>-60%</c>)并增加扫描半径(Max <c>+170%</c>), 值得注意的是, 敌人在你扫描后才建立的人造星系, 你是无法自动发现的, 需要重新扫描才行;</p>
+<!--◇
+只有星系消失，和二维化，是自动观测到的。你一次的探索，只是这一时刻的结果
+你的认知停留在你探测的那一刻
+◇-->
 
 <p>02. 建造: 可在主星团范围内(既大地图红圈里)和星系引力范围外(自然星系引力半径为 <c>50</c>)修建人造星系, 当前可造的有[小型空间城/人造星系/大型人造星系/方舟船坞], 但方舟船坞得游戏超过 <c>1000</c> 年才会解锁, 且人造星系(包括方舟)的数量不能多于殖民地, 它们的属性分别是, 槽位数量 <c>[1/2/4/1]</c>, 引力半径 <c>[35/40/45/35]</c>, 所需资源 <c>[5k/10k/20k/7k]</c>, 耗时年份 <c>[30/60/60/45]</c>, 此外, 每单位距离额外 <c>+60</c> 资源需求, 每单位距离额外 <c>+10+(距离×0.6)</c> 耗时需求, 面板显示的, 是总资源需求和飞行加建造所需时间;</p>
 
@@ -217,11 +221,11 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>————</p>
 
-<p>07. 光粒轰炸影响: 被光粒轰炸过的星系, 噪音值 <c>-50</c>, 轰炸成功才算, 被拦截则无效(光粒轰炸过的自然星系会演变成[残骸/黑洞]);</p>
+<p>07. 光粒轰炸影响: 被光粒轰炸过的星系, 噪音值 <c>- 50</c>, 轰炸成功才算, 被拦截则无效(被光粒轰炸过的自然星系会演变成残骸星系);</p>
 
 <p>08. 解锁科技影响: "暴露"的科技类型中的"降低暴露率"科技项, 可以直接减少噪音值, 该科技能够升到三级, 共计可以 <c>-70</c> 噪音值;</p>
 
-<p>09. 噪音值的总览: 这是最终统计结果, 尽管通过累加或降噪, 数值可能 <c>0< 噪音值 <100</c> 但噪音值范围被限定在了 <c>0 ~ 100</c> 之间;</p>
+<p>09. 噪音值的总览: 这是最终统计结果, 尽管通过累加或降噪, 数值可能 <c>0> 噪音值 >100</c> 但噪音值范围被限定在了 <c>0 ~ 100</c> 之间;</p>
 
 <p>————</p>
 
@@ -232,6 +236,27 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <p>打击细节: 当星系遭到广播攻击后, <c>50 <= 噪音值 < 75</c> 会遭受光粒打击(就像我们自己发出的光粒攻击, 不过启动防护罩也无法防御), <c>75 <= 噪音值 < 100</c> 会遭受复归器打击(生成固定尺寸的小型二维空间), <c>噪音值 >= 100</c> 会遭受天灾打击(生成大型二维空间并且每隔 <c>120</c> 年, 该二维空间都会膨胀一次, 每次区域半径增加 <c>40</c>, 星域扫描的默认半径也是 <c>40</c>), 神级文明的打击都无法被防御;</p>
 
 <p>补充说明: 1.建筑所产生的噪音, 是在建筑修好后才开始计算的, 修建中并不会生效, 2.最好别在自己的星系附近跃迁, 应该让飞船离得一些再执行, 避免让星系积累跃迁航迹影响, 3.探索过未知的星系后, 即可知道星系的噪音值, 原始星系的初始噪音范围介于 <c>10 ~ 30</c> 之间, 可从噪音判断该原始星系是否为高级文明伪装的, 噪音值高了肯定是伪装的, 但由于存在压低噪音值的方法, 低了也未必是真的;</p>
+
+<!--◇
+广播逻辑是这样的：
+
+广播前暴露值：光粒打击
+广播后暴露值：二向箔
+
+广播是看当前暴露值：
+也就是你被广播，暴露值会立刻结算，执行“光粒打击”
+
+再举个例子：
+
+广播前：不会打击
+广播后：光粒打击
+
+这时候如果你被第一次广播：
+立刻结算，你不会受到打击，但是暴露值增长，下次广播将会受到光粒打击
+
+第二次广播：
+暴露值变为“二向箔打击”但是你只会受到光粒打击
+◇-->
 
 <hr />
 </section>
@@ -507,15 +532,11 @@ PVP时, 在没有玩家掉线且没有出Bug的情况下, 所有人的游戏速�
 
 ————
 
-压力
+◆压力
 这是模拟社会矛盾的一种抽象数值
-InitCurrentPressure,5000,//初始值,,,,,
-MaxPopulationPressure,50000,//暴毙值,,,,,
-TimeCausePressureAdd,1,//时间增量(点/分),,,,,
-PlanetCausePressureAdd,2,//星球增量(个/分),,,,,
-OtherCivilCausePressureDefault,20,//其他文明造成压力基准值,,,,,
+InitCurrentPressure,5000,//文明初始压力值,,,,,
 AIEndCheatTime,60,//~分钟后AI不作弊,,,,,
-MaxPopulationDeadColonyCount,2,//达到最大值后 若移民地数不足直接暴毙,,,,,
+早期版本，部分高难AI会定期强制降低压力值（防止AI暴毙），这个参数代表60*60年后，AI将不再进行作弊降压的相关操作。不过一般来说对局时间不会这么长，属于一种保底手段。
 
 外交
 外交: 交流被拒绝: 面对原始文明, 如果你担心是高等文明伪装, 当然也可以直接对其发动进攻, 但这样的成本也很高, 所以其实是一种博弈
@@ -702,7 +723,7 @@ InitGravitationalRadius,50,星系默认的重力范围, 人造星系也无法建
 		<tr><td># 4				</td><td>打开或关闭信息界面, 仅在相关按钮有展示出来时才能生效						</td></tr>
 		<tr><td># 5				</td><td>打开或关闭科技界面, 仅在相关按钮有展示出来时才能生效						</td></tr>
 		<tr><td># 6				</td><td>打开或关闭方舟界面, 仅在相关按钮有展示出来时才能生效						</td></tr>
-		<tr><td>Z/X/C			</td><td>游戏减速/暂停/加速, 需要场景允许改变速度时才能生效							</td></tr>
+		<tr><td>Z/X/C			</td><td>游戏减速/暂停/加速, 联机模式里仅主机玩家能改变速度							</td></tr>
 		<tr><td>Mouse left		</td><td>在星域界面点击星系可进入星系, 在星系界面点击星体可进入星体界面				</td></tr>
 		<tr><td>Mouse Right		</td><td>在星体界面可退回星系界面, 在星系界面可退回星域界面							</td></tr>
 		<tr><td>Mouse Middle	</td><td>在大地图可通过鼠标滚轮缩放星域地图											</td></tr>
