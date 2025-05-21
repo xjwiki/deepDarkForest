@@ -201,7 +201,7 @@ details > content > *:last-child{margin-bottom:0;}
 
 /* 使用自定义 c 标签代替 code, 一方面输入更短, 另一方面浏览器翻译的时候也不会当作代码而不翻译 */
 
-c{padding:0 8px;color:#f39;vertical-align:bottom;font-family:Iosevka,Menlo,Consolas,
+c{padding:0 0.5em;color:#f39;vertical-align:bottom;font-family:Iosevka,Menlo,Consolas,
 "Liberation Mono","Courier New","Hiragino Sans GB","Microsoft YaHei",monospace;}
 html:not([class*="xj-base"]) c{background-color:#f0f0f0;}
 html[class~="xj-base-black"] c{background-color:#242424;}

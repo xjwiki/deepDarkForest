@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-08T12:13:30UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-08T12:13:30UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-05-08T12:13:30UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -264,7 +264,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>
 	01. 要时刻关注压力值, 当压力值 <c>>50000</c>, 就会触发内战事件, 选择"战争到底"是 <c>-20000</c> 资源以 <c>-5000</c> 压力;<br />
-	02. 若资源不够就只能选"分割文明", 会 <c>-25000</c> 压力同时失去一半殖民地(向下取整, 若只剩一个星系则直接暴毙);<br />
+	02. 若资源不够就只能选"分割文明", 会 <c>-25000</c> 压力同时失去一半殖民地(向下取整, 若星系少于三个将直接暴毙);<br />
 </p>
 <p>
 	03. 因内战被分割的殖民地, 会变成类似原始文明所在的星系那样, 可进行交流并整合, 但对方面对交流可能保持沉默;<br />
@@ -276,11 +276,11 @@ function(){ FastClick.attach(document.body) }, false);</script>
 </p>
 <p>
 	07. 压力增长的来源包括, 每六十年 <c>+1</c>, 殖民星系的每个星球 <c>+2</c>, 敌对文明会导致每年加 <c>21×(存活的玩家数-1)÷(玩家总数-1)</c>;<br />
-	08. 当原始文明所在星系遭受舰队攻击而沦陷, 发起攻击的文明将触发避难者事件, 会固定 <c>+1000</c> 压力值(也可用 <c>2000</c> 资源抵消);<br />
+	08. 当原始文明所在的星系遭受攻击而沦陷, 发起攻击的高等文明将触发避难事件, 会固定 <c>+1000</c> 压力值(也可用 <c>2000</c> 资源抵消);<br />
 </p>
 <p>
-	09. 高等文明占有的星系遭受舰队攻击而沦陷, 所有玩家得到的压力为 <c>沦陷星系通过星球开发所降低的压力值总数 ÷当前的玩家人数</c>;<br />
-	10. 既高等文明的星系沦陷, 触发避难事件带来的压力会均分给场上所有生还的玩家, 若星系里的星球根本没开发过, 则不会触发事件!;<br />
+	09. 当高等文明的星系遭到[舰队登陆/质量弹]等攻击, 得到压力值为 <c>沦陷星系通过星球开发所降低的压力值总数 ÷ 当前的玩家人数</c>;<br />
+	10. 既高等文明的星系沦陷, 避难事件带来的压力会均分给场上所有生还的玩家, 但如果星系里的星球根本没开发过, 则不会触发事件!;<br />
 </p>
 <p>
 	11. 在该场景中, 我们可以使用所有的通用科技类型了(<c>10</c> 种), 科技项被包含在科技类型中, 科技项需要解锁, 科技类型也需要解锁;<br />
@@ -1084,7 +1084,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.0</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
 </div>
 </div>
 </div>

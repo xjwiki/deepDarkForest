@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>武器参数</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>武器参数</span><small>(攻击手段)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 目前游戏提供了 <c>21</c> 种武器(但大部分武器都有主义归属限制);<br />
+	02. 由于武器的判断属性和效果属性都较为凌乱, 因此 XJ 将它们全都合并到"文本描述"这个属性中了;<br />
+	03. 下表的"百年耗时"和"百年费用"两个属性, 是指该武器每一百光年的距离, 需要耗费的时间和资源, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
+</p>
+
+<p style="display:flex;justify-content:space-between;align-items:center;">
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">情报提示: </span>
+		<select id="attrSelect01" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">武器类型: </span>
+		<select id="attrSelect02" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">主义限制: </span>
+		<select id="attrSelect03" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">特殊功能: </span>
+		<select id="attrSelect04" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+</p>
+
+<p style="display:flex;justify-content:space-between;align-items:center;">
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">名称描述: </span>
+		<input id="nameInput01" class="input-unset" type="search" style="flex:1 1 auto;width:116px;" placeholder="None" />
+		<button id="nameCheck01" class="button-unset" type="button" style="flex:0 0 auto;width:32px;margin-left:-1px;font-size:14px;color:#999;"><i class="fas fa-magnifying-glass"></i></button>
+	</label>
+	<span style="display:inline-flex;flex:0 0 auto;width:472px;
+	color:#999;">(可以搜索名称或描述, 多关键词用空格隔开)</span>
+	<span style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;color:#999;">│</span>
+		<button id="resetButton" class="button-unset" type="button" 
+		style="flex:0 0 auto;width:74px;margin-left:auto;order:1;">清空</button>
+	</span>
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>基础耗时</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>百年耗时</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>初始费用</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>百年费用</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>冷却时间</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>情报提示</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>武器类型</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>军事基地: 任何一种攻击, 都需要星系拥有"军事基地"的建筑才能发动, 其中的"广播"攻击还要求星系必须同时拥有"广播站"建筑才行;</p>
+
+<p>跃迁操作: 目前仅[殖民船/舰队登陆/质量弹]可在大地图点击图标展开详情页面, 然后执行跃迁, 这个是写死在代码中的, 与属性无关;</p>
+
+<p>情报提示: 该属性的含义是, 当我方对敌人进行"情报收集", 敌人的这种攻击是否会在情报栏显示, 目前仅舰队巡逻和尘埃区域不显示;</p>
+
+<p>————</p>
+
+<p>难民事件: 并非所有攻击都会触发该事件, 目前仅[舰队登陆/质量弹/光粒/毁灭光束/清理者光粒]这五种攻击会触发, 也可简单的理解为, 只有目标星系毁灭了但还有生还者, 才会触发该事件, 按这个理论, 当星系被二维空间吞噬, 居民来不及逃离, 自然也就不会触发了;</p>
+
+<p>武器速度: 不同武器的飞行速度是不同的, "百年耗时"这项属性的含义是, 武器飞行一百光年的距离所需的时间, 如果武器的"基础耗时"这项属性不为 <c>0</c>, 那就再加上这项数据(当前仅"舰队巡逻"有这项属性), 假设距离为 N, 所需年份为 <c>N×(百年耗时/100)+基础耗时</c>;</p>
+
+<p>武器价格: 不同武器需求的资源是不同的, "百年费用"这项属性的含义是, 武器飞行一百光年的距离所需的资源, 如果武器的"初始费用"这项属性不为 <c>0</c>, 那就再加上这项数据(当前仅舰队巡逻和信标不为 0), 假设距离为 N, 所需资源为 <c>N×(百年费用/100)+初始费用</c>;</p>
+
+<p>————</p>
+
+<p>武器类型: 该属性主要是用于定义攻击会被哪种区域拦截, 目前总共有 <c>6</c> 种不同属性, 部分武器还拥有多种属性, 具体细节如下所示:</p>
+<p>
+	01. 消耗: 武器在一局游戏中, 有使用次数的限制;<br />
+	02. 力场: 武器所到达的目标位置, 不能在其他星系的引力场范围内;<br />
+	03. 区域: 武器到达的位置会生成区域, 仅有"舰队巡逻"和"尘埃区域"属于该项类型;<br />
+</p>
+<p>
+	04. 高能: 这类武器会被能量防护罩拦截, 但是不会受二维空间影响;<br />
+	05. 实体: 这类武器会被二维空间拦截(即便是跃迁也无法穿过二维空间), 但是不会被能量防护罩拦截;<br />
+	06. 波动: 这类武器难以被拦截, 仅特殊孤立主义的"光墓屏障"可以挡住它们(特殊孤立的"广播屏蔽"科技还可防御[广播/引力波天线]);<br />
+</p>
+<p>值得注意的是, 实体类型的如[舰队登陆/殖民船], 不会被能量防护罩拦截, 但它们若在防护罩中执行跃迁(不分敌我), 将会被直接摧毁;</p>
+
+<p>————</p>
+
+<p>特殊功能: 这项筛选主要是用于快速查阅武器的特殊效果, 背后实现的逻辑是, 匹配功能函数的名称, 但是仅供参考, 不一定完全准确:</p>
+<p>
+	01. 影响建筑: 武器是否会影响到目标星系的建筑;<br />
+	02. 难民事件: 武器是否会触发难民事件(加压力);<br />
+	03. 清除归属: 武器是否会影响目标星系的归属权;<br />
+	04. 毁灭星系: 武器是否会破坏目标星系(某些只能够破坏人造星系);<br />
+	05. 生成区域: 武器是否会生成某种区域(绝大部分是二维空间);<br />
+	06. 自动探索: 武器攻击目标星系后星系是否会被自动探索;<br />
+	07. 次数限制: 武器在本局游戏中是否有使用次数限制;<br />
+</p>
+<p>
+	08. 攻方通告: 是否会通知攻击方攻击成功或失败;<br />
+	09. 守方通告: 是否会通知防守方防守成功或失败;<br />
+	10. 交流通告: 是否会通知与该星球交流中的文明;<br />
+	11. 全局通告: 是否会让场中所有的玩家都知道这次攻击(例如广播);<br />
+	12. 影响资源: 攻击是否会影响到资源(结晶流束可 +50k 资源);<br />
+	13. 影响压力: 攻击是否会影响到压力(目前仅有退化光线);<br />
+	14. 影响噪音: 攻击是否会影响到噪音(光粒减50噪音);<br />
+</p>
+<p>除了以上这 <c>14</c> 项, 实际上武器还有更多特殊的功能, 但是都比较琐碎, 也很难用几个字去概括, 所以具体详情还是请参考文本描述;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+Weapon-25, 屏蔽区域, 这个当前并没有被装实, 可以不用理会
+Weapon-20 > 魔法光粒, 这是用来演示或 Debug 的工具, 不需要在数据中展示
+Weapon-21/22/23 都是属于"清理者模式"的特殊武器, 目前暂时不再使用, 所以也不需要展示
+weapon-4 > 用于部分单人关卡中"展开2向箔"的剧情表现, 代码逻辑为使用该武器攻击指定星系以展开二维化
+
+————
+
+武器参数的图片被放在 `Assets/Textures/arrow`，部分图标(如舰队)在游戏内进行了一定组合
+由于上述地址中的图标并没什么参考意义, 所以实际上武器的图片都是直接在游戏内截图生成的
+
+清理者的"光粒/复归器/天灾打击", 是直接从星系中心爆开, 无法观察到轨迹的, 但若目标星系拥有传感区域
+然后被清理者进行打击，在时机正确的情况下(刚好处于刷新周期), 有可能会看到一个位于星系上的感叹号的
+
+————
+
+Orientation : 既武器轨道出发的起点建筑所在星系, 都是军事基地, 另外两个是被废弃的建筑, 就不展示了
+
+OnIntercepted/DirectEffect/ValidCondition/WeaponEffect/OnSuccess/OnFailed/OnSendCommand
+拦截取消/无效条件/生效判定/武器效果/攻击成功/攻击失败/发出回调
+这些属性太乱, 改成文本合并到文本描述了
+
+*/
+
+// 武器参数
+let csv0 = (`// Remote/Weapon,Name,//Name,Description,Identification,DiplomacyWarn,Orientation,BasicTimeCost,TransitionTimeCost,WeaponCD,BasicResourceCost,TransitionResourceCost,OnIntercepted,DirectEffect,ValidCondition,WeaponEffect,OnSuccess,OnFailed,OnSendCommand
+
+0,ArmyAggression,舰队侵略,Weapon-0,Entity,1,1,0,1000,0,0,15,Continue,AttackerHasTechBuff:101259&ReplaceBuilding:100_100,FleetWarWin,(ClearColonial&ReplaceBuilding:100_50&(GalaxyContainsBuff:1801_1802_1803_8008&SetGalaxyDie)),ExploreTargetGalaxy&HintCommunicated&HintDefenderLostColony&HintAttacker&((WinOverPlayer&TryGetTechPoint)|WinOverAboriginal)&GainWinBonus&AbandonPlanet:0,HintAttacker&HintDefender,Continue
+1,GiantMassBomb,巨型质量弹,Weapon-1,HighEnergy,1,1,0,2500,10000,0,5,Continue,Continue,Continue,AbandonPlanet&((!TargetGalaxyHasBuilding:200&ClearColonial)|FakeClearColonial)&((GalaxyContainsBuff:1012_1013_1801_1802_1803_8008&SetGalaxyDie)|((TargetGalaxyHasBuilding:200&SetGalaxyType:133_100)|SetGalaxyType:133)),CheckTechBuff101415:50000&ExploreTargetGalaxy&HintDefenderLostColony&HintAttacker&HintCommunicated&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+2,EnergyBall,光粒,Weapon-2,HighEnergy,1,1|302,0,10,0,0,200,Continue,Continue,Continue,AbandonPlanet&((!TargetGalaxyHasBuilding:200&ClearColonial)|FakeClearColonial)&((GalaxyContainsBuff:1012_1013_1801_1802_1803_8008&SetGalaxyDie)|((TargetGalaxyHasBuilding:200&SetGalaxyType:134_100)|SetGalaxyType:134))&AddEnergyBallHitTimes,CheckTechBuff101415:50000&ExploreTargetGalaxyForAll&HintDefenderLostColony&HintOthersDestoryed&HintAttacker&HintCommunicated&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+5,Broadcast,广播,Weapon-5,Wave,1,1,0,50,60000,0,5,Continue,CanReflectBoardCast&BoardcastAttaker,!CanDefendBoardCast,BroadcastToAll,HintAttacker&WinOverPlayer,HintAttacker&HintDefender,Continue
+
+24,SpyArea,侦察区域,Weapon-24,Area|Entity,0,1,10000,200,0,2000,15,Continue,Continue,Continue,MakeArea:20,HintArea,Continue,Continue
+26,DustArea,尘埃区域,Weapon-26,Area|NeedLowGravity|Wave,0,1,0,100,0,0,10,Continue,Continue,LowGravity,MakeArea:22,HintArea,HintArea,Continue
+
+10,SmallMassBomb,小型质量弹,Weapon-10,HighEnergy,1,1,0,50,30000,0,5,Continue,Continue,Continue,FillPlanetSlot:108,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+12,PlasmaFusion,电浆融合雷,Weapon-12,HighEnergy,1,1,0,50,30000,0,20,Continue,Continue,GalaxyContainsBuff:1801_1802_1803_8008,GalaxyContainsBuff:1801_1802_1803_8008&SetGalaxyDie&Statistic:7_1,HintAttacker&HintDefenderLostColony&(WinOverPlayer&TryGetTechPoint),HintAttacker&HintDefender,Continue
+11,PhaseCracker,相位裂解炮,Weapon-11,HighEnergy,1,1,0,100,30000,0,30,Continue,Continue,Continue,RandomClearPlanetBuilding,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+13,SlowNeutronSpear,慢中子光矛,Weapon-13,HighEnergy,1,1,0,500,30000,0,70,ForceWin&AreaType:2&DestoryAreaBuilding:202_229&HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue,(TargetGalaxyHasBuilding:202&ReplaceBuildingWith:202_100)|(Statistic:8_0_202),HintAttacker&(WinOverPlayer&TryGetTechPoint),HintAttacker&HintDefender,Continue
+
+15,DedimensionFoil,二向箔,Weapon-15,HighEnergy,1,1,0,100,240000,0,100,Continue,Continue,Continue,MakeArea:3,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,DisableWeapon:15
+8,GalaxyDestroyer,歼星炮,Weapon-8,HighEnergy,1,1,0,200,30000,0,40,Continue,Continue,Continue,DestroyPlanet:1,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+
+14,DegenerationRay,退化射线,Weapon-14,Wave,1,1,0,100,80000,0,25,Continue,Continue,Continue,(WinOverPlayer&AddPopulationPerBuilding:1000)|Statistic:9_0,HintAttacker&HintDefender&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+9,DeathRay,毁灭光束,Weapon-9,HighEnergy,1,1,0,2500,30000,0,15,Continue,Continue,Continue,(ClearColonial&(GalaxyContainsBuff:1801_1802_1803_8008&SetGalaxyDie)),ExploreTargetGalaxy&HintCommunicated&HintDefenderLostColony&HintAttacker&((WinOverPlayer&TryGetTechPoint)|WinOverAboriginal)&AbandonPlanet:0,HintAttacker&HintDefender,Continue
+
+7,ZeroPointBoom,零点聚爆弹,Weapon-7,HighEnergy,1,1,0,1000,180000,0,60,Continue,Continue,Continue,MakeArea:9,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+3,GravitationalWaveAntenna,引力波天线,Weapon-3,Wave,1,1,0,50,800000,0,300,Continue,Continue,!CanDefendBoardCast,BroadcastToAll&ForceDestoryGalaxy:3000,HintAttacker&(WinOverPlayer&TryGetTechPoint),HintAttacker&HintDefender,DisableWeapon:3
+
+4,Two-dimensionalFoil,天灾,Weapon-4,Wave,1,1,0,200,0,0,200,Continue,Continue,Continue,MakeArea:16,HintAttacker&HintCommunicated&(WinOverPlayer&TryGetTechPoint),HintAttacker&HintDefender,Continue
+6,Beacon,信标,Weapon-6,Entity,1,1,0,50,60000,10000,10,Continue,Continue,Continue,ForceAddBuilding:199_100_1,HintAttacker&WinOverPlayer,Continue,Continue
+
+27,EnergyBall,清理者光粒（无法拦截）,Weapon-27,Entity,1,1|302,0,10,0,0,200,Continue,Continue,Continue,AbandonPlanet&((!TargetGalaxyHasBuilding:200&ClearColonial)|FakeClearColonial)&((GalaxyContainsBuff:1012_1013_1801_1802_1803_8008&SetGalaxyDie)|((TargetGalaxyHasBuilding:200&SetGalaxyType:134_100)|SetGalaxyType:134))&AddEnergyBallHitTimes,CantResurrectIfHasSign&ExploreTargetGalaxyForAll&HintDefenderLostColony&HintOthersDestoryed&HintAttacker&HintCommunicated&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+28,ZeroPointBoom,清理者低维化（无法拦截）,Weapon-28,Entity,1,1,0,1000,180000,0,60,Continue,Continue,Continue,MakeArea:9,HintAttacker&(WinOverPlayer&TryGetTechPoint),Continue,Continue
+29,Two-dimensionalFoil,清理者天灾（无法拦截）,Weapon-29,Entity,1,1,0,200,0,0,200,Continue,Continue,Continue,MakeArea:6,HintAttacker&HintCommunicated&(WinOverPlayer&TryGetTechPoint),HintAttacker&HintDefender,Continue
+
+// 20,ForceEnergyBall,强制光粒,Weapon-20,HighEnergy,0,0,0,0,30000,0,0,Continue,Continue,Continue,AbandonPlanet&ClearColonial&((GalaxyContainsBuff:1012_1013_1801_1802_1803_8008&SetGalaxyDie)|SetGalaxyType:134)&AddEnergyBallHitTimes,HintDefenderLostColony&HintOthersDestoryed&HintCommunicated,Continue,Continue
+// 21,Two-dimensionalFoilSmall,低维炮(空间),Weapon-21,Area|Disposable|HighEnergy,1,302,0,100,0,0,5,Continue,Continue,Continue,MakeArea:9&AdvancedCivilStatistic,HintAttacker,Continue,Continue
+// 22,EnergyBall,清理者光粒 仅统计部份不同,Weapon-2,HighEnergy,0,302,0,20,0,0,100,Continue,Continue,Continue,AdvancedCivilStatistic&AbandonPlanet&((!TargetGalaxyHasBuilding:200&ClearColonial)|FakeClearColonial)&((GalaxyContainsBuff:1012_1013_1801_1802_1803&SetGalaxyDie)|((TargetGalaxyHasBuilding:200&SetGalaxyType:134_100)|SetGalaxyType:134)),ExploreTargetGalaxyForAll&HintDefenderLostColony&HintOthersDestoryed&HintAttacker&HintCommunicated,Continue,Continue
+// 23,Two-dimensionalFoil,二向箔（空间）,Weapon-23,Area|Disposable|HighEnergy,1,302,0,2,0,0,5,Continue,Continue,Continue,MakeArea:16&AdvancedCivilStatistic,HintAttacker,Continue,Continue
+// 25,BlockArea,屏蔽区域,Weapon-25,Area|NeedLowGravity|Wave,0,1,0,100,0,0,10,Continue,Continue,LowGravity,MakeArea:21,HintArea,HintArea,Continue
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文案描述
+let csv1 = (`// Description,IconName,Name,Description,Content,ShortDescription
+
+Weapon-0,,$/Description_Name_Weapon-0,$/Description_Description_Weapon-0,,
+Weapon-1,,$/Description_Name_Weapon-1,$/Description_Description_Weapon-1,,
+Weapon-2,,$/Description_Name_Weapon-2,$/Description_Description_Weapon-2,,
+Weapon-5,,$/Description_Name_Weapon-5,$/Description_Description_Weapon-5,,
+
+Weapon-24,,$/Description_Name_Weapon-24,$/Description_Description_Weapon-24,,
+Weapon-26,,$/Description_Name_Weapon-26,$/Description_Description_Weapon-26,,
+
+Weapon-10,,$/Description_Name_Weapon-10,$/Description_Description_Weapon-10,,
+Weapon-12,,$/Description_Name_Weapon-12,$/Description_Description_Weapon-12,,
+Weapon-11,,$/Description_Name_Weapon-11,$/Description_Description_Weapon-11,,
+Weapon-13,,$/Description_Name_Weapon-13,$/Description_Description_Weapon-13,,
+
+Weapon-15,,$/Description_Name_Weapon-15,$/Description_Description_Weapon-15,,
+Weapon-8,,$/Description_Name_Weapon-8,$/Description_Description_Weapon-8,,
+
+Weapon-14,,$/Description_Name_Weapon-14,$/Description_Description_Weapon-14,,
+Weapon-9,,$/Description_Name_Weapon-9,$/Description_Description_Weapon-9,,
+
+Weapon-7,,$/Description_Name_Weapon-7,$/Description_Description_Weapon-7,,
+Weapon-3,,$/Description_Name_Weapon-3,$/Description_Description_Weapon-3,,
+
+Weapon-4,,$/Description_Name_Weapon-4,,,
+Weapon-6,,$/Description_Name_Weapon-6,$/Description_Description_Weapon-6,,
+
+// Weapon-20,,$/Description_Name_Weapon-20,$/Description_Description_Weapon-20,,
+// Weapon-21,,$/Description_Name_Weapon-21,$/Description_Description_Weapon-21,,
+// Weapon-22,,$/Description_Name_Weapon-22,$/Description_Description_Weapon-22,,
+// Weapon-23,,$/Description_Name_Weapon-23,$/Description_Description_Weapon-23,,
+// Weapon-25,,$/Description_Name_Weapon-25,$/Description_Description_Weapon-25,,
+`)
+.split(/\n/).filter(function(e){ return /^\w/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	0  : `舰队登陆`			+ ` # 舰队登陆`,
+	1  : `质量弹`			+ ` # 巨型质量弹`,
+	2  : `光粒`				+ ` # 光粒`,
+	5  : `广播`				+ ` # 广播`,
+	
+	24 : `舰队巡逻`			+ ` # 舰队巡逻`,
+	26 : `尘埃区域`			+ ` # 尘埃区域`,
+	
+	10 : `小型质量弹`		+ ` # 小型质量弹`,
+	12 : `电浆融合雷`		+ ` # 电浆融合雷`,
+	11 : `相位裂解炮`		+ ` # 相位裂解炮`,
+	13 : `慢中子光矛`		+ ` # 慢中子光矛`,
+	
+	15 : `复归器`			+ ` # 复归器`,
+	8  : `歼星炮`			+ ` # 歼星炮`,
+	
+	14 : `退化光线`			+ ` # 退化光线`,
+	9  : `毁灭光束`			+ ` # 毁灭光束`,
+	
+	7  : `零点聚爆弹`		+ ` # 零点聚爆弹`,
+	3  : `引力波天线`		+ ` # 引力波天线`,
+	
+	4  : `天灾`				+ ` # 天灾`,
+	6  : `信标`				+ ` # 信标`,
+	
+	27 : `清理者光粒`		+ ` # 清理者光粒(无法拦截)`,
+	28 : `清理者复归器`		+ ` # 清理者复归器(无法拦截)`,
+	29 : `清理者天灾打击`	+ ` # 清理者天灾打击(无法拦截)`,
+	},
+	
+	文本描述 : {
+	
+	0  : `派遣舰队登陆, 舰队无需建造, 消耗资源直接发射, 攻击成功: 清除星系的控制权, 星系会被自动探索, 建筑变废墟或消失的概率均为 1/2, 有"无敌舰队"科技则没有"攻占保留"属性的建筑必定成废墟, 有"永恒战争"科技可获得凝聚力, 人造星系或方舟船坞将被完全摧毁, 与星系交流中的文明会提示通讯断开, 会触发难民事件`		+ ` # 派遣一支舰队登陆该星系（【注】舰队无需建造，使用资源直接发射）。`, 
+	1  : `发射巨型质量弹, 强大的质量效应将会导致目标恒星超新星化, 攻击成功: 会触发难民事件, 若目标是[残骸/黑洞/人造星系], 会直接销毁星系, 否则星系变成黑洞, 星系没有"掩体"就清除星系的控制权, 攻击方如果有"结晶流束"科技则发出攻击的星系 +50k 星系资源, 与星系交流中的文明会提示通讯断开, 星系会被自动探索`		+ ` # 发射一颗巨型质量弹，强大的质量效应将会导致目标恒星的超新星化，爆炸并坍缩为黑洞。如果目标为残骸或黑洞，则会直接销毁星系。`, 
+	2  : `以光速冲向目标的小质量物体, 利用相对论的效应使质量剧增, 攻击成功: 会触发难民事件, 若目标是[残骸/黑洞/人造星系], 会直接销毁星系, 否则星系变成残骸, 星系没有"掩体"就清除星系的控制权, 攻击方如果有"结晶流束"科技则发出攻击的星系 +50k 星系资源, 与星系交流中的文明会提示通讯断开, 目标星系噪音 -50`		+ ` # 以光速冲向打击目标的小质量物体，利用相对论效应使质量剧增，直接打击目标恒星并将之变为残骸。如果目标为残骸或黑洞，则会直接销毁星系。`, 
+	5  : `广播目标星系的坐标, 发出攻击的星系会被同时广播, 攻击判断: 需要防御方没有"特殊孤立"主义的"广播屏蔽"科技, 攻击才能生效, 攻击成功: 检查防守方是否有"广播反射"的科技且星系数量大于一, 是则攻击方的另一个随机星系也会遭到广播, 所有玩家都会知道被广播星系的位置, 星系噪音过高就可能引来神级文明的打击`		+ ` # 广播该星系的坐标（警告：发出广播信号的星系也将同时被广播）。`, 
+	
+	24 : `派出舰队进行巡逻, 可以侦测一定范围内的不明物体, 仅自己可见, 可持续 30 年`																																																								+ ` # 派出舰队进行巡逻，可以侦测一定范围内的不明物体。（<color=yellow>仅自己可见，持续30年</color>）`, 
+	26 : `利用油膜物质制造一片太空尘埃, 显示一定空间内大质量物体的运动轨迹, 全局皆可见, 会持续 90 年, 需要目标区域不是星系的引力场范围内, 才能执行此项操作`																																						+ ` # 利用油膜物质制造一片太空尘埃，显示一定空间内大质量物体的运动轨迹。（<color=yellow>全局可见，持续60年</color>）`, 
+	
+	10 : `特殊尚武主义专属, 小型化质量武器, 避免了速度过慢的缺陷但伤害也较低, 攻击成功: 将目标星系的所有的空槽位替换成巨型陨石坑(如果没有空槽位则没有效果)`																																						+ ` # 小型化的质量武器，避免了速度过慢的缺陷。虽然不能彻底打击目标星系，但是可以在行星表面留下大量陨石坑。`, 
+	11 : `特殊尚武主义专属, 通过相位转移破坏目标星系某个行星的所有建筑(不产生废墟), 攻击成功: 将目标星系随机某个行星的建筑全部清除(建筑完全消失, 没有废墟)`																																						+ ` # 通过相位转移，直接破坏目标星系槽的建筑，且不产生废墟。`, 
+	12 : `特殊尚武主义专属, 将高能电浆束发射出去的武器, 由于威力有限, 所以只能用来攻击人造星系, 攻击判断: 目标必须是人造星系或者方舟船坞, 攻击才能够被顺利发出, 攻击成功: 如果被攻击的目标是人造星系或方舟船坞, 则星系会被完全摧毁`																				+ ` # 将高能电浆束发射出去的武器。但是由于威力有限，只能用来登陆人造星系。`, 
+	13 : `特殊尚武主义专属, 使用慢中子流聚焦的光矛武器, 可以使"低光速屏障"瞬间过载, 攻击判断: 当攻击被能量防护罩拦截时, 会无视能量防护罩且摧毁"低光速屏障"和"黑洞立场", 攻击成功: 若目标星系有能量防护罩则产生防护罩的建筑会被摧毁`																				+ ` # 使用慢中子流聚焦的光矛武器，可以使低光速屏障瞬间过载。`, 
+	
+	15 : `特殊精神主义专属, 来自未知高等文明的武器, 被包裹起来的二维空间, 释放后将会扩张, 生成一个大型低维空间(半径: 90, 不会扩张), 一个文明最多可使用四次`																																						+ ` # 来自未知高等文明的武器，被包裹起来的小型二维空间，释放后将会扩张。`, 
+	8  : `特殊集中主义专属, 利用高能水晶聚焦而成的精确打击武器, 用于破坏目标星系的行星, 攻击成功: 完全摧毁目标星系里的一个随机行星(如果没有行星则没有效果)`																																						+ ` # 利用高能水晶聚焦而成的精确打击武器，用于破坏目标星系的行星（行星建筑槽）。`, 
+	
+	14 : `特殊生态主义专属, 这种武器不会造成任何实际性的伤害, 但目标星系上每有一个建筑, 就会给星系的所有者 + 1000 压力值, 所以非常容易让敌人陷入内战的窘境`																																						+ ` # 目标星系每有一个建筑，目标文明压力值+1000。`, 
+	9  : `特殊分权主义专属, 利用超大型对撞机产生的高能强子束洗刷目标星系, 攻击成功: 建筑会被保留, 清除星系的控制权, 如果目标是人造星系或方舟船坞则会被完全摧毁, 星系会被自动探索, 与星系交流中的文明会提示通讯断开, 会触发难民事件`																				+ ` # 利用超大型对撞机产生的高能强子束洗刷目标星系，可以在不破坏星系结构的情况下破坏所有人造建筑。`, 
+	
+	7  : `特殊物质主义专属, 利用真空零点能涨落人为地制造空间维度坍缩, 用于创造一片有限的低维空间, 攻击成功: 生成一个中型低维空间(半径: 60, 该空间不会扩张)`																																						+ ` # 利用真空零点能涨落人为地制造空间维度坍缩，用于创造一片有限的低维空间。`, 
+	3  : `特殊亲外主义专属, 用极高能引力波对外进行广播, 几乎 100% 会吸引到高等文明, 可召唤天灾, 攻击判断: 需要防御方没有"特殊孤立"主义的"广播屏蔽"科技, 攻击才能生效, 攻击成功: 广播目标星系让所有玩家知道它的位置, 3 年后生成一个会扩展的二维空间(效果跟天灾相同), 一个文明一局游戏里只能使用一次这种攻击`		+ ` # 使用极高能引力波对外进行广播，几乎100%会吸引到高等文明，可召唤天灾。`, 
+	
+	4  : `玩家无法主动使用, 它是剧情模式下用于指定星系展开二维化效果的工具, 会生成一个逐渐扩张的"慢低维空间"(半径: 10), 范围会缓慢的逐增大张且没有止境, 当攻击成功后, 星系会被二维空间完全吞噬, 正与该星系交流的文明会提示通讯断开`																				+ ` # None`,
+	6  : `亲外主义文明专属, 当攻击成功后, 目标星系会生成一个"信标"建筑, 如果没有空槽位就随机拆除一个建筑再生成, 然后会立刻广播该星系的坐标, 如果没及时拆除, 它每隔 90 年就会再广播一次, 如果所在星系的噪音值过高, 就可能会引来打击`																				+ ` # 向该星系发射一枚信号装置，能持续广播星系坐标`, 
+	
+	27 : `清理者光粒(无法被拦截), 50<= 星系噪音值 <75, 遭到广播攻击就会引来该打击, 效果和常规的光粒完全相同, 只是无法被能量防护罩拦截, 它必定会命中目标星系`																																					+ ` # 清理者光粒(无法拦截)`,
+	28 : `清理者复归器(无法被拦截), 75<= 星系噪音值 <100, 遭到广播攻击就会引来该打击, 将生成一个中型低维空间(半径: 60), 会吞噬范围内的星系, 但尺寸不会扩张`																																						+ ` # 清理者复归器(无法拦截)`,
+	29 : `清理者天灾打击(无法被拦截), 当星系噪音 >=100, 遭到广播攻击的星系会引来该打击, 生成一个不断扩张的"快低维空间", 正与该星系交流的文明会提示通讯断开`																																						+ ` # 清理者天灾打击(无法拦截)`,
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 分解数据
+csv1.result = new Object();
+csv1.forEach(function(e){ csv1.result[e[0]] = e });
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码		Remote/Weapon,				0,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 英文名称		Name,						ArmyAggression,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 中文名称		//Name,						舰队侵略,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 文本描述		Description,				Weapon-0,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 武器类型		Identification,				Entity,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 情报提示		DiplomacyWarn,				1,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 起点建筑		Orientation,				1,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 基础耗时		BasicTimeCost,				0,
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 移动耗时		TransitionTimeCost,			1000,
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 冷却耗时		WeaponCD,					0,
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';		// 初始费用		BasicResourceCost,			0,
+	// powerTable01_tbody_html += '<td>'+ item[11] +'</td>';		// 运费单价		TransitionResourceCost,		15,
+	// powerTable01_tbody_html += '<td>'+ item[12] +'</td>';		// 拦截取消		OnIntercepted,				Continue,
+	// powerTable01_tbody_html += '<td>'+ item[13] +'</td>';		// 无效条件		DirectEffect,				AttackerHasTechBuff:101259&ReplaceBuilding:100_100,
+	// powerTable01_tbody_html += '<td>'+ item[14] +'</td>';		// 生效判定		ValidCondition,				FleetWarWin,
+	// powerTable01_tbody_html += '<td>'+ item[15] +'</td>';		// 武器效果		WeaponEffect,				(ClearColonial&ReplaceBuilding:100_50&(GalaxyContainsBuff:1801_1802_1803_8008&SetGalaxyDie)),
+	// powerTable01_tbody_html += '<td>'+ item[16] +'</td>';		// 攻击成功		OnSuccess,					ExploreTargetGalaxy&HintCommunicated&HintDefenderLostColony&HintAttacker&((WinOverPlayer&TryGetTechPoint)|WinOverAboriginal)&GainWinBonus&AbandonPlanet:0,
+	// powerTable01_tbody_html += '<td>'+ item[17] +'</td>';		// 攻击失败		OnFailed,					HintAttacker&HintDefender,
+	// powerTable01_tbody_html += '<td>'+ item[18] +'</td>';		// 发出回调		OnSendCommand				Continue
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	
+	item.冷却时间 = item[9] / 1000;
+	
+	item.初始费用 = item[10];
+	item.百年费用 = item[11] * 100;
+	
+	item.基础耗时 = item[7] / 1000;
+	item.百年耗时 = item[8] / 1000 * 100;
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.项目名称 = textList.项目名称[item.项目代码];
+	item.文本描述 = textList.文本描述[item.项目代码];
+	
+	item.情报提示 = ((item[5] === '1') ? '✔' : '-' );
+	item.函数合集 = [item[12], item[13], item[14], item[15], item[16], item[17], item[18], ].join(',')
+	
+	item.武器类型 = (function(){
+		let result = item[4].split('|')
+		.map(function(value, index){ return {
+			Area : '区域',
+			Wave : '波动', 
+			Entity : '实体',
+			HighEnergy : '高能',
+			Disposable : '消耗', 
+			NeedLowGravity : '力场', 
+		}[value]
+		}).join('<br />');
+		if(item.项目代码 === '3' || item.项目代码 === '15'){ 
+		result = result + '<br />消耗' };
+		return result;
+	})();
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/weaponry/${item.项目代码}.jpg' style='width:128;height:128px;' />">
+		<img loading="lazy" alt="${item.项目名称}" src="../static/image/weaponry/${item.项目代码}.jpg" style="width:64px;height:64px;" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.基础耗时) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.百年耗时) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.初始费用) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.百年费用) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.冷却时间) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.情报提示) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.武器类型) +'</td>';
+	
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 情报提示
+let attrSelect01_Option = [
+	['✔',				'✔',				],
+	['✘',				'✘',				],
+];
+
+// 武器类型
+let attrSelect02_Option = [
+	['实体',			'实体',				],
+	['高能',			'高能',				],
+	['波动',			'波动',				],
+	['区域',			'区域',				],
+	['消耗',			'消耗',				],
+	['力场',			'力场',				],
+];
+
+// 主义限制
+let attrSelect03_Option = [
+	['没有归属',		'没有归属',			],
+	['特殊尚武',		'特殊尚武',			],
+	['特殊物质',		'特殊物质',			],
+	['特殊精神',		'特殊精神',			],
+	['特殊集中',		'特殊集中',			],
+	['特殊分权',		'特殊分权',			],
+	['特殊生态',		'特殊生态',			],
+	['特殊亲外',		'特殊亲外',			],
+	['常规亲外',		'常规亲外',			],
+	['无法使用',		'无法使用',			],
+];
+
+// 特殊功能
+let attrSelect04_Option = [
+	['影响建筑',		'影响建筑',			],
+	['难民事件',		'难民事件',			],
+	['清除归属',		'清除归属',			],
+	['毁灭星系',		'毁灭星系',			],
+	['生成区域',		'生成区域',			],
+	['自动探索',		'自动探索',			],
+	['次数限制',		'次数限制',			],
+	['攻方通告',		'攻方通告',			],
+	['守方通告',		'守方通告',			],
+	['交流通告',		'交流通告',			],
+	['全局通告',		'全局通告',			],
+	['影响资源',		'影响资源',			],
+	['影响压力',		'影响压力',			],
+	['影响噪音',		'影响噪音',			],
+];
+
+// 获取对象
+let jqi_nameInput01 = $('#nameInput01'), jqi_nameCheck01 = $('#nameCheck01'), jqi_resetButton = $('#resetButton');
+let str_emptyOption = '<option value="empty" selected="selected" style="background-color:#f5f5f5;">None</option>';
+
+// 创建元素
+let jqi_attrSelect01 = $('#attrSelect01').html(str_emptyOption + attrSelect01_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect02 = $('#attrSelect02').html(str_emptyOption + attrSelect02_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect03 = $('#attrSelect03').html(str_emptyOption + attrSelect03_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect04 = $('#attrSelect04').html(str_emptyOption + attrSelect04_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+
+// ---------------------------------------------
+
+// 获取 tbody 和 tr
+let jqi_table01_tbody = $('#powerTable01 tbody'), jqi_table01_tbody_tr = jqi_table01_tbody.find('tr');
+
+// 创建无结果的节点
+let jqi_empty_result_tr = $(/*html*/`<tr index="-1" group="-1" style="height: 65px;" class="emptyTr">
+<td colSpan="99"><span>没有任何匹配的结果!<br />There Are No Any Matching Results!</span></td></tr>`);
+
+// 创建总筛选的函数
+let filterFunction = function(){
+	
+	// 将要展示的tr合集
+	let trShowIndexArray = [];
+	
+	// 表单元素当前的值
+	let jqi_attrSelect01_value = jqi_attrSelect01.val();
+	let jqi_attrSelect02_value = jqi_attrSelect02.val();
+	let jqi_attrSelect03_value = jqi_attrSelect03.val();
+	let jqi_attrSelect04_value = jqi_attrSelect04.val();
+	
+	// 获取匹配项的索引
+	jqi_nameInput01.val().trim()
+	.split(/ {1,}/).forEach(function(text){
+		csv0.forEach(function(item){
+			if(item !== 'blankRow' && (item.项目名称.
+			includes(text) === true || item.文本描述.includes(text) === true)){
+				
+				// 情报提示
+				if(jqi_attrSelect01_value !== 'empty'){
+					if(jqi_attrSelect01_value === '✔' && item.情报提示 !== '✔'){ return };
+					if(jqi_attrSelect01_value === '✘' && item.情报提示 !== '-'){ return };
+				};
+				
+				// 武器类型
+				if(jqi_attrSelect02_value !== 'empty'){
+					if(jqi_attrSelect02_value === '区域' && item.武器类型.includes('区域') === false){ return };
+					if(jqi_attrSelect02_value === '波动' && item.武器类型.includes('波动') === false){ return };
+					if(jqi_attrSelect02_value === '实体' && item.武器类型.includes('实体') === false){ return };
+					if(jqi_attrSelect02_value === '高能' && item.武器类型.includes('高能') === false){ return };
+					if(jqi_attrSelect02_value === '消耗' && item.武器类型.includes('消耗') === false){ return };
+					if(jqi_attrSelect02_value === '力场' && item.武器类型.includes('力场') === false){ return };
+				};
+				
+				// 主义限制
+				if(jqi_attrSelect03_value !== 'empty'){
+					
+					if(jqi_attrSelect03_value === '没有归属' && ['0', '1', '2', '5', '24', '26', ].includes(item.项目代码) === false){ return };
+					
+					if(jqi_attrSelect03_value === '特殊尚武' && ['10','11','12','13',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '无法使用' && [ '4','27','28','29',].includes(item.项目代码) === false){ return };
+					
+					if(jqi_attrSelect03_value === '特殊亲外' && [ '3',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '常规亲外' && [ '6',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '特殊物质' && [ '7',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '特殊集中' && [ '8',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '特殊分权' && [ '9',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '特殊生态' && ['14',].includes(item.项目代码) === false){ return };
+					if(jqi_attrSelect03_value === '特殊精神' && ['15',].includes(item.项目代码) === false){ return };
+					
+				};
+				
+				// 特殊功能
+				if(jqi_attrSelect04_value !== 'empty'){
+					
+					if(jqi_attrSelect04_value === '影响建筑' 
+					&& /ReplaceBuilding|FillPlanetSlot|RandomClearPlanetBuilding|ForceAddBuilding|ForceWin/i.test(item.函数合集) === false){ return };
+					
+					if(jqi_attrSelect04_value === '全局通告' 
+					&& /HintOthersDestoryed|BroadcastToAll|ForceAddBuilding:199_100_1/i.test(item.函数合集) === false){ return };
+					
+					if(jqi_attrSelect04_value === '生成区域' && /MakeArea|ForceDestoryGalaxy:3000/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '难民事件' && /AbandonPlanet|WinOverAboriginal/i.test(item.函数合集) === false){ return };
+					
+					if(jqi_attrSelect04_value === '影响压力' && /AddPopulationPerBuilding/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '影响噪音' && /AddEnergyBallHitTimes/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '影响资源' && /CheckTechBuff101415/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '交流通告' && /HintCommunicated/i.test(item.函数合集) === false){ return };
+					
+					if(jqi_attrSelect04_value === '清除归属' && /ClearColonial/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '自动探索' && /ExploreTarget/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '次数限制' && /DisableWeapon/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '毁灭星系' && /SetGalaxyDie/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '攻方通告' && /HintAttacker/i.test(item.函数合集) === false){ return };
+					if(jqi_attrSelect04_value === '守方通告' && /HintDefender/i.test(item.函数合集) === false){ return };
+					
+				};
+				
+				// 符合条件
+				trShowIndexArray.push(
+				String(item.项目序号));
+				
+			};
+		});
+	});
+	
+	// 根据结果显示隐藏
+	if(trShowIndexArray.length === 0){
+		jqi_table01_tbody_tr.addClass('hideTr');
+		jqi_empty_result_tr.removeClass('hideTr' );
+		jqi_table01_tbody.append(jqi_empty_result_tr);
+	}else{
+		jqi_empty_result_tr.remove();
+		jqi_table01_tbody_tr.each(function(index, value){
+			if(trShowIndexArray.includes(value.getAttribute('index')) 
+			=== true){ value.classList.remove('hideTr') }else{ value.classList.add('hideTr') };
+		});
+	};
+	
+	// 合并同类设置高亮
+	xj2._groupedSet(jqi_powerTable01);
+	
+};
+
+// 绑定表单控件操作
+[jqi_attrSelect01, jqi_attrSelect02, jqi_attrSelect03, jqi_attrSelect04, ].forEach(function(
+jqi_select){ jqi_select.on('change', function(){ filterFunction() }) });
+jqi_nameInput01.on('input', function(){ filterFunction() });
+jqi_resetButton.on('click', function(){
+	jqi_nameInput01.val('');
+	[jqi_attrSelect01, jqi_attrSelect02, jqi_attrSelect03, jqi_attrSelect04, ].forEach(function(
+	jqi_select){ jqi_select.find('option:first').prop('selected', true) });
+	jqi_empty_result_tr.remove();
+	filterFunction();
+});
+
+// 自动执行一次筛选
+filterFunction();
+
+})();
+
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

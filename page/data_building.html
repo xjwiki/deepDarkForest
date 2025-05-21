@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-08T12:13:30UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-08T12:13:30UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-05-08T12:13:30UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -131,7 +131,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <p>
 	01. 当前游戏里共有 <c>82</c> 种建筑(但并非所有建筑都可被主动建造);<br />
 	02. 根据不同的判定标准, 建筑有非常多种分类的形式, 你可以借助下面的筛选工具进行更深入的分析;<br />
-	03. 由于数据项较多, 所以表格被分成三部分, 可通过右上角的箭头按钮或快捷键 <kbd>A</kbd> 和 <kbd>D</kbd> 进行翻页, 更多细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
+	03. 由于数据项较多, 所以表格被分成三部分, 可用右上角的箭头按钮或快捷键 <kbd>A</kbd> 和 <kbd>D</kbd> 进行翻页, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
 </p>
 
 <p style="display:flex;justify-content:space-between;align-items:center;">
@@ -144,11 +144,11 @@ function(){ FastClick.attach(document.body) }, false);</script>
 		<select id="attrSelect02" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
 	</label>
 	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
-		<span style="flex:0 0 auto;align-self:center;width:80px;">特殊属性: </span>
+		<span style="flex:0 0 auto;align-self:center;width:80px;">建造位置: </span>
 		<select id="attrSelect03" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
 	</label>
 	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
-		<span style="flex:0 0 auto;align-self:center;width:80px;">建造位置: </span>
+		<span style="flex:0 0 auto;align-self:center;width:80px;">特殊属性: </span>
 		<select id="attrSelect04" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
 	</label>
 </p>
@@ -280,6 +280,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>虚空装置: 该建筑是个特例, 它同时拥有 <c>DontDestroy</c> 和 <c>LostDestory</c> 两个函数, 也就是同时具备"攻占保留"和"攻占摧毁"的属性, 看似矛盾, 但其实是因为 <c>DontDestroy</c> 还会影响一些强制塞建筑的情况(比如[驻留强磁场/大型矿山脉]), 也就是说, 建筑会在星系丢失时摧毁(因为是主义专属建筑, 星系易主后肯定变废墟), 但不会被攻击性武器摧毁或特殊事件替换(尚武主义有科技可以摧毁建筑);</p>
 
+<p>整合拆除: 当我们通过整合文明得到了星系时, 星系上像[贫民窟/原始丛林/核战争遗迹]等这类负面效果的景观建筑, 都会被自动拆除;</p>
+
 <hr />
 </section>
 
@@ -338,7 +340,7 @@ Remote/Building 属性确实是 ID, 只是名称图片和描述都是使用了 D
 Identification:MustHaveOwner 是系统早期的保险机制, 主要用途是, 在初始化星系时(进入游戏生成地图), 
 删除掉"需要被文明控制"的建筑, 以该方法删除的建筑将直接变成空槽, 对玩家而言没什么意义, 就不展示了
 
-Identification:Remove 是用来标注是否为景观障碍, DontDestroy 函数跟它几乎是完全重叠, 只是虚无装置
+Identification:Remove 是用来标注是否为整合拆除, DontDestroy 函数跟它几乎是完全重叠, 只是虚无装置
 /古代力场盾/特殊贫民窟没有 Remove 函数, 但有 DontDestroy 函数, 所以使用 DontDestroy 函数就足够了
 
 高级建筑: 取决于 ValidBuff 包含的元素是否在 1800 到 2000 之间, 或者等于 8008, 是为高级, 否为普通
@@ -409,7 +411,7 @@ NeedDisposable					属于“清理者玩法”的部分机制, 目前尚未开�
 */
 
 // 建筑参数
-let csv0 = (`//Remote/Building,Name,Identification,Model,Description,BuildResourceCost,BasicBuildTimeCost,MaintainCost,BaseCD,Affect,ParameterList,Noise,ValidBuff,InvalidBuff,Demolish,DemolishTechPoint,Probability
+let csv0 = (`// Remote/Building,Name,Identification,Model,Description,BuildResourceCost,BasicBuildTimeCost,MaintainCost,BaseCD,Affect,ParameterList,Noise,ValidBuff,InvalidBuff,Demolish,DemolishTechPoint,Probability
 
 10,Factory,,Industrial,Building-10,500,20000,0,0,GalaxyResourceOutput|OverMining|MinResource,200|1|1,5,0,1801|1802|1803|1804|1013|1012|2030|8008,250,0,0
 2,SpacePort,,Hanger,Building-2,600,30000,1,120000,,,5,0,0,300,0,0
@@ -533,7 +535,7 @@ let csv0 = (`//Remote/Building,Name,Identification,Model,Description,BuildResour
 .split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
 
 // 文案描述
-let csv1 = (`///Description,IconName,Name,Description,Content,ShortDescription
+let csv1 = (`// /Description,IconName,Name,Description,Content,ShortDescription
 
 Building-10,Factory,$/Description_Name_Building-10,$/Description_Description_Building-10,,
 Building-2,SpacePort,$/Description_Name_Building-2,$/Description_Description_Building-2,,
@@ -661,246 +663,246 @@ let textList = {
 	
 	项目名称 : {
 	
-	'Building-10'  : `工厂`					+ `# 工厂`, 
-	'Building-2'   : `太空港`				+ `# 太空港`, 
-	'Building-1'   : `军事基地`				+ `# 军事基地`, 
+	'Building-10'  : `工厂`					+ ` # 工厂`, 
+	'Building-2'   : `太空港`				+ ` # 太空港`, 
+	'Building-1'   : `军事基地`				+ ` # 军事基地`, 
 	
-	'Building-15'  : `居住区`				+ `# 居住区`, 
-	'Building-3'   : `栖息地`				+ `# 栖息地`, 
-	'Building-12'  : `研究所`				+ `# 研究所`, 
+	'Building-15'  : `居住区`				+ ` # 居住区`, 
+	'Building-3'   : `栖息地`				+ ` # 栖息地`, 
+	'Building-12'  : `研究所`				+ ` # 研究所`, 
 	
-	'Building-5'   : `库存中心`				+ `# 库存中心`, 
-	'Building-13'  : `残骸工厂`				+ `# 残骸工厂`, 
-	'Building-14'  : `黑洞工厂`				+ `# 黑洞工厂`, 
+	'Building-5'   : `库存中心`				+ ` # 库存中心`, 
+	'Building-13'  : `残骸工厂`				+ ` # 残骸工厂`, 
+	'Building-14'  : `黑洞工厂`				+ ` # 黑洞工厂`, 
 	
-	'Building-6'   : `前哨站`				+ `# 前哨`, 
-	'Building-505' : `广播站`				+ `# 广播站`, 
+	'Building-6'   : `前哨站`				+ ` # 前哨`, 
+	'Building-505' : `广播站`				+ ` # 广播站`, 
 	
-	'Building-7'   : `戴森球`				+ `# 戴森球`, 
-	'Building-8'   : `环世界`				+ `# 环世界`, 
+	'Building-7'   : `戴森球`				+ ` # 戴森球`, 
+	'Building-8'   : `环世界`				+ ` # 环世界`, 
 	
-	'Building-9'   : `屏蔽装置`				+ `# 屏蔽装置`, 
-	'Building-11'  : `太空堡垒`				+ `# 太空堡垒`, 
-	'Building-16'  : `黑域装置`				+ `# 黑域装置`, 
+	'Building-9'   : `屏蔽装置`				+ ` # 屏蔽装置`, 
+	'Building-11'  : `太空堡垒`				+ ` # 太空堡垒`, 
+	'Building-16'  : `黑域装置`				+ ` # 黑域装置`, 
 	
-	'Building-201' : `传感阵列集`			+ `# 传感阵列`, 
-	'Building-202' : `低光速屏障`			+ `# 低光速屏障`, 
-	'Building-203' : `低维化装置`			+ `# 低维化装置`, 
+	'Building-201' : `传感阵列集`			+ ` # 传感阵列`, 
+	'Building-202' : `低光速屏障`			+ ` # 低光速屏障`, 
+	'Building-203' : `低维化装置`			+ ` # 低维化装置`, 
 	
-	'Building-502' : `巨型船坞`				+ `# 巨型干船坞`, 
-	'Building-503' : `太空棱堡`				+ `# 太空棱堡`, 
-	'Building-504' : `接驳区域`				+ `# 接驳区域`, 
+	'Building-502' : `巨型船坞`				+ ` # 巨型干船坞`, 
+	'Building-503' : `太空棱堡`				+ ` # 太空棱堡`, 
+	'Building-504' : `接驳区域`				+ ` # 接驳区域`, 
 	
-	'Building-100' : `废墟`					+ `# 废墟`, 
-	'Building-101' : `贫民窟`				+ `# 贫民窟`, 
-	'Building-102' : `古代废墟`				+ `# 古代废墟`, 
+	'Building-100' : `废墟`					+ ` # 废墟`, 
+	'Building-101' : `贫民窟`				+ ` # 贫民窟`, 
+	'Building-102' : `古代废墟`				+ ` # 古代废墟`, 
 	
-	'Building-104' : `原始丛林`				+ `# 原始丛林`, 
-	'Building-105' : `巨型冰川`				+ `# 巨型冰川`, 
-	'Building-106' : `巨型戈壁`				+ `# 巨型戈壁`, 
+	'Building-104' : `原始丛林`				+ ` # 原始丛林`, 
+	'Building-105' : `巨型冰川`				+ ` # 巨型冰川`, 
+	'Building-106' : `巨型戈壁`				+ ` # 巨型戈壁`, 
 	
-	'Building-111' : `熔岩地带`				+ `# 熔岩带`, 
-	'Building-112' : `活火山口`				+ `# 活火山`, 
-	'Building-103' : `巨型生物`				+ `# 巨型生物`, 
+	'Building-111' : `熔岩地带`				+ ` # 熔岩带`, 
+	'Building-112' : `活火山口`				+ ` # 活火山`, 
+	'Building-103' : `巨型生物`				+ ` # 巨型生物`, 
 	
-	'Building-107' : `核战争遗迹`			+ `# 核战争遗迹`, 
-	'Building-108' : `巨型陨石坑`			+ `# 巨型陨石坑`, 
-	'Building-109' : `大型矿山脉`			+ `# 大型矿山脉`, 
+	'Building-107' : `核战争遗迹`			+ ` # 核战争遗迹`, 
+	'Building-108' : `巨型陨石坑`			+ ` # 巨型陨石坑`, 
+	'Building-109' : `大型矿山脉`			+ ` # 大型矿山脉`, 
 	
-	'Building-506' : `原始居民聚落`			+ `# 原始居民聚落`, 
-	'Building-902' : `特殊古代废墟`			+ `# 古代废墟`, 
-	'Building-1011': `内战区贫民窟`			+ `# 贫民窟`, 
+	'Building-506' : `原始居民聚落`			+ ` # 原始居民聚落`, 
+	'Building-902' : `特殊古代废墟`			+ ` # 古代废墟`, 
+	'Building-1011': `内战区贫民窟`			+ ` # 贫民窟`, 
 	
-	'Building-110' : `驻留强磁场`			+ `# 强磁场`, 
-	'Building-909' : `大矿脉废墟`			+ `# 大型矿山脉废墟`, 
-	'Building-501' : `低维观测站`			+ `# 观测站`, 
+	'Building-110' : `驻留强磁场`			+ ` # 强磁场`, 
+	'Building-909' : `大矿脉废墟`			+ ` # 大型矿山脉废墟`, 
+	'Building-501' : `低维观测站`			+ ` # 观测站`, 
 	
-	'Building-230' : `数据库`				+ `# 数据库`, 
-	'Building-231' : `修道院`				+ `# 秘院`, 
-	'Building-232' : `敬老院`				+ `# 敬老院`, 
+	'Building-230' : `数据库`				+ ` # 数据库`, 
+	'Building-231' : `修道院`				+ ` # 秘院`, 
+	'Building-232' : `敬老院`				+ ` # 敬老院`, 
 	
-	'Building-401' : `文明博物馆`			+ `# 文明博物馆`, 
-	'Building-402' : `古代图书馆`			+ `# 古代图书馆`, 
-	'Building-405' : `古代力场盾`			+ `# 古代力场盾`, 
+	'Building-401' : `文明博物馆`			+ ` # 文明博物馆`, 
+	'Building-402' : `古代图书馆`			+ ` # 古代图书馆`, 
+	'Building-405' : `古代力场盾`			+ ` # 古代力场盾`, 
 	
-	'Building-403' : `低维提取装置`			+ `# 低维提取装置`, 
-	'Building-406' : `遗迹发掘设施`			+ `# 遗迹发掘设施`, 
-	'Building-404' : `穹顶式居住区`			+ `# 穹顶式居住区`, 
+	'Building-403' : `低维提取装置`			+ ` # 低维提取装置`, 
+	'Building-406' : `遗迹发掘设施`			+ ` # 遗迹发掘设施`, 
+	'Building-404' : `穹顶式居住区`			+ ` # 穹顶式居住区`, 
 	
-	'Building-208' : `文明首都`				+ `# 首都`, 
-	'Building-207' : `证券中心`				+ `# 证券中心`, 
-	'Building-210' : `大图书馆`				+ `# 大图书馆`, 
-	'Building-209' : `帝国空港`				+ `# 帝国空港`, 
-	'Building-215' : `战争议堂`				+ `# 战争议事堂`, 
+	'Building-208' : `文明首都`				+ ` # 首都`, 
+	'Building-207' : `证券中心`				+ ` # 证券中心`, 
+	'Building-210' : `大图书馆`				+ ` # 大图书馆`, 
+	'Building-209' : `帝国空港`				+ ` # 帝国空港`, 
+	'Building-215' : `战争议堂`				+ ` # 战争议事堂`, 
 	
-	'Building-217' : `外星移民公司`			+ `# 外星移民公司`, 
-	'Building-216' : `战争承包商`			+ `# 战争承包商`, 
-	'Building-211' : `工会总部`				+ `# 工会`, 
-	'Building-214' : `科学城`				+ `# 科学城`, 
-	'Building-212' : `议会`					+ `# 议会`, 
+	'Building-217' : `外星移民公司`			+ ` # 外星移民公司`, 
+	'Building-216' : `战争承包商`			+ ` # 战争承包商`, 
+	'Building-211' : `工会总部`				+ ` # 工会`, 
+	'Building-214' : `科学城`				+ ` # 科学城`, 
+	'Building-212' : `议会`					+ ` # 议会`, 
 	
-	'Building-204' : `巨型科学站`			+ `# 巨型科学枢纽`, 
-	'Building-225' : `虚空观测站`			+ `# 虚空观测站`, 
-	'Building-223' : `黑洞观测站`			+ `# 黑洞观测站`, 
-	'Building-224' : `恒星观测站`			+ `# 恒星观测站`, 
+	'Building-204' : `巨型科学站`			+ ` # 巨型科学枢纽`, 
+	'Building-225' : `虚空观测站`			+ ` # 虚空观测站`, 
+	'Building-223' : `黑洞观测站`			+ ` # 黑洞观测站`, 
+	'Building-224' : `恒星观测站`			+ ` # 恒星观测站`, 
 	
-	'Building-222' : `生态环`				+ `# 生态环`, 
-	'Building-221' : `资源回收站`			+ `# 资源回收站`, 
-	'Building-236' : `虚空环`				+ `# 虚空环`, 
-	'Building-237' : `黑洞低维化装置`		+ `# 黑洞低维化装置`, 
+	'Building-222' : `生态环`				+ ` # 生态环`, 
+	'Building-221' : `资源回收站`			+ ` # 资源回收站`, 
+	'Building-236' : `虚空环`				+ ` # 虚空环`, 
+	'Building-237' : `黑洞低维化装置`		+ ` # 黑洞低维化装置`, 
 	
-	'Building-206' : `奇迹`					+ `# 奇迹`, 
-	'Building-205' : `沉思殿`				+ `# 沉思殿`, 
-	'Building-226' : `秘学神坛`				+ `# 秘学坛`, 
+	'Building-206' : `奇迹`					+ ` # 奇迹`, 
+	'Building-205' : `沉思殿`				+ ` # 沉思殿`, 
+	'Building-226' : `秘学神坛`				+ ` # 秘学坛`, 
 	
-	'Building-200' : `掩体`					+ `# 掩体`, 
-	'Building-233' : `庇护所`				+ `# 庇护所`, 
-	'Building-234' : `光墓屏障`				+ `# 光墓`, 
+	'Building-200' : `掩体`					+ ` # 掩体`, 
+	'Building-233' : `庇护所`				+ ` # 庇护所`, 
+	'Building-234' : `光墓屏障`				+ ` # 光墓`, 
 	
-	'Building-219' : `巨型工厂`				+ `# 巨型工厂`, 
-	'Building-220' : `行星钻机`				+ `# 行星钻机`, 
-	'Building-235' : `虚空装置`				+ `# 虚空装置`, 
+	'Building-219' : `巨型工厂`				+ ` # 巨型工厂`, 
+	'Building-220' : `行星钻机`				+ ` # 行星钻机`, 
+	'Building-235' : `虚空装置`				+ ` # 虚空装置`, 
 	
-	'Building-227' : `福报工会`				+ `# 福报工会`, 
-	'Building-228' : `首都阵列`				+ `# 首都阵列`, 
+	'Building-227' : `福报工会`				+ ` # 福报工会`, 
+	'Building-228' : `首都阵列`				+ ` # 首都阵列`, 
 	
-	'Building-213' : `田园`					+ `# 田园`, 
-	'Building-229' : `黑场`					+ `# 黑洞力场`, 
+	'Building-213' : `田园`					+ ` # 田园`, 
+	'Building-229' : `黑场`					+ ` # 黑洞力场`, 
 
-	'Building-218' : `兵营`					+ `# 兵营`, 
-	'Building-199' : `信标`					+ `# 信标`, 
+	'Building-218' : `兵营`					+ ` # 兵营`, 
+	'Building-199' : `信标`					+ ` # 信标`, 
 	
-	// 'Building-4'   : `力场生成器`		+ `# 力场生成器`, 
+	// 'Building-4'   : `力场生成器`		+ ` # 力场生成器`, 
 	
-	// 'Building-301' : `物质提取模块`		+ `# 物质提取模块`, 
-	// 'Building-302' : `武器模块`			+ `# 武器模块`, 
+	// 'Building-301' : `物质提取模块`		+ ` # 物质提取模块`, 
+	// 'Building-302' : `武器模块`			+ ` # 武器模块`, 
 	
-	// 'Building-303' : `监听模块`			+ `# 监听模块`, 
-	// 'Building-304' : `中继模块`			+ `# 中继模块`, 
-	// 'Building-305' : `拓展坞`			+ `# 拓展坞`, 
-	// 'Building-306' : `物质存储模块`		+ `# 物质存储模块`, 
+	// 'Building-303' : `监听模块`			+ ` # 监听模块`, 
+	// 'Building-304' : `中继模块`			+ ` # 中继模块`, 
+	// 'Building-305' : `拓展坞`			+ ` # 拓展坞`, 
+	// 'Building-306' : `物质存储模块`		+ ` # 物质存储模块`, 
 	},
 	
 	文本描述 : {
 	
-	'Building-10'  : /* 工厂			*/ `每年 +200 资源(若仓库溢出则暂停工作), 当星系资源 < 1 不再运行, 会导致星系过度开采等级 +1`																								+ `# <<BaseBuildingDes>>建筑功能：开采星系资源（若仓库溢出则不工作）。`, 
-	'Building-2'   : /* 太空港			*/ `拥有该建筑的星系才可向外派出移民船, 每次移民后有 120 年的冷却期, 但是可以通过科技缩短 CD`																								+ `# <<BaseBuildingDes>>建筑功能：可作为移民起点，每次移民后需冷却。`, 
-	'Building-1'   : /* 军事基地		*/ `拥有该建筑的星系才可执行军事的命令, 每次执行后有 120 年的冷却期, 但是可以通过科技缩短 CD`																								+ `# <<BaseBuildingDes>>建筑功能：可作为登陆起点，每次登陆后需冷却。`, 
+	'Building-10'  : /* 工厂			*/ `每年 +200 资源(若仓库溢出则暂停工作), 当星系资源 < 1 不再运行, 会导致星系过度开采等级 +1`																								+ ` # <<BaseBuildingDes>>建筑功能：开采星系资源（若仓库溢出则不工作）。`, 
+	'Building-2'   : /* 太空港			*/ `拥有该建筑的星系才可向外派出移民船, 每次移民后有 120 年的冷却期, 但是可以通过科技缩短 CD`																								+ ` # <<BaseBuildingDes>>建筑功能：可作为移民起点，每次移民后需冷却。`, 
+	'Building-1'   : /* 军事基地		*/ `拥有该建筑的星系才可执行军事的命令, 每次执行后有 120 年的冷却期, 但是可以通过科技缩短 CD`																								+ ` # <<BaseBuildingDes>>建筑功能：可作为登陆起点，每次登陆后需冷却。`, 
 	
-	'Building-15'  : /* 居住区			*/ `每年压力增长 -12, 在星系上可以被重复建造`																																				+ `# <<BaseBuildingDes>>建筑功能：降低压力增长。不能在人造星系建造。`, 
-	'Building-3'   : /* 栖息地			*/ `凝聚力 +10, 每个星系就仅限一个`																																							+ `# <<BaseBuildingDes>>建筑功能：提升凝聚力，降低移民惩罚。不能在人造星系建造。`, 
-	'Building-12'  : /* 研究所			*/ `每年的科技增长 + 2`																																										+ `# <<BaseBuildingDes>>建筑功能：提供科技增长。不能在人造星系建造。`, 
+	'Building-15'  : /* 居住区			*/ `每年压力增长 -12, 在星系上可以被重复建造`																																				+ ` # <<BaseBuildingDes>>建筑功能：降低压力增长。不能在人造星系建造。`, 
+	'Building-3'   : /* 栖息地			*/ `凝聚力 +10, 每个星系就仅限一个`																																							+ ` # <<BaseBuildingDes>>建筑功能：提升凝聚力，降低移民惩罚。不能在人造星系建造。`, 
+	'Building-12'  : /* 研究所			*/ `每年的科技增长 + 2`																																										+ ` # <<BaseBuildingDes>>建筑功能：提供科技增长。不能在人造星系建造。`, 
 	
-	'Building-5'   : /* 库存中心		*/ `资源存储上限 + 10000, 文明默认的资源存储上限为 20000, 仓库和太空港与军事基地均无建造限制`																								+ `# <<BaseBuildingDes>>建筑功能：提升资源上限。`, 
-	'Building-13'  : /* 残骸工厂		*/ `每年 +100 资源(无需星系资源), 会导致星系过度开采等级 +1, 每个星系仅限 1 个, 仅限残骸星系`																								+ `# <<BaseBuildingDes>>建筑功能：残骸产出资源（无限）。`, 
-	'Building-14'  : /* 黑洞工厂		*/ `每年 +100 资源(无需星系资源), 会导致星系过度开采等级 +1, 每个星系仅限 1 个, 仅限黑洞星系`																								+ `# <<BaseBuildingDes>>建筑功能：黑洞产出资源（无限）。`, 
+	'Building-5'   : /* 库存中心		*/ `资源存储上限 + 10000, 文明默认的资源存储上限为 20000, 仓库和太空港与军事基地均无建造限制`																								+ ` # <<BaseBuildingDes>>建筑功能：提升资源上限。`, 
+	'Building-13'  : /* 残骸工厂		*/ `每年 +100 资源(无需星系资源), 会导致星系过度开采等级 +1, 每个星系仅限 1 个, 仅限残骸星系`																								+ ` # <<BaseBuildingDes>>建筑功能：残骸产出资源（无限）。`, 
+	'Building-14'  : /* 黑洞工厂		*/ `每年 +100 资源(无需星系资源), 会导致星系过度开采等级 +1, 每个星系仅限 1 个, 仅限黑洞星系`																								+ ` # <<BaseBuildingDes>>建筑功能：黑洞产出资源（无限）。`, 
 	
-	'Building-6'   : /* 前哨站			*/ `每年压力增长 -8, 凝聚力 +8, 只能建在恒星槽位`																																			+ `# <<BaseBuildingDes>>建筑功能：提升凝聚力并降低压力（用于抵消移民惩罚），但是维护费较高。只能建造在恒星槽位。`, 
-	'Building-505' : /* 广播站			*/ `可让军事基地解锁广播攻击, 但只能建在恒星槽位`																																			+ `# <<BaseBuildingDes>>可以广播攻击其他星系，有概率使被广播方受到高等文明打击。（需要军事基地，广播成功后双方均暴露坐标）`, 
+	'Building-6'   : /* 前哨站			*/ `每年压力增长 -8, 凝聚力 +8, 只能建在恒星槽位`																																			+ ` # <<BaseBuildingDes>>建筑功能：提升凝聚力并降低压力（用于抵消移民惩罚），但是维护费较高。只能建造在恒星槽位。`, 
+	'Building-505' : /* 广播站			*/ `可让军事基地解锁广播攻击, 但只能建在恒星槽位`																																			+ ` # <<BaseBuildingDes>>可以广播攻击其他星系，有概率使被广播方受到高等文明打击。（需要军事基地，广播成功后双方均暴露坐标）`, 
 	
-	'Building-7'   : /* 戴森球			*/ `从恒星中开采资源, 不会消耗星系资源, 具体收益跟恒星类型相关, 星系获得"巨型结构"特性, 该建筑只能修建在恒星槽位上, 而且每个星系仅限一个`													+ `# <<BaseBuildingDes>>额外资源:开采恒星资源（不会消耗星系资源）\n星系获得“巨型结构”特性。`, 
-	'Building-8'   : /* 环世界			*/ `占用 1 个恒星槽位, 增加 3 个人造槽位, 同时会导致凝聚力 -10, 星系获得"巨型结构"特性, 该建筑只能修建在恒星槽位上, 而且每个星系仅限一个`													+ `# <<BaseBuildingDes>>建筑功能：增加建筑槽\n星系获得“巨型结构”特性。`, 
+	'Building-7'   : /* 戴森球			*/ `从恒星中开采资源, 不会消耗星系资源, 具体收益跟恒星类型相关, 星系获得"巨型结构"特性, 该建筑只能修建在恒星槽位上, 而且每个星系仅限一个`													+ ` # <<BaseBuildingDes>>额外资源:开采恒星资源（不会消耗星系资源）\n星系获得“巨型结构”特性。`, 
+	'Building-8'   : /* 环世界			*/ `占用 1 个恒星槽位, 增加 3 个人造槽位, 同时会导致凝聚力 -10, 星系获得"巨型结构"特性, 该建筑只能修建在恒星槽位上, 而且每个星系仅限一个`													+ ` # <<BaseBuildingDes>>建筑功能：增加建筑槽\n星系获得“巨型结构”特性。`, 
 	
-	'Building-9'   : /* 屏蔽装置		*/ `星系噪音 -10, 但噪音不会 <10, 除非噪音尚未达到 10, 每个星系仅限 1 个, 可通过科技加强效果`																								+ `# <<BaseBuildingDes>>建筑功能：降低星系噪音，不会低于10（除非噪音尚未达到10）。`, 
-	'Building-11'  : /* 太空堡垒		*/ `建筑所在星系的舰队规模 + 1, 但仅在防御时才生效, 还可通过科技进一步提升[装甲/闪避/规模]效果, 具体效果跟科技等级相关, 每个星系仅限一个`													+ `# <<BaseBuildingDes>>建筑功能：加强当前星系舰队属性（仅防御）。不能在人造星系建造。`, 
-	'Building-16'  : /* 黑域装置		*/ `在建完的那一刻, 将以装置所在星系为圆心, 生成一个黑域空间(是个半径为 30 的低维空间), 可以吞噬范围内的一切, 也就是说, 这个建筑其实就是个自爆弹, 专门用于星系自毁, 每个星系仅限一个`		+ `# <<BaseBuildingDes>>创造一片非常小的低维空间，几乎没有什么破坏性，但是可以用于自毁。`, 
+	'Building-9'   : /* 屏蔽装置		*/ `星系噪音 -10, 但噪音不会 <10, 除非噪音尚未达到 10, 每个星系仅限 1 个, 可通过科技加强效果`																								+ ` # <<BaseBuildingDes>>建筑功能：降低星系噪音，不会低于10（除非噪音尚未达到10）。`, 
+	'Building-11'  : /* 太空堡垒		*/ `建筑所在星系的舰队规模 + 1, 但仅在防御时才生效, 还可通过科技进一步提升[装甲/闪避/规模]效果, 具体效果跟科技等级相关, 每个星系仅限一个`													+ ` # <<BaseBuildingDes>>建筑功能：加强当前星系舰队属性（仅防御）。不能在人造星系建造。`, 
+	'Building-16'  : /* 黑域装置		*/ `在建完的那一刻, 将以装置所在星系为圆心, 生成一个黑域空间(是个半径为 30 的低维空间), 可以吞噬范围内的一切, 也就是说, 这个建筑其实就是个自爆弹, 专门用于星系自毁, 每个星系仅限一个`		+ ` # <<BaseBuildingDes>>创造一片非常小的低维空间，几乎没有什么破坏性，但是可以用于自毁。`, 
 	
-	'Building-201' : /* 传感阵列集		*/ `生成一个传感区域(半径: 40), 会自动探开区域内迷雾, 检测到经过区域的事物, 每个星系仅限一个`																								+ `# <<BaseBuildingDes>>建筑功能：生成区域“传感区域”（可检测经过区域的登陆）。`, 
-	'Building-202' : /* 低光速屏障		*/ `生成一个光速屏障(半径: 50), 可拦截范围内跃迁的飞船或质量弹和光粒等攻击, 每个星系仅限一个`																								+ `# <<BaseBuildingDes>>建筑功能：生成区域“低光速屏障”（可拦截经过区域的高速物体）。`, 
-	'Building-203' : /* 低维化装置		*/ `生成一个低维空间(半径: 90), 类似黑域装置, 也是个自爆弹, 只是它范围更大, 每个星系仅限一个`																								+ `# <<BaseBuildingDes>>建筑功能：生成区域“低维空间”。`, 
+	'Building-201' : /* 传感阵列集		*/ `生成一个传感区域(半径: 40), 会自动探开区域内迷雾, 检测到经过区域的事物, 每个星系仅限一个`																								+ ` # <<BaseBuildingDes>>建筑功能：生成区域“传感区域”（可检测经过区域的登陆）。`, 
+	'Building-202' : /* 低光速屏障		*/ `生成一个光速屏障(半径: 50), 可拦截范围内跃迁的飞船或质量弹和光粒等攻击, 每个星系仅限一个`																								+ ` # <<BaseBuildingDes>>建筑功能：生成区域“低光速屏障”（可拦截经过区域的高速物体）。`, 
+	'Building-203' : /* 低维化装置		*/ `生成一个低维空间(半径: 90), 类似黑域装置, 也是个自爆弹, 只是它范围更大, 每个星系仅限一个`																								+ ` # <<BaseBuildingDes>>建筑功能：生成区域“低维空间”。`, 
 	
-	'Building-502' : /* 巨型船坞		*/ `方舟模块的建造速度 + 25%, 对所有模块生效, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ `# <<BaseBuildingDes>>建筑功能：建造方舟模块速度+25%。`, 
-	'Building-503' : /* 太空棱堡		*/ `方舟防御时, 星系舰队[规模/装甲/闪避] + 1, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ `# <<BaseBuildingDes>>建筑功能：方舟星系舰队规模/装甲/闪避/+1。`, 
-	'Building-504' : /* 接驳区域		*/ `方舟人口转移的速度 + 50%, 仅转移人口生效, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ `# <<BaseBuildingDes>>建筑功能：方舟人口转移速度+50%。`, 
+	'Building-502' : /* 巨型船坞		*/ `方舟模块的建造速度 + 25%, 对所有模块生效, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ ` # <<BaseBuildingDes>>建筑功能：建造方舟模块速度+25%。`, 
+	'Building-503' : /* 太空棱堡		*/ `方舟防御时, 星系舰队[规模/装甲/闪避] + 1, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ ` # <<BaseBuildingDes>>建筑功能：方舟星系舰队规模/装甲/闪避/+1。`, 
+	'Building-504' : /* 接驳区域		*/ `方舟人口转移的速度 + 50%, 仅转移人口生效, 每个文明仅限一个, 这个建筑只能建造在方舟船坞上`																								+ ` # <<BaseBuildingDes>>建筑功能：方舟人口转移速度+50%。`, 
 	
-	'Building-100' : /* 废墟			*/ `这是战争留下的痕迹, 当星系遭受攻击而沦陷, 建筑可能消失, 也可能变成废墟, 拆除 + 1500 资源`																								+ `# 战争留下的痕迹。\n拆除获取资源:<quad name=Resource size=50 width=1 /><<Demolish>>`, 
-	'Building-101' : /* 贫民窟			*/ `景观障碍, 无法修建, 星系即使沦陷也不会被销毁, 原始星系自带, 整合时会被自动移除, 凝聚力-5`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-102' : /* 古代废墟		*/ `景观障碍, 无法修建, 星系即使沦陷也不会被销毁, 该建筑其实并没有任何的作用, 就只是占据槽位`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-100' : /* 废墟			*/ `这是战争留下的痕迹, 当星系遭受攻击而沦陷, 建筑可能消失, 也可能变成废墟, 拆除 + 1500 资源`																								+ ` # 战争留下的痕迹。\n拆除获取资源:<quad name=Resource size=50 width=1 /><<Demolish>>`, 
+	'Building-101' : /* 贫民窟			*/ `景观障碍, 无法修建, 星系即使沦陷也不会被销毁, 原始星系自带, 整合时会被自动移除, 凝聚力-5`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-102' : /* 古代废墟		*/ `景观障碍, 无法修建, 星系即使沦陷也不会被销毁, 该建筑其实并没有任何的作用, 就只是占据槽位`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
 	
-	'Building-104' : /* 原始丛林		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-105' : /* 巨型冰川		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-106' : /* 巨型戈壁		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-104' : /* 原始丛林		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-105' : /* 巨型冰川		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-106' : /* 巨型戈壁		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
 	
-	'Building-111' : /* 熔岩地带		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-112' : /* 活火山口		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 - 5`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-103' : /* 巨型生物		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 + 5`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-111' : /* 熔岩地带		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-112' : /* 活火山口		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 - 5`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-103' : /* 巨型生物		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 + 5`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
 	
-	'Building-107' : /* 核战争遗迹		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 - 5`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-108' : /* 巨型陨石坑		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-109' : /* 大型矿山脉		*/ `障碍, 无法修建, 星系沦陷不会被毁, 拆除加资源`																								+ `# 拆除获取资源:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-107' : /* 核战争遗迹		*/ `障碍, 无法修建, 星系沦陷不会被毁, 凝聚力 - 5`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-108' : /* 巨型陨石坑		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑`																																			+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-109' : /* 大型矿山脉		*/ `障碍, 无法修建, 星系沦陷不会被毁, 拆除加资源`																								+ ` # 拆除获取资源:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
 	
-	'Building-506' : /* 原始居民聚落	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 凝聚力 - 5, 剧情模式特殊建筑, 对战不会出现`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-902' : /* 特殊古代废墟	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 剧情模式特殊建筑, 拆除所有废墟才能完成任务`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-1011': /* 内战区贫民窟	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 凝聚力 - 3, 剧情模式特殊建筑, 整合无法移除`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=2 /> <<Noise>>\n`, 
+	'Building-506' : /* 原始居民聚落	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 凝聚力 - 5, 剧情模式特殊建筑, 对战不会出现`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-902' : /* 特殊古代废墟	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 剧情模式特殊建筑, 拆除所有废墟才能完成任务`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-1011': /* 内战区贫民窟	*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 凝聚力 - 3, 剧情模式特殊建筑, 整合无法移除`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n凝聚力影响:<quad name=Cohesion size=50 width=1 /> <<ParameterList>>\n噪音:<quad name=Noise size=50 width=2 /> <<Noise>>\n`, 
 	
-	'Building-110' : /* 驻留强磁场		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 是对战中随机事件带来的建筑, 每年科技增长+1`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n科技上升:<<ParameterList=0>>/年\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-909' : /* 大矿脉废墟		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 是对战中随机事件带来的建筑, 拆除 + 5k 资源`																																			+ `# 拆除获取资源:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-501' : /* 低维观测站		*/ `剧情模式的特殊建筑, 修建后可得知二维空间到达的时间, 每个文明仅限一个, 只能建在人造星系上`																								+ `# <<BaseBuildingDes>>建筑功能：观测低维空间的到来。`, 
+	'Building-110' : /* 驻留强磁场		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 是对战中随机事件带来的建筑, 每年科技增长+1`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n科技上升:<<ParameterList=0>>/年\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-909' : /* 大矿脉废墟		*/ `障碍, 无法修建, 星系即使沦陷也不会销毁该建筑, 是对战中随机事件带来的建筑, 拆除 + 5k 资源`																																			+ ` # 拆除获取资源:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-501' : /* 低维观测站		*/ `剧情模式的特殊建筑, 修建后可得知二维空间到达的时间, 每个文明仅限一个, 只能建在人造星系上`																								+ ` # <<BaseBuildingDes>>建筑功能：观测低维空间的到来。`, 
 	
-	'Building-230' : /* 数据库			*/ `提供科技增长(+1), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ `# <<BaseBuildingDes>>建筑功能：提供科技增长。`, 
-	'Building-231' : /* 修道院			*/ `可提升凝聚力(+5), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ `# <<BaseBuildingDes>>建筑功能：提升凝聚力。`, 
-	'Building-232' : /* 敬老院			*/ `可提升凝聚力(+5), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ `# <<BaseBuildingDes>>建筑功能：提升凝聚力。`, 
+	'Building-230' : /* 数据库			*/ `提供科技增长(+1), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ ` # <<BaseBuildingDes>>建筑功能：提供科技增长。`, 
+	'Building-231' : /* 修道院			*/ `可提升凝聚力(+5), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ ` # <<BaseBuildingDes>>建筑功能：提升凝聚力。`, 
+	'Building-232' : /* 敬老院			*/ `可提升凝聚力(+5), 星系唯一, 这是接受了某种特殊议案后才能修建的任务建筑, 没什么性价比, 修建后再保持一段时间即可完成任务, 之后可以拆除`													+ ` # <<BaseBuildingDes>>建筑功能：提升凝聚力。`, 
 	
-	'Building-401' : /* 文明博物馆		*/ `是剧情模式下的特殊建筑, 每个星系只能修建一个`																																			+ `# <<BaseBuildingDes>>`, 
-	'Building-402' : /* 古代图书馆		*/ `是剧情模式下的特殊建筑, 星系沦陷也不会销毁该建筑, 拆除 + 1500 科技(也是唯一拆除加科技的)`																								+ `# 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n拆除获得科技点:<quad name=TechPoint size=50 width=1 /><<DemolishTechPoint>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
-	'Building-405' : /* 古代力场盾		*/ `是剧情模式下的特殊建筑, 星系沦陷也不会销毁该建筑, 生成半径为 50 的永久性能量防护罩, 因对古代科技了解欠缺, 极难拆除(需百万资源和时间)`													+ `# <<BaseBuildingDes>>建筑功能：生成区域“低光速屏障”（可拦截经过区域的高速物体） 因对古代科技了解欠缺，极难拆除。`, 
+	'Building-401' : /* 文明博物馆		*/ `是剧情模式下的特殊建筑, 每个星系只能修建一个`																																			+ ` # <<BaseBuildingDes>>`, 
+	'Building-402' : /* 古代图书馆		*/ `是剧情模式下的特殊建筑, 星系沦陷也不会销毁该建筑, 拆除 + 1500 科技(也是唯一拆除加科技的)`																								+ ` # 拆除成本:<quad name=Resource size=50 width=1 /> <<BuildResourceCost>>\n拆除获得科技点:<quad name=TechPoint size=50 width=1 /><<DemolishTechPoint>>\n噪音:<quad name=Noise size=50 width=1 /> <<Noise>>\n`, 
+	'Building-405' : /* 古代力场盾		*/ `是剧情模式下的特殊建筑, 星系沦陷也不会销毁该建筑, 生成半径为 50 的永久性能量防护罩, 因对古代科技了解欠缺, 极难拆除(需百万资源和时间)`													+ ` # <<BaseBuildingDes>>建筑功能：生成区域“低光速屏障”（可拦截经过区域的高速物体） 因对古代科技了解欠缺，极难拆除。`, 
 	
-	'Building-403' : /* 低维提取装置	*/ `这是剧情模式下的特殊建筑, 每年额外 +100 资源`																																			+ `# <<BaseBuildingDes>>建筑功能：获得资源增长+<<ParameterList=0>>。`, 
-	'Building-406' : /* 遗迹发掘设施	*/ `这是剧情模式下的特殊建筑, 只能在遗迹星系建造`																																			+ `# <<BaseBuildingDes>>只能在遗迹星系建造，用于发掘并研究古代遗迹。`, 
-	'Building-404' : /* 穹顶式居住区	*/ `这是剧情模式下的特殊建筑, 可让文明凝聚力 +15`																																			+ `# <<BaseBuildingDes>>建筑功能：产生凝聚力。`, 
+	'Building-403' : /* 低维提取装置	*/ `这是剧情模式下的特殊建筑, 每年额外 +100 资源`																																			+ ` # <<BaseBuildingDes>>建筑功能：获得资源增长+<<ParameterList=0>>。`, 
+	'Building-406' : /* 遗迹发掘设施	*/ `这是剧情模式下的特殊建筑, 只能在遗迹星系建造`																																			+ ` # <<BaseBuildingDes>>只能在遗迹星系建造，用于发掘并研究古代遗迹。`, 
+	'Building-404' : /* 穹顶式居住区	*/ `这是剧情模式下的特殊建筑, 可让文明凝聚力 +15`																																			+ ` # <<BaseBuildingDes>>建筑功能：产生凝聚力。`, 
 	
-	'Building-208' : /* 文明首都		*/ `基础集中: 所在星系获得"首都星系"特性, 生成一个"首都圈"的区域(半径 60), 星系槽位 +3, 首都圈内能量防护罩的持续时间 + 50%, 每个文明仅限一个, 如果丢失星系所有权, 则建筑必定会成废墟`		+ `# <<BaseBuildingDes>>建筑功能：建造后获得星系特性 “首都”，并额外提供建筑槽，首都圈内星系获得特性“首都圈”。`, 
-	'Building-207' : /* 证券中心		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系获得"证券中心"特性, 每年额外 +100 资源(无需星系资源便可生效), 每个文明仅限一个, 若丢失星系所有权则建筑必定会成废墟`		+ `# <<BaseBuildingDes>>建筑功能：首都圈星系获得星系特性 “证券中心”（资源增长+60）。星系唯一。`, 
-	'Building-210' : /* 大图书馆		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系获得"大图书馆"特性, 可让文明科技增长 + 2, 每个文明仅限一个, 丢失星系所有权则建筑必定会成废墟`								+ `# <<BaseBuildingDes>>建筑功能：建造后首都圈星系获得星系特性 “大图书馆”（科技增长+2）。`, 
-	'Building-209' : /* 帝国空港		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系的太空港冷却时间 - 60%, 每个文明仅限一个, 丢失星系所有权则建筑会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：建造后首都圈星系获得星系特性 “帝国空港（太空港冷却时间-60%）”`, 
-	'Building-215' : /* 战争议堂		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系的军事基地CD时间 - 60%, 每个文明仅限一个, 丢失星系所有权则建筑会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：首都圈内军事基地冷却时间-60%，在首都星系建造才生效。`, 
+	'Building-208' : /* 文明首都		*/ `基础集中: 所在星系获得"首都星系"特性, 生成一个"首都圈"的区域(半径 60), 星系槽位 +3, 首都圈内能量防护罩的持续时间 + 50%, 每个文明仅限一个, 如果丢失星系所有权, 则建筑必定会成废墟`		+ ` # <<BaseBuildingDes>>建筑功能：建造后获得星系特性 “首都”，并额外提供建筑槽，首都圈内星系获得特性“首都圈”。`, 
+	'Building-207' : /* 证券中心		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系获得"证券中心"特性, 每年额外 +100 资源(无需星系资源便可生效), 每个文明仅限一个, 若丢失星系所有权则建筑必定会成废墟`		+ ` # <<BaseBuildingDes>>建筑功能：首都圈星系获得星系特性 “证券中心”（资源增长+60）。星系唯一。`, 
+	'Building-210' : /* 大图书馆		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系获得"大图书馆"特性, 可让文明科技增长 + 2, 每个文明仅限一个, 丢失星系所有权则建筑必定会成废墟`								+ ` # <<BaseBuildingDes>>建筑功能：建造后首都圈星系获得星系特性 “大图书馆”（科技增长+2）。`, 
+	'Building-209' : /* 帝国空港		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系的太空港冷却时间 - 60%, 每个文明仅限一个, 丢失星系所有权则建筑会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：建造后首都圈星系获得星系特性 “帝国空港（太空港冷却时间-60%）”`, 
+	'Building-215' : /* 战争议堂		*/ `基础集中: 建筑位必须于首都星系才生效, 可让首都圈内所有自然星系的军事基地CD时间 - 60%, 每个文明仅限一个, 丢失星系所有权则建筑会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：首都圈内军事基地冷却时间-60%，在首都星系建造才生效。`, 
 	
-	'Building-217' : /* 外星移民公司	*/ `基础分权: 所在星系获得"外星移民公司"特性, 太空港的冷却时间 -20%, 星系人造槽位 +1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：星系太空港冷却时间-20%，并额外提供1个建筑槽。星系唯一。`, 
-	'Building-216' : /* 战争承包商		*/ `基础分权: 所在星系获得"战争承包商"特性, 军事基地的冷却时间 -20%, 星系人造槽位 +1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：星系军事基地冷却时间-20%，并额外提供1个建筑槽。星系唯一。`, 
-	'Building-211' : /* 工会总部		*/ `基础分权: 所在星系获得"工会"特性, 让星系里的工厂额外 +5 凝聚力, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																		+ `# <<BaseBuildingDes>>建筑功能：星系工厂额外产出凝聚力+6。星系唯一。`, 
-	'Building-214' : /* 科学城			*/ `基础分权: 所在星系获得"科学城"特性, 让星系里的研究所额外 + 1 科技增长, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																+ `# <<BaseBuildingDes>>建筑功能：星系研究院额外产出科技点。星系唯一。`, 
-	'Building-212' : /* 议会			*/ `基础分权: 所在星系获得"议会"特性, 凝聚力 + 2, 允许所在的星系建造多个栖息地, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`															+ `# <<BaseBuildingDes>>建筑功能：建造后星系获得星系特性：“议会”（星系唯一，星系可建造复数栖息地），产出凝聚力。`, 
+	'Building-217' : /* 外星移民公司	*/ `基础分权: 所在星系获得"外星移民公司"特性, 太空港的冷却时间 -20%, 星系人造槽位 +1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：星系太空港冷却时间-20%，并额外提供1个建筑槽。星系唯一。`, 
+	'Building-216' : /* 战争承包商		*/ `基础分权: 所在星系获得"战争承包商"特性, 军事基地的冷却时间 -20%, 星系人造槽位 +1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：星系军事基地冷却时间-20%，并额外提供1个建筑槽。星系唯一。`, 
+	'Building-211' : /* 工会总部		*/ `基础分权: 所在星系获得"工会"特性, 让星系里的工厂额外 +5 凝聚力, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																		+ ` # <<BaseBuildingDes>>建筑功能：星系工厂额外产出凝聚力+6。星系唯一。`, 
+	'Building-214' : /* 科学城			*/ `基础分权: 所在星系获得"科学城"特性, 让星系里的研究所额外 + 1 科技增长, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																+ ` # <<BaseBuildingDes>>建筑功能：星系研究院额外产出科技点。星系唯一。`, 
+	'Building-212' : /* 议会			*/ `基础分权: 所在星系获得"议会"特性, 凝聚力 + 2, 允许所在的星系建造多个栖息地, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`															+ ` # <<BaseBuildingDes>>建筑功能：建造后星系获得星系特性：“议会”（星系唯一，星系可建造复数栖息地），产出凝聚力。`, 
 	
-	'Building-204' : /* 巨型科学站		*/ `基础物质: 科技增长 + 5, 凝聚力 -10, 每个文明仅限一个, 只能造在人造星系上(不包括方舟船坞)`																								+ `# <<BaseBuildingDes>>建筑功能：产生科技点，但是会降低凝聚力。文明唯一。`, 
-	'Building-225' : /* 虚空观测站		*/ `特殊物质: 科技增长 + 1, 丢失星系所有权则建筑必定会成废墟, 该建筑只能修在人造星系的槽位上`																								+ `# <<BaseBuildingDes>>建筑功能：提供科技增长+1。只能在人造星系建造。`, 
-	'Building-223' : /* 黑洞观测站		*/ `特殊物质: 科技增长 + 2, 丢失星系所有权则建筑必定会成废墟, 星系获得"巨型结构"特性, 每个星系仅限一个, 这个建筑只能修在黑洞星系的槽位上`													+ `# <<BaseBuildingDes>>建筑功能：提供科技增长+2。只能在黑洞槽建造。`, 
-	'Building-224' : /* 恒星观测站		*/ `特殊物质: 科技增长 + 2, 丢失星系所有权则建筑必定会成废墟, 星系获得"巨型结构"特性, 每个星系仅限一个, 这个建筑只能修在恒星星系的槽位上`													+ `# <<BaseBuildingDes>>建筑功能：提供科技增长+2。只能在恒星槽建造。`, 
+	'Building-204' : /* 巨型科学站		*/ `基础物质: 科技增长 + 5, 凝聚力 -10, 每个文明仅限一个, 只能造在人造星系上(不包括方舟船坞)`																								+ ` # <<BaseBuildingDes>>建筑功能：产生科技点，但是会降低凝聚力。文明唯一。`, 
+	'Building-225' : /* 虚空观测站		*/ `特殊物质: 科技增长 + 1, 丢失星系所有权则建筑必定会成废墟, 该建筑只能修在人造星系的槽位上`																								+ ` # <<BaseBuildingDes>>建筑功能：提供科技增长+1。只能在人造星系建造。`, 
+	'Building-223' : /* 黑洞观测站		*/ `特殊物质: 科技增长 + 2, 丢失星系所有权则建筑必定会成废墟, 星系获得"巨型结构"特性, 每个星系仅限一个, 这个建筑只能修在黑洞星系的槽位上`													+ ` # <<BaseBuildingDes>>建筑功能：提供科技增长+2。只能在黑洞槽建造。`, 
+	'Building-224' : /* 恒星观测站		*/ `特殊物质: 科技增长 + 2, 丢失星系所有权则建筑必定会成废墟, 星系获得"巨型结构"特性, 每个星系仅限一个, 这个建筑只能修在恒星星系的槽位上`													+ ` # <<BaseBuildingDes>>建筑功能：提供科技增长+2。只能在恒星槽建造。`, 
 	
-	'Building-222' : /* 生态环			*/ `基础生态: 人造槽位 + 2, 凝聚力 -10, 每个星系仅限一个, 获得巨型结构特性, 人造星系无法修建`																								+ `# <<BaseBuildingDes>>建筑功能：获得<<ParameterList=0>>个额外建筑槽。`, 
-	'Building-221' : /* 资源回收站		*/ `基础生态: 每年 + 50 资源(无需星系资源), 每个星系仅限一个, 丢失星系所有权则建筑必定成废墟`																								+ `# <<BaseBuildingDes>>建筑功能：获得资源增长+<<ParameterList=0>>。`, 
-	'Building-236' : /* 虚空环			*/ `特殊生态: 人造槽位 + 2, 凝聚力 - 5, 星系获得"巨型结构"特性, 每个星系仅限一个, 只能建造在人造星系上, 丢失星系所有权则建筑必定会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：增加建筑槽，在人造星系建造。`, 
-	'Building-237' : /* 黑洞低维化装置	*/ `特殊生态: 生成一个"微型低维空间"区域, 其实就是个小型二维空间(半径: 45), 可以吞噬范围内的一切, 每个星系仅限一个, 只能在黑洞星系上建造`													+ `# <<BaseBuildingDes>>建筑功能：使黑洞低维化。`, 
+	'Building-222' : /* 生态环			*/ `基础生态: 人造槽位 + 2, 凝聚力 -10, 每个星系仅限一个, 获得巨型结构特性, 人造星系无法修建`																								+ ` # <<BaseBuildingDes>>建筑功能：获得<<ParameterList=0>>个额外建筑槽。`, 
+	'Building-221' : /* 资源回收站		*/ `基础生态: 每年 + 50 资源(无需星系资源), 每个星系仅限一个, 丢失星系所有权则建筑必定成废墟`																								+ ` # <<BaseBuildingDes>>建筑功能：获得资源增长+<<ParameterList=0>>。`, 
+	'Building-236' : /* 虚空环			*/ `特殊生态: 人造槽位 + 2, 凝聚力 - 5, 星系获得"巨型结构"特性, 每个星系仅限一个, 只能建造在人造星系上, 丢失星系所有权则建筑必定会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：增加建筑槽，在人造星系建造。`, 
+	'Building-237' : /* 黑洞低维化装置	*/ `特殊生态: 生成一个"微型低维空间"区域, 其实就是个小型二维空间(半径: 45), 可以吞噬范围内的一切, 每个星系仅限一个, 只能在黑洞星系上建造`													+ ` # <<BaseBuildingDes>>建筑功能：使黑洞低维化。`, 
 	
-	'Building-206' : /* 奇迹			*/ `基础精神: 凝聚力 +70, 每个文明仅限一个, 只能建造在人造星系上(但是不包括方舟船坞)`																										+ `# <<BaseBuildingDes>>建筑功能：产生凝聚力。`, 
-	'Building-205' : /* 沉思殿			*/ `基础精神: 凝聚力 +20, 科技增长 - 1, 每个星系仅限一个(除了方舟船坞, 其他地方均可建造)`																									+ `# <<BaseBuildingDes>>建筑功能：产生凝聚力，但是会额外降低科技增长。`, 
-	'Building-226' : /* 秘学神坛		*/ `特殊精神: 压力增长 -30, 科技增长 - 1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																								+ `# <<BaseBuildingDes>>建筑功能：提供压力值增长-10。科技增长-1。`, 
+	'Building-206' : /* 奇迹			*/ `基础精神: 凝聚力 +70, 每个文明仅限一个, 只能建造在人造星系上(但是不包括方舟船坞)`																										+ ` # <<BaseBuildingDes>>建筑功能：产生凝聚力。`, 
+	'Building-205' : /* 沉思殿			*/ `基础精神: 凝聚力 +20, 科技增长 - 1, 每个星系仅限一个(除了方舟船坞, 其他地方均可建造)`																									+ ` # <<BaseBuildingDes>>建筑功能：产生凝聚力，但是会额外降低科技增长。`, 
+	'Building-226' : /* 秘学神坛		*/ `特殊精神: 压力增长 -30, 科技增长 - 1, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																								+ ` # <<BaseBuildingDes>>建筑功能：提供压力值增长-10。科技增长-1。`, 
 	
-	'Building-200' : /* 掩体			*/ `基础孤立: 建有掩体建筑的星系, 当遭遇除登陆攻击以外其他形式的攻击而被沦陷, 仍能保留所有权`																								+ `# <<BaseBuildingDes>>星系被毁灭后仍保留所有权（舰队除外），星系上建筑会变成废墟。`, 
-	'Building-233' : /* 庇护所			*/ `特殊孤立: 每年额外 +20 资源, 压力增长 -3, 凝聚力值 + 5, 丢失星系所有权则建筑必定会成废墟(收益看似较低, 但它没有数量限制, 可重复建造)`													+ `# <<BaseBuildingDes>>建筑功能：产出凝聚力资源并降低压力。`, 
-	'Building-234' : /* 光墓屏障		*/ `特殊孤立: 生成一个"光墓"区域(半径: 30), 可拦截任意形式的攻击, 但自己也无法在建筑所在的星系发出攻击, 每个文明仅限一个, 凝聚力 -50, 压力增长 +40, 丢失星系所有权则建筑必定会成废墟`		+ `# <<BaseBuildingDes>>建筑功能：可以拦截一切登陆。`, 
+	'Building-200' : /* 掩体			*/ `基础孤立: 建有掩体建筑的星系, 当遭遇除登陆攻击以外其他形式的攻击而被沦陷, 仍能保留所有权`																								+ ` # <<BaseBuildingDes>>星系被毁灭后仍保留所有权（舰队除外），星系上建筑会变成废墟。`, 
+	'Building-233' : /* 庇护所			*/ `特殊孤立: 每年额外 +20 资源, 压力增长 -3, 凝聚力值 + 5, 丢失星系所有权则建筑必定会成废墟(收益看似较低, 但它没有数量限制, 可重复建造)`													+ ` # <<BaseBuildingDes>>建筑功能：产出凝聚力资源并降低压力。`, 
+	'Building-234' : /* 光墓屏障		*/ `特殊孤立: 生成一个"光墓"区域(半径: 30), 可拦截任意形式的攻击, 但自己也无法在建筑所在的星系发出攻击, 每个文明仅限一个, 凝聚力 -50, 压力增长 +40, 丢失星系所有权则建筑必定会成废墟`		+ ` # <<BaseBuildingDes>>建筑功能：可以拦截一切登陆。`, 
 	
-	'Building-219' : /* 巨型工厂		*/ `基础生产: 每年 +500 资源, 若仓库溢出则暂停工作, 会导致星系过度开采等级 +2, 当星系资源 <1, 则不运行, 丢失星系所有权则建筑必定会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：快速开采星系资源（若仓库溢出则不工作）。`, 
-	'Building-220' : /* 行星钻机		*/ `基础生产: 该建筑造好的那一刻, 会 -20000 星系资源, 并直接 +10000 资源, 再之后建筑就没用了, 可以拆除, 丢失星系所有权则建筑必定会成废墟`													+ `# 透支你的星系。`, 
-	'Building-235' : /* 虚空装置		*/ `特殊生产: 建造需求资源为 10000, 建后拆除可立即加 15000 资源(赚 5000), 星系即使沦陷也不会销毁该建筑, 丢失星系所有权则建筑必定会成废墟`													+ `# <<BaseBuildingDes>>建筑功能：拆除获得双倍资源。`, 
+	'Building-219' : /* 巨型工厂		*/ `基础生产: 每年 +500 资源, 若仓库溢出则暂停工作, 会导致星系过度开采等级 +2, 当星系资源 <1, 则不运行, 丢失星系所有权则建筑必定会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：快速开采星系资源（若仓库溢出则不工作）。`, 
+	'Building-220' : /* 行星钻机		*/ `基础生产: 该建筑造好的那一刻, 会 -20000 星系资源, 并直接 +10000 资源, 再之后建筑就没用了, 可以拆除, 丢失星系所有权则建筑必定会成废墟`													+ ` # 透支你的星系。`, 
+	'Building-235' : /* 虚空装置		*/ `特殊生产: 建造需求资源为 10000, 建后拆除可立即加 15000 资源(赚 5000), 星系即使沦陷也不会销毁该建筑, 丢失星系所有权则建筑必定会成废墟`													+ ` # <<BaseBuildingDes>>建筑功能：拆除获得双倍资源。`, 
 	
-	'Building-227' : /* 福报工会		*/ `特殊集中: 每年可额外 +120 资源, 无需星系资源, 压力增长 + 6, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ `# <<BaseBuildingDes>>建筑功能：提供资源产出+40，压力值增长+4。`, 
-	'Building-228' : /* 首都阵列		*/ `特殊集中: 生成一个"首都传感区"的区域, 可检测到经过该区域的所有事物, 半径: 20, 该建筑只能在首都星系建造, 每个文明仅限一个, 丢失星系所有权则建筑必定会成废墟`								+ `# <<BaseBuildingDes>>建筑功能：生成传感区域，只能在首都建造。`, 
+	'Building-227' : /* 福报工会		*/ `特殊集中: 每年可额外 +120 资源, 无需星系资源, 压力增长 + 6, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ ` # <<BaseBuildingDes>>建筑功能：提供资源产出+40，压力值增长+4。`, 
+	'Building-228' : /* 首都阵列		*/ `特殊集中: 生成一个"首都传感区"的区域, 可检测到经过该区域的所有事物, 半径: 20, 该建筑只能在首都星系建造, 每个文明仅限一个, 丢失星系所有权则建筑必定会成废墟`								+ ` # <<BaseBuildingDes>>建筑功能：生成传感区域，只能在首都建造。`, 
 	
-	'Building-213' : /* 田园			*/ `基础和平: 每年可额外 + 30 资源, 无需星系资源, 凝聚力值 + 3, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ `# <<BaseBuildingDes>>建筑功能：获得持续资源增长和凝聚力。`, 
-	'Building-229' : /* 黑场			*/ `特殊和平: 生成一个小型低光速屏障, 只能修在黑洞上, 半径: 25, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ `# <<BaseBuildingDes>>建筑功能：生成传感区域，只能在黑洞槽位建造。`, 
+	'Building-213' : /* 田园			*/ `基础和平: 每年可额外 + 30 资源, 无需星系资源, 凝聚力值 + 3, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ ` # <<BaseBuildingDes>>建筑功能：获得持续资源增长和凝聚力。`, 
+	'Building-229' : /* 黑场			*/ `特殊和平: 生成一个小型低光速屏障, 只能修在黑洞上, 半径: 25, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																			+ ` # <<BaseBuildingDes>>建筑功能：生成传感区域，只能在黑洞槽位建造。`, 
 	
-	'Building-218' : /* 兵营			*/ `基础尚武: 可让军事基地冷却时间 - 33%, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																								+ `# <<BaseBuildingDes>>建筑功能：星系使用舰队登陆冷却时间-33%。`, 
-	'Building-199' : /* 信标			*/ `基础亲外: 该建筑是由攻击方发出的, 每隔 90 年广播所在星系的位置, 虽然不会增加暴露值, 但暴露值高时被广播仍会招致打击, 每个星系仅限一个`													+ `# <<BaseBuildingDes>>该装置会定期广播所在星系的位置，不会引起暴露值增加，但暴露值高时被广播仍会招致打击。`, 
+	'Building-218' : /* 兵营			*/ `基础尚武: 可让军事基地冷却时间 - 33%, 每个星系仅限一个, 丢失星系所有权则建筑必定会成废墟`																								+ ` # <<BaseBuildingDes>>建筑功能：星系使用舰队登陆冷却时间-33%。`, 
+	'Building-199' : /* 信标			*/ `基础亲外: 该建筑是由攻击方发出的, 每隔 90 年广播所在星系的位置, 虽然不会增加暴露值, 但暴露值高时被广播仍会招致打击, 每个星系仅限一个`													+ ` # <<BaseBuildingDes>>该装置会定期广播所在星系的位置，不会引起暴露值增加，但暴露值高时被广播仍会招致打击。`, 
 	
-	// 'Building-4'   : /* 力场生成器	*/ `可以作为力场锚点, 星系获得"巨型结构"特性`		+ `# <<BaseBuildingDes>>建筑功能：可以作为力场锚点，星系获得“巨型结构”特性。`, 
+	// 'Building-4'   : /* 力场生成器	*/ `可以作为力场锚点, 星系获得"巨型结构"特性`		+ ` # <<BaseBuildingDes>>建筑功能：可以作为力场锚点，星系获得“巨型结构”特性。`, 
 	
-	// 'Building-301' : /* 物质提取模块	*/ `开采星系资源(若仓库溢出则不工作)`				+ `# <<BaseBuildingDes>>建筑功能：开采星系资源（若仓库溢出则不工作）。`, 
-	// 'Building-302' : /* 武器模块		*/ `可作为登陆起点, 每次登陆后需冷却`				+ `# <<BaseBuildingDes>>建筑功能：可作为登陆起点，每次登陆后需冷却。`, 
+	// 'Building-301' : /* 物质提取模块	*/ `开采星系资源(若仓库溢出则不工作)`				+ ` # <<BaseBuildingDes>>建筑功能：开采星系资源（若仓库溢出则不工作）。`, 
+	// 'Building-302' : /* 武器模块		*/ `可作为登陆起点, 每次登陆后需冷却`				+ ` # <<BaseBuildingDes>>建筑功能：可作为登陆起点，每次登陆后需冷却。`, 
 	
-	// 'Building-303' : /* 监听模块		*/ `可以作为监听的起点`								+ `# <<BaseBuildingDes>>可以作为监听的起点。`, 
-	// 'Building-304' : /* 中继模块		*/ `可用中继上限+1`									+ `# <<BaseBuildingDes>>可用中继上限+1。`, 
-	// 'Building-305' : /* 拓展坞		*/ `建筑槽+3, 星系唯一`								+ `# <<BaseBuildingDes>>建筑槽+3。星系唯一。`, 
-	// 'Building-306' : /* 物质存储模块	*/ `资源上限+10000`									+ `# <<BaseBuildingDes>>资源上限+10000。`, 
+	// 'Building-303' : /* 监听模块		*/ `可以作为监听的起点`								+ ` # <<BaseBuildingDes>>可以作为监听的起点。`, 
+	// 'Building-304' : /* 中继模块		*/ `可用中继上限+1`									+ ` # <<BaseBuildingDes>>可用中继上限+1。`, 
+	// 'Building-305' : /* 拓展坞		*/ `建筑槽+3, 星系唯一`								+ ` # <<BaseBuildingDes>>建筑槽+3。星系唯一。`, 
+	// 'Building-306' : /* 物质存储模块	*/ `资源上限+10000`									+ ` # <<BaseBuildingDes>>资源上限+10000。`, 
 	},
 	
 	解锁条件 : {
@@ -1087,16 +1089,20 @@ csv0.forEach(function(item, index){
 	if('NeedSlotIndex' in item.建筑函数){ item.任意行星 = '-' }else if(item.允许修建.includes('0')){ item.任意行星 = '✔' }else{ item.任意行星 = '-' };
 	
 	item.生成区域 = (function(){
-		return (('MakeArea' in item.建筑函数) ? {
-			7 : '传感区域(半径: 20)',		// 首都传感区
-			1 : '传感区域(半径: 40)',		// 传感区域
-			8 : '能量护盾(半径: 25)',		// 小型低光速屏障
-			2 : '能量护盾(半径: 50)',		// 低光速屏障
-			17: '低维空间(半径: 30)',		// 黑域
-			14: '低维空间(半径: 45)',		// 微型低维空间
-			3 : '低维空间(半径: 90)',		// 低维空间
-			15: '光墓领域(半径: 30)',		// 光墓
-		}[item.建筑函数.MakeArea] : '-');
+		return (('MakeArea' in item.建筑函数 
+		|| 'MakeAreaWithBuilder' in item.建筑函数) ? {
+			7 : '传感区域(半径: 20)',	// 首都传感区
+			1 : '传感区域(半径: 40)',	// 传感区域
+			8 : '能量护盾(半径: 25)',	// 小型低光速屏障
+			2 : '能量护盾(半径: 50)',	// 低光速屏障
+			17: '低维空间(半径: 30)',	// 黑域
+			14: '低维空间(半径: 45)',	// 微型低维空间
+			3 : '低维空间(半径: 90)',	// 低维空间
+			15: '光墓领域(半径: 30)',	// 光墓
+			5 : '首都范围(半径: 60)',	// 首都圈
+		}[item.建筑函数.MakeArea 
+		? item.建筑函数.MakeArea 
+		: item.建筑函数.MakeAreaWithBuilder] : '-');
 	})();
 	
 	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
@@ -1104,14 +1110,14 @@ csv0.forEach(function(item, index){
 		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
 		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/building/img/${item.图片名称}.png' style='width:192px;height:192px;' />">
 		<img loading="lazy" alt="${item.项目名称}" src="../static/image/building/img/${item.图片名称}.png" style="width: 64px;height: 64px;" />
-	</td>`;
+	</td>`.replace(/\t|\n/g, '');
 	
 	item.缩略图标 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
 		xjTip-align="left" 
 		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
 		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/building/ico/${item.图片名称}.png' style='width:192px;height:192px;' />">
 		<img loading="lazy" alt="${item.项目名称}" src="../static/image/building/ico/${item.图片名称}.png" style="width: 40px;height: 40px;" />
-	</td>`;
+	</td>`.replace(/\t|\n/g, '');
 	
 	// -----------------------------------------
 	
@@ -1214,25 +1220,8 @@ let attrSelect02_Option = [
 	['生态类型',		'生态类型',			],
 ];
 
-// 特殊属性
-let attrSelect03_Option = [
-	['人造槽位',		'人造槽位',			],
-	['凝聚力值',		'凝聚力值',			],
-	['压力增长',		'压力增长',			],
-	['科技增长',		'科技增长',			],
-	['资源产出',		'资源产出',			],
-	['额外产出',		'额外产出',			],
-	['巨型结构',		'巨型结构',			],
-	['仅限恒星',		'仅限恒星',			],
-	['攻占保留',		'攻占保留',			],
-	['攻占摧毁',		'攻占摧毁',			],
-	['星系唯一',		'星系唯一',			],
-	['文明唯一',		'文明唯一',			],
-	['生成区域',		'生成区域',			],
-];
-
 // 建造位置
-let attrSelect04_Option = [
+let attrSelect03_Option = [
 	['残骸星系',		'残骸星系',			],
 	['黑洞星系',		'黑洞星系',			],
 	['中子星系',		'中子星系',			],
@@ -1246,6 +1235,23 @@ let attrSelect04_Option = [
 	['遗迹星系',		'遗迹星系',			],
 	['首都星系',		'首都星系',			],
 	['没有限制',		'没有限制',			],
+];
+
+// 特殊属性
+let attrSelect04_Option = [
+	['人造槽位',		'人造槽位',			],
+	['凝聚力值',		'凝聚力值',			],
+	['压力增长',		'压力增长',			],
+	['科技增长',		'科技增长',			],
+	['资源产出',		'资源产出',			],
+	['额外产出',		'额外产出',			],
+	['巨型结构',		'巨型结构',			],
+	['仅限恒星',		'仅限恒星',			],
+	['攻占保留',		'攻占保留',			],
+	['攻占摧毁',		'攻占摧毁',			],
+	['星系唯一',		'星系唯一',			],
+	['文明唯一',		'文明唯一',			],
+	['生成区域',		'生成区域',			],
 ];
 
 // 获取对象
@@ -1311,38 +1317,38 @@ let filterFunction = function(){
 					if(jqi_attrSelect02_value === '隐藏类型' && ['9'  ,].includes(item[0]) === false){ return };
 				};
 				
-				// 特殊属性
+				// 建造位置
 				if(jqi_attrSelect03_value !== 'empty'){
-					if(jqi_attrSelect03_value === '人造槽位' && item.人造槽位 === '-'){ return };
-					if(jqi_attrSelect03_value === '凝聚力值' && item.凝聚力值 === '-'){ return };
-					if(jqi_attrSelect03_value === '压力增长' && item.压力增长 === '-'){ return };
-					if(jqi_attrSelect03_value === '科技增长' && item.科技增长 === '-'){ return };
-					if(jqi_attrSelect03_value === '资源产出' && item.资源产出 === '-'){ return };
-					if(jqi_attrSelect03_value === '额外产出' && item.额外产出 === '-'){ return };
-					if(jqi_attrSelect03_value === '巨型结构' && item.巨型结构 === '-'){ return };
-					if(jqi_attrSelect03_value === '仅限恒星' && item.仅限恒星 === '-'){ return };
-					if(jqi_attrSelect03_value === '攻占保留' && item.攻占保留 === '-'){ return };
-					if(jqi_attrSelect03_value === '攻占摧毁' && item.攻占摧毁 === '-'){ return };
-					if(jqi_attrSelect03_value === '星系唯一' && item.星系唯一 === '-'){ return };
-					if(jqi_attrSelect03_value === '文明唯一' && item.文明唯一 === '-'){ return };
-					if(jqi_attrSelect03_value === '生成区域' && item.生成区域 === '-'){ return };
+					if(jqi_attrSelect03_value === '残骸星系' && item.残骸星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '黑洞星系' && item.黑洞星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '中子星系' && item.中子星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '脉冲星系' && item.脉冲星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '其他恒星' && item.其他恒星 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '任意行星' && item.任意行星 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '小人造星' && item.小人造星 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '中人造星' && item.中人造星 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '大人造星' && item.大人造星 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '方舟船坞' && item.方舟船坞 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '遗迹星系' && item.遗迹星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '首都星系' && item.首都星系 !== '✔'){ return };
+					if(jqi_attrSelect03_value === '没有限制' && item.没有限制 !== '✔'){ return };
 				};
 				
-				// 建造位置
+				// 特殊属性
 				if(jqi_attrSelect04_value !== 'empty'){
-					if(jqi_attrSelect04_value === '残骸星系' && item.残骸星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '黑洞星系' && item.黑洞星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '中子星系' && item.中子星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '脉冲星系' && item.脉冲星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '其他恒星' && item.其他恒星 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '任意行星' && item.任意行星 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '小人造星' && item.小人造星 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '中人造星' && item.中人造星 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '大人造星' && item.大人造星 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '方舟船坞' && item.方舟船坞 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '遗迹星系' && item.遗迹星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '首都星系' && item.首都星系 !== '✔'){ return };
-					if(jqi_attrSelect04_value === '没有限制' && item.没有限制 !== '✔'){ return };
+					if(jqi_attrSelect04_value === '人造槽位' && item.人造槽位 === '-'){ return };
+					if(jqi_attrSelect04_value === '凝聚力值' && item.凝聚力值 === '-'){ return };
+					if(jqi_attrSelect04_value === '压力增长' && item.压力增长 === '-'){ return };
+					if(jqi_attrSelect04_value === '科技增长' && item.科技增长 === '-'){ return };
+					if(jqi_attrSelect04_value === '资源产出' && item.资源产出 === '-'){ return };
+					if(jqi_attrSelect04_value === '额外产出' && item.额外产出 === '-'){ return };
+					if(jqi_attrSelect04_value === '巨型结构' && item.巨型结构 === '-'){ return };
+					if(jqi_attrSelect04_value === '仅限恒星' && item.仅限恒星 === '-'){ return };
+					if(jqi_attrSelect04_value === '攻占保留' && item.攻占保留 === '-'){ return };
+					if(jqi_attrSelect04_value === '攻占摧毁' && item.攻占摧毁 === '-'){ return };
+					if(jqi_attrSelect04_value === '星系唯一' && item.星系唯一 === '-'){ return };
+					if(jqi_attrSelect04_value === '文明唯一' && item.文明唯一 === '-'){ return };
+					if(jqi_attrSelect04_value === '生成区域' && item.生成区域 === '-'){ return };
 				};
 				
 				// 符合条件
@@ -1436,7 +1442,7 @@ $(window).on('keyup', function(event){
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.0</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
 </div>
 </div>
 </div>

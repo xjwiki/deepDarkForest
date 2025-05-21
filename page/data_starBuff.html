@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>天体特性</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>天体特性</span><small>(星系Buff)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 天体特性, 也就是星系的Buff, 在当前的游戏里总共有 <c>55</c> 种;<br />
+	02. 下表涵盖了目前在游戏里面会出现的所有天体特性, 你可以借助下面的筛选工具进行更深入的分析;<br />
+	03. 不同的天体特性, 在大地图中使用的"公共图标"可能是相同的, 游戏故意采用这种方法来混淆视听, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
+</p>
+
+<p style="display:flex;justify-content:space-between;align-items:center;">
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">关联建筑: </span>
+		<select id="attrSelect01" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">公共图标: </span>
+		<select id="attrSelect02" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">特性类型: </span>
+		<select id="attrSelect03" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">常见属性: </span>
+		<select id="attrSelect04" class="needsclick select-unset" style="flex:1 1 auto;width:148px;"></select>
+	</label>
+</p>
+
+<p style="display:flex;justify-content:space-between;align-items:center;">
+	<label style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;align-self:center;width:80px;">名称描述: </span>
+		<input id="nameInput01" class="input-unset" type="search" style="flex:1 1 auto;width:116px;" placeholder="None" />
+		<button id="nameCheck01" class="button-unset" type="button" style="flex:0 0 auto;width:32px;margin-left:-1px;font-size:14px;color:#999;"><i class="fas fa-magnifying-glass"></i></button>
+	</label>
+	<span style="display:inline-flex;flex:0 0 auto;width:472px;
+	color:#999;">(可以搜索名称或描述, 多关键词用空格隔开)</span>
+	<span style="display:inline-flex;flex:0 0 auto;width:228px;">
+		<span style="flex:0 0 auto;color:#999;">│</span>
+		<button id="resetButton" class="button-unset" type="button" 
+		style="flex:0 0 auto;width:74px;margin-left:auto;order:1;">清空</button>
+	</span>
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>特性分组</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>特性类型</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>出现权重</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>星系噪音</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>公共图标</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>公共代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 60px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>公共名称</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width:120px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>效果影响</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>天体数量</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>关联建筑</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>特性分组: 这个属性相同的天体特性, 不会在一个星系里同时出现, 例如"超高重力"和"超低重力"的特性分组都是 <c>10</c>, 在生成星系时, 如果出现, 就只能二选一, 但特性类型为"行星"的天体特性例外, 因为一个星系里是可能存在多个行星的, 所以这类天体特性可能重复;</p>
+
+<p>出现权重: 该属性是指同个特性分组内, 该天体特性出现的概率, 例如[行星极多/行星较多/行星较少/行星极少/孤星星系], 这五个特性都是同个分组内的选项, 它们出现权重分别为 <c>[10/30/30/30/10]</c>, 那么在生成星系的时候, 只要这个星系不是[残骸/废墟/人造星系], 逻辑就会累加分组内选项的权重, 然后随机判断采用, 例如行星极多的权重为 <c>10</c>, 那么出现的概率就是 <c>10÷(10+30+30+30+10)≈9%</c>; </p>
+
+<p>公共图标: 你必须殖民了目标星系, 才能明确知道该星系带有什么天体特性, 如果仅是在大地图(星域界面)探索过该星系, 那就只能看到这些天体特性的公共图标, 然而并非每个天体特性都有公共图标, 且大多数公共图标都有多重含义, 例如说, 星系带着"重力异常"的特性, 但具体是"超高重力"还是"超低重力", 则需要殖民了这个星系才能知晓, 系统机制故意用这种方式, 来模糊你的判断, 以增加未知性和模拟信息的不透明, 毕竟殖民是有成本的, 一个好的星系会有更低的开发成本和更高的开发上限, 这为游戏带来了更多的挑战和趣味性;</p>
+
+<p>————</p>
+
+<p>生成星系: 地图在初始化时, 会先随机抽一个恒星类型的天体(不含人造星系), 然后检测该恒星的初始特性, 只要不是残骸或黑洞, 就会根据出现权重, 随机在[行星极多/行星较多/行星较少/行星极少/孤星星系]这五个特性中挑一个(玩家的初始星系必定是行星极多), 最后根据结果再随机选出符合该特性的行星数量, 由于行星类型可能重复, 所以行星特性也可能重复, 例如出现多个"贫瘠星球"也是可能的;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+Remote 既 ID = 4000 这条数据是测试, 或者说占位用的, 可以不用理会
+这个空 buff 在部分情况下会用于占位, 例如部分建筑提供的星系 Buff
+
+Remote 既 ID = [4001/4002/4003] 这三条数据分别代表[宜居行星/矿物行星/低品质矿物]
+但这三条数据不会在内部显示, 也没有图片, 仅在外部可以被查看到, 进入内部就是具体的某个内部 Buff 了
+所以这三条数据可以也可以不用理会了, 实际上 Feature 属性也显示了这些是 HideBuff, 也因此才不显示吧
+
+项目图片中, 巨型结构和三种人造星系都是使用了 Megastructures.png 这张图, 所以总图片数量为 55-3=52
+
+效果影响中的 OneShot, 作用是让添加资源这类 Buff 只生效一次, 这样增加的资源不会在刷新时重复的添加
+
+————
+
+Remote/GalaxyBuff : `星系天体.csv`的 GalaxyBuff 属性指向属性
+
+PublicBuffId : `星系公开Buff.csv` 的 Remote/PublicBuff 属性指向该属性
+公共代码为 4000 的不会在外部星系显示, 部分图标也很相似, 这应该是为了模糊星系的情况而故意做的混淆
+
+CanBorn : 该属性用于控制天体是否可被销毁, 但现在已经被废弃
+IsUseful : 该属性曾经用于指代当前 Buff 对玩家是否重要, 但目前已经被废弃
+PublicBuffIdBackUp : 该属性和 PublicBuffId 属性不完全相同，但已经被注释掉, 不用理会了
+OneBattery : 概述用于定义星系的行星数量, 但由于已经有 Battery 行星数量这个属性, 所以这个就不用了
+
+Name : 这个属性可能并没有被用到, 因为图片的名称被放在了 文案描述.csv 里面, 而且该属性和图片名称也不是都能对得上
+Feature : 该属性是仅八条数据有值, 四个过度开采均为 Debuff, 而 4001/4002/4003 三条数据都是被屏蔽的, 所以不需要了
+
+BuildBuildings : 该属性应该是得到一个建筑, 但现在 Affect 既效果影响中已经有 AddBuilding, 所以这个属性也不需要了
+
+*/
+
+// 天体特性
+let csv0 = (`// Remote/GalaxyBuff,PublicBuffId,//PublicBuffIdBackUp,Tag,Name,Feature,Noise,Affect,ParameterList,AttachBuilding,Description,IsUseful,Grouping,Battery,BuildBuildings,Probability,OneBattery,CanBorn
+
+3000,6000,6000,BatteryBuff,AbundantPlanets,,2,SlotEqual,5,0,GalaxyBuff-3000,0,8,5,,10,0,0
+3001,6000,6000,BatteryBuff,ManyPlanets,,2,SlotEqual,4,0,GalaxyBuff-3001,0,8,4,,30,0,0
+
+3002,6001,6001,BatteryBuff,LittlePlanets,,2,SlotEqual,3,0,GalaxyBuff-3002,0,8,3,,30,0,0
+3003,6001,6001,BatteryBuff,FewPlanets,,1,SlotEqual,2,0,GalaxyBuff-3003,0,8,2,,30,0,0
+
+3004,6001,6001,BatteryBuff,IsolatedPlanet,,0,Empty,0,0,GalaxyBuff-3004,0,8,1,,10,0,0
+
+1,4001,4001,PlanetBuff,MagnificentLandscape,,2,Cohesion,10,0,GalaxyBuff-1,1,1,,,5,0,1
+2,4001,4001,PlanetBuff,HabitablePlanets,,2,Cohesion,5,0,GalaxyBuff-2,1,2,,,10,0,2
+3,4001,4001,PlanetBuff,AtrociousWeather,,2,Cohesion,-5,0,GalaxyBuff-3,-1,3,,,10,0,1
+
+4,4002,4002,PlanetBuff,MetalPlanets,,2,GalaxyResourceOutputExtraRate,0.2,0,GalaxyBuff-4,1,4,,,5,0,1
+5,4002,4002,PlanetBuff,CarbidePlanets,,2,GalaxyResource|OneShot,30000|0,0,GalaxyBuff-5,1,4,,,5,0,1
+
+6,4003,4003,PlanetBuff,ImpoverishedPlanets,,2,GalaxyResourceOutputExtraRate,-0.1,0,GalaxyBuff-6,-1,4,,,10,0,1
+
+7,4004,4004,PlanetBuff,JovianPlanets,,2,GalaxyResource|OneShot,50000|0,0,GalaxyBuff-7,1,5,,,5,0,1
+8,4004,4004,PlanetBuff,Saturnianplanets,,2,GalaxyResource|OneShot,50000|0,0,GalaxyBuff-8,1,6,,,3,0,1
+
+9,4005,4005,PlanetBuff,GasPlanetCore,,2,GalaxyResource|OneShot,30000|0,0,GalaxyBuff-9,1,7,,,2,0,1
+
+1000,5000,5100,FixedStarBuff,FixedStar-O,,2,FixedStarResourceOutput,250,0,GalaxyBuff-1000,0,14,,,10,0,0
+1001,5000,5100,FixedStarBuff,FixedStar-B,,2,FixedStarResourceOutput,250,0,GalaxyBuff-1001,0,15,,,10,0,1
+
+1002,5000,5100,FixedStarBuff,FixedStar-A,,2,FixedStarResourceOutput,250,0,GalaxyBuff-1002,0,16,,,10,0,1
+1007,5003,5100,FixedStarBuff,BlueGiantStar,,2,FixedStarResourceOutput|GalaxyResource|OneShot,100|50000|0,0,GalaxyBuff-1007,0,21,,,10,0,1
+
+1003,5001,5100,FixedStarBuff,FixedStar-F,,2,FixedStarResourceOutput,200,0,GalaxyBuff-1003,0,17,,,20,0,1
+1004,5001,5100,FixedStarBuff,FixedStar-G,,2,FixedStarResourceOutput,200,0,GalaxyBuff-1004,0,18,,,20,0,1
+
+1009,5004,5100,FixedStarBuff,RedSuperGiantStar,,2,FixedStarResourceOutput|GalaxyResource|OneShot,50|90000|0,0,GalaxyBuff-1009,0,23,,,10,0,0
+1008,5004,5100,FixedStarBuff,RedGiantStar,,2,FixedStarResourceOutput|GalaxyResource|OneShot,100|50000|0,0,GalaxyBuff-1008,0,22,,,10,0,0
+
+1005,5001,5100,FixedStarBuff,FixedStar-K,,2,FixedStarResourceOutput|GalaxyResource|OneShot,150|25000|0,0,GalaxyBuff-1005,0,19,,,20,0,1
+1006,5002,5100,FixedStarBuff,FixedStar-M,,2,FixedStarResourceOutput|GalaxyResource|OneShot,150|25000|0,0,GalaxyBuff-1006,0,20,,,10,0,1
+
+1010,5005,5005,FixedStarBuff,NeutronStar,,5,FixedStarResourceOutput|GalaxyResource|OneShot,0|120000|0,0,GalaxyBuff-1010,-1,24,,,20,0,0
+1011,5005,5005,FixedStarBuff,Pulsar,,30,Pulsar,0,0,GalaxyBuff-1011,-1,25,,,30,0,0
+
+1013,5007,5007,FixedStarBuff,Wreckage,,0,Noresource|SlotEqual,0|1,0,GalaxyBuff-1013,-1,27,1,,20,1,0
+1012,5006,5006,FixedStarBuff,BlackHole,,0,Noresource|SlotEqual,0|1,0,GalaxyBuff-1012,-1,26,1,,40,1,0
+
+1801,5800,5800,FixedStarBuff,ManmadeGalaxy1,,0,ManmadeGalaxy,0,0,GalaxyBuff-1801,0,28,1,,0,1,0
+1802,5800,5800,FixedStarBuff,ManmadeGalaxy2,,0,ManmadeGalaxy|Slot,0|1,0,GalaxyBuff-1802,0,28,1,,0,1,0
+1803,5800,5800,FixedStarBuff,ManmadeGalaxy3,,0,ManmadeGalaxy|Slot,0|3,0,GalaxyBuff-1803,0,28,1,,0,1,0
+8008,5800,5800,FixedStarBuff,ArkDockGalaxy,,0,ManmadeGalaxy|Slot,0|4,0,GalaxyBuff-8008,0,28,1,,0,1,0
+
+2004,7003,7003,GalaxyBuff,AncientIndustrialLand,,5,Resource|AddBuilding|OneShot,10000|902|0,0,GalaxyBuff-2004,1,12,,,5,0,0
+2005,7003,7003,GalaxyBuff,AncientCivilizationRuins,,5,Cohesion|AddBuilding|OneShot,5|902|0,0,GalaxyBuff-2005,1,12,,,10,0,0
+2006,7003,7003,GalaxyBuff,AncientMilitaryBase,,5,AddBuilding|OneShot,1|0,0,GalaxyBuff-2006,1,12,,1,10,0,0
+
+2001,7001,7001,GalaxyBuff,HighGravity,,0,GalaxyBuildCostRate,1,0,GalaxyBuff-2001,-1,10,,,20,0,0
+2002,7001,7001,GalaxyBuff,LowGravity,,0,GalaxyBuildCostRate,-0.5,0,GalaxyBuff-2002,1,10,,,10,0,0
+
+2003,7002,7002,GalaxyBuff,AsteroidBelt,,0,GalaxyResourceRate|OneShot,0.3|0,0,GalaxyBuff-2003,1,11,,,10,0,1
+
+2007,7004,7004,GalaxyBuff,MammothStructure,,0,MammothStructure,0,1,GalaxyBuff-2007,0,13,,,0,0,0
+
+2101,4000,4000,GalaxyBuff,RelicGalaxy,,0,,,0,GalaxyBuff-2101,0,0,,,0,0,0
+
+2008,4000,4000,,OverMining2,Debuff,0,GalaxyResourceOutputExtraRate,-0.2,0,GalaxyBuff-2008,-1,,,,,,0
+2009,4000,4000,,OverMining3,Debuff,0,GalaxyResourceOutputExtraRate,-0.3,0,GalaxyBuff-2009,-1,,,,,,0
+2010,4000,4000,,OverMining4,Debuff,0,GalaxyResourceOutputExtraRate,-0.4,0,GalaxyBuff-2010,-1,,,,,,0
+2011,4000,4000,,OverMining5,Debuff,0,GalaxyResourceOutputExtraRate,-0.5,0,GalaxyBuff-2011,-1,,,,,,0
+
+2017,4000,4000,,CapitalGalaxy,,0,,,1,GalaxyBuff-2017,0,,,,,,0
+2015,4000,4000,,Bourse,,0,,,1,GalaxyBuff-2015,0,,,,,,0
+2016,4000,4000,,GiantLibray,,0,,,1,GalaxyBuff-2016,0,,,,,,0
+
+2013,4000,4000,,WarConference,,0,WarConference,60,0,GalaxyBuff-2013,0,,,,,,0
+2014,4000,4000,,EmpirePort,,0,EmpirePort,60,0,GalaxyBuff-2014,0,,,,,,0
+
+2012,4000,4000,,CapitalCircle,,0,CapitalCircle,0,0,GalaxyBuff-2012,0,,,,,,0
+
+2020,4000,4000,,ColonialCompany,,0,,,1,GalaxyBuff-2020,0,,,,,,0
+2019,4000,4000,,WarContractor,,0,,,1,GalaxyBuff-2019,0,,,,,,0
+2021,4000,4000,,LabourUnion,,0,,,1,GalaxyBuff-2021,0,,,,,,0
+2022,4000,4000,,ScienceCity,,0,,,1,GalaxyBuff-2022,0,,,,,,0
+2018,4000,4000,,Parliament,,0,,,1,GalaxyBuff-2018,0,,,,,,0
+
+// 0,4000,4000,PlanetBuff,,,0,,,0,GalaxyBuff-0,0,0,,,80,0,1
+
+// 1804,5800,5800,FixedStarBuff,ManmadeGalaxy4,,0,ManmadeGalaxy|Slot,0|6,0,GalaxyBuff-1804,0,28,1,,0,1,0
+
+// 2024,5800,5800,FixedStarBuff,ManmadeGalaxy3,,0,ManmadeGalaxy|Slot|Invisible,0|5|0,0,GalaxyBuff-2024,0,29,6,,0,1,0
+// 2025,5800,5800,FixedStarBuff,ManmadeGalaxy3,,0,ManmadeGalaxy|Invisible,0|0,0,GalaxyBuff-2025,0,29,6,,0,1,0
+
+// 2000,7000,7000,GalaxyBuff,,,0,,,0,GalaxyBuff-2000,0,9,,,0,0,0
+// 2023,4000,4000,,EmptyResource,,0,,,1,GalaxyBuff-2023,0,,,,,,0
+
+// 4001,4000,4000,Player,AvoidBoardcast,HideBuff,0,,,0,,,,,,,,
+// 4002,4000,4000,Player,ReturnBoardcast,HideBuff,0,,,0,,,,,,,,
+// 4003,4000,//结晶流束,Player,,HideBuff,0,GalaxyResource|OneShot,50000|0,0,,,,,,,,
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 公开特性
+let csv1 =(`// Remote/PublicBuff,Name,Description
+
+6000,Plentyplanets,PublicBuff-6000
+6001,Fewplanets,PublicBuff-6001
+
+4001,Habitableplanets,PublicBuff-4001
+4002,Metalplanets,PublicBuff-4002
+4003,Planetswithalittleoxygen-richrocks,PublicBuff-4003
+4004,GasGiant,PublicBuff-4004
+4005,Gaslesscore,PublicBuff-4005
+
+5000,MainSequencePla(BlueDwarf),PublicBuff-5000
+5001,MainSequenceStar(YellowDwarf),PublicBuff-5001
+5002,MainSequenceStar(RedDwarf),PublicBuff-5002
+5003,GiantStar(Blue),PublicBuff-5003
+5004,GiantStar(Red),PublicBuff-5004
+5005,NeutronStar,PublicBuff-5005
+
+5006,BlackHole,PublicBuff-5006
+5007,Wreckage,PublicBuff-5007
+
+5800,ManmadeGalaxy,PublicBuff-5800
+7003,Ancientcivilization,PublicBuff-7003
+
+7001,Gravityanomaly,PublicBuff-7001
+7002,Asteroidbelt,PublicBuff-7002
+7004,Megastructures,PublicBuff-7004
+
+4000,,PublicBuff-4000
+
+// 5100,Sun,PublicBuff-5100
+// 5801,CapitalCity,PublicBuff-5801
+`)
+.split(/\n/).filter(function(e){ return /^\d/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文案描述
+let csv2 = (`// GalaxyBuff-0,,$/Description_Name_GalaxyBuff-0,,,
+
+GalaxyBuff-3000,IN_Plentyplanets,$/Description_Name_GalaxyBuff-3000,$/Description_Description_GalaxyBuff-3000,$/Description_Content_GalaxyBuff-3000,
+GalaxyBuff-3001,IN_Quitealotofplanets,$/Description_Name_GalaxyBuff-3001,$/Description_Description_GalaxyBuff-3001,$/Description_Content_GalaxyBuff-3001,
+
+GalaxyBuff-3002,IN_Fewplanets,$/Description_Name_GalaxyBuff-3002,$/Description_Description_GalaxyBuff-3002,$/Description_Content_GalaxyBuff-3002,
+GalaxyBuff-3003,IN_Quitefewplanets,$/Description_Name_GalaxyBuff-3003,$/Description_Description_GalaxyBuff-3003,$/Description_Content_GalaxyBuff-3003,
+
+GalaxyBuff-3004,IN_Soleplanet,$/Description_Name_GalaxyBuff-3004,$/Description_Description_GalaxyBuff-3004,$/Description_Content_GalaxyBuff-3004,
+
+GalaxyBuff-1,Magnificentscenes,$/Description_Name_GalaxyBuff-1,$/Description_Description_GalaxyBuff-1,$/Description_Content_GalaxyBuff-1,
+GalaxyBuff-2,Habitableplanets,$/Description_Name_GalaxyBuff-2,$/Description_Description_GalaxyBuff-2,$/Description_Content_GalaxyBuff-2,
+GalaxyBuff-3,atrociousweather,$/Description_Name_GalaxyBuff-3,$/Description_Description_GalaxyBuff-3,$/Description_Content_GalaxyBuff-3,
+
+GalaxyBuff-4,Metalplanets,$/Description_Name_GalaxyBuff-4,$/Description_Description_GalaxyBuff-4,$/Description_Content_GalaxyBuff-4,
+GalaxyBuff-5,Carbideplanets,$/Description_Name_GalaxyBuff-5,$/Description_Description_GalaxyBuff-5,$/Description_Content_GalaxyBuff-5,
+
+GalaxyBuff-6,Barrenplanets,$/Description_Name_GalaxyBuff-6,$/Description_Description_GalaxyBuff-6,$/Description_Content_GalaxyBuff-6,
+
+GalaxyBuff-7,Jovianplanets,$/Description_Name_GalaxyBuff-7,$/Description_Description_GalaxyBuff-7,$/Description_Content_GalaxyBuff-7,
+GalaxyBuff-8,Saturnianplanets,$/Description_Name_GalaxyBuff-8,$/Description_Description_GalaxyBuff-8,$/Description_Content_GalaxyBuff-8,
+
+GalaxyBuff-9,Gaslesscore,$/Description_Name_GalaxyBuff-9,$/Description_Description_GalaxyBuff-9,$/Description_Content_GalaxyBuff-9,
+
+GalaxyBuff-1000,O,$/Description_Name_GalaxyBuff-1000,$/Description_Description_GalaxyBuff-1000,$/Description_Content_GalaxyBuff-1000,
+GalaxyBuff-1001,B,$/Description_Name_GalaxyBuff-1001,$/Description_Description_GalaxyBuff-1001,$/Description_Content_GalaxyBuff-1001,
+
+GalaxyBuff-1002,A,$/Description_Name_GalaxyBuff-1002,$/Description_Description_GalaxyBuff-1002,$/Description_Content_GalaxyBuff-1002,
+GalaxyBuff-1007,Bluegiant,$/Description_Name_GalaxyBuff-1007,$/Description_Description_GalaxyBuff-1007,$/Description_Content_GalaxyBuff-1007,
+
+GalaxyBuff-1003,F,$/Description_Name_GalaxyBuff-1003,$/Description_Description_GalaxyBuff-1003,$/Description_Content_GalaxyBuff-1003,
+GalaxyBuff-1004,G,$/Description_Name_GalaxyBuff-1004,$/Description_Description_GalaxyBuff-1004,$/Description_Content_GalaxyBuff-1004,
+
+GalaxyBuff-1009,Superredgiant,$/Description_Name_GalaxyBuff-1009,$/Description_Description_GalaxyBuff-1009,$/Description_Content_GalaxyBuff-1009,
+GalaxyBuff-1008,Redgiant,$/Description_Name_GalaxyBuff-1008,$/Description_Description_GalaxyBuff-1008,$/Description_Content_GalaxyBuff-1008,
+
+GalaxyBuff-1005,K,$/Description_Name_GalaxyBuff-1005,$/Description_Description_GalaxyBuff-1005,$/Description_Content_GalaxyBuff-1005,
+GalaxyBuff-1006,M,$/Description_Name_GalaxyBuff-1006,$/Description_Description_GalaxyBuff-1006,$/Description_Content_GalaxyBuff-1006,
+
+GalaxyBuff-1010,Neutronstar,$/Description_Name_GalaxyBuff-1010,$/Description_Description_GalaxyBuff-1010,$/Description_Content_GalaxyBuff-1010,
+GalaxyBuff-1011,Pulsar,$/Description_Name_GalaxyBuff-1011,$/Description_Description_GalaxyBuff-1011,$/Description_Content_GalaxyBuff-1011,
+
+GalaxyBuff-1801,Megastructures,$/Description_Name_GalaxyBuff-1801,$/Description_Description_GalaxyBuff-1801,$/Description_Content_GalaxyBuff-1801,
+GalaxyBuff-1802,Megastructures,$/Description_Name_GalaxyBuff-1802,$/Description_Description_GalaxyBuff-1802,$/Description_Content_GalaxyBuff-1802,
+GalaxyBuff-1803,Megastructures,$/Description_Name_GalaxyBuff-1803,$/Description_Description_GalaxyBuff-1803,$/Description_Content_GalaxyBuff-1803,
+GalaxyBuff-8008,ArkDock,$/Description_Name_GalaxyBuff-8008,$/Description_Description_GalaxyBuff-8008,,
+
+GalaxyBuff-1012,Blackhole,$/Description_Name_GalaxyBuff-1012,$/Description_Description_GalaxyBuff-1012,$/Description_Content_GalaxyBuff-1012,
+GalaxyBuff-1013,Remains,$/Description_Name_GalaxyBuff-1013,$/Description_Description_GalaxyBuff-1013,$/Description_Content_GalaxyBuff-1013,
+
+GalaxyBuff-2004,Ancientindustrial,$/Description_Name_GalaxyBuff-2004,$/Description_Description_GalaxyBuff-2004,$/Description_Content_GalaxyBuff-2004,
+GalaxyBuff-2005,Ancientbuildings,$/Description_Name_GalaxyBuff-2005,$/Description_Description_GalaxyBuff-2005,$/Description_Content_GalaxyBuff-2005,
+GalaxyBuff-2006,Ancientmilitarybase,$/Description_Name_GalaxyBuff-2006,$/Description_Description_GalaxyBuff-2006,$/Description_Content_GalaxyBuff-2006,
+
+GalaxyBuff-2001,Highgravity,$/Description_Name_GalaxyBuff-2001,$/Description_Description_GalaxyBuff-2001,$/Description_Content_GalaxyBuff-2001,
+GalaxyBuff-2002,Lowgravity,$/Description_Name_GalaxyBuff-2002,$/Description_Description_GalaxyBuff-2002,$/Description_Content_GalaxyBuff-2002,
+
+GalaxyBuff-2003,Asteroidbelt,$/Description_Name_GalaxyBuff-2003,$/Description_Description_GalaxyBuff-2003,$/Description_Content_GalaxyBuff-2003,
+
+GalaxyBuff-2007,Megastructures,$/Description_Name_GalaxyBuff-2007,$/Description_Description_GalaxyBuff-2007,$/Description_Content_GalaxyBuff-2007,
+
+GalaxyBuff-2101,RelicGalaxy,$/Description_Name_GalaxyBuff-2101,$/Description_Description_GalaxyBuff-2101,$/Description_Content_GalaxyBuff-2101,
+
+GalaxyBuff-2008,OverMining1,$/Description_Name_GalaxyBuff-2008,$/Description_Description_GalaxyBuff-2008,$/Description_Content_GalaxyBuff-2008,
+GalaxyBuff-2009,OverMining2,$/Description_Name_GalaxyBuff-2009,$/Description_Description_GalaxyBuff-2009,$/Description_Content_GalaxyBuff-2009,
+GalaxyBuff-2010,OverMining3,$/Description_Name_GalaxyBuff-2010,$/Description_Description_GalaxyBuff-2010,$/Description_Content_GalaxyBuff-2010,
+GalaxyBuff-2011,OverMining4,$/Description_Name_GalaxyBuff-2011,$/Description_Description_GalaxyBuff-2011,$/Description_Content_GalaxyBuff-2011,
+
+GalaxyBuff-2017,CapitalGalaxy,$/Description_Name_GalaxyBuff-2017,$/Description_Description_GalaxyBuff-2017,$/Description_Content_GalaxyBuff-2017,
+GalaxyBuff-2015,Bourse,$/Description_Name_GalaxyBuff-2015,$/Description_Description_GalaxyBuff-2015,$/Description_Content_GalaxyBuff-2015,
+GalaxyBuff-2016,GiantLibray,$/Description_Name_GalaxyBuff-2016,$/Description_Description_GalaxyBuff-2016,$/Description_Content_GalaxyBuff-2016,
+
+GalaxyBuff-2013,WarConference,$/Description_Name_GalaxyBuff-2013,$/Description_Description_GalaxyBuff-2013,$/Description_Content_GalaxyBuff-2013,
+GalaxyBuff-2014,EmpirePort,$/Description_Name_GalaxyBuff-2014,$/Description_Description_GalaxyBuff-2014,$/Description_Content_GalaxyBuff-2014,
+GalaxyBuff-2012,CapitalCircle,$/Description_Name_GalaxyBuff-2012,$/Description_Description_GalaxyBuff-2012,$/Description_Content_GalaxyBuff-2012,
+
+GalaxyBuff-2020,ColonialCompany,$/Description_Name_GalaxyBuff-2020,$/Description_Description_GalaxyBuff-2020,$/Description_Content_GalaxyBuff-2020,
+GalaxyBuff-2019,WarContractor,$/Description_Name_GalaxyBuff-2019,$/Description_Description_GalaxyBuff-2019,$/Description_Content_GalaxyBuff-2019,
+GalaxyBuff-2021,LabourUnion,$/Description_Name_GalaxyBuff-2021,$/Description_Description_GalaxyBuff-2021,$/Description_Content_GalaxyBuff-2021,
+GalaxyBuff-2022,ScienceCity,$/Description_Name_GalaxyBuff-2022,$/Description_Description_GalaxyBuff-2022,$/Description_Content_GalaxyBuff-2022,
+GalaxyBuff-2018,Parliament,$/Description_Name_GalaxyBuff-2018,$/Description_Description_GalaxyBuff-2018,$/Description_Content_GalaxyBuff-2018,
+`)
+.split(/\n/).filter(function(e){ return /^\w/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文案描述
+let csv3 = (`// PublicBuff-0,,$/Description_Name_PublicBuff-0,,,
+
+PublicBuff-6000,OUT_Plentyplanets,$/Description_Name_PublicBuff-6000,$/Description_Description_PublicBuff-6000,,
+PublicBuff-6001,OUT_Quitefewplanets,$/Description_Name_PublicBuff-6001,$/Description_Description_PublicBuff-6001,,
+
+PublicBuff-4001,Habitableplanets,$/Description_Name_PublicBuff-4001,$/Description_Description_PublicBuff-4001,,
+PublicBuff-4002,Metalplanets,$/Description_Name_PublicBuff-4002,$/Description_Description_PublicBuff-4002,,
+PublicBuff-4003,Planetswithalittleoxygen-richrocks,$/Description_Name_PublicBuff-4003,$/Description_Description_PublicBuff-4003,,
+PublicBuff-4004,GasGiant,$/Description_Name_PublicBuff-4004,$/Description_Description_PublicBuff-4004,,
+PublicBuff-4005,Gaslesscore,$/Description_Name_PublicBuff-4005,$/Description_Description_PublicBuff-4005,,
+
+PublicBuff-5000,Bluedwarf,$/Description_Name_PublicBuff-5000,$/Description_Description_PublicBuff-5000,,
+PublicBuff-5001,Yellowdwarf,$/Description_Name_PublicBuff-5001,$/Description_Description_PublicBuff-5001,,
+PublicBuff-5002,Reddwarf,$/Description_Name_PublicBuff-5002,$/Description_Description_PublicBuff-5002,,
+PublicBuff-5003,Bluegiant,$/Description_Name_PublicBuff-5003,$/Description_Description_PublicBuff-5003,,
+PublicBuff-5004,Redgiant,$/Description_Name_PublicBuff-5004,$/Description_Description_PublicBuff-5004,,
+PublicBuff-5005,Neutronstar,$/Description_Name_PublicBuff-5005,$/Description_Description_PublicBuff-5005,,
+
+PublicBuff-5006,Blackhole,$/Description_Name_PublicBuff-5006,$/Description_Description_PublicBuff-5006,,
+PublicBuff-5007,Remains,$/Description_Name_PublicBuff-5007,$/Description_Description_PublicBuff-5007,,
+
+PublicBuff-5800,Manmade,$/Description_Name_PublicBuff-5800,$/Description_Description_PublicBuff-5800,,
+PublicBuff-7003,Ancientcivilization,$/Description_Name_PublicBuff-7003,$/Description_Description_PublicBuff-7003,,
+
+PublicBuff-7001,Gravityanomaly,$/Description_Name_PublicBuff-7001,$/Description_Description_PublicBuff-7001,,
+PublicBuff-7002,Asteroidbelt,$/Description_Name_PublicBuff-7002,$/Description_Description_PublicBuff-7002,,
+PublicBuff-7004,Megastructures,$/Description_Name_PublicBuff-7004,$/Description_Description_PublicBuff-7004,,
+
+PublicBuff-4000,,,,,
+`)
+.split(/\n/).filter(function(e){ return /^\w/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	3000 : `行星极多`			+ ` # 行星极多`, 
+	3001 : `行星较多`			+ ` # 行星较多`, 
+	3002 : `行星较少`			+ ` # 行星较少`, 
+	3003 : `行星极少`			+ ` # 行星极少`, 
+	3004 : `孤星星系`			+ ` # 孤星`, 
+	
+	1    : `宏伟景观`			+ ` # 宏伟景观`, 
+	2    : `宜居行星`			+ ` # 宜居行星`, 
+	3    : `恶劣气候`			+ ` # 恶劣气候`, 
+	
+	4    : `金属行星`			+ ` # 金属行星`, 
+	5    : `碳化行星`			+ ` # 碳化行星`, 
+	
+	6    : `贫瘠星球`			+ ` # 贫瘠星球`, 
+	
+	7    : `类木行星`			+ ` # 类木行星`, 
+	8    : `类土行星`			+ ` # 类土行星`, 
+	
+	9    : `气殒星核`			+ ` # 气殒星核`, 
+	
+	1000 : `蓝超巨星`			+ ` # 蓝超巨星`, 
+	1001 : `蓝巨星`				+ ` # 蓝巨星`, 
+	
+	1002 : `白色恒星`			+ ` # 白色恒星`, 
+	1007 : `蓝巨星`				+ ` # 蓝巨星`, 
+	
+	1003 : `黄白矮星`			+ ` # 黄白矮星`, 
+	1004 : `黄矮星`				+ ` # 黄矮星`, 
+	
+	1009 : `红超巨星`			+ ` # 红超巨星`, 
+	1008 : `红巨星`				+ ` # 红巨星`, 
+	
+	1005 : `橙矮星`				+ ` # 橙矮星`, 
+	1006 : `红矮星`				+ ` # 红矮星`, 
+	
+	1010 : `中子星`				+ ` # 中子星`, 
+	1011 : `脉冲星`				+ ` # 脉冲星`, 
+	
+	1013 : `残骸`				+ ` # 残骸`, 
+	1012 : `黑洞`				+ ` # 黑洞`, 
+	
+	1801 : `空间站`				+ ` # 小型空间站`, 
+	1802 : `人造星系`			+ ` # 人造星系`, 
+	1803 : `大人造星系`			+ ` # 大型人造星系`, 
+	8008 : `方舟船坞`			+ ` # 方舟船坞`, 
+	
+	2004 : `古代工业地`			+ ` # 古代工业地`, 
+	2005 : `古文明遗迹`			+ ` # 古代文明遗迹`, 
+	2006 : `古军事基地`			+ ` # 古代军事基地`, 
+	
+	2001 : `超高重力`			+ ` # 高重力`, 
+	2002 : `超低重力`			+ ` # 低重力`, 
+	
+	2003 : `小行星带`			+ ` # 小行星带`, 
+	
+	2007 : `巨型建筑`			+ ` # 巨型建筑`, 
+	
+	2101 : `遗迹星系`			+ ` # 遗迹星系`, 
+	
+	2008 : `过度开采01`			+ ` # 过度开采-1`, 
+	2009 : `过度开采02`			+ ` # 过度开采-2`, 
+	2010 : `过度开采03`			+ ` # 过度开采-3`, 
+	2011 : `过度开采04`			+ ` # 过度开采-4`, 
+	
+	2017 : `首都星系`			+ ` # 首都星系`, 
+	2015 : `证券中心`			+ ` # 证券中心`, 
+	2016 : `大图书馆`			+ ` # 大图书馆`, 
+	
+	2013 : `战争议堂`			+ ` # 战争议事堂`, 
+	2014 : `帝国空港`			+ ` # 帝国空港`, 
+	
+	2012 : `首都圈`				+ ` # 首都圈`, 
+	
+	2020 : `外星移民公司`		+ ` # 外星移民公司`, 
+	2019 : `战争承包商`			+ ` # 战争承包商`, 
+	2021 : `工会总部`			+ ` # 工会`, 
+	2022 : `科学城`				+ ` # 科学城`, 
+	2018 : `议会`				+ ` # 议会`, 
+	
+	6000 : `大量行星`			+ ` # 大量行星`, 
+	6001 : `少量行星`			+ ` # 少量行星`, 
+	
+	4001 : `宜居行星`			+ ` # 宜居行星`, 
+	4002 : `矿物行星`			+ ` # 矿物行星`, 
+	4003 : `低质矿物`			+ ` # 低品质矿物`, 
+	4004 : `巨型行星`			+ ` # 巨行星`, 
+	4005 : `气殒星核`			+ ` # 气殒星核`, 
+	
+	5000 : `蓝矮星`				+ ` # 蓝矮星`, 
+	5001 : `黄矮星`				+ ` # 黄矮星`, 
+	5002 : `红矮星`				+ ` # 红矮星`, 
+	5003 : `蓝巨星`				+ ` # 蓝巨星`, 
+	5004 : `红巨星`				+ ` # 红巨星`, 
+	5005 : `中子星`				+ ` # 中子星`, 
+	
+	5007 : `残骸`				+ ` # 残骸`, 
+	5006 : `黑洞`				+ ` # 黑洞`, 
+	
+	5800 : `人造星系`			+ ` # 人造星系`, 
+	7003 : `古代遗迹`			+ ` # 古代文明遗迹`, 
+	
+	7001 : `重力异常`			+ ` # 重力异常`, 
+	7002 : `小行星带`			+ ` # 小行星带`, 
+	7004 : `巨型结构`			+ ` # 巨型结构`, 
+	},
+	
+	文本描述 : {
+	
+	3000 : `星系的行星数量比一般星系更多`													+ ` # 这个星系的行星数量比一般的星系更多。`, 
+	3001 : `星系的行星数量比一般星系较多`													+ ` # 这个星系的行星数量比一般的星系更多。`, 
+	3002 : `星系的行星数量比一般星系较少`													+ ` # 这个星系的行星数量比一般的星系更少。`, 
+	3003 : `星系的行星数量比一般星系更少`													+ ` # 这个星系的行星数量比一般的星系更少。`, 
+	3004 : `星系里仅有恒星, 没有任何行星`													+ ` # 这个星系的行星数量比一般的星系更少。`, 
+	
+	1    : `景观巨大宏伟, 对移民拥有极高的吸引力`											+ ` # 巨大宏伟的景观，对移民拥有强大的吸引力。`, 
+	2    : `气候宜人, 适宜生命栖息繁衍的星球`												+ ` # 适宜生命居住的星球。`, 
+	3    : `环境恶劣, 移民的处境非常艰苦`													+ ` # 生存环境恶劣，移民处境艰苦。`, 
+	
+	4    : `绝大多数组成材质为金属的行星`													+ ` # 绝大多数组成材质为金属的行星。`, 
+	5    : `绝大多数组成材质为碳质的行星`													+ ` # 绝大多数组成材质为碳单质的行星。`, 
+	
+	6    : `这颗行星上的各种资源相当匮乏`													+ ` # 行星资源相当匮乏。`, 
+	
+	7    : `一颗类木的气巨行星`																+ ` # 一颗类木巨行星。`, 
+	8    : `一颗类土的冰巨行星`																+ ` # 一颗类土冰巨行星。`, 
+	
+	9    : `曾经是巨行星的核心`																+ ` # 曾经是一颗巨行星的核心。`, 
+	
+	1000 : `[温度/质量/亮度]最高的主序星, 高温使其呈漂亮蓝色, 部分O型恒星光谱接近B型`		+ ` # 温度最高。|质量最高。|亮度最高的主序星。|高温使其呈漂亮的蓝色。|部分O型恒星光谱接近B型。`, 
+	1001 : `星球体积庞大, 大多星等级较低, 而且泛蓝, 比较罕见, 但亮度较高, 谱线为氢氦`		+ ` # 体积庞大。|大多星等级较低。|而且泛蓝。|比较罕见。|但亮度较高。|谱线为氢氦。`, 
+	
+	1002 : `相对年轻, 白色或青白色, 体积大且自转快, 最终会演变成低温红巨星, 氢线极强`		+ ` # 相对年轻。|白色或青白色。|体积大且自转飞速。|最终会演变成低温红巨星。|氢线极强。`, 
+	1007 : `高质量的主序星, 内部的核反应速率很大, 通常为质量较小的步入老年期的主序星`		+ ` # 高质量的主序星。|其内部的核反应速率很大。|通常为质量较小的步入老年期的主序星。`, 
+	
+	1003 : `体积相当大, 也被称为黄白矮星, 经常发射出大量的紫外线, 金属元素谱线也较多`		+ ` # 体积相当大。|通常被称为黄白矮星。|经常发射出大量的紫外线辐射。|金属元素谱线较多。`, 
+	1004 : `有百亿年寿命, 虽然他们寿命短于橙矮星, 但往往是被认为更适合有机生命的存在`		+ ` # 往往有100亿年寿命。|虽然他们的寿命短于K型恒星。|但G型恒星往往被认为更加适合有机生命的存在。`, 
+	
+	1009 : `濒死的大质量恒星, 温度较低, 是宇宙中体积最大的天体, 数量罕见但容易观察到`		+ ` # 濒临死亡的大质量恒星。|温度较低。|是宇宙中体积最大的天体。|数量极为罕见。|但也非常容易观察到。`, 
+	1008 : `步入老年期的主序星, 体积将膨胀到原来的十亿倍, 正朝着白矮星或者中子星进发`		+ ` # 步入老年期的主序星。|恒星的体积将膨胀到原来的十亿倍。|朝下一阶段--白矮星或者中子星进发。`, 
+	
+	1005 : `在宇宙中非常普遍, 可在主序星列中至少存在三百亿年, 星系状态通常都非常稳定`		+ ` # 它们在宇宙中非常普遍。|可以在主序星列中至少存在300亿年。|星系状态通常都非常稳定。`, 
+	1006 : `宇宙中最为普遍的恒星类型, 亮度很低, 很难被肉眼观察到, 但拥有非常长的寿命`		+ ` # 宇宙中最为普遍的恒星类型。|往往被称为红矮星。|它们的亮度很低。|很难被肉眼观察到。|拥有非常长的寿命。`, 
+	
+	1010 : `恒星演化到末期, 重力崩溃发生超新星爆炸后形成的, 完全由中子组成, 质量极高`		+ ` # 恒星演化到末期。|经由重力崩溃发生超新星爆炸后形成的天体。|完全由中子组成。|质量极高。`, 
+	1011 : `高速旋转的中子星, 会周期性的发射脉冲信号, 直径大多为十千米左右, 自转极快`		+ ` # 高速旋转的中子星。|会周期性发射脉冲信号。|直径大多为10千米左右。|自转极快。`, 
+	
+	1013 : `星系饱经磨难, 某种巨大的灾难打击了它, 只留下各种残骸, 昔日姿态已无法辨别`		+ ` # 这个星系饱经磨难。|某种巨大的灾难打击了它。|只留下各种残骸。|昔日的姿态已无法辨别。`, 
+	1012 : `大质量恒星在死亡时塌陷形成, 重力场极强, 能够阻止一切事物逃逸出其视界边界`		+ ` # 通常由非常大质量的恒星在死亡时塌陷而形成。|具有极强的重力场。|能够阻止一切事物逃逸出其视界边界。`, 
+	
+	1801 : `小型空间站, 支架支撑着中心的结构, 旋转离心力维持着重力, 维持着百万人居住`		+ ` # 这是一个小型空间站，巨大的支架支撑着中心结构。维持着数百万人的居住。`, 
+	1802 : `大型空间站, 支架支撑着环状的结构, 使用中子堆维持着重力, 维持着千万人居住`		+ ` # 这是一个大型空间站，巨大的支架支撑着复数的环状结构，中心用中子堆维持着整体结构的重力。维持着千万人的居住。`, 
+	1803 : `巨型空间站, 支架支撑着延展的结构, 使用小型黑洞维持重力, 维持着数亿人居住`		+ ` # 这是一个巨型空间站，巨大的支架支撑着复数的复杂延展结构，中心用小型黑洞维持着整体结构的重力。维持着数亿人的居住。`, 
+	8008 : `从末日时代幸存的方舟设施, 这些失传技术, 使得整个星系就如同正常的星系一般`		+ ` # 这是一个从末日时代幸存下来的方舟设施，这些失传的技术使得整个星系如同正常的星系一般。`, 
+	
+	2004 : `星系存在古文明留下来的巨大工业设施群`											+ ` # 这个星系存在一个古代文明留下来的巨大工业设施群。`, 
+	2005 : `星系有古文明城市群, 这对我们意义重大`											+ ` # 这个星系有一个古代文明城市群。|对我们来说意义重大。`, 
+	2006 : `星系有古文明遗留的军事基地, 可被利用`											+ ` # 这个星系有一个古代文明遗留的军事基地。|仍可以为我们所用。`, 
+	
+	2001 : `该星系里的重力过高, 导致建设成本上升`											+ ` # 这个星系的各星球重力过高。|使建设成本上升。`, 
+	2002 : `该星球里的重力较小, 导致建设成本下降`											+ ` # 这个星球各星系相对重力很小。`, 
+	
+	2003 : `星系里存在着一个小行星带`														+ ` # 这个星系存在一个小行星带。`, 
+	
+	2007 : `该星系存在某种人工巨型结构`														+ ` # 这个星系存在某种人工的巨型结构。`, 
+	
+	2101 : `该星系里有远古文明遗留的遗迹`													+ ` # 远古文明遗留下来的星系`, 
+	
+	2008 : `由于以超过环境承受力的模式进行了资源开采, 所以可持续发展受到破坏`				+ ` # 由于以超过环境承受力度进行资源开采，可持续发展受到了破坏。`, 
+	2009 : `由于以超过环境承受力的模式进行了资源开采, 所以可持续发展受到破坏`				+ ` # 由于以超过环境承受力度进行资源开采，可持续发展受到了破坏。`, 
+	2010 : `由于以超过环境承受力的模式进行了资源开采, 所以可持续发展受到破坏`				+ ` # 由于以超过环境承受力度进行资源开采，可持续发展受到了破坏。`, 
+	2011 : `由于以超过环境承受力的模式进行了资源开采, 所以可持续发展受到破坏`				+ ` # 由于以超过环境承受力度进行资源开采，可持续发展受到了破坏。`, 
+	
+	2017 : `集中主义文明的中心, 星系上的特殊文明特性, 可以向首都圈内其他自然星系辐射`		+ ` # 集中主义文明的中心`, 
+	2015 : `集中主义文明的建筑"证券中心"`													+ ` # 证券中心`, 
+	2016 : `集中主义文明的建筑"大图书馆"`													+ ` # 大图书馆`, 
+	
+	2013 : `集中主义文明的建筑"战争议堂"`													+ ` # 战争议事堂`, 
+	2014 : `集中主义文明的建筑"帝国空港"`													+ ` # 帝国空港`, 
+	
+	2012 : `这是首都星系的辐射范围, 范围内的自然星系可获得首都的文明特性`					+ ` # 首都星系的辐射范围`, 
+	
+	2020 : `分权主义的建筑 Buff`															+ ` # 外星移民公司`, 
+	2019 : `分权主义的建筑 Buff`															+ ` # 战争承包商`, 
+	2021 : `分权主义的建筑 Buff`															+ ` # 工会`, 
+	2022 : `分权主义的建筑 Buff`															+ ` # 科学城`, 
+	2018 : `分权主义的建筑 Buff`															+ ` # 议会`, 
+	},
+	
+	效果影响 : {
+	
+	3000 : `行星数量 =4`																	+ ` # 星系槽位5 \n移民消耗凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	3001 : `行星数量 =3`																	+ ` # 星系槽位4 \n移民消耗凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	3002 : `行星数量 =2`																	+ ` # 星系槽位3 \n移民消耗凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	3003 : `行星数量 =1`																	+ ` # 星系槽位2 \n移民消耗凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	3004 : `行星数量 =0`																	+ ` # 星系槽位1 \n移民凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	
+	1    : `文明凝聚力 +10`																	+ ` # 文明凝聚力<quad name=Cohesion size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	2    : `文明凝聚力 + 5`																	+ ` # 文明凝聚力<quad name=Cohesion size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	3    : `文明凝聚力 - 5`																	+ ` # 文明凝聚力<quad name=Cohesion size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	4    : `星系资源产出 +20%`																+ ` # 星系产出<quad name=Resource size=20 width=1 /> <<Param%:0>>\n噪音: <<Noise>>`, 
+	5    : `星系资源储量 +30k`																+ ` # 星系资源<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	6    : `星系资源产出 -10%`																+ ` # 星系资源产出<quad name=Resource size=20 width=1 /> <<Param%:0>>\n噪音: <<Noise>>`, 
+	
+	7    : `星系资源储量 +50k`																+ ` # 星系资源<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	8    : `星系资源储量 +50k`																+ ` # 星系资源<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	9    : `星系资源储量 +30k`																+ ` # 星系资源<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	1000 : `戴森球年产量 +250`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n星系资源<quad name=Resource size=20 width=1 /> <<Param:1>>\n噪音: <<Noise>>`, 
+	1001 : `戴森球年产量 +250`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n星系资源<quad name=Resource size=20 width=1 /> <<Param:1>>\n噪音: <<Noise>>`, 
+	
+	1002 : `戴森球年产量 +250`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n星系资源<quad name=Resource size=20 width=1 /> <<Param:1>>\n噪音: <<Noise>>`, 
+	1007 : `戴森球年产量 +100<br />星系资源储量 +50k`										+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n星系资源<quad name=Resource size=20 width=1 /> <<Param:1>>\n噪音: <<Noise>>`, 
+	
+	1003 : `戴森球年产量 +200`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	1004 : `戴森球年产量 +200`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	1009 : `戴森球年产量 + 50<br />星系资源储量 +90k`										+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	1008 : `戴森球年产量 +100<br />星系资源储量 +50k`										+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	1005 : `戴森球年产量 +150`																+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	1006 : `戴森球年产量 +150<br />星系资源储量 +25k`										+ ` # 戴森球产出：<quad name=Resource size=20 width=1 /> <<Param:0>>\n噪音: <<Noise>>`, 
+	
+	1010 : `恒星无法修戴森球 <br />星系资源储量 +25k`										+ ` # 不可建造戴森球\n星系资源<quad name=Resource size=20 width=1 /> <<Param:1>>噪音: <<Noise>>`, 
+	1011 : `恒星无法修戴森球 <br />星系资源储量+120k<br />广播攻击无需广播站`				+ ` # 不可建造戴森球\n噪音: <<Noise>>`, 
+	
+	1013 : `星系资源固定为 0<br />这个星系没有行星`											+ ` # 不可建造戴森球\n噪音: <<Noise>>`, 
+	1012 : `星系资源固定为 0<br />这个星系没有行星`											+ ` # 不可建造戴森球\n噪音: <<Noise>>`, 
+	
+	1801 : `人造星系<br />建筑槽位 + 0<br />被登陆后立即销毁`								+ ` # 不可建造戴森球\n被登陆后立即销毁\n 移民凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n噪音: <<Noise>>`, 
+	1802 : `人造星系<br />建筑槽位 + 1<br />被登陆后立即销毁`								+ ` # 不可建造戴森球\n被登陆后立即销毁 移民凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n\n噪音: <<Noise>>`, 
+	1803 : `人造星系<br />建筑槽位 + 3<br />被登陆后立即销毁`								+ ` # 不可建造戴森球\n被登陆后立即销毁 移民凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n\n噪音: <<Noise>>`, 
+	8008 : `人造星系<br />建筑槽位 + 4<br />被登陆后立即销毁`								+ ` # 不能建造部分防御性高级建筑\n移民凝聚力<quad name=Cohesion size=20 width=1 /> <<ColonialCohesion>>\n\n噪音: <<Noise>>`, 
+	
+	2004 : `带古代废墟建筑<br />文明资源 + 10k`												+ ` # 文明资源<quad name=Resource size=20 width=1 /> <<Param:0>>`, 
+	2005 : `带古代废墟建筑<br />文明凝聚力 + 5`												+ ` # 文明凝聚力<quad name=Cohesion size=20 width=1 /> <<Param:0>>`, 
+	2006 : `带军事基地建筑<br />可得到军事基地`												+ ` # 得到一个军事基地。`, 
+	
+	2001 : `建筑耗费 +100%`																	+ ` # 建筑的建造花费<quad name=Resource size=20 width=1 /> <<Param%:0>>\n噪音: <<Noise>>`, 
+	2002 : `建筑耗费 - 50%`																	+ ` # 建筑的建造花费<quad name=Resource size=20 width=1 /> <<Param%:0>>\n噪音: <<Noise>>`, 
+	
+	2003 : `星系资源 + 30%`																	+ ` # 星系资源<quad name=Resource size=20 width=1 />+30%\n噪音: <<Noise>>`, 
+	
+	2007 : `被探索会直接暴露`																+ ` # 被探索后会直接暴露。`, 
+	
+	2101 : `剧情模式的特殊内容`																+ ` # 远古遗迹星系。`, 
+	
+	2008 : `星系资源产出 - 20%`																+ ` # 星系资源产出<quad name=Resource size=20 width=1 /> <<Param%:0>>。`, 
+	2009 : `星系资源产出 - 30%`																+ ` # 星系资源产出<quad name=Resource size=20 width=1 /> <<Param%:0>>。`, 
+	2010 : `星系资源产出 - 40%`																+ ` # 星系资源产出<quad name=Resource size=20 width=1 /> <<Param%:0>>。`, 
+	2011 : `星系资源产出 - 50%`																+ ` # 星系资源产出<quad name=Resource size=20 width=1 /> <<Param%:0>>。`, 
+	
+	2017 : `星系文明特性可向首都圈内自然星系辐射`											+ ` # 星系上的文明特性可向首都圈内星系辐射。`, 
+	2015 : `文明资源增长 +100`																+ ` # 文明资源增长+60。`, 
+	2016 : `文明科技增长 + 2`																+ ` # 文明科技增长+2。`, 
+	
+	2013 : `这个星系里的军事基地, 冷却时间 - 60%`											+ ` # 星系军事基地冷却时间-50%。`, 
+	2014 : `这个星系里的　太空港, 冷却时间 - 60%`											+ ` # 星系太空港冷却时间-60%。`, 
+	
+	2012 : `首都圈(半径: 60)内的自然星系都能获得首都星系的文明特性`							+ ` # 首都圈内星系同时获得首都星系上的文明特性。`, 
+	
+	2020 : `人造槽位 + 1<br />太空港的 CD -20%`												+ ` # 星系太空港冷却时间-20%。`, 
+	2019 : `人造槽位 + 1<br />军事基地 CD -20%`												+ ` # 星系军事基地冷却时间-20%。`, 
+	2021 : `星系的工厂<br />额外 +5 凝聚力`													+ ` # 星系工厂额外产出凝聚力+3。`, 
+	2022 : `星系的研究所<br />额外 +1 科技增长`												+ ` # 星系研究院额外产出科技点+1。`, 
+	2018 : `凝聚力+2, 允许<br />星系建造多个栖息地`											+ ` # 星系可建造多个栖息地。`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 分解数据
+csv1.result = new Object(), csv2.result = new Object(), csv3.result = new Object();
+csv1.forEach(function(e){ csv1.result[e[0]] = e }), csv2.forEach(function(e){ csv2.result[e[0]] = e }), csv3.forEach(function(e){ csv3.result[e[0]] = e });
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码			Remote/GalaxyBuff			1
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 公共代码			PublicBuffId				4001
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 代码备份			//PublicBuffIdBackUp		4001
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 特性类型			Tag							PlanetBuff
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 特性名称			Name						MagnificentLandscape
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 特性标记			Feature						
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 星系噪音			Noise						2
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 效果影响			Affect						Cohesion
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 影响参数			ParameterList				10
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 关联建筑			AttachBuilding				0
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';		// 文本描述			Description					GalaxyBuff-1
+	// powerTable01_tbody_html += '<td>'+ item[11] +'</td>';		// 是否有效			IsUseful					1
+	// powerTable01_tbody_html += '<td>'+ item[12] +'</td>';		// 特性分组			Grouping					1
+	// powerTable01_tbody_html += '<td>'+ item[13] +'</td>';		// 行星数量			Battery						
+	// powerTable01_tbody_html += '<td>'+ item[14] +'</td>';		// 获得建筑			BuildBuildings				
+	// powerTable01_tbody_html += '<td>'+ item[15] +'</td>';		// 出现权重			Probability					5
+	// powerTable01_tbody_html += '<td>'+ item[16] +'</td>';		// 单个行星			OneBattery					0
+	// powerTable01_tbody_html += '<td>'+ item[17] +'</td>';		// 能否销毁			CanBorn						1
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	item.公共代码 = item[1];
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.特性分组 = item[12] === '' ? '-' : item[12];
+	item.出现权重 = item[15] === '' ? '-' : item[15];
+	
+	item.项目名称 = textList.项目名称[item.项目代码];
+	item.文本描述 = textList.文本描述[item.项目代码];
+	item.效果影响 = textList.效果影响[item.项目代码];
+	
+	item.公共名称 = (function(){
+		let result = textList.项目名称[item.公共代码];
+		if(result === undefined){ result = 'None' } else 
+		if(item.项目代码 === '3004'){ result = '没有行星' };
+		return result;
+	})();
+	item.图标名称 = (function(){
+		let result = csv3.result['PublicBuff-' + item.公共代码][1];
+		if(result === ''){ result = 'None' }else if(item.项目代码 === '3004'){ result = 'OUT_Lonelylanets' };
+		return result;
+	})();
+	
+	item.天体数量 = item[13] !== '' ? item[13] : '-';
+	item.图片名称 = csv2.result['GalaxyBuff-'+item.项目代码][1];
+	
+	item.星系噪音 = (item[6] === '0' && item.出现权重 === '-') ? '-' : item[6];
+	item.关联建筑 = (item[9] === '1' || ['2101','2013','2014','2012',].includes(item.项目代码)) ? '✔' : '-';
+	
+	item.特性类型 = (function(){
+		if(item[3] === ''){ return '-' }
+		else{ return {GalaxyBuff:'星系', FixedStarBuff
+		:'恒星', PlanetBuff:'行星', BatteryBuff:'槽位', }[item[3]] };
+	})();
+	item.特性函数 = (function(){
+		let 函数对象 = {};
+		let 功能数组 = item[7].split('|');
+		let 参数数组 = item[8].split('|');
+		功能数组.forEach(function(v, i){ 函数对象[v] = 参数数组[i] });
+		return 函数对象;
+	})();
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/starBuff/inner/${item.图片名称}.png' style='width:96;height:96px;' />">
+		<img loading="lazy" alt="${item.项目名称}" src="../static/image/starBuff/inner/${item.图片名称}.png" style="width:64px;height:64px;" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	item.公共图标 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="left" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="<img loading='lazy' alt='${item.公共名称}' src='../static/image/starBuff/outer/${item.图标名称}.png' style='width:64;height:64px;' />">
+		<img loading="lazy" alt="${item.公共名称}" src="../static/image/starBuff/outer/${item.图标名称}.png" style="width:32px;height:32px;" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.特性分组) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.特性类型) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.出现权重) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.星系噪音) +'</td>';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.公共图标;
+	powerTable01_tbody_html += '<td>'+ (item.公共代码 +'') +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.公共名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.效果影响, true) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.天体数量) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.关联建筑) +'</td>';
+	
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 关联建筑
+let attrSelect01_Option = [
+	['✔',				'✔',				],
+	['✘',				'✘',				],
+];
+
+// 公共图标
+let attrSelect02_Option = [
+	['有',				'有',				],
+	['无',				'无',				],
+];
+
+// 特性类型
+let attrSelect03_Option = [
+	['槽位',			'槽位',				],
+	['行星',			'行星',				],
+	['恒星',			'恒星',				],
+	['星系',			'星系',				],
+];
+
+// 常见属性
+let attrSelect04_Option = [
+	['行星数量',		'行星数量',			],
+	['凝聚力值',		'凝聚力值',			],
+	['产出影响',		'产出影响',			],
+	['星系资源',		'星系资源',			],
+	['戴森球产',		'戴森球产',			],
+	['建筑需求',		'建筑需求',			],
+	['人造星系',		'人造星系',			],
+	['添加建筑',		'添加建筑',			],
+];
+
+// 获取对象
+let jqi_nameInput01 = $('#nameInput01'), jqi_nameCheck01 = $('#nameCheck01'), jqi_resetButton = $('#resetButton');
+let str_emptyOption = '<option value="empty" selected="selected" style="background-color:#f5f5f5;">None</option>';
+
+// 创建元素
+let jqi_attrSelect01 = $('#attrSelect01').html(str_emptyOption + attrSelect01_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect02 = $('#attrSelect02').html(str_emptyOption + attrSelect02_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect03 = $('#attrSelect03').html(str_emptyOption + attrSelect03_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+let jqi_attrSelect04 = $('#attrSelect04').html(str_emptyOption + attrSelect04_Option.map(function(e){ return '<option value="'+ e[0] +'">'+ e[1] +'</option>' }).join(''));
+
+// ---------------------------------------------
+
+// 获取 tbody 和 tr
+let jqi_table01_tbody = $('#powerTable01 tbody'), jqi_table01_tbody_tr = jqi_table01_tbody.find('tr');
+
+// 创建无结果的节点
+let jqi_empty_result_tr = $(/*html*/`<tr index="-1" group="-1" style="height: 65px;" class="emptyTr">
+<td colSpan="99"><span>没有任何匹配的结果!<br />There Are No Any Matching Results!</span></td></tr>`);
+
+// 创建总筛选的函数
+let filterFunction = function(){
+	
+	// 将要展示的tr合集
+	let trShowIndexArray = [];
+	
+	// 表单元素当前的值
+	let jqi_attrSelect01_value = jqi_attrSelect01.val();
+	let jqi_attrSelect02_value = jqi_attrSelect02.val();
+	let jqi_attrSelect03_value = jqi_attrSelect03.val();
+	let jqi_attrSelect04_value = jqi_attrSelect04.val();
+	
+	// 获取匹配项的索引
+	jqi_nameInput01.val().trim()
+	.split(/ {1,}/).forEach(function(text){
+		csv0.forEach(function(item){
+			if(item !== 'blankRow' && (item.项目名称.
+			includes(text) === true || item.文本描述.includes(text) === true)){
+				
+				// 关联建筑
+				if(jqi_attrSelect01_value !== 'empty'){
+					if(jqi_attrSelect01_value === '✔' && item.关联建筑 === '-'){ return };
+					if(jqi_attrSelect01_value === '✘' && item.关联建筑 !== '-'){ return };
+				};
+				
+				// 公共图标
+				if(jqi_attrSelect02_value !== 'empty'){
+					if(jqi_attrSelect02_value === '有' && item.公共代码 === '4000'){ return };
+					if(jqi_attrSelect02_value === '无' && item.公共代码 !== '4000'){ return };
+				};
+				
+				// 特性类型
+				if(jqi_attrSelect03_value !== 'empty'){
+					if(jqi_attrSelect03_value === '槽位' && item.特性类型 !== '槽位'){ return };
+					if(jqi_attrSelect03_value === '行星' && item.特性类型 !== '行星'){ return };
+					if(jqi_attrSelect03_value === '恒星' && item.特性类型 !== '恒星'){ return };
+					if(jqi_attrSelect03_value === '星系' && item.特性类型 !== '星系'){ return };
+				};
+				
+				// 常见属性
+				if(jqi_attrSelect04_value !== 'empty'){
+					
+					if(jqi_attrSelect04_value === '行星数量' 
+					&& item.特性函数.SlotEqual === undefined && item.特性函数.Empty === undefined){ return };
+					if(jqi_attrSelect04_value === '凝聚力值' && item.特性函数.Cohesion === undefined){ return };
+					if(jqi_attrSelect04_value === '添加建筑' && item.特性函数.AddBuilding === undefined){ return };
+					
+					if(jqi_attrSelect04_value === '人造星系' && item.特性函数.ManmadeGalaxy === undefined){ return };
+					if(jqi_attrSelect04_value === '建筑需求' && item.特性函数.GalaxyBuildCostRate === undefined){ return };
+					if(jqi_attrSelect04_value === '戴森球产' && item.特性函数.FixedStarResourceOutput === undefined){ return };
+					if(jqi_attrSelect04_value === '产出影响' && item.特性函数.GalaxyResourceOutputExtraRate === undefined){ return };
+					
+					if(jqi_attrSelect04_value === '星系资源' 
+					&& item.特性函数.Resource === undefined 
+					&& item.特性函数.Noresource === undefined 
+					&& item.特性函数.GalaxyResource === undefined 
+					&& item.特性函数.GalaxyResourceRate === undefined
+					){ return };
+					
+				};
+				
+				// 符合条件
+				trShowIndexArray.push(
+				String(item.项目序号));
+				
+			};
+		});
+	});
+	
+	// 根据结果显示隐藏
+	if(trShowIndexArray.length === 0){
+		jqi_table01_tbody_tr.addClass('hideTr');
+		jqi_empty_result_tr.removeClass('hideTr' );
+		jqi_table01_tbody.append(jqi_empty_result_tr);
+	}else{
+		jqi_empty_result_tr.remove();
+		jqi_table01_tbody_tr.each(function(index, value){
+			if(trShowIndexArray.includes(value.getAttribute('index')) 
+			=== true){ value.classList.remove('hideTr') }else{ value.classList.add('hideTr') };
+		});
+	};
+	
+	// 合并同类设置高亮
+	xj2._groupedSet(jqi_powerTable01);
+	
+};
+
+// 绑定表单控件操作
+[jqi_attrSelect01, jqi_attrSelect02, jqi_attrSelect03, jqi_attrSelect04, ].forEach(function(
+jqi_select){ jqi_select.on('change', function(){ filterFunction() }) });
+jqi_nameInput01.on('input', function(){ filterFunction() });
+jqi_resetButton.on('click', function(){
+	jqi_nameInput01.val('');
+	[jqi_attrSelect01, jqi_attrSelect02, jqi_attrSelect03, jqi_attrSelect04, ].forEach(function(
+	jqi_select){ jqi_select.find('option:first').prop('selected', true) });
+	jqi_empty_result_tr.remove();
+	filterFunction();
+});
+
+// 自动执行一次筛选
+filterFunction();
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+
