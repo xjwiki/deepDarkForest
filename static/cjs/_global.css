@@ -189,6 +189,10 @@ details > content > *:last-child{margin-bottom:0;}
 .powerTable tbody td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle;}
 .powerTable tbody td:first-child{border-left:1px solid #ccc;}
 
+/* 分组高亮 */
+html:not([class*=xj-base]) .tr-group{background-color:#fafafa;}
+html[class~="xj-base-black"] .tr-group{background-color:#2e2e2e;}
+
 /* document.getElementById('trLength01').textContent = trShowIndexArray.length;
 <tfoot><tr><td>项目统计</td><td id="trLength01" colSpan="99"></td></tr></tfoot>
 .powerTable tfoot td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#fff;box-shadow:0 -1px 0 #ccc;}

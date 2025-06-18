@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>文明头像</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>文明头像</span><small>(图标背景)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 固定图标</h2>
+
+<p>
+	01. 下表罗列了游戏中可能出现的文明头像图标, 数量共计为 <c>101</c>;<br />
+	02. 文明头像是由"固定图标"加"可选背景"构成, 其中的图标和文明主义挂钩, 相同主义则图标也相同;<br />
+	03. 这些图标均由内在的主图加外部的轮廓构成, 可作为判断文明主义类型的参考(具有相同主义的文明则[主图/轮廓]会有类似的地方);<br />
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:128px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width:254px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:128px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width:254px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 可选背景</h2>
+
+<p>
+	01. 下表罗列了游戏中可能出现的文明头像背景, 数量共有 <c>42</c> 项;<br />
+	02. 项目代码介于 1 ~ 20 的背景, 是系统初始就自带的, 而其它背景则需要使用"中枢数据"进行解锁;<br />
+	03. 解锁顺序随机, 但需求会提升, 具体如下, [21~25:100/26~30:300/31~40:600/41~42:900], 解锁所有背景共需要 <c>9800</c> 中枢数据;<br />
+</p>
+
+<table originalSort="1" id="powerTable02" class="powerTable table-xs table-hover showPart01 table-striped" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading03">03. 额外拓展</h2>
+
+<p>生成原理: 在创造文明或培育文明时, 均可自由选择背景, 如果没选择就随机, 但无论是哪种情况, 都不会出现未被解锁的背景, 而文明头像的图标因为是由文明的主义所决定, 所以图标就无法自由选择了, 得到了什么主义的文明, 头像图标就是什么, 也就是说, 主义相同的两个文明, 头像背景可能不同, 但头像图标肯定是一样的, 可通过头像图标来判断敌人的主义类型, 然后针对性进行攻防策略的调整;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+.hidePack{display:none;}
+.hideDetail{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+csv 都是由图片地址生成
+逻辑都已经在地址中确定, 所以也就没有其他内容
+
+*/
+
+// 文明图标
+let csv0 = (`// ImageName,ImageName,
+
+1,2
+1_11,2_11
+1_3,2_3
+1_4,2_4
+1_5,2_5
+1_6,2_6
+1_7,2_7
+1_8,2_8
+1_9,2_9
+1_10,2_10
+
+3,4
+3_11,4_11
+3_1,4_1
+3_2,4_2
+3_5,4_5
+3_6,4_6
+3_7,4_7
+3_8,4_8
+3_9,4_9
+3_10,4_10
+
+5,6
+5_11,6_11
+5_1,6_1
+5_2,6_2
+5_3,6_3
+5_4,6_4
+5_7,6_7
+5_8,6_8
+5_9,6_9
+5_10,6_10
+
+7,8
+7_11,8_11
+7_1,8_1
+7_2,8_2
+7_3,8_3
+7_4,8_4
+7_5,8_5
+7_6,8_6
+7_9,8_9
+7_10,8_10
+
+9,10
+9_11,10_11
+9_1,10_1
+9_2,10_2
+9_3,10_3
+9_4,10_4
+9_5,10_5
+9_6,10_6
+9_7,10_7
+9_8,10_8
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文明边框
+let csv1 = (`// ImageName,
+
+1,2,3,4,5,6
+7,8,9,10,11,12
+13,14,15,16,17,18
+19,20,21,22,23,24
+25,26,27,28,29,30
+31,32,33,34,35,36
+37,38,39,40,41,42
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	主义类型 : {
+	
+	0 : `无主义`, 
+	1 : `精神`, 
+	2 : `物质`, 
+	3 : `集中`, 
+	4 : `分权`, 
+	5 : `尚武`, 
+	6 : `和平`, 
+	7 : `孤立`, 
+	8 : `亲外`, 
+	9 : `生态`, 
+	10 : `生产`, 
+	11 : `狂热`, 
+	},
+	
+	边框类型 : {
+	
+	0 : `初始自带`,
+	1 : `需要解锁`,
+	},
+
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 图片名称			ImageName,			1,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 图片名称			ImageName,			2,
+	
+	// -----------------------------------------
+		
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+		
+	// 数据处理
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	item.forEach(function(value, index){
+		
+		let 图片地址 = value;
+		
+		let [主义码01, 主义码02, 
+		] = 图片地址.split('_');
+		
+		let 主义类型 = (function(){
+			if(主义码02 === undefined){ return textList.主义类型[主义码01] };
+			if(主义码02 === '11'){ return '狂热'+ textList.主义类型[主义码01] }else
+			{ return (textList.主义类型[主义码01] +' ＋ '+ textList.主义类型[主义码02]) };
+		})();
+		
+		powerTable01_tbody_html += /*html*/`
+		<td class="followTip" style="padding:0;" xjTip-align="right" 
+			xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+			xjTip-html="<img loading='lazy' alt='${主义类型}' src='../static/image/civImage/inner/${图片地址}.png' style='width:128px;height:128px;' />">
+			            <img loading="lazy" alt="${主义类型}" src="../static/image/civImage/inner/${图片地址}.png" style="width: 64px;height: 64px;" />
+		</td>`.replace(/\t|\n/g, '');
+		powerTable01_tbody_html += '<td>'+ ((item.项目序号 + 1) + (index * 50)) +'</td>';
+		powerTable01_tbody_html += '<td>'+ xj2._hideText(主义类型) +'</td>';
+		powerTable01_tbody_html += '<td>'+ (图片地址) +'</td>';
+		
+	});
+	
+	powerTable01_tbody_html += '</tr>';
+	
+	// 无主义项
+	if(powerTable01_index + 1 !== 50){ return };
+	powerTable01_tbody_html += /*html*/`
+	<tr index="50" group="5" style="height: 65px;">
+		<td class="followTip" style="padding:0;" xjtip-align="right" 
+			xjtip-duration="0" xjtip-followmouse="true" xjtip-arrow="false" xjtip-shadow="false" 
+			xjtip-html="<img loading='lazy' alt='无主义' src='../static/image/civImage/inner/0.png' style='width:128px;height:128px;' />">
+						<img loading="lazy" alt="无主义" src="../static/image/civImage/inner/0.png" style="width: 64px;height: 64px;" />
+		</td><td>101</td><td>无主义</td><td>0</td><td>-</td>
+		<td>102</td><td>-</td><td>-</td>
+	</tr>`.replace(/\t|\n/g, '');
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable02 = $('#powerTable02');
+let powerTable02_tbody_html = '';
+let powerTable02_group = -1;
+let powerTable02_index = -1;
+
+// 生成表格
+csv1.forEach(function(item, index){
+	
+	// powerTable02_tbody_html += '<td>'+ item[0] +'</td>';			// 图片名称			ImageName,			1,
+	
+	// -----------------------------------------
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv1[index+1] !== 'blankRow'){
+		powerTable02_group+=1};
+		return;
+	}else{
+		powerTable02_index +=1;
+	};
+	
+	// -----------------------------------------
+		
+	// 数据处理
+	item.项目序号 = powerTable02_index;
+	item.数据分组 = powerTable02_group;
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable02_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	item.forEach(function(value, index){
+		
+		powerTable02_tbody_html += /*html*/`
+		<td class="followTip" style="padding:0;" xjTip-align="right" 
+			xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+			xjTip-html="<img loading='lazy' alt='${value}' src='../static/image/civImage/outer/${value}.png' style='width:128px;height:128px;' />">
+			            <img loading="lazy" alt="${value}" src="../static/image/civImage/outer/${value}.png" style="width: 64px;height: 64px;" />
+		</td>`.replace(/\t|\n/g, '');
+		
+		powerTable02_tbody_html += '<td>'+ ((item.项目序号+1)+(index*7)) +'</td>';
+		powerTable02_tbody_html += '<td>'+ (value) +'</td>';
+		
+	});
+	
+	powerTable02_tbody_html += '</tr>';
+		
+});
+$('#powerTable02 tbody').html(powerTable02_tbody_html);
+xj2._buildPowerTable('powerTable02');
+$('.followTip').xjTip();
+
+// 动态高亮
+// xj2._groupedSet(jqi_powerTable02);
+// jqi_powerTable02.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable02) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 固定图标</a>
+			<a href="#heading02">02. 可选背景</a>
+			<a href="#heading03">03. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

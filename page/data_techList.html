@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -27,7 +27,7 @@
 function(){ FastClick.attach(document.body) }, false);</script>
 <script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
 
-<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
 <script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
 
 <script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -208,7 +208,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <section><h2 id="heading02">02. 额外拓展</h2>
 
-<p>科技类型: 游戏中的每个科技项都有它归属的科技类型, 而科技类型可被分为两大类, 既通用科技类型和特殊科技类型, 通用科技类型共有 <c>10</c> 个子类, 它们是所有文明都可以使用的, 特殊科技类型共有 <c>20</c> 个子类, 它们需要文明拥有特殊主义才可启用, 而特殊主义则取决于创建文明时, 某项主义是否达到了标准, 由于创建文明的机制颇为复杂, 此处无法展开描述, 更多细节可前往文明页面自行查阅;</p>
+<p>科技类型: 游戏中的每个科技项都有它归属的科技类型, 而科技类型可被分为两大类, 既通用科技类型和特殊科技类型, 通用科技类型共有 <c>10</c> 个子类, 它们是所有文明都可以使用的, 特殊科技类型共有 <c>20</c> 个子类, 它们需要文明拥有特殊主义才可启用, 而特殊主义则取决于创造文明时, 某项主义是否达到了标准, 由于创造文明的机制颇为复杂, 此处无法展开描述, 更多细节可前往文明页面自行查阅;</p>
 
 <p>解锁类型: 科技项需要用科技点解锁, 科技项归属的科技类型, 也可能需要用科技点解锁(特殊科技类型除外, 它们是自动解锁的), 通用科技类型, 默认初始就只有"发展"是自动解锁的, 其余则需要耗费科技点, 首次解锁任意科技类型要 <c>100</c> 科技点, 第二次是 <c>100*2</c>, 第三次是 <c>100*3</c>, 以此类推, 越往后就需要越多的科技点, 解锁所有通用科技类型, 共计需要的科技点为 <c>100+200+…+800+900=4500</c>;</p>
 
@@ -250,7 +250,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>10. 星系被毁: 当文明的某个星系被毁之后(也包含人造星系), 有机会获得科技点, 收益数值与该星系的槽位数量和建筑类型相关, 具体算法如下 <c>每个建筑×10 + 每个有效槽位×50 + 每个巨型结构×200 + 每个建筑的建造成本÷100×200</c>, 其中的建筑并不包括景观障碍以及尚未修建完毕的, 其中的槽位并不包括尚未被拓展的和正在拓展中的, 每个建筑的建造成本÷100×200的最大结果值被限定在 <c>800</c>, 最终的结果还会再加上一个 <c>0</c> 到 <c>100</c> 的随机值, 这个事件每触发一次, 结果值就会 <c>-500</c>, 该事件的触发概率衰减参数为 <c>0.25</c>, 也就是说, 在一局游戏中最多可以触发 <c>4</c> 次, 每次触发后, 第二次触发的概率都会 <c>-25%</c>, 总之就是, 除了第一次以外, 之后星系被毁就不一定能获得收益了, 以上是选择一次性收益的情况, 你也可以将收益换成科技增长, 这个的算法可以看后面"14. 触发阈值"的内容;</p>
 
-<p>11. 爆发内战: 当文明爆发内战之后(压力值 <c>>50k</c> 所导致), 有机会获得科技点, 收益数值与此次丢失的星系数量相关, 具体算法如下 <c>失去的星系数量 × 500</c>, 最后再加上一个 <c>0</c> 到 <c>100</c> 的随机值, 该事件的触发概率衰减参数为 <c>0.5</c>, 也就是说, 一局游戏最多可以触发 <c>2</c> 次, 首次触发该事件必定会有收益, 触发过 2 次之后就再也不会触发了, 以上是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 关于内战的细节是, 当文明的压力值大于五万就会爆发内战, 尽管内战会直接降低压力, 但也会导致该文明立刻失去一半的星系(具体数量向下取整), 这些丢失的星系会变成有人在但无归属的情况, 尽管丢失的星系可通过登陆攻击并重新殖民占领回来, 但如果爆发内战时, 该文明只剩一个星系, 则这局游戏可能直接失败;</p>
+<p>11. 爆发内战: 当文明爆发内战之后(压力值 <c>>50k</c> 所导致), 有机会获得科技点, 收益数值与此次丢失的星系数量相关, 具体算法如下 <c>失去的星系数量 × 500</c>, 最后再加上一个 <c>0</c> 到 <c>100</c> 的随机值, 该事件的触发概率衰减参数为 <c>0.5</c>, 也就是说, 一局游戏最多可以触发 <c>2</c> 次, 首次触发该事件必定会有收益, 触发过 2 次之后就再也不会触发了, 以上是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 关于内战的细节是, 当文明的压力值大于五万就会爆发内战, 尽管内战会直接降低压力, 但也会导致该文明立刻失去一半的星系(具体数量向下取整), 这些丢失的星系会变成有人在但无归属的情况, 尽管丢失的星系可通过登陆攻击并重新殖民占领回来, 但如果爆发内战时, 该文明的星系少于三, 那么这局游戏将直接失败;</p>
 
 <p>12. 文明覆灭: 当文明被覆灭(在满足条件下触发了继承衣钵), 有机会获得科技点, 数值会在 <c>3000</c> 到 <c>3500</c> 之间取随机数, 该事件的触发概率衰减参数为 <c>1</c>, 也就是说, 一局游戏里虽然可能出现多次继承衣钵, 但奖励科技点的情况就仅限第一次, 以上是选择一次性收益的情况, 类似星系被毁, 该事件也有将收益换成科技增长的选项, 这个的算法可以看后面"14. 触发阈值"的内容, 关于继承的细节是, 如果战场上还存在未被殖民的原始星系, 且游戏还处于限定的年份内(具体年份不详), 则该文明就有可能触发"继承衣钵"事件, 文明会转移到随机的原始星系重新开始(会保留已解锁的科技项), 你也可以将它称为"秽土转生", 总之, 深暗森林是存在绝境反杀的, 并非丢失所有星系就直接完蛋, 如果初期触发了这个事件, 可能反而更赚, 但不要尝试入场就直接废弃所在星系求死, 这种行为是不会触事件的;</p>
 
@@ -2368,7 +2368,7 @@ let textList = {
 	
 	'101318' : `"库存中心"凝聚力 + 3`																																					+ ` # 库存中心”额外产出凝聚力 <<Param:1>>。`, 
 	
-	'101319' : `库存资源 > 20k, 科技点增长 + 2`																																			+ ` # 当库存资源><<Param:0>>，增加默认科技点增长<<Param:1>>。`, 
+	'101319' : `库存资源 > 20k, 科技点增长 + 3`																																			+ ` # 当库存资源><<Param:0>>，增加默认科技点增长<<Param:1>>。`, 
 	
 	'101323' : `与其他文明贸易则资源 +6k, 一个文明限一次`																																+ ` # 当与其他文明贸易时即刻获得<<Param:0>>资源（一个文明限一次）。`, 
 	
@@ -2966,7 +2966,7 @@ filterFunction();
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
 </div>
 </div>
 </div>

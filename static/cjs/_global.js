@@ -170,8 +170,13 @@ window.xj2._buildPowerTable = function(tableID){
 
 // 表格原始文本处理
 window.xj2._hideText = function(text, encode){
+	
+	if(typeof(text) !== 'string'){ return text };
 	if(encode !== true){ return (text.replace(/ # /, '<h>') + '</h>') };
-	return text.replace(/ # ([\s\S]+)/, function($0, $1){ return ('<h>'+ $1.replace(/</g,'&lt;').replace(/>/g,'&gt;') +'</h>') });
+	
+	return text.replace(/ # ([\s\S]+)/, function($0, $1)
+	{ return ('<h>'+ $1.replace(/</g,'&lt;').replace(/>/g,'&gt;') +'</h>') });
+	
 };
 
 // 动态高亮表格背景
@@ -179,12 +184,12 @@ window.xj2._groupedSet = function(jqi_powerTable){
 	
 	// 获取行并移除高亮
 	let jqi_tr = jqi_powerTable
-	.find('tbody tr').removeClass('tr-active');
+	.find('tbody tr').removeClass('tr-group');
 	
 	// 高亮首个非隐藏行
 	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
 		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
-		jqi_tr.eq(i01).addClass('tr-active');
+		jqi_tr.eq(i01).addClass('tr-group');
 		break;
 	};
 	
@@ -204,13 +209,13 @@ window.xj2._groupedSet = function(jqi_powerTable){
 			if(thisRow.getAttribute('group') === prevRow.getAttribute('group')){ oneGroup = true };
 			
 			// 如果上一行和当前行同类则同步
-			if(oneGroup === true ){ if(prevRow.classList.contains('tr-active') === true ){
-				thisRow.classList.add('tr-active') }; break;
+			if(oneGroup === true ){ if(prevRow.classList.contains('tr-group') === true ){
+				thisRow.classList.add('tr-group') }; break;
 			};
 			
 			// 如果非同类则高亮取反跳出循环
-			if(oneGroup === false){ if(prevRow.classList.contains('tr-active') === false){
-				thisRow.classList.add('tr-active') }; break;
+			if(oneGroup === false){ if(prevRow.classList.contains('tr-group') === false){
+				thisRow.classList.add('tr-group') }; break;
 			};
 			
 		};
@@ -220,11 +225,12 @@ window.xj2._groupedSet = function(jqi_powerTable){
 };
 
 // 合并表格同类的行
-window.xj2._rowSpanSet = function(jqi_powerTable, nth){
+window.xj2._rowSpanSet = function(jqi_powerTable, nthValue, flag){
 	
 	// 项目表格行和节点
 	let jqi_tr = jqi_powerTable.find('tbody tr');
-	let jqi_td0 = jqi_tr.find('td:nth-of-type('+nth+')').removeClass('hideTd').removeAttr('rowSpan');
+	if(typeof(nthValue) === 'boolean'){ [nthValue,flag,] = [flag,nthValue,] };
+	let jqi_td0 = jqi_tr.find('td:nth-of-type('+nthValue+')').removeClass('hideTd').removeAttr('rowSpan');
 	
 	// 遍历表格的所有行
 	for(let i01=0, l01=jqi_tr.length; i01<l01; i01++){
@@ -232,7 +238,7 @@ window.xj2._rowSpanSet = function(jqi_powerTable, nth){
 		// 当前行被隐藏, 那无需计算直接跳过
 		if(jqi_tr.get(i01).classList.contains('hideTr') === true){ continue };
 		
-		// 创建 rowSpan, 获取"科技名称"的值
+		// 创建 rowSpan, 获取当前行的分组值
 		let rowSpanValue = 1, groupValue = jqi_tr.get(i01).getAttribute('group');
 		
 		// 从当前行开始, 再次遍历后面所有行
@@ -243,6 +249,11 @@ window.xj2._rowSpanSet = function(jqi_powerTable, nth){
 			
 			// 下行不隐藏但不同组则循环终止
 			if(jqi_tr.get(i02).getAttribute('group') !== groupValue){ break };
+			
+			// 下行同组不隐藏但值不同也中止
+			if(flag === true){ if(jqi_tr.
+			get(i02).children[nthValue-1].textContent 
+			!== jqi_tr.get(i01).children[nthValue-1].textContent){ break } };
 			
 			// 下行不隐藏且同组则 rowSpan+1
 			jqi_td0.get(i02).classList.add('hideTd'); rowSpanValue += 1;
@@ -298,63 +309,20 @@ xj2._dirRepeatAnchor = $(/*html*/`
 			<li><a href="./${istIndex?'page/':''}data_makeArea.html">			<i class="xjDir-icon fas fa-podcast"></i>				<i class="xjDir-text"><span>区域设定</span></i></a></li>
 			<li class="xjDir-divide"></li>
 			
-			<!--◇
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-brain"></i>					<i class="xjDir-text"><span>思潮特质</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-list-check"></i>			<i class="xjDir-text"><span>议会任务</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>文明特性</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>创建文明</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civItems.html">			<i class="xjDir-icon fas fa-square-check"></i>			<i class="xjDir-text"><span>文明选项</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civStory.html">			<i class="xjDir-icon fas fa-scroll"></i>				<i class="xjDir-text"><span>文明故事</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civNamed.html">			<i class="xjDir-icon fas fa-address-card"></i>			<i class="xjDir-text"><span>文明名称</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civModel.html">			<i class="xjDir-icon fas fa-file-fragment"></i>			<i class="xjDir-text"><span>文明模版</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civImage.html">			<i class="xjDir-icon fas fa-circle-user"></i>			<i class="xjDir-text"><span>文明头像</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_civParam.html">			<i class="xjDir-icon fas fa-sliders"></i>				<i class="xjDir-text"><span>文明参数</span></i></a></li>
 			<li class="xjDir-divide"></li>
-			◇-->
 			
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>议会任务</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>思潮特质</span></i></a></li>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>外交行动</span></i></a></li>
-			<li class="xjDir-divide"></li>
-			
+			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>议会任务</span></i></a></li>
+			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>难度差异</span></i></a></li>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>商品属性</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>关卡记录</span></i></a></li>
 			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>成就系统</span></i></a></li>
-			
-			<!--◇
-			<li><a href="./${istIndex?'page/':''}data_mecha_list.html">			<i class="xjDir-icon fas fa-robot"></i>					<i class="xjDir-text"><span>机体详情</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_mecha_main.html">			<i class="xjDir-icon fas fa-user-gear"></i>				<i class="xjDir-text"><span>主体强化</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_mecha_foot.html">			<i class="xjDir-icon fas fa-gauge-high"></i>			<i class="xjDir-text"><span>足部强化</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_mecha_hang.html">			<i class="xjDir-icon fas fa-shield-halved"></i>			<i class="xjDir-text"><span>机身挂件</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_mecha_mend.html">			<i class="xjDir-icon fas fa-screwdriver-wrench"></i>	<i class="xjDir-text"><span>机体改造</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_mecha_frag.html">			<i class="xjDir-icon fas fa-bomb"></i>					<i class="xjDir-text"><span>投掷物品</span></i></a></li>
-			<li class="xjDir-divide"></li>
-			
-			<li><a href="./${istIndex?'page/':''}data_pilot_intro.html">		<i class="xjDir-icon fas fa-people-group"></i>			<i class="xjDir-text"><span>主角小队</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_pilot_think.html">		<i class="xjDir-icon fas fa-book-open-reader"></i>		<i class="xjDir-text"><span>思潮影响</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_pilot_loyal.html">		<i class="xjDir-icon fas fa-heart"></i>					<i class="xjDir-text"><span>忠诚好感</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_pilot_jewel.html">		<i class="xjDir-icon fas fa-gem"></i>					<i class="xjDir-text"><span>饰品装备</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_pilot_skill.html">		<i class="xjDir-icon fas fa-star"></i>					<i class="xjDir-text"><span>战场技能</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_pilot_level.html">		<i class="xjDir-icon fas fa-medal"></i>					<i class="xjDir-text"><span>军衔等级</span></i></a></li>
-			<li class="xjDir-divide"></li>
-			
-			<li><a href="./${istIndex?'page/':''}data_enemy_info.html">			<i class="xjDir-icon fas fa-skull"></i>					<i class="xjDir-text"><span>敌军情报</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_enemy_group.html">		<i class="xjDir-icon fas fa-users-line"></i>			<i class="xjDir-text"><span>编队建制</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_enemy_plot.html">			<i class="xjDir-icon fas fa-list-ol"></i>				<i class="xjDir-text"><span>剧情模式</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_enemy_mode.html">			<i class="xjDir-icon fas fa-list-check"></i>			<i class="xjDir-text"><span>特殊遭遇</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_enemy_outer.html">		<i class="xjDir-icon far fa-paste"></i>					<i class="xjDir-text"><span>外勤任务</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_enemy_rest.html">			<i class="xjDir-icon fas fa-calendar-days"></i>			<i class="xjDir-text"><span>假日安排</span></i></a></li>
-			<li class="xjDir-divide"></li>
-			
-			<li><a href="./${istIndex?'page/':''}data_manage_defenses.html">	<i class="xjDir-icon fas fa-chess-rook"></i>			<i class="xjDir-text"><span>城防设施</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_manage_strategy.html">	<i class="xjDir-icon fas fa-plane-up"></i>				<i class="xjDir-text"><span>战略支援</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_manage_renovate.html">	<i class="xjDir-icon fas fa-chair"></i>					<i class="xjDir-text"><span>家具清单</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_manage_material.html">	<i class="xjDir-icon fas fa-recycle"></i>				<i class="xjDir-text"><span>回收废料</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_manage_expenses.html">	<i class="xjDir-icon fas fa-money-bill"></i>			<i class="xjDir-text"><span>费用计算</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_manage_building.html">	<i class="xjDir-icon fas fa-warehouse"></i>				<i class="xjDir-text"><span>基地部门</span></i></a></li>
-			<li class="xjDir-divide"></li>
-			
-			<li><a href="./${istIndex?'page/':''}data_others_priority.html">	<i class="xjDir-icon fas fa-scale-balanced"></i>		<i class="xjDir-text"><span>商品权重</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_others_achieved.html">	<i class="xjDir-icon fas fa-trophy"></i>				<i class="xjDir-text"><span>成就系统</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_others_advanced.html">	<i class="xjDir-icon fas fa-sliders"></i>				<i class="xjDir-text"><span>奖惩机制</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_others_dialogue.html">	<i class="xjDir-icon fas fa-comment-dots"></i>			<i class="xjDir-text"><span>台词对白</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_others_parlance.html">	<i class="xjDir-icon fas fa-tags"></i>					<i class="xjDir-text"><span>术语提示</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_others_question.html">	<i class="xjDir-icon fas fa-circle-question"></i>		<i class="xjDir-text"><span>问题合集</span></i></a></li>
-			◇-->
+			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>关卡记录</span></i></a></li>
 		</ul>
 	</li>
 	
@@ -375,10 +343,6 @@ xj2._dirRepeatAnchor = $(/*html*/`
 			<li><a href="./${istIndex?'page/':''}ertra_wiki_update.html">							<i class="xjDir-icon fas fa-rotate"></i>				<i class="xjDir-text"><span>网站更新</span></i></a></li>
 			<li><a target="_blank" href="https://steamcommunity.com/app/1312900/images/">			<i class="xjDir-icon fas fa-paintbrush"></i>			<i class="xjDir-text"><span>艺术作品</span></i></a></li>
 			<li><a target="_blank" href="https://steamcommunity.com/app/1312900/workshop/">			<i class="xjDir-icon fas fa-puzzle-piece"></i>			<i class="xjDir-text"><span>创意工坊</span></i></a></li>
-			<!--
-			<li class="xjDir-disabled"><a href="./${istIndex?'page/':''}extra_modify_save.html">	<i class="xjDir-icon fas fa-code"></i>					<i class="xjDir-text"><span>修改存档</span></i></a></li>
-			<li class="xjDir-disabled"><a href="./${istIndex?'page/':''}ertra_good_mod.html">		<i class="xjDir-icon fas fa-puzzle-piece"></i>			<i class="xjDir-text"><span>模组推荐</span></i></a></li>
-			-->
 		</ul>
 	</li>
 	

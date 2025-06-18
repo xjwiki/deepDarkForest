@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>文明名称</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>文明名称</span><small>(称呼构成)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 下表罗列了游戏中可能出现的文明名称后缀, 数量共计为 <c>101</c>;<br />
+	02. 文明名称是由"随机前缀"加"固定后缀"构成, 其中的后缀和文明主义挂钩, 相同主义则后缀也相同;<br />
+	03. 了解后缀名称, 有助于在对战中快速判断敌人的主义类型(尤其是狂热主义), 继而采取不同的战略, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
+</p>
+
+<table originalSort="0" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width:256px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>规则字符</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>主义码一</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 64px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>主义码二</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:256px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>主义类型</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:256px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明后缀</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<table originalSort="0" id="powerTable02" class="powerTable table-xs table-hover showPart01 table-striped" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明前缀</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<p>随机前缀: 上表就是文明名称中可能出现的所有随机前缀, 目前共计有 <c>53</c> 个, 我们可以在其中看到许多经典科幻作品中的地名或组织名称, 例如塔图因(ID:19), 这是《星球大战》中天行者阿纳金出生的星球, 例如自由惑星(ID:29), 这是《银河英雄传说》中的某个组织名称, 不知你能识别出其中的几个, 但不管如何, 随机前缀对文明的游戏性并无影响, 你也没法通过前缀判断出什么来, 只是趣味而已;</p>
+
+<p>固定后缀: 如果你想在游戏中战胜敌人(尤其是在联机中取得胜利), 那你最好是记一下十个狂热主义的后缀, 因为狂热主义文明往往拥有更强大或极端的科技, 这也使得他们更难对付, 如果你能提前判断出对方的主义, 并针对性的调整攻防策略, 则获胜概率必定有所提升;</p>
+
+<p>地球文明: 游戏初始自带的地球文明不受以上命名规则的影响, 因为这个文明是一个特殊项, 它的名称是被固定的, 而且也无法被删除;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+.hidePack{display:none;}
+.hideDetail{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+文明后缀.csv
+/CivilSystem/CivleName2 和 name 是相同的, 
+由于"文明后缀"的文本经过省略后, 变得和 /CivilSystem/CivleName2 相同, 因此 name 可以去掉
+
+*/
+
+// 文明后缀
+let csv0 = (`// /CivilSystem/CivleName2,ID,name,Thought1,Thought2
+
+Essence_Min-none,12,$/CivilSystem/CivleName2_name_Essence_Min-none,1,0
+Essence_Max-none,2,$/CivilSystem/CivleName2_name_Essence_Max-none,2,0
+Rule_Min-none,34,$/CivilSystem/CivleName2_name_Rule_Min-none,3,0
+Rule_Max-none,24,$/CivilSystem/CivleName2_name_Rule_Max-none,4,0
+Military_Min-none,56,$/CivilSystem/CivleName2_name_Military_Min-none,5,0
+Military_Max-none,46,$/CivilSystem/CivleName2_name_Military_Max-none,6,0
+Diplomacy_Min-none,78,$/CivilSystem/CivleName2_name_Diplomacy_Min-none,7,0
+Diplomacy_Max-none,68,$/CivilSystem/CivleName2_name_Diplomacy_Max-none,8,0
+Development_Min-none,100,$/CivilSystem/CivleName2_name_Development_Min-none,9,0
+Development_Max-none,90,$/CivilSystem/CivleName2_name_Development_Max-none,10,0
+
+Essence_Min-,11,$/CivilSystem/CivleName2_name_Essence_Min-,1,11
+Essence_Max-,1,$/CivilSystem/CivleName2_name_Essence_Max-,2,11
+Rule_Min-,31,$/CivilSystem/CivleName2_name_Rule_Min-,3,11
+Rule_Max-,21,$/CivilSystem/CivleName2_name_Rule_Max-,4,11
+Military_Min-,51,$/CivilSystem/CivleName2_name_Military_Min-,5,11
+Military_Max-,41,$/CivilSystem/CivleName2_name_Military_Max-,6,11
+Diplomacy_Min-,71,$/CivilSystem/CivleName2_name_Diplomacy_Min-,7,11
+Diplomacy_Max-,61,$/CivilSystem/CivleName2_name_Diplomacy_Max-,8,11
+Development_Min-,91,$/CivilSystem/CivleName2_name_Development_Min-,9,11
+Development_Max-,81,$/CivilSystem/CivleName2_name_Development_Max-,10,11
+
+Essence_Min-Rule_Min,14,$/CivilSystem/CivleName2_name_Essence_Min-Rule_Min,1,3
+Essence_Min-Rule_Max,13,$/CivilSystem/CivleName2_name_Essence_Min-Rule_Max,1,4
+Essence_Min-Military_Min,16,$/CivilSystem/CivleName2_name_Essence_Min-Military_Min,1,5
+Essence_Min-Military_Max,15,$/CivilSystem/CivleName2_name_Essence_Min-Military_Max,1,6
+Essence_Min-Diplomacy_Min,18,$/CivilSystem/CivleName2_name_Essence_Min-Diplomacy_Min,1,7
+Essence_Min-Diplomacy_Max,17,$/CivilSystem/CivleName2_name_Essence_Min-Diplomacy_Max,1,8
+Essence_Min-Development_Min,20,$/CivilSystem/CivleName2_name_Essence_Min-Development_Min,1,9
+Essence_Min-Development_Max,19,$/CivilSystem/CivleName2_name_Essence_Min-Development_Max,1,10
+
+Essence_Max-Rule_Min,4,$/CivilSystem/CivleName2_name_Essence_Max-Rule_Min,2,3
+Essence_Max-Rule_Max,3,$/CivilSystem/CivleName2_name_Essence_Max-Rule_Max,2,4
+Essence_Max-Military_Min,6,$/CivilSystem/CivleName2_name_Essence_Max-Military_Min,2,5
+Essence_Max-Military_Max,5,$/CivilSystem/CivleName2_name_Essence_Max-Military_Max,2,6
+Essence_Max-Diplomacy_Min,8,$/CivilSystem/CivleName2_name_Essence_Max-Diplomacy_Min,2,7
+Essence_Max-Diplomacy_Max,7,$/CivilSystem/CivleName2_name_Essence_Max-Diplomacy_Max,2,8
+Essence_Max-Development_Min,10,$/CivilSystem/CivleName2_name_Essence_Max-Development_Min,2,9
+Essence_Max-Development_Max,9,$/CivilSystem/CivleName2_name_Essence_Max-Development_Max,2,10
+
+Rule_Min-Essence_Min,33,$/CivilSystem/CivleName2_name_Rule_Min-Essence_Min,3,1
+Rule_Min-Essence_Max,32,$/CivilSystem/CivleName2_name_Rule_Min-Essence_Max,3,2
+Rule_Min-Military_Min,36,$/CivilSystem/CivleName2_name_Rule_Min-Military_Min,3,5
+Rule_Min-Military_Max,35,$/CivilSystem/CivleName2_name_Rule_Min-Military_Max,3,6
+Rule_Min-Diplomacy_Min,38,$/CivilSystem/CivleName2_name_Rule_Min-Diplomacy_Min,3,7
+Rule_Min-Diplomacy_Max,37,$/CivilSystem/CivleName2_name_Rule_Min-Diplomacy_Max,3,8
+Rule_Min-Development_Min,40,$/CivilSystem/CivleName2_name_Rule_Min-Development_Min,3,9
+Rule_Min-Development_Max,39,$/CivilSystem/CivleName2_name_Rule_Min-Development_Max,3,10
+
+Rule_Max-Essence_Min,23,$/CivilSystem/CivleName2_name_Rule_Max-Essence_Min,4,1
+Rule_Max-Essence_Max,22,$/CivilSystem/CivleName2_name_Rule_Max-Essence_Max,4,2
+Rule_Max-Military_Min,26,$/CivilSystem/CivleName2_name_Rule_Max-Military_Min,4,5
+Rule_Max-Military_Max,25,$/CivilSystem/CivleName2_name_Rule_Max-Military_Max,4,6
+Rule_Max-Diplomacy_Min,28,$/CivilSystem/CivleName2_name_Rule_Max-Diplomacy_Min,4,7
+Rule_Max-Diplomacy_Max,27,$/CivilSystem/CivleName2_name_Rule_Max-Diplomacy_Max,4,8
+Rule_Max-Development_Min,30,$/CivilSystem/CivleName2_name_Rule_Max-Development_Min,4,9
+Rule_Max-Development_Max,29,$/CivilSystem/CivleName2_name_Rule_Max-Development_Max,4,10
+
+Military_Min-Essence_Min,53,$/CivilSystem/CivleName2_name_Military_Min-Essence_Min,5,1
+Military_Min-Essence_Max,52,$/CivilSystem/CivleName2_name_Military_Min-Essence_Max,5,2
+Military_Min-Rule_Min,55,$/CivilSystem/CivleName2_name_Military_Min-Rule_Min,5,3
+Military_Min-Rule_Max,54,$/CivilSystem/CivleName2_name_Military_Min-Rule_Max,5,4
+Military_Min-Diplomacy_Min,58,$/CivilSystem/CivleName2_name_Military_Min-Diplomacy_Min,5,7
+Military_Min-Diplomacy_Max,57,$/CivilSystem/CivleName2_name_Military_Min-Diplomacy_Max,5,8
+Military_Min-Development_Min,60,$/CivilSystem/CivleName2_name_Military_Min-Development_Min,5,9
+Military_Min-Development_Max,59,$/CivilSystem/CivleName2_name_Military_Min-Development_Max,5,10
+
+Military_Max-Essence_Min,43,$/CivilSystem/CivleName2_name_Military_Max-Essence_Min,6,1
+Military_Max-Essence_Max,42,$/CivilSystem/CivleName2_name_Military_Max-Essence_Max,6,2
+Military_Max-Rule_Min,45,$/CivilSystem/CivleName2_name_Military_Max-Rule_Min,6,3
+Military_Max-Rule_Max,44,$/CivilSystem/CivleName2_name_Military_Max-Rule_Max,6,4
+Military_Max-Diplomacy_Min,48,$/CivilSystem/CivleName2_name_Military_Max-Diplomacy_Min,6,7
+Military_Max-Diplomacy_Max,47,$/CivilSystem/CivleName2_name_Military_Max-Diplomacy_Max,6,8
+Military_Max-Development_Min,50,$/CivilSystem/CivleName2_name_Military_Max-Development_Min,6,9
+Military_Max-Development_Max,49,$/CivilSystem/CivleName2_name_Military_Max-Development_Max,6,10
+
+Diplomacy_Min-Essence_Min,73,$/CivilSystem/CivleName2_name_Diplomacy_Min-Essence_Min,7,1
+Diplomacy_Min-Essence_Max,72,$/CivilSystem/CivleName2_name_Diplomacy_Min-Essence_Max,7,2
+Diplomacy_Min-Rule_Min,75,$/CivilSystem/CivleName2_name_Diplomacy_Min-Rule_Min,7,3
+Diplomacy_Min-Rule_Max,74,$/CivilSystem/CivleName2_name_Diplomacy_Min-Rule_Max,7,4
+Diplomacy_Min-Military_Min,77,$/CivilSystem/CivleName2_name_Diplomacy_Min-Military_Min,7,5
+Diplomacy_Min-Military_Max,76,$/CivilSystem/CivleName2_name_Diplomacy_Min-Military_Max,7,6
+Diplomacy_Min-Development_Min,80,$/CivilSystem/CivleName2_name_Diplomacy_Min-Development_Min,7,9
+Diplomacy_Min-Development_Max,79,$/CivilSystem/CivleName2_name_Diplomacy_Min-Development_Max,7,10
+
+Diplomacy_Max-Essence_Min,63,$/CivilSystem/CivleName2_name_Diplomacy_Max-Essence_Min,8,1
+Diplomacy_Max-Essence_Max,62,$/CivilSystem/CivleName2_name_Diplomacy_Max-Essence_Max,8,2
+Diplomacy_Max-Rule_Min,65,$/CivilSystem/CivleName2_name_Diplomacy_Max-Rule_Min,8,3
+Diplomacy_Max-Rule_Max,64,$/CivilSystem/CivleName2_name_Diplomacy_Max-Rule_Max,8,4
+Diplomacy_Max-Military_Min,67,$/CivilSystem/CivleName2_name_Diplomacy_Max-Military_Min,8,5
+Diplomacy_Max-Military_Max,66,$/CivilSystem/CivleName2_name_Diplomacy_Max-Military_Max,8,6
+Diplomacy_Max-Development_Min,70,$/CivilSystem/CivleName2_name_Diplomacy_Max-Development_Min,8,9
+Diplomacy_Max-Development_Max,69,$/CivilSystem/CivleName2_name_Diplomacy_Max-Development_Max,8,10
+
+Development_Min-Essence_Min,93,$/CivilSystem/CivleName2_name_Development_Min-Essence_Min,9,1
+Development_Min-Essence_Max,92,$/CivilSystem/CivleName2_name_Development_Min-Essence_Max,9,2
+Development_Min-Rule_Min,95,$/CivilSystem/CivleName2_name_Development_Min-Rule_Min,9,3
+Development_Min-Rule_Max,94,$/CivilSystem/CivleName2_name_Development_Min-Rule_Max,9,4
+Development_Min-Military_Min,97,$/CivilSystem/CivleName2_name_Development_Min-Military_Min,9,5
+Development_Min-Military_Max,96,$/CivilSystem/CivleName2_name_Development_Min-Military_Max,9,6
+Development_Min-Diplomacy_Min,99,$/CivilSystem/CivleName2_name_Development_Min-Diplomacy_Min,9,7
+Development_Min-Diplomacy_Max,98,$/CivilSystem/CivleName2_name_Development_Min-Diplomacy_Max,9,8
+
+Development_Max-Essence_Min,83,$/CivilSystem/CivleName2_name_Development_Max-Essence_Min,10,1
+Development_Max-Essence_Max,82,$/CivilSystem/CivleName2_name_Development_Max-Essence_Max,10,2
+Development_Max-Rule_Min,85,$/CivilSystem/CivleName2_name_Development_Max-Rule_Min,10,3
+Development_Max-Rule_Max,84,$/CivilSystem/CivleName2_name_Development_Max-Rule_Max,10,4
+Development_Max-Military_Min,87,$/CivilSystem/CivleName2_name_Development_Max-Military_Min,10,5
+Development_Max-Military_Max,86,$/CivilSystem/CivleName2_name_Development_Max-Military_Max,10,6
+Development_Max-Diplomacy_Min,89,$/CivilSystem/CivleName2_name_Development_Max-Diplomacy_Min,10,7
+Development_Max-Diplomacy_Max,88,$/CivilSystem/CivleName2_name_Development_Max-Diplomacy_Max,10,8
+
+none-none,101,$/CivilSystem/CivleName2_name_none-none,0,0
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文明名字
+let csv1 = (`// /CivilSystem/CivleName,name
+1,$/CivilSystem/CivleName_name_1
+5,$/CivilSystem/CivleName_name_5
+10,$/CivilSystem/CivleName_name_10
+13,$/CivilSystem/CivleName_name_13
+15,$/CivilSystem/CivleName_name_15
+18,$/CivilSystem/CivleName_name_18
+21,$/CivilSystem/CivleName_name_21
+22,$/CivilSystem/CivleName_name_22
+24,$/CivilSystem/CivleName_name_24
+27,$/CivilSystem/CivleName_name_27
+28,$/CivilSystem/CivleName_name_28
+30,$/CivilSystem/CivleName_name_30
+31,$/CivilSystem/CivleName_name_31
+33,$/CivilSystem/CivleName_name_33
+36,$/CivilSystem/CivleName_name_36
+37,$/CivilSystem/CivleName_name_37
+38,$/CivilSystem/CivleName_name_38
+39,$/CivilSystem/CivleName_name_39
+40,$/CivilSystem/CivleName_name_40
+44,$/CivilSystem/CivleName_name_44
+45,$/CivilSystem/CivleName_name_45
+46,$/CivilSystem/CivleName_name_46
+48,$/CivilSystem/CivleName_name_48
+49,$/CivilSystem/CivleName_name_49
+50,$/CivilSystem/CivleName_name_50
+53,$/CivilSystem/CivleName_name_53,//
+2,$/CivilSystem/CivleName_name_2
+3,$/CivilSystem/CivleName_name_3
+7,$/CivilSystem/CivleName_name_7
+8,$/CivilSystem/CivleName_name_8
+9,$/CivilSystem/CivleName_name_9
+12,$/CivilSystem/CivleName_name_12
+14,$/CivilSystem/CivleName_name_14
+17,$/CivilSystem/CivleName_name_17
+19,$/CivilSystem/CivleName_name_19
+20,$/CivilSystem/CivleName_name_20
+32,$/CivilSystem/CivleName_name_32
+34,$/CivilSystem/CivleName_name_34
+35,$/CivilSystem/CivleName_name_35
+41,$/CivilSystem/CivleName_name_41
+42,$/CivilSystem/CivleName_name_42
+43,$/CivilSystem/CivleName_name_43
+47,$/CivilSystem/CivleName_name_47
+52,$/CivilSystem/CivleName_name_52,//
+4,$/CivilSystem/CivleName_name_4
+6,$/CivilSystem/CivleName_name_6
+11,$/CivilSystem/CivleName_name_11
+23,$/CivilSystem/CivleName_name_23
+26,$/CivilSystem/CivleName_name_26
+29,$/CivilSystem/CivleName_name_29,//
+16,$/CivilSystem/CivleName_name_16
+25,$/CivilSystem/CivleName_name_25
+51,$/CivilSystem/CivleName_name_51,//
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	文明后缀 : {
+	
+	'Essence_Min-none' : `教廷`,
+	'Essence_Max-none' : `委员会`,
+	'Rule_Min-none' : `君主国`, 
+	'Rule_Max-none' : `联合国`,
+	'Military_Min-none' : `军团`, 
+	'Military_Max-none' : `自治区`, 
+	'Diplomacy_Min-none' : `主权国`, 
+	'Diplomacy_Max-none' : `集合`, 
+	'Development_Min-none' : `保护区`, 
+	'Development_Max-none' : `公司`, 
+	
+	'Essence_Min-' : `敬神勋爵`,
+	'Essence_Max-' : `科学理事会`,
+	'Rule_Min-' : `帝国`,
+	'Rule_Max-' : `人民共和国`,
+	'Military_Min-' : `军事政府`, 
+	'Military_Max-' : `调停者`, 
+	'Diplomacy_Min-' : `净化委员会`, 
+	'Diplomacy_Max-' : `共同体`, 
+	'Development_Min-' : `和谐国`, 
+	'Development_Max-' : `巨型企业`, 
+	
+	'Essence_Min-Rule_Min' : `法庭`,
+	'Essence_Min-Rule_Max' : `神权共和国`,
+	'Essence_Min-Military_Min' : `十字军`,
+	'Essence_Min-Military_Max' : `祈福团`,
+	'Essence_Min-Diplomacy_Min' : `苦行僧`,
+	'Essence_Min-Diplomacy_Max' : `传教士`,
+	'Essence_Min-Development_Min' : `教廷`,
+	'Essence_Min-Development_Max' : `教团`,
+	
+	'Essence_Max-Rule_Min' : `学阀`,
+	'Essence_Max-Rule_Max' : `机械师工会`,
+	'Essence_Max-Military_Min' : `基地`,
+	'Essence_Max-Military_Max' : `研讨会`,
+	'Essence_Max-Diplomacy_Min' : `研究机构`,
+	'Essence_Max-Diplomacy_Max' : `调查团`,
+	'Essence_Max-Development_Min' : `延续体`,
+	'Essence_Max-Development_Max' : `工业中枢`,
+	
+	'Rule_Min-Essence_Min' : `教皇国`, 
+	'Rule_Min-Essence_Max' : `王朝`, 
+	'Rule_Min-Military_Min' : `征服帝国`, 
+	'Rule_Min-Military_Max' : `大公国`, 
+	'Rule_Min-Diplomacy_Min' : `幕府`, 
+	'Rule_Min-Diplomacy_Max' : `都护府`, 
+	'Rule_Min-Development_Min' : `王国`, 
+	'Rule_Min-Development_Max' : `财阀`, 
+	
+	'Rule_Max-Essence_Min' : `神圣联合`,
+	'Rule_Max-Essence_Max' : `委任国`,
+	'Rule_Max-Military_Min' : `公约国`,
+	'Rule_Max-Military_Max' : `联盟`,
+	'Rule_Max-Diplomacy_Min' : `联合`,
+	'Rule_Max-Diplomacy_Max' : `星际联合`,
+	'Rule_Max-Development_Min' : `联合体`,
+	'Rule_Max-Development_Max' : `贸易联盟`,
+	
+	'Military_Min-Essence_Min' : `骑士团`, 
+	'Military_Min-Essence_Max' : `战争机器`, 
+	'Military_Min-Rule_Min' : `军阀`, 
+	'Military_Min-Rule_Max' : `战争议会`, 
+	'Military_Min-Diplomacy_Min' : `统治体`, 
+	'Military_Min-Diplomacy_Max' : `星际联盟`, 
+	'Military_Min-Development_Min' : `重工`, 
+	'Military_Min-Development_Max' : `军工`, 
+	
+	'Military_Max-Essence_Min' : `神寺`, 
+	'Military_Max-Essence_Max' : `技术同盟`, 
+	'Military_Max-Rule_Min' : `自治同盟`, 
+	'Military_Max-Rule_Max' : `特别行政区`, 
+	'Military_Max-Diplomacy_Min' : `休战区`, 
+	'Military_Max-Diplomacy_Max' : `使徒`, 
+	'Military_Max-Development_Min' : `田园`, 
+	'Military_Max-Development_Max' : `工厂`, 
+	
+	'Diplomacy_Min-Essence_Min' : `审判庭`, 
+	'Diplomacy_Min-Essence_Max' : `统合国`, 
+	'Diplomacy_Min-Rule_Min' : `封建国`, 
+	'Diplomacy_Min-Rule_Max' : `可汗部落`, 
+	'Diplomacy_Min-Military_Min' : `意志帝国`, 
+	'Diplomacy_Min-Military_Max' : `和平官僚`, 
+	'Diplomacy_Min-Development_Min' : `独立体`, 
+	'Diplomacy_Min-Development_Max' : `保留区`, 
+	
+	'Diplomacy_Max-Essence_Min' : `教士`, 
+	'Diplomacy_Max-Essence_Max' : `探险家`, 
+	'Diplomacy_Max-Rule_Min' : `联合王国`, 
+	'Diplomacy_Max-Rule_Max' : `联邦`, 
+	'Diplomacy_Max-Military_Min' : `合众国`, 
+	'Diplomacy_Max-Military_Max' : `部落`, 
+	'Diplomacy_Max-Development_Min' : `公园`, 
+	'Diplomacy_Max-Development_Max' : `合作组织`, 
+	
+	'Development_Min-Essence_Min' : `圣地`, 
+	'Development_Min-Essence_Max' : `基因库`, 
+	'Development_Min-Rule_Min' : `栖息地`, 
+	'Development_Min-Rule_Max' : `文化中心`, 
+	'Development_Min-Military_Min' : `净化区`, 
+	'Development_Min-Military_Max' : `策展人`, 
+	'Development_Min-Diplomacy_Min' : `宁静国`, 
+	'Development_Min-Diplomacy_Max' : `物种库`, 
+	
+	'Development_Max-Essence_Min' : `商团`, 
+	'Development_Max-Essence_Max' : `科研中心`, 
+	'Development_Max-Rule_Min' : `宗主国`, 
+	'Development_Max-Rule_Max' : `股份公司`, 
+	'Development_Max-Military_Min' : `佣兵公会`, 
+	'Development_Max-Military_Max' : `工业集团`, 
+	'Development_Max-Diplomacy_Min' : `有限公司`, 
+	'Development_Max-Diplomacy_Max' : `跨国贸易公司`, 
+	
+	'none-none' : `国`, 
+	
+	0 : `无主义`, 
+	
+	1 : `精神`, 
+	2 : `物质`, 
+	3 : `集中`, 
+	4 : `分权`, 
+	5 : `尚武`, 
+	6 : `和平`, 
+	7 : `孤立`, 
+	8 : `亲外`, 
+	9 : `生态`, 
+	10 : `生产`, 
+	11 : `狂热`, 
+	},
+	
+	文明名字 : {
+	
+	1  : `泰伦`, 
+	5  : `卡莱`, 
+	10 : `星海`, 
+	13 : `那卜`, 
+	15 : `恩朵`, 
+	18 : `塔金`, 
+	21 : `藿斯`, 
+	22 : `兰多`, 
+	24 : `第三`, 
+	27 : `赫特`, 
+	28 : `奥创`, 
+	30 : `深空`, 
+	31 : `广域`, 
+	33 : `猎手`, 
+	36 : `西若`, 
+	37 : `海慈`, 
+	38 : `地苍`, 
+	39 : `炎赫`, 
+	40 : `兰宇`, 
+	44 : `北方`, 
+	45 : `苍蓝`, 
+	46 : `视界`, 
+	48 : `混沌`, 
+	49 : `虚无`, 
+	50 : `虚空`, 
+	53 : `大地`, 
+	
+	2  : `莫里亚`, 
+	3  : `尤摩加`, 
+	7  : `净化员`, 
+	8  : `塔达林`, 
+	9  : `银河系`, 
+	12 : `有机体`, 
+	14 : `科洛桑`, 
+	17 : `赛泊庭`, 
+	19 : `塔图因`, 
+	20 : `奥德朗`, 
+	32 : `沉默人`, 
+	34 : `歌颂人`, 
+	35 : `舞蹈人`, 
+	41 : `仙女座`, 
+	42 : `仙王座`, 
+	43 : `水瓶座`, 
+	47 : `逃亡者`, 
+	52 : `雅典娜`, 
+	
+	4  : `阿特拉斯`, 
+	6  : `奈拉齐姆`, 
+	11 : `碳基生命`, 
+	23 : `第一秩序`, 
+	26 : `泰拉提安`, 
+	29 : `自由惑星`, 
+	
+	16 : `吉奥诺西斯`, 
+	25 : `格罗尔菲芘`, 
+	51 : `普罗米修斯`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 规则字符			/CivilSystem/CivleName2,		Essence_Max-,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 项目代码			ID,								1,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 文明后缀			name,							$/CivilSystem/CivleName2_name_Essence_Max-,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 主义码一			Thought1,						2,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 主义码二			Thought2,						11,
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.项目代码 = item[1];
+	item.规则字符 = item[0];
+	item.文明后缀 = textList.文明后缀[item.规则字符];
+	
+	item.主义码一 = item[3];
+	item.主义码二 = item[4];
+	item.主义类型 = (function(){
+		if(item.主义码二 === '0'){ return textList.文明后缀[item.主义码一] };
+		if(item.主义码二 === '11'){ return '狂热' + textList.文明后缀[item.主义码一] }
+		else{ return (textList.文明后缀[item.主义码一] +' ＋ '+ textList.文明后缀[item.主义码二]) };
+	})();
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 40px;">';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.规则字符) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.主义码一) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.主义码二) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.主义类型) +'</td>';
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文明后缀, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+// $('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable02 = $('#powerTable02');
+let powerTable02_tbody_html = '';
+let powerTable02_group = -1;
+let powerTable02_index = -1;
+
+// 生成表格
+csv1.forEach(function(item, index){
+	
+	// powerTable02_tbody_html += '<td>'+ item[0] +'</td>';			// 	项目代码	/CivilSystem/CivleName,		1,
+	// powerTable02_tbody_html += '<td>'+ item[1] +'</td>';			// 	文明前缀	name,						$/CivilSystem/CivleName_name_1
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv1[index+1] !== 'blankRow'){
+		powerTable02_group+=1};
+		return;
+	}else{
+		powerTable02_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 范围限定
+	if(index > 10){ return };
+	
+	// 数据处理
+	item.项目序号 = powerTable02_index;
+	item.数据分组 = powerTable02_group;
+	
+	let currentIndex = index;
+	item.项目代码01 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀01 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码01.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	currentIndex = index+ 10;
+	item.项目代码02 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀02 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码02.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	currentIndex = index+ 20;
+	item.项目代码03 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀03 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码03.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	currentIndex = index+ 30;
+	item.项目代码04 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀04 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码04.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	currentIndex = index+ 40;
+	item.项目代码05 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀05 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码05.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	currentIndex = index+ 50;
+	item.项目代码06 = Array.isArray(csv1[currentIndex]) ? csv1[currentIndex][0] : '-';
+	item.文明前缀06 = Array.isArray(csv1[currentIndex]) ? textList.文明名字[item.项目代码06.replace('$/CivilSystem/CivleName_name_', '')] : '-';
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable02_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 40px;">';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 00) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码01)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀01) +'</td>';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 10) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码02)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀02) +'</td>';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 20) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码03)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀03) +'</td>';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 30) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码04)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀04) +'</td>';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 40) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码05)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀05) +'</td>';
+	
+	powerTable02_tbody_html += '<td>'+ (item.项目序号 + 1 + 50) +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.项目代码06)     +'</td>';
+	powerTable02_tbody_html += '<td>'+ (item.文明前缀06) +'</td>';
+	
+	powerTable02_tbody_html += '</tr>';
+	
+});
+$('#powerTable02 tbody').html(powerTable02_tbody_html);
+xj2._buildPowerTable('powerTable02');
+// $('.followTip').xjTip();
+
+// 动态高亮
+// xj2._groupedSet(jqi_powerTable02);
+// jqi_powerTable02.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable02) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>文明参数</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>文明参数</span><small>(杂项内容)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 创造失败</h2>
+
+<p>
+	在创造文明时, 你需要确保[本质/统治/军事/外交/发展]这五项属性的范围值介于 <c>-9 ~ +9</c> 之间, 并且最终技术 <c>>= 15</c> 而稳定始终 <c>> 1</c>, 否则创建就会失败, 而下面所展示的, 就是创造失败后的描述文本, 系统会根据不同的失败因素, 告诉你原因, 且在不同的时代([古典时代/产业时代/太空时代]), 描述也是不一样的, 虽然这些并不影响游戏, 你可以通过按钮折叠或展开它们: 
+	<button style="width:72px;margin-left:0px;" class="button-unset" type="button" onclick="$('details').attr('open', !0)"><i class="fa fa-eye" style="opacity:0.5;margin-right:8px;"></i>展开</button>
+	<button style="width:72px;margin-left:0px;" class="button-unset" type="button" onclick="$('details').attr('open', !1)"><i class="fa fa-eye-slash" style="opacity:0.5;margin-right:8px;"></i>折叠</button>
+</p>
+
+<!--◇
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>条件规则</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:autox;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>古典时代</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:autox;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>产业时代</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:autox;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>太空时代</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+◇-->
+
+<div class="details-pack">
+<details id="event_10"><summary><span>01. 本质 <= -10</span><span style="margin-left:auto;opacity:0.25;">ID: 10</span></summary>
+	<content>
+		<h>11	10	本质 <= -10	我们醉心于自己的信仰，帮我们找到了生命的意义，但也让我们抛弃了思考的习惯。	我们越来越醉心于自我的陶醉，否定外界的一切。否定科学的成就，否定技术的进步，迫害科学家，打压进步思想。直到我们的技术发展彻底停滞。	我们越来越醉心于自我的陶醉，否定外界的一切。祷告苦行的生活持续了数个世纪，直到一次惊世骇俗的事件，只因说服人们进入所谓的“天堂”，而引发的一次全民自杀。</h>
+		<p>古典时代: 我们醉心于自己的信仰, 这能够帮我们找到了生命的意义, 但也让我们抛弃了思考的习惯. </p>
+		<p>产业时代: 我们越来越醉心于自我的陶醉, 否定外界的一切. 否定科学的成就, 否定技术的进步, 迫害科学家, 打压进步思想. 直到我们的技术发展彻底陷入停滞. </p>
+		<p>太空时代: 我们越来越醉心于自我的陶醉, 否定外界的一切. 祷告苦行的生活持续了数个世纪, 直到一次, 只因说服人们进入所谓的"天堂", 而引发一次全民自杀. </p>
+	</content>
+</details>
+<details id="event_09"><summary><span>02. 本质 >= +10</span><span style="margin-left:auto;opacity:0.25;">ID:　9</span></summary>
+	<content>
+		<h>10	9	本质 >= +10	我们认为任何脱离了实际的事物都应该抛弃，所以一切的道德和信仰都成为了我们的累赘。	科学一次又一次挑战着伦理的下限。克隆人，基因改造，义体化，不断冲击着人们的观念。最终在在道德彻底的沦丧后，演变成了世界范围的恶性事件。	科学一次又一次挑战着伦理的下限。创造生命，永生技术，不断冲击着人们的观念。最终在一次疯狂的高维展开实验中，我们的文明跌入了低维的空间。</h>
+		<p>古典时代: 我们认为任何脱离了实际的事物都应该抛弃, 所以一切的道德和信仰都成为了我们的累赘. </p>
+		<p>产业时代: 科学一次又一次挑战着伦理的下限. 克隆人, 基因改造, 义体化, 都不断冲击着人们的观念. 最终在在道德彻底的沦丧后, 演变成世界范围的恶性事件. </p>
+		<p>太空时代: 科学一次又一次挑战着伦理的下限. 创造生命, 永生技术, 都不断冲击着人们的观念. 最终在一次疯狂的高维展开实验中, 我们的文明跌入了低维空间. </p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_03"><summary><span>03. 统治 <= -10</span><span style="margin-left:auto;opacity:0.25;">ID:　3</span></summary>
+	<content>
+		<h>4	3	统治 <= -10	当个人拥有了无上的权利，他们只会追求更高的权利。	所有人终其一生劳作，生活在贫民窟与下水道，只为了让统治阶级过的更加穷奢极欲。最终底层人民鱼死网破，和特权贵族们一同毁灭在了一次史无前例的大革命中。	所有人终其一生劳作，生活在贫民设施内，只为了让统治阶级过的更加穷奢极欲。最终底层人民鱼死网破，和特权贵族们展开了旷日持久的战争。</h>
+		<p>古典时代: 当人们能够拥有无上的权利, 他们就会尝试追求更高的权利. </p>
+		<p>产业时代: 所有人终其一生劳作, 生活在贫民窟与下水道, 只为了让统治阶级过得更穷奢极欲. 最终底层人民鱼死网破, 和特权贵族们, 一同毁灭在了一次史无前例的大革命中. </p>
+		<p>太空时代: 所有人终其一生劳作, 生活在贫民设施内, 只为了让统治阶级更穷奢极欲. 最终底层人民鱼死网破, 和特权贵族们展开了旷日持久的战争. </p>
+	</content>
+</details>
+<details id="event_00"><summary><span>04. 统治 >= +10</span><span style="margin-left:auto;opacity:0.25;">ID:　0</span></summary>
+	<content>
+		<h>1	0	统治 >= +10	当每个人都能发表自己的意见，意味着没有人能统一大家的意见。	我们无法照顾到每个人的利益，也无法发展那些对其看来没有什么价值的技术。太空探索无关民生，迟迟得不到拨款，最终我们被困死在了自己的星球上。	所有的技术发展必须基于民生，照顾到每一个人。太空探索无关民生，迟迟得不到拨款，最终我们被困死在了自己的星系内。</h>
+		<p>古典时代: 当每个人都能发表意见, 也就意味着没人能统一大家的意见. </p>
+		<p>产业时代: 我们无法照顾到每个人的利益, 也无法发展那些对其他人看来没有什么价值的技术. 由于太空探索无关民生, 所以迟迟得不到拨款, 最终我们被困死在了自己的星球. </p>
+		<p>太空时代: 所有的技术发展都必须基于民生, 平等的照顾到每一个人. 由于太空探索无关民生, 迟迟得不到拨款, 最终我们被困死在了自己的星系内. </p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_01"><summary><span>05. 军事 <= -10</span><span style="margin-left:auto;opacity:0.25;">ID:　1</span></summary>
+	<content>
+		<h>2	1	统治 >= +10 || 军事 <= -10	当政治正确成为了一种不得不遵守的法则，怀有私心的人就往往会去利用它。	寡头们垄断了舆论，所有人都热衷于坚持自己的政治正确，甚至不惜使用游行。在一场席卷世界的民粹暴动中，我们因为持续近一个世纪的动乱使文明退回到了石器时代。	寡头们垄断了舆论，所有人都热衷于坚持自己的政治正确，甚至不惜使用游行。在一场席卷所有移民地的民粹暴动中，我们因为持续数百年动乱使文明退回到了前工业时代。</h>
+		<p>古典时代: 力量可以保护我们, 但同样也可以毁灭我们. </p>
+		<p>产业时代: 我们崇尚用力量来解决问题, 所以拒绝了一切形式的对话, 结果就是不断积累仇恨. 直到今天, 我们还生活在上次核大战后的废土世界上, 继续厮杀着. </p>
+		<p>太空时代: 我们崇尚用力量来解决问题, 所以拒绝了一切形式的对话, 结果就是不断积累仇恨. 直到今天, 我们还生活在上次引爆恒星的废土星系内, 继续厮杀着. </p>
+	</content>
+</details>
+<details id="event_06"><summary><span>06. 军事 >= +10</span><span style="margin-left:auto;opacity:0.25;">ID:　6</span></summary>
+	<content>
+		<h>7	6	军事 >= +10	崇尚和平是一种美德，却不能激起人的斗争心。	我们崇尚用和平解决问题，所以我们的力量永远都是孱弱的，在一次异族入侵中，我们被击败了，伴随着坠入熊熊大火的宏伟宫殿和文化瑰宝，我们的文明也湮没在历史的长河。	我们崇尚用和平解决问题，所以我们的力量永远都是孱弱的，在一次激进派势力暴动中，我们彻底陷入了动荡，伴随着坠入毁灭的巨大城市和文明古迹，我们的文明也湮没在历史的长河。</h>
+		<p>古典时代: 崇尚和平是种美德, 却不能激起人的斗争心. </p>
+		<p>产业时代: 我们崇尚用和平解决问题, 所以力量永远都是孱弱的, 我们在异族入侵中被击败了, 宏伟宫殿和文化瑰宝坠入火中, 我们的文明也湮没在历史的长河里. </p>
+		<p>太空时代: 我们崇尚用和平解决问题, 所以力量永远都是孱弱的, 在一次激进派暴动中, 我们彻底陷入动荡, 城市和文明被毁, 我们的文明也湮没在历史的长河里. </p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_12"><summary><span>07. 外交 <= -10</span><span style="margin-left:auto;opacity:0.25;">ID: 12</span></summary>
+	<content>
+		<h>13	12	外交 <= -10	一味的自负和自爱蒙蔽了我们的双眼，排斥一切的理念让我们固步自封。	闭关锁国的政策持续了上百年，一切看起来是那么的平静与普通，当下一次我们将目光对向外界，已是工业文明用坚船利炮打开了我们的国门。	闭关锁国的政策持续了数千年，一切看起来是那么的平静与普通，当下一次我们将目光对向外界，已是高等文明清理低等文明之时，面对着爆发的恒星，我们甚至不知道发生了什么。</h>
+		<p>古典时代: 一味的自负和自爱, 蒙蔽了我们的双眼, 排斥一切的理念让我们固步自封. </p>
+		<p>产业时代: 闭关锁国的政策持续了上百年, 一切看起来都是那么的平静与普通, 当下一次我们将目光对向外界, 已是工业文明用坚船利炮打开了我们的国门. 我们已经彻底赶不上世界的潮流了. </p>
+		<p>太空时代: 闭关锁国的政策持续了数千年, 一切看起来都是那么的平静与普通, 当下一次我们将目光对向外界, 已是高等文明清理低等文明之时, 面对爆发的恒星, 我们甚至不知道发生了什么. </p>
+	</content>
+</details>
+<details id="event_11"><summary><span>08. 外交 >= +10</span><span style="margin-left:auto;opacity:0.25;">ID: 11</span></summary>
+	<content>
+		<h>12	11	外交 >= +10	对外族对接纳让我们的文化多姿多彩，但是强硬的融合真的是所有人期待的吗。	没有节制的异族融合，以及来自官方对于种族主义的打压，表面上的多民族大融合社会在持续了数个世纪后，终于引起了全面的情绪爆发，针对异族的驱逐持续了数月，直到工业体系被破坏殆尽。	没有节制的异族融合，以及来自官方对于种族主义的打压，表面上的多民族大融合社会在持续了数个世纪后，终于引起了全面的情绪爆发，异族间的大屠杀持续了数年，直到95%以上的人口被消灭。</h>
+		<p>古典时代: 接纳外族让我们的文化多姿多彩, 但是强硬的融合真的是所有人期待的吗. </p>
+		<p>产业时代: 没有节制的异族融合, 以及官方对种族主义的打压, 表面的多民族融合在持续了数个世纪后, 终于引起了全面的情绪爆发, 针对异族的驱逐持续了数月, 直到现代工业体系破坏殆尽. </p>
+		<p>太空时代: 没有节制的异族融合, 以及官方对种族主义的打压, 表面的多民族融合在持续了数个世纪后, 终于引起了全面的情绪爆发, 异族间的大屠杀持续了数年, 直到九成以上的人口被消灭. </p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_02"><summary><span>09. 发展 <= -10</span><span style="margin-left:auto;opacity:0.25;">ID:　2</span></summary>
+	<content>
+		<h>3	2	统治 >= +10 || 发展 <= -10	绝大部分的民众追求的只是高质量的生活。	娱乐至死的理念阻碍了社会的进步，直到资源耗尽，所有人聚集在最后的设施内，一边继续看着娱乐节目一边踩着脚踏板发电。	虚拟技术日新月异，应用科学的进步却迟迟未曾到来，娱乐至死的时代持续了千万年，直到每个人都泡在营养液里度过每一天，忘记了还有一个真实世界。</h>
+		<p>古典时代: 田园牧歌固然是美好的, 可因此错过无垠的星空真的好吗. </p>
+		<p>产业时代: 在住房问题和粮食问题解决后, 我们就醉心于自己的摇篮, 不再渴望外面的世界, 过着锦衣玉食的生活. 直到有一天, 在一场世界范围的烈性传染病中, 我们的文明毁灭殆尽, 甚至无从应对. </p>
+		<p>太空时代: 在阶级问题和思想问题解决后, 我们就醉心于自己的摇篮, 不再渴望外面的世界, 过着锦衣玉食的生活. 直到有一天, 在一次恒星伽马射线风暴中, 我们的文明被蒸发殆尽, 甚至不知道原因. </p>
+	</content>
+</details>
+<details id="event_04"><summary><span>10. 发展 >= +10</span><span style="margin-left:auto;opacity:0.25;">ID:　4</span></summary>
+	<content>
+		<h>5	4	统治 <= -10 || 发展 >= +10	当资本寡头的力量凌驾于一切，为了利益他们就胆敢挑战这个世界的一切良知与秩序。	最终一个巨型企业拔地而起建立，将每个人作为一个螺丝钉奴役至死，一切以生产商品为目标。最终在一次席卷世界的大罢工演变成的暴动中，工人和资本家共同毁灭了他们所创造的一切。	最终一个巨型企业拔地而起建立，将每个人作为一个螺丝钉奴役之死，一切以生产商品为目标。最终在一次席卷世界的大罢工演变成的暴动中，工人和资本家共同毁灭了他们所创造的一切。</h>
+		<p>古典时代: 资本寡头的力量凌驾一切, 为了利益他们敢挑战良知秩序. </p>
+		<p>产业时代: 最终, 一个巨型企业拔地而起建立, 将每个人作为一个螺丝钉奴役至死, 一切以生产商品为目标. 最终在一次席卷世界的大罢工演变成的暴动中, 工人和资本家共同毁灭了他们所创造的一切. </p>
+		<p>太空时代: 最终, 一个巨型企业拔地而起建立, 将每个人作为一个螺丝钉奴役之死, 一切以生产商品为目标. 最终在一次席卷世界的大罢工演变成的暴动中, 工人和资本家共同毁灭了他们所创造的一切. </p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_13"><summary><span>11. 技术 < 15</span><span style="margin-left:auto;opacity:0.25;">ID: 13</span></summary>
+	<content>
+		<h>14	13	技术 < 15	无论思想多么超前，技术才是第一生产力。	我们最终没能发展出足够的技术积累，我们永远无法脱离重力的桎梏到达太空。	我们最终没能发展出足够的技术积累，我们永远走不出这不到一光年的星系。</h>
+		<p>古典时代: 无论我们的思想有多么超前, 技术才是第一生产力. </p>
+		<p>产业时代: 我们最终没能发展出足够的技术积累, 我们永远无法脱离重力的桎梏到达太空. </p>
+		<p>太空时代: 我们最终没能发展出足够的技术积累, 我们永远都走不出这不到一光年的星系. </p>
+	</content>
+</details>
+<details id="event_14"><summary><span>12. 稳定 <= 0</span><span style="margin-left:auto;opacity:0.25;">ID: 14</span></summary>
+	<content>
+		<h>15	14	稳定 <= -1	无论文化多么灿烂，没有稳定性的文明注定要灭亡的。	我们因为稳定性不足，思想的差异过于悬殊，最终分割成了一个个国家的政权，在星球上持续内耗着。	我们因为稳定性不足，思想的差异过于悬殊，最终分割成了一个个星球的政权，在星系内持续内耗着。</h>
+		<p>古典时代: 无论文化多灿烂, 没有稳定性的文明注定要灭亡的. </p>
+		<p>产业时代: 我们因为稳定性不足, 思想差异悬殊, 分割成了一个个国家政权, 持续内耗着. </p>
+		<p>太空时代: 我们因为稳定性不足, 思想差异悬殊, 分割成了一个个星球政权, 持续内耗着. </p>
+	</content>
+</details>
+</div>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 最大上限</h2>
+
+<p>在默认状态下, 你最多只能同时拥有 <c>10</c> 个不同的文明, 不过可以通过使用"中枢数据", 来提高可同时拥有的文明数量上限, 下表就是解锁更多上限所需要的中枢数据, 可以发现这需求是逐步提升的, 既越往后需求就越高, 例如首次提升上限(<c>10+5=15</c>), 需求为 <c>100</c>, 第二次提升上限(<c>15+5=20</c>), 需求为 <c>300</c>, 下表的 <c>160</c> 可能也不是最大上限, 只是再往后的需求都统一为 <c>3000</c>, 不会再提升了;</p>
+
+<table originalSort="1" id="powerTable02" class="powerTable table-xs table-hover showPart01 table-striped" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文明上限</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>中枢数据</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading03">03. 培育槽位</h2>
+
+<p>在默认状态下, 你最多只能同时培育两个文明, 因为初始的培育槽位数为 <c>2</c>, 不过你可以通过使用"中枢数据", 来解锁更多的培育槽位, 具体的需求如下 <c>[3:150/4:150/5:150/6:200/7:300/8:300/9:300/10:300]</c>, 既第三个槽位需求为 <c>150</c>, 第十个槽位需求为 <c>300</c>, 培育文明的槽位, 最大上限数量就是 <c>10</c>, 如果你想全部解锁, 总共也只需要 <c>150+150+150+200+300+300+300+300=1850</c> 点中枢数据;</p>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading04">04. 其他细节</h2>
+
+<p>在默认状态下, 创造文明, 稳定性的初始值为 <c>4</c>, 技术进程的初始值为 <c>0</c>, [本质/统治/军事/外交/发展]这五项属性的初始值也都为 <c>0</c>, 但是有些"文明模版"可以改变这些初始值, 到此为止, 游戏里面所有关于文明的内容和机制, 都已经被展示出来了, 除了[文明选项/文明故事/文明名称/文明模版/文明头像/文明参数]这六个数据页面以外, 还可以参考 <a href="./guide_start.html#heading06">入门引导.html # 06.文明系统</a> 这个章节的描述;</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+.hidePack{display:none;}
+.hideDetail{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+创造失败.csv
+Condition 属性既规则, 只要符合其中一条即可
+如果同时符合多个条件, 就随机获取其中的某天描述展示, 所以相同的失败可能会出现不同结果
+
+这部分的数据由于逻辑因素, 所以并不是每一条数据都会被展示出来
+每次判断当前是否会失败时, 从上往下遍历, 多条件是只要满足其中一条即可匹配, 既使用了"或"的逻辑;
+统治项: 0(过于分权), 3(过于集权); 因为当满足 Rule>=MaxValue 时, 会自动跳出遍历, 即这一情况下, 1, 2都不再判断(Rule<=MinValue同理), 下同
+军事项: 1(过于尚武), 6(过于和平); 由于遍历到 1 进行检测时已经满足了该条件, 所以 8 项不再判断;
+发展项: 2(过于生态), 4(过于生产); 
+本质项: 9(过于物质), 10(过于精神); 
+外交项: 11(过于亲外), 12(过于排外); 
+剩余项: 13(技术过低), 14(稳定过低); 
+即: 5, 7, 8不再被调用
+
+*/
+
+// 创造失败
+let csv0 = (`// /CivilSystem/FailText,Condition,Preface,Description_Stage_3,Description_Stage_2
+
+0,Rule>=MaxValue,$/CivilSystem/FailText_Preface_0,$/CivilSystem/FailText_Description_Stage_3_0,$/CivilSystem/FailText_Description_Stage_2_0
+1,Rule>=MaxValue|Military<=MinValue,$/CivilSystem/FailText_Preface_1,$/CivilSystem/FailText_Description_Stage_3_1,$/CivilSystem/FailText_Description_Stage_2_1
+2,Rule>=MaxValue|Development<=MinValue,$/CivilSystem/FailText_Preface_2,$/CivilSystem/FailText_Description_Stage_3_2,$/CivilSystem/FailText_Description_Stage_2_2
+3,Rule<=MinValue,$/CivilSystem/FailText_Preface_3,$/CivilSystem/FailText_Description_Stage_3_3,$/CivilSystem/FailText_Description_Stage_2_3
+4,Rule<=MinValue|Development>=MaxValue,$/CivilSystem/FailText_Preface_4,$/CivilSystem/FailText_Description_Stage_3_4,$/CivilSystem/FailText_Description_Stage_2_4
+5,Rule<=MinValue,$/CivilSystem/FailText_Preface_5,$/CivilSystem/FailText_Description_Stage_3_5,$/CivilSystem/FailText_Description_Stage_2_5
+6,Military>=MaxValue,$/CivilSystem/FailText_Preface_6,$/CivilSystem/FailText_Description_Stage_3_6,$/CivilSystem/FailText_Description_Stage_2_6
+7,Military>=MaxValue|Development<0,$/CivilSystem/FailText_Preface_7,$/CivilSystem/FailText_Description_Stage_3_7,$/CivilSystem/FailText_Description_Stage_2_7
+8,Military<=MinValue,$/CivilSystem/FailText_Preface_8,$/CivilSystem/FailText_Description_Stage_3_8,$/CivilSystem/FailText_Description_Stage_2_8
+9,Essence>=MaxValue,$/CivilSystem/FailText_Preface_9,$/CivilSystem/FailText_Description_Stage_3_9,$/CivilSystem/FailText_Description_Stage_2_9
+10,Essence<=MinValue,$/CivilSystem/FailText_Preface_10,$/CivilSystem/FailText_Description_Stage_3_10,$/CivilSystem/FailText_Description_Stage_2_10
+11,Diplomacy>=MaxValue,$/CivilSystem/FailText_Preface_11,$/CivilSystem/FailText_Description_Stage_3_11,$/CivilSystem/FailText_Description_Stage_2_11
+12,Diplomacy<=MinValue,$/CivilSystem/FailText_Preface_12,$/CivilSystem/FailText_Description_Stage_3_12,$/CivilSystem/FailText_Description_Stage_2_12
+13,TechProgress<DefaultValue,$/CivilSystem/FailText_Preface_13,$/CivilSystem/FailText_Description_Stage_3_13,$/CivilSystem/FailText_Description_Stage_2_13
+14,Stability<=MinValue,$/CivilSystem/FailText_Preface_14,$/CivilSystem/FailText_Description_Stage_3_14,$/CivilSystem/FailText_Description_Stage_2_14
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文明上限
+let csv1 = (`// /CivilLim,Cost//解锁需要（中枢数据）
+
+// 10,——
+
+15,100,40,700,65,1200,90,1700,115,2200,140,3000,
+20,300,45,800,70,1300,95,1800,120,2300,145,3000,
+25,400,50,900,75,1400,100,1900,125,2400,150,3000,
+30,500,55,1000,80,1500,105,2000,130,2500,155,3000,
+35,600,60,1100,85,1600,110,2100,135,3000,160,3000,
+
+// ,//160以上都是这个价
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	失败描述 : {
+	
+	'0'    : `当每个人都能发表自己的意见，意味着没有人能统一大家的意见。`, 
+	'1'    : `当政治正确成为了一种不得不遵守的法则，怀有私心的人就往往会去利用它。`, 
+	'2'    : `绝大部分的民众追求的只是高质量的生活。`, 
+	'3'    : `当个人拥有了无上的权利，他们只会追求更高的权利。`, 
+	'4'    : `当资本寡头的力量凌驾于一切，为了利益他们就胆敢挑战这个世界的一切良知与秩序。`, 
+	'5'    : `统治阶级考虑的永远只有如何更高效地去统治。`, 
+	'6'    : `崇尚和平是一种美德，却不能激起人的斗争心。`, 
+	'7'    : `田园牧歌固然美好，可是因此错过无垠的星空真的好吗。`, 
+	'8'    : `力量可以保护我们，也可以毁灭我们。`, 
+	'9'    : `我们认为任何脱离了实际的事物都应该抛弃，所以一切的道德和信仰都成为了我们的累赘。`, 
+	'10'   : `我们醉心于自己的信仰，帮我们找到了生命的意义，但也让我们抛弃了思考的习惯。`, 
+	'11'   : `对外族对接纳让我们的文化多姿多彩，但是强硬的融合真的是所有人期待的吗。`, 
+	'12'   : `一味的自负和自爱蒙蔽了我们的双眼，排斥一切的理念让我们固步自封。`, 
+	'13'   : `无论思想多么超前，技术才是第一生产力。`, 
+	'14'   : `无论文化多么灿烂，没有稳定性的文明注定要灭亡的。`, 
+	
+	'2_0'  : `我们无法照顾到每个人的利益，也无法发展那些对其看来没有什么价值的技术。太空探索无关民生，迟迟得不到拨款，最终我们被困死在了自己的星球上。`, 
+	'2_1'  : `寡头们垄断了舆论，所有人都热衷于坚持自己的政治正确，甚至不惜使用游行。在一场席卷世界的民粹暴动中，我们因为持续近一个世纪的动乱使文明退回到了石器时代。`, 
+	'2_2'  : `娱乐至死的理念阻碍了社会的进步，直到资源耗尽，所有人聚集在最后的设施内，一边继续看着娱乐节目一边踩着脚踏板发电。`, 
+	'2_3'  : `所有人终其一生劳作，生活在贫民窟与下水道，只为了让统治阶级过的更加穷奢极欲。最终底层人民鱼死网破，和特权贵族们一同毁灭在了一次史无前例的大革命中。`, 
+	'2_4'  : `最终一个巨型企业拔地而起建立，将每个人作为一个螺丝钉奴役至死，一切以生产商品为目标。最终在一次席卷世界的大罢工演变成的暴动中，工人和资本家共同毁灭了他们所创造的一切。`, 
+	'2_5'  : `统治阶级将人的低效归咎于感情，于是强制所有人服用镇静剂，生活在狭小的设施内。在其后数百年的岁月中，过着一成不变的生活。`, 
+	'2_6'  : `我们崇尚用和平解决问题，所以我们的力量永远都是孱弱的，在一次异族入侵中，我们被击败了，伴随着坠入熊熊大火的宏伟宫殿和文化瑰宝，我们的文明也湮没在历史的长河。`, 
+	'2_7'  : `在住房问题和粮食问题解决后，我们就醉心于自己的摇篮，不再渴望外面的世界，过着锦衣玉食的生活。直到有一天，在一场世界范围的烈性传染病中，我们的文明毁灭殆尽，甚至无从应对。`, 
+	'2_8'  : `我们崇尚用力量解决问题，所以我们拒绝一切形式的对话，不断积累仇恨。直到今天，我们还生活在上一次核大战后的废土世界上，继续厮杀着。`, 
+	'2_9'  : `科学一次又一次挑战着伦理的下限。克隆人，基因改造，义体化，不断冲击着人们的观念。最终在在道德彻底的沦丧后，演变成了世界范围的恶性事件。`, 
+	'2_10' : `我们越来越醉心于自我的陶醉，否定外界的一切。否定科学的成就，否定技术的进步，迫害科学家，打压进步思想。直到我们的技术发展彻底停滞。`, 
+	'2_11' : `没有节制的异族融合，以及来自官方对于种族主义的打压，表面上的多民族大融合社会在持续了数个世纪后，终于引起了全面的情绪爆发，针对异族的驱逐持续了数月，直到工业体系被破坏殆尽。`, 
+	'2_12' : `闭关锁国的政策持续了上百年，一切看起来是那么的平静与普通，当下一次我们将目光对向外界，已是工业文明用坚船利炮打开了我们的国门。`, 
+	'2_13' : `我们最终没能发展出足够的技术积累，我们永远无法脱离重力的桎梏到达太空。`, 
+	'2_14' : `我们因为稳定性不足，思想的差异过于悬殊，最终分割成了一个个国家的政权，在星球上持续内耗着。`, 
+	
+	'3_0'  : `所有的技术发展必须基于民生，照顾到每一个人。太空探索无关民生，迟迟得不到拨款，最终我们被困死在了自己的星系内。`, 
+	'3_1'  : `寡头们垄断了舆论，所有人都热衷于坚持自己的政治正确，甚至不惜使用游行。在一场席卷所有移民地的民粹暴动中，我们因为持续数百年动乱使文明退回到了前工业时代。`, 
+	'3_2'  : `虚拟技术日新月异，应用科学的进步却迟迟未曾到来，娱乐至死的时代持续了千万年，直到每个人都泡在营养液里度过每一天，忘记了还有一个真实世界。`, 
+	'3_3'  : `所有人终其一生劳作，生活在贫民设施内，只为了让统治阶级过的更加穷奢极欲。最终底层人民鱼死网破，和特权贵族们展开了旷日持久的战争。`, 
+	'3_4'  : `最终一个巨型企业拔地而起建立，将每个人作为一个螺丝钉奴役之死，一切以生产商品为目标。最终在一次席卷世界的大罢工演变成的暴动中，工人和资本家共同毁灭了他们所创造的一切。`, 
+	'3_5'  : `所有的文化，艺术，历史，由于不能为社会提供动力，全部被毁灭殆尽，人性变得如泉水般清澈，清澈到在漫长的三万年岁月中，甚至没有任何新的技术被发明出来。`, 
+	'3_6'  : `我们崇尚用和平解决问题，所以我们的力量永远都是孱弱的，在一次激进派势力暴动中，我们彻底陷入了动荡，伴随着坠入毁灭的巨大城市和文明古迹，我们的文明也湮没在历史的长河。`, 
+	'3_7'  : `在阶级问题和思想问题解决后，我们就醉心于自己的摇篮，不再渴望外面的世界，过着锦衣玉食的生活。直到有一天，在一次恒星伽马射线风暴中，我们的文明被蒸发殆尽，甚至不知道发生了什么。`, 
+	'3_8'  : `我们崇尚用力量解决问题，所以我们拒绝一切形式的对话，不断积累仇恨。直到今天，我们还生活在上一次引爆恒星的废土星系内，继续厮杀着。`, 
+	'3_9'  : `科学一次又一次挑战着伦理的下限。创造生命，永生技术，不断冲击着人们的观念。最终在一次疯狂的高维展开实验中，我们的文明跌入了低维的空间。`, 
+	'3_10' : `我们越来越醉心于自我的陶醉，否定外界的一切。祷告苦行的生活持续了数个世纪，直到一次惊世骇俗的事件，只因说服人们进入所谓的“天堂”，而引发的一次全民自杀。`, 
+	'3_11' : `没有节制的异族融合，以及来自官方对于种族主义的打压，表面上的多民族大融合社会在持续了数个世纪后，终于引起了全面的情绪爆发，异族间的大屠杀持续了数年，直到95%以上的人口被消灭。`, 
+	'3_12' : `闭关锁国的政策持续了数千年，一切看起来是那么的平静与普通，当下一次我们将目光对向外界，已是高等文明清理低等文明之时，面对着爆发的恒星，我们甚至不知道发生了什么。`, 
+	'3_13' : `我们最终没能发展出足够的技术积累，我们永远走不出这不到一光年的星系。`, 
+	'3_14' : `我们因为稳定性不足，思想的差异过于悬殊，最终分割成了一个个星球的政权，在星系内持续内耗着。`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码			/CivilSystem/FailText,			0,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 条件规则			Condition,						Rule>=MaxValue,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 古典时代			Preface,						$/CivilSystem/FailText_Preface_0,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 太空时代			Description_Stage_3,			$/CivilSystem/FailText_Description_Stage_3_0,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 产业时代			Description_Stage_2				$/CivilSystem/FailText_Description_Stage_2_0
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.项目代码 = item[0];
+	
+	item.古典时代 = textList.失败描述[item[2].slice(31)];
+	item.产业时代 = textList.失败描述[item[4].slice(41)];
+	item.太空时代 = textList.失败描述[item[3].slice(41)];
+	
+	item.条件规则 = (function(){
+		
+		let result = item[1];
+		
+		if(result === 'Stability<=MinValue'){ return '稳定 <= -1' };
+		
+		result = result.replace('Stability', '稳定 ');
+		result = result.replace('TechProgress', '技术 ');
+		
+		result = result.replace('MaxValue', ' +10 ');
+		result = result.replace('MinValue', ' -10 ');
+		result = result.replace('DefaultValue', ' 15 ');
+		
+		result = result.replace('Rule', '统治 ');
+		result = result.replace('Essence', '本质 ');
+		result = result.replace('Military', '军事 ');
+		result = result.replace('Diplomacy', '外交 ');
+		result = result.replace('Development', '发展 ');
+		
+		result = result.replace('发展 <0', '发展 < 0');
+		result = result.replace('|', '<br />');
+		return (result);
+		
+	})();
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 40px;">';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.条件规则) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.古典时代) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.产业时代) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.太空时代) +'</td>';
+	
+	// powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+xj2._hideText(item.文明后缀,true)+'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+// $('#powerTable01 tbody').html(powerTable01_tbody_html);
+// xj2._buildPowerTable('powerTable01');
+// $('.followTip').xjTip();
+
+// 动态高亮
+// xj2._groupedSet(jqi_powerTable01);
+// jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable02 = $('#powerTable02');
+let powerTable02_tbody_html = '';
+let powerTable02_group = -1;
+let powerTable02_index = -1;
+
+// 生成表格
+csv1.forEach(function(item, index){
+	
+	// powerTable02_tbody_html += '<td>'+ item[0] +'</td>';			// 文明上限			CivilLim,			15,
+	// powerTable02_tbody_html += '<td>'+ item[1] +'</td>';			// 中枢数据			Cost,				100,
+	
+	// -----------------------------------------
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv1[index+1] !== 'blankRow'){
+		powerTable02_group+=1};
+		return;
+	}else{
+		powerTable02_index +=1;
+	};
+	
+	// -----------------------------------------
+		
+	// 数据处理
+	item.项目序号 = powerTable02_index;
+	item.数据分组 = powerTable02_group;
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable02_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 40px;">';
+	
+	[	[item[ 0], item[ 1], ], 
+		[item[ 2], item[ 3], ], 
+		[item[ 4], item[ 5], ], 
+		[item[ 6], item[ 7], ], 
+		[item[ 8], item[ 9], ], 
+		[item[10], item[11], ], 
+	].forEach(function(value, index){
+		powerTable02_tbody_html += '<td>'+ ((item.项目序号+1) + (index*5)) +'</td>';
+		powerTable02_tbody_html += '<td>'+ value[0] +'</td><td>'+ value[1] +'</td>';
+	});
+	
+	powerTable02_tbody_html += '</tr>';
+	
+});
+$('#powerTable02 tbody').html(powerTable02_tbody_html);
+xj2._buildPowerTable('powerTable02');
+$('.followTip').xjTip();
+
+// 动态高亮
+// xj2._groupedSet(jqi_powerTable02);
+// jqi_powerTable02.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable02) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 创造失败</a>
+			<a href="#heading02">02. 最大上限</a>
+			<a href="#heading03">03. 培育槽位</a>
+			<a href="#heading04">04. 其他细节</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

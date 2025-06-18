@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -27,7 +27,7 @@
 function(){ FastClick.attach(document.body) }, false);</script>
 <script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
 
-<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
 <script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
 
 <script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -129,7 +129,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <section><h2 id="heading01">01. 基本信息</h2>
 
 <p>
-	01. 区域是由建筑或武器攻击所生成的特殊范围, 目前共有 <c>17</c> 种;<br />
+	01. 区域是由建筑或武器攻击所生成的特殊范围, 目前共有 <c>18</c> 种;<br />
 	02. 区域被分为[传感区域/能量护盾/低维空间/特殊空间]共 <c>4</c> 类, 同类区域仅有来源和范围的差异;<br />
 	03. 下表的"关联事件"属性, 是指该区域会响应哪种事件, 而"规避判断"属性, 是 AI 攻防的响应参照, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a>;<br />
 </p>
@@ -198,7 +198,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>半径范围: 该属性既区域的有效面积, 默认状态下, 扫描的范围就是 <c>40</c>, 这也是瞬感区域的有效范围, 你可将其作为范围的基本参照;</p>
 
-<p>关联事件: 该属性既区域会响应经过的哪种事物, 其中的"攻击操作", 包括了[舰队攻击/质量弹/光粒]等多种来袭, 而其中的"建造卫星", 是指执行"建造卫星"命令的那种建造船只, 由于低维空间和屏蔽空间会吞噬这种船只, 所以你自然也无法在这些区域中修建人造卫星;</p>
+<p>关联事件: 该属性既区域会响应经过的哪种事物, 其中的"攻击操作", 包括了[舰队攻击/质量弹/光粒]等多种来袭, 而其中的"建造卫星", 是指执行"建造卫星"命令的那种建造船只, 由于低维空间和屏蔽空间都会吞噬这种船只, 所以自然也无法在这些区域中修建人造卫星;</p>
 
 <p>规避判断: 该属性对人类玩家而言没有什么意义, 它是 AI 判断哪些区域可以拦截哪些武器, 以便在受到攻击时正确反应的参考, 例如说, 当 AI 遭到质量弹攻击或光粒攻击的时候, 如果条件允许, 它们就会使用低光速屏障进行防守, 相对应的, 当 AI 判断到要攻击的目标星系上有低光速屏障, 它们也就不会再使用质量弹或光粒攻击了, 而它们避开二维空间和屏蔽区域的行为, 也是会以该属性的值为参照;</p>
 
@@ -208,7 +208,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>传感区域: 由传感阵列所生成的传感区域, 只会对他人的攻击做出提示, 而其他的传感区域, 在此基础上还会对他人的移民船做出提示;</p>
 
-<p>低维空间: 除了会吞噬范围内的星系, 实体的如[舰队/移民船只/建造卫星的船], 碰到了低维空间也会被吞噬, 你也不能通过跃迁来经过这些区域(从游戏的表现看, 跃迁只是让舰队加速, 而不是开空间门进行传送, 因而会受到阻拦), 但高能武器和波形武器都能直接通过;</p>
+<p>低维空间: 除了会吞噬范围内的星系, 实体物如[舰队/移民船只/建造卫星的船], 碰到了低维空间也会被吞噬, 但是你可以通过跃迁来跳过低维空间(需要计算好跃迁的落脚点, 如果落脚点依然处于低维空间内, 那么还是会被吞噬), 但是高能武器和波形武器都能直接通过;</p>
 
 <p>屏蔽区域: 类似低维空间, 但无法被观察到, 实体的如[舰队/移民船只/建造卫星的船], 以及扫描船只和探索船只, 碰到了都会被吞噬;</p>
 
@@ -229,8 +229,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 /* 数据注解
 
-area-11, area-12, area-18, area-19, area-23, 这五个区域都被废弃了, 可以不用理会
-area-21 > 屏蔽区域(武器), 虽然可被 weapon-25 制造, 但该武器是被废弃的, 所以也不用理会
+area-11, area-12, area-18, area-23, 这几个区域都被废弃了, 可以不用理会
+area-21 > 屏蔽区域(武器), 可被 weapon-25 制造, 但该武器被废弃了, 所以也不用理会
 区域设定的图片是 Prefab, 位于 Assets/Resources/Prefabs/AreaModel 但没什么用, 还得自己截图
 
 ————
@@ -271,8 +271,8 @@ let csv0 = (`// Remote/Area,//Name,Size,Features,CollideFunction,SecFunction//�
 5,首都圈,60,Private//只有星系所有者看得到,,,(BuildingExistFromParam:0|RemoveBuffToRadiusGalaxy:2012_2013_2014_2015_2016)&AddBuffToRadiusGalaxy:2012&SyncCivilBuffToRadiusGalaxy:2013_2014_2015_2016&AddScan,0,,,,,RemoveBuffToRadiusGalaxy:2012,
 7,首都传感区,20,Private//只有星系所有者看得到,CircleCollide,,"BuildingExistFromParam:0&AddScan//这里BuildingExist表示是由某个建筑物维持，会在Parameter的第0个索引开始占用三个int值来标示,建筑类型，星系id，建筑槽位。",210//武器,!EventBelongAreaOwner&!WeaponIndentityIs:2//非所有者非广播,SendEvent:2331_0//发送进入消息,SecInterval:2_1&SendEvent:23311_0,SendEvent:2332_0,,
 
-6,二向箔,10,Public//全球广播,CircleCollide,SecInterval:120_1&SizeAdd:40&SendBroadcastEvent:2337,DestroyRadiusGalaxy//&AddScan,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,InterceptEvent:0//拦截事件,,,,204|210_0|231
 16,慢二向箔,10,Public//全球广播,CircleCollide,SecInterval:120_2&SizeAdd:10&SendBroadcastEvent:2337,DestroyRadiusGalaxy//&AddScan,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,InterceptEvent:0//拦截事件,,,,204|210_0|231
+6,二向箔,10,Public//全球广播,CircleCollide,SecInterval:120_1&SizeAdd:40&SendBroadcastEvent:2337,DestroyRadiusGalaxy//&AddScan,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,InterceptEvent:0//拦截事件,,,,204|210_0|231
 
 3,低维空间,90,Public//全球广播,CircleCollide,,DestroyRadiusGalaxy//&AddScan,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,InterceptEvent:0//拦截事件,,,,204|210_0|231
 9,小型低维空间,60,Public//全球广播,CircleCollide,,DestroyRadiusGalaxy//&AddScan,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,InterceptEvent:0//拦截事件,,,,204|210_0|231
@@ -281,11 +281,11 @@ let csv0 = (`// Remote/Area,//Name,Size,Features,CollideFunction,SecFunction//�
 
 15,光墓,30,Public//全球广播,CircleCollide,,BuildingExistFromParam:0,210,!WeaponIndentityIs:2|StepMoreThan:1000//当210攻击事件进入时，若参数0武器不是广播也不是舰队，或者某个东西在跳跃。其中StepMoreThan是指一次的行动时间超过多少毫秒，如果产生跳跃那一次必然突变1s以上,InterceptEvent//拦截事件,,,,210_0|210_1|210_2
 13,屏蔽区域,50,,CircleCollide,,DestroyRadiusGalaxy,201|229|204|231,(EventTypeIs:201)|(EventTypeIs:229)|(EventTypeIs:204)|(EventTypeIs:231),SendEnterEvent//拦截事件,,,,201|229|204
+19,低维空间(不可跃迁),90,Public//全球广播,CircleCollide,,DestroyRadiusGalaxy//&AddScan,204|210|231,WeaponIndentityIs:0|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231|StepMoreThan:1000,InterceptEvent:0//拦截事件,,,,204|210_0|231
 
 // 11,屏蔽区域,100,,CircleCollide,,,0,,,,,,
 // 12,守护神屏障,120,,CircleCollide,EventAdaptedSizeAdd:801_12_4_-1,GalaxyExist&CreatorContainsEvent:801_12,210|204,WeaponIndentityIs:1|StepMoreThan:1000//当210攻击事件进入时，若参数0武器不是广播也不是舰队，或者某个东西在跳跃。其中StepMoreThan是指一次的行动时间超过多少毫秒，如果产生跳跃那一次必然突变1s以上,InterceptEvent//拦截事件,,,,210_1|210_2
 // 18,舰船触发低维区域,60,,CircleCollide,,,204|210|231,(WeaponIndentityIs:0&!StepMoreThan:1000)|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231,SendReduceDevice:3,,,,204|210_0|231
-// 19,低维空间(不可跃迁),90,Public//全球广播,CircleCollide,,DestroyRadiusGalaxy//&AddScan,204|210|231,WeaponIndentityIs:0|(EventTypeIs:204&!StepMoreThan:1000)|EventTypeIs:231|StepMoreThan:1000,InterceptEvent:0//拦截事件,,,,204|210_0|231
 // 21,屏蔽区域(武器),45,,CircleCollide,,AliveTimeLessThan:90000,201|229|210|231,(EventTypeIs:201)|(EventTypeIs:229)|(WeaponIndentityIs:2)|(EventTypeIs:231),InterceptEvent//拦截事件,InterceptEvent//拦截事件,,,201|229
 // 23,特殊低光速屏障,30,Public,CircleCollide,,,210|204,WeaponIndentityIs:1|StepMoreThan:1000//当210攻击事件进入时，若参数0武器不是广播也不是舰队，或者某个东西在跳跃。其中StepMoreThan是指一次的行动时间超过多少毫秒，如果产生跳跃那一次必然突变1s以上,InterceptEvent//拦截事件,,,,210_1|210_2
 `).replace(/标示,建筑/g, '标示，建筑') // 半角逗号改成全角以避免分割字符串出错
@@ -307,8 +307,8 @@ Area-8,LowLightSpeedArea,$/Description_Name_Area-8,,,
 Area-5,CapitalCircle,$/Description_Name_Area-5,,,
 Area-7,SpyArea,$/Description_Name_Area-7,,,
 
-Area-6,LowDimensionArea,$/Description_Name_Area-6,,,
 Area-16,LowDimensionArea,$/Description_Name_Area-16,,,
+Area-6,LowDimensionArea,$/Description_Name_Area-6,,,
 
 Area-3,LowDimensionArea,$/Description_Name_Area-3,,,
 Area-9,LowDimensionArea,$/Description_Name_Area-9,,,
@@ -317,11 +317,11 @@ Area-17,LowDimensionArea,$/Description_Name_Area-17,,,
 
 Area-15,TombArea,$/Description_Name_Area-15,,,
 Area-13,SpyArea,$/Description_Name_Area-13,,,
+Area-19,LowDimensionArea,$/Description_Name_Area-19,,,
 
 // Area-11,ShortSpyArea,$/Description_Name_Area-11,,,
 // Area-12,LowLightSpeedArea,$/Description_Name_Area-12,,,
 // Area-18,LowLightSpeedArea,$/Description_Name_Area-18,,,
-// Area-19,LowDimensionArea,$/Description_Name_Area-19,,,
 // Area-21,ShortBlockArea,$/Description_Name_Area-21,,,
 // Area-23,LowLightSpeedArea,$/Description_Name_Area-23,,,
 `)
@@ -345,21 +345,21 @@ let textList = {
 	5  : `首都圈`				+ ` # 首都圈`, 
 	7  : `首都传感`				+ ` # 首都传感区`, 
 	
-	6  : `快低维空间`			+ ` # 低维空间`, 
 	16 : `慢低维空间`			+ ` # 慢低维空间`, 
+	6  : `快低维空间`			+ ` # 低维空间`, 
 	
 	3  : `大型低维空间`			+ ` # 低维空间`, 
 	9  : `中型低维空间`			+ ` # 小型低维空间`, 
 	14 : `小型低维空间`			+ ` # 微型低维空间`, 
 	17 : `微型低维空间`			+ ` # 黑域`, 
 	
-	15 : `光墓屏障`				+ ` # 光墓`, 
+	15 : `光墓`					+ ` # 光墓`, 
 	13 : `屏蔽区域`				+ ` # 屏蔽区域`, 
+	19 : `特殊低维空间`			+ ` # 低维空间`, 
 	
 	// 11 : `瞬间传感`			+ ` # 瞬间传感`, 
 	// 12 : `低光速屏障`		+ ` # 低光速屏障`, 
 	// 18 : `舰船触发低维区域`	+ ` # 舰船触发低维区域`, 
-	// 19 : `低维空间`			+ ` # 低维空间`, 
 	// 21 : `屏蔽区域`			+ ` # 屏蔽区域`,
 	// 23 : `低光速屏障`		+ ` # 低光速屏障`, 
 	},
@@ -379,25 +379,25 @@ let textList = {
 	5  : `由"基础集中"的"文明首都"建筑生成, 会自动探开范围内的战争迷雾, 当建筑被毁则区域也会失效, 它并不影响往来的船只和武器, 区域功能: 该区域内的自然星系都会被添加[证券中心/大图书馆/帝国空港/战争议堂]这些建筑所带来的星系 Buff`	+ ` # None`, 
 	7  : `由"特殊集中"的"首都阵列"建筑生成, 会自动探开范围内的战争迷雾, 若文明首都被拆除, 首都阵列所生成的该区域也不会失效(虽然建筑图标会变黄), 大地图中的蓝色传感区域会继续存在, 这可能是一个功能性 BUG, 区域功能: 类似于传感区域`	+ ` # None`, 
 	
-	6  : `由"清理者天灾打击"或特殊亲外主义的"引力波天线"攻击所制造的低维空间, 区域每隔 120 年, 半径范围 +40 且所有玩家都会收到提示, 区域功能: 会吞噬范围内的星系, 任意实体碰撞都会被销毁, [舰队/质量弹/殖民队]也无法通过跃迁穿过它`	+ ` # None`, 
-	16 : `由"天灾"打击后的结果(是剧情模式下用于指定星系展开二维化效果的工具), 区域每隔 120 年, 半径范围 +10 且所有玩家都会收到提示, 区域功能: 会吞噬范围内的星系, 任意实体碰撞都会被销毁, [舰队/质量弹/殖民队]也无法通过跃迁穿过它`	+ ` # None`, 
+	16 : `由"天灾"打击后的结果(是剧情模式下用于指定星系展开二维化效果的工具), 区域每隔 120 年, 半径范围 +10 且所有玩家都会收到提示, 区域功能: 会吞噬范围内的星系, 任意实体, 例如舰队或殖民船, 碰撞到都会被销毁, 但可通过跃迁穿过它`	+ ` # None`, 
+	6  : `由"清理者天灾打击"或特殊亲外主义的"引力波天线"攻击所制造的低维空间, 区域每隔 120 年, 半径范围 +40 且所有玩家都会收到提示, 区域功能: 会吞噬范围内的星系, 任意实体, 例如舰队或殖民船, 碰撞到都会被销毁, 但可通过跃迁穿过它`	+ ` # None`, 
 	
-	3  : `由"低维化装置"建筑自爆所产生的低维空间, 特殊精神主义的"复归器"攻击也可以制造相同的空间, 区域功能: 和快低维空间相同, 只是不会扩张, 范围将固定不变`																			+ ` # None`, 
-	9  : `由"清理者复归器"攻击所产生的低维空间, 特殊物质主义的"零点聚爆弹"攻击也可制造相同的空间, 区域功能: 和快低维空间相同, 只是不会扩张, 范围将固定不变`																			+ ` # None`, 
-	14 : `由特殊生态主义的"黑洞低维化装置"建筑自爆所产生的低维空间, 这个建筑只能被建在黑洞星系上, 区域功能: 和快低维空间相同, 只是不会扩张, 范围将固定不变`																			+ ` # None`, 
-	17 : `由人造星系专属的"黑域装置"建筑自爆所产生的低维空间, 需解锁军事中的焦土政策科技才能建造, 区域功能: 和快低维空间相同, 只是不会扩张, 范围将固定不变`																			+ ` # None`, 
+	3  : `由"低维化装置"建筑自爆所产生的低维空间, 特殊精神主义的"复归器"攻击也可以制造相同的空间, 区域功能: 吞噬范围内的星系和碰撞的实体, 但可通过跃迁跳过`																			+ ` # None`, 
+	9  : `由"清理者复归器"攻击所产生的低维空间, 特殊物质主义的"零点聚爆弹"攻击也可制造相同的空间, 区域功能: 吞噬范围内的星系和碰撞的实体, 但可通过跃迁跳过`																			+ ` # None`, 
+	14 : `由特殊生态主义的"黑洞低维化装置"建筑自爆所产生的低维空间, 这个建筑只能被建在黑洞星系上, 区域功能: 吞噬范围内的星系和碰撞的实体, 但可通过跃迁跳过`																			+ ` # None`, 
+	17 : `由人造星系专属的"黑域装置"建筑自爆所产生的低维空间, 需解锁军事中的焦土政策科技才能建造, 区域功能: 吞噬范围内的星系和碰撞的实体, 但可通过跃迁跳过`																			+ ` # None`, 
 	
 	15 : `由特殊孤立主义的"光墓屏障"建筑生成, 当光墓屏障被毁, 该区域也会失效, 区域功能: 可以防御一切攻击(包括广播和天灾), 但范围内的星系也无法向往发出攻击`																			+ ` # None`, 
-	13 : `这是剧情模式下第三个场景既"科学官之章"第四个关卡里的特殊区域, 它是隐形的, 区域功能: 和快低维空间类似, 但不会扩张且完全隐形, 探索船只也无法穿过它`																			+ ` # None`, 
+	13 : `这是剧情模式下第三个场景, 既"科学官之章"第四个关卡里的特殊区域, 区域功能: 和低维空间类似, 但完全隐形, 扫描和探索也会被吞噬, 跃迁操作也无法通过它`																			+ ` # None`, 
+	19 : `这是剧情模式下第三个场景, 既"科学官之章"第三个关卡里的特殊区域, 区域功能: 和低维空间类似, 但跃迁操作无法通过(常规的低维空间可以使用跃迁操作跳过)`																			+ ` # None`, 
 	
 	// 11 : `` + ` # None`, 
 	// 12 : `` + ` # None`, 
 	// 18 : `` + ` # None`, 
-	// 19 : `` + ` # None`, 
 	// 21 : `` + ` # None`, 
 	// 23 : `` + ` # None`, 
 	},
-
+	
 };
 
 // ---------------------------------------------
@@ -462,9 +462,9 @@ csv0.forEach(function(item, index){
 	})();
 	
 	item.区域类型 = (function(){
-		if(['2','4','8'].includes(item.项目代码) === true){ return '能量护盾' }
-		else if(['1','10','20','22',].includes(item.项目代码) === true){ return '传感区域' };
-		if(['5','7','13','15',].includes(item.项目代码) === true){ return '特殊空间' }
+		if(['2','4','8'].includes(item.项目代码) === true){ return '能量护盾' };
+		if(['1','10','20','22',].includes(item.项目代码) === true){ return '传感区域' };
+		if(['5','7','13','15','19',].includes(item.项目代码) === true){ return '特殊空间' }
 		else if(['3','6','9','14','16','17'].includes(item.项目代码) === true){ return '低维空间' };
 	})();
 	
@@ -704,7 +704,7 @@ filterFunction();
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
 </div>
 </div>
 </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
 <link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-05-20T22:20:42UTC+8"></script>
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -27,7 +27,7 @@
 function(){ FastClick.attach(document.body) }, false);</script>
 <script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
 
-<link rel="stylesheet" href="../static/plugin/fortawesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
 <script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
 
 <script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-05-20T22:20:42UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-05-20T22:20:42UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -241,7 +241,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>随机建筑: 在生成地图的时候, 部分行星的建筑槽位里, 可能会出现一个景观障碍, 例如, 热带行星就有 <c>10%</c> 概率会出现"原始丛林", 如果行星可能出现景观障碍类型为复数, 例如岩质行星, 会有 <c>20%</c> 概率出现"巨型陨坑", 会有 <c>30%</c> 概率出现"大型矿脉", 那么具体的算法为, 先判断巨型陨坑, 如果巨型陨坑判断成功就不再继续, 否则再判断是否生成大型矿脉, 既出现巨型陨坑的概率是 <c>20%</c>, 出现大型矿脉的概率是 <c>(100% - 20%) × 30% = 24%</c>, 什么也没有的概率是 <c>100% - 20% - 24% = 56%</c>, 实际上, 文明的初始星系里也可能会生成这种景观障碍, 但由于初始星系靠近恒星的那两个行星, 必定会自带"工厂"和"太空港"的建筑, 所以可能会覆盖掉这些景观障碍;</p>
 
-<p>槽位上限: 天体默认至少也会有 <c>1</c> 个建筑槽位(但可能会被景观障碍占据而无法使用), 有的天体可以通过消耗资源开发出更多的槽位, 天体最多可同时拥有 <c>4</c> 个槽位, 但一个天体在同时间内只能进行一个槽位的开发, 越往后的槽位, 开发成本也会越高, 值得一提的是, 人造星系的槽位都是固定的, 无需开发, 但它们默认的槽位数量其实都是 <c>1</c>, 人造星系和大人造星系的额外槽位是由星系特性带来的;</p>
+<p>槽位上限: 天体默认至少也会有 <c>1</c> 个建筑槽位(但可能会被景观障碍占据而无法使用), 有的天体可以通过消耗资源开发出更多的槽位, 天体最多可同时拥有 <c>4</c> 个槽位, 但一个天体在同时间内只能进行一个槽位的开发, 越往后的槽位, 开发成本也会越高, 值得一提的是, [空间城/人造星系/大人造星系/方舟船坞], 这四个人造星系的建筑槽位都是初始就会被全部解锁, 无需再额外耗费资源和时间进行开发;</p>
 
 <p>槽位开发: 槽位开发的属性值, S 代表 Slot 既第 N 个槽位, R 代表 Source 既开发槽位所需资源, Y 代表 Year 既开发槽位所需时间;</p>
 
@@ -1222,7 +1222,7 @@ $(window).on('keyup', function(event){
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.1</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
 </div>
 </div>
 </div>
