@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>游戏成就</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>游戏成就</span><small>(光辉伟业)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 成就分为[历史博物馆/战场中枢/文明库]三大类, 总数为 <c>138</c><br />
+	02. 在大类下, 成就还分属于不同的组, 每组都会使用第一项成就的图片为封面(分组封面属性值为-1)<br />
+	03. 部分成就还具有递进关系, 例如[百花齐放/百家争鸣], 你必须先完成百花齐放, 才能再解锁百家争鸣, 更多细节可查阅 <a href="#heading02"># 额外拓展</a><br />
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>所属库类</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:192px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>达成函数</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>分组封面</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>分组名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>分组属性: "分组封面"的属性值为 <c>-1</c>, 就代表该数据的图片也是所在分组的封面, "分组名称"的属性值为 <c>-</c> 则代表该数据自成一组</p>
+
+<p>无法完成: "知名文豪"的成就要求搜集到 <c>150</c> 个文明故事, 但实际上当前游戏的文明故事, 合计只有 <c>140</c> 所以该任务其实无法完成</p>
+
+<p>解锁限制: 由于 WeGame 版的游戏并没有创造文明的功能, 就导致"文明库"大类中, 所有和"创造"相关成就, 在 WeGame 版下均无法完成</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+共有九个成就被注释掉了, 49/51/89/90/91/92/93/94/95
+Accomplishment 和 Image 这两个属性的值是完全一样的, 不过考虑到最大程度的适配, 所以并没有复用属性
+
+*/
+
+// 成就系统
+let csv0 = (`// /Accomplishment,Type,Name,Image,Description,Param,Table,Condition,Level,//成就描述,,
+
+45,1,$/Accomplishment_Name_45,45,$/Accomplishment_Description_45,0_1,PassMission,-1,5,通关教程1,,
+46,1,$/Accomplishment_Name_46,46,$/Accomplishment_Description_46,0_2,PassMission,45,5,通关教程2,,
+47,1,$/Accomplishment_Name_47,47,$/Accomplishment_Description_47,0_3,PassMission,46,5,通关教程3,,
+48,1,$/Accomplishment_Name_48,48,$/Accomplishment_Description_48,0_4,PassMission,47,5,通关教程4,,
+
+50,1,$/Accomplishment_Name_50,50,$/Accomplishment_Description_50,1_1,PassMission,-1,6,通过第1章第1关,,
+52,1,$/Accomplishment_Name_52,52,$/Accomplishment_Description_52,1_2,PassMission,50,6,通过第1章第2关,,
+
+53,1,$/Accomplishment_Name_53,53,$/Accomplishment_Description_53,2_1,PassMission,-1,7,通过第2章第1关,,
+54,1,$/Accomplishment_Name_54,54,$/Accomplishment_Description_54,2_2,PassMission,53,7,通过第2章第2关,,
+55,1,$/Accomplishment_Name_55,55,$/Accomplishment_Description_55,2_3,PassMission,54,7,通过第2章第3关,,
+56,1,$/Accomplishment_Name_56,56,$/Accomplishment_Description_56,2_4,PassMission,55,7,通过第2章第4关,,
+57,1,$/Accomplishment_Name_57,57,$/Accomplishment_Description_57,2_5,PassMission,56,7,通过第2章第5关,,
+
+58,1,$/Accomplishment_Name_58,58,$/Accomplishment_Description_58,3_1,PassMission,-1,8,通过第3章第1关,,
+59,1,$/Accomplishment_Name_59,59,$/Accomplishment_Description_59,3_2,PassMission,58,8,通过第3章第2关,,
+60,1,$/Accomplishment_Name_60,60,$/Accomplishment_Description_60,3_3,PassMission,59,8,通过第3章第3关,,
+61,1,$/Accomplishment_Name_61,61,$/Accomplishment_Description_61,3_4,PassMission,60,8,通过第3章第4关,,
+62,1,$/Accomplishment_Name_62,62,$/Accomplishment_Description_62,3_5,PassMission,61,8,通过第3章第5关,,
+
+63,1,$/Accomplishment_Name_63,63,$/Accomplishment_Description_63,0,PassLevel,-1,-1,通关所有教程,,
+64,1,$/Accomplishment_Name_64,64,$/Accomplishment_Description_64,1,PassLevel,-1,-1,通关第1章所有关卡,,
+65,1,$/Accomplishment_Name_65,65,$/Accomplishment_Description_65,2,PassLevel,-1,-1,通关第2章所有关卡,,
+66,1,$/Accomplishment_Name_66,66,$/Accomplishment_Description_66,3,PassLevel,-1,-1,通关第3章所有关卡,,
+
+67,1,$/Accomplishment_Name_67,67,$/Accomplishment_Description_67,1_102,MissionKey,-1,9,完成任务：建造1座戴森球（第1章第1关）,,
+68,1,$/Accomplishment_Name_68,68,$/Accomplishment_Description_68,1_103,MissionKey,-1,9,完成任务：介入战争（第1章第1关）,,
+69,1,$/Accomplishment_Name_69,69,$/Accomplishment_Description_69,1_104,MissionKey,50,9,完成任务：使用1次广播打击（第1章第1关）,,
+70,1,$/Accomplishment_Name_70,70,$/Accomplishment_Description_70,1_105,MissionKey,50,9,完成任务：消灭银河帝国（第1章第1关）,,
+71,1,$/Accomplishment_Name_71,71,$/Accomplishment_Description_71,1_304,MissionKey,50,9,完成任务：航行至5000光年（第1章第2关）,,
+
+72,1,$/Accomplishment_Name_72,72,$/Accomplishment_Description_72,2_102,MissionKey,-1,10,完成任务：营救所有贫民（第2章第1关）,,
+73,1,$/Accomplishment_Name_73,73,$/Accomplishment_Description_73,2_203,MissionKey,53,10,完成任务：找到至少10个古代图书馆（第2章第2关）,,
+74,1,$/Accomplishment_Name_74,74,$/Accomplishment_Description_74,2_302,MissionKey,54,10,完成任务：获得低维警戒者的信任（第2章第3关）,,
+75,1,$/Accomplishment_Name_75,75,$/Accomplishment_Description_75,2_303,MissionKey,54,10,完成任务：在1500年内到达遗迹星系（第2章第3关）,,
+76,1,$/Accomplishment_Name_76,76,$/Accomplishment_Description_76,2_402,MissionKey,55,10,完成任务：交流至少8个原始星系（第2章第4关）,,
+77,1,$/Accomplishment_Name_77,77,$/Accomplishment_Description_77,2_403,MissionKey,55,10,完成任务：在1500年内到达遗迹星系（第2章第4关）,,
+78,1,$/Accomplishment_Name_78,78,$/Accomplishment_Description_78,2_503,MissionKey,56,10,完成任务：消灭警觉思考者（第2章第5关）,,
+
+79,1,$/Accomplishment_Name_79,79,$/Accomplishment_Description_79,3_104,MissionKey,-1,11,完成任务：重建朝圣地（第3章第1关）,,
+80,1,$/Accomplishment_Name_80,80,$/Accomplishment_Description_80,3_302,MissionKey,59,11,完成任务：1000年内不要让堡垒星系被叛教者占领（第3章第3关）,,
+81,1,$/Accomplishment_Name_81,81,$/Accomplishment_Description_81,3_402,MissionKey,60,11,完成任务：摧毁伦布探险团的所有人造星系（第3章第4关）,,
+82,1,$/Accomplishment_Name_82,82,$/Accomplishment_Description_82,3_403,MissionKey,60,11,完成任务：夺回首都（第3章第4关）,,
+83,1,$/Accomplishment_Name_83,83,$/Accomplishment_Description_83,3_502,MissionKey,61,11,完成任务：不要失去首都（第3章第5关）,,
+
+95,2,$/Accomplishment_Name_95,95,$/Accomplishment_Description_95,1,WitnessCivilEnd,-1,13,见证1个文明灭亡,,
+96,2,$/Accomplishment_Name_96,96,$/Accomplishment_Description_96,10,WitnessCivilEnd,95,13,见证10个文明灭亡,,
+97,2,$/Accomplishment_Name_97,97,$/Accomplishment_Description_97,20,WitnessCivilEnd,96,13,见证20个文明灭亡,,
+98,2,$/Accomplishment_Name_98,98,$/Accomplishment_Description_98,60,WitnessCivilEnd,97,13,见证60个文明灭亡,,
+99,2,$/Accomplishment_Name_99,99,$/Accomplishment_Description_99,100,WitnessCivilEnd,98,13,见证100个文明灭亡,,
+100,2,$/Accomplishment_Name_100,100,$/Accomplishment_Description_100,1000,WitnessCivilEnd,99,13,见证1000个文明灭亡,,
+
+101,2,$/Accomplishment_Name_101,101,$/Accomplishment_Description_101,29|1,ColonizeSuccessfully,-1,14,移民1个星系,,
+102,2,$/Accomplishment_Name_102,102,$/Accomplishment_Description_102,29|5,ColonizeSuccessfully,101,14,移民5个星系,,
+103,2,$/Accomplishment_Name_103,103,$/Accomplishment_Description_103,29|20,ColonizeSuccessfully,102,14,移民20个星系,,
+104,2,$/Accomplishment_Name_104,104,$/Accomplishment_Description_104,29|100,ColonizeSuccessfully,103,14,移民100个星系,,
+105,2,$/Accomplishment_Name_105,105,$/Accomplishment_Description_105,29|500,ColonizeSuccessfully,104,14,移民500个星系,,
+106,2,$/Accomplishment_Name_106,106,$/Accomplishment_Description_106,29|2000,ColonizeSuccessfully,105,14,移民2000个星系,,
+
+107,2,$/Accomplishment_Name_107,107,$/Accomplishment_Description_107,13|1,EliminateGalaxy,-1,15,消灭1个有人星系,,
+108,2,$/Accomplishment_Name_108,108,$/Accomplishment_Description_108,13|5,EliminateGalaxy,107,15,消灭5个有人星系,,
+109,2,$/Accomplishment_Name_109,109,$/Accomplishment_Description_109,13|20,EliminateGalaxy,108,15,消灭20个有人星系,,
+110,2,$/Accomplishment_Name_110,110,$/Accomplishment_Description_110,13|100,EliminateGalaxy,109,15,消灭100个有人星系,,
+111,2,$/Accomplishment_Name_111,111,$/Accomplishment_Description_111,13|500,EliminateGalaxy,110,15,消灭500个有人星系,,
+112,2,$/Accomplishment_Name_112,112,$/Accomplishment_Description_112,13|2000,EliminateGalaxy,111,15,消灭2000个有人星系,,
+
+117,2,$/Accomplishment_Name_117,117,$/Accomplishment_Description_117,0|1,UseWeapons,-1,17,使用1次舰队,,
+118,2,$/Accomplishment_Name_118,118,$/Accomplishment_Description_118,0|10,UseWeapons,117,17,使用10次舰队,,
+119,2,$/Accomplishment_Name_119,119,$/Accomplishment_Description_119,0|100,UseWeapons,118,17,使用100次舰队,,
+120,2,$/Accomplishment_Name_120,120,$/Accomplishment_Description_120,0|1000,UseWeapons,119,17,使用1000次舰队,,
+
+113,2,$/Accomplishment_Name_113,113,$/Accomplishment_Description_113,1|1,UseWeapons,-1,16,使用1次质量弹,,
+114,2,$/Accomplishment_Name_114,114,$/Accomplishment_Description_114,1|10,UseWeapons,113,16,使用10次质量弹,,
+115,2,$/Accomplishment_Name_115,115,$/Accomplishment_Description_115,1|100,UseWeapons,114,16,使用100次质量弹,,
+116,2,$/Accomplishment_Name_116,116,$/Accomplishment_Description_116,1|1000,UseWeapons,115,16,使用1000次质量弹,,
+
+121,2,$/Accomplishment_Name_121,121,$/Accomplishment_Description_121,5|1,UseWeapons,-1,18,使用1次广播,,
+122,2,$/Accomplishment_Name_122,122,$/Accomplishment_Description_122,5|10,UseWeapons,121,18,使用10次广播,,
+123,2,$/Accomplishment_Name_123,123,$/Accomplishment_Description_123,5|100,UseWeapons,122,18,使用100次广播,,
+124,2,$/Accomplishment_Name_124,124,$/Accomplishment_Description_124,5|1000,UseWeapons,123,18,使用1000次广播,,
+
+125,2,$/Accomplishment_Name_125,125,$/Accomplishment_Description_125,27|1,DiplomacyActionSuccess,-1,19,摧毁敌方1次情报网,,
+126,2,$/Accomplishment_Name_126,126,$/Accomplishment_Description_126,27|4,DiplomacyActionSuccess,125,19,摧毁敌方4次情报网,,
+127,2,$/Accomplishment_Name_127,127,$/Accomplishment_Description_127,27|10,DiplomacyActionSuccess,126,19,摧毁敌方10次情报网,,
+
+128,2,$/Accomplishment_Name_128,128,$/Accomplishment_Description_128,2|1,DiplomacyActionSuccess,-1,20,收集情报成功1次,,
+129,2,$/Accomplishment_Name_129,129,$/Accomplishment_Description_129,2|10,DiplomacyActionSuccess,128,20,收集情报成功10次,,
+130,2,$/Accomplishment_Name_130,130,$/Accomplishment_Description_130,2|100,DiplomacyActionSuccess,129,20,收集情报成功100次,,
+
+144,2,$/Accomplishment_Name_144,144,$/Accomplishment_Description_144,1,CivilWar,-1,25,内战1次,,
+145,2,$/Accomplishment_Name_145,145,$/Accomplishment_Description_145,10,CivilWar,144,25,内战10次,,
+146,2,$/Accomplishment_Name_146,146,$/Accomplishment_Description_146,100,CivilWar,145,25,内战100次,,
+
+133,2,$/Accomplishment_Name_133,133,$/Accomplishment_Description_133,1,Extinction,-1,22,灭亡1次,,
+134,2,$/Accomplishment_Name_134,134,$/Accomplishment_Description_134,10,Extinction,133,22,灭亡10次,,
+135,2,$/Accomplishment_Name_135,135,$/Accomplishment_Description_135,100,Extinction,134,22,灭亡100次,,
+
+131,2,$/Accomplishment_Name_131,131,$/Accomplishment_Description_131,1,Resurrection,-1,21,复活1次,,
+132,2,$/Accomplishment_Name_132,132,$/Accomplishment_Description_132,10,Resurrection,131,21,复活10次,,
+
+84,2,$/Accomplishment_Name_84,84,$/Accomplishment_Description_84,5,VictoryInBattle,-1,12,战斗胜利（幸存）5次,,
+85,2,$/Accomplishment_Name_85,85,$/Accomplishment_Description_85,10,VictoryInBattle,84,12,战斗胜利（幸存）10次,,
+86,2,$/Accomplishment_Name_86,86,$/Accomplishment_Description_86,25,VictoryInBattle,85,12,战斗胜利（幸存）25次,,
+87,2,$/Accomplishment_Name_87,87,$/Accomplishment_Description_87,50,VictoryInBattle,86,12,战斗胜利（幸存）50次,,
+88,2,$/Accomplishment_Name_88,88,$/Accomplishment_Description_88,200,VictoryInBattle,87,12,战斗胜利（幸存）200次,,
+
+136,2,$/Accomplishment_Name_136,136,$/Accomplishment_Description_136,8|10000,CollectResources,-1,23,收集1万资源,,
+137,2,$/Accomplishment_Name_137,137,$/Accomplishment_Description_137,8|100000,CollectResources,136,23,收集10万资源,,
+138,2,$/Accomplishment_Name_138,138,$/Accomplishment_Description_138,8|1000000,CollectResources,137,23,收集100万资源,,
+139,2,$/Accomplishment_Name_139,139,$/Accomplishment_Description_139,8|10000000,CollectResources,138,23,收集1000万资源,,
+
+140,2,$/Accomplishment_Name_140,140,$/Accomplishment_Description_140,10000,CollectTechPoint,-1,24,收集1万科技,,
+141,2,$/Accomplishment_Name_141,141,$/Accomplishment_Description_141,100000,CollectTechPoint,140,24,收集10万科技,,
+142,2,$/Accomplishment_Name_142,142,$/Accomplishment_Description_142,1000000,CollectTechPoint,141,24,收集100万科技,,
+143,2,$/Accomplishment_Name_143,143,$/Accomplishment_Description_143,10000000,CollectTechPoint,142,24,收集1000万科技,,
+
+18,0,$/Accomplishment_Name_18,18,$/Accomplishment_Description_18,1|2_11,CreateCivil,-1,-1,创造成功一个狂热物质主义文明,,
+19,0,$/Accomplishment_Name_19,19,$/Accomplishment_Description_19,1|1_11,CreateCivil,-1,-1,创造成功一个狂热精神主义文明,,
+20,0,$/Accomplishment_Name_20,20,$/Accomplishment_Description_20,1|3_11,CreateCivil,-1,-1,创造成功一个狂热集权主义文明,,
+21,0,$/Accomplishment_Name_21,21,$/Accomplishment_Description_21,1|4_11,CreateCivil,-1,-1,创造成功一个狂热分权主义文明,,
+22,0,$/Accomplishment_Name_22,22,$/Accomplishment_Description_22,1|5_11,CreateCivil,-1,-1,创造成功一个狂热尚武主义文明,,
+23,0,$/Accomplishment_Name_23,23,$/Accomplishment_Description_23,1|6_11,CreateCivil,-1,-1,创造成功一个狂热和平主义文明,,
+24,0,$/Accomplishment_Name_24,24,$/Accomplishment_Description_24,1|8_11,CreateCivil,-1,-1,创造成功一个狂热亲外主义文明,,
+25,0,$/Accomplishment_Name_25,25,$/Accomplishment_Description_25,1|7_11,CreateCivil,-1,-1,创造成功一个狂热孤立主义文明,,
+26,0,$/Accomplishment_Name_26,26,$/Accomplishment_Description_26,1|10_11,CreateCivil,-1,-1,创造成功一个狂热生产主义文明,,
+27,0,$/Accomplishment_Name_27,27,$/Accomplishment_Description_27,1|9_11,CreateCivil,-1,-1,创造成功一个狂热生态主义文明,,
+
+8,0,$/Accomplishment_Name_8,8,$/Accomplishment_Description_8,1|2,CreateCivil,-1,-1,创造成功一个物质主义文明,,
+9,0,$/Accomplishment_Name_9,9,$/Accomplishment_Description_9,1|1,CreateCivil,-1,-1,创造成功一个精神主义文明,,
+10,0,$/Accomplishment_Name_10,10,$/Accomplishment_Description_10,1|3,CreateCivil,-1,-1,创造成功一个集权主义文明,,
+11,0,$/Accomplishment_Name_11,11,$/Accomplishment_Description_11,1|4,CreateCivil,-1,-1,创造成功一个分权主义文明,,
+12,0,$/Accomplishment_Name_12,12,$/Accomplishment_Description_12,1|5,CreateCivil,-1,-1,创造成功一个尚武主义文明,,
+13,0,$/Accomplishment_Name_13,13,$/Accomplishment_Description_13,1|6,CreateCivil,-1,-1,创造成功一个和平主义文明,,
+14,0,$/Accomplishment_Name_14,14,$/Accomplishment_Description_14,1|8,CreateCivil,-1,-1,创造成功一个亲外主义文明,,
+15,0,$/Accomplishment_Name_15,15,$/Accomplishment_Description_15,1|7,CreateCivil,-1,-1,创造成功一个孤立主义文明,,
+16,0,$/Accomplishment_Name_16,16,$/Accomplishment_Description_16,1|10,CreateCivil,-1,-1,创造成功一个生产主义文明,,
+17,0,$/Accomplishment_Name_17,17,$/Accomplishment_Description_17,1|9,CreateCivil,-1,-1,创造成功一个生态主义文明,,
+
+1,0,$/Accomplishment_Name_1,1,$/Accomplishment_Description_1,1,AllCivil,-1,1,创造成功1个文明,,
+2,0,$/Accomplishment_Name_2,2,$/Accomplishment_Description_2,10,AllCivil,1,1,创造成功10个文明,,
+3,0,$/Accomplishment_Name_3,3,$/Accomplishment_Description_3,30,AllCivil,2,1,创造成功30个文明,,
+4,0,$/Accomplishment_Name_4,4,$/Accomplishment_Description_4,50,AllCivil,3,1,创造成功50个文明,,
+5,0,$/Accomplishment_Name_5,5,$/Accomplishment_Description_5,100,AllCivil,4,1,创造成功100个文明,,
+6,0,$/Accomplishment_Name_6,6,$/Accomplishment_Description_6,200,AllCivil,5,1,创造成功200个文明,,
+7,0,$/Accomplishment_Name_7,7,$/Accomplishment_Description_7,300,AllCivil,6,1,创造成功300个文明,,
+
+28,0,$/Accomplishment_Name_28,28,$/Accomplishment_Description_28,2,AllCivilStory,-1,2,收集到2个文明故事,,
+29,0,$/Accomplishment_Name_29,29,$/Accomplishment_Description_29,5,AllCivilStory,28,2,收集到5个文明故事,,
+30,0,$/Accomplishment_Name_30,30,$/Accomplishment_Description_30,15,AllCivilStory,29,2,收集到15个文明故事,,
+31,0,$/Accomplishment_Name_31,31,$/Accomplishment_Description_31,40,AllCivilStory,30,2,收集到40个文明故事,,
+32,0,$/Accomplishment_Name_32,32,$/Accomplishment_Description_32,100,AllCivilStory,31,2,收集到100个文明故事,,
+33,0,$/Accomplishment_Name_33,33,$/Accomplishment_Description_33,150,AllCivilStory,32,2,收集到150个文明故事,,
+
+34,0,$/Accomplishment_Name_34,34,$/Accomplishment_Description_34,3,HaveCivil,-1,3,文明库内拥有3个文明,,
+35,0,$/Accomplishment_Name_35,35,$/Accomplishment_Description_35,10,HaveCivil,34,3,文明库内拥有10个文明,,
+36,0,$/Accomplishment_Name_36,36,$/Accomplishment_Description_36,15,HaveCivil,35,3,文明库内拥有15个文明,,
+37,0,$/Accomplishment_Name_37,37,$/Accomplishment_Description_37,20,HaveCivil,36,3,文明库内拥有20个文明,,
+38,0,$/Accomplishment_Name_38,38,$/Accomplishment_Description_38,30,HaveCivil,37,3,文明库内拥有30个文明,,
+39,0,$/Accomplishment_Name_39,39,$/Accomplishment_Description_39,50,HaveCivil,38,3,文明库内拥有50个文明,,
+
+40,0,$/Accomplishment_Name_40,40,$/Accomplishment_Description_40,2,AllCivilThought,-1,4,文明库内拥有2种思潮的文明,,
+41,0,$/Accomplishment_Name_41,41,$/Accomplishment_Description_41,4,AllCivilThought,40,4,文明库内拥有4种思潮的文明,,
+42,0,$/Accomplishment_Name_42,42,$/Accomplishment_Description_42,6,AllCivilThought,41,4,文明库内拥有6种思潮的文明,,
+43,0,$/Accomplishment_Name_43,43,$/Accomplishment_Description_43,8,AllCivilThought,42,4,文明库内拥有8种思潮的文明,,
+44,0,$/Accomplishment_Name_44,44,$/Accomplishment_Description_44,10,AllCivilThought,43,4,文明库内拥有所有思潮的文明,,
+
+//49,1,$/Accomplishment_Name_49,49,$/Accomplishment_Description_49,0_5,PassMission,48,5,通关教程5,,
+//51,1,$/Accomplishment_Name_51,51,$/Accomplishment_Description_51,1_2,PassMission,50,6,通过第1章第2关,,
+
+//89,2,$/Accomplishment_Name_89,89,$/Accomplishment_Description_89,1|0,VictoryInMoudule,-1,-1,赢得一次多人游戏标准模式胜利,,//暂时隐藏
+//90,2,$/Accomplishment_Name_90,90,$/Accomplishment_Description_90,1|3,VictoryInMoudule,-1,-1,赢得一次多人游戏死斗模式胜利,,//暂时隐藏
+//91,2,$/Accomplishment_Name_91,91,$/Accomplishment_Description_91,1|1,VictoryInMoudule,-1,-1,赢得一次多人游戏同盟模式胜利,,//暂时隐藏
+//92,2,$/Accomplishment_Name_92,92,$/Accomplishment_Description_92,1|2,VictoryInMoudule,-1,-1,赢得一次多人游戏天灾模式胜利,,//暂时隐藏
+//93,2,$/Accomplishment_Name_93,93,$/Accomplishment_Description_93,1|4,VictoryInMoudule,-1,-1,赢得一次多人游戏静默模式胜利,,//暂时隐藏
+//94,2,$/Accomplishment_Name_94,94,$/Accomplishment_Description_94,1|5,VictoryInMoudule,-1,-1,赢得一次多人游戏末日模式胜利,,//暂时隐藏
+`).replace('68,1_103,MissionKey,-1', '68,1_103,MissionKey,50') // 分组出错
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	45  : `我们曾遥望星空`						+ ` # 我们曾经遥望星空`, 
+	46  : `猎人与它的猎物`						+ ` # 猎人与猎物`, 
+	47  : `走出文明大低谷`						+ ` # 走出大低谷`, 
+	48  : `孩童举起了火枪`						+ ` # 孩童举起了枪`, 
+	
+	50  : `小心丛林的枪口`						+ ` # 小心丛林里的枪口`, 
+	52  : `去的地方无需路`						+ ` # 我们要去的地方不需要路`, 
+	
+	53  : `在遥远的银河系`						+ ` # 很久很久以前在遥远的银河系`, 
+	54  : `更像是为了忘却`						+ ` # 更像是为了忘却`, 
+	55  : `看着海平线等我`						+ ` # 看着海平线等我回来`, 
+	56  : `强自救而圣渡人`						+ ` # 强者自救，圣者渡人`, 
+	57  : `这个世界要有光`						+ ` # 要有光`, 
+	
+	58  : `信仰应得到回报`						+ ` # 信仰应该得到回报`, 
+	59  : `圣者侠而神者仁`						+ ` # 圣者侠也，神者仁也`, 
+	60  : `摧毁和改变一切`						+ ` # 它没有摧毁，它改变了一切`, 
+	61  : `我必定会回来的`						+ ` # 我会回来的`, 
+	62  : `战争不成就英雄`						+ ` # 战争不成就英雄`, 
+	
+	63  : `灵魂中没有基因`						+ ` # 人类的灵魂中是没有基因的`, 
+	64  : `但这一切值得吗`						+ ` # 但这一切值得吗`, 
+	65  : `没人则毫无意义`						+ ` # 没有人的文明毫无意义`, 
+	66  : `愿原力与你同在`						+ ` # 愿原力与你同在`, 
+	
+	67  : `物质守恒`							+ ` # 物质总量保持不变`, 
+	68  : `文明扩张`							+ ` # 文明不断增长扩张`, 
+	69  : `诅咒星星`							+ ` # 诅咒星星的人`, 
+	70  : `与你何干`							+ ` # 消灭你，与你何干？`, 
+	71  : `孩子快跑`							+ ` # 孩子们，快跑啊！`, 
+	
+	72  : `找回儿女`							+ ` # 父亲找回了女儿`, 
+	73  : `看管遗物`							+ ` # 知识看管者的遗物`, 
+	74  : `哨兵问候`							+ ` # 哨兵的问候`, 
+	75  : `分秒必争`							+ ` # 分秒必争`, 
+	76  : `低维世界`							+ ` # 低维世界`, 
+	77  : `十万火急`							+ ` # 十万火急`, 
+	78  : `守陵灭亡`							+ ` # 守陵人的灭亡`, 
+	
+	79  : `圣地重建`							+ ` # 圣地重建`, 
+	80  : `拉锯之战`							+ ` # 激烈的拉锯战`, 
+	81  : `敌后活动`							+ ` # 敌后活动`, 
+	82  : `驱逐异端`							+ ` # 将异端赶出圣地`, 
+	83  : `信仰守卫`							+ ` # 信仰守卫者`, 
+	
+	//--
+	
+	95  : `目击之人`							+ ` # 目击者`, 
+	96  : `旁观之人`							+ ` # 旁观者`, 
+	97  : `记载之人`							+ ` # 记载者`, 
+	98  : `记录之人`							+ ` # 记录者`, 
+	99  : `传承之人`							+ ` # 传承者`, 
+	100 : `永生之人`							+ ` # 永生者`, 
+	
+	101 : `流浪部落`							+ ` # 流浪部落`, 
+	102 : `游牧民族`							+ ` # 游牧民族`, 
+	103 : `拓荒团队`							+ ` # 拓荒团`, 
+	104 : `开拓组织`							+ ` # 开拓地`, 
+	105 : `星系总督`							+ ` # 总督`, 
+	106 : `星域总督`							+ ` # 大总督`, 
+	
+	107 : `第一滴血`							+ ` # 第一滴血`, 
+	108 : `战争之王`							+ ` # 战争之王`, 
+	109 : `天罚降临`							+ ` # 天罚降临`, 
+	110 : `神怒之日`							+ ` # 神怒之日`, 
+	111 : `缔造和平`							+ ` # 和平缔造者`, 
+	112 : `最后审判`							+ ` # 最后的审判`, 
+	
+	117 : `实习舰长`							+ ` # 实习舰长`, 
+	118 : `资深舰长`							+ ` # 资深舰长`, 
+	119 : `舰队指挥`							+ ` # 舰队指挥官`, 
+	120 : `舰队司令`							+ ` # 舰队司令`, 
+	
+	113 : `战略委员`							+ ` # 低级战略要员`, 
+	114 : `战略科长`							+ ` # 实习战略要员`, 
+	115 : `战略厅长`							+ ` # 高级战略要员`, 
+	116 : `战略部长`							+ ` # 资深战略要员`, 
+	
+	121 : `宣传委员`							+ ` # 宣传委员`, 
+	122 : `宣传科长`							+ ` # 宣传科长`, 
+	123 : `宣传厅长`							+ ` # 宣传副部长`, 
+	124 : `宣传部长`							+ ` # 宣传部长`, 
+	
+	125 : `抓奸小队`							+ ` # 反间谍干员`, 
+	126 : `反特中心`							+ ` # 反特中心`, 
+	127 : `肃反部门`							+ ` # 肃反委员会`, 
+	
+	128 : `情报科员`							+ ` # 情报员`, 
+	129 : `情报处长`							+ ` # 情报处长`, 
+	130 : `情报局长`							+ ` # 情报局长`, 
+	
+	144 : `手足相残`							+ ` # 手足相残`, 
+	145 : `兄弟阋墙`							+ ` # 兄弟阋墙`, 
+	146 : `同室操戈`							+ ` # 同室操戈`, 
+	
+	133 : `技术调整`							+ ` # 技术性调整`, 
+	134 : `战争未变`							+ ` # 战争从未改变`, 
+	135 : `孤独观测`							+ ` # 孤独的观测者`, 
+	
+	131 : `老兵不死`							+ ` # 老兵不死`, 
+	132 : `只是凋零`							+ ` # 只是凋零`, 
+	
+	84  : `建立解体`							+ ` # 建立与解体`, 
+	85  : `先进落后`							+ ` # 先进与落后`, 
+	86  : `兴盛没落`							+ ` # 兴盛与没落`, 
+	87  : `霸权毁灭`							+ ` # 霸权与毁灭`, 
+	88  : `迭起兴衰`							+ ` # 迭起与兴衰`, 
+	
+	136 : `财务专员`							+ ` # 财务专员`, 
+	137 : `财务科长`							+ ` # 财务科长`, 
+	138 : `财政厅长`							+ ` # 财政副部长`, 
+	139 : `财政部长`							+ ` # 财政部长`, 
+	
+	140 : `研究专员`							+ ` # 研究员`, 
+	141 : `高级学者`							+ ` # 高级研究员`, 
+	142 : `科研专员`							+ ` # 科研专员`, 
+	143 : `大科学官`							+ ` # 大科学官`, 
+	
+	//--
+	
+	18  : `机械飞升`							+ ` # 机械飞升`, 
+	19  : `超能飞升`							+ ` # 超能飞升`, 
+	20  : `权倾天下`							+ ` # 权倾天下`, 
+	21  : `裂土分茅`							+ ` # 裂土分茅`, 
+	22  : `穷兵黩武`							+ ` # 穷兵黩武`, 
+	23  : `铸剑为犁`							+ ` # 铸剑为犁`, 
+	24  : `万国闻名`							+ ` # 万国闻名`, 
+	25  : `闭关锁国`							+ ` # 闭关锁国`, 
+	26  : `涸泽而渔`							+ ` # 涸泽而渔`, 
+	27  : `亭亭如盖`							+ ` # 亭亭如盖`, 
+	
+	8   : `格物致知`							+ ` # 格物致知`, 
+	9   : `心胜于物`							+ ` # 心胜于物`, 
+	10  : `大权独揽`							+ ` # 大权独揽`, 
+	11  : `平起平坐`							+ ` # 平起平坐`, 
+	12  : `勇冠三军`							+ ` # 勇冠三军`, 
+	13  : `民安国泰`							+ ` # 民安国泰`, 
+	14  : `八方来朝`							+ ` # 八方来朝`, 
+	15  : `闭关绝市`							+ ` # 闭关绝市`, 
+	16  : `金山银山`							+ ` # 金山银山`, 
+	17  : `绿水青山`							+ ` # 绿水青山`, 
+	
+	1   : `石器时代`							+ ` # 石器时代`, 
+	2   : `工具时代`							+ ` # 工具时代`, 
+	3   : `金属时代`							+ ` # 金属时代`, 
+	4   : `火器时代`							+ ` # 火器时代`, 
+	5   : `能源时代`							+ ` # 能源时代`, 
+	6   : `信息时代`							+ ` # 信息时代`, 
+	7   : `太空时代`							+ ` # 太空时代`, 
+	
+	28  : `儿童文学`							+ ` # 儿童文学`, 
+	29  : `青年文学`							+ ` # 青年文学`, 
+	30  : `高考作文`							+ ` # 高考作文`, 
+	31  : `民间文学`							+ ` # 民间文学`, 
+	32  : `知名文学`							+ ` # 知名文学`, 
+	33  : `知名文豪`							+ ` # 知名文豪`, 
+	
+	34  : `原始收藏`							+ ` # 原始级收藏`, 
+	35  : `基础收藏`							+ ` # 基础级收藏`, 
+	36  : `大学收藏`							+ ` # 大学级收藏`, 
+	37  : `研究收藏`							+ ` # 研究级收藏`, 
+	38  : `世界收藏`							+ ` # 世界级收藏`, 
+	39  : `完美收藏`							+ ` # 完美级收藏`, 
+	
+	40  : `孤芳自赏`							+ ` # 孤芳自赏`, 
+	41  : `各抒己见`							+ ` # 各抒己见`, 
+	42  : `畅所欲言`							+ ` # 畅所欲言`, 
+	43  : `百花齐放`							+ ` # 百花齐放`, 
+	44  : `百家争鸣`							+ ` # 百家争鸣`, 
+	},
+	
+	文本描述 : {
+	
+	45  : `通过第一章的第 1 关`										+ ` # 通关教程1`, 
+	46  : `通过第一章的第 2 关`										+ ` # 通关教程2`, 
+	47  : `通过第一章的第 3 关`										+ ` # 通关教程3`, 
+	48  : `通过第一章的第 4 关`										+ ` # 通关教程4`, 
+	
+	50  : `通过第二章的第 1 关`										+ ` # 通过第1章第1关`, 
+	52  : `通过第二章的第 2 关`										+ ` # 通过第1章第2关`, 
+	
+	53  : `通过第三章的第 1 关`										+ ` # 通过第2章第1关`, 
+	54  : `通过第三章的第 2 关`										+ ` # 通过第2章第2关`, 
+	55  : `通过第三章的第 3 关`										+ ` # 通过第2章第3关`, 
+	56  : `通过第三章的第 4 关`										+ ` # 通过第2章第4关`, 
+	57  : `通过第三章的第 5 关`										+ ` # 通过第2章第5关`, 
+	
+	58  : `通过第四章的第 1 关`										+ ` # 通过第3章第1关`, 
+	59  : `通过第四章的第 2 关`										+ ` # 通过第3章第2关`, 
+	60  : `通过第四章的第 3 关`										+ ` # 通过第3章第3关`, 
+	61  : `通过第四章的第 4 关`										+ ` # 通过第3章第4关`, 
+	62  : `通过第四章的第 5 关`										+ ` # 通过第3章第5关`, 
+	
+	63  : `通关第 1 章所有关卡`										+ ` # 通关所有教程`, 
+	64  : `通关第 2 章所有关卡`										+ ` # 通关第1章所有关卡`, 
+	65  : `通关第 3 章所有关卡`										+ ` # 通关第2章所有关卡`, 
+	66  : `通关第 4 章所有关卡`										+ ` # 通关第3章所有关卡`, 
+	
+	67  : `完成任务: 建造出一座戴森球(第2章第1关)`					+ ` # 完成任务：建造1座戴森球（第1章第1关）`, 
+	68  : `完成任务: 介入他人间的战争(第2章第1关)`					+ ` # 完成任务：介入战争（第1章第1关）`, 
+	69  : `完成任务: 使用一次广播打击(第2章第1关)`					+ ` # 完成任务：使用1次广播打击（第1章第1关）`, 
+	70  : `完成任务: 消灭银河帝国文明(第2章第1关)`					+ ` # 完成任务：消灭银河帝国（第1章第1关）`, 
+	71  : `完成任务: 方舟航行5000光年(第2章第2关)`					+ ` # 完成任务：航行至5000光年（第1章第2关）`, 
+	
+	72  : `完成任务: 营救出该星系的所有贫民(第3章第1关)`			+ ` # 完成任务：营救所有贫民（第2章第1关）`, 
+	73  : `完成任务: 找到至少八个古代图书馆(第3章第2关)`			+ ` # 完成任务：找到至少8个古代图书馆（第2章第2关）`, 
+	74  : `完成任务: 获得低维警戒者文明信任(第3章第3关)`			+ ` # 完成任务：获得低维警戒者的信任（第2章第3关）`, 
+	75  : `完成任务: 在1500年内到达遗迹星系(第3章第3关)`			+ ` # 完成任务：在1500年内到达遗迹星系（第2章第3关）`, 
+	76  : `完成任务: 至少和八个原始星系交流(第3章第4关)`			+ ` # 完成任务：交流至少8个原始星系（第2章第4关）`, 
+	77  : `完成任务: 在1500年内到达遗迹星系(第3章第4关)`			+ ` # 完成任务：在1500年内到达遗迹星系（第2章第4关）`, 
+	78  : `完成任务: 消灭掉敌对的警觉思考者(第3章第5关)`			+ ` # 完成任务：消灭警觉思考者（第2章第5关）`, 
+	
+	79  : `完成任务: 在目标星系上重建我们的朝圣地(第4章第1关)`		+ ` # 完成任务：重建朝圣地（第3章第1关）`, 
+	80  : `完成任务: 千年内避免堡垒星系被叛军占领(第4章第3关)`		+ ` # 完成任务：1000年内不要让堡垒星系被叛教者占领（第3章第3关）`, 
+	81  : `完成任务: 摧毁伦布探险团的所有人造星系(第4章第4关)`		+ ` # 完成任务：摧毁伦布探险团的所有人造星系（第3章第4关）`, 
+	82  : `完成任务: 夺回已经被敌人占据的文明首都(第4章第4关)`		+ ` # 完成任务：夺回首都（第3章第4关）`, 
+	83  : `完成任务: 不要失去我们文明首都所在星系(第4章第5关)`		+ ` # 完成任务：不要失去首都（第3章第5关）`, 
+	
+	//--
+	
+	95  : `见证 ___1 个文明灭亡`									+ ` # 见证1个文明灭亡`, 
+	96  : `见证 __10 个文明灭亡`									+ ` # 见证10个文明灭亡`, 
+	97  : `见证 __20 个文明灭亡`									+ ` # 见证20个文明灭亡`, 
+	98  : `见证 __60 个文明灭亡`									+ ` # 见证60个文明灭亡`, 
+	99  : `见证 _100 个文明灭亡`									+ ` # 见证100个文明灭亡`, 
+	100 : `见证 1000 个文明灭亡`									+ ` # 见证1000个文明灭亡`, 
+	
+	101 : `移民 ___1 个星系成功`									+ ` # 移民1个星系`, 
+	102 : `移民 ___5 个星系成功`									+ ` # 移民5个星系`, 
+	103 : `移民 __20 个星系成功`									+ ` # 移民20个星系`, 
+	104 : `移民 _100 个星系成功`									+ ` # 移民100个星系`, 
+	105 : `移民 _500 个星系成功`									+ ` # 移民500个星系`, 
+	106 : `移民 2000 个星系成功`									+ ` # 移民2000个星系`, 
+	
+	107 : `消灭 ___1 个有人星系`									+ ` # 消灭1个有人星系`, 
+	108 : `消灭 ___5 个有人星系`									+ ` # 消灭5个有人星系`, 
+	109 : `消灭 __20 个有人星系`									+ ` # 消灭20个有人星系`, 
+	110 : `消灭 _100 个有人星系`									+ ` # 消灭100个有人星系`, 
+	111 : `消灭 _500 个有人星系`									+ ` # 消灭500个有人星系`, 
+	112 : `消灭 2000 个有人星系`									+ ` # 消灭2000个有人星系`, 
+	
+	117 : `使用 ___1 次舰队登陆`									+ ` # 使用1次舰队`, 
+	118 : `使用 __10 次舰队登陆`									+ ` # 使用10次舰队`, 
+	119 : `使用 _100 次舰队登陆`									+ ` # 使用100次舰队`, 
+	120 : `使用 1000 次舰队登陆`									+ ` # 使用1000次舰队`, 
+	
+	113 : `使用 ___1 次质量弹`										+ ` # 使用1次质量弹`, 
+	114 : `使用 __10 次质量弹`										+ ` # 使用10次质量弹`, 
+	115 : `使用 _100 次质量弹`										+ ` # 使用100次质量弹`, 
+	116 : `使用 1000 次质量弹`										+ ` # 使用1000次质量弹`, 
+	
+	121 : `使用 ___1 次广播`										+ ` # 使用1次广播`, 
+	122 : `使用 __10 次广播`										+ ` # 使用10次广播`, 
+	123 : `使用 _100 次广播`										+ ` # 使用100次广播`, 
+	124 : `使用 1000 次广播`										+ ` # 使用1000次广播`, 
+	
+	125 : `摧毁敌方情报网 __1 次`									+ ` # 摧毁敌方1次情报网`, 
+	126 : `摧毁敌方情报网 __4 次`									+ ` # 摧毁敌方4次情报网`, 
+	127 : `摧毁敌方情报网 _10 次`									+ ` # 摧毁敌方10次情报网`, 
+	
+	128 : `收集情报成功 __1 次`										+ ` # 收集情报成功1次`, 
+	129 : `收集情报成功 _10 次`										+ ` # 收集情报成功10次`, 
+	130 : `收集情报成功 100 次`										+ ` # 收集情报成功100次`, 
+	
+	144 : `爆发了内战 __1 次`										+ ` # 内战1次`, 
+	145 : `爆发了内战 _10 次`										+ ` # 内战10次`, 
+	146 : `爆发了内战 100 次`										+ ` # 内战100次`, 
+	
+	133 : `文明灭亡 __1 次`											+ ` # 灭亡1次`, 
+	134 : `文明灭亡 _10 次`											+ ` # 灭亡10次`, 
+	135 : `文明灭亡 100 次`											+ ` # 灭亡100次`, 
+	
+	131 : `文明总共复活过 __1 次`									+ ` # 复活1次`, 
+	132 : `文明总共复活过 _10 次`									+ ` # 复活10次`, 
+	
+	84  : `战斗胜利或幸存 __5 次`									+ ` # 战斗胜利（幸存）5次`, 
+	85  : `战斗胜利或幸存 _10 次`									+ ` # 战斗胜利（幸存）10次`, 
+	86  : `战斗胜利或幸存 _25 次`									+ ` # 战斗胜利（幸存）25次`, 
+	87  : `战斗胜利或幸存 _50 次`									+ ` # 战斗胜利（幸存）50次`, 
+	88  : `战斗胜利或幸存 200 次`									+ ` # 战斗胜利（幸存）200次`, 
+	
+	136 : `合计收集 ____1 万资源`									+ ` # 收集1万资源`, 
+	137 : `合计收集 ___10 万资源`									+ ` # 收集10万资源`, 
+	138 : `合计收集 __100 万资源`									+ ` # 收集100万资源`, 
+	139 : `合计收集 _1000 万资源`									+ ` # 收集1000万资源`, 
+	
+	140 : `合计收集 ____1 万科技`									+ ` # 收集1万科技`, 
+	141 : `合计收集 ___10 万科技`									+ ` # 收集10万科技`, 
+	142 : `合计收集 __100 万科技`									+ ` # 收集100万科技`, 
+	143 : `合计收集 _1000 万科技`									+ ` # 收集1000万科技`, 
+	
+	//--
+	
+	18  : `成功创造 1 个狂热物质主义文明`							+ ` # 创造成功一个狂热物质主义文明`, 
+	19  : `成功创造 1 个狂热精神主义文明`							+ ` # 创造成功一个狂热精神主义文明`, 
+	20  : `成功创造 1 个狂热集权主义文明`							+ ` # 创造成功一个狂热集权主义文明`, 
+	21  : `成功创造 1 个狂热分权主义文明`							+ ` # 创造成功一个狂热分权主义文明`, 
+	22  : `成功创造 1 个狂热尚武主义文明`							+ ` # 创造成功一个狂热尚武主义文明`, 
+	23  : `成功创造 1 个狂热和平主义文明`							+ ` # 创造成功一个狂热和平主义文明`, 
+	24  : `成功创造 1 个狂热亲外主义文明`							+ ` # 创造成功一个狂热亲外主义文明`, 
+	25  : `成功创造 1 个狂热孤立主义文明`							+ ` # 创造成功一个狂热孤立主义文明`, 
+	26  : `成功创造 1 个狂热生产主义文明`							+ ` # 创造成功一个狂热生产主义文明`, 
+	27  : `成功创造 1 个狂热生态主义文明`							+ ` # 创造成功一个狂热生态主义文明`, 
+	
+	8   : `成功创造 1 个物质主义文明`								+ ` # 创造成功一个物质主义文明`, 
+	9   : `成功创造 1 个精神主义文明`								+ ` # 创造成功一个精神主义文明`, 
+	10  : `成功创造 1 个集权主义文明`								+ ` # 创造成功一个集权主义文明`, 
+	11  : `成功创造 1 个分权主义文明`								+ ` # 创造成功一个分权主义文明`, 
+	12  : `成功创造 1 个尚武主义文明`								+ ` # 创造成功一个尚武主义文明`, 
+	13  : `成功创造 1 个和平主义文明`								+ ` # 创造成功一个和平主义文明`, 
+	14  : `成功创造 1 个亲外主义文明`								+ ` # 创造成功一个亲外主义文明`, 
+	15  : `成功创造 1 个孤立主义文明`								+ ` # 创造成功一个孤立主义文明`, 
+	16  : `成功创造 1 个生产主义文明`								+ ` # 创造成功一个生产主义文明`, 
+	17  : `成功创造 1 个生态主义文明`								+ ` # 创造成功一个生态主义文明`, 
+	
+	1   : `成功创造 __1 任意文明`									+ ` # 创造成功1个文明`, 
+	2   : `成功创造 _10 任意文明`									+ ` # 创造成功10个文明`, 
+	3   : `成功创造 _30 任意文明`									+ ` # 创造成功30个文明`, 
+	4   : `成功创造 _50 任意文明`									+ ` # 创造成功50个文明`, 
+	5   : `成功创造 100 任意文明`									+ ` # 创造成功100个文明`, 
+	6   : `成功创造 200 任意文明`									+ ` # 创造成功200个文明`, 
+	7   : `成功创造 300 任意文明`									+ ` # 创造成功300个文明`, 
+	
+	28  : `收集到 __2 个文明故事`									+ ` # 收集到2个文明故事`, 
+	29  : `收集到 __5 个文明故事`									+ ` # 收集到5个文明故事`, 
+	30  : `收集到 _15 个文明故事`									+ ` # 收集到15个文明故事`, 
+	31  : `收集到 _40 个文明故事`									+ ` # 收集到40个文明故事`, 
+	32  : `收集到 100 个文明故事`									+ ` # 收集到100个文明故事`, 
+	33  : `收集到 150 个文明故事`									+ ` # 收集到150个文明故事`, 
+	
+	34  : `文明库拥有 __3 个文明`									+ ` # 文明库内拥有3个文明`, 
+	35  : `文明库拥有 _10 个文明`									+ ` # 文明库内拥有10个文明`, 
+	36  : `文明库拥有 _15 个文明`									+ ` # 文明库内拥有15个文明`, 
+	37  : `文明库拥有 _20 个文明`									+ ` # 文明库内拥有20个文明`, 
+	38  : `文明库拥有 _30 个文明`									+ ` # 文明库内拥有30个文明`, 
+	39  : `文明库拥有 _50 个文明`									+ ` # 文明库内拥有50个文明`, 
+	
+	40  : `文明库拥有 __2 种思潮文明`								+ ` # 文明库内拥有2种思潮的文明`, 
+	41  : `文明库拥有 __4 种思潮文明`								+ ` # 文明库内拥有4种思潮的文明`, 
+	42  : `文明库拥有 __6 种思潮文明`								+ ` # 文明库内拥有6种思潮的文明`, 
+	43  : `文明库拥有 __8 种思潮文明`								+ ` # 文明库内拥有8种思潮的文明`, 
+	44  : `文明库拥有 _10 种思潮文明`								+ ` # 文明库内拥有所有思潮的文明`, 
+	},
+	
+	分组名称 : {
+		
+	5   : `文明的启航`		+ ` # 启航`, 
+	6   : `文明的远航`		+ ` # 远航`, 
+	
+	7   : `科学官之章`		+ ` # 科学官之章`, 
+	8   : `领思长之章`		+ ` # 领思长之章`, 
+	
+	9   : `第二章任务`		+ ` # 第一章任务`, 
+	10  : `第三章任务`		+ ` # 第二章任务`, 
+	11  : `第四章任务`		+ ` # 第三章任务`, 
+	
+	//--
+	
+	13  : `见证灭亡`		+ ` # 见证灭亡`, 
+	14  : `殖民地`			+ ` # 殖民`, 
+	15  : `毁灭`			+ ` # 毁灭`, 
+	
+	17  : `舰队登陆`		+ ` # 舰队`, 
+	16  : `质量弹`			+ ` # 质量弹`, 
+	18  : `广播`			+ ` # 广播`, 
+	
+	19  : `摧毁情报网`		+ ` # 摧毁情报网`, 
+	20  : `建立情报网`		+ ` # 建立情报`, 
+	
+	25  : `内战`			+ ` # 内战`, 
+	22  : `灭亡`			+ ` # 灭亡`, 
+	
+	21  : `继承衣钵`		+ ` # 继承衣钵`, 
+	12  : `文明存续`		+ ` # 文明存续`, 
+	
+	23  : `资源`			+ ` # 资源`, 
+	24  : `科技`			+ ` # 科技`, 
+	
+	//--
+	
+	1   : `文明创造`		+ ` # 文明创造`, 
+	2   : `文明故事`		+ ` # 文明故事`, 
+	
+	3   : `文明数量`		+ ` # 文明数量`, 
+	4   : `文明思潮`		+ ` # 文明思潮`, 
+	},
+	
+	所属库类 : {
+	
+	1   : `历史博物馆`		+ ` # 历史博物馆`, 
+	2   : `战场中枢`		+ ` # 战场中枢`, 
+	0   : `文明库`			+ ` # 文明库`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码			/Accomplishment,	1,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 库类代码			Type,				0,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 名称代码			Name,				$/Accomplishment_Name_1,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 图片地址			Image,				1,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 描述代码			Description,		$/Accomplishment_Description_1,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 达成参数			Param,				1,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 达成函数			Table,				AllCivil,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 分组封面			Condition,			-1,
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 分组代码			Level,				1,
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 成就描述			//成就描述,			创造成功1个文明,
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	item.库类代码 = item[1];
+	item.图片地址 = item[3];
+	item.分组封面 = item[7];
+	item.分组代码 = item[8];
+	
+	item.达成参数 = item[5];
+	item.达成函数 = item[6] +'('+ item.达成参数 +')';
+	
+	item.所属库类 = textList.所属库类[item.库类代码];
+	item.分组名称 = (item.分组代码 === '-1' ? '-' : textList.分组名称[item.分组代码]);
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.名称代码 = item[2].replace('$/Accomplishment_Name_','');
+	item.描述代码 = item[4].replace('$/Accomplishment_Description_','');
+	
+	item.项目名称 = textList.项目名称[item.名称代码];
+	item.文本描述 = textList.文本描述[item.描述代码];
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="
+		<img loading='lazy' alt='bg' src='../static/image/achieves/bg.png' style='width:128px;height:128px;' />
+		<img loading='lazy' alt='${item.项目名称}' src='../static/image/achieves/${item.图片地址}.png' style='width:112px;height:112px;position:absolute;top:16px;            left:16px;'             />
+	">
+		<img loading="lazy" alt="bg" src="../static/image/achieves/bg.png" style="width: 64px;height: 64px;" />
+		<img loading="lazy" alt="${item.项目名称}" src="../static/image/achieves/${item.图片地址}.png" style="width: 56px;height: 56px;position:absolute;top:calc(50% - 28px);left:calc(50% - 28px);" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (xj2._hideText(item.所属库类)) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.达成函数) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.分组封面) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (xj2._hideText(item.分组名称)) +'</td>';
+	
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

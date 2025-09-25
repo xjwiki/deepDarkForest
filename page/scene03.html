@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>唯心之章</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>唯心之章</span><small>(外域入侵)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 主神贡品</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-1a.jpg" /><span>数个遥远的恒星同时发生了超新星爆发. 夜空中出现数个亮星, 格外耀眼. 天象异变令国民无所适从. 作为大祭司, 我需要行动起来了; 在我们的国度, 任何不常有的现象都会被视为至高神的意志, 可供静思的场地比民居还多. 太古以来便是如此; 我到达位于恒星轨道上的巨型沉思殿, 在默祷中得到了至高神的旨意: 一个人的祈求不足以得到答案, 星象异变的启示只会在整个族群联结且持续的静思中降临; 得为集体静思仪式做准备了; 每次得到的指引都大同小异. 但是大祭司的职责就是执行这些指引. 是时候开始工作了;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_02.jpg" /><span>if(场景开端){ 昭秘首脑: 大祭司, 得益于你的祷告, 至高神已为我们明确指出了洞察奥秘的道路; 我们智慧浅薄, 不借助于至高神来探求真理, 我们将永远无法揭示异变的奥秘; 大祭司, 尽一切所能, 按至高神的指引行事, 让我们走出迷局 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>祭仪助手: 我是您的助手, 会辅佐您达成这次集体冥思仪式(任务: 建造六个沉思殿)(可选任务: 在 1700 年内完成任务);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>if(首个沉思殿建筑被建立起来){ 祭仪助手: 大祭司, 请恕我进言. 如果每个人都过早地沉浸在冥想中, 我们的技术进步将可能会受到影响(可选任务: 不要让科技增速变为负数) };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>if(文明的科技点增长值小于 0){ 祭仪助手: 大祭司, 人们自发地沉湎于冥思之中, 正常的社会生活, 已经受到影响了 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>if(年份 >= 400Y){ 祭仪助手: 我们似乎冷落了科研的领域, 科研人员要求我们为他们提供支持(事件: 科学家的不满) };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>if(年份 >= 800Y){ 祭仪助手: 大祭司, 我们的探险队发来了一个遥远星系的数据; 在数百年前, 那个星系曾是一个盛大的静思广场; 如果我们能够将那片静思广场重建, 那么那里将会成为一个完美的集体冥思地点(可选任务: 重建静思广场) };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_03.jpg" /><span>if(拆除北极星星系上的所有遗迹){ 祭仪助手: 大祭司, 你做得很好. 这下我们有了能容纳几百万人同时静思的场所了 };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-1b.jpg" /><span>我们为民众建造了最理想的沉思殿, 在高耸入云的灵感塔上, 主持着一场又一场规模磅礴的共想会; 枢机团对我的工作非常满意, 我又一次回到首都接受昭秘首脑的授勋; 尽管不是首次回到首都, 我还是被这壮观的景象所震撼. 在轨道电梯上, 鳞次栉比的沉思设施尽收眼底, 一直延伸到地平线; 昭秘首脑端坐在诸沉思殿的正中, 一边欣赏着艺伎的舞蹈, 一边听取着我的报告; 昭秘首脑似乎无心观看演出, 喃喃自语道, 异变的启示近在眼前了; 显然, 祭仪助手们早将沉思盛事的进展传达过来了. 对此我没有什么特别的想法;</span></p>
+
+<!-- 01. 主神的贡品
+
+'3-1-1-0'       : `<<CG:Textures/MissionCG/3-1a>>星夜, 数个遥远的恒星同时发生了超新星爆发. 夜空中出现数个亮星, 格外耀眼. 天象异变令国民无所适从. 作为大祭司, 我需要行动起来了; `						+ `<<CG:Textures/MissionCG/3-1a>>星夜，数个遥远的恒星同时发生了超新星爆发。夜空中出现数个亮星，格外耀眼。天象异变令国民无所适从。作为大祭司，我需要行动起来了。`,
+'3-1-1-1'       : `<<CG:Textures/MissionCG/3-1a>>在我们的国度, 任何不常有的现象都会被视为至高神的意志, 可供静思的场地比民居还多. 太古以来便是如此; `													+ `<<CG:Textures/MissionCG/3-1a>>在我们的国度，任何不常有的现象都会被视为至高神的意志，可供静思的场地比民居还多。太古以来便是如此。`,
+'3-1-1-2'       : `<<CG:Textures/MissionCG/3-1a>>我到达位于恒星轨道上的巨型沉思殿, 在默祷中得到了至高神的旨意：一个人的祈求不足以得到答案, 星象异变的启示只会在整个族群联结且持续的静思中降临; `		+ `<<CG:Textures/MissionCG/3-1a>>我到达位于恒星轨道上的巨型沉思殿，在默祷中得到了至高神的旨意：一个人的祈求不足以得到答案，星象异变的启示只会在整个族群联结且持续的静思中降临。`,
+'3-1-1-3'       : `<<CG:Textures/MissionCG/3-1a>>看来, 我们得为集体静思仪式早做准备了; `																												+ `<<CG:Textures/MissionCG/3-1a>>看来，我们得为集体静思仪式早做准备了。`,
+'3-1-1-4'       : `<<CG:Textures/MissionCG/3-1a>>每次得到的指引都大同小异, 这一次也不例外. 但是大祭司的职责就是执行这些指引. 是时候开始工作了; `														+ `<<CG:Textures/MissionCG/3-1a>>每次得到的指引都大同小异，这一次也不例外。但是大祭司的职责就是执行这些指引。是时候开始工作了。`,
+
+————
+
+'3-1-2-0'       : `<<HeadImage:F_02>>if(场景开端){ 昭秘首脑: 大祭司, 得益于你的祷告, 至高神已经为我们明确指出了洞察奥秘的道路.  };`																		+ `<<HeadImage:F_02>>大祭司，得益于你的祷告，至高神已经为我们明确指出了洞察奥秘的道路。`,
+'3-1-2-1'       : `<<HeadImage:F_02>>我们智慧浅薄, 如果不能借助于至高神来探求真理, 我们将永远无法揭示异变的奥秘; `																						+ `<<HeadImage:F_02>>我们智慧浅薄，如果不能借助于至高神来探求真理，我们将永远无法揭示异变的奥秘。`,
+'3-1-2-2'       : `<<HeadImage:F_02>>大祭司, 尽一切所能, 按至高神的指引行事, 让我们走出迷局; `																											+ `<<HeadImage:F_02>>大祭司，尽一切所能，按至高神的指引行事，让我们走出迷局。`,
+
+'3-1-2-3'       : `<<HeadImage:F_03>>祭仪助手: 大祭司, 我是您的助手, 我会辅佐您达成这次集体冥思仪式的(任务: 建造 6 个沉思殿)(可选任务: 在 1700 年内完成任务)`											+ `<<HeadImage:F_03>>大祭司，我是您的助手，我会辅佐您达成这次集体冥思仪式的。`,
+
+'3-1-3-0'       : `<<HeadImage:F_03>>if(首个沉思殿被建立){ 祭仪助手: 大祭司, 请恕我进言. 如果每个人都过早地沉浸在冥想中, 我们的技术进步可能会受到影响(可选任务: 不要让科技增速变为负数) };`				+ `<<HeadImage:F_03>>大祭司，请恕我进言。如果每个人都过早地沉浸在冥想中，我们的技术进步可能会受到影响。`,
+
+'3-1-4-0'       : `<<HeadImage:F_03>>if(科技的增长小于 0){ 祭仪助手: 大祭司, 人们自发地沉湎于冥思之中, 正常的社会生活受到了影响 };`																		+ `<<HeadImage:F_03>>大祭司，人们自发地沉湎于冥思之中，正常的社会生活受到了影响。`,
+
+————
+
+'3-1-5-0'       : `<<HeadImage:F_03>>if(年份 >= 400){ 祭仪助手: 大祭司, 我们似乎冷落了科研领域, 科研人员要求我们为他们提供支持(事件: 科学家的不满) };`													+ `<<HeadImage:F_03>>大祭司，我们似乎冷落了科研领域，科研人员要求我们为他们提供支持。`,
+
+'3-1-6-0'       : `<<HeadImage:F_03>>if(年份 >= 800){ 祭仪助手: 大祭司, 我们的探险队发来了一个遥远星系的数据 };`																						+ `<<HeadImage:F_03>>大祭司，我们的探险队发来了一个遥远星系的数据。`,
+'3-1-6-1'       : `<<HeadImage:F_03>>数百年前, 那里是一个盛大的静思广场; `																																+ `<<HeadImage:F_03>>数百年前，那里是一个盛大的静思广场。`,
+'3-1-6-2'       : `<<HeadImage:F_03>>如果我们将那片静思广场重建, 它将成为一个完美的集体冥思地点(可选任务: 重建静思广场)`																				+ `<<HeadImage:F_03>>如果我们将那片静思广场重建，它将成为一个完美的集体冥思地点。`,
+
+'3-1-7-0'       : `<<HeadImage:F_03>>if(拆除北极星星系上的所有遗迹){ 祭仪助手: 大祭司, 你做得很好. 这下我们有能容纳几百万人同时静思的场所了 };`															+ `<<HeadImage:F_03>>大祭司，你做得很好。这下我们有能容纳几百万人同时静思的场所了。`,
+
+————
+
+'3-1-8-0'       : `<<CG:Textures/MissionCG/3-1b>>我们为民众建造了最理想的沉思殿, 在高耸入云的灵感塔上, 主持着一场又一场规模磅礴的共想会; `																+ `<<CG:Textures/MissionCG/3-1b>>我们为民众建造了最理想的沉思殿，在高耸入云的灵感塔上，主持着一场又一场规模磅礴的共想会。`,
+'3-1-8-1'       : `<<CG:Textures/MissionCG/3-1b>>枢机团对我的工作非常满意, 我又一次被批准回到首都接受昭秘首脑的授勋; `																					+ `<<CG:Textures/MissionCG/3-1b>>枢机团对我的工作非常满意，我又一次被批准回到首都接受昭秘首脑的授勋。`,
+'3-1-8-2'       : `<<CG:Textures/MissionCG/3-1b>>尽管不是第一次回到首都, 我还是被这壮观的景象所震撼. 在轨道电梯上, 鳞次栉比的沉思设施尽收眼底, 一直延伸到地平线; `										+ `<<CG:Textures/MissionCG/3-1b>>尽管不是第一次回到首都，我还是被这壮观的景象所震撼。在轨道电梯上，鳞次栉比的沉思设施尽收眼底，一直延伸到地平线。`,
+'3-1-8-3'       : `<<CG:Textures/MissionCG/3-1b>>昭秘首脑端坐在诸沉思殿的正中, 一边欣赏着艺伎在下方的舞蹈, 一边听取着我的报告; `																		+ `<<CG:Textures/MissionCG/3-1b>>昭秘首脑端坐在诸沉思殿的正中，一边欣赏着艺伎在下方的舞蹈，一边听取着我的报告。`,
+'3-1-8-4'       : `<<CG:Textures/MissionCG/3-1b>>“异变的启示近在眼前了. ”昭秘首脑似乎无心观看演出, 喃喃自语道; `																						+ `<<CG:Textures/MissionCG/3-1b>>“异变的启示近在眼前了。”昭秘首脑似乎无心观看演出，喃喃自语道。`,
+'3-1-8-5'       : `<<CG:Textures/MissionCG/3-1b>>显然, 祭仪助手们早将沉思盛事的进展传达过来了. 对此, 我没有什么特别的想法, 只是微微颔首; `																+ `<<CG:Textures/MissionCG/3-1b>>显然，祭仪助手们早将沉思盛事的进展传达过来了。对此，我没有什么特别的想法，只是微微颔首。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 远方来客</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-2a.jpg" /><span>我们的文明由 14 个星区构成, 其间遍布着大大小小的政权, 不同星区之间由虫洞连接着; 关于这些虫洞的形成原因, 我们的科学家毫无头绪. 祭司们则将虫洞称之为"神之桥梁", 将其看作至高神为我们建造的通道, 让我们文明的不同地区间彼此联结, 团结在一起; 由于我们当前还没有掌握曲率航行的技术, 所以这 14 个星区就是我们认知的全部了. 对于更深处的太空, 我们几乎一无所知; 但如今, 位于文明最为边陲的第四星区出现了叛乱, 我奉命前去应对;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(场景开端){ 区域祭司: 叛军作乱了数十年. 本地其他两个势力拒绝响应我们的动员, 他们割据一方, 向来不听指挥 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 情况看来还有些复杂, 那么, 我该从哪里着手呢?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 尽快降伏在星区兴风作浪的叛军; 但是我们在当前星区的势力还比较薄弱, 需要您和另外两个本地势力取得联系, 动员他们协助平叛(任务: 找到自治守军并传达动员命令, 找到奥义求索者并传达动员命令)(可选任务: 凝聚力 >= 50);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>if(与南河三星系交流){ 自治守军: 千年来我们一直被当作门卫使唤; 收到开战信息了, 我们会协助你们降伏背叛者的 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>if(与箕宿一星系交流){ 奥义求索者: 把我们驱逐到这, 现在还不满足吗; 想让我们为你们冲锋陷阵… 好吧, 就这一次 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(成功笼络自治守军和奥义求索者){ 区域祭司: 我们总算拉起了一条战线, 是时候降伏背叛者了(任务: 消灭背叛者) };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(提前攻击自治守军或奥义求索者){ 区域祭司: 您这是干什么? 这是我们的盟友啊(注解: 消灭背叛者后就不会触发) };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(消灭背叛者){ 区域祭司: 大祭司, 背叛者已被击溃 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 很奇怪, 根据我们的情报, 他们至少还有另外的两个移民地, 是谁帮我们消灭了呢?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>奥义求索者: 不是我们;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_05.jpg" /><span>自治守军: 也不是我们;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>奥义求索者: 难缠的叛徒, 终于被消灭了!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>自治守军: 现在, 我们的威胁只有一个了—</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>奥义求索者: 是啊, 是时候让这些成天把我们当枪使的人, 也尝尝被炮弹轰击是什么滋味了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>自治守军: 没错. 只有这样他们才能学会重视我们的需求;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 他们早对我们离心离德, 必须出兵压制他们(任务: 消灭自治守军和奥义求索者);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(消灭自治守军和奥义求索者){ 区域祭司: 无论如何, 当前星区的威胁已经被解除了, 这里又重新归于我们的掌控; 等等… 我们收到一条紧急汇报; 我们检测到这里似乎出现了一个虫洞, 它的另一端是一个陌生的星区! 还有一些不明来路的舰船正在从虫洞的入口驶出; 这, 怎么可能… 我们的疆域里, 怎么会还存在没被发现的虫洞(任务: 与出现虫洞的星系交流) };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>if(与出现虫洞的星系交流){ 伦布探险团: 我们是伦布探险团, 来自伟大的卡斯蒂利亚远征军; 我们为远方的财富和未知的世界而来; 不要和我们作对, 我们的实力远在你们之上 };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-2b.jpg" /><span>我们接引探险团的使节抵达了首都. 他们乘坐着在地面上都可以目睹的战舰, 惊人尺寸, 给我们的人民带来了巨大的震撼; 这些船舰曾从第四星区凭空出现的虫洞中鱼贯涌出. 如今, 它们轻盈无声地悬浮在我们头顶, 遮天蔽日; 人群骚动不止, 祭仪议论纷纷. 他们中有不少人相信, 我们的冥思终于打动了至高神, 这些人是神派来向我们揭示奥秘的使者; 昭秘首脑静默不语, 不知道在思考着什么. 很久之后, 他抬起头来缓缓说道: 带给他们最丰厚的礼物, 盛情款待他们. 我们需要他们加入集体冥思仪式, 将所知贡献给我们;</span></p>
+
+<!-- 02. 远方的来客
+
+'3-2-1-0'       : `<<CG:Textures/MissionCG/3-2a>>我们的文明由14个星区构成, 其间遍布着大大小小的政权, 不同星区之间由虫洞连接着; `																								+ `<<CG:Textures/MissionCG/3-2a>>我们的文明由14个星区构成，其间遍布着大大小小的政权，不同星区之间由虫洞连接着。`,
+'3-2-1-1'       : `<<CG:Textures/MissionCG/3-2a>>关于这些虫洞的形成原因, 我们的科学家毫无头绪. 祭司们则将虫洞称之为“神之桥梁”, 看作至高神为我们建造的通道, 让我们文明的不同地区间彼此联结, 团结在一起; `						+ `<<CG:Textures/MissionCG/3-2a>>关于这些虫洞的形成原因，我们的科学家毫无头绪。祭司们则将虫洞称之为“神之桥梁”，看作至高神为我们建造的通道，让我们文明的不同地区间彼此联结，团结在一起。`,
+'3-2-1-2'       : `<<CG:Textures/MissionCG/3-2a>>我们并没有掌握曲率航行技术, 这14个星区就是我们认知的全部了. 对于更深处的太空, 我们几乎一无所知; `																				+ `<<CG:Textures/MissionCG/3-2a>>我们并没有掌握曲率航行技术，这14个星区就是我们认知的全部了。对于更深处的太空，我们几乎一无所知。`,
+'3-2-1-3'       : `<<CG:Textures/MissionCG/3-2a>>如今, 位于最边陲的第四星区出现了叛乱, 我奉命前去应对; `																														+ `<<CG:Textures/MissionCG/3-2a>>如今，位于最边陲的第四星区出现了叛乱，我奉命前去应对。`,
+
+————
+
+'3-2-2-0'       : `<<HeadImage:F_04>>if(场景开端){ 区域祭司: 大祭司, 您终于到了.  };`																																			+ `<<HeadImage:F_04>>大祭司，您终于到了。`,
+'3-2-2-1'       : `<<HeadImage:F_04>>叛军这里作乱了数十年. 而本地其他两个武装势力拒绝响应我们的动员, 他们割据一方, 向来不听指挥; `																								+ `<<HeadImage:F_04>>叛军这里作乱了数十年。而本地其他两个武装势力拒绝响应我们的动员，他们割据一方，向来不听指挥。`,
+
+'3-2-2-2'       : `<<HeadImage:F_06>>大祭司: 我该从哪里着手? `																																									+ `<<HeadImage:F_06>>我该从哪里着手？`,
+
+'3-2-2-3'       : `<<HeadImage:F_04>>区域祭司: 我们需要尽快降伏在这个星区兴风作浪的叛军; `																																		+ `<<HeadImage:F_04>>我们需要尽快降伏在这个星区兴风作浪的叛军。`,
+'3-2-2-4'       : `<<HeadImage:F_04>>但是我们在当前星区的势力还比较薄弱, 需要您和另外两个本地势力取得联系, 动员他们协助平叛(任务: 找到自治守军并传达动员命令, 找到奥义求索者并传达动员命令)(可选任务: 凝聚力不要低于 50)`		+ `<<HeadImage:F_04>>但是我们在当前星区的势力还比较薄弱，需要您和另外两个本地势力取得联系，动员他们协助平叛。`,
+
+————
+
+'3-2-3-0'       : `<<HeadImage:A_05>>if(与南河三星系交流){ 自治守军: 上千年了, 我们一直被当作门卫一样使唤 };`																													+ `<<HeadImage:A_05>>上千年了，我们一直被当作门卫一样使唤。`,
+'3-2-3-1'       : `<<HeadImage:A_05>>开战信息我们收到了, 我们会协助你们降伏背叛者的; `																																			+ `<<HeadImage:A_05>>开战信息我们收到了，我们会协助你们降伏背叛者的。`,
+
+'3-2-5-0'       : `<<HeadImage:K_02>>if(与箕宿一星系交流){ 奥义求索者: 你们把我们驱逐到这里, 现在还不满足吗? };`																												+ `<<HeadImage:K_02>>你们把我们驱逐到这里，现在还不满足吗？`,
+'3-2-5-1'       : `<<HeadImage:K_02>>原来是想让我们为你们冲锋陷阵……好吧, 就这一次, 我们加入你这一方; `																															+ `<<HeadImage:K_02>>原来是想让我们为你们冲锋陷阵……好吧，就这一次，我们加入你这一方。`,
+
+'3-2-4-0'       : `<<HeadImage:F_04>>if(提前攻击自治守军或奥义求索者){ 区域祭司: 您这是干什么? 这是我们的盟友! };`																												+ `<<HeadImage:F_04>>您这是干什么？这是我们的盟友！`,
+
+'3-2-6-0'       : `<<HeadImage:F_04>>区域祭司: 大祭司, 我们总算拉起了一条战线, 是时候降伏背叛者了(任务: 消灭背叛者);`																											+ `<<HeadImage:F_04>>大祭司，我们总算拉起了一条战线，是时候降伏背叛者了。`,
+
+————
+
+'3-2-7-0'       : `<<HeadImage:F_04>>if(背叛者文明覆灭){ 大祭司, 背叛者已经被击溃了 };`																																			+ `<<HeadImage:F_04>>大祭司，背叛者已经被击溃了。`,
+
+'3-2-7-1'       : `<<HeadImage:F_06>>大祭司: 很奇怪, 我们的情报显示他们至少还有两个移民地, 是谁帮我们消灭了呢? `																												+ `<<HeadImage:F_06>>很奇怪，我们的情报显示他们至少还有两个移民地，是谁帮我们消灭了呢？`,
+
+'3-2-7-2'       : `<<HeadImage:K_02>>奥义求索者: 不是我们做的; `																																								+ `<<HeadImage:K_02>>不是我们做的。`,
+
+'3-2-7-3'       : `<<HeadImage:F_05>>自治守军: 也不是我们; `																																									+ `<<HeadImage:F_05>>也不是我们。`,
+
+'3-2-8-0'       : `<<HeadImage:K_02>>奥义求索者: 这群难缠的叛徒, 终于被消灭了! `																																				+ `<<HeadImage:K_02>>这群难缠的叛徒，终于被消灭了！`,
+
+'3-2-8-1'       : `<<HeadImage:A_05>>自治守军: 现在, 我们的威胁只有这一个了——`																																					+ `<<HeadImage:A_05>>现在，我们的威胁只有这一个了——`,
+
+'3-2-8-2'       : `<<HeadImage:K_02>>奥义求索者: 是啊, 是时候让这些成天把我们当枪使的人也尝尝被炮弹轰击的滋味了; `																												+ `<<HeadImage:K_02>>是啊，是时候让这些成天把我们当枪使的人也尝尝被炮弹轰击的滋味了。`,
+
+'3-2-8-3'       : `<<HeadImage:A_05>>自治守军: 没错. 这样他们才能学会重视我们的需求; `																																			+ `<<HeadImage:A_05>>没错。这样他们才能学会重视我们的需求。`,
+
+'3-2-9-0'       : `<<HeadImage:F_04>>区域祭司: 大祭司, 这些人早对我们离心离德了, 我们必须出兵压制他们的气焰(消灭自治守军和奥义求索者);`																							+ `<<HeadImage:F_04>>大祭司，这些人早对我们离心离德了，我们必须出兵压制他们的气焰！`,
+
+'3-2-10-0'      : `<<HeadImage:F_04>>if(消灭自治守军和奥义求索者){ 区域祭司: 无论如何, 当前星区的威胁已经解除了, 这里重归于我们的掌控 };`																						+ `<<HeadImage:F_04>>无论如何，当前星区的威胁已经解除了。这里重归于我们的掌控。`,
+'3-2-10-1'      : `<<HeadImage:F_04>>等等……我们收到一条紧急汇报; `																																								+ `<<HeadImage:F_04>>等等……我们收到一条紧急汇报。`,
+'3-2-10-2'      : `<<HeadImage:F_04>>我们检测到这里似乎出现了一个虫洞, 它的另一端是一个陌生的星区! 一些不明舰船正在从虫洞入口驶出! `																							+ `<<HeadImage:F_04>>我们检测到这里似乎出现了一个虫洞，它的另一端是一个陌生的星区！一些不明舰船正在从虫洞入口驶出！`,
+'3-2-10-3'      : `<<HeadImage:F_04>>这怎么可能……我们的疆域里怎么会还有没被发现的虫洞(任务: 与出现虫洞的星系交流)`																												+ `<<HeadImage:F_04>>这怎么可能……我们的疆域里怎么会还有没被发现的虫洞？`,
+
+'3-2-11-0'      : `<<HeadImage:M_08>>if(与出现虫洞的星系交流){ 伦布探险团: 我们是伦布探险团, 来自伟大的卡斯蒂利亚远征军; }`																										+ `<<HeadImage:M_08>>我们是伦布探险团，来自伟大的卡斯蒂利亚远征军。`,
+'3-2-11-1'      : `<<HeadImage:M_08>>我们为远方的财富和未知的世界而来; `																																						+ `<<HeadImage:M_08>>我们为远方的财富和未知的世界而来。`,
+'3-2-11-2'      : `<<HeadImage:M_08>>不要试图和我们作对, 我们的实力远在你们之上; `																																				+ `<<HeadImage:M_08>>不要试图和我们作对，我们的实力远在你们之上。`,
+
+————
+
+'3-2-12-0'      : `<<CG:Textures/MissionCG/3-2b>>我们接引探险团的使节们抵达了首都. 他们乘坐着在地面上都可以目睹的惊人尺寸的战舰, 给我们的人民带来了巨大的震撼; `																+ `<<CG:Textures/MissionCG/3-2b>>我们接引探险团的使节们抵达了首都。他们乘坐着在地面上都可以目睹的惊人尺寸的战舰，给我们的人民带来了巨大的震撼。`,
+'3-2-12-1'      : `<<CG:Textures/MissionCG/3-2b>>这些船舰曾从第四星区凭空出现的虫洞中鱼贯涌出. 如今, 它们轻盈无声地悬浮在我们头顶, 遮天蔽日; `																					+ `<<CG:Textures/MissionCG/3-2b>>这些船舰曾从第四星区凭空出现的虫洞中鱼贯涌出。如今，它们轻盈无声地悬浮在我们头顶，遮天蔽日。`,
+'3-2-12-2'      : `<<CG:Textures/MissionCG/3-2b>>人群骚动不止, 祭仪们议论纷纷. 他们中不少人相信, 我们的冥思终于打动了至高神, 这些人是神派来向我们揭示奥秘的使者; `																+ `<<CG:Textures/MissionCG/3-2b>>人群骚动不止，祭仪们议论纷纷。他们中不少人相信，我们的冥思终于打动了至高神，这些人是神派来向我们揭示奥秘的使者。`,
+'3-2-12-3'      : `<<CG:Textures/MissionCG/3-2b>>昭秘首脑静默不语, 不知道在思考着什么. 很久之后, 他抬起头来缓缓说道：`																											+ `<<CG:Textures/MissionCG/3-2b>>昭秘首脑静默不语，不知道在思考着什么。很久之后，他抬起头来缓缓说道：`,
+'3-2-12-4'      : `<<CG:Textures/MissionCG/3-2b>>“带给他们最丰厚的礼物, 盛情款待他们. 我们需要他们加入集体冥思仪式, 将所知贡献给我们. ”`																						+ `<<CG:Textures/MissionCG/3-2b>>“带给他们最丰厚的礼物，盛情款待他们。我们需要他们加入集体冥思仪式，将所知贡献给我们。”`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading03">03. 福神瘟神</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-3a.jpg" /><span>数场陨石雨洗劫了我们的几个行星, 另外几个农业行星上也爆发了罕见的旱灾. 灾难蹂躏着我们的国家; 昭秘首脑和祭仪助手们认为, 我们惹怒了至高神, 他们猜测是我们对神使的接待还没有满足他的预期; 因此, 我被任命为使团的领队, 带着丰厚的礼物, 抵达了访客的舰队停泊的地方; 他们热情地欢迎了我们. 但是我注意到, 他们所有的武器都是上膛的; 他们对我们赠送的音乐, 以及书籍和冥思石, 似乎都不感兴趣, 但是却对氦三结晶制成的工艺品展示出异常的热情; 小孩子都知道, 这样一块小小的结晶, 便足够为一座城市供能数年; 他们热情地询问我们, 关于这种结晶的产地, 我们还有多少矿场, 诸如此类的问题; 我们停留数日后, 便返回了首都. 我总是觉得他们别有所图, 不过我没有把这个想法分享给任何人;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(场景开端){ 区域祭司: 您终于到我们第十二星区了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 立刻汇报状况;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 叛教者攻占了我们的数个星系, 击垮了我们在本星区的所有军事力量; 目前他们在二号星团至少占据了五个星系; 伦布探险队位于三号星团, 我们目前尚且不清楚他们的意图… 一号星团有我们的堡垒, 占据着整个星区的战略要道; 虽然航路已被切断, 但仍可通过星门向他们输送资源; 如果能守住这片战略要道, 能为我们带来不少便捷(任务: 消灭背叛者);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(经过了 30 年){ 区域祭司: 我们现在的军事力量恐怕还不是背叛者的对手. 但我们不一定要死守一个地方, 可以考虑采用游击的策略; 比如, 我们可以在堡垒周围布置几个太空港, 当堡垒被攻击后沦陷, 我们可以抢在敌人之前将堡垒占领回来(可选任务: 别让堡垒星系在 1000 年内被背叛者占领) };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(超过 1000 年且堡垒所在星系还在){ 区域祭司: 只要守住战略要道, 就还有胜机; 那些背弃了至高神的亵渎者, 必不能胜过我们 }else if(超过 1000 年且堡垒所在星系丢失){ 区域祭司: 我们没能夺回堡垒, 堡垒已经被敌人占领了, 接下来, 要陷入一番苦战了 }else if(超过 1000 年夺回丢失的堡垒星系){ 区域祭司: 虽然艰难, 但我们在扳回局面, 还有胜机 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 发生什么事了?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 我们被攻击了, 堡垒所在的星系被攻破了, 是低维化; 这怎么可能… 我们的移民地, 是直接从内部被低维化的!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 背叛者怎么可能会有这种技术…</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 大祭司, 有外部的通讯接入!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 接通 ——</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 大祭司, 我们好久不见了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 是你们教唆背叛者?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 什么?!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 我们只是提醒他们, 比起沉迷什么云里雾里的玄思, 跟着我们更能发大财而已;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 果然… 你们根本不是什么神使!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 大祭司, 我们有过一面之缘, 看你像是个明白人, 就多说几句; 你们坐拥着数之不尽的氦三结晶, 却把它作为工艺品, 何其可笑! 你们的领袖愚昧不堪, 宗教更是可笑之极. 空想是不会有回报的, 专心发财不好吗? 投降吧, 大祭司;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 你们这些贪婪的强盗, 我会让你们为自己的亵渎行为付出代价的!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 不得不说, 作为一个小小的探险团, 我们可能不是你们庞大帝国的对手; 但是凭借技术优势, 还有联合那些对神怀有质疑的人们, 我们会击溃你们的(任务: 消灭背叛者和伦布探险团);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 即刻向中央报告他们的意图; 他们怎么敢冒充神的使者? 我们必须把他们赶出这里!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>区域祭司: 他们似乎会使用某种我们不知道的技术, 可以把低维空间封装起来再发射出去, 他们将这种技术称作零点聚爆弹; 他们的技术确实高于我们, 这是事实; 不过, 他们制造的低维空间范围较小, 似乎和质量弹一样可以被探测和拦截; 也许, 我们可以利用这点来抵挡他们的攻击;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(消灭叛教者){ 区域祭司: 这就是亵渎神明的下场, 在囚牢里后悔吧 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_04.jpg" /><span>if(消灭伦布探险团){ 区域祭司: 胆敢伪装成神的使者, 在金币熔浆里品尝财富的味道吧 };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-3b.jpg" /><span>如果伦布探险团的残余部队能看到, 他们的战俘是如何被我们改造成最虔诚的神仆, 他们的士气定会被极度震慑; 意识编织手段过于残忍, 早在数千年前就被取缔了. 然而, 伦布探险团的渎神行为令军队中的激进者们震怒不已, 所以他们还是对战俘动用了这种刑罚; 我并不十分赞同这种做法. 我在刑场上, 通过一些灰色手段, 救下了一些探险队员; 只是希望从他们的口中, 一窥那个远方国度的面貌; 令人震惊的是, 他们告诉我, 这个和我们打得有来有回的强大对手, 就只是那个未知文明的一个小小的拓荒队而已; 他们来自于一个由数万个星域组成的超大星系群, 那个星系群中存在数百个像他们这样强大的文明… 而他们的祖国, 卡斯蒂亚科学理事会只是一个处在整个星系群边陲的弱小国家而已; 一个比他们强大数十倍的大帝国, 阻断了他们通往星系另一边的贸易通道; 因此他们不得不通过调谐虫洞来发现新的贸易通道, 却阴差阳错地来到了我们的星系; 我们的星系的氦三结晶的产量超乎他们的想象, 对他们来说, 我们这里是座宝山; 我们这种冥思和敬神的文化在他们看来, 是原始文明才有的习俗; 在他们的眼中, 我们就和尚未开化的原始人差不多; 我隐隐预感, 我们即将遇上远方那些兴盛文明的冰冷目光;</span></p>
+
+<!-- 03. 福神或瘟神
+
+'3-3-1-0'       : `<<CG:Textures/MissionCG/3-3a>>数场陨石雨洗劫了我们的几个行星, 而另外几个农业行星上也爆发了罕见的旱灾. 灾难蹂躏着我们的国家; `											+ `<<CG:Textures/MissionCG/3-3a>>数场陨石雨洗劫了我们的几个行星，而另外几个农业行星上也爆发了罕见的旱灾。灾难蹂躏着我们的国家。`,
+'3-3-1-1'       : `<<CG:Textures/MissionCG/3-3a>>昭秘首脑和祭仪助手们认为我们惹怒了至高神, 猜测我们对神使的接待还没有满足他的预期; `														+ `<<CG:Textures/MissionCG/3-3a>>昭秘首脑和祭仪助手们认为我们惹怒了至高神，猜测我们对神使的接待还没有满足他的预期。`,
+'3-3-1-2'       : `<<CG:Textures/MissionCG/3-3a>>我被任命为使团的领队, 带着丰厚的礼物, 抵达了访客的舰队停泊的地方; `																		+ `<<CG:Textures/MissionCG/3-3a>>我被任命为使团的领队，带着丰厚的礼物，抵达了访客的舰队停泊的地方。`,
+'3-3-1-3'       : `<<CG:Textures/MissionCG/3-3a>>他们热情地欢迎了我们. 但我注意到, 他们所有的武器都是上膛的; `																				+ `<<CG:Textures/MissionCG/3-3a>>他们热情地欢迎了我们。但我注意到，他们所有的武器都是上膛的。`,
+'3-3-1-4'       : `<<CG:Textures/MissionCG/3-3a>>他们对我们赠送的音乐、书籍和冥思石似乎都不感兴趣, 却对氦三结晶制成的工艺品展示出异常的热情; `												+ `<<CG:Textures/MissionCG/3-3a>>他们对我们赠送的音乐、书籍和冥思石似乎都不感兴趣，却对氦三结晶制成的工艺品展示出异常的热情。`,
+'3-3-1-5'       : `<<CG:Textures/MissionCG/3-3a>>小孩子都知道, 这样一块小小的结晶, 便足够为一座城市供能数年; `																				+ `<<CG:Textures/MissionCG/3-3a>>小孩子都知道，这样一块小小的结晶，便足够为一座城市供能数年。`,
+'3-3-1-6'       : `<<CG:Textures/MissionCG/3-3a>>他们热情地询问我们, 这种结晶的产地, 我们还有多少矿场, 诸如此类的问题; `																	+ `<<CG:Textures/MissionCG/3-3a>>他们热情地询问我们，这种结晶的产地，我们还有多少矿场，诸如此类的问题。`,
+'3-3-1-7'       : `<<CG:Textures/MissionCG/3-3a>>我们停留数日后便返回了首都. 我觉得他们别有所图, 不过我没有把这个想法分享给任何人; `														+ `<<CG:Textures/MissionCG/3-3a>>我们停留数日后便返回了首都。我觉得他们别有所图，不过我没有把这个想法分享给任何人。`,
+
+————
+
+'3-3-2-0'       : `<<HeadImage:F_04>>if(场景开端){ 区域祭司: 大祭司, 您终于来到我们第十二星区了.  };`																						+ `<<HeadImage:F_04>>大祭司，您终于来到我们第十二星区了。`,
+
+'3-3-2-1'       : `<<HeadImage:F_06>>大祭司: 立刻汇报状况; `																																+ `<<HeadImage:F_06>>立刻汇报状况。`,
+
+'3-3-2-2'       : `<<HeadImage:F_04>>区域祭司: 叛教者攻占了我们的数个星系, 击垮了我们在本星区的所有军事力量; `																				+ `<<HeadImage:F_04>>叛教者攻占了我们的数个星系，击垮了我们在本星区的所有军事力量。`,
+'3-3-3-0'       : `<<HeadImage:F_04>>目前他们在二号星团至少占据了五个星系; `																												+ `<<HeadImage:F_04>>目前他们在二号星团至少占据了五个星系。`,
+'3-3-4-0'       : `<<HeadImage:F_04>>伦布探险队位于三号星团, 我们目前尚且不清楚他们的意图……`																								+ `<<HeadImage:F_04>>伦布探险队位于三号星团，我们目前尚且不清楚他们的意图……`,
+'3-3-5-0'       : `<<HeadImage:F_04>>一号星团有我们的堡垒, 占据着整个星区内的战略要道; `																									+ `<<HeadImage:F_04>>一号星团有我们的堡垒，占据着整个星区内的战略要道。`,
+'3-3-5-1'       : `<<HeadImage:F_04>>虽然航路已经被切断了, 但是我们仍可以通过星门向他们输送资源; `																							+ `<<HeadImage:F_04>>虽然航路已经被切断了，但是我们仍可以通过星门向他们输送资源。`,
+'3-3-5-2'       : `<<HeadImage:F_04>>如果我们能守住这片战略要道, 能为我们带来不少便捷(任务: 消灭背叛者);`																					+ `<<HeadImage:F_04>>如果我们能守住这片战略要道，能为我们带来不少便捷。`,
+
+'3-3-6-0'       : `<<HeadImage:F_04>>if(经过了 30 年){ 区域祭司: 我们现在的军事力量恐怕不是背叛者的对手. 我们不一定要死守一个地方, 可以考虑采用游击的策略; };`								+ `<<HeadImage:F_04>>我们现在的军事力量恐怕不是背叛者的对手。我们不一定要死守一个地方，可以考虑采用游击的策略。`,
+'3-3-6-1'       : `<<HeadImage:F_04>>比如, 我们可以在堡垒周围布置几个太空港, 当堡垒被攻击后, 可以抢在敌人之前占领回来(可选任务: 1000年内不要让堡垒星系被背叛者占领)`						+ `<<HeadImage:F_04>>比如，我们可以在堡垒周围布置几个太空港，当堡垒被攻击后，可以抢在敌人之前占领回来。`,
+
+————
+
+'3-3-8-0'       : `<<HeadImage:F_04>>if(超过 1000 年且堡垒所在星系还在){ 只要能守住战略要道, 我们就还有胜机 };`																				+ `<<HeadImage:F_04>>只要能守住战略要道，我们就还有胜机。`,
+'3-3-8-1'       : `<<HeadImage:F_04>>那些背弃了至高神的亵渎者, 必不能胜过我们; `																											+ `<<HeadImage:F_04>>那些背弃了至高神的亵渎者，必不能胜过我们。`,
+
+'3-3-7-0'       : `<<HeadImage:F_04>>if(超过 1000 年且堡垒所在星系丢失){ 区域祭司: 我们没有及时夺回堡垒, 堡垒已经被敌人占领了, 接下来要陷入一番苦战了 };`									+ `<<HeadImage:F_04>>我们没有及时夺回堡垒，堡垒已经被敌人占领了，接下来要陷入一番苦战了。`,
+'3-3-9-0'       : `<<HeadImage:F_04>>if(超过 1000 年夺回丢失的堡垒星系){ 虽然打得比较艰难, 但是我们也在慢慢扳回局面, 我们还有胜机 };`														+ `<<HeadImage:F_04>>虽然打得比较艰难，但是我们也在慢慢扳回局面，我们还有胜机。`,
+
+'3-3-10-0'      : `<<HeadImage:F_06>>大祭司: 怎么回事, 发生什么了? `																														+ `<<HeadImage:F_06>>怎么回事，发生什么了？`,
+
+'3-3-10-1'      : `<<HeadImage:F_04>>区域祭司: 我们被攻击了, 要塞被攻破了, 是低维化! `																										+ `<<HeadImage:F_04>>我们被攻击了，要塞被攻破了，是低维化！`,
+'3-3-10-2'      : `<<HeadImage:F_04>>这怎么可能… 我们的移民地是直接从内部被低维化的! `																										+ `<<HeadImage:F_04>>这怎么可能……我们的移民地是直接从内部被低维化的！`,
+
+'3-3-10-3'      : `<<HeadImage:F_06>>大祭司: 背叛者怎么可能有这种技术……`																													+ `<<HeadImage:F_06>>背叛者怎么可能有这种技术……`,
+
+'3-3-10-4'      : `<<HeadImage:F_04>>区域祭司: 大祭司, 有通讯接入! `																														+ `<<HeadImage:F_04>>大祭司，有通讯接入！`,
+
+'3-3-10-5'      : `<<HeadImage:F_06>>大祭司: 接通——`																																		+ `<<HeadImage:F_06>>接通——`,
+
+'3-3-10-6'      : `<<HeadImage:M_08>>伦布探险团: 大祭司, 好久不见; `																														+ `<<HeadImage:M_08>>大祭司，好久不见。`,
+
+'3-3-10-7'      : `<<HeadImage:F_06>>大祭司: 是你们教唆的背叛者? `																															+ `<<HeadImage:F_06>>是你们教唆的背叛者？`,
+
+'3-3-10-8'      : `<<HeadImage:F_04>>区域祭司: 什么? ! `																																	+ `<<HeadImage:F_04>>什么？！`,
+
+'3-3-10-9'      : `<<HeadImage:M_08>>伦布探险团: 我们只是提醒他们, 比起沉迷什么云里雾里的玄思, 跟着我们能发大财而已; `																		+ `<<HeadImage:M_08>>我们只是提醒他们，比起沉迷什么云里雾里的玄思，跟着我们能发大财而已。`,
+
+'3-3-10-10'     : `<<HeadImage:F_06>>大祭司: 果然… 你们根本不是什么神使! `																													+ `<<HeadImage:F_06>>果然……你们根本不是什么神使！`,
+
+'3-3-10-11'     : `<<HeadImage:M_08>>伦布探险团: 大祭司, 我们有过一面之缘, 看你像是个明白人; `																								+ `<<HeadImage:M_08>>大祭司，我们有过一面之缘，看你像是个明白人。`,
+'3-3-10-12'     : `<<HeadImage:M_08>>你们坐拥着数之不尽的氦三结晶, 却把它作为工艺品, 何其可笑! `																							+ `<<HeadImage:M_08>>你们坐拥着数之不尽的氦三结晶，却把它作为工艺品，何其可笑！`,
+'3-3-10-13'     : `<<HeadImage:M_08>>你们的领袖愚昧不堪, 你们宗教更是可笑之极. 空想是不会有回报的, 专心发财不好吗? 投降吧, 大祭司; `														+ `<<HeadImage:M_08>>你们的领袖愚昧不堪，你们宗教更是可笑之极。空想是不会有回报的，专心发财不好吗？投降吧，大祭司。`,
+
+'3-3-10-14'     : `<<HeadImage:F_06>>大祭司: 你们这些贪婪的强盗, 我会让你们为自己的亵渎行为付出代价! `																						+ `<<HeadImage:F_06>>你们这些贪婪的强盗，我会让你们为自己的亵渎行为付出代价！`,
+
+'3-3-10-15'     : `<<HeadImage:M_08>>伦布探险团: 不得不说, 作为一个小小的探险团, 我们可能不是你们庞大帝国的对手; `																			+ `<<HeadImage:M_08>>不得不说，作为一个小小的探险团，我们可能不是你们庞大帝国的对手。`,
+'3-3-10-16'     : `<<HeadImage:M_08>>但是凭借技术优势, 还有联合那些对拜神怀有质疑的人们, 我们会击溃你们的(任务: 消灭背叛者和伦布探险团);`													+ `<<HeadImage:M_08>>但是凭借技术优势，还有联合那些对拜神怀有质疑的人们，我们会击溃你们的。`,
+
+'3-3-11-0'      : `<<HeadImage:F_06>>大祭司: 即刻向中央报告他们的真实意图; `																												+ `<<HeadImage:F_06>>即刻向中央报告他们的真实意图。`,
+'3-3-11-1'      : `<<HeadImage:F_06>>他们怎么敢冒充神的使者? 我们必须把他们赶出这里! `																										+ `<<HeadImage:F_06>>他们怎么敢冒充神的使者？我们必须把他们赶出这里！`,
+
+'3-3-12-0'      : `<<HeadImage:F_04>>区域祭司: 他们似乎会使用某种我们不知道的技术, 可以把低维空间封装起来再发射出去, 他们将这种技术称作零点聚爆弹; `										+ `<<HeadImage:F_04>>他们似乎会使用某种我们不知道的技术，可以把低维空间封装起来再发射出去，他们将这种技术称作零点聚爆弹。`,
+'3-3-12-1'      : `<<HeadImage:F_04>>他们的技术确实高于我们, 这是事实; `																													+ `<<HeadImage:F_04>>他们的技术确实高于我们，这是事实。`,
+'3-3-12-2'      : `<<HeadImage:F_04>>不过, 他们制造的低维空间比较小, 似乎和质量弹一样可以被探测和拦截; `																					+ `<<HeadImage:F_04>>不过，他们制造的低维空间比较小，似乎和质量弹一样可以被探测和拦截。`,
+'3-3-12-3'      : `<<HeadImage:F_04>>也许我们可以利用这点来抵挡他们的攻击; `																												+ `<<HeadImage:F_04>>也许我们可以利用这点来抵挡他们的攻击。`,
+
+————
+
+'3-3-13-0'      : `<<HeadImage:F_04>>if(消灭叛教者){ 区域祭司: 这就是亵渎神明的下场, 在孤独的囚牢里慢慢后悔吧 };`																			+ `<<HeadImage:F_04>>这就是亵渎神明的下场，在孤独的囚牢里慢慢后悔吧。`,
+
+'3-3-14-0'      : `<<HeadImage:F_04>>if(消灭伦布探险团){ 区域祭司: 这就是违抗我们的下场, 在金币的熔浆里品尝财富的味道吧.  }`																+ `<<HeadImage:F_04>>这就是违抗我们的下场，在金币的熔浆里品尝财富的味道吧。`,
+
+————
+
+'3-3-15-0'      : `<<CG:Textures/MissionCG/3-3b>>如果伦布探险团的残余部队能看到, 他们的战俘是如何被我们改造成最虔诚的神仆的, 他们的士气定会被极度震慑; `									+ `<<CG:Textures/MissionCG/3-3b>>如果伦布探险团的残余部队能看到，他们的战俘是如何被我们改造成最虔诚的神仆的，他们的士气定会被极度震慑。`,
+'3-3-15-1'      : `<<CG:Textures/MissionCG/3-3b>>意识编织的手段过于残忍, 早在数千年前就被取缔了. 然而, 伦布探险团的渎神行为令军队中的激进者们震怒不已, 他们还是对战俘动用了这种刑罚; `		+ `<<CG:Textures/MissionCG/3-3b>>意识编织的手段过于残忍，早在数千年前就被取缔了。然而，伦布探险团的渎神行为令军队中的激进者们震怒不已，他们还是对战俘动用了这种刑罚。`,
+'3-3-15-2'      : `<<CG:Textures/MissionCG/3-3b>>我并不十分赞同这种做法. 我在刑场上, 通过一些灰色手段, 救下了一些探险队员; `																+ `<<CG:Textures/MissionCG/3-3b>>我并不十分赞同这种做法。我在刑场上，通过一些灰色手段，救下了一些探险队员。`,
+'3-3-15-3'      : `<<CG:Textures/MissionCG/3-3b>>我并非圣母心肠, 只是希望从他们的口中, 一窥那个远方国度的面貌; `																			+ `<<CG:Textures/MissionCG/3-3b>>我并非圣母心肠，只是希望从他们的口中，一窥那个远方国度的面貌。`,
+'3-3-15-4'      : `<<CG:Textures/MissionCG/3-3b>>令人震惊的是, 队员们告诉我, 这个和我们打得有来有回的强大对手, 真的只是那个未知文明的一个小小的拓荒队而已; `								+ `<<CG:Textures/MissionCG/3-3b>>令人震惊的是，队员们告诉我，这个和我们打得有来有回的强大对手，真的只是那个未知文明的一个小小的拓荒队而已。`,
+'3-3-15-5'      : `<<CG:Textures/MissionCG/3-3b>>他们来自于一个由数万个星域组成的超大星系群, 那个星系群中存在数百个像他们这样强大的文明……`													+ `<<CG:Textures/MissionCG/3-3b>>他们来自于一个由数万个星域组成的超大星系群，那个星系群中存在数百个像他们这样强大的文明……`,
+'3-3-15-6'      : `<<CG:Textures/MissionCG/3-3b>>而他们的祖国, 卡斯蒂亚科学理事会只是一个处在整个星系群边陲的弱小国家而已; `																+ `<<CG:Textures/MissionCG/3-3b>>而他们的祖国，卡斯蒂亚科学理事会只是一个处在整个星系群边陲的弱小国家而已。`,
+'3-3-15-7'      : `<<CG:Textures/MissionCG/3-3b>>一个比他们强大数十倍的大帝国, 阻断了他们通往星系另一边的贸易通道; `																		+ `<<CG:Textures/MissionCG/3-3b>>一个比他们强大数十倍的大帝国，阻断了他们通往星系另一边的贸易通道。`,
+'3-3-15-8'      : `<<CG:Textures/MissionCG/3-3b>>因此, 他们不得不通过调谐虫洞来发现新的贸易通道, 却阴差阳错地来到了我们的星系; `															+ `<<CG:Textures/MissionCG/3-3b>>因此，他们不得不通过调谐虫洞来发现新的贸易通道，却阴差阳错地来到了我们的星系。`,
+'3-3-15-9'      : `<<CG:Textures/MissionCG/3-3b>>我们的星系的氦三结晶的产量超乎他们的想象, 对他们来说, 我们这里是座宝山; `																	+ `<<CG:Textures/MissionCG/3-3b>>我们的星系的氦三结晶的产量超乎他们的想象，对他们来说，我们这里是座宝山。`,
+'3-3-15-10'     : `<<CG:Textures/MissionCG/3-3b>>我们这种冥思和敬神的文化在他们看来, 是原始文明才有的习俗; `																				+ `<<CG:Textures/MissionCG/3-3b>>我们这种冥思和敬神的文化在他们看来，是原始文明才有的习俗。`,
+'3-3-15-11'     : `<<CG:Textures/MissionCG/3-3b>>在他们眼中, 我们和尚未开化的原始人差不多; `																								+ `<<CG:Textures/MissionCG/3-3b>>在他们眼中，我们和尚未开化的原始人差不多。`,
+'3-3-15-12'     : `<<CG:Textures/MissionCG/3-3b>>我隐隐预感到, 我们即将遇上远方那些兴盛文明的冰冷目光; `																					+ `<<CG:Textures/MissionCG/3-3b>>我隐隐预感到，我们即将遇上远方那些兴盛文明的冰冷目光。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading04">04. 沸腾星区</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-4a.jpg" /><span>昭秘首脑和祭仪助手们无疑被前线的消息震惊了. 当我们在前线拼杀, 他们必须向民众解释一个更根本的问题: 至高神是否还在照料我们? 他为何任由我们的文明被这种种灾祸蹂躏; 前线的将士们早就看穿了伦布探险团强盗的真面目. 只可惜, 母星的神官们始终对这些敌人抱有幻想. 他们难以理解从神的桥梁中走出来的伦布探险团声称自己与神毫无关系; 在中央首脑们意志摇晃时, 伦布探险团趁虚而入. 他们买通不少祭仪助手, 向昭秘首脑进献谗言. 最终竟让他相信, 探险团希望得到机会, 来认识我们的至高神; 昭秘首脑再次邀请伦布探险团来到首都, 向他们展示数百年来我们所修建的沉思殿, 赠予他们最精纯的沉思石, 来引领他们归顺至高神; 毫无疑问, 这是引狼入室. 伦布探险团兵不血刃地控制了首都, 将昭秘首脑软禁起来; 胁迫昭秘首脑发布手谕, 他们在首都如入无人之境, 肆意妄为; 氦三结晶制成的宏伟石碑被他们摧毁熔炼, 一船一船地运回他们的驻地; 这伙贪婪的暴徒, 是时候终结他们的恶行了;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>if(场景开端){ 大祭司: 我们赶回来了, 立刻汇报状况 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>反抗军首领: 情况危急; 首都圈已彻底被伦布探险团占领, 我们必须夺回; 首都圈外的星系群依然在我们的控制中; 但由于首都指令系统瘫痪, 这些星系的机能也瘫痪了; 我们应该集中精力击溃敌军. 等赶走了伦布探险团, 一切都可以重建; 我们已在外围建立了一个根据地; 我们的文明能否挺过这次劫难, 就看接下来这番战役了(任务: 消灭伦布探险团, 夺回首都);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(经过了 30 年){ 反抗军首领: 大祭司, 未知文明攻击了我们的星系; 他们的武器… 神啊… 我们绝对不是他们的对手 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>斯蒂亚远征军: 我们是卡斯蒂亚远征军, 我们需要大量氦三结晶, 交出来, 保证你们的安全(任务: 消灭卡斯蒂亚远征军);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(经过了200 年){ 反抗军首领: 大祭司, 他们的舰队比我们强太多了! 每场战役他们都取得了碾压性胜利, 该怎么办 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 我们该尝试用质量武器, 弥补和他们的科技代差;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>反抗军首领: 此外, 我们的线人提供了一些情报; 敌人建立了许多实验场. 它们均是人造星系, 并且位于主星团之外; 如果扫描一下那些看起来一无所有的区域, 应该会有所发现; 击溃科学试验场, 也许我们可从残骸中提取研究成果, 以缩小我们的科技代差(可选任务: 摧毁伦布探险团的所有人造星系);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>if(每当我方摧毁伦布探险团的人造星系){ 大祭司: 通过分析敌方的科学试验场数据, 我们得到了他们的大量研究成果 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(反抗军势力覆灭){ 反抗军首领: 大祭司, 我们无法战胜他们, 他们的实力实在太强大了… 接下就来只能靠你自己了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(夺回首都既南河三星系){ 反抗军首领: 我们已经夺回了首都. 昭秘首脑的安全也已经得到确认, 首都设施的恢复工作正在进行中; 是聚爆弹, 敌人终于出动杀手锏了; 这种武器对目标的打击是毁灭性的, 我们一定要想办法将其在半路拦截 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(伦布探险团势力覆灭){ 反抗军首领: 报告大祭司, 伦布探险团已经被击溃, 他们的领袖驾船逃窜, 被我们给抓到了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 等等! 别杀我; 我是卡斯蒂亚科学理事会的重要人物. 你们要是把我杀了, 理事会是不会和你们和平谈判的; 你们最好好的款待我. 首先, 给我安排一个像样的住处吧;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 不用带回首都了. 给他背上一天的氧气, 丢进太空, 让他好好享受下死亡的恐惧吧;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>伦布探险团: 别! 我可以告诉你怎么开发氦三结晶; 啊 ——</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>反抗军首领: 丢进太空!</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_18.jpg" /><span>if(卡斯蒂亚远征军势力覆灭){ 反抗军首领: 他们撤了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 胜利只是暂时的, 恐怕他们很快会重回这片星域;</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-4b.jpg" /><span>当我们夺回首都时, 这些侵略者的舰队不断地升空逃跑, 遮天蔽日如蝗灾一般; 他们舍不得抢来的财物, 将他们掠夺到的雕塑, 绘画, 当然还有氦三结晶都带走, 带不走的大型雕塑和庙宇就破坏掉; 不计其数的财宝装满了他们的货舱, 船员室甚至驾驶室, 好多舰船快被我们的地面部队撵上了才摇摇晃晃起飞; 大量飞船严重超载. 很多飞船不是被我们击落, 而是被重量压沉, 摔落到地面上, 只剩遍地燃烧着的渣滓; 第一沉思殿的中央, 人们在堆积如山的残骸里发现了昭秘首脑. 他已没有了呼吸, 没人知道他什么时候被埋在了这里; 城市受到的破坏超乎想象, 重建工作艰难地推进. 然而更麻烦的事接踵而至; 那些外来入侵者身上似乎携带了某种病菌, 对他们来说只是感冒, 但对缺乏对应免疫机制的我们来说, 这无疑是一种瘟疫; 病毒随着飞船传播向一个又一个星系, 疫情开始在我们的文明中扩散, 越是恐慌, 人们就越是朝着附近的沉思殿聚集冥思, 以乞求至高神的怜悯, 这无疑加速了疫情的传播. 可怕的是, 对此我们无法做任何限制; 整个文明已来到崩溃的边缘. 我知道, 这还远远不是磨难的终点; 遥远星系的那些侵略者, 他们还会回来的;</span></p>
+
+<!-- 04. 沸腾的星区
+
+'3-4-1-0'       : `<<CG:Textures/MissionCG/3-4a>>昭秘首脑和祭仪助手们无疑被前线的消息震惊了. 当我们在前线拼杀之际, 他们必须向民众解释一个更加根本的问题：至高神是否还在照料我们? 他为何任由我们的文明被这种种灾祸蹂躏? `		+ `<<CG:Textures/MissionCG/3-4a>>昭秘首脑和祭仪助手们无疑被前线的消息震惊了。当我们在前线拼杀之际，他们必须向民众解释一个更加根本的问题：至高神是否还在照料我们？他为何任由我们的文明被这种种灾祸蹂躏？`,
+'3-4-1-1'       : `<<CG:Textures/MissionCG/3-4a>>前线的将士们早就看穿了伦布探险团强盗的真面目. 只可惜, 母星的神官们始终对这些敌人抱有幻想. 他们难以理解从神的桥梁中走出来的伦布探险团声称自己与神毫无关系; `					+ `<<CG:Textures/MissionCG/3-4a>>前线的将士们早就看穿了伦布探险团强盗的真面目。只可惜，母星的神官们始终对这些敌人抱有幻想。他们难以理解从神的桥梁中走出来的伦布探险团声称自己与神毫无关系。`,
+'3-4-1-2'       : `<<CG:Textures/MissionCG/3-4a>>在中央首脑们意志摇晃之时, 伦布探险团的阴谋趁虚而入. 他们买通不少祭仪助手, 向昭秘首脑进献谗言. 最终竟让他相信, 探险团希望得到一个机会来认识我们的至高神; `						+ `<<CG:Textures/MissionCG/3-4a>>在中央首脑们意志摇晃之时，伦布探险团的阴谋趁虚而入。他们买通不少祭仪助手，向昭秘首脑进献谗言。最终竟让他相信，探险团希望得到一个机会来认识我们的至高神。`,
+'3-4-1-3'       : `<<CG:Textures/MissionCG/3-4a>>昭秘首脑再次邀请伦布探险团来到首都, 向他们展示数百年来我们所修建的沉思殿, 赠予他们最精纯的沉思石, 来引领他们归顺至高神; `														+ `<<CG:Textures/MissionCG/3-4a>>昭秘首脑再次邀请伦布探险团来到首都，向他们展示数百年来我们所修建的沉思殿，赠予他们最精纯的沉思石，来引领他们归顺至高神。`,
+'3-4-1-4'       : `<<CG:Textures/MissionCG/3-4a>>毫无疑问, 这是引狼入室. 伦布探险团兵不血刃地控制了首都, 将昭秘首脑软禁起来; `																									+ `<<CG:Textures/MissionCG/3-4a>>毫无疑问，这是引狼入室。伦布探险团兵不血刃地控制了首都，将昭秘首脑软禁起来。`,
+'3-4-1-5'       : `<<CG:Textures/MissionCG/3-4a>>通过胁迫昭秘首脑发布手谕, 他们在首都如入无人之境, 肆意妄为……`																													+ `<<CG:Textures/MissionCG/3-4a>>通过胁迫昭秘首脑发布手谕，他们在首都如入无人之境，肆意妄为……`,
+'3-4-1-6'       : `<<CG:Textures/MissionCG/3-4a>>氦三结晶制成的宏伟石碑被他们摧毁并熔炼, 一船一船地运回他们的驻地; `																											+ `<<CG:Textures/MissionCG/3-4a>>氦三结晶制成的宏伟石碑被他们摧毁并熔炼，一船一船地运回他们的驻地。`,
+'3-4-1-7'       : `<<CG:Textures/MissionCG/3-4a>>这伙贪婪的暴徒, 是时候终结他们的恶行了! `																																		+ `<<CG:Textures/MissionCG/3-4a>>这伙贪婪的暴徒，是时候终结他们的恶行了！`,
+
+————
+
+'3-4-2-0'       : `<<HeadImage:F_06>>if(场景开端){ 大祭司: 我们赶回来了, 立刻汇报状况.  };`																																		+ `<<HeadImage:F_06>>我们赶回来了，立刻汇报状况。`,
+
+'3-4-2-1'       : `<<HeadImage:K_18>>反抗军首领: 大祭司, 情况危急; `																																							+ `<<HeadImage:K_18>>大祭司，情况危急。`,
+'3-4-3-0'       : `<<HeadImage:K_18>>首都圈已彻底被伦布探险团占领, 我们必须夺回! `																																				+ `<<HeadImage:K_18>>首都圈已彻底被伦布探险团占领，我们必须夺回！`,
+'3-4-4-0'       : `<<HeadImage:K_18>>首都圈外的星系群依然在我们的控制中; `																																						+ `<<HeadImage:K_18>>首都圈外的星系群依然在我们的控制中。`,
+'3-4-4-1'       : `<<HeadImage:K_18>>但由于首都指令系统瘫痪, 这些星系的机能也瘫痪了; `																																			+ `<<HeadImage:K_18>>但由于首都指令系统瘫痪，这些星系的机能也瘫痪了。`,
+'3-4-4-2'       : `<<HeadImage:K_18>>我们应该先集中精力击溃敌军. 等赶走了伦布探险团, 一切都可以重建; `																															+ `<<HeadImage:K_18>>我们应该先集中精力击溃敌军。等赶走了伦布探险团，一切都可以重建。`,
+'3-4-5-0'       : `<<HeadImage:K_18>>我们已经在外围建立了一个根据地; `																																							+ `<<HeadImage:K_18>>我们已经在外围建立了一个根据地。`,
+'3-4-5-1'       : `<<HeadImage:K_18>>大祭司, 我们的文明能否挺过这次劫难, 就看接下来这番战役了(任务: 消灭伦布探险团, 夺回首都)`																									+ `<<HeadImage:K_18>>大祭司，我们的文明能否挺过这次劫难，就看接下来这番战役了。`,
+
+————
+
+'3-4-6-0'       : `<<HeadImage:K_18>>if(经过了 30 年){ 反抗军首领: 大祭司, 未知文明进犯了我们!  };`																																+ `<<HeadImage:K_18>>大祭司，未知文明进犯了我们！`,
+'3-4-6-1'       : `<<HeadImage:K_18>>他们的武器……神啊……我们绝对不是他们的对手……`																																				+ `<<HeadImage:K_18>>他们的武器……神啊……我们绝对不是他们的对手……`,
+
+'3-4-7-0'       : `<<HeadImage:F_01>>斯蒂亚远征军: 我们是卡斯蒂亚远征军, 来自卡斯蒂亚科学理事会; `																																+ `<<HeadImage:F_01>>我们是卡斯蒂亚远征军，来自卡斯蒂亚科学理事会。`,
+'3-4-7-1'       : `<<HeadImage:F_01>>理事会需要大量的氦三结晶, 交出来, 保证你们的安全(任务: 消灭卡斯蒂亚远征军)`																												+ `<<HeadImage:F_01>>理事会需要大量的氦三结晶，交出来，保证你们的安全。`,
+
+————
+
+'3-4-8-0'       : `<<HeadImage:K_18>>if(经过了 200 年){ 反抗军首领: 大祭司, 他们的舰队比我们强太多了! 每场战役他们都取得了碾压性胜利.  };`																						+ `<<HeadImage:K_18>>大祭司，他们的舰队比我们强太多了！每场战役他们都取得了碾压性胜利。`,
+
+'3-4-8-1'       : `<<HeadImage:F_06>>大祭司: 我们应该更多尝试用质量武器, 弥补和他们的科技代差; `																																+ `<<HeadImage:F_06>>我们应该更多尝试用质量武器，弥补和他们的科技代差。`,
+
+'3-4-8-2'       : `<<HeadImage:K_18>>反抗军首领: 此外, 我们的线人提供了一些情报; `																																				+ `<<HeadImage:K_18>>此外，我们的线人提供了一些情报。`,
+'3-4-9-0'       : `<<HeadImage:K_18>>敌人建立了许多实验场. 它们均是人造星系, 并且位于主星团之外; `																																+ `<<HeadImage:K_18>>敌人建立了许多实验场。它们均是人造星系，并且位于主星团之外。`,
+'3-4-9-1'       : `<<HeadImage:K_18>>如果我们扫描一下那些看起来一无所有的区域, 应该会有所发现; `																																+ `<<HeadImage:K_18>>如果我们扫描一下那些看起来一无所有的区域，应该会有所发现。`,
+'3-4-9-2'       : `<<HeadImage:K_18>>击溃他们的科学试验场, 也许我们可以从残骸中提取他们的研究成果, 以缩小我们的科技代差(可选任务: 摧毁伦布探险团的所有人造星系);`																+ `<<HeadImage:K_18>>击溃他们的科学试验场，也许我们可以从残骸中提取他们的研究成果，以缩小我们的科技代差。`,
+
+'3-4-10-0'      : `<<HeadImage:F_06>>if(摧毁伦布探险团的人造星系){ 大祭司: 通过分析试验场的数据, 我们得到了他们的大量研究成果 };`																								+ `<<HeadImage:F_06>>通过分析试验场的数据，我们得到了他们的大量研究成果。`,
+
+————
+
+'3-4-11-0'      : `<<HeadImage:K_18>>if(反抗军势力覆灭){ 反抗军首领: 大祭司, 我们无法战胜他们, 他们实在太强大了… };`																											+ `<<HeadImage:K_18>>大祭司，我们无法战胜他们，他们实在太强大了……`,
+
+'3-4-12-0'      : `<<HeadImage:K_18>>if(夺回首都既南河三星系){ 反抗军首领: 我们已经夺回首都. 昭秘首脑的安全已经得到确认, 首都设施的恢复工作正在进行中 };`																		+ `<<HeadImage:K_18>>我们已经夺回首都。昭秘首脑的安全已经得到确认，首都设施的恢复工作正在进行中。`,
+
+'3-4-12-1'      : `<<HeadImage:K_18>>if(夺回首都既南河三星系){ 是聚爆弹, 敌人出动杀手锏了; };`																																	+ `<<HeadImage:K_18>>是聚爆弹，敌人出动杀手锏了！`,
+'3-4-12-2'      : `<<HeadImage:K_18>>这种武器对目标的打击是毁灭性的, 我们一定要想办法将其在半路拦截!`																															+ `<<HeadImage:K_18>>这种武器对目标的打击是毁灭性的，我们一定要想办法将其在半路拦截!`,
+
+————
+
+'3-4-13-0'      : `<<HeadImage:K_18>>if(伦布探险团势力覆灭){ 反抗军首领: 报告大祭司, 伦布探险团的领袖驾船逃窜, 被我们抓到了; };`																								+ `<<HeadImage:K_18>>报告大祭司，伦布探险团的领袖驾船逃窜，被我们抓到了。`,
+
+'3-4-13-1'      : `<<HeadImage:M_08>>伦布探险团: 等等! 别杀我! `																																								+ `<<HeadImage:M_08>>等等！别杀我！`,
+'3-4-13-2'      : `<<HeadImage:M_08>>我是卡斯蒂亚科学理事会的重要人物. 你们要是把我杀了, 理事会是不会和你们和平谈判的! `																										+ `<<HeadImage:M_08>>我是卡斯蒂亚科学理事会的重要人物。你们要是把我杀了，理事会是不会和你们和平谈判的！`,
+'3-4-13-3'      : `<<HeadImage:M_08>>你们最好好好对我. 首先, 给我安排个像样的住处……`																																			+ `<<HeadImage:M_08>>你们最好好好对我。首先，给我安排个像样的住处……`,
+
+'3-4-13-4'      : `<<HeadImage:F_06>>大祭司: 不用带回首都了. 给他背上一天的氧气, 丢进太空, 让他好好享受下死亡的恐惧吧; `																										+ `<<HeadImage:F_06>>不用带回首都了。给他背上一天的氧气，丢进太空，让他好好享受下死亡的恐惧吧。`,
+
+'3-4-13-5'      : `<<HeadImage:K_18>>反抗军首领: 得令! `																																										+ `<<HeadImage:K_18>>得令！`,
+
+'3-4-13-6'      : `<<HeadImage:M_08>>伦布探险团: 别! 我可以告诉你们怎么开发氦三结晶! `																																			+ `<<HeadImage:M_08>>别！我可以告诉你们怎么开发氦三结晶！`,
+'3-4-13-7'      : `<<HeadImage:M_08>>啊! ——————`																																												+ `<<HeadImage:M_08>>啊！——————`,
+
+————
+
+'3-4-14-0'      : `<<HeadImage:K_18>>if(卡斯蒂亚远征军势力覆灭){ 反抗军首领: 他们撤退了!  };`																																	+ `<<HeadImage:K_18>>他们撤退了！`,
+
+'3-4-14-1'      : `<<HeadImage:F_06>>大祭司: 我们的胜利应该只是暂时的, 恐怕他们很快就会重回这片星域; `																															+ `<<HeadImage:F_06>>我们的胜利应该只是暂时的，恐怕他们很快就会重回这片星域。`,
+
+————
+
+'3-4-15-0'      : `<<CG:Textures/MissionCG/3-4b>>当我们夺回首都时, 这些侵略者的舰队不断地升空逃跑, 遮天蔽日, 如蝗灾一般; `																										+ `<<CG:Textures/MissionCG/3-4b>>当我们夺回首都时，这些侵略者的舰队不断地升空逃跑，遮天蔽日，如蝗灾一般。`,
+'3-4-15-1'      : `<<CG:Textures/MissionCG/3-4b>>他们很多人舍不得抢来的财物, 将他们掠夺到的雕塑、绘画, 当然还有氦三结晶都带走了, 带不走的大型雕塑和庙宇就破坏掉; `																+ `<<CG:Textures/MissionCG/3-4b>>他们很多人舍不得抢来的财物，将他们掠夺到的雕塑、绘画，当然还有氦三结晶都带走了，带不走的大型雕塑和庙宇就破坏掉。`,
+'3-4-15-2'      : `<<CG:Textures/MissionCG/3-4b>>不计其数的财宝装满了他们的货舱、船员室甚至驾驶室, 好多舰船快被我们的地面部队撵上了才摇摇晃晃地起飞; `																			+ `<<CG:Textures/MissionCG/3-4b>>不计其数的财宝装满了他们的货舱、船员室甚至驾驶室，好多舰船快被我们的地面部队撵上了才摇摇晃晃地起飞。`,
+'3-4-15-3'      : `<<CG:Textures/MissionCG/3-4b>>大量飞船严重超载. 很多飞船不是被我们击落的, 而是自己被重量压沉的, 摔落到地面上, 只剩遍地燃烧着的渣滓; `																		+ `<<CG:Textures/MissionCG/3-4b>>大量飞船严重超载。很多飞船不是被我们击落的，而是自己被重量压沉的，摔落到地面上，只剩遍地燃烧着的渣滓。`,
+'3-4-15-4'      : `<<CG:Textures/MissionCG/3-4b>>第一沉思殿的中央, 人们在堆积如山的残骸里发现了昭秘首脑. 他已没有了呼吸, 没人知道他什么时候被埋在了这里; `																		+ `<<CG:Textures/MissionCG/3-4b>>第一沉思殿的中央，人们在堆积如山的残骸里发现了昭秘首脑。他已没有了呼吸，没人知道他什么时候被埋在了这里。`,
+'3-4-15-5'      : `<<CG:Textures/MissionCG/3-4b>>城市受到的破坏超乎想象, 重建工作艰难地推进着. 然而更麻烦的事接踵而至; `																										+ `<<CG:Textures/MissionCG/3-4b>>城市受到的破坏超乎想象，重建工作艰难地推进着。然而更麻烦的事接踵而至。`,
+'3-4-15-6'      : `<<CG:Textures/MissionCG/3-4b>>那些外来入侵者身上似乎携带了某种病菌, 对他们来说只是感冒, 但对缺乏对应免疫机制的我们来说, 这无疑是一种瘟疫; `																	+ `<<CG:Textures/MissionCG/3-4b>>那些外来入侵者身上似乎携带了某种病菌，对他们来说只是感冒，但对缺乏对应免疫机制的我们来说，这无疑是一种瘟疫。`,
+'3-4-15-7'      : `<<CG:Textures/MissionCG/3-4b>>病毒随着飞船传播向一个又一个星系, 疫情开始在我们的文明中扩散——`																												+ `<<CG:Textures/MissionCG/3-4b>>病毒随着飞船传播向一个又一个星系，疫情开始在我们的文明中扩散——`,
+'3-4-15-8'      : `<<CG:Textures/MissionCG/3-4b>>越是恐慌, 人们就越是朝着附近的沉思殿聚集冥思, 乞求至高神的怜悯, 这无疑加速了疫情的传播. 可怕的是, 对此我们无法做任何限制; `													+ `<<CG:Textures/MissionCG/3-4b>>越是恐慌，人们就越是朝着附近的沉思殿聚集冥思，乞求至高神的怜悯，这无疑加速了疫情的传播。可怕的是，对此我们无法做任何限制。`,
+'3-4-15-9'      : `<<CG:Textures/MissionCG/3-4b>>整个文明已来到崩溃的边缘. 我知道, 这还远远不是磨难的终点; `																													+ `<<CG:Textures/MissionCG/3-4b>>整个文明已来到崩溃的边缘。我知道，这还远远不是磨难的终点。`,
+'3-4-15-10'     : `<<CG:Textures/MissionCG/3-4b>>遥远星系的那些侵略者, 他们还会回来的……`																																		+ `<<CG:Textures/MissionCG/3-4b>>遥远星系的那些侵略者，他们还会回来的……`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading05">05. 锈蚀战舰</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-5a.jpg" /><span>所有人都希望, 在见识到我们的反击之后, 卡斯蒂亚远征军会离开我们的这片星域; 然而, 对着数之不尽的财富, 他们无法放弃执念. 他们撤退到了星域边界, 并驻扎了下来, 开始建造大量的船坞和星门; 那些星门, 将他们的舰队从遥远的星系转移过来, 源源不断, 如地狱的门户; 在过去, 我们从未深究过那些虫洞的原理. 而如今, 我们拿这些星门毫无办法, 只能眼睁睁看着敌人在我们的国境线上陈兵; 不久之后, 前哨回报: 卡斯蒂亚科学理事会的主力舰队集结完毕; 在这十万火急的之际, 又有两个星系的政府背叛了祖国, 他们为了保全自己的性命而投奔了敌人; 尽管已经到了内外交困之时, 但我们并不打算坐以待毙, 而是集结最后的兵力, 共同防御我们屹立了六千年的首都; 我走上沉思殿的顶端, 用古老的方式吹响了战争的号角, 开启了我们同卡斯蒂亚科学理事会的最后一战;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 汇报当前战况;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>总司令: 相当不乐观, 敌人几乎把我们包围了; 国家内部还出现了叛徒. 他们此前极力主张议和以避免伤亡, 如今决战开始, 他们直接与我们断绝了联系; 这些是受他们控制的移民地. 虽然他们目前还很弱, 但他们毗邻首都, 必须警惕; 况且我们也无法确认他们是否已经投敌. 因此, 我们最好尽快解决掉他们; 另一方面, 卡斯蒂亚远征军作为先遣部队, 已经开始攻打我们的星系了; 不久前我们失去了对那些移民地的控制; 卡斯蒂亚科学理事会的主力舰队也到了这里; 为了对我们进行合围, 他们建了大量人造星系, 还有森严的防御设施和充满威胁性的军事设施; 他们科技优势巨大, 前期最好是别和他们硬碰硬; 我们正处在最困难的时刻. 请领导我们度过难关(任务: 消灭背叛者, 消灭卡斯蒂亚远征军, 消灭卡斯蒂亚科学理事会);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>总司令: 如果我们的首都星系陷落了, 将会极大打击我们的士气(可选任务: 不要失去首都);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>if(首都星系陷落){ 总司令: 大祭司, 我们失去了首都, 士气非常低落 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>总司令: 凝聚力至关重要, 团结才有希望(可选任务: 凝聚力不要低于70);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>if(凝聚力小于70){ 总司令: 我们正在渐渐失去希望啊 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>if(时间 >= 200 年){ 背叛者: 大祭司, 我们有话要说 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>总司令: 无耻的叛徒, 事到如今你竟还敢出现在我们面前;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 给他们一分钟;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>背叛者: 谢谢你, 大祭司! 说完我马上走; 我们并不想和你们作对; 你知道那些来自星空另一端的人有多么可怕; 我们只是因为害怕! 你没看到他们是如何将一整颗星球烧成玻璃的;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 赶紧, 说重点;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>背叛者: 我们需要资源, 因为我们要逃走! 只要我们能逃走, 离开这里, 我们就再也不会和你们作对(事件: 叛徒的请求);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>if(接受叛徒的请求){ 背叛者: 太好了, 终于能离开这水深火热之地了(注解: 给资源后, 背叛者势力势力将自动覆灭) };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>if(时间 >= 800 年){ 总司令: 大祭司, 我们收到了一个来自卡斯蒂亚远征军的通讯请求 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 接入通讯请求;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>卡斯蒂亚远征军: 大祭司, 久仰大名了, 我是远征军司令;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 你是从伦布探险团的领袖那里了解到我的事情吗?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>卡斯蒂亚远征军: 大祭司误会了. 我并不关心你和他的事;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 不要卖关子了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>卡斯蒂亚远征军: 没有兴趣做个交易; 卡斯蒂亚科学理事会现在铁了心要击溃你们. 我们远征军被作为先头部队; 换句话说, 就是炮灰, 为他们后续部队争取更多制备军需的时间; 我们可不是为了送命才参军的; 给我们钱, 我们就这场战争中作壁上观; 您的回答是什么? 大祭司(事件: 远征军的请求01);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>if(接受远征军的请求01){ 卡斯蒂亚远征军: 很好, 考虑一下. 如果军团的每个人都对分到的金额满意, 我们就会停火 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 你刚才说的可是一口价! 怎么现在又要坐地起价? </span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>卡斯蒂亚远征军: 你们这些原始部落也实在太天真了, 你们是弱势的那一方啊, 照我说的做, 好吗; 我会再度联系你们的;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>if(接受远征军的请求01){ 卡斯蒂亚远征军: 又见面了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>大祭司: 又耍什么诡计?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>卡斯蒂亚远征军: 我们好好反思了一下, 觉得之前那样背信弃义的确实不好; 但我们军团的每一个人, 都有一个发财的梦想; 所以, 如果你再给我们四倍的钱, 我们就走. 这次绝对是一口价了. 大祭司, 不知你意下如何(事件: 远征军的请求02);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_01.jpg" /><span>if(接受远征军的请求02){ 卡斯蒂亚远征军: 很好, 生意就是要合作共赢; 但战场上我们还是要做做样子, 希望你理解 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>总司令: 大祭司, 看来卡斯蒂亚远征军遵守了和我们的约定; 他们仍在攻击, 但已经开始限制自己的火力; 一旦我们击败了卡斯蒂亚科学理事会的主力, 他们应该也会及时收手, 无需和他们血战到底(注解: 消灭卡斯蒂亚远征军不再是任务目标);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_05.jpg" /><span>if(我方的某个星系沦陷){ 总司令: 大祭司, 我们前方的斥候发现, 卡斯蒂亚科学理事会的主力有动作了; 他们的军事系统开始高强度的运转, 这次对我们移民地的轰炸恐怕是正式总攻的开端; 卡斯蒂亚科学理事会携带了数量众多的聚爆弹, 它们的破坏力是灾难性的, 我们一定要小心(注解: 零点聚爆弹在击中目标星系后, 会产生一个半径为 60 的中型低维空间) };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/3-5b.jpg" /><span>曾经, 我们文明的首都聚集了超过 240 亿居民, 它拥有七十二万座高耸入云的沉思殿; 但是如今, 很难想象, 这片遍地残垣的焦土, 曾是那座自古繁华的圣城; 然而, 坍圮的城市可以再建, 焚毁的艺术可以重新创造, 丢失的哲思也可以再次寻索; 更何况, 卡斯蒂亚科学理事会最终灰溜溜地离开了我们的世界. 现在, 所有人都沉醉在胜利的喜悦中; 只是我至今没有忘记, 卡斯蒂亚科学理事会来自的那个庞大的世界, 那个拥有数万个星区的庞大文明. 在它面前, 我们是多么渺小; 卡斯蒂亚科学理事会虽然离开了, 但我们的坐标也已经暴露, 将来肯定会有更多更强大的文明到我们这里来一探究竟; 这里将是他们的新世界. 而我不太确定的是, 在那个新世界里, 是否还有我们的一席之地… 这只是阶段性的安稳, 未来如何尚不可知晓, 但我们绝不会屈服的, 我们的文明会抗争到最后的一刻;</span></p>
+
+<!-- 05. 锈蚀的战舰
+
+'3-5-0-0'       : `<<CG:Textures/MissionCG/3-5>>所有人都希望, 在见识到我们的反击后, 卡斯蒂亚远征军会离开我们这片星域; `														+ `<<CG:Textures/MissionCG/3-5>>所有人都希望，在见识到我们的反击后，卡斯蒂亚远征军会离开我们这片星域。`,
+'3-5-0-1'       : `<<CG:Textures/MissionCG/3-5>>然而, 他们无法放弃对数之不尽的财富的执念. 他们撤退到星域边界, 驻扎了下来, 开始建造大量的船坞和星门; `						+ `<<CG:Textures/MissionCG/3-5>>然而，他们无法放弃对数之不尽的财富的执念。他们撤退到星域边界，驻扎了下来，开始建造大量的船坞和星门。`,
+'3-5-0-2'       : `<<CG:Textures/MissionCG/3-5>>那些星门将他们的舰队从遥远的星系转移过来, 源源不断, 如地狱的门户; `															+ `<<CG:Textures/MissionCG/3-5>>那些星门将他们的舰队从遥远的星系转移过来，源源不断，如地狱的门户。`,
+'3-5-0-3'       : `<<CG:Textures/MissionCG/3-5>>过去, 我们从未深究虫洞的原理. 如今, 我们拿这些星门毫无办法, 只能眼睁睁看着敌人在我们的国境线上陈兵; `						+ `<<CG:Textures/MissionCG/3-5>>过去，我们从未深究虫洞的原理。如今，我们拿这些星门毫无办法，只能眼睁睁看着敌人在我们的国境线上陈兵。`,
+'3-5-0-4'       : `<<CG:Textures/MissionCG/3-5>>不久后, 前哨回报: 卡斯蒂亚科学理事会的主力舰队集结完毕; `																	+ `<<CG:Textures/MissionCG/3-5>>不久后，前哨回报：卡斯蒂亚科学理事会的主力舰队集结完毕。`,
+'3-5-0-5'       : `<<CG:Textures/MissionCG/3-5>>在这十万火急的之际, 又有两个星系的政府背叛了祖国, 投奔敌人以求保全自己的性命; `												+ `<<CG:Textures/MissionCG/3-5>>在这十万火急的之际，又有两个星系的政府背叛了祖国，投奔敌人以求保全自己的性命。`,
+'3-5-0-6'       : `<<CG:Textures/MissionCG/3-5>>在这内外交困之时, 我们集结了最后的兵力, 共同防御我们屹立了六千年的首都; `													+ `<<CG:Textures/MissionCG/3-5>>在这内外交困之时，我们集结了最后的兵力，共同防御我们屹立了六千年的首都。`,
+'3-5-0-7'       : `<<CG:Textures/MissionCG/3-5>>我走上沉思殿顶端, 用古老的方式吹响了号角, 开启我们同卡斯蒂亚科学理事会的最后一战; `											+ `<<CG:Textures/MissionCG/3-5>>我走上沉思殿顶端，用古老的方式吹响了号角，开启我们同卡斯蒂亚科学理事会的最后一战。`,
+
+'3-5-1-0'       : `<<HeadImage:F_06>>大祭司: 总司令, 汇报当前战况; `																										+ `<<HeadImage:F_06>>总司令，汇报当前战况。`,
+
+'3-5-1-1'       : `<<HeadImage:A_05>>总司令: 我们的战况相当不乐观, 敌人几乎把我们包围了; `																					+ `<<HeadImage:A_05>>我们的战况相当不乐观，敌人几乎把我们包围了。`,
+'3-5-1-2'       : `<<HeadImage:A_05>>国家内部出现了一批叛徒. 他们此前极力主张与敌议和以避免伤亡, 如今决战开始, 他们干脆与我们断绝了联系; `									+ `<<HeadImage:A_05>>国家内部出现了一批叛徒。他们此前极力主张与敌议和以避免伤亡，如今决战开始，他们干脆与我们断绝了联系。`,
+'3-5-1-3'       : `<<HeadImage:A_05>>这些是受他们控制的移民地. 虽然他们目前还很弱小, 但他们毗邻首都, 我们必须警惕; `														+ `<<HeadImage:A_05>>这些是受他们控制的移民地。虽然他们目前还很弱小，但他们毗邻首都，我们必须警惕。`,
+'3-5-1-4'       : `<<HeadImage:A_05>>况且我们无法确认他们是否已经投敌, 是否在为敌人提供情报. 我们最好尽快解决掉他们; `														+ `<<HeadImage:A_05>>况且我们无法确认他们是否已经投敌，是否在为敌人提供情报。我们最好尽快解决掉他们。`,
+'3-5-1-5'       : `<<HeadImage:A_05>>另一方面, 卡斯蒂亚远征军作为先遣部队, 已经开始攻打我们的移民地了; `																	+ `<<HeadImage:A_05>>另一方面，卡斯蒂亚远征军作为先遣部队，已经开始攻打我们的移民地了。`,
+'3-5-1-6'       : `<<HeadImage:A_05>>不久前我们失去了对那些移民地的控制, 相信他们已经在那里建立了一些前进基地; `															+ `<<HeadImage:A_05>>不久前我们失去了对那些移民地的控制，相信他们已经在那里建立了一些前进基地。`,
+'3-5-1-7'       : `<<HeadImage:A_05>>卡斯蒂亚科学理事会的主力舰队已经到达了这里; `																							+ `<<HeadImage:A_05>>卡斯蒂亚科学理事会的主力舰队已经到达了这里。`,
+'3-5-1-8'       : `<<HeadImage:A_05>>为了对我们进行合围, 他们建造了大量的人造星系, 建造了森严的防御设施和充满威胁性的军事设施; `											+ `<<HeadImage:A_05>>为了对我们进行合围，他们建造了大量的人造星系，建造了森严的防御设施和充满威胁性的军事设施。`,
+'3-5-1-9'       : `<<HeadImage:A_05>>他们来自卡斯蒂亚科学理事会的母世界, 拥有着难以想象的科技优势, 我们前期最好不要和他们硬碰硬; `											+ `<<HeadImage:A_05>>他们来自卡斯蒂亚科学理事会的母世界，拥有着难以想象的科技优势，我们前期最好不要和他们硬碰硬。`,
+'3-5-1-10'      : `<<HeadImage:A_05>>我们的文明正处在最困难的时刻. 大祭司, 领导我们度过难关(任务: 消灭背叛者, 消灭卡斯蒂亚远征军, 消灭卡斯蒂亚科学理事会);`					+ `<<HeadImage:A_05>>我们的文明正处在最困难的时刻。大祭司，领导我们度过难关！`,
+
+'3-5-2-0'       : `<<HeadImage:A_05>>总司令: 如果首都陷落了, 会极大打击我们的士气(可选任务: 不要失去首都)`																	+ `<<HeadImage:A_05>>如果首都陷落了，会极大打击我们的士气。`,
+'3-5-3-0'       : `<<HeadImage:A_05>>if(首都星系陷落){ 总司令: 大祭司, 我们失去了首都, 士气非常低落.  }`																	+ `<<HeadImage:A_05>>大祭司，我们失去了首都，士气非常低落。`,
+
+'3-5-4-0'       : `<<HeadImage:A_05>>大祭司, 凝聚力至关重要, 团结才有希望(可选任务: 凝聚力不要低于70)`																		+ `<<HeadImage:A_05>>大祭司，凝聚力至关重要，团结才有希望。`,
+'3-5-5-0'       : `<<HeadImage:A_05>>if(凝聚力小于70){ 大祭司, 我们正在渐渐失去希望.  };`																					+ `<<HeadImage:A_05>>大祭司，我们正在渐渐失去希望。`,
+
+————
+
+'3-5-6-0'       : `<<HeadImage:K_09>>if(时间 >= 200Y){ 背叛者: 大祭司, 我们有话要说 };`																						+ `<<HeadImage:K_09>>大祭司，我们有话要说。`,
+
+'3-5-6-1'       : `<<HeadImage:A_05>>总司令: 无耻的叛徒, 事到如今你竟还敢出现在我们面前! `																					+ `<<HeadImage:A_05>>无耻的叛徒，事到如今你竟还敢出现在我们面前！`,
+
+'3-5-6-2'       : `<<HeadImage:F_06>>大祭司: 等等, 给他们一分钟; `																											+ `<<HeadImage:F_06>>等等，给他们一分钟。`,
+
+'3-5-6-3'       : `<<HeadImage:A_05>>背叛者: 谢谢你, 大祭司! 说完我马上就走; `																								+ `<<HeadImage:A_05>>谢谢你，大祭司！说完我马上就走。`,
+'3-5-6-4'       : `<<HeadImage:K_09>>听我说, 我们并不想和你们作对; `																										+ `<<HeadImage:K_09>>听我说，我们并不想和你们作对。`,
+'3-5-6-5'       : `<<HeadImage:K_09>>你知道,  那些来自星空另一端的人有多么可怕……`																							+ `<<HeadImage:K_09>>你知道， 那些来自星空另一端的人有多么可怕……`,
+'3-5-6-6'       : `<<HeadImage:K_09>>我们那么做, 只是因为害怕! 你没看到他们是如何将一整颗星球烧成玻璃的! `																	+ `<<HeadImage:K_09>>我们那么做，只是因为害怕！你没看到他们是如何将一整颗星球烧成玻璃的！`,
+
+'3-5-6-7'       : `<<HeadImage:F_06>>大祭司: 说重点; `																														+ `<<HeadImage:F_06>>说重点。`,
+
+'3-5-6-8'       : `<<HeadImage:K_09>>背叛者: 我们需要钱, 我们要逃走! 只要能逃走, 我们再也不会和你们作对(事件: 叛徒的请求);`													+ `<<HeadImage:K_09>>我们需要钱，我们要逃走！只要能逃走，我们再也不会和你们作对。`,
+'3-5-7-0'       : `<<HeadImage:K_09>>if(接受叛徒的请求){ 太好了, 我们终于可以离开这水深火热之地了(背叛者势力势力自动覆灭)… };`												+ `<<HeadImage:K_09>>太好了，我们终于可以离开这水深火热之地了……`,
+
+————
+
+'3-5-8-0'       : `<<HeadImage:A_05>>if(时间 >= 800Y){ 总司令: 大祭司, 我们收到一封来自卡斯蒂亚远征军的通讯请求 };`															+ `<<HeadImage:A_05>>大祭司，我们收到一封来自卡斯蒂亚远征军的通讯请求。`,
+
+'3-5-8-1'       : `<<HeadImage:F_06>>大祭司: 接入; `																														+ `<<HeadImage:F_06>>接入。`,
+
+'3-5-8-2'       : `<<HeadImage:F_01>>卡斯蒂亚远征军: 大祭司, 久仰大名了, 我是远征军司令; `																					+ `<<HeadImage:F_01>>大祭司，久仰大名了，我是远征军司令。`,
+
+'3-5-8-3'       : `<<HeadImage:F_06>>大祭司: 你是从伦布探险团的领袖那里了解到我的吗? `																						+ `<<HeadImage:F_06>>你是从伦布探险团的领袖那里了解到我的吗？`,
+
+'3-5-8-4'       : `<<HeadImage:F_01>>卡斯蒂亚远征军: 大祭司误会了. 我并不关心你和他的事; `																					+ `<<HeadImage:F_01>>大祭司误会了。我并不关心你和他的事。`,
+
+'3-5-8-5'       : `<<HeadImage:F_06>>大祭司: 别卖关子了; `																													+ `<<HeadImage:F_06>>别卖关子了。`,
+
+'3-5-8-6'       : `<<HeadImage:F_01>>卡斯蒂亚远征军: 有没有兴趣做个交易? `																									+ `<<HeadImage:F_01>>有没有兴趣做个交易？`,
+'3-5-8-7'       : `<<HeadImage:F_01>>卡斯蒂亚科学理事会现在铁了心要击溃你们. 我们远征军被作为先头部队——`																	+ `<<HeadImage:F_01>>卡斯蒂亚科学理事会现在铁了心要击溃你们。我们远征军被作为先头部队——`,
+'3-5-8-8'       : `<<HeadImage:F_01>>换句话说, 就是炮灰, 作用在于为他们后续部队争取更多制备军需的时间; `																	+ `<<HeadImage:F_01>>换句话说，就是炮灰，作用在于为他们后续部队争取更多制备军需的时间。`,
+'3-5-8-9'       : `<<HeadImage:F_01>>我们可不是为了送命才参军的; `																											+ `<<HeadImage:F_01>>我们可不是为了送命才参军的。`,
+'3-5-8-10'      : `<<HeadImage:F_01>>给我们钱, 我们就这场战争中作壁上观; `																									+ `<<HeadImage:F_01>>给我们钱，我们就这场战争中作壁上观。`,
+'3-5-8-11'      : `<<HeadImage:F_01>>您的回答是什么? 大祭司(事件: 远征军的请求01);`																							+ `<<HeadImage:F_01>>您的回答是什么？大祭司。`,
+
+'3-5-9-0'       : `<<HeadImage:F_01>>if(接受远征军的请求01){ 卡斯蒂亚远征军: 很好, 我们考虑一下. 如果我们军团的每个人都对分到的金额满意, 我们就停火 };`						+ `<<HeadImage:F_01>>很好，我们考虑一下。如果我们军团的每个人都对分到的金额满意，我们就停火。`,
+
+'3-5-9-1'       : `<<HeadImage:F_06>>大祭司: 刚才说的可是一口价! 现在又要敲竹杠? `																							+ `<<HeadImage:F_06>>刚才说的可是一口价！现在又要敲竹杠？`,
+
+'3-5-9-2'       : `<<HeadImage:F_01>>卡斯蒂亚远征军: 你们这些原始部落也实在天真, 你们是弱势的那一方, 照我说的做, 好吗? `													+ `<<HeadImage:F_01>>你们这些原始部落也实在天真，你们是弱势的那一方，照我说的做，好吗？`,
+'3-5-9-3'       : `<<HeadImage:F_01>>我会再联系你们的; `																													+ `<<HeadImage:F_01>>我会再联系你们的。`,
+
+————
+
+'3-5-11-0'      : `<<HeadImage:F_01>>if(接受远征军的请求01){ 卡斯蒂亚远征军: 大祭司, 又见面了.  }`																			+ `<<HeadImage:F_01>>大祭司，又见面了。`,
+
+'3-5-11-1'      : `<<HeadImage:F_06>>大祭司: 又要耍什么诡计? `																												+ `<<HeadImage:F_06>>又要耍什么诡计？`,
+
+'3-5-11-2'      : `<<HeadImage:F_01>>卡斯蒂亚远征军: 我好好反思了一下, 我们这样背信弃义确实不好; `																			+ `<<HeadImage:F_01>>我好好反思了一下，我们这样背信弃义确实不好。`,
+'3-5-11-3'      : `<<HeadImage:F_01>>但我们军团的每一个人, 都有一个发财的梦想; `																							+ `<<HeadImage:F_01>>但我们军团的每一个人，都有一个发财的梦想。`,
+'3-5-11-4'      : `<<HeadImage:F_01>>再给我们四倍的钱, 我们就走. 这次是一口价. 大祭司, 你意下如何(事件: 远征军的请求02)`													+ `<<HeadImage:F_01>>再给我们四倍的钱，我们就走。这次是一口价。大祭司，你意下如何？`,
+
+'3-5-12-0'      : `<<HeadImage:F_01>>if(接受远征军的请求02){ 卡斯蒂亚远征军: 很好, 生意就是要合作共赢 };`																	+ `<<HeadImage:F_01>>很好，生意就是要合作共赢。`,
+'3-5-12-1'      : `<<HeadImage:F_01>>但战场上我们还是要做做样子的, 希望你理解; `																							+ `<<HeadImage:F_01>>但战场上我们还是要做做样子的，希望你理解。`,
+
+'3-5-13-0'      : `<<HeadImage:A_05>>总司令: 大祭司, 看来卡斯蒂亚远征军遵守了和我们的约定; `																				+ `<<HeadImage:A_05>>大祭司，看来卡斯蒂亚远征军遵守了和我们的约定。`,
+'3-5-13-1'      : `<<HeadImage:A_05>>他们仍在攻击我们, 但已经开始限制自己的火力; `																							+ `<<HeadImage:A_05>>他们仍在攻击我们，但已经开始限制自己的火力。`,
+'3-5-13-2'      : `<<HeadImage:A_05>>一旦我们击败了卡斯蒂亚科学理事会的主力, 他们也会及时收手, 我们不需要和他们血战到底(消灭卡斯蒂亚远征军不再是任务目标)`					+ `<<HeadImage:A_05>>一旦我们击败了卡斯蒂亚科学理事会的主力，他们也会及时收手，我们不需要和他们血战到底。`,
+
+————
+
+'3-5-10-0'      : `<<HeadImage:A_05>>if(我们的某个星系沦陷){ 总司令: 大祭司, 我们前方的斥候发现, 卡斯蒂亚科学理事会的主力有动作了 };`										+ `<<HeadImage:A_05>>大祭司，我们前方的斥候发现，卡斯蒂亚科学理事会的主力有动作了。`,
+'3-5-10-1'      : `<<HeadImage:A_05>>他们的军事系统开始高强度的运转, 这一次对我们移民地的轰炸恐怕是正式总攻的开端; `														+ `<<HeadImage:A_05>>他们的军事系统开始高强度的运转，这一次对我们移民地的轰炸恐怕是正式总攻的开端。`,
+'3-5-10-2'      : `<<HeadImage:A_05>>卡斯蒂亚科学理事会携带了数量众多的聚爆弹, 它们的破坏力是灾难性的, 我们一定要小心; `													+ `<<HeadImage:A_05>>卡斯蒂亚科学理事会携带了数量众多的聚爆弹，它们的破坏力是灾难性的，我们一定要小心。`,
+
+————
+
+'3-5-14-0'      : `<<CG:Textures/MissionCG/3-5>>曾经, 首都聚集了超过240亿居民, 拥有七十二万座高耸入云的沉思殿; `															+ `<<CG:Textures/MissionCG/3-5>>曾经，首都聚集了超过240亿居民，拥有七十二万座高耸入云的沉思殿。`,
+'3-5-14-1'      : `<<CG:Textures/MissionCG/3-5>>很难想象, 如今这片遍地残垣的焦土, 曾是那座自古繁华的圣城; `																	+ `<<CG:Textures/MissionCG/3-5>>很难想象，如今这片遍地残垣的焦土，曾是那座自古繁华的圣城。`,
+'3-5-14-2'      : `<<CG:Textures/MissionCG/3-5>>然而, 坍圮的城市可以再建, 焚毁的艺术可以重新创造, 丢失的哲思可以再次寻索; `													+ `<<CG:Textures/MissionCG/3-5>>然而，坍圮的城市可以再建，焚毁的艺术可以重新创造，丢失的哲思可以再次寻索。`,
+'3-5-14-3'      : `<<CG:Textures/MissionCG/3-5>>更何况, 卡斯蒂亚科学理事会最终灰溜溜地离开了我们的世界. 所有人都沉醉在胜利的喜悦中; `										+ `<<CG:Textures/MissionCG/3-5>>更何况，卡斯蒂亚科学理事会最终灰溜溜地离开了我们的世界。所有人都沉醉在胜利的喜悦中。`,
+'3-5-14-4'      : `<<CG:Textures/MissionCG/3-5>>只是我至今没有忘记, 卡斯蒂亚科学理事会来自的那个庞大的世界, 那个拥有数万个星区的庞大文明. 在它面前, 我们是多么渺小; `		+ `<<CG:Textures/MissionCG/3-5>>只是我至今没有忘记，卡斯蒂亚科学理事会来自的那个庞大的世界，那个拥有数万个星区的庞大文明。在它面前，我们是多么渺小。`,
+'3-5-14-5'      : `<<CG:Textures/MissionCG/3-5>>卡斯蒂亚科学理事会离开了, 但是我们的坐标已经暴露了, 将来会有更多强大的文明到这里一探究竟; `									+ `<<CG:Textures/MissionCG/3-5>>卡斯蒂亚科学理事会离开了，但是我们的坐标已经暴露了，将来会有更多强大的文明到这里一探究竟。`,
+'3-5-14-6'      : `<<CG:Textures/MissionCG/3-5>>这里将是他们的新世界. 我不太确定的是, 在那个新世界, 是否还有我们的一席之地……`												+ `<<CG:Textures/MissionCG/3-5>>这里将是他们的新世界。我不太确定的是，在那个新世界，是否还有我们的一席之地……`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+
+.bgWrap{position:relative;}
+.bgWrap > img{position:relative;width:960px;height:540px;}
+.bgWrap > span{position:absolute;bottom:0;left:0;width:100%;color:#fff;background-color:rgba(0,0,0,0.75);padding:16px;}
+
+.talkWrap{display:flex;align-items:flex-start;}
+.talkWrap > img{flex:0 0 auto;width:40px;height:40px;margin-right:24px;border-radius:4px;}
+.talkWrap > span{flex:1 1 auto;position:relative;padding:8px 16px;box-shadow:0 0 0 1px #ccc inset;background-color:#fff;border-radius:4px 4px 4px 4px;}
+.talkWrap > span::before{position:absolute;top:8px;left:-8px;width:0;height:0;border-top:8px solid #ccc;border-left:8px solid transparent;content:"";}
+.talkWrap > span::after{position:absolute;top:9px;left:-5px;width:0;height:0;border-top:8px solid #fff;border-left:8px solid transparent;content:"";}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+// 弱化文本
+document.querySelectorAll('.talkWrap > span').forEach(function(node){ 
+	
+	// node.innerHTML = node.innerHTML.replace(/\[.+?\]/g, 
+	// function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配大括号
+	node.innerHTML = node.innerHTML.replace(/{|}/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配 else 和 if
+	node.innerHTML = node.innerHTML.replace(/(else )?if\(.+?\)/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配额外添加的小括号
+	node.innerHTML = node.innerHTML.replace(/\((解锁|任务|奖励|事件|注解|可选任务)\:.+?\)/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+});
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 主神贡品</a>
+			<a href="#heading02">02. 远方来客</a>
+			<a href="#heading03">03. 福神瘟神</a>
+			<a href="#heading04">04. 沸腾星区</a>
+			<a href="#heading05">05. 锈蚀战舰</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

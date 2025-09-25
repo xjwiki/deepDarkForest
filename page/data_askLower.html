@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>下院议案</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>下院议案</span><small>(被动奖励)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 以下是下议院的任务, 完成可得到各种奖励, 目前共有 <c>32</c> 项<br />
+	02. 这些任务都是全自动的, 只要满足条件就会自动开启和完成, 少数的任务在冷却之后还能重复再做<br />
+	03. 虽然任务的奖励看似微薄, 但如果考虑到重复和累加, 积少成多后对局势发展就会有很大帮助, 所以应该有意识的尽可能去完成它们<br />
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>重复次数</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>冷却时间</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 60px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>任务代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:100px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>完成奖励</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width:200px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>出现条件</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>特殊说明: 上表展示的任务几乎没有限制, 仅最后那条"敬老院"是场景限定, 实际上, 在游戏的数据表中, 还存在着其他的一些特殊任务, 但可能是因为机制的转变(剧情模式下的特殊关卡任务不再调用下议院这套系统, 而是写在了行为树里), 所以那些内容几乎都被废弃了, 目前已经无法在正常的游戏流程中被触发, 所以 XJ 也就没有把它们展示出来, 它们也就只剩"敬老院"这个特殊任务还在正常运行而已</p>
+
+<p>时间机制: 每隔 <c>120</c> 年系统会自动刷新一次任务, 每隔 <c>5</c> 年系统会自动检查一次任务是否已经完成, 上表"冷却时间"属性, 单位是"年", 该属性只对允许重复完成的任务有效, 它会在任务完成之后才开始倒计时, 只有当时间归零且条件满足, 刷新时任务才会再次出现</p>
+
+<p>任务解析: 舰队(id:11)的出现条件是, 解锁任意的舰队相关科技, 但仅含[舰队规模/舰队装甲/舰队闪避]这 3 类, 并不包括其它科技项</p>
+
+<!--
+原始星系(id:13)的完成条件是, 成功消灭了 1 个原始文明, 但不是非得通过舰队登陆, 用中子弹或光粒攻击, 也是可行的
+-->
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+"敬老院"任务的成功回调
+5053,前置任务保持完成态200年,0,PrecursorRemainSuccessed:200000_2000,200//由参数调控,,F,,RepeatUntilFailure,0,-1
+
+"刺激增长"和"维持库存"任务的成功回调
+6031,前置任务保持完成态400年,0,PrecursorRemainSuccessed:400000_2000,400//由参数调控 这里是初始时间,,F,,RepeatUntilFailure,0,-1
+6032,前置任务保持完成态200年,0,PrecursorRemainSuccessed:200000_2000,200//由参数调控 这里是初始时间,,F,,RepeatUntilFailure,0,-1
+
+————
+
+任务列表.csv 的 id 的不同范围分别代表什么场景含义?
+没有明确且严格的规范, 但大概遵循以下原则
+100x : 旧议案系统使用的议案任务
+200x : 旧PVP使用的任务指引
+500x : 单人关卡中需要完成的任务
+600x : 下议院议案发布的任务
+700x : 上议院发布的任务
+1000~: 存活/逃离相关的对局机制的特殊任务
+
+————
+
+任务列表.csv 的 InputsLength 属性, 用于定位行为树节点中接受参数的数量, 60XX 的属性值都是 0, 所以不用理会
+任务列表.csv 的 MaxLastTime 属性, 用于定义任务的时间, 但现在几乎已经被废弃, 改由上下议院系统的表格控制
+任务列表.csv 的 Done 属性, 用于定义完成任务之后的回调函数, 但数据表中的该值都是空, 所以目前没有意义
+
+任务列表.csv 的 FakeUndone 属性, 用于定义延时完成, 仅 1007 既"探索指定星系"为 T(rue), 所以不需要理会
+任务列表.csv 的 Fail 属性, 可能是任务失败后的回调或者惩罚, 但目前表格中的数据都是空的, 所以也不用理会
+任务列表.csv 的 DDLAlert 属性, 用于定义任务时长过半是否进行提示, 但 60XX 的值都是 -1, 所以也不需要理会
+
+任务列表.csv 的 Condition 属性, 是达成条件的函数和参数, 由于已经翻译成文本描述了, 所以并不需要展示出来
+
+任务列表.csv 的 SuceedTask 属性, 是指完成该任务后, 需要进行检测的下一个任务(如建造一座X建筑物且N年内不保持被摧毁)
+目前只有刺激经济增长(id:22)和维持库存(id:23)和敬老院(id:106)有这个, 而且在文本描述中也注明了, 所以这个属性无需展示
+
+任务列表.csv 的 NodeType 属性, RepeatUntilSuccess 指达成目标就算完成, RepeatUntilFailure 指达成后还得持续满足某项条件算完成
+所有数据都是 RepeatUntilSuccess 类型, 仅有刺激经济增长(id:22)和维持库存(id:23)的下个任务为 RepeatUntilFailure, 所以不用展示
+
+*/
+
+// 下院方案
+let csv0 = (`// Remote/LowerHouseBill,Name,Img,RepeatTimes,CDTime,Conflict,AvailableCondition,SuccessBonus,AwardText,Task,//出现条件
+
+1,刺激科研,Tech2,10,200,,AllTrue,PopulationPressureAdd:-3000,压力值<<Param:0>>,6000,
+
+2,刺激探索,Explore,1,200,,AllTrue,PopulationPressureAdd:-1000,压力值<<Param:0>>,6001,
+3,刺激移民,Colonize,3,500,,AllTrue,CohesionAdd:5,凝聚力+<<Param:0>>,6002,
+
+4,对外交流,Communicate,1,200,,ExploredGalaxyOver:1&ExistHighNoiseExploredGalaxyOver:0&DiplomacyTask,TechPointAdd:300,科技点+<<Param:0>>,6003,
+5,刺激探索,Explore2,1,200,2,ExploredGalaxyOver:4,PopulationPressureAdd:-2000,压力值<<Param:0>>,6004,
+
+6,刺激基建（栖息地）,Building-3,1,200,,ColonyCountUpwards:2,PopulationPressureSpeedAdd:-2,压力增长<<Param:0>>,6005,
+7,刺激基建（居住区）,Building-5,1,200,,ColonyCountUpwards:3,PopulationPressureSpeedAdd:-2,压力增长<<Param:0>>,6006,
+8,刺激基建（研究所）,Building-12,1,200,,ColonyCountUpwards:4,PopulationPressureSpeedAdd:-4,压力增长<<Param:0>>,6007,
+
+16,刺激基建（环世界）,Building-8,1,200,,HasExpandSlotStar,PopulationPressureAdd:-3000,压力值<<Param:0>>,6015,
+17,刺激基建（屏蔽装置）,Building-9,1,200,,ExistHighNoiseColony:50_1,CohesionAdd:3,凝聚力+<<Param:0>>,6016,
+9,刺激基建（传感阵列）,Building-201,1,200,,ManmadeGalaxyCountUpwards:1,TechPointAdd:500,科技点+<<Param:0>>,6008,
+10,刺激基建（低光速屏障）,Building-202,1,200,,AllColonyOwnBuildingUpwards:1_201&TechPointUpwards:2000,PopulationPressureSpeedAdd:-4,压力增长<<Param:0>>,6009,
+
+11,军事行动（舰队）,Fleet2,1,200,,!NoTechBuff:100380|!NoTechBuff:100420|!NoTechBuff:100450,PopulationPressureSpeedAdd:-5,压力增长<<Param:0>>,6010,
+19,军事行动（广播）,Weapon3,1,200,,AllColonyOwnBuildingUpwards:1_505,PopulationPressureSpeedAdd:-5,压力增长<<Param:0>>,6018,
+
+12,军事行动（质量弹）,Weapon2,1,200,,!NoTechBuff:100530,PopulationPressureSpeedAdd:-5,压力增长<<Param:0>>,6011,
+13,军事行动（原始星系）,Weapon2,1,200,,ExistKnownOrigionGalaxy,PopulationPressureSpeedAdd:-3,压力增长<<Param:0>>,6012,
+
+14,刺激经济,Resource,5,400,,AllTrue,PopulationPressureAdd:-2000,压力值<<Param:0>>,6013,
+15,刺激科技发展,Tech2,1,200,,TechPointAddUpwards:7,TechPointAdd:500,科技点+<<Param:0>>,6014,
+
+22,刺激经济增长,Resource2,2,200,,!ResourceAddSpeedDownwards:200,PopulationPressureSpeedAdd:-2,压力增长<<Param:0>>,6021,
+23,维持库存,Resource2,2,200,,FullCargo,PopulationPressureSpeedAdd:-2,压力增长<<Param:0>>,6022,
+
+18,隐藏巨型结构,Hide,1,200,,ColonyExistBuff:2007_1,PopulationPressureSpeedAdd:-3,压力增长<<Param:0>>,6017,
+20,拆除障碍,Demolish,1,200,,AllColonyOwnBuildingUpwards:3_101_102_104_105_106_107_108_111_112_902,PopulationPressureAdd:-3000,压力值<<Param:0>>,6019,
+21,开发星球,Pressure2,3,300,,PopulationPressureUpwards:30000,PopulationPressureSpeedAdd:-3,压力增长<<Param:0>>,6020,
+
+24,外交行动（贸易）,Dip1,1,200,,ExistKnownEnemyGalaxy&DiplomacyTask,PopulationPressureSpeedAdd:-3,压力增长<<Param:0>>,6023,
+25,外交行动（科研）,Dip2,1,200,,ExistKnownEnemyGalaxy&DiplomacyTask,PopulationPressureSpeedAdd:-3,压力增长<<Param:0>>,6024,
+
+26,外交行动（情报网）,Dip3,1,200,,ExistKnownEnemyGalaxy&DiplomacyTask,TechPointAdd:900,科技点+<<Param:0>>,6025,
+27,间谍行动（刺探殖民地）,Spy1,1,200,,OnSpyNet&DiplomacyTask,TechPointSpeedAdd:1,科技增长+<<Param:0>>,6026,
+28,间谍行动（文化攻击）,Spy2,1,200,,OnSpyNet&DiplomacyTask,TechPointSpeedAdd:1,科技增长+<<Param:0>>,6027,
+29,间谍行动（反情报活动）,Spy3,1,200,,OnDiplomacyDetected&DiplomacyTask,TechPointAdd:900,科技点+<<Param:0>>,6028,
+
+30,防御行动（征兵）,Defence2,1,200,,OnLostColony,PopulationPressureAdd:-5000,压力值<<Param:0>>,6029,
+31,防御行动（低光速屏障）,Defence3,1,200,,OnLostColony,PopulationPressureAdd:-5000,压力值<<Param:0>>,6030,
+
+106,敬老院,Building-3,0,0,,!AllTrue,PopulationPressureSpeedAdd:-10,压力增长<<Param:0>>,5037,将解锁“敬老院”，建造一个敬老院，不得拆除
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 任务列表
+let csv1 = (`// /Remote/Task,//Name,InputsLength//树调用输入的参数长度,Condition//达成条件,MaxLastTime//最大时间单位秒 -1为无限制,Done//完成时的函数,FakeUndone//虽然完成了也会显示为未完成，常用于延时完成,Fail,NodeType,SuceedTask,DDLAlert
+
+6000,消耗1000科技点,0,SpendTechPoint:1000,10000,,F,,RepeatUntilSuccess,0,-1
+
+6001,探索3个星系,0,ExploreGalaxyCount:3,10000,,F,,RepeatUntilSuccess,0,-1
+6002,殖民1个星系,0,NewColonizeGalaxyCount:1,10000,,F,,RepeatUntilSuccess,0,-1
+
+6003,交流成功1个星系,0,CommunicateOrigionGalaxy:1,10000,,F,,RepeatUntilSuccess,0,-1
+6004,探索5个星系,0,ExploreGalaxyCount:5,10000,,F,,RepeatUntilSuccess,0,-1
+
+6005,建造1座栖息地,0,NewBuildingCount:3_1,10000,,F,,RepeatUntilSuccess,0,-1
+6006,建造1座居住区,0,NewBuildingCount:15_1,10000,,F,,RepeatUntilSuccess,0,-1
+6007,建造1座研究所,0,NewBuildingCount:12_1,10000,,F,,RepeatUntilSuccess,0,-1
+
+6015,刺激基建,0,NewBuildingCount:6_1,10000,,F,,RepeatUntilSuccess,0,-1
+6016,刺激基建,0,NewBuildingCount:9_1,10000,,F,,RepeatUntilSuccess,0,-1
+6008,建造1座传感阵列,0,NewBuildingCount:201_1,10000,,F,,RepeatUntilSuccess,0,-1
+6009,建造1座低光速屏障,0,NewBuildingCount:202_1,10000,,F,,RepeatUntilSuccess,0,-1
+
+6010,使用舰队战胜另一只舰队,0,AttackPlayerGalaxy:0_1,10000,,F,,RepeatUntilSuccess,0,-1
+6018,军事行动,0,AttackGalaxy:5_1,10000,,F,,RepeatUntilSuccess,0,-1
+
+6011,使用质量弹轰炸一个星系,0,AttackGalaxy:1_1,10000,,F,,RepeatUntilSuccess,0,-1
+6012,消灭1个原始文明,0,AttackAboriginalGalaxy:1,10000,,F,,RepeatUntilSuccess,0,-1
+
+6013,刺激经济,0,SpendResource:10000,10000,,F,,RepeatUntilSuccess,0,-1
+6014,刺激科研,0,TechUpward:10,10000,,F,,RepeatUntilSuccess,0,-1
+
+6021,刺激经济,0,ResourceAddUpwards:300,10000,,F,,RepeatUntilSuccess,6031,-1
+6022,刺激经济,0,ResourceStoreUpwards:15000,10000,,F,,RepeatUntilSuccess,6032,-1
+
+6017,特殊议案,0,UnlockTech:100630,10000,,F,,RepeatUntilSuccess,0,-1
+6019,特殊议案,0,RemoveAllBuild:101_102_104_105_106_107_108_111_112_902,10000,,F,,RepeatUntilSuccess,0,-1
+6020,内政行动,0,ExclaimPressureReduceUpwards:10000,10000,,F,,RepeatUntilSuccess,0,-1
+
+6023,外交行动,0,SetNewInteraction:3,10000,,F,,RepeatUntilSuccess,0,-1
+6024,外交行动,0,SetNewInteraction:5,10000,,F,,RepeatUntilSuccess,0,-1
+
+6025,外交行动,0,SetNewInteraction:24,10000,,F,,RepeatUntilSuccess,0,-1
+6026,间谍行动,0,DiplomacyAction:25,10000,,F,,RepeatUntilSuccess,0,-1
+6027,间谍行动,0,DiplomacyAction:26,10000,,F,,RepeatUntilSuccess,0,-1
+6028,间谍行动,0,DiplomacyAction:27,10000,,F,,RepeatUntilSuccess,0,-1
+
+6029,防御行动,0,ConscriptionDefendAttack:1,10000,,F,,RepeatUntilSuccess,0,-1
+6030,防御行动,0,AreaDefendAttack:1_2_4_8,10000,,F,,RepeatUntilSuccess,0,-1
+
+5037,将解锁“敬老院”，建造一个敬老院，不得拆除,0,NewBuildingCount:232_1//&RemainTrue:100,100,,F,,RepeatUntilSuccess,5053,1
+`)
+.split(/\n/).filter(function(e){ return /^\d/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	1   : `刺激科研`		+ ` # 刺激科研`, 
+	
+	2   : `刺激探索`		+ ` # 刺激探索`, 
+	3   : `刺激移民`		+ ` # 刺激移民`, 
+	
+	4   : `对外交流`		+ ` # 对外交流`, 
+	5   : `深度探索`		+ ` # 刺激探索`, 
+	
+	6   : `栖息地`			+ ` # 刺激基建（栖息地）`, 
+	7   : `居住区`			+ ` # 刺激基建（居住区）`, 
+	8   : `研究所`			+ ` # 刺激基建（研究所）`, 
+	
+	16  : `环世界`			+ ` # 刺激基建（环世界）`, 
+	17  : `屏蔽装置`		+ ` # 刺激基建（屏蔽装置）`, 
+	9   : `传感阵列`		+ ` # 刺激基建（传感阵列）`, 
+	10  : `低光速屏障`		+ ` # 刺激基建（低光速屏障）`, 
+	
+	11  : `舰队`			+ ` # 军事行动（舰队）`, 
+	19  : `广播`			+ ` # 军事行动（广播）`, 
+	
+	12  : `质量弹`			+ ` # 军事行动（质量弹）`, 
+	13  : `原始星系`		+ ` # 军事行动（原始星系）`, 
+	
+	14  : `刺激经济`		+ ` # 刺激经济`, 
+	15  : `刺激科技`		+ ` # 刺激科技发展`, 
+	
+	22  : `刺激增长`		+ ` # 刺激经济增长`, 
+	23  : `维持库存`		+ ` # 维持库存`, 
+	
+	18  : `隐藏巨构`		+ ` # 隐藏巨型结构`, 
+	20  : `拆除障碍`		+ ` # 拆除障碍`, 
+	21  : `开发星球`		+ ` # 开发星球`, 
+	
+	24  : `贸易协定`		+ ` # 外交行动（贸易）`, 
+	25  : `科研交流`		+ ` # 外交行动（科研）`, 
+	
+	26  : `建立情报网`		+ ` # 外交行动（情报网）`, 
+	27  : `刺探殖民地`		+ ` # 间谍行动（刺探殖民地）`, 
+	28  : `文化的渗透`		+ ` # 间谍行动（文化攻击）`, 
+	29  : `反情报活动`		+ ` # 间谍行动（反情报活动）`, 
+	
+	30  : `征兵防御`		+ ` # 防御行动（征兵）`, 
+	31  : `能量防护`		+ ` # 防御行动（低光速屏障）`, 
+	
+	106 : `敬老院`			+ ` # 敬老院`, 
+	},
+	
+	文本描述 : {
+	
+	6000 : `消耗科技点 >=1000`													+ ` # 花费<<Param:0>>科技点[<<ProgressKey>>/<<ProgressValue>>]`, 
+	6001 : `成功探索 3 个星系`													+ ` # 探索<<Param:0>>个星系[<<ProgressKey>>/<<ProgressValue>>]`, 
+	6002 : `成功殖民 1 个星系`													+ ` # 殖民<<Param:0>>个星系`, 
+	
+	6003 : `成功交流 1 个星系(未交流过星系才会出现该任务)`						+ ` # 成功交流<<Param:0>>个星系`, 
+	6004 : `探索 5 个星系(和刺激探索(ID:2)的任务不会并存)`						+ ` # 探索<<Param:0>>个星系[<<ProgressKey>>/<<ProgressValue>>]`, 
+	
+	6005 : `建造出 1 个栖息地`													+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	6006 : `建造出 1 个居住区`													+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	6007 : `建造出 1 个研究所`													+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	
+	6015 : `建造出 1 个环世界`													+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	6016 : `建造出 1 个屏蔽装置`												+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	6008 : `建造出 1 个传感阵列`												+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	6009 : `建造出 1 个低光速屏障`												+ ` # 建设<<Param:1>>个<<BuildingParam:0>>`, 
+	
+	6010 : `使用舰队战胜高级文明的舰队 1 次`									+ ` # 使用舰队战胜另其他舰队<<Param:1>>次`, 
+	6018 : `广播 1 个星系(无论是否引发天灾)`									+ ` # 广播<<Param:1>>个星系`, 
+	
+	6011 : `质量弹成功轰炸 1 个星系`											+ ` # 使用质量弹轰炸<<Param:1>>个星系`, 
+	6012 : `成功消灭了 1 个原始文明`											+ ` # 消灭<<Param:0>>个原始文明`, 
+	
+	6013 : `花费了 10k 资源`													+ ` # 花费<<Param:0>>资源[<<ProgressKey>>/<<ProgressValue>>]`, 
+	6014 : `科技点增长 >=10`													+ ` # 使科技增长达到<<Param:0>>`, 
+	
+	6021 : `使资源增长 >= 300 并保持 400 年`									+ ` # <<BaseProgress>>使资源增长达到<<Param:0>>`, 
+	6022 : `使资源库存 >= 15k 并保持 200 年`									+ ` # <<BaseProgress>>使资源库存达到<<Param:0>>以上`, 
+	
+	6017 : `解锁科技:暗物质研究`												+ ` # 解锁科技“<<TechParam:0>>”`, 
+	6019 : `拆除殖民地所有景观障碍`												+ ` # 拆除所有障碍`, 
+	6020 : `使用星球开发降低 1W 压力值`											+ ` # 使用开发降低<<Param:0>>压力[<<ProgressKey>>/<<ProgressValue>>]`, 
+	
+	6023 : `与一个文明签订贸易协定`												+ ` # 与一个文明建立贸易关系`, 
+	6024 : `与一个文明达成科研交流`												+ ` # 与一个文明建立科研关系`, 
+	
+	6025 : `对一个文明建立起情报网`												+ ` # 对一个文明建立情报网`, 
+	6026 : `成功刺探一个文明的移民地`											+ ` # 成功刺探一个文明的移民地`, 
+	6027 : `成功对一个文明进行文化攻击`											+ ` # 成功对一个文明进行文化攻击`, 
+	6028 : `成功地进行了一次反间谍的活动`										+ ` # 成功进行一次反间谍活动`, 
+	
+	6029 : `使用征兵操作并成功防御进攻`											+ ` # 使用征兵成功防御<<Param:0>>次舰队进攻`, 
+	6030 : `使用低光速屏障成功拦截攻击`											+ ` # 使用低光速屏障成功拦截<<Param:0>>次进攻`, 
+	
+	5037 : `建造 2 座敬老院并保持 200 年<br />(会同时自动地解锁敬老院建筑)`		+ ` # <<BaseProgress>>建造<<Param:1>>座<<BuildingParam:0>>`, 
+	},
+	
+	完成奖励 : {
+	
+	1   : `压力值 - 3k`		+ ` # PopulationPressureAdd:-3000		压力值<<Param:0>>`, 
+	
+	2   : `压力值 - 1k`		+ ` # PopulationPressureAdd:-1000		压力值<<Param:0>>`, 
+	3   : `凝聚力 +　5`		+ ` # CohesionAdd:5						凝聚力+<<Param:0>>`, 
+	
+	4   : `科技点 +300`		+ ` # TechPointAdd:300					科技点+<<Param:0>>`, 
+	5   : `压力值 - 2k`		+ ` # PopulationPressureAdd:-2000		压力值<<Param:0>>`, 
+	
+	6   : `压力增长 -2`		+ ` # PopulationPressureSpeedAdd:-2		压力增长<<Param:0>>`, 
+	7   : `压力增长 -2`		+ ` # PopulationPressureSpeedAdd:-2		压力增长<<Param:0>>`, 
+	8   : `压力增长 -4`		+ ` # PopulationPressureSpeedAdd:-4		压力增长<<Param:0>>`, 
+	
+	16  : `压力值 - 3k`		+ ` # PopulationPressureAdd:-3000		压力值<<Param:0>>`, 
+	17  : `凝聚力 +　3`		+ ` # CohesionAdd:3						凝聚力+<<Param:0>>`, 
+	9   : `科技点 +500`		+ ` # TechPointAdd:500					科技点+<<Param:0>>`, 
+	10  : `压力增长 -4`		+ ` # PopulationPressureSpeedAdd:-4		压力增长<<Param:0>>`, 
+	
+	11  : `压力增长 -5`		+ ` # PopulationPressureSpeedAdd:-5		压力增长<<Param:0>>`, 
+	19  : `压力增长 -5`		+ ` # PopulationPressureSpeedAdd:-5		压力增长<<Param:0>>`, 
+	
+	12  : `压力增长 -5`		+ ` # PopulationPressureSpeedAdd:-5		压力增长<<Param:0>>`, 
+	13  : `压力增长 -3`		+ ` # PopulationPressureSpeedAdd:-3		压力增长<<Param:0>>`, 
+	
+	14  : `压力值 - 2k`		+ ` # PopulationPressureAdd:-2000		压力值<<Param:0>>`, 
+	15  : `科技点 +500`		+ ` # TechPointAdd:500					科技点+<<Param:0>>`, 
+	
+	22  : `压力增长 -2`		+ ` # PopulationPressureSpeedAdd:-2		压力增长<<Param:0>>`, 
+	23  : `压力增长 -2`		+ ` # PopulationPressureSpeedAdd:-2		压力增长<<Param:0>>`, 
+	
+	18  : `压力增长 -3`		+ ` # PopulationPressureSpeedAdd:-3		压力增长<<Param:0>>`, 
+	20  : `压力值 - 3k`		+ ` # PopulationPressureAdd:-3000		压力值<<Param:0>>`, 
+	21  : `压力增长 -3`		+ ` # PopulationPressureSpeedAdd:-3		压力增长<<Param:0>>`, 
+	
+	24  : `压力增长 -3`		+ ` # PopulationPressureSpeedAdd:-3		压力增长<<Param:0>>`, 
+	25  : `压力增长 -3`		+ ` # PopulationPressureSpeedAdd:-3		压力增长<<Param:0>>`, 
+	
+	26  : `科技点 +900`		+ ` # TechPointAdd:900					科技点+<<Param:0>>`, 
+	27  : `科技增长 +1`		+ ` # TechPointSpeedAdd:1				科技增长+<<Param:0>>`, 
+	28  : `科技增长 +1`		+ ` # TechPointSpeedAdd:1				科技增长+<<Param:0>>`, 
+	29  : `科技点 +900`		+ ` # TechPointAdd:900					科技点+<<Param:0>>`, 
+	
+	30  : `压力值 - 5k`		+ ` # PopulationPressureAdd:-5000		压力值<<Param:0>>`, 
+	31  : `压力值 - 5k`		+ ` # PopulationPressureAdd:-5000		压力值<<Param:0>>`, 
+	
+	106 : `压力增长-10`		+ ` # PopulationPressureSpeedAdd:-10	压力增长<<Param:0>>`,
+	},
+	
+	出现条件 : {
+	
+	1   : `没有任何限制`														+ ` # AllTrue`, 
+	
+	2   : `没有任何限制`														+ ` # AllTrue`, 
+	3   : `没有任何限制`														+ ` # AllTrue`, 
+	
+	4   : `探索星系 >=1`														+ ` # ExploredGalaxyOver:1&ExistHighNoiseExploredGalaxyOver:0&DiplomacyTask`, 
+	5   : `探索星系 >=4`														+ ` # ExploredGalaxyOver:4`, 
+	
+	6   : `殖民地数量 >=2`														+ ` # ColonyCountUpwards:2`, 
+	7   : `殖民地数量 >=3`														+ ` # ColonyCountUpwards:3`, 
+	8   : `殖民地数量 >=4`														+ ` # ColonyCountUpwards:4`, 
+	
+	16  : `拥有扩展出来的恒星槽位`												+ ` # HasExpandSlotStar`, 
+	17  : `拥有噪音 >=50 的殖民地`												+ ` # ExistHighNoiseColony:50_1`, 
+	9   : `拥有人造星系的数量 >=1`												+ ` # ManmadeGalaxyCountUpwards:1`, 
+	10  : `当前拥有的科技点>=2000<br />殖民地拥有传感阵列 >=1`					+ ` # AllColonyOwnBuildingUpwards:1_201&TechPointUpwards:2000`, 
+	
+	11  : `解锁任意的舰队相关科技`												+ ` # !NoTechBuff:100380|!NoTechBuff:100420|!NoTechBuff:100450`, 
+	19  : `殖民地拥有的广播站 >=1`												+ ` # AllColonyOwnBuildingUpwards:1_505`, 
+
+	12  : `已经解锁"质量弹"科技`												+ ` # !NoTechBuff:100530`, 
+	13  : `存在交流过的原始星系`												+ ` # ExistKnownOrigionGalaxy`, 
+	
+	14  : `没有任何限制`														+ ` # AllTrue`, 
+	15  : `科技增长 >=7`														+ ` # TechPointAddUpwards:7`, 
+	
+	22  : `资源每年增长速度 <=200`												+ ` # !ResourceAddSpeedDownwards:200`, 
+	23  : `资源储量到达该文明上限`												+ ` # FullCargo`, 
+	
+	18  : `殖民地出现"巨构建筑"天体特性`										+ ` # ColonyExistBuff:2007_1`, 
+	20  : `殖民地景观障碍总数 >=3`												+ ` # AllColonyOwnBuildingUpwards:3_101_102_104_105_106_107_108_111_112_902`, 
+	21  : `文明压力 >=30000`													+ ` # PopulationPressureUpwards:30000`, 
+	
+	24  : `存在已建立外交关系的文明`											+ ` # ExistKnownEnemyGalaxy&DiplomacyTask`, 
+	25  : `存在已建立外交关系的文明`											+ ` # ExistKnownEnemyGalaxy&DiplomacyTask`, 
+
+	26  : `存在已建立外交关系的文明`											+ ` # ExistKnownEnemyGalaxy&DiplomacyTask`, 
+	27  : `对某个势力建立起了情报网`											+ ` # OnSpyNet&DiplomacyTask`, 
+	28  : `对某个势力建立起了情报网`											+ ` # OnSpyNet&DiplomacyTask`, 
+	29  : `发现己方被进行了谍报活动`											+ ` # OnDiplomacyDetected&DiplomacyTask`, 
+	
+	30  : `可能会失去殖民地的控制权`											+ ` # OnLostColony`, 
+	31  : `可能会失去殖民地的控制权`											+ ` # OnLostColony`, 
+	
+	106 : `仅在剧情模式第二章第二关出现<br />(在弱势群体事件选择就地保护)`		+ ` # !AllTrue`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 分解数据
+csv1.result = {};
+csv1.forEach(function(
+e01){ csv1.result[e01[0]] = e01 });
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码		Remote/LowerHouseBill,		1,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 项目名称		Name,						刺激科研,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 项目图片		Img,						Tech2,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 重复次数		RepeatTimes,				10,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 冷却时间		CDTime,						200,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 互斥任务		Conflict,					,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 出现条件		AvailableCondition,			AllTrue,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 需求奖励		SuccessBonus,				PopulationPressureAdd:-3000
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 奖励文本		AwardText,					压力值<<Param:0>>,
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 任务代码		Task,						6000,
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';		// 出现条件									
+	
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][0] +'</td>';		// ✘ 任务代码		/Remote/Task,		6000,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][1] +'</td>';		// ✔ 任务描述		//Name,				消耗1000科技点,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][2] +'</td>';		// ✘ 参数数量		InputsLength,		0,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][3] +'</td>';		// ✔ 达成条件		Condition,			SpendTechPoint:1000,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][4] +'</td>';		// ✘ 时间限制		MaxLastTime,		10000,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][5] +'</td>';		// ✘ 完成回调		Done,				,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][6] +'</td>';		// ✘ 延时完成		FakeUndone,			F,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][7] +'</td>';		// ✘ 失败回调		Fail,				,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][8] +'</td>';		// ✔ 任务类型		NodeType,			RepeatUntilSuccess,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][9] +'</td>';		// ✔ 下个任务		SuceedTask,			0,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.任务代码][10] +'</td>';		// ✘ 任务代码		DDLAlert			-1
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	
+	item.图片地址 = item[2];
+	item.重复次数 = item[3];
+	
+	item.冷却时间 = item[4];
+	item.任务代码 = item[9];
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.项目名称 = textList.项目名称[item.项目代码];
+	item.完成奖励 = textList.完成奖励[item.项目代码];
+	item.出现条件 = textList.出现条件[item.项目代码];
+	item.文本描述 = textList.文本描述[item.任务代码];
+	
+	// item.任务描述 = csv1.result[item.任务代码][1];
+	// item.任务类型 = csv1.result[item.任务代码][8];
+	// item.达成条件 = csv1.result[item.任务代码][3];
+	// item.下个任务 = csv1.result[item.任务代码][9];
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/askLower/${item.图片地址}.jpg' style='width:128px;height:128px;' />">
+		<img loading="lazy" alt="${item.项目名称}" src="../static/image/askLower/${item.图片地址}.jpg" style="width:64px;height:64px;" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.项目代码 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.重复次数 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.冷却时间 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.任务代码 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.完成奖励, true) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.出现条件, true) +'</td>';
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

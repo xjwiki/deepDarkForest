@@ -5,8 +5,8 @@
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico">
-<script src="../static/cjs/_xj.plugins.setting.js?time=2025-06-16T20:00:56UTC+8"></script>
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
 <script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
@@ -48,8 +48,8 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
 <script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
 
-<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-06-16T20:00:56UTC+8" />
-<script src="../static/cjs/_global.js?time=2025-06-16T20:00:56UTC+8"></script>
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
 
 <meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
 <meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
@@ -234,7 +234,7 @@ function(){ FastClick.attach(document.body) }, false);</script>
 
 <p>02. 科技增长: 所有文明都有个基础的科技增长值, 默认为每年 <c>+ 5</c>, 有不少建筑或科技都能够影响到这个值(增减的都有), 而提升它的最常见方法, 便是修建"研究所", 每个每年 <c>+ 2</c>, 但在初期, 这也许不是个好主意, 因为建研究所是项长期投资, 需要 <c>8000</c> 资源且耗时长达 <c>400</c> 年, 成本高昂而回报周期漫长, 研究所还需要占据一个宝贵的建筑槽位, 这极有可能会拖慢你扩张的步伐, 需要慎重;</p>
 
-<p>03. 科研合作: 当我方与其他文明成功建交后, 即可在外交界面提出"科研合作", 尽管 AI 未必接受(但多尝试几次也许就能成功), 有时 AI 也会主动向我方发起该请求, 一旦达成合作, 则双方每年都会 <c>+ 4</c> 科技增长, 一个文明可同时与多个文明达成合作, 但科技合作的收益是有上限的, 当合作获取的科技点超过 <c>4000</c>(单个文明合作一千年即可达成, 两个文明合作五百年即可达成), 合作就会自动停止;</p>
+<p>03. 科研交流: 当我方与其他文明成功建交后, 即可在外交界面提出"科研交流", 尽管 AI 未必接受(但多尝试几次也许就能成功), 有时 AI 也会主动向我方发起该请求, 一旦达成合作, 则双方每年科技增长 <c>+(4×发现对方星系数量)</c>, 一个文明可同时与多个文明达成合作, 但这种收益是有上限的, 当获取的科技点超过 <c>2000</c>, 合作就会自动停止, 如果当中有一方收益未超过上限, 还可继续跟其他文明合作;</p>
 
 <p>04. 特殊建筑: 在对战模式下, 有时可能刷出射线风暴的事件, 如果选择引导磁场驻留, 则星球某个随机槽位上会出现一个"强磁场", 可以 <c>+ 1</c> 科技增长, 此外, 由特殊科技类型解锁的某些建筑, 例如[巨型科学枢纽/黑洞观测站/恒星观测站/虚空观测站/沉思殿/秘学坛/大图书馆], 也会影响到科技增长(有增加的也有减少的), 由于特殊建筑并不通用, 此处便不展开描述, 感兴趣可前往建筑页面自行查阅;</p>
 
@@ -259,6 +259,10 @@ function(){ FastClick.attach(document.body) }, false);</script>
 <p>14. 触发阈值: [星系被毁/爆发内战/文明覆灭/科技交流]这些事件, 如果一次性的科技点收益 <c><=1000</c>, 就是直接获得科技, 仅左上角提示, 如果收益 <c>>1000</c>, 就可能会在右下角弹出窗口, 让我们选择是获得一次性的科技点收益, 还是实现科技增长, 而具体增长的数值算法为, 假设一次性的科技点收益为 <c>X</c>, 当前游戏年份为 <c>CY</c>, 游戏总时长为 <c>TY</c>, 其中的 CY 既 CurrentYear, TY 既 TotalYear, TY 在对战模式下默认值为 <c>3000</c>, 如果 CY 没到 TY 的 <c>1/2</c>, 既 <c>1500</c> 年内, 则科技增长点为 <c>向上取整(X ÷ (0.9 × TY - CY))</c>, 如果当前年份为 <c>0.5×TY <= CY < 0.7×TY</c>, 既 <c>1500 ~ 2100</c> 年内, 则科技增长点为 <c>向上取整((X + 1250) ÷ (TY - CY))</c>, 只要年份未超过 <c>2100</c> 且科技增长大于 <c>0</c>, 就会显示弹窗(理论上最小值为 1), 否则就只有一次性的科技点收益, 没科技增长的选项了;</p>
 
 <p>15. 实力差距: 玩家的实力差距被分为了[卑如蝼蚁/略显弱小/难分伯仲/略显强大/宛如天神]总共五个档次, 在每局游戏中, 玩家都有个动态的强度分数值, 算法为 <c>殖民地数量×殖民地系数 + 资源产出×资源产出系数 + 凝聚力×凝聚力系数 + 军事基地数量×军事基地系数</c>, 算法中提到的 <c>4</c> 个系数, 依次分别为 <c>300/1/3/100</c>, 在算出结果后系统会对其进行比较, 算法为 <c>Rate = 对方分数 ÷ 我方分数</c>, 如果 <c>Rate >= 5</c>, 那实力差距就是"宛如天神", 如果 <c>2 <= Rate < 5</c>, 那实力差距就是"略显强大", 如果 <c>0.5 <= Rate < 2</c>, 那实力差距就是"难分伯仲", 如果 <c>0.2 <= Rate < 0.5</c>, 那实力差距就是"略显弱小", 如果 <c>Rate < 0.2</c>, 那实力差距就是"卑如蝼蚁", 以上所展示的都是敌人对我方而言的状态, 如果公式换成 <c>Rate = 我方分数 ÷ 对方分数</c>, 那么得到的结果就是我方对敌人而言的状态;</p>
+
+<!--◇
+还有议院系统的收益, 以及特殊事件如磁场风暴(-5000资源+400科技点)
+◇-->
 
 <hr />
 </section>
@@ -2966,7 +2970,7 @@ filterFunction();
 
 <div id="pub_foot">
 	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
-	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.2</div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
 </div>
 </div>
 </div>

@@ -1,0 +1,1589 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>上院任务</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>上院任务</span><small>(主动选择)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+本页展示了上议院系统所有可能出现的任务, 共计有 <c>26</c> 项, 由于内容涉及到多张表格联动, 数据之间还存在多对多的关联, 如果做成表格将会非常复杂, 所以最终采用了折叠文本的方式罗列, 因为内容较多, 建议利用浏览器的搜索功能(按下 Ctrl+F 并输入关键词即可), 若想了解机制细节, 可以查阅 <a href="#heading02"># 额外拓展</a>, 你也可以通过点击按钮来操作所有折叠文本的开关: 
+<button class="button-unset" type="button" onclick="$('details').attr('open', true)"><i class="fa fa-eye" style="color:#999;margin-right:8px;"></i>展开所有事件</button>
+<button class="button-unset" type="button" onclick="$('details').attr('open', false)"><i class="fa fa-eye-slash" style="color:#999;margin-right:8px;"></i>折叠所有事件</button>
+</p>
+
+<p>————</p>
+
+<div class="details-pack">
+<details id="event_01"><summary>01. 资源耗尽<span style="margin-left:auto;opacity:0.25;">ID:01</span></summary>
+	<content>
+		<p>
+			分组代码: 　1 ╎ 冲突议案: None<br />
+			重复次数: 　3 ╎ 出现条件: 某个星系的资源耗尽(60 年内都有效)<br />
+			冷却时间: 800 ╎ 文本描述: [StartGalaxy] 星系的资源已经耗尽了, 我们需要考虑可持续发展的问题<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-7.jpg" />
+			选项代码: 01<br />
+			选项名称: 可持续发展(戴森球)<br />
+			文本描述: 解锁并建造戴森球, 无限开采恒星资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 01<br />
+			出现基础: 尚未解锁科技:恒星资源利用<br />
+			任务描述: 解锁戴森球(Task=7000, 预算=科技点 +1000, 达成=解锁科技:恒星资源利用)<br />
+		</p>
+		<p>
+			目标代码: 02<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造戴森球(Task=7001, 预算=资源值 +5000, 达成=建造了 1 个戴森球建筑)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-14.jpg" />
+			选项代码: 02<br />
+			选项名称: 持续发展(黑洞工厂)<br />
+			文本描述: 解锁并建造黑洞工厂, 开采黑洞的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标, 有黑洞星系<br />
+		</p>
+		<p>
+			目标代码: 03<br />
+			出现基础: 尚未解锁科技:视界观测<br />
+			任务描述: 解锁黑洞工厂(Task=7002, 预算=科技点 +1200, 达成=解锁科技:视界观测)<br />
+		</p>
+		<p>
+			目标代码: 04<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造黑洞工厂(Task=7003, 预算=没有任何预算, 达成=建造 1 个黑洞工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-13.jpg" />
+			选项代码: 03<br />
+			选项名称: 持续发展(残骸工厂)<br />
+			文本描述: 解锁并建造残骸工厂, 开采残骸的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 600 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标, 有残骸星系<br />
+		</p>
+		<p>
+			目标代码: 05<br />
+			出现基础: 尚未解锁科技:粒子重塑<br />
+			任务描述: 解锁残骸工厂(Task=7004, 预算=科技点 + 600, 达成=解锁科技:粒子重塑)<br />
+		</p>
+		<p>
+			目标代码: 06<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造残骸工厂(Task=7005, 预算=没有任何预算, 达成=建造 1 个残骸工厂)<br />
+		</p>
+	</content>
+</details>
+<details id="event_02"><summary>02. 扶贫政策<span style="margin-left:auto;opacity:0.25;">ID:02</span></summary>
+	<content>
+		<p>
+			分组代码: 　2 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 当前年份 >= 1200 && 资源增长 <= 0<br />
+			冷却时间: 300 ┊ 文本描述: 目前, 我们的经济陷入了严重衰退, 下议院要求进行进行经济相关的改革<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Slum.jpg" />
+			选项代码: 04<br />
+			选项名称: 扶贫政策<br />
+			文本描述: 通过解锁科技直接提高资源产量<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 凝聚力　+ 3<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 07<br />
+			出现基础: 尚未解锁科技:资源回收再利用<br />
+			任务描述: 解锁虚空产资源科技(Task=7006, 预算=科技点 + 100, 达成=解锁科技:资源回收再利用)<br />
+		</p>
+		<p>
+			目标代码: 08<br />
+			出现基础: 尚未解锁科技:资源回收运动<br />
+			任务描述: 解锁虚空产资源科技(Task=7007, 预算=科技点 + 300, 达成=解锁科技:资源回收运动)<br />
+		</p>
+		<p>
+			目标代码: 09<br />
+			出现基础: 尚未解锁科技:财产公有制<br />
+			任务描述: 解锁虚空产资源科技(Task=7008, 预算=科技点 + 900, 达成=解锁科技:财产公有制)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_03"><summary>03. 持续发展<span style="margin-left:auto;opacity:0.25;">ID:03</span></summary>
+	<content>
+		<p>
+			分组代码: 　3 ┊ 冲突议案: 资源消耗(ID:01) || 扶贫政策(ID:02)<br />
+			重复次数: 　3 ┊ 出现条件: 当前年份 >= 500 && 资源增长 <= 100 && 星系出现资源枯竭<br />
+			冷却时间: 800 ┊ 文本描述: 我们文明目前经济状况低迷, 必须要考虑可持续发展的问题了<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-7.jpg" />
+			选项代码: 01<br />
+			选项名称: 可持续发展(戴森球)<br />
+			文本描述: 解锁并建造戴森球, 无限开采恒星资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 01<br />
+			出现基础: 尚未解锁科技:恒星资源利用<br />
+			任务描述: 解锁戴森球(Task=7000, 预算=科技点 +1000, 达成=解锁科技:恒星资源利用)<br />
+		</p>
+		<p>
+			目标代码: 02<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造戴森球(Task=7001, 预算=资源值 +5000, 达成=建造了 1 个戴森球建筑)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-14.jpg" />
+			选项代码: 02<br />
+			选项名称: 持续发展(黑洞工厂)<br />
+			文本描述: 解锁并建造黑洞工厂, 开采黑洞的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标, 有黑洞星系<br />
+		</p>
+		<p>
+			目标代码: 03<br />
+			出现基础: 尚未解锁科技:视界观测<br />
+			任务描述: 解锁黑洞工厂(Task=7002, 预算=科技点 +1200, 达成=解锁科技:视界观测)<br />
+		</p>
+		<p>
+			目标代码: 04<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造黑洞工厂(Task=7003, 预算=没有任何预算, 达成=建造 1 个黑洞工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-13.jpg" />
+			选项代码: 03<br />
+			选项名称: 持续发展(残骸工厂)<br />
+			文本描述: 解锁并建造残骸工厂, 开采残骸的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 600 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标, 有残骸星系<br />
+		</p>
+		<p>
+			目标代码: 05<br />
+			出现基础: 尚未解锁科技:粒子重塑<br />
+			任务描述: 解锁残骸工厂(Task=7004, 预算=科技点 + 600, 达成=解锁科技:粒子重塑)<br />
+		</p>
+		<p>
+			目标代码: 06<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造残骸工厂(Task=7005, 预算=没有任何预算, 达成=建造 1 个残骸工厂)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<p>————</p>
+
+<div class="details-pack">
+<details id="event_04"><summary>01. 控制压力<span style="margin-left:auto;opacity:0.25;">ID:04</span></summary>
+	<content>
+		<p>
+			分组代码: 　4 ┊ 冲突议案: None<br />
+			重复次数: 　2 ┊ 出现条件: 当前年份 >=1200 && 压力增长 >= 50<br />
+			冷却时间: 500 ┊ 文本描述: 我们文明压力增长过快, 下议院要求我们推出解决的政策<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-5.jpg" />
+			选项代码: 05<br />
+			选项名称: 控制压力(居住区)<br />
+			文本描述: 建造居住区以降低压力增长速度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7011<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 10<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造居住区(Task=7010, 预算=资源值 +3000, 达成=建造 1 个居住区建筑)<br />
+			隐藏任务: 建造居住区(如果居住区建造后, 文明的压力增长 <=40, 奖励压力值　-2k)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Pressure.jpg" />
+			选项代码: 06<br />
+			选项名称: 控制压力(科技)<br />
+			文本描述: 通过科技直接降低压力增长速度<br />
+		</p>
+		<p>
+			重复次数: 　2 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 11<br />
+			出现基础: 尚未解锁科技:生育控制<br />
+			任务描述: 解锁生育控制(Task=7012, 预算=科技点 + 500, 达成=解锁科技:生育控制)<br />
+		</p>
+		<p>
+			目标代码: 12<br />
+			出现基础: 尚未解锁科技:退休政策<br />
+			任务描述: 解锁退休政策(Task=7013, 预算=科技点 +1200, 达成=解锁科技:退休政策)<br />
+		</p>
+	</content>
+</details>
+<details id="event_05"><summary>02. 提供住房<span style="margin-left:auto;opacity:0.25;">ID:05</span></summary>
+	<content>
+		<p>
+			分组代码: 　5 ┊ 冲突议案: 控制压力(ID:04)<br />
+			重复次数: 　3 ┊ 出现条件: 当前年份 >= 400 && 压力增长 >= 30 && 居住区数 <= 0<br />
+			冷却时间: 300 ┊ 文本描述: 越来越多的民众无家可归, 下议院要求尽快解决住宅问题<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-5.jpg" />
+			选项代码: 05<br />
+			选项名称: 控制压力(居住区)<br />
+			文本描述: 建造居住区以降低压力增长速度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7011<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 10<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造居住区(Task=7010, 预算=资源值 +3000, 达成=建造 1 个居住区建筑)<br />
+			隐藏任务: 建造居住区(如果居住区建造后, 文明的压力增长 <=40, 奖励压力值　-2k)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_06"><summary>03. 维持凝聚<span style="margin-left:auto;opacity:0.25;">ID:06</span></summary>
+	<content>
+		<p>
+			分组代码: 　6 ┊ 冲突议案: None<br />
+			重复次数: 　2 ┊ 出现条件: 当前年份 >=1400 && 凝聚力值 <= 60<br />
+			冷却时间: 500 ┊ 文本描述: 我们的凝聚力处于较低水平, 下议院认为我们得做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-3.jpg" />
+			选项代码: 07<br />
+			选项名称: 维持凝聚力(栖息地)<br />
+			文本描述: 通过建造栖息地提升文明凝聚力<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7015<br />
+			冷却时间: 500 ┊ 任务奖励: 压力值 - 3k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 13<br />
+			出现基础: 某星系有空槽位 & 没有栖息地<br />
+			任务描述: 建造栖息地(Task=7014, 预算=资源值 +3000, 达成=建造 1 个栖息地建筑)<br />
+			隐藏任务: 建造栖息地(如果栖息地建造后, 文明的凝聚力值 >=60, 奖励压力值　-2k)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Educate.jpg" />
+			选项代码: 08<br />
+			选项名称: 维持凝聚力(科技)<br />
+			文本描述: 通过相关的科技直接提升凝聚力<br />
+		</p>
+		<p>
+			重复次数: 　2 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 压力值 - 3k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 14<br />
+			出现基础: 尚未解锁科技:宇宙社会学01<br />
+			任务描述: 解锁宇宙社会学01(Task=7016, 预算=科技点 + 200, 达成=解锁:目标科技)<br />
+		</p>
+		<p>
+			目标代码: 15<br />
+			出现基础: 尚未解锁科技:宇宙社会学02<br />
+			任务描述: 解锁宇宙社会学02(Task=7017, 预算=科技点 + 400, 达成=解锁:目标科技)<br />
+		</p>
+		<p>
+			目标代码: 16<br />
+			出现基础: 尚未解锁科技:总体战争思想<br />
+			任务描述: 解锁总体战争思想(Task=7018, 预算=科技点 +1000, 达成=解锁:目标科技)<br />
+		</p>
+	</content>
+</details>
+<details id="event_07"><summary>04. 提高凝聚<span style="margin-left:auto;opacity:0.25;">ID:07</span></summary>
+	<content>
+		<p>
+			分组代码: 　7 ┊ 冲突议案: 维持凝聚(ID:06)<br />
+			重复次数: 　2 ┊ 出现条件: 凝聚力 <= 70 && 栖息地的数量 <= 0<br />
+			冷却时间: 500 ┊ 文本描述: 大量民众当前的居住条件恶劣, 下议院要求解决住宅问题<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-3.jpg" />
+			选项代码: 07<br />
+			选项名称: 维持凝聚力(栖息地)<br />
+			文本描述: 通过建造栖息地提升文明凝聚力<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7015<br />
+			冷却时间: 500 ┊ 任务奖励: 压力值 - 3k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 13<br />
+			出现基础: 某星系有空槽位 & 没有栖息地<br />
+			任务描述: 建造栖息地(Task=7014, 预算=资源值 +3000, 达成=建造 1 个栖息地建筑)<br />
+			隐藏任务: 建造栖息地(如果栖息地建造后, 文明的凝聚力值 >=60, 奖励压力值　-2k)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<p>————</p>
+
+<div class="details-pack">
+<details id="event_23"><summary>01. 紧急征兵<span style="margin-left:auto;opacity:0.25;">ID:23</span></summary>
+	<content>
+		<p>
+			分组代码:　23 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 仅单机模式下有效 && 部分剧情关卡中不会触发 && 我方的某个殖民地在 30 年内会受到舰队登陆攻击<br />
+			冷却时间: 300 ┊ 文本描述: 情报部门认为我方殖民地 [TargetGalaxy] 正在遭受敌对文明的舰队武器进攻, 我们得立刻组织防御了<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Defence2.jpg" />
+			选项代码: 22<br />
+			选项名称: 执行征兵法令<br />
+			文本描述: 使用征兵成功防御一次舰队攻击<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: 7045<br />
+			冷却时间: 300 ┊ 任务奖励: 凝聚力　+ 2<br />
+			任务时间: 100 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 34<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 征兵防御(Task=7042, 预算=没有任何预算, 达成=执行了 1 次征兵防御)<br />
+			隐藏任务: 征兵防御(如果征兵后, 成功防御了敌人的 1 次攻击, 奖励压力增长 -3)<br />
+		</p>
+	</content>
+</details>
+<details id="event_24"><summary>02. 紧急防御<span style="margin-left:auto;opacity:0.25;">ID:24</span></summary>
+	<content>
+		<p>
+			分组代码:　24 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 仅单机模式下有效 && 部分剧情关卡中不会触发 && 我方的某个殖民地在 30 年内会受到高能武器攻击<br />
+			冷却时间: 300 ┊ 文本描述: 情报部门认为我方殖民地 [TargetGalaxy] 正在遭受敌对文明的高能武器进攻, 我们得立刻组织防御了<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Defence2.jpg" />
+			选项代码: 23<br />
+			选项名称: 展开能量护盾<br />
+			文本描述: 使用能量防护罩拦截武器的攻击<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: 7046<br />
+			冷却时间: 300 ┊ 任务奖励: 凝聚力　+ 2<br />
+			任务时间: 100 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 35<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 护盾防御(Task=7043, 预算=没有任何预算, 达成=执行了 1 次启用护罩)<br />
+			隐藏任务: 护盾防御(如果启用防护罩成功防御敌人的 1 次攻击, 奖励压力增长 -5)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_09"><summary>03. 进攻失败<span style="margin-left:auto;opacity:0.25;">ID:09</span></summary>
+	<content>
+		<p>
+			分组代码: 　9 ┊ 冲突议案: None<br />
+			重复次数: 　2 ┊ 出现条件: 我方攻击某个星系失败(60 年内都有效) && 失败的攻击类型为:舰队登陆<br />
+			冷却时间: 300 ┊ 文本描述: 我们目前面对的敌人, 舰队力量毫无疑问在我们之上, 我们需要做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Fleet.jpg" />
+			选项代码: 10<br />
+			选项名称: 提升舰队强度<br />
+			文本描述: 提高舰队强度(包括舰队规模和闪避)<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 3 任务目标<br />
+		</p>
+		<p>
+			目标代码: 19<br />
+			出现基础: 尚未解锁科技:星际作战理论<br />
+			任务描述: 解锁一级舰队规模(Task=7022, 预算=科技点 + 600, 达成=解锁科技:星际作战理论)<br />
+		</p>
+		<p>
+			目标代码: 20<br />
+			出现基础: 尚未解锁科技:非工质引擎<br />
+			任务描述: 解锁一级舰队闪避(Task=7023, 预算=科技点 + 300, 达成=解锁科技:非工质引擎)<br />
+		</p>
+		<p>
+			目标代码: 21<br />
+			出现基础: 尚未解锁科技:离子引擎<br />
+			任务描述: 解锁二级舰队闪避(Task=7024, 预算=科技点 + 900, 达成=解锁科技:离子引擎)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-11.jpg" />
+			选项代码: 09<br />
+			选项名称: 提升防御强度<br />
+			文本描述: 建造太空堡垒, 提高舰队的防御强度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7021<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 17<br />
+			出现基础: 尚未解锁科技:军事平台<br />
+			任务描述: 解锁太空堡垒(Task=7019, 预算=科技点 + 100, 达成=解锁科技:军事平台)<br />
+		</p>
+		<p>
+			目标代码: 18<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造太空堡垒(Task=7020, 预算=资源值 +1000, 达成=建造 1 个太空堡垒)<br />
+			隐藏任务: 成功防御 1 次攻击(如果建立太空堡垒后成功防御攻击, 奖励压力增长 -3)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Weapon.jpg" />
+			选项代码: 11<br />
+			选项名称: 发展新式武器<br />
+			文本描述: 解锁质量弹, 可将恒星摧毁成为黑洞<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: 7026<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 22<br />
+			出现基础: 尚未解锁科技:质量弹<br />
+			任务描述: 解锁质量弹(Task=7025, 预算=科技点 +1800, 达成=解锁科技:质量弹)<br />
+			隐藏任务: 质量弹摧毁有人星系(如果质量弹摧毁 1 有人星系, 奖励凝聚力　+ 2)<br />
+		</p>
+	</content>
+</details>
+<details id="event_08"><summary>04. 紧急动员<span style="margin-left:auto;opacity:0.25;">ID:08</span></summary>
+	<content>
+		<p>
+			分组代码: 　8 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: (星系被探索(60 年内有效) && 当前年份 <= 100) || (星系被试图移民)<br />
+			冷却时间: 300 ┊ 文本描述: 国防部紧急报告, 我们附近可能存在敌人, 有理由相信他们是不怀好意的<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Fleet.jpg" />
+			选项代码: 10<br />
+			选项名称: 提升舰队强度<br />
+			文本描述: 提高舰队强度(包括舰队规模和闪避)<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 3 任务目标<br />
+		</p>
+		<p>
+			目标代码: 19<br />
+			出现基础: 尚未解锁科技:星际作战理论<br />
+			任务描述: 解锁一级舰队规模(Task=7022, 预算=科技点 + 600, 达成=解锁科技:星际作战理论)<br />
+		</p>
+		<p>
+			目标代码: 20<br />
+			出现基础: 尚未解锁科技:非工质引擎<br />
+			任务描述: 解锁一级舰队闪避(Task=7023, 预算=科技点 + 300, 达成=解锁科技:非工质引擎)<br />
+		</p>
+		<p>
+			目标代码: 21<br />
+			出现基础: 尚未解锁科技:离子引擎<br />
+			任务描述: 解锁二级舰队闪避(Task=7024, 预算=科技点 + 900, 达成=解锁科技:离子引擎)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-11.jpg" />
+			选项代码: 09<br />
+			选项名称: 提升防御强度<br />
+			文本描述: 建造太空堡垒, 提高舰队的防御强度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7021<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 17<br />
+			出现基础: 尚未解锁科技:军事平台<br />
+			任务描述: 解锁太空堡垒(Task=7019, 预算=科技点 + 100, 达成=解锁科技:军事平台)<br />
+		</p>
+		<p>
+			目标代码: 18<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造太空堡垒(Task=7020, 预算=资源值 +1000, 达成=建造 1 个太空堡垒)<br />
+			隐藏任务: 成功防御 1 次攻击(如果建立太空堡垒后成功防御攻击, 奖励压力增长 -3)<br />
+		</p>
+	</content>
+</details>
+<details id="event_22"><summary>05. 新型武器<span style="margin-left:auto;opacity:0.25;">ID:22</span></summary>
+	<content>
+		<p>
+			分组代码:　22 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 仅限单机 && 年份>=300 && 人造星系建低维化装置可摧毁敌人星系 >= 3<br />
+			冷却时间: 300 ┊ 文本描述: 国防部判断出, 我们可以投入一种新的武器, 来批量歼灭敌对文明的星系<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-203.jpg" />
+			选项代码: 21<br />
+			选项名称: 新的攻击手段<br />
+			文本描述: 解锁并建造低维化装置实现摧毁星系<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: 7041<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 5k<br />
+			任务时间: 500 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 32<br />
+			出现基础: 尚未解锁科技:低维跌落<br />
+			任务描述: 解锁低维跌落(Task=7037, 预算=科技点 + 500, 达成=解锁科技:低维跌落)<br />
+		</p>
+		<p>
+			目标代码: 33<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造了低维化装置(Task=7038, 预算=没有任何预算, 达成=在指定范围内的人造星系之上, 建造了 1 个低维化装置建筑)<br />
+			隐藏任务: 低维化吞噬星系(如果人造星系上的低维化装置建筑, 所生成的大型低维空间, 至少吞噬了 1 个星系, 奖励压力增长 -5)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<p>————</p>
+
+<div class="details-pack">
+<details id="event_26"><summary>01. 侦查敌情<span style="margin-left:auto;opacity:0.25;">ID:26</span></summary>
+	<content>
+		<p>
+			分组代码:　26 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: (某个星系失联 && 被毁星系与建交文明所属的星系距离 < 200)<br />
+			冷却时间: 300 ┊ 文本描述: 国防部认为刚和我们建交的文明可能有敌意, 我们应该做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore_Reco.jpg" />
+			选项代码: 24<br />
+			选项名称: 侦查目标星系<br />
+			文本描述: 侦查敌人殖民地星系附近的动向<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 3k<br />
+			任务时间: 100 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 36<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 侦查目标星系(Task=7044, 预算=资源值 +4000, 达成=在目标进行 1 次舰队巡逻)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_25"><summary>02. 监测动向<span style="margin-left:auto;opacity:0.25;">ID:25</span></summary>
+	<content>
+		<p>
+			分组代码:　25 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 存在已知的敌人星系<br />
+			冷却时间: 300 ┊ 文本描述: 国防部判断出, 我们应该建造一个人造星系用以监测敌人的动向<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/ManmadeGalaxy.jpg" />
+			选项代码: 18<br />
+			选项名称: 建造人造星系<br />
+			文本描述: 建造一个人造星系实现多种功能<br />
+		</p>
+		<p>
+			重复次数: 　4 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 400 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 29<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造一座人造星系(Task=7034, 预算=没有任何预算, 达成=建造了 1 个人造星系)<br />
+		</p>
+	</content>
+</details>
+<details id="event_19"><summary>03. 建造失败<span style="margin-left:auto;opacity:0.25;">ID:19</span></summary>
+	<content>
+		<p>
+			分组代码:　19 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 人造星系建设失败(60年内都有效) && 记录触发点, 提示操作区<br />
+			冷却时间: 300 ┊ 文本描述: 人造星系建设失败, 国防部怀疑, 目标附近存在未被扫描的星系<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore2.jpg" />
+			选项代码: 16<br />
+			选项名称: 探索重力异常<br />
+			文本描述: 扫描目标区域是否有未知的星系<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: 7040<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 27<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 扫描指定位置(Task=7030, 预算=没有任何预算, 达成=在指定的范围内扫描 1 次)<br />
+			隐藏任务: 扫描到了星系(如果在指定的范围位置扫描, 发现了 1 个星系, 奖励压力增长 -2)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_21"><summary>04. 投资科研<span style="margin-left:auto;opacity:0.25;">ID:21</span></summary>
+	<content>
+		<p>
+			分组代码:　21 ┊ 冲突议案: None<br />
+			重复次数: 　2 ┊ 出现条件: 当前年份 >= 1000 && 科技增长 <= 5<br />
+			冷却时间: 600 ┊ 文本描述: 科技发展部认为我方科技落后于宇宙平均水平, 我们得做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Tech.jpg" />
+			选项代码: 20<br />
+			选项名称: 投资科学研究<br />
+			文本描述: 建造研究所提高默认的科技增长<br />
+		</p>
+		<p>
+			重复次数: 　2 ┊ 隐藏任务: None<br />
+			冷却时间: 600 ┊ 任务奖励: 科技增长 +1<br />
+			任务时间: 550 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 31<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造 2 个研究所(Task=7036, 预算=资源值 +8000, 达成=成功建造研究所建筑×2)<br />
+		</p>
+	</content>
+</details>
+<details id="event_27"><summary>05. 发展路线<span style="margin-left:auto;opacity:0.25;">ID:27</span></summary>
+	<content>
+		<p>
+			分组代码:　27 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 建筑槽位总量 <= 10 && 当前年份 >= 120 && 当前年份 <= 400<br />
+			冷却时间: 400 ┊ 文本描述: 对外扩张不顺利, 议院在争论接下来我们应选择怎样的发展路线<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Slum.jpg" />
+			选项代码: 26<br />
+			选项名称: 专注内政发展<br />
+			文本描述: 扩展我方殖民地的两个星系槽位<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: None<br />
+			冷却时间: 400 ┊ 任务奖励: 资源 +10000<br />
+			任务时间: 400 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 39<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 扩槽 2 次(Task=7049, 预算=资源值+30000, 达成=扩展了两个殖民地的建筑槽位)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Colonize2.jpg" />
+			选项代码: 25<br />
+			选项名称: 专注殖民扩张<br />
+			文本描述: 解锁一级移民速度并殖民一星系<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: None<br />
+			冷却时间: 400 ┊ 任务奖励: 科技点 +500<br />
+			任务时间: 400 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 37<br />
+			出现基础: 尚未解锁科技:民用速度前进二<br />
+			任务描述: 解锁民用前进二(Task=7047, 预算=科技点 + 100, 达成=解锁科技:二级民用速度)<br />
+		</p>
+		<p>
+			目标代码: 38<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 殖民了 1 个星系(Task=7048, 预算=资源值 +3000, 达成=成功地殖民了一个星系)<br />
+		</p>
+	</content>
+</details>
+<details id="event_20"><summary>06. 刺激消费<span style="margin-left:auto;opacity:0.25;">ID:20</span></summary>
+	<content>
+		<p>
+			分组代码:　20 ┊ 冲突议案: None<br />
+			重复次数: 　6 ┊ 出现条件: (资源增长 >= 0 && 资源爆仓超过 30 年) || 资源增长 >= 500<br />
+			冷却时间: 500 ┊ 文本描述: 经济相关部门表示产能过剩, 需要想办法刺激消费以促进再发展<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Planet.jpg" />
+			选项代码: 17<br />
+			选项名称: 投资星系建设<br />
+			文本描述: 开发星球增加星球提供的建筑槽<br />
+		</p>
+		<p>
+			重复次数: 　4 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 400 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 28<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 扩槽一次星球槽位(Task=7033, 预算=没有任何预算, 达成=扩展了 1 个星球槽位)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/ManmadeGalaxy.jpg" />
+			选项代码: 18<br />
+			选项名称: 建造人造星系<br />
+			文本描述: 建造一个人造星系实现多种功能<br />
+		</p>
+		<p>
+			重复次数: 　4 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 压力增长 -2<br />
+			任务时间: 400 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 29<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造一座人造星系(Task=7034, 预算=没有任何预算, 达成=建造了 1 个人造星系)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Resource2.jpg" />
+			选项代码: 19<br />
+			选项名称: 刺激消费市场<br />
+			文本描述: 将资源花到你认为有价值的地方<br />
+		</p>
+		<p>
+			重复次数: 　4 ┊ 隐藏任务: None<br />
+			冷却时间: 500 ┊ 任务奖励: 压力值 - 2k<br />
+			任务时间: 400 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 30<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 消耗了资源 20000(Task=7035, 预算=没有任何预算, 达成=累计消耗 20000 资源)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<p>————</p>
+
+<div class="details-pack">
+<details id="event_10"><summary>01. 探索毁灭原因01<span style="margin-left:auto;opacity:0.25;">ID:10</span></summary>
+	<content>
+		<p>
+			分组代码:　10 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 我方移民地失去联系, 可能已被摧毁 && 失去殖民地后的 30 年<br />
+			冷却时间: 300 ┊ 文本描述: [StartGalaxy] 移民地失联, 民众认为我们有必要考察具体原因<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore.jpg" />
+			选项代码: 12<br />
+			选项名称: 探索毁灭原因<br />
+			文本描述: 探索那个已失去的殖民地毁灭原因<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 23<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 探索指定星系(Task=7027, 预算=没有任何预算, 达成=成功地探索了指定的星系!)<br />
+		</p>
+	</content>
+</details>
+<details id="event_11"><summary>02. 毁灭原因: 舰队登陆01<span style="margin-left:auto;opacity:0.25;">ID:11</span></summary>
+	<content>
+		<p>
+			分组代码:　11 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 探索星系成功 && 该殖民地过去是我方领地, 探索发现它是恒星<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的舰队所毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Fleet.jpg" />
+			选项代码: 10<br />
+			选项名称: 提升舰队强度<br />
+			文本描述: 提高舰队强度(包括舰队规模和闪避)<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 3 任务目标<br />
+		</p>
+		<p>
+			目标代码: 19<br />
+			出现基础: 尚未解锁科技:星际作战理论<br />
+			任务描述: 解锁一级舰队规模(Task=7022, 预算=科技点 + 600, 达成=解锁科技:星际作战理论)<br />
+		</p>
+		<p>
+			目标代码: 20<br />
+			出现基础: 尚未解锁科技:非工质引擎<br />
+			任务描述: 解锁一级舰队闪避(Task=7023, 预算=科技点 + 300, 达成=解锁科技:非工质引擎)<br />
+		</p>
+		<p>
+			目标代码: 21<br />
+			出现基础: 尚未解锁科技:离子引擎<br />
+			任务描述: 解锁二级舰队闪避(Task=7024, 预算=科技点 + 900, 达成=解锁科技:离子引擎)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-11.jpg" />
+			选项代码: 09<br />
+			选项名称: 提升防御强度<br />
+			文本描述: 建造太空堡垒, 提高舰队的防御强度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7021<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 17<br />
+			出现基础: 尚未解锁科技:军事平台<br />
+			任务描述: 解锁太空堡垒(Task=7019, 预算=科技点 + 100, 达成=解锁科技:军事平台)<br />
+		</p>
+		<p>
+			目标代码: 18<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造太空堡垒(Task=7020, 预算=资源值 +1000, 达成=建造 1 个太空堡垒)<br />
+			隐藏任务: 成功防御 1 次攻击(如果建立太空堡垒后成功防御攻击, 奖励压力增长 -3)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Colonize2.jpg" />
+			选项代码: 13<br />
+			选项名称: 夺回我方故土<br />
+			文本描述: 重新殖民被毁灭的星系<br />
+		</p>
+		<p>
+			重复次数: 　2 ┊ 隐藏任务: 7031<br />
+			冷却时间: 500 ┊ 任务奖励: 凝聚力　+ 5<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 24<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 殖民指定星系(Task=7028, 预算=没有任何预算, 达成=殖民指定星系)<br />
+			隐藏任务: 殖民星系成功(如果主任务经过五年后, 殖民成功, 奖励资源 +10000)<br />
+		</p>
+	</content>
+</details>
+<details id="event_12"><summary>03. 毁灭原因: 质量弹01<span style="margin-left:auto;opacity:0.25;">ID:12</span></summary>
+	<content>
+		<p>
+			分组代码:　12 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 探索星系成功 && 该殖民地过去是我方领地, 探索发现它是黑洞<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的质量弹毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-14.jpg" />
+			选项代码: 02<br />
+			选项名称: 持续发展(黑洞工厂)<br />
+			文本描述: 解锁并建造黑洞工厂, 开采黑洞的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标, 有黑洞星系<br />
+		</p>
+		<p>
+			目标代码: 03<br />
+			出现基础: 尚未解锁科技:视界观测<br />
+			任务描述: 解锁黑洞工厂(Task=7002, 预算=科技点 +1200, 达成=解锁科技:视界观测)<br />
+		</p>
+		<p>
+			目标代码: 04<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造黑洞工厂(Task=7003, 预算=没有任何预算, 达成=建造 1 个黑洞工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore_Reco.jpg" />
+			选项代码: 14<br />
+			选项名称: 全体侦查<br />
+			文本描述: 类似的情况可能再次发生, 需要做好准备<br />
+		</p>
+		<p>
+			重复次数: 　5 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 200 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 25<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 全体侦查(Task=7029, 预算=没有任何预算, 达成=使用一次舰队巡逻)<br />
+		</p>
+	</content>
+</details>
+<details id="event_13"><summary>04. 毁灭原因: 光粒01<span style="margin-left:auto;opacity:0.25;">ID:13</span></summary>
+	<content>
+		<p>
+			分组代码:　13 ┊ 冲突议案: None<br />
+			重复次数: 　1 ┊ 出现条件: 探索星系成功 && 该殖民地过去是我方领地, 探索发现它是残骸<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的光粒所毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-13.jpg" />
+			选项代码: 03<br />
+			选项名称: 持续发展(残骸工厂)<br />
+			文本描述: 解锁并建造残骸工厂, 开采残骸的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 600 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标, 有残骸星系<br />
+		</p>
+		<p>
+			目标代码: 05<br />
+			出现基础: 尚未解锁科技:粒子重塑<br />
+			任务描述: 解锁残骸工厂(Task=7004, 预算=科技点 + 600, 达成=解锁科技:粒子重塑)<br />
+		</p>
+		<p>
+			目标代码: 06<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造残骸工厂(Task=7005, 预算=没有任何预算, 达成=建造 1 个残骸工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore_Reco.jpg" />
+			选项代码: 14<br />
+			选项名称: 全体侦查<br />
+			文本描述: 类似的情况可能再次发生, 需要做好准备<br />
+		</p>
+		<p>
+			重复次数: 　5 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 200 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 25<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 全体侦查(Task=7029, 预算=没有任何预算, 达成=使用一次舰队巡逻)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<div class="details-pack">
+<details id="event_14"><summary>05. 探索毁灭原因02<span style="margin-left:auto;opacity:0.25;">ID:14</span></summary>
+	<content>
+		<p>
+			分组代码:　14 ┊ 冲突议案: 探索毁灭的原因(ID:10)|毁灭原因:舰队登陆(ID:11)|毁灭原因:质量弹(ID:12)|毁灭原因:光粒(ID:13)<br />
+			重复次数: 　1 ┊ 出现条件: 某个星系失去了联系, 可能已被摧毁 && 失去殖民地后的 30 年<br />
+			冷却时间: 300 ┊ 文本描述: [StartGalaxy] 星系已失联, 民众认为我们有必要考察具体原因<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore.jpg" />
+			选项代码: 12<br />
+			选项名称: 探索毁灭原因<br />
+			文本描述: 探索那个已失去的殖民地毁灭原因<br />
+		</p>
+		<p>
+			重复次数: 　1 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 300 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 23<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 探索指定星系(Task=7027, 预算=没有任何预算, 达成=成功地探索了指定的星系!)<br />
+		</p>
+	</content>
+</details>
+<details id="event_15"><summary>06. 毁灭原因: 舰队登陆02<span style="margin-left:auto;opacity:0.25;">ID:15</span></summary>
+	<content>
+		<p>
+			分组代码:　15 ┊ 冲突议案: 探索毁灭的原因(ID:10)|毁灭原因:舰队登陆(ID:11)|毁灭原因:质量弹(ID:12)|毁灭原因:光粒(ID:13)<br />
+			重复次数: 　1 ┊ 出现条件: 探索星系成功 && 该殖民地过去不属于我方, 探索发现它是恒星<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的舰队所毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Fleet.jpg" />
+			选项代码: 10<br />
+			选项名称: 提升舰队强度<br />
+			文本描述: 提高舰队强度(包括舰队规模和闪避)<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 3 任务目标<br />
+		</p>
+		<p>
+			目标代码: 19<br />
+			出现基础: 尚未解锁科技:星际作战理论<br />
+			任务描述: 解锁一级舰队规模(Task=7022, 预算=科技点 + 600, 达成=解锁科技:星际作战理论)<br />
+		</p>
+		<p>
+			目标代码: 20<br />
+			出现基础: 尚未解锁科技:非工质引擎<br />
+			任务描述: 解锁一级舰队闪避(Task=7023, 预算=科技点 + 300, 达成=解锁科技:非工质引擎)<br />
+		</p>
+		<p>
+			目标代码: 21<br />
+			出现基础: 尚未解锁科技:离子引擎<br />
+			任务描述: 解锁二级舰队闪避(Task=7024, 预算=科技点 + 900, 达成=解锁科技:离子引擎)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-11.jpg" />
+			选项代码: 09<br />
+			选项名称: 提升防御强度<br />
+			文本描述: 建造太空堡垒, 提高舰队的防御强度<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: 7021<br />
+			冷却时间: 300 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标<br />
+		</p>
+		<p>
+			目标代码: 17<br />
+			出现基础: 尚未解锁科技:军事平台<br />
+			任务描述: 解锁太空堡垒(Task=7019, 预算=科技点 + 100, 达成=解锁科技:军事平台)<br />
+		</p>
+		<p>
+			目标代码: 18<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造太空堡垒(Task=7020, 预算=资源值 +1000, 达成=建造 1 个太空堡垒)<br />
+			隐藏任务: 成功防御 1 次攻击(如果建立太空堡垒后成功防御攻击, 奖励压力增长 -3)<br />
+		</p>
+	</content>
+</details>
+<details id="event_16"><summary>07. 毁灭原因: 质量弹02<span style="margin-left:auto;opacity:0.25;">ID:16</span></summary>
+	<content>
+		<p>
+			分组代码:　16 ┊ 冲突议案: 探索毁灭的原因(ID:10)|毁灭原因:舰队登陆(ID:11)|毁灭原因:质量弹(ID:12)|毁灭原因:光粒(ID:13)<br />
+			重复次数: 　2 ┊ 出现条件: 探索星系成功 && 该殖民地过去不属于我方, 探索发现它是黑洞<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的质量弹毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-14.jpg" />
+			选项代码: 02<br />
+			选项名称: 持续发展(黑洞工厂)<br />
+			文本描述: 解锁并建造黑洞工厂, 开采黑洞的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ╎ 隐藏任务: None<br />
+			冷却时间: 600 ╎ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ╎ 出现前提: 需要有 2 任务目标, 有黑洞星系<br />
+		</p>
+		<p>
+			目标代码: 03<br />
+			出现基础: 尚未解锁科技:视界观测<br />
+			任务描述: 解锁黑洞工厂(Task=7002, 预算=科技点 +1200, 达成=解锁科技:视界观测)<br />
+		</p>
+		<p>
+			目标代码: 04<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造黑洞工厂(Task=7003, 预算=没有任何预算, 达成=建造 1 个黑洞工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore_Reco.jpg" />
+			选项代码: 14<br />
+			选项名称: 全体侦查<br />
+			文本描述: 类似的情况可能再次发生, 需要做好准备<br />
+		</p>
+		<p>
+			重复次数: 　5 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 200 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 25<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 全体侦查(Task=7029, 预算=没有任何预算, 达成=使用一次舰队巡逻)<br />
+		</p>
+	</content>
+</details>
+<details id="event_17"><summary>08. 毁灭原因: 光粒02<span style="margin-left:auto;opacity:0.25;">ID:17</span></summary>
+	<content>
+		<p>
+			分组代码:　17 ┊ 冲突议案: 探索毁灭的原因(ID:10)|毁灭原因:舰队登陆(ID:11)|毁灭原因:质量弹(ID:12)|毁灭原因:光粒(ID:13)<br />
+			重复次数: 　2 ┊ 出现条件: 探索星系成功 && 该殖民地过去不属于我方, 探索发现它是残骸<br />
+			冷却时间: 300 ┊ 文本描述: 考察后的结论为: 它被未知文明的光粒所毁灭, 是否应做点什么<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Building-13.jpg" />
+			选项代码: 03<br />
+			选项名称: 持续发展(残骸工厂)<br />
+			文本描述: 解锁并建造残骸工厂, 开采残骸的资源<br />
+		</p>
+		<p>
+			重复次数: 　3 ┊ 隐藏任务: None<br />
+			冷却时间: 600 ┊ 任务奖励: 压力增长 -4<br />
+			任务时间: 300 ┊ 出现前提: 需要有 2 任务目标, 有残骸星系<br />
+		</p>
+		<p>
+			目标代码: 05<br />
+			出现基础: 尚未解锁科技:粒子重塑<br />
+			任务描述: 解锁残骸工厂(Task=7004, 预算=科技点 + 600, 达成=解锁科技:粒子重塑)<br />
+		</p>
+		<p>
+			目标代码: 06<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 建造残骸工厂(Task=7005, 预算=没有任何预算, 达成=建造 1 个残骸工厂)<br />
+		</p>
+		<p>————</p>
+		<p>
+			<img loading="lazy" style="float:left;width:72px;height:72px;margin-right:16px;" src="../static/image/askUpper/Explore_Reco.jpg" />
+			选项代码: 14<br />
+			选项名称: 全体侦查<br />
+			文本描述: 类似的情况可能再次发生, 需要做好准备<br />
+		</p>
+		<p>
+			重复次数: 　5 ┊ 隐藏任务: None<br />
+			冷却时间: 300 ┊ 任务奖励: 压力值 - 1k<br />
+			任务时间: 200 ┊ 出现前提: 需要有 1 任务目标<br />
+		</p>
+		<p>
+			目标代码: 25<br />
+			出现基础: 没有任何限制<br />
+			任务描述: 全体侦查(Task=7029, 预算=没有任何预算, 达成=使用一次舰队巡逻)<br />
+		</p>
+	</content>
+</details>
+</div>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>系统设定: 每隔 <c>50</c> 年, 系统会检查一次有哪些任务可提供, 如果有符合条件的任务组, 就会在界面右下角弹窗让你选, 如果五十年内没有做出决策, 则自动选择"忽略", 每隔 <c>5</c> 年, 系统会检查一次承接的任务是否已完成, 若未完成且时间仅剩一半, 会弹出提醒信息, 在最初的设定中, 玩家最多只能同时接两个上议院任务, 且完成不了还会有惩罚, 但现今的版本, 已经去掉了最大数量和失败惩罚的设定</p>
+
+<p>————</p>
+
+<p>判断流程: 任务触发的过程大概如下, 首先是, 玩家需要满足任务的"出现条件", 在游戏界面的右下角才会出现任务弹窗, 然后是, 点选任务弹窗里的非"忽略"按钮, 在游戏界面的正中央才会出现选项弹窗, 最后是, 选项弹窗里的选项是否出现, 则需要玩家当下能满足这些选项的"出现前提", 以"资源耗尽(ID:01)"这个任务为例, 首先得是"某个星系的资源耗尽"才会出现, 而该任务组的第一个选项既"可持续发展(戴森球)", 必须满足"需要有 2 任务目标"才会出现, 而这两个任务目标, 既"解锁戴森球"和"建造戴森球", 它们存在的条件是满足自身"出现基础"这个属性, 如果不满足, 则该任务选项就不会出现, 如果所有任务选项都不满足, 就没有选项, 那这个任务也就不会触发</p>
+
+<p>关于预算: 某些任务可以在上议院界面领取预算, 但只有当你的资源或科技不足以完成任务时, 才能领取, 且领取的值就是你缺少的额度, 例如任务要求你修建戴森球(需要 <c>5000</c> 资源), 假设你当前的库存为 <c>2000</c> 资源, 则可以领取 <c>5000-2000=3000</c> 资源, 不过领取预算需要支付利息(资源有 <c>10%</c> 的利息/科技有 <c>5%</c> 的利息), 领取后, 预算加上利息, 将以减去资源增长或科技增长的形式逐年归还</p>
+
+<p>隐藏任务: 部分任务在完成后, 会同时触发隐藏任务, 隐藏任务不会在上议院界面显示, 但是当你成功完成后, 会有消息提示你获得奖励</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 00. 数据注解
+
+议会——上议会.csv > UpperHouseGroup 是右下角弹窗的内容
+议会——上议会.csv > UpperHouseOption 是右下角弹窗点击选项后弹出的内容
+议会——上议会.csv > UpperHouseTarget 是右下角弹窗点击选项后弹出的内容选择后可能出现的任务目标
+
+*/
+
+/* 01. 上院任务
+Remote/UpperHouseGroup,		Name,					Description,																													Conflict,			RepeatTimes,			AvailableCondition,																					Option,				CDTime,			//Comment
+//索引,						//名称,					//文案描述,																														//和哪些议案冲突,	//可重复完成次数,		//出现条件,																							//对应议案选项,		//冷却时间,		//前提条件备注
+1,							可持续发展,				<<StartGalaxy>>星系的资源耗尽了，我们需要考虑可持续发展的问题,																	,					3,						HasPlayerEvent:220_60//事件ID_时间,																	1|2|3,				800,			出现资源耗尽事件
+2,							扶贫,					目前经济陷入严重衰退，下议院要求进行进行经济改革,																				,					1,						CurrentTimeAfter:1200&!PlayerAssetMoreThan:5_0,														4,					300,			资源增长小于等于0
+3,							可持续发展,				目前经济状况低迷，我们需要考虑可持续发展的问题,																					1|2,				3,						CurrentTimeAfter:500&!PlayerAssetMoreThan:5_100&ColonyCountMoreThan:2023_0,							1|2|3,				800,			资源增长小于等于100且有星系资源耗尽
+4,							控制压力,				压力增长过快，下议院要求做出对应政策,																							,					2,						CurrentTimeAfter:1200&PlayerAssetMoreThan:6_50,														5|6,				500,			压力增长大于50
+5,							提供住房,				我们的压力开始逐渐增长，越来越多的民众无家可归，下议院要求尽快解决住宅问题,														4,					3,						CurrentTimeAfter:400&PlayerAssetMoreThan:6_30&!BuildingCountMoreThan:15_0,							5,					300,			压力增长大于30且总居住区数量不大于0
+6,							维持凝聚,				我们的凝聚力已经处于一个较低水平，下议院认为我们必须要做点什么,																	,					2,						CurrentTimeAfter:1400&!PlayerAssetMoreThan:0_60,													7|8,				500,			凝聚力不高于60
+7,							提高凝聚,				大量民众当前居住条件恶劣，下议院要求解决住宅问题,																				6,					2,						!PlayerAssetMoreThan:0_70&!BuildingCountMoreThan:3_0,												7,					500,			凝聚力不高于70且总栖息地数量不大于0
+8,							紧急动员,				国防部紧急报告：在我们附近不远处可能就有敌人，有理由相信他们是不怀好意的,														,					1,						(HasPlayerEvent:223_60)|(HasPlayerEvent:222_60&!CurrentTimeAfter:100),								9|10,				300,			100年内被扫描
+9,							进攻失败,				来自司令部的报告：我们目前面对的敌人毫无疑问舰队力量在我们之上，我们需要做点什么,												,					2,						HasPlayerEvent:212_60&EventParamIs:0_0,																9|10|11,			300,			舰队打输了
+10,							探索毁灭原因,			民众认为我们有必要考察失联移民地<<StartGalaxy>>的情况,																			,					1,						HasPlayerEvent:2133_60&LoseColonyTimeMoreThan:30,													12,					300,			自己殖民地丢了还不探索
+11,							毁灭原因：舰队,			在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的舰队毁灭的。毫无疑问他们的舰队比我们更强，我们应该做点什么,		,					2,						HasPlayerEvent:202_60&CheckLostColonyType:0_0,														13|9|10,			300,			探索之后是恒星
+12,							毁灭原因：质量弹,		在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的质量弹毁灭的。我们是否应该做点什么,								,					1,						HasPlayerEvent:202_60&CheckLostColonyType:1_0,														2|14,				300,			探索之后是黑洞
+13,							毁灭原因：光粒,			在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的光粒毁灭的。我们是否应该做点什么,									,					1,						HasPlayerEvent:202_60&CheckLostColonyType:2_0,														3|14,				300,			探索之后是残骸
+14,							探索毁灭原因,			民众认为我们有必要考察失联星系<<StartGalaxy>>的情况,																			10|11|12|13,		1,						HasPlayerEvent:2130_60&LoseColonyTimeMoreThan:30,													12,					300,			别人殖民地丢了还不探索
+15,							毁灭原因：舰队,			在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的舰队毁灭的。我们应该做点什么吗,									10|11|12|13,		1,						HasPlayerEvent:202_60&CheckLostColonyType:0_1,														9|10,				300,			探索之后是恒星
+16,							毁灭原因：质量弹,		在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的质量弹毁灭的。我们是否应该做点什么,								10|11|12|13,		2,						HasPlayerEvent:202_60&CheckLostColonyType:1_1,														2|14,				300,			探索之后是黑洞
+17,							毁灭原因：光粒,			在对<<TargetGalaxy>>考察后，调查部门的结论是：他是被未知文明的光粒毁灭的。我们是否应该做点什么,									10|11|12|13,		2,						HasPlayerEvent:202_60&CheckLostColonyType:2_1,														3|14,				300,			探索之后是残骸
+//18,						紧急防御,				<<AreaType>>探测到了未知目标，国防部认为应该进行应急处理,																		,					1,						HasPlayerEvent:2331_60,																				15,					300,			检测到了目标
+19,							建造失败,				人造星系建设失败，国防部怀疑目标附近有未扫描的星系,																				,					1,						HasPlayerEvent:2321_60&RecordGalaxyPosition,														16,					300,			建造人造失败
+20,							刺激消费,				经济部门表示当前产能过剩，需要想办法刺激消费,																					,					6,						(PlayerAssetMoreThan:5_0&CheckFullCargo:30)|PlayerAssetMoreThan:5_500,								17|18|19,			500,			爆仓超过30年或资源增长大于500
+21,							投资科研,				科技发展部认为我们现在的科技落后于宇宙平均水平了，我们需要做点什么,																,					2,						CurrentTimeAfter:1000&!PlayerAssetMoreThan:3_5,														20,					600,			1000年后科技增长小于等于5
+22,							新型武器,				国防部判断，我们可以投入一种新的武器，来批量歼灭敌对文明的星系,																	,					1,						IsLocalGame&EmergencyTask&CurrentTimeAfter:300&CheckHasAvailabelLDPoint:120_3,						21,					300,			有有效低维化点位
+23,							紧急防御,				情报部门相信我们的殖民地<<TargetGalaxy>>正在遭受某个敌对文明的舰队武器进攻，希望我们立刻组织防御,								,					1,						IsLocalGame&EmergencyTask&CheckAttackDistanceLessThan:0_30,											22,					300,			某星系正在遭到攻击
+24,							紧急防御,				情报部门相信我们的殖民地<<TargetGalaxy>>正在遭受某个敌对文明的高能武器进攻，希望我们立刻组织防御,								,					1,						IsLocalGame&EmergencyTask&CheckAttackDistanceLessThan:1_30,											23,					300,			某星系正在遭到攻击
+25,							侦查敌情,				国防部判断，我们应该建造一个人造星系用以监测敌人的动向,																			,					1,						ExistKnownEnemyGalaxy,																				18,					300,			建交到人
+26,							侦查敌情,				国防部认为刚刚和我们建交的文明可能抱有敌意，我们应该做点什么,																	,					1,						(HasPlayerEvent:2133_60|HasPlayerEvent:2131_60)&CheckEnemyGalaxyAndFirstDestroy:200,				24,					300,			星系失联且最近建交过人
+27,							发展路线,				我们的对外扩张进程似乎不是非常顺利，议院正在争论接下来我们应当选择怎样的发展路线,												,					1,						AllSlotLessThan:10&GalaxyInRangeSlotLessThan:100_5&CurrentTimeAfter:120&!CurrentTimeAfter:400,		25|26,				400,			总槽数<10，所有星系120范围内所有未殖民星系槽位之和<5
+// 101,						对外广播,				社会对探寻地外文明的渴望愈发强烈，大量亲外主义者要求我们对外广播自己，以找到银河中潜在的伙伴,									,					99,						SpecialAvailableProposal:101,																		101,				60,				任务设置自动开启
+// 102,						黑暗森林理论,			科学家提出了一种理论：在银河中暴露坐标的星系会遭到打击。我们或许需要对这个理论进行验证。,										,					99,						SpecialAvailableProposal:102,																		102,				60,				任务设置自动开启
+*/
+
+/* 02. 任务选项
+Remote/UpperHouseOption,		Name,						Description,												Img,				RepeatTimes,		AvailableCondition,																	Target,			CDTime,		Time,		Award,									AwardText,					HideTask,		HideAward,				HideAwardText
+1,								可持续发展（戴森球）,		解锁并建造戴森球，无限开采恒星资源,							Building-7,			3,					AvailableTaskCount:2,																1|2,			600,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		,				,						,
+2,								可持续发展（黑洞）,			解锁并建造黑洞工厂，无限开采黑洞资源,						Building-14,		3,					AvailableTaskCount:2&ColonyCountMoreThan:1012_0//拥有某种Buff的殖民地数量大于,		3|4,			600,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		,				,						,
+3,								可持续发展（残骸）,			解锁并建造残骸工厂，无限开采残骸资源,						Building-13,		3,					AvailableTaskCount:2&ColonyCountMoreThan:1013_0,									5|6,			600,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		,				,						,
+4,								扶贫政策,					通过科技直接提高资源产量,									Slum,				3,					AvailableTaskCount:2,																7|8|9,			500,		300,		CohesionAdd:3,							凝聚力+<<Param:0>>,			,				,						,
+5,								控制压力（居住区）,			建造居住区以降低压力增长速度,								Building-5,			3,					AvailableTaskCount:1,																10,				300,		300,		PopulationAdd:-2,						压力增长<<Param:0>>,		7011,			Population:-2000,		压力值<<Param:0>>
+6,								控制压力（科技）,			通过科技直接降低压力增长速度,								Pressure,			2,					AvailableTaskCount:2,																11|12,			300,		300,		PopulationAdd:-2,						压力增长<<Param:0>>,		,				,						,
+7,								维持凝聚力（栖息地）,		建造栖息地以提升凝聚力,										Building-3,			3,					AvailableTaskCount:1&GalaxyWithEmptySlotParams:0_3//拥有空建筑槽且未建造栖息地,		13,				500,		300,		Population:-3000,						压力值<<Param:0>>,			7015,			Population:-2000,		压力值<<Param:0>>
+8,								维持凝聚力（科技）,			通过科技直接提升凝聚力,										Educate,			2,					AvailableTaskCount:2,																14|15|16,		500,		300,		Population:-3000,						压力值<<Param:0>>,			,				,						,
+9,								提升防御,					建造太空堡垒，提高星系舰队强度（仅防御）,					Building-11,		3,					AvailableTaskCount:2&CanBuildSpaceBastion,											17|18,			300,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		7021,			PopulationAdd:-3,		压力增长<<Param:0>>
+10,								提升舰队强度,				提高舰队强度,												Fleet,				3,					AvailableTaskCount:3,																19|20|21,		300,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		,				,						,
+11,								发展新武器,					解锁质量弹，可将恒星摧毁成为黑洞,							Weapon,				1,					AvailableTaskCount:1,																22,				300,		300,		PopulationAdd:-4,						压力增长<<Param:0>>,		7026,			CohesionAdd:2,			凝聚力+<<Param:0>>
+12,								探索毁灭原因,				探索失去的殖民地的毁灭原因,									Explore,			1,					AvailableTaskCount:1&OutputInput,													23,				300,		300,		Population:-1000,						压力值<<Param:0>>,			,				,						,
+13,								夺回故土,					重新殖民被毁灭的星系,										Colonize2,			2,					AvailableTaskCount:1&OutputInput,													24,				500,		300,		CohesionAdd:5,							凝聚力+<<Param:0>>,			7031,			Resource:10000,			获得<<Param:0>>资源
+14,								全体侦查,					类似的情况可能再次发生，我们需要做好准备,					Explore_Reco,		5,					AvailableTaskCount:1,																25,				300,		200,		Population:-1000,						压力值<<Param:0>>,			,				,						,
+//15,							紧急防御,					检测到的不明物体可能是某种武器或舰队，我们需要做出应对,		Defence,			1,					AvailableTaskCount:1,																26,				300,		300,		CohesionAdd:2,							凝聚力+<<Param:0>>,			7039,			PopulationAdd:-3,		压力增长<<Param:0>>
+16,								探索重力异常,				扫描目标区域是否有未发现的星系,								Explore2,			1,					AvailableTaskCount:1&OutputPosition,												27,				300,		300,		Population:-1000&OutputTaskOutput,		压力值<<Param:0>>,			7040,			PopulationAdd:-2,		压力增长<<Param:0>>
+17,								投资星系建设,				深入开发星球，增加星球提供的建筑槽,							Planet,				4,					AvailableTaskCount:1,																28,				500,		400,		PopulationAdd:-2,						压力增长<<Param:0>>,		,				,						,
+18,								建造人造星系,				建造人造星系，可以实现多种功能,								ManmadeGalaxy,		4,					AvailableTaskCount:1,																29,				500,		400,		PopulationAdd:-2,						压力增长<<Param:0>>,		,				,						,
+19,								刺激消费,					将资源花费到你认为有价值的地方,								Resource2,			4,					AvailableTaskCount:1,																30,				500,		400,		Population:-2000,						压力值<<Param:0>>,			,				,						,
+20,								投资科研,					建造研究所，提高默认科技增长,								Tech,				2,					AvailableTaskCount:1,																31,				600,		550,		TechAddAdd:1,							科技增长+<<Param:0>>,		,				,						,
+21,								新型武器,					解锁并建造低维化装置，可以摧毁一定范围内的星系,				Building-203,		1,					AvailableTaskCount:2&OutputPosition,												32|33,			300,		500,		Population:-5000&OutputTaskOutput,		压力值<<Param:0>>,			7041,			PopulationAdd:-5,		压力增长<<Param:0>>
+22,								征兵法令,					使用征兵成功防御一次舰队攻击,								Defence2,			1,					AvailableTaskCount:1&OutputInput,													34,				300,		100,		CohesionAdd:2,							凝聚力+<<Param:0>>,			7045,			PopulationAdd:-3,		压力增长<<Param:0>>
+23,								展开能量护盾,				使用能量防护罩拦截武器,										Defence2,			1,					AvailableTaskCount:1&OutputInput,													35,				300,		100,		CohesionAdd:2,							凝聚力+<<Param:0>>,			7046,			PopulationAdd:-3,		压力增长<<Param:0>>
+24,								侦查目标星系,				侦查敌对星系附近的动向,										Explore_Reco,		1,					AvailableTaskCount:1&OutputInput,													36,				300,		100,		Population:-3000,						压力值<<Param:0>>,			,				,						,
+25,								专注扩张,					解锁“民用速度-前进二”，并殖民1个星系,						Colonize2,			1,					AvailableTaskCount:2,																37|38,			400,		400,		GetTechPoint:500,						获得<<Param:0>>科技点,		,				,						,
+26,								专注内政,					扩展2个星系槽位,											Slum,				1,					AvailableTaskCount:1,																39,				400,		400,		Resource:10000,							获得<<Param:0>>资源,		,				,						,
+// 101,							对外广播,					广播一个自己的星系,											Dip1,				1,					AvailableTaskCount:1,																101,			60,			2000,		CohesionAdd:10,							凝聚力+<<Param:0>>,			,				,						,
+// 102,							黑暗森林实验计划,			广播一个非殖民地星系,										Tech2,				1,					AvailableTaskCount:1,																102|103,		60,			2000,		GetTechPoint:1000,						获得<<Param:0>>科技点,		,				,						,
+*/
+
+/* 03. 选项结果
+Remote/UpperHouseTarget,		AvailableCondition,							Budget,											Task
+1,								NoTechBuff:100160,							FuncTechPoint:100160//按某科技给予默认预算,		7000
+2,								AllTrue,									FuncResource:5//按某建筑价格给予资源预算,		7001
+3,								NoTechBuff:100190,							FuncTechPoint:100190,							7002
+4,								AllTrue,									AllTrue,										7003
+5,								NoTechBuff:100180,							FuncTechPoint:100180,							7004
+6,								AllTrue,									AllTrue,										7005
+7,								NoTechBuff:100050,							FuncTechPoint:100050,							7006
+8,								NoTechBuff:100051,							FuncTechPoint:100051,							7007
+9,								NoTechBuff:100060,							FuncTechPoint:100060,							7008
+10,								AllTrue,									FuncResource:15,								7010
+11,								NoTechBuff:101306,							FuncTechPoint:101306,							7012
+12,								NoTechBuff:101307,							FuncTechPoint:101307,							7013
+13,								GalaxyWithEmptySlotParams:0_3,				FuncResource:3,									7014
+14,								NoTechBuff:100230,							FuncTechPoint:100230,							7016
+15,								NoTechBuff:100240,							FuncTechPoint:100240,							7017
+16,								NoTechBuff:100250,							FuncTechPoint:100250,							7018
+17,								NoTechBuff:100490,							FuncTechPoint:100490,							7019
+18,								AllTrue,									FuncResource:11,								7020
+19,								NoTechBuff:100380,							FuncTechPoint:100380,							7022
+20,								NoTechBuff:100450,							FuncTechPoint:100450,							7023
+21,								NoTechBuff:100460,							FuncTechPoint:100460,							7024
+22,								NoTechBuff:100530&NoTechBuff:100540,		FuncTechPoint:100530,							7025
+23,								OutputInput,								AllTrue,										7027
+24,								OutputInput,								AllTrue,										7028
+25,								AllTrue,									AllTrue,										7029
+//26,							AllTrue,									AllTrue,										7032
+27,								OutputInput,								AllTrue,										7030
+28,								AllTrue,									AllTrue,										7033
+29,								AllTrue,									AllTrue,										7034
+30,								AllTrue,									AllTrue,										7035
+31,								AllTrue,									FuncResource:12&FuncResource:12,				7036
+32,								NoTechBuff:101210,							FuncTechPoint:101210,							7037
+33,								OutputInput,								AllTrue,										7038
+34,								OutputInput,								AllTrue,										7042
+35,								OutputInput,								AllTrue,										7043
+36,								OutputInput,								BudgetAdjust:0_4000,							7044
+37,								NoTechBuff:101101,							FuncTechPoint:101210,							7047
+38,								AllTrue,									BudgetAdjust:0_3000,							7048
+39,								AllTrue,									BudgetAdjust:0_30000,							7049
+// 101,							AllTrue,									AllTrue,										5032
+// 102,							AllTrue,									FuncResource:505,								5105,		//建造一座广播站
+// 103,							AllTrue,									AllTrue,										5033,		//广播一座星系
+*/
+
+/* 04. 结果任务
+/Remote/Task,		//Name,								InputsLength//树调用输入的参数长度,		Condition//达成条件,						MaxLastTime//最大时间单位秒 -1为无限制,		Done//完成时的函数,		FakeUndone//虽然完成了也会显示为未完成，常用于延时完成,		Fail,		NodeType,				SuceedTask,		DDLAlert
+7000,				解锁戴森球,							0,										UnlockTech:100160,							200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7001,				建造戴森球,							0,										NewBuildingCount:5_1,						200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7002,				解锁黑洞工厂,						0,										UnlockTech:100190,							200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7003,				建造黑洞工厂,						0,										NewBuildingCount:14_1,						200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7004,				解锁残骸工厂,						0,										UnlockTech:100180,							200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7005,				建造残骸工厂,						0,										NewBuildingCount:13_1,						200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7006,				解锁虚空产资源科技,					0,										UnlockTech:100050,							100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7007,				解锁虚空产资源科技,					0,										UnlockTech:100051,							100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7008,				解锁虚空产资源科技,					0,										UnlockTech:100060,							100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+//7009,				隐藏奖励（资源增长）,				0,										ResourceAddUpwards:0,						100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7010,				建造居住区,							0,										NewBuildingCount:15_1,						200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7011,				隐藏任务（建造居住区）,				0,										!PopulationAddAmountLess:40,				200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7012,				解锁生育控制,						0,										UnlockTech:101306,							200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7013,				解锁退休政策,						0,										UnlockTech:101307,							200,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7014,				建造栖息地,							0,										NewBuildingCount:3_1,						300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7015,				隐藏任务（建造栖息地）,				0,										CohesionUpwards:60,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7016,				解锁宇宙社会学,						0,										UnlockTech:100230,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7017,				解锁宇宙社会学2,					0,										UnlockTech:100240,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7018,				解锁总体战思想,						0,										UnlockTech:100250,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7019,				解锁太空堡垒,						0,										UnlockTech:100490,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7020,				建造太空堡垒,						0,										NewBuildingCount:11_1,						300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7021,				成功防御一次攻击,					0,										BastionDefendAttack:1,						300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7022,				解锁一级舰队规模,					0,										UnlockTech:100380,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7023,				解锁一级舰队闪避,					0,										UnlockTech:100450,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7024,				再解锁一级舰队闪避,					0,										UnlockTech:100460,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7025,				解锁质量弹,							0,										UnlockTech:100530,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7026,				隐藏任务用质量弹摧毁有人星系,		0,										AttackPlayerGalaxy:1_1,						300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7027,				探索指定星系,						1,										ExploreTargetGalaxy,						300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7028,				殖民指定星系,						2,										ReachTargetGalaxy,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7029,				全体侦查,							0,										UseAttackArea:24_1,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7030,				扫描指定位置,						3,										ScanTargetPoint:10,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7031,				殖民成功隐藏任务,					0,										TaskTimeExceed:5,							300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+//7032,				紧急防御,							,										,											,											,						,															,			,						,		
+7033,				扩槽1次,							0,										NewBuildingSlot:1,							300,										,						F,															,			RepeatUntilSuccess,		0,				1
+7034,				建造一座人造星系,					0,										NewManmadeGalaxy:1,							300,										,						F,															,			RepeatUntilSuccess,		0,				1
+7035,				消耗20000资源,						0,										SpendResource:20000,						300,										,						F,															,			RepeatUntilSuccess,		0,				1
+7036,				建设2个研究所/n不得拆除研究所,		0,										NewBuildingCount:12_2,						500,										,						F,															,			RepeatUntilSuccess,		0,				1
+7037,				解锁低维跌落,						0,										UnlockTech:101210,							500,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7038,				建造低维化,							3,										BuildingAtPosition:203_10,					500,										,						F,															,			RepeatUntilSuccess,		0,				-1
+//7039,				隐藏任务防御成功,					0,										,											,											,						,															,			,						,		
+7040,				隐藏任务扫描到星系,					3,										ScanCount:1,								300,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7041,				隐藏任务低维化鲨了人,				2,										TaskTimeExceed:5&AreaInvolvedCount:3_1,		100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7042,				征兵防御,							2,										GalaxyCommand:0,							100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7043,				能量盾防御,							2,										GalaxyCommand:4,							100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7044,				侦查目标星系,						1,										UseAttackAreaGalaxy:24_60,					100,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7045,				隐藏任务征兵防御,					0,										ConscriptionDefendAttack:1,					61,											,						F,															,			RepeatUntilSuccess,		0,				-1
+7046,				隐藏任务能量盾防御,					0,										AreaDefendAttack:1_4,						31,											,						F,															,			RepeatUntilSuccess,		0,				-1
+7047,				解锁“民用前进二”,					0,										UnlockTech:101101,							400,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7048,				殖民1个星系,						0,										NewColonizeGalaxyCount:1,					400,										,						F,															,			RepeatUntilSuccess,		0,				-1
+7049,				扩槽2次,							0,										NewBuildingSlot:2,							400,										,						F,															,			RepeatUntilSuccess,		0,				-1
+// 5032,			广播一个移民地,						0,										BroadcastGalaxy:1_1,						-1,											,						F,															,			RepeatUntilSuccess,		0,				1
+// 5033,			广播一个星系,						0,										BroadcastGalaxy:1_0,						-1,											,						F,															,			RepeatUntilSuccess,		0,				1
+// 5105,			建造1座广播站,						0,										NewBuildingCount:505_1,						-1,											,						F,															,			RepeatUntilSuccess,		5033,			1
+*/
+
+// Tip 显示大图
+$('details img').each(function(index, img){
+	$(img).xjTip({align:'right', 
+	followMouse:true, shadow:false, arrow:false, 
+	duration:0, html:'<img style="width:128px;height:128px;" src="'+ img.src +'">'});
+});
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

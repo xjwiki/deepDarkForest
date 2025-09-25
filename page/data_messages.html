@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>消息提示</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>消息提示</span><small>(资讯合集)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 以下是游戏对战时, 可能会出现的消息提示, 目前共计 <c>75</c> 项<br />
+	02. 有部分消息的代码相同([202/208/2101]), 因为它们是从同条数据里拆分出来的, 只是图标有差异<br />
+	03. 对战到中后期, 可能屏幕上的消息会非常多, 此时你就需要通过图标, 去辨别消息的优先级和重要性, 否则很可能会被淹没在情报中<br />
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>展示时间</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>关闭时间</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>样式强调</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>弹窗提示</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>数据缺失: 实际上, 大部分与"外交"相关的消息提示, 都没有在上表中出现(例如建立情报网和刺探殖民地等外交操作的内容), 那是因为, 与外交相关的消息提示, 大多跟外交系统的代码缠在了一起, 由于混乱不堪难以整理, CSV 数据缺失, 因此 XJ 也只能是暂时忽略它们, 那些内容只能是等以后有机会再进行解析了, 好在它们也不是特别的要紧, 在游戏中多遭遇到几回相关的信息, 应该也就能识别出来了</p>
+
+<p>————</p>
+
+<p>图标变化: 有部分的消息提示, 它们的图标是会动态变化的, 例如 <c>id:215</c> 数据, 它的图标并不是一个红色的 X, 而是会根据具体结果而替换成相关建筑物的小图标, 例如 <c>id:219</c> 数据, 它的图标也并不是一组对话气泡, 而是会显示当前与我们正式建交那个文明的图标</p>
+
+<p>消息面板: 由于某些消息的展示时间很短, 所以在游戏中, 错失消息的情况也是很常见的(尤其是在不可暂停的对战模式里), 此时可尝试调出"消息面板", 查阅那些来不及处理的信息(快捷键为主键盘的数字键 <kbd>4</kbd>), 不过该面板最多只能保存 <c>20</c> 条数据, 超过了就会覆盖</p>
+
+<p>————</p>
+
+<p>时间属性: 游戏中的消息, 都会以图标的形式出现在界面左上角, "展示时间"的属性, 用于控制图标在界面上的最大停留时间(单位: 年)</p>
+
+<p>关闭时间: 点击消息图标, 则图标会被展开, 可以查阅消息详情, "关闭时间"的属性, 用于控制详情在界面上的最大停留时间(单位: 年)</p>
+
+<p>样式强调: 当该属性不为空, 则这种类型的消息图标在出现时, 图标外围会出现一圈闪烁的白色边框, 用于提示玩家注意某些关键的信息</p>
+
+<p>弹窗提示: 但该属性不为空, 则这种类型的消息图标在出现时, 界面的右下角会出现弹窗让玩家选择, 也就是说消息拥有自动弹窗的回调</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+有部分信息已经被废弃, 所以在数据中被被注释掉了, 实测发现外交数据不完整
+外交的内容可能是跟一些逻辑代码耦合在一起, 这部分太混乱, 只能暂时不理会
+
+————
+
+[206], 不知为何, 有两条 id:206 的数据, 懒的写解析函数, 直接修改原始数据, 将重复的移除
+[202/208/2101], 这三条数据有三个图标, 懒得再写解析函数, 直接修改原始数据, 将它们分开了
+
+————
+
+WindowImage 属性, 用于控制文本提示框样式, 但目前仅有的值为 window_blue, 所以并没有什么意义, 可以不用显示
+Emphasize 属性, 值为 v 的时候, 表示提示框会存在白边进行强调, 值没有特别含义, 有内容就生效, 可能是 ✔ 的意思
+EmphasizeHint 属性, 值为 v 的时候, 会出现右下角的弹窗提示, 否则出现悬浮提示, 有内容就生效, v 可能是 ✔ 的意思
+
+————
+
+所有外交相关的文案, 以`外交文案.csv`到`本地化.csv`的文本为准, `Hint文本.csv`所对应的外交文案已不再使用
+外交操作相关的 Hint 都在`外交文案.csv`中, 其中所有以 $ 开头的词条, 均在`本地化.csv`中
+如果`本地化.csv`中找不到相关内容, 则说明相关内容已不再被使用
+
+*/
+
+// 消息提示
+let csv0 = (`// /HintText,Text,Time,CloseAfterOpenTime,IconImage,ButtonImage,WindowImage,Emphasize,EmphasizeHint
+
+202,$/HintText_Text_a202,3,5,explore_unowned,button_galaxy,window_blue,,
+202,$/HintText_Text_b202,3,5,explore_owned,button_galaxy,window_blue,,
+202,$/HintText_Text_c202,3,5,warning,button_galaxy,window_blue,,
+203,$/HintText_Text_203,10,5,explore_X,button_galaxy,window_blue,,
+
+208,$/HintText_Text_b208,60,15,explore_unowned,button_communicate2,window_blue,,
+208,$/HintText_Text_a208,60,15,communication_aboriginal,button_communicate2,window_blue,,
+208,$/HintText_Text_c208,60,15,communication_enemy,button_communicate2,window_blue,,
+209,$/HintText_Text_209,60,15,communication_X,button_communicate,window_blue,,
+
+205,$/HintText_Text_205,20,5,colonization,button_galaxy,window_blue,,
+2086,$/HintText_Text_2086,30,5,colonization,button_galaxy,window_blue,,
+206,$/HintText_Text_206,60,15,colonization_X,button_galaxy,window_blue,,
+2087,$/HintText_Text_2087,30,5,colonization_X,button_communicated,window_blue,,
+
+2221,$/HintText_Text_2221,6,5,explore,button_galaxy,window_blue,,
+222,$/HintText_Text_222,4,5,explore,button_communicated,window_blue,,
+223,$/HintText_Text_223,300,15,colonization,button_communicated,window_blue,,
+2090,$/HintText_Text_2090,30,5,warning,button_communicated,window_blue,,
+
+211,$/HintText_Text_211,30,5,attack,button_attack,window_blue,,
+212,$/HintText_Text_212,60,15,attack_X,button_attack,window_blue,,
+2132,$/HintText_Text_2132,120,5,defend,button_attacked,window_blue,,
+2129,$/HintText_Text_2129,60,15,defend_X,button_attacked,window_blue,,
+
+219,$/HintText_Text_219,60,15,communicated,button_communicate2,window_blue,,
+2071,$/HintText_Text_2071,30,5,communicated,button_communicated,window_blue,v,v
+226,$/HintText_Text_226,600,5,diplomacy,button_diplomacy,window_blue,,
+2252,$/HintText_Text_2252,60,5,diplomacy,button_diplomacy,window_blue,v,v
+
+5014,$/HintText_Text_5014,30,5,NewCongress,button_galaxy,window_blue,,
+5015,$/HintText_Text_5015,60,5,TimeAlert,button_galaxy,window_blue,,
+5013,$/HintText_Text_5013,60,5,TaskDone,button_galaxy,window_blue,,
+5012,$/HintText_Text_5012,60,5,TaskDelay,button_galaxy,window_blue,,
+
+2131,$/HintText_Text_2131,120,5,attacked,button_attacked,window_blue,,
+2133,$/HintText_Text_2133,120,15,attacked,button_attacked,window_blue,,
+2135,$/HintText_Text_2135,60,15,attacked,button_attacked,window_blue,,
+2137,$/HintText_Text_2137,60,5,attacked,button_attacked,window_blue,,
+
+
+
+213,$/HintText_Text_213,120,5,attack2,button_white,window_blue,,
+2134,$/HintText_Text_2134,60,15,attack,button_white,window_blue,,
+
+228,$/HintText_Text_228,30,15,broadcast,button_otherattackd,window_blue,,
+2281,$/HintText_Text_2281,30,15,dove,button_otherattackd,window_blue,,
+
+220,$/HintText_Text_220,120,15,resource_depletion,button_resource,window_blue,,
+221,$/HintText_Text_221,120,15,resource_depletion,button_attack,window_blue,v,
+
+852,$/HintText_Text_852,60,15,Reclaim,button_galaxy,window_blue,,
+4005,$/HintText_Text_4005,60,15,Reclaim,button_galaxy,window_blue,,
+
+2089,$/HintText_Text_2089,30,5,tech_X,button_tech,window_blue,,
+2242,$/HintText_Text_2242,30,5,tech,button_tech,window_blue,v,
+
+506,$/HintText_Text_506,30,5,ark_hint,button_galaxy,window_blue,,
+507,$/HintText_Text_507,30,5,ark_hint,button_galaxy,window_blue,,
+
+
+
+215,$/HintText_Text_215,5,5,X,button_galaxy,window_blue,,
+216,$/HintText_Text_216,60,15,X,button_galaxy,window_blue,,
+2151,$/HintText_Text_2151,10,5,X,button_galaxy,window_blue,,
+
+232,$/HintText_Text_232,5,5,manmadeGalaxy,button_galaxy,window_blue,,
+2321,$/HintText_Text_2321,60,15,manmadeGalaxy_X,button_galaxy,window_blue,,
+2130,$/HintText_Text_2130,120,5,manmadeGalaxy_X,button_attacked,window_blue,,
+
+2101,$/HintText_Text_a2101,30,5,trace,button_otherattackd,window_blue,,
+2101,$/HintText_Text_b2101,30,5,trace_2,button_otherattackd,window_blue,,
+2101,$/HintText_Text_c2101,30,5,trace_3,button_otherattackd,window_blue,,
+
+2331,$/HintText_Text_2331,60,5,detect_enter,button_communicated,window_blue,,
+23310,$/HintText_Text_23310,60,5,detect_enter,button_communicated,window_blue,,
+2332,$/HintText_Text_2332,60,5,detect_leave,button_communicated,window_blue,,
+
+2333,$/HintText_Text_2333,60,5,intercepted,button_attack,window_blue,,
+2334,$/HintText_Text_2334,60,5,intercept,button_communicated,window_blue,,
+2335,$/HintText_Text_2335,60,5,self_intercepted,button_galaxy,window_blue,,
+
+2337,$/HintText_Text_2337,60,5,area0_found,button_communicated,window_blue,,
+2340,$/HintText_Text_2340,60,5,area2_found,button_communicated,window_blue,,
+2341,$/HintText_Text_2341,60,5,area0_vanish,button_communicated,window_blue,,
+
+
+
+2120,$/HintText_Text_2120,30,5,attack2_X,button_attacked,window_blue,,
+7005,$/HintText_Text_7005,30,5,TaskDone,button_communicated,window_blue,,
+
+4004,$/HintText_Text_4004,60,5,intercept,button_communicated,window_blue,,
+4001,$/HintText_Text_4001,60,5,IncommingAttack,button_attacked,window_blue,,
+4002,$/HintText_Text_4002,10,5,Disguise,button_communicated,window_blue,,
+
+2336,$/HintText_Text_2336,10,5,warning,button_galaxy,window_blue,,
+4003,$/HintText_Text_4003,10,5,attack,button_galaxy,window_blue,,
+4006,$/HintText_Text_4006,60,15,Reclaim,button_galaxy,window_blue,,
+2136,$/HintText_Text_2136,60,5,defend,button_attacked,window_blue,,
+
+3133,$/HintText_Text_3133,60,5,Message,button_communicated,window_blue,,
+3134,$/HintText_Text_3134,60,5,Message,button_communicated,window_blue,,
+
+2190,$/HintText_Text_2190,60,15,communicated,button_attack,window_blue,,
+2191,$/HintText_Text_2191,60,15,communicated,button_attacked,window_blue,,
+
+
+
+// 刺探移民地
+// 2138,$/HintText_Text_2138,30,5,SpyColony,button_attacked,window_blue,,
+// 2139,$/HintText_Text_2139,30,5,SpyColony,button_communicate,window_blue,,
+// 2140,$/HintText_Text_2140,30,5,SpyColony,button_communicate,window_blue,,
+
+// [DestoryResult]
+// 2110,$/HintText_Text_2110,30,5,attack2,button_attacked,window_blue,,
+
+// 私人信息
+// 5175,$/HintText_Text_5175,60,5,Message,button_communicated,window_blue,,
+
+// 力场生成
+// 217,$/HintText_Text_217,2,5,X,button_galaxy,window_blue,,
+
+// 直接获得了科技
+// 2241,$/HintText_Text_2241,60,5,warning,button_tech,window_blue,v,v
+
+// 上议院发布紧急议案
+// 7002,$/HintText_Text_7002,60,5,EventAlert,button_communicated,window_blue,v,v
+
+// 紧急事件
+// 5011,$/HintText_Text_5011,60,5,EventAlert,button_communicated,window_blue,v,v
+
+// 原始星系抵御进攻/原始星系驻军失联
+// 4007,$/HintText_Text_4007,120,5,defend,button_attacked,window_blue,,
+// 4008,$/HintText_Text_4008,120,15,attacked,button_attacked,window_blue,,
+
+// 中继模块/监听模块
+// 5021,$/HintText_Text_5021,60,5,manmadeGalaxy_X,button_attacked,window_blue,,
+// 5022,$/HintText_Text_5022,60,5,manmadeGalaxy_X,button_attacked,window_blue,,
+
+// 已被废弃
+// 320,$/HintText_Text_320,60,5,EventAlert,button_communicated,window_blue,v,v
+// 321,$/HintText_Text_321,-1,5,EventAlert,button_communicated,window_blue,v,v
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	a202  : undefined, 
+	b202  : undefined, 
+	c202  : undefined, 
+	203   : undefined, 
+	
+	b208  : undefined, 
+	a208  : undefined, 
+	c208  : undefined, 
+	209   : undefined, 
+	
+	205   : undefined, 
+	2086  : undefined, 
+	206   : undefined, 
+	2087  : undefined, 
+	
+	2221  : undefined, 
+	222   : undefined, 
+	223   : undefined, 
+	2090  : undefined, 
+	
+	211   : undefined, 
+	212   : undefined, 
+	2132  : undefined, 
+	2129  : undefined, 
+	
+	219   : undefined, 
+	2071  : undefined, 
+	226   : undefined, 
+	2252  : undefined, 
+	
+	5014  : undefined, 
+	5015  : undefined, 
+	5013  : undefined, 
+	5012  : undefined, 
+	
+	2131  : undefined, 
+	2133  : undefined, 
+	2135  : undefined, 
+	2137  : undefined, 
+	
+	
+	
+	213   : undefined, 
+	2134  : undefined, 
+	
+	228   : undefined, 
+	2281  : undefined, 
+	
+	220   : undefined, 
+	221   : undefined, 
+	
+	852   : undefined, 
+	4005  : undefined, 
+
+	2089  : undefined, 
+	2242  : undefined, 
+	
+	506   : undefined, 
+	507   : undefined, 
+	
+	
+	
+	215   : undefined, 
+	216   : undefined, 
+	2151  : undefined, 
+	
+	232   : undefined, 
+	2321  : undefined, 
+	2130  : undefined, 
+	
+	a2101 : undefined, 
+	b2101 : undefined, 
+	c2101 : undefined, 
+	
+	
+	
+	2331  : undefined, 
+	23310 : undefined, 
+	2332  : undefined, 
+	
+	2334  : undefined, 
+	2333  : undefined, 
+	2335  : undefined, 
+	
+	2337  : undefined, 
+	2340  : undefined, 
+	2341  : undefined, 
+	
+	
+	
+	2120  : undefined, 
+	7005  : undefined, 
+	
+	4004  : undefined, 
+	4001  : undefined, 
+	4002  : undefined, 
+	
+	2336  : undefined, 
+	4003  : undefined, 
+	4006  : undefined, 
+	2136  : undefined, 
+	
+	
+	
+	3133  : undefined, 
+	3134  : undefined, 
+	
+	2190  : undefined, 
+	2191  : undefined, 
+	
+	
+	
+	217   : undefined, 
+	
+	320   : undefined, 
+	
+	2110  : undefined, 
+	
+	2138  : undefined, 
+	2139  : undefined, 
+	2140  : undefined, 
+	
+	2241  : undefined, 
+	
+	4007  : undefined, 
+	4008  : undefined, 
+	
+	5011  : undefined, 
+	
+	5175  : undefined, 
+	
+	5021  : undefined, 
+	5022  : undefined, 
+	
+	7002  : undefined, 
+	},
+	
+	文本描述 : {
+	
+	a202  : `[TargetGalaxy] 探索为: 无人星系`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>探索为<color=#FCD361FF><<ExploreResult>></color>`, 
+	b202  : `[TargetGalaxy] 探索为: 可能有人`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>探索为<color=#FCD361FF><<ExploreResult>></color>`, 
+	c202  : `[TargetGalaxy] 探索为: 没有响应`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>探索为<color=#FCD361FF><<ExploreResult>></color>`, 
+	203   : `[TargetGalaxy] 已经隐藏或者毁灭`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>探索失败`, 
+	
+	b208  : `[TargetGalaxy] 交流为: 无人星系`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>交流为<color=#FCD361FF><<CommunicateResult>></color>`, 
+	a208  : `[TargetGalaxy] 交流为: 原始星系`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>交流为<color=#FCD361FF><<CommunicateResult>></color>`, 
+	c208  : `[TargetGalaxy] 交流为: 高级文明`										+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>交流为<color=#FCD361FF><<CommunicateResult>></color>`, 
+	209   : `[TargetGalaxy] 无人或者对方沉默`										+ ` # 向<color=#AAAAFFFF><<TargetGalaxy>></color>交流没有得到回应，目标星系无人或对方沉默`, 
+	
+	205   : `[TargetGalaxy] 移民成功`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>移民成功`, 
+	2086  : `[TargetGalaxy] 整合成功`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>整合成功`, 
+	206   : `[TargetGalaxy] 移民失败`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>移民失败，目标星系有敌人或原始文明`, 
+	2087  : `[TargetGalaxy] 整合失败`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>整合失败，目标星系可能由其他文明伪装`, 
+	
+	2221  : `[TargetGalaxy] 被人扫描`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>被人<color=#FCD361FF>扫描</color>`, 
+	222   : `[TargetGalaxy] 被人探索`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>被人<color=#FCD361FF>探索</color>`, 
+	223   : `[TargetGalaxy] 被人移民`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>被人<color=#FCD361FF>试图移民</color>`, 
+	2090  : `[TargetGalaxy] 被人整合`												+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>被人<color=#FCD361FF>试图整合</color>`, 
+	
+	211   : `[Weapon.Name] 攻击 [TargetGalaxy] 成功`								+ ` # <<Weapon.Name>>攻击<color=#AAAAFFFF><<TargetGalaxy>></color>成功<<DestoryResult>>`, 
+	212   : `[Weapon.Name] 攻击 [TargetGalaxy] 失败`								+ ` # <<Weapon.Name>>攻击<color=#AAAAFFFF><<TargetGalaxy>></color>失败<<DestoryResult>>`, 
+	2132  : `移民地 [TargetGalaxy] 守备舰队防御成功`								+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color>防御了一次攻击`, 
+	2129  : `移民地 [TargetGalaxy] 守备舰队防御失败`								+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color>防御舰队失败`, 
+	
+	219   : `我方与 [TargetGalaxy] 所属文明沟通成功`								+ ` # 与<color=#AAAAFFFF><<TargetGalaxy>></color>的文明<color=#FF4949FF>沟通成功</color>`, 
+	2071  : `我方的 [TargetGalaxy] 收到文明交流信号`								+ ` # <<TargetGalaxy>>收到交流信号`, 
+	226   : `与 [CiviName] 的外交提议收到了回复结果`								+ ` # 与<<CiviName>>的<<DiplomacyType>><<DiplomacyActive>>`, 
+	2252  : `当 [CiviName] 发来贸易或科研的外交提议`								+ ` # <<CiviName>>发来<<DiplomacyType>>的<<DiplomacyActive>>请求`, 
+	
+	5014  : `政府有新议案`															+ ` # 政府有新议案`, 
+	5015  : `[TaskName] 任务时间过半`												+ ` # 任务<color=#00ABFFFF><<TaskName>></color>时间过半`, 
+	5013  : `[TaskName] 任务已经完成, 获得相应奖励`									+ ` # 议案<color=#00ABFFFF><<BillName>></color>完成，已获得相应奖励`, 
+	5012  : `[TaskName] 任务未能完成`												+ ` # 议案<color=#00ABFFFF><<BillName>></color>未完成`, 
+	
+	2131  : `[TargetGalaxy] 已被摧毁`												+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>被摧毁</color>`, 
+	2133  : `[TargetGalaxy] 失去联系, 可能已被摧毁`									+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>失去联系</color>，可能已被摧毁`, 
+	2135  : `[TargetGalaxy] 已经消失`												+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>已消失</color>`, 
+	2137  : `[TargetGalaxy] 被 [Weapon.Name] 袭击, [DestoryResult]`					+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color>被<<Weapon.Name>>袭击<<DestoryResult>>`, 
+	
+	
+	
+	213   : `[TargetGalaxy] 被摧毁`													+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>被摧毁</color>`, 
+	2134  : `[TargetGalaxy] 已消失`													+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>已消失</color>`, 
+	
+	228   : `[TargetGalaxy] 的位置被广播向全宇宙`									+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>的位置被广播向全宇宙`, 
+	2281  : `[TargetGalaxy] 因凝聚力太低而被异见分子擅自广播了`						+ ` # 由于凝聚力太低（所有文明中最低），我们的一些异见分子擅自进行了对外广播`, 
+	
+	220   : `[TargetGalaxy] 的星系资源已经被耗尽`									+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>资源耗尽</color>`, 
+	221   : `资源告急请尽快获取资源(否则压力增长将会大幅提高!)`						+ ` # 资源告急，请尽快获取资源（压力增长会大幅提高）。`, 
+	
+	852   : `[TargetGalaxy] 已完成了扩充槽位开发`									+ ` # <<TargetGalaxy>>扩充建筑槽位完成`, 
+	4005  : `[StartGalaxy] 的 [StartPlanet] 开发完成并释放压力`						+ ` # 移民地<color=#AAAAFFFF><<StartGalaxy>></color>星系<<StartPlanet>>星球开发完成，释放<<PressureReduce>>压力值`, 
+
+	2089  : `与 [StartGalaxy] 的科研交流已终止了`									+ ` # <<AborigionLost>>，同<<StartGalaxy>>的科研交流已终止`, 
+	2242  : `[reasonType] 而触发了"技术爆炸", 获得大量的科技点`						+ ` # 【技术爆炸】获得科技点`, 
+	
+	506   : `建造 [ArkModule] 完成了`												+ ` # <<ArkModule>>建造完成`, 
+	507   : `拆除 [ArkModule] 完成了`												+ ` # <<ArkModule>>拆除完成`, 
+	
+	
+	
+	215   : `[TargetGalaxy] 建造 [Building.Name] 完成`								+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>建造<<Building.Name>>完成`, 
+	216   : `[TargetGalaxy] 建造 [Building.Name] 失败`								+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>建造<<Building.Name>>建筑失败`, 
+	2151  : `[TargetGalaxy] 拆除 [Building.Name] 完成`								+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color>拆除<<Building.Name>>完成`, 
+	
+	232   : `我方的人造星系 [TargetGalaxy] 已建造完成`								+ ` # 星系<color=#AAAAFFFF><<TargetGalaxy>></color>建造完成`, 
+	2321  : `建造 [TargetGalaxy] 失败, 周围存在引力场`								+ ` # 星系<color=#AAAAFFFF><<TargetGalaxy>></color>建造失败，周围存在星系引力场`, 
+	2130  : `我方 [TargetGalaxy] 失联, 可能已经被摧毁`								+ ` # <color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>失去联系</color>，可能已被摧毁`, 
+	
+	a2101 : `检测到 [ChangeType] 跳跃航迹(舰队攻击)`								+ ` # 检测到<<ChangeType>>跳跃航迹`, 
+	b2101 : `检测到 [ChangeType] 跳跃航迹(中子弹)`									+ ` # 检测到<<ChangeType>>跳跃航迹`, 
+	c2101 : `检测到 [ChangeType] 跳跃航迹(移民)`									+ ` # 检测到<<ChangeType>>跳跃航迹`, 
+	
+	
+	
+	2331  : `检测到不明舰队或武器接触`												+ ` # 检测到不明武器或舰队接触<<AreaType>>`, 
+	23310 : `扫描到不明舰队或武器经过`												+ ` # 扫描到不明武器或舰队`, 
+	2332  : `检测到不明舰队或武器离开`												+ ` # 检测到不明武器或舰队离开<<AreaType>>`, 
+	
+	2334  : `我方 [AreaType] 拦截到不明的实体物`									+ ` # <<AreaType>>拦截到不明实体`, 
+	2333  : `我方 [Object] 被 [AreaType] 拦截`										+ ` # 我方<color=#FCD361FF><<Object>></color>被<<AreaType>>拦截`, 
+	2335  : `我方 [Object] 被我方 [AreaType] 拦截 `									+ ` # 我方<<AreaType>>拦截到我方的<color=#FCD361FF><<Object>></color>`, 
+	
+	2337  : `检测到 [AreaType] 的范围发生变化`										+ ` # 检测到<<AreaType>>的范围发生变化`, 
+	2340  : `检测到新的 [AreaType] 出现了`											+ ` # 检测到新的<<AreaType>>出现`, 
+	2341  : `检测到 [AreaType] 消失了`												+ ` # 检测到<<AreaType>>消失`, 
+	
+	
+	
+	2120  : `攻击空地失败 [DestoryResult]`											+ ` # 攻击空地失败<<DestoryResult>>`, 
+	7005  : `承接紧急上议院议案 [UpperHouseBill]`									+ ` # 承接紧急议案<<UpperHouseBill>>`, 
+	
+	4004  : `移民地 [TargetGalaxy] 的低光速屏障已失效`								+ ` # 移民地<color=#AAAAFFFF><<StartGalaxy>></color>低光速屏障已失效`, 
+	4001  : `移民地 [TargetGalaxy] 将受到来自 [CiviName] 的攻击`					+ ` # 移民地<color=#AAAAFFFF><<TargetGalaxy>></color><color=#FF4949FF>将受到来自<<CiviName>>的攻击</color>`, 
+	4002  : `移民地 [TargetGalaxy] 伪装成原始星系而对方可能因此获得科技增长`		+ ` # 我们成功将移民地<color=#AAAAFFFF><<TargetGalaxy>></color>伪装成<color=#7FFF00>原始星系</color>，<color=#BBBBBB>对方可能因此获得了科技增长</color>`, 
+	
+	2336  : `返回了舰队资源 [ReturnMoney]`											+ ` # <color=#AAAAFFFF>返回舰队资源<<ReturnMoney>></color>`, 
+	4003  : `因舰队攻击成功, 获得了凝聚力`											+ ` # 舰队攻击成功，获得<<Bonus>> 凝聚力`, 
+	4006  : `我们从废弃移民地 [StartGalaxy], 获得了 [SpyedTechPoint] 凝聚力`		+ ` # 我们从废弃移民地<color=#AAAAFFFF><<StartGalaxy>></color>中获得<<SpyedTechPoint>>凝聚力`, 
+	2136  : `我们星系 [TargetGalaxy] 遭遇了进攻, 但由于掩体我们仍保有所有权`		+ ` # 我们星系<color=#AAAAFFFF><<TargetGalaxy>></color>遭遇了一次进攻，由于掩体，我们仍保有所有权`, 
+	
+	
+	
+	3133  : `收到了匿名信息`														+ ` # //匿名信息<color=#AAAAFFFF><<Communicate>></color><color=#FF4949FF></color>`, 
+	3134  : `收到了私人信息`														+ ` # //私人信息<color=#AAAAFFFF><<PersonalCommunicate>></color><color=#FF4949FF></color>`, 
+	
+	2190  : `强制建交成功了`														+ ` # 通过虫洞与未知文明建交成功，我们都不知道双方的坐标`, 
+	2191  : `我方被强制建交`														+ ` # 通过虫洞未知文明与我们建交，我们都不知道双方的坐标`, 
+	
+	
+	
+	217   : `力场生成成功`															+ ` # 力场生成成功`, 
+	
+	320   : `宇宙局势激烈地变化着, 我们必须要决定文明将要走向何方。`				+ ` # 宇宙局势激烈地变化着，我们必须要决定文明将要走向何方。`, 
+	
+	2110  : `[DestoryResult]`														+ ` # <<DestoryResult>>`, 
+	
+	2138  : `我方一个移民地坐标被未知文明情报员探明`								+ ` # 我方一移民地坐标被未知文明情报员探明`, 
+	2139  : `刺探移民地, 并获取了对方一个移民地位置`								+ ` # 我们成功悄无声息地刺探移民地，并获取了对方一个移民地位置`, 
+	2140  : `刺探移民地成功, 但我们情报刺探行为暴露`								+ ` # 我们成功刺探移民地，但我们的情报刺探行为暴露了，万幸对方不知道我们是谁`, 
+	
+	2241  : `获得科技 [TechName]`													+ ` # 获得科技<color=#FCD361FF><<TechName>></color>`, 
+	
+	4007  : `原始星系[StartGalaxy]在我们的协助下抵御了一场进攻`						+ ` # 原始星系<color=#AAAAFFFF><<StartGalaxy>></color>在我们的协助下抵御了一场进攻`, 
+	4008  : `我们与原始星系[StartGalaxy]上的驻军失去联系`							+ ` # 我们与原始星系<color=#AAAAFFFF><<StartGalaxy>></color>上的驻军失去联系`, 
+	
+	5011  : `紧急事件[EventType]`													+ ` # 紧急事件<color=#9E1111FF><<EventType>></color>`, 
+	
+	5175  : `//私人信息[PersonalCommunicate]`										+ ` # //私人信息<color=#AAAAFFFF><<PersonalCommunicate>></color><color=#FF4949FF></color>`, 
+	
+	5021  : `中继模块不足, 已失去[TargetGalaxy]`									+ ` # 中继模块不足，已失去<<TargetGalaxy>>`, 
+	5022  : `监听模块不足, 已失去对[TargetGalaxy]的监听`							+ ` # 监听模块不足，已失去对<<TargetGalaxy>>的监听`, 
+	
+	7002  : `上议院发布紧急议案`													+ ` # 上议院发布紧急议案`, 
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码		/HintText,				202,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 文本描述		Text,					$/HintText_Text_202,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 展示时间		Time,					3,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 关闭时间		CloseAfterOpenTime,		5,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 图标地址		IconImage,				explore_unowned|explore_owned|warning,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 背景地址		ButtonImage,			button_galaxy,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 窗口颜色		WindowImage,			window_blue,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 样式强调		Emphasize,				,
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 弹窗提示		EmphasizeHint
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	
+	item.展示时间 = item[2];
+	item.关闭时间 = item[3];
+	
+	item.图标地址 = item[4];
+	item.背景地址 = item[5];
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.样式强调 = (item[7] !== '' ? '✔' : '-');
+	item.弹窗提示 = (item[8] !== '' ? '✔' : '-');
+	
+	item.项目名称 = textList.项目名称[item[1].replace('$/HintText_Text_','')];
+	item.文本描述 = textList.文本描述[item[1].replace('$/HintText_Text_','')];
+	
+	if(item.项目代码 === '206'){ item.背景地址 = 'button_communicated' }
+	else if(item.项目代码 === '222'){ item.背景地址 = 'button_galaxy' }
+	else if(item.项目代码 === '2090'){ item.图标地址 = 'colonization' }
+	else if(item.项目代码 === '2136'){ item.背景地址 = 'button_galaxy' };
+	
+	if(['button_attack2','button_attacked','button_otherattackd',].
+	includes(item.背景地址) === true){ item.背景地址 = 'button_attack' }
+	else if(['button_communicate2','button_communicated','button_diplomacy',].
+	includes(item.背景地址) === true){ item.背景地址 = 'button_communicate' };
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="
+		<img loading='lazy' alt='${item.背景地址}' src='../static/image/messages/wrap/${item.背景地址}.png' style='width:128px;height:128px;' />
+		<img loading='lazy' alt='${item.图标地址}' src='../static/image/messages/icon/${item.图标地址}.png' style='width:64px;height:64px;position:absolute;top:40px;             left:40px;'              />
+	">
+		<img loading="lazy" alt="${item.背景地址}" src="../static/image/messages/wrap/${item.背景地址}.png" style="width: 64px;height: 64px;" />
+		<img loading="lazy" alt="${item.图标地址}" src="../static/image/messages/icon/${item.图标地址}.png" style="width: 32px;height: 32px;position:absolute;top:calc(50% - 16px);left:calc(50% - 16px);" />
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.项目代码 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.展示时间 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.关闭时间 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.样式强调 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.弹窗提示 +'</td>';
+	
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>外交行动</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>外交行动</span><small>(谍报操作)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 以下是当前游戏中可被执行的所有外交操作, 目前共有 <c>14</c> 项<br />
+	02. 表格中的前九项是任意文明都可执行的操作, 后五项则仅限特定主义的文明, 解锁科技后才可使用<br />
+	03. 在情报的科技类里有许多和谍报相关的科技, 解锁之后可[提升操作的成功率/降低操作的暴露率], 更多的细节可以查阅 <a href="#heading02"># 额外拓展</a><br />
+</p>
+
+<table originalSort="0" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>需要解锁</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>允许取消</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>需要同意</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>没有提示</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>持续时间</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>冷却时间</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>间隔时间</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>成功概率</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>暴露概率</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>消耗资源</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>所属文明</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>属性解析: "允许取消"既操作是否允许在执行或生效过程中取消, "需要同意"既操作是否需要目标文明同意才能生效, "没有提示"既操作成功后不会有信息提示告诉你(但确实生效了), "持续时间"既操作所需或持续时间(600k代表整场对战中都会生效), "冷却时间"既操作的 CD 时间(600k代表整场对战中就只能够使用 1 次), "间隔时间"既操作的另一个冷却时间(这是为了避免某些操作过于频繁而做出的限制)</p>
+
+<p>等待回应: [贸易协定/科研交流]等外交操作, 都需要目标文明同意才能生效, 而 AI 是否会同意, 首先是取决于他们能否在合作中获益, 因为这几种操作的收益都跟发现对方的殖民地数量挂钩, 如果我方是通过强制建交和刺探移民地发现了对方, 而对方尚未得知我方的任何殖民地, 则没有任何的收益, 自然也就不会同意, 此外 AI 的决策还会受到压力和凝聚力等因素影响, 高难度 AI 通常回复倾向也会较低</p>
+
+<p>外交关系: 在游戏最初的设定中, 两个文明彼此之间是存在[结盟/中立/敌对]等多种外交关系的, 但随着游戏的开发和系统的变更, 现在这些关系都已经被废弃掉了, 也就是说, 既没有结盟, 也没有敌对, 你可以跟任何文明达成合作, 也可以对任何文明发起进攻, 甚至是在进攻中合作或合作中进攻, 都是可行的, 就像大家常说的, 没有永恒的朋友, 只有永恒的利益, 这种无序混乱似乎也更符合黑暗森林理论</p>
+
+<p>————</p>
+
+<p>强制建交: 所需时间并非固定 <c>250</c> 年, 而是 <c>(1000000-当前年份×1000)÷4000</c> 年, 既初始需 250 年, 千年后需 1 年, 最小为 1 年</p>
+
+<p>建立情报网: 这是所有谍报操作的基础, 你可以通过"情报"科技类里的"情报网时间"科技项, 来尽量减少操作时的需求时间, 极限仅需要 <c>45-37=8</c> 年, 你还可以通过"情报"科技类里的"情报网暴露率"科技项, 来降低暴露的概率, 极限可将暴露率降到 <c>34%×(100%-99%)≈0%</c></p>
+
+<p>反情报的操作: 反情报活动的成功概率并不是 <c>100%</c>, 因为如果目标并没有针对我方建立情报网, 则行动必定失败, 而当该操作成功时, 目标文明针对我方的情报网会被摧毁, <c>100</c> 年内将无法对我方重新建立情报网, 也无法对我方执行任何的谍报操作, 如果此时对方存在针对我方进行到一半的谍报操作, 则这些操作会被全部破坏掉, 也就是完全无效化, 因此, 反情报活动是对付敌方谍报操作最有效的手段</p>
+
+<p>————</p>
+
+<p>发送邮件: 该操作一般只在联机时对人类玩家使用, 可以在联机模式的"战场商店"里, 买到更多的措词, 然后用来羞辱你的对手(或求饶)</p>
+
+<p>贸易协定: 签订贸易协定的前提是, 双方起码知道对方 <c>1</c> 个殖民地的位置, 如果殖民地因某些原因失联, 已知对方殖民地的数量 <c>=0</c>, 则这份协定自动作废, 而协定的收益算法是, 每知道对方一个殖民地, 可让凝聚力 <c>+10</c>, 但一份协定的收益上限为 <c>+30</c>, 假设我方发现了 A1 文明的 4 个殖民地, 而 A1 文明发现了我方 1 个殖民地, 那么双方在签订贸易协定后, 我方 <c>+(10×4=40)</c> 凝聚力, 但因为有上限的存在, 所以实际上只 <c>+30</c> 凝聚力, 而 A1 文明则 <c>+(10×1=10)</c> 凝聚力, 如果此时我方同时又和 B2 文明也签订了贸易协定, 且发现了对方 2 个殖民地, 那么我方再 <c>+(10×2=20)</c> 凝聚力, 那么此刻, 我方从贸易协定中获取的凝聚力收益, 合计就是 <c>30+20=50</c></p>
+
+<p>科研交流: 达成科研交流的前提是, 双方起码知道对方 <c>1</c> 个殖民地的位置, 如果殖民地因某些原因失联, 已知对方殖民地的数量 <c>=0</c>, 则此次交流自动中止, 而交流的收益算法是, 每知道对方一个殖民地, 可让每年的科技增长 <c>+ 4</c>, 但一个文明能从交流获取的科技点上限为 <c>2000</c>, 假设我方发现了 A1 文明的 2 个殖民地, A1 文明发现我方 1 个殖民地, 那么双方达成交流后, 我方每年的科技增长为 <c>+(4×2=8)</c>, A1 文明每年的科技增长 <c>+(4×1=4)</c>, 由于每个文明在科研交流中的收益存在上限, 所以这个交流会在 <c>2000÷8=250</c> 年后自动中止, 此时 A1 文明仅从该交流中只得到了 <c>250*4=1000</c> 科技点, 但因为我方的收益已经到达上限, 所以双方将无法再次达成科研交流, 不过 A1 文明还是能与其他收益尚未到达上限的文明进行科研交流, 直到他的收益也到达上限为止, 每个文明在收益未达到上限时, 都可以跟多个文明达成科研交流, 每年的科技点收益也会进行累加, 也就会在更短的时间内到达收益上限, 也就是说, 科研交流的收益对双方而言未必是对等的(取决于发现对方殖民地的数量), 谁收益越高, 就越能占到便宜, 值得注意的是, 在当前游戏的外交界面, 由于显示存在 BUG, 所以收益的计算数值并不完全准确, 它把上限设为 <c>4000</c> 且在达成多份交流时, 只有最新那份交流的累计数值是准确的</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+额外添加了下面这行数据
+12,发送邮件,,12,0,0,0,,,,,,0,0,1,0,
+
+外交参数.csv > DiplomacyActions 是外交操作的逻辑
+外交参数.csv > DiplomacyInteraction 是外交互动(例如按钮和界面)的相关设定, 二者可以融合
+
+*/
+
+/* 操作逻辑
+DiplomacyInteraction,	//Name,				Features//一些关键字特性,		TargetInteraction//对方获得,		TimeSec,										CoolDownSec,														ResourceCost,		EnableCondition//条件,										StayCondition//条件,																			OnEnable//效果,																																	OnDisable//结束效果,													OnComplete,																																								WaitNextSec//等待一段时间才能发送下一个外交请求,		SuccessProbability//进行行动的成功概率,						ExposureProbability					
+//操作代码,				操作名称,			需要同意|允许取消,				对方获得,							持续时间,										冷却时间,															消耗资源,			前置条件,													存续条件,																						特殊效果,																																		失效条件,																操作完成,																																								操作间隔,												成功概率,													暴露概率,							
+//Int,					String,				String,							Int,								Int//持续时间，若为一次性函数，应至少59999,		Int//冷却时间，单位为s，当数值大于等于59999则视作一次性能力,		Int//消耗资源,		String,														String,																							String,																																			String,																	String,																																									Int,													float,														float,								
+23,						强制建交,			允许中途取消,					0,									250//实际上没用，因为该持续时间被特殊处理,		0,																	10000,				,															,																								进入冷却时间&消耗表格指定资源,																													,																		强制建立外交关系&FALSE,																																					0,														1,															0,									
+3,						贸易协定,			允许中途取消|需要对方同意,		3,									0,												0,																	0,					存在已知的敌人星系,											存在已知的敌人星系, 发现对方 1 个殖民地 +10 凝聚力,												进入冷却时间&消耗表格指定资源&提供建立贸易关系时的额外奖励(与部分特殊科技相关),																	,																		,																																										10,														1,															0,									
+5,						科研交流,			允许中途取消|需要对方同意,		5,									0,												0,																	0,					存在已知的敌人星系&从科研交流中获取的科技点总值<=2000,		存在已知的敌人星系, 发现对方 1 个殖民地 + 4 科技增长&从科研交流中获取的科技点总值<=2000,		进入冷却时间&消耗表格指定资源,																													从科研交流中获取的科技点总值<=2000,										,																																										10,														1,															0,									
+12,						发送邮件,			,								12,									0,												0,																	0,					,															,																								,																																				,																		,																																										0,														1,															0,									
+24,						建立情报网,			允许中途取消,					0,									45,												90,																	2500,				,															,																								进入冷却时间&消耗表格指定资源,																													(未建立情报网&消耗表格指定资源:-1)|取消情报网,							((行动成功&建立情报网&((行动暴露&行动成功但是暴露)|(行动成功且没暴露|TRUE)))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,										1,														1,															114514//该概率由函数特殊判断		
+2,						情报收集,			允许中途取消,					0//对方不获得,						10,												60,																	500,				当前资源 >= 2000,											已建立情报网,																					进入冷却时间&消耗表格指定资源,																													,																		((行动成功&更新数据&((行动暴露&行动成功但是暴露)|(行动成功且没暴露|TRUE)))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,											0,														1,															0.2,								
+25,						刺探移民地,			允许中途取消,					0,									5,												90,																	9000,				,															已建立情报网,																					进入冷却时间:刺探移民地&进入冷却时间:文化攻击&进入冷却时间:反情报活动&消耗表格指定资源,															,																		((行动成功&SpyColony&(行动成功但是暴露|TRUE))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,																		1,														0.25,														0.5,								
+26,						文化攻击,			允许中途取消,					0,									5,												30,																	10000,				,															已建立情报网,																					进入冷却时间:刺探移民地&进入冷却时间:文化攻击&进入冷却时间:反情报活动&消耗表格指定资源,															,																		((行动成功&敌方+5k压力我方-5k压力&(行动成功但是暴露|TRUE))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,															1,														0.5,														0.5,								
+27,						反情报活动,			允许中途取消,					0,									5,												60,																	3000,				,															已建立情报网,																					进入冷却时间:刺探移民地&进入冷却时间:文化攻击&进入冷却时间:反情报活动&消耗表格指定资源,															,																		((行动成功&封禁对方谍报操作100年&(行动成功但是暴露|TRUE))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,															1,														1//实际需要根据对方情报网状态判断成功与否，由函数判断,		0.5,								
+8,						布施,				没有消息提示,					0,									600000,											600000,																0,					,															,																								进入冷却时间&消耗表格指定资源&((行动成功&布施偷取对方15%凝聚力&(行动成功但是暴露|TRUE))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,		,																		,																																										0,														0.25,														0.75,								
+9,						讨伐,				没有消息提示,					0,									600000,											600000,																0,					,															,																								进入冷却时间&消耗表格指定资源&((行动成功&Crusade&(行动成功但是暴露|TRUE))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,					,																		,																																										0,														1,															0.75,								
+6,						科技获取,			允许中途取消,					0//对方不获得,						600000,											600000,																0,					,															,																								进入冷却时间&消耗表格指定资源&((行动成功&科技获取&((行动成功但是暴露|TRUE)))|((行动暴露&行动失败)|行动失败但未暴露|TRUE))&FALSE,				,																		,																																										0,														0.5,														0.75,								
+7,						技术封锁,			允许中途取消,					17,									60,												120,																0,					,															,																								进入冷却时间&消耗表格指定资源&取消情报网,																										提示被封锁方封锁已解除,													,																																										0,														1,															1,									
+10,						文化交流,			允许中途取消|需要对方同意,		10,									0,												0,																	0,					存在已知的敌人星系,											存在已知的敌人星系,																				进入冷却时间&消耗表格指定资源&向建立关系的玩家提示一个正在指向他的攻击:1&强制解锁文化交流,														向建立关系的玩家提示一个正在指向他的攻击:0&ForceRemoveUnlock:10,		,																																										10,														1,															0,									
+//11,					技术封锁CD,			允许中途取消,					,									60,												0,																	0,					,															,																								,																																				,																		,																																										0,														1,															0,									
+//17,					技术被封锁,			没有消息提示,					,									60,												0,																	0,					,															,																								建立技术封锁&提示技术被封锁,																													取消技术封锁,															取消技术封锁&提示自己相关行动已经完成,																																	0,														1,															0,									
+*/
+
+/* 界面按钮
+DiplomacyActions,		//Name,				ButtonName,								isNeedUnlock,		CivilTag,			Feature,			,			FeatureEffect,			AvalableCondition,																																OnProccessingEffect,			DisableEffect,					,		NormalOrSpy,															,		,		
+//枚举ID一致,			//名称,				//按钮名称,								//是否需要解锁,		//文明标签,			,					,			,						//可用的条件,																																	//执行中的效果,					//不可用的效果,					,		//值为0则放置在普通外交列表，为1则放在间谍网，其它值则不会自动放置,		,		,		
+23,						强制建交,			ForceEstablishDiplomaticRelation,		0,					通用,				,					,			,						检查是否有足够的资源&两个文明尚未正式建交&该外交行动为处于CD状态,																				展示该外交行动的进度,			不可用原因,						,		-1,																		,		,		
+3,						贸易,				Trade,									0,					通用,				,					,			,						检查是否有足够的资源&是否正在进行当前外交行动&该外交行动尚未开始&该外交行动为处于CD状态&存在已知的敌人星系,										,								等待答复中|不可用原因,			,		0,																		,		,		
+5,						科研交流,			TechCommunication,						0,					通用,				,					,			,						检查是否有足够的资源&是否正在进行当前外交行动&该外交行动尚未开始&该外交行动为处于CD状态&存在已知的敌人星系,										,								等待答复中|不可用原因,			,		0,																		,		,		
+12,						发送邮件,			Message,								0,					通用,				特殊对话模式,		,			发送信息面板,			,																																				,								,								,		0,																		,		,		
+24,						建立情报网,			EstablishSpynet,						0,					通用,				,					,			,						检查是否有足够的资源&未建立情报网&该外交行动为处于CD状态,																						展示该外交行动的进度,			不可用原因,						,		1,																		,		,		
+2,						情报收集,			Spy,									0,					通用,				,					,			,						已建立情报网&检查是否有足够的资源&该外交行动尚未开始&该外交行动为处于CD状态,																	展示该外交行动的进度,			不可用原因,						,		1,																		,		,		
+25,						刺探移民地,			SpyColony,								0,					通用,				,					,			,						检查是否有足够的资源&已建立情报网&该外交行动为处于CD状态:刺探移民地,																			展示该外交行动的进度,			不可用原因,						,		1,																		,		,		
+26,						文化攻击,			CulturalInvasion,						0,					通用,				,					,			,						检查是否有足够的资源&已建立情报网&该外交行动为处于CD状态:刺探移民地,																			展示该外交行动的进度,			不可用原因,						,		1,																		,		,		
+27,						反情报活动,			AntiSpy,								0,					通用,				,					,			,						检查是否有足够的资源&已建立情报网&该外交行动为处于CD状态:刺探移民地,																			展示该外交行动的进度,			不可用原因,						,		1,																		,		 //该三个活动共享type=25的CD，以保证不会同时运行两个过程，而仅以一个情报网被摧毁为代价获得两种效果,		
+8,						布施,				Sermon,									1,					精神,				,					,			,						已建立情报网&检查是否有足够的资源&是否该外交行动已经解锁&该外交行动尚未被使用过&该外交行动为处于CD状态,											,								不可用原因,						,		1,																		,		,		
+9,						讨伐,				Crusade,								1,					精神,				,					,			,						已建立情报网&检查是否有足够的资源&是否该外交行动已经解锁&该外交行动尚未被使用过&该外交行动为处于CD状态,											,								不可用原因,						,		1,																		,		,		
+6,						科技获取,			TechSpy,								1,					物质				,					,			,						已建立情报网&检查是否有足够的资源&是否该外交行动已经解锁&该外交行动尚未开始&该外交行动为处于CD状态&该外交行动尚未被使用过,						展示该外交行动的进度,			不可用原因,						,		1,																		,		,		
+7,						技术封锁,			TechBlock,								1,					物质				,					,			,						已建立情报网&检查是否有足够的资源&是否该外交行动已经解锁&该外交行动尚未开始&该外交行动为处于CD状态,												展示剩余时间,					不可用原因,						,		1,																		,		,		
+10,						文化交流,			CulturalCommunicate,					1,					亲外,				解锁文化交流,		,			,						检查是否有足够的资源&(是否该外交行动已经解锁&是否正在进行当前外交行动0&该外交行动尚未开始&该外交行动为处于CD状态&存在已知的敌人星系),			,								等待答复中|不可用原因,			,		0,																		,		,		
+*/
+
+// 下院方案
+let csv0 = (`//Remote/DiplomacyInteraction,//Name,Features//一些关键字特性,TargetInteraction//对方获得,TimeSec,CoolDownSec,ResourceCost,,EnableCondition//条件,StayCondition//条件,OnEnable//效果,OnDisable//结束效果,OnComplete,WaitNextSec//等待一段时间才能发送下一个外交请求,SuccessProbability//进行行动的成功概率,ExposureProbability
+
+23,强制建交,Cancelable,0,250//实际上没用，因为该持续时间被特殊处理,0,10000,,,,SetCd&TableResourceCost,,ForceEstablishRelation&FALSE,0,1,0
+
+3,贸易,NeedAgree|Cancelable,3,0,0,0,,ExistKnownColonizedGalaxy&!RelationshipIs:100,AddCohesionPerGalaxy:10&ExistKnownColonizedGalaxy&!RelationshipIs:100,SetCd&TableResourceCost&InteractionBonus,,,10,1,0
+5,科研交流,NeedAgree|Cancelable,5,0,0,0,,(ExistKnownColonizedGalaxy)&(TotalExchangeTechPointLessThan:2000)&!RelationshipIs:100,AddTechPointPerGalaxy:4&(ExistKnownColonizedGalaxy)&(TotalExchangeTechPointLessThan:2000)&!RelationshipIs:100,SetCd&TableResourceCost,TotalExchangeTechPointLessThan:2000|SetHintIndexAndReturn:1_1,,10,1,0
+12,发送邮件,,12,0,0,0,,,,,,0,0,1,0,
+
+24,建立情报网,Cancelable,0,45,90,2500,,,,SetCd&TableResourceCost,(CheckSpynetStatus:0&TableResourceCost:-1)|SetSpynetStatus:0,((IsActionSuccess&SetSpynetStatus:1&((IsActionExposed&SucceedAndExposeNotice)|(SucceedButNotExposeNotice|TRUE)))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,1,1,114514//该概率由函数特殊判断
+2,情报收集,Cancelable,0//对方不获得,10,60,500,,!RelationshipIs:100&ResourceUpwards:2000,!RelationshipIs:100&CheckSpynetStatus:1,SetCd&TableResourceCost,,((IsActionSuccess&UpdateData&((IsActionExposed&SucceedAndExposeNotice)|(SucceedButNotExposeNotice|TRUE)))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,0,1,0.2
+25,刺探移民地,Cancelable,0,5,90,9000,,,CheckSpynetStatus:1,SetCd:25&SetCd:26&SetCd:27&TableResourceCost,,((IsActionSuccess&SpyColony&(SucceedAndExposeNotice|TRUE))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,1,0.25,0.5
+26,文化入侵,Cancelable,0,5,30,10000,,,CheckSpynetStatus:1,SetCd:25&SetCd:26&SetCd:27&TableResourceCost,,((IsActionSuccess&CulturalInvasion:5000_-5000&(SucceedAndExposeNotice|TRUE))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE//CulturalInvasion第一个参数为敌方增加，第二个参数为己方增加(负值为减小,1,0.5,0.5
+27,反间谍活动,Cancelable,0,5,60,3000,,,CheckSpynetStatus:1,SetCd:25&SetCd:26&SetCd:27&TableResourceCost,,((IsActionSuccess&AntiSpy:100&(SucceedAndExposeNotice|TRUE))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE//AntiSpy参数为封禁年限,1,1//实际需要根据对方情报网状态判断成功与否，由函数判断,0.5
+
+8,布道,HideHint,0,600000,600000,0,,!RelationshipIs:100,!RelationshipIs:100,SetCd&TableResourceCost&((IsActionSuccess&Sermon:15&(SucceedAndExposeNotice|TRUE))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,,,0,0.25,0.75
+9,圣战,HideHint,0,600000,600000,0,,!RelationshipIs:100,!RelationshipIs:100,SetCd&TableResourceCost&((IsActionSuccess&Crusade&(SucceedAndExposeNotice|TRUE))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,,,0,1,0.75
+
+6,科技窃取,Cancelable,0//对方不获得,600000,600000,0,,!RelationshipIs:100,!RelationshipIs:100,SetCd&TableResourceCost&((IsActionSuccess&GetMoreCostTechPoint&((SucceedAndExposeNotice|TRUE)))|((IsActionExposed&FailAndExposeNotice)|FailButNotExposeNotice|TRUE))&FALSE,,,0,0.5,0.75
+7,科技封锁,Cancelable,17,60,120,0,,!RelationshipIs:100,!RelationshipIs:100,SetCd&TableResourceCost&SetSpynetStatus:0,NotifyOtherDisable:0,//AddInteractionToSelf:11,0,1,1
+
+10,文化交流,NeedAgree|Cancelable,10,0,0,0,,ExistKnownColonizedGalaxy&!RelationshipIs:100,ExistKnownColonizedGalaxy&!RelationshipIs:100,SetCd&TableResourceCost&SetWarnMaliciousAttack:1&ForceUnlock:10,SetWarnMaliciousAttack:0&ForceRemoveUnlock:10,,10,1,0
+`)
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 任务列表
+let csv1 = (`// DiplomacyActions,//Name,ButtonName,isNeedUnlock,CivilTag,Feature,,FeatureEffect,AvalableCondition,OnProccessingEffect,DisableEffect,,NormalOrSpy,,,
+
+23,强制建交,ForceEstablishDiplomaticRelation,0,All,,,,CheckResourceAffordability:23&NoDiplomacyRelation&CheckCd:23,ShowProgress:23,ShowReason:23,,-1,,,
+
+3,贸易,Trade,0,All,,,,CheckResourceAffordability:3&CheckRequest:3&CheckOptionState:3_0&CheckCd:3&IsExistExistKnownColonizedGalaxy,//ShowWait:3,ShowRequest:3|ShowReason:3,,0,,,
+5,科研交流,TechCommunication,0,All,,,,CheckResourceAffordability:5&CheckRequest:5&CheckOptionState:5_0&CheckCd:5&IsExistExistKnownColonizedGalaxy,//ShowWait:5,ShowRequest:5|ShowReason:5,,0,,,
+12,邮件,Message,0,All,SpecialDialog,,SendMessagePanel,,,,,0,,,
+
+24,建立情报网,EstablishSpynet,0,All,,,,CheckResourceAffordability:24&CheckSpynetStatus:0&CheckCd:24,ShowProgress:24,ShowReason:24,,1,,,
+2,情报收集,Spy,0,All,,,,CheckSpynetStatus:1&CheckResourceAffordability:2&CheckOptionState:2_0&CheckCd:2,ShowProgress:2,ShowReason:2,,1,,,
+25,刺探移民地,SpyColony,0,All,,,,CheckResourceAffordability:25&CheckSpynetStatus:1&CheckCd:25,ShowProgress:25,ShowReason:25,,1,,,
+26,文化入侵,CulturalInvasion,0,All,,,,CheckResourceAffordability:26&CheckSpynetStatus:1&CheckCd:25,ShowProgress:26,ShowReason:26,,1,,,
+27,反间谍活动,AntiSpy,0,All,,,,CheckResourceAffordability:27&CheckSpynetStatus:1&CheckCd:25,ShowProgress:27,ShowReason:27,,1,, //该三个活动共享type=25的CD，以保证不会同时运行两个过程，而仅以一个情报网被摧毁为代价获得两种效果,
+
+8,布道,Sermon,1,Idealism,,,,CheckSpynetStatus:1&CheckResourceAffordability:8&CheckUnlock:8&CheckUsage:8&CheckCd:8,,ShowReason:8,,1,,,
+9,圣战,Crusade,1,Idealism,,,,CheckSpynetStatus:1&CheckResourceAffordability:9&CheckUnlock:9&CheckUsage:9&CheckCd:9,,ShowReason:9,,1,,,
+
+6,科技窃取,TechSpy,1,Materialism,,,,CheckSpynetStatus:1&CheckResourceAffordability:6&CheckUnlock:6&CheckOptionState:6_0&CheckCd:6&CheckUsage:6,ShowProgress:6,ShowReason:6,,1,,,
+7,科技封锁,TechBlock,1,Materialism,,,,CheckSpynetStatus:1&CheckResourceAffordability:7&CheckUnlock:7&CheckOptionState:7_0&CheckCd:7//&!HasInteraction:11，已使用CheckCd取代11号效果,ShowTimeRemain:7,ShowReason:7,,1,,,
+
+10,文化交流,CulturalCommunicate,1,pluralism,ForceUnlock,,,CheckResourceAffordability:10&(CheckUnlock:10&CheckRequest:10&CheckOptionState:10_0&CheckCd:10&IsExistExistKnownColonizedGalaxy),,ShowRequest:10|ShowReason:10,,0,,,
+`)
+.split(/\n/).filter(function(e){ return /^\d/.test(e) }).map(function(e){ return e.split(',') });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	23	: `强制建交`		+ ` # 强制建交`,
+	
+	3	: `贸易协定`		+ ` # 贸易`,
+	5	: `科研交流`		+ ` # 科研交流`,
+	12	: `发送邮件`		+ ` # 发送邮件`,
+	
+	24	: `建立情报网`		+ ` # 建立情报网`,
+	2	: `情报收集`		+ ` # 情报收集`,
+	25	: `刺探移民地`		+ ` # 刺探移民地`,
+	26	: `文化攻击`		+ ` # 文化攻击`,
+	27	: `反情报活动`		+ ` # 反情报活动`,
+	
+	8	: `恩惠布施`		+ ` # 布施`,
+	9	: `圣战讨伐`		+ ` # 讨伐`,
+	
+	6	: `科技获取`		+ ` # 科技获取`,
+	7	: `技术封锁`		+ ` # 技术封锁`,
+	
+	10	: `文化交流`		+ ` # 文化交流`,
+	},
+	
+	文本描述 : {
+	
+	23	: `当某一方探索到对方所在的星系, 且对方选择响应时, 两个文明才会正式建交, 而当两个文明未正式建交时, 才可采用强制建交`																+ ` # 强制建交`,
+	
+	3	: `必须发现对方的星系, 才可签订贸易协定, 每发现对方一个星系即可 +10 凝聚力, 但是每份贸易协定的收益上限为 +30 凝聚力`																+ ` # 贸易`,
+	5	: `必须发现对方的星系, 才可达成科研交流, 每发现对方一个星系即可 +4 科技增长, 当某方的收益 >= 2000, 合作会自动被中止`																+ ` # 科研交流`,
+	12	: `无需发现对方的星系, 也可实现发送邮件, 你可以在战场商店买到更多的外交辞错, 不过发送邮件对 AI 敌人而言没有任何意义`																+ ` # 发送邮件`,
+	
+	24	: `情报网是[情报收集/刺探移民地/文化攻击/反情报活动]的基础, 该行动在未执行完毕之前, 都可以被取消(取消能返回所有资源)`																+ ` # 建立情报网`,
+	2	: `可以知道对方的意识形态(如物质或精神), 以及文明实力(包括[星系数量/军事基地数量/凝聚力/资源产出/压力值]), 甚至可得知我方星系遭受对方攻击的具体时间(若对方已对我方发起进攻)`		+ ` # 情报收集`,
+	25	: `可以随机探出对方某个殖民星系的坐标, 该操作与[文化攻击/反情报活动]共用一个 CD, 也就是说, 这三个操作无法同时被执行`																+ ` # 刺探移民地`,
+	26	: `可以让对方 +5000 压力值, 而我方 -5000 压力值, 如果对方的压力已经处于较高的水平, 那么文化攻击就可能让对方直接陷入内战, 该操作与刺探移民地共用一个 CD, 既 90 年才能用 1 次`		+ ` # 文化攻击`,
+	27	: `可以破坏对方针对我方建立的情报网, 封禁对方的谍报操作 100 年, 这个操作与刺探移民地共用一个 CD, 既 90 年才能用 1 次`																+ ` # 反情报活动`,
+	
+	8	: `需要对目标建立情报网才可执行, 可以偷取对方 15% 的凝聚力, 既对方 -15% 凝聚力而我方 +15% 凝聚力, 每个敌人只能用一次`																+ ` # 布施`,
+	9	: `需要对目标建立情报网才可执行, 可以让对方所有的栖息地建筑都变成废墟, 对其凝聚力造成极大的打击, 每个敌人只能用一次`																+ ` # 讨伐`,
+	
+	6	: `需要对目标建立情报网才可执行, 可以偷取对方 25% 的科技点, 既对方 -25% 科技点而我方 +25% 科技点, 每个敌人只能用一次`		+ ` # 科技获取`,
+	7	: `需要对目标建立情报网才可执行, 可以在 60 年使对方无法使用科技树(相当于无法解锁新科技了), 可对某个敌人重复使用封锁`		+ ` # 技术封锁`,
+	
+	10	: `必须发现对方的星系, 才可进行文化交流, 如果对方同意则双方在执行登陆攻击时, 如果被攻击的星系双发皆可见, 会通知对方`		+ ` # 文化交流`,
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 分解数据
+csv1.result = {};
+csv1.forEach(function(
+e01){ csv1.result[e01[0]] = e01 });
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码		Remote/DiplomacyInteraction,											23,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 项目名称		Name,																	强制建交,
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 关键特性		Features//一些关键字特性,												Cancelable,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 对方获得		TargetInteraction//对方获得,											0,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 持续时间		TimeSec//持续时间，若为一次性函数，应至少59999,							250//实际上没用，因为该持续时间被特殊处理,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 冷却时间		CoolDownSec冷却时间，单位为s，当数值大于等于59999则视作一次性能力,		0,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 消耗资源		ResourceCost//消耗资源,													10000,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			//
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 前置条件		EnableCondition//条件,													,
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 存续条件		StayCondition//条件,													,
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';		// 特殊效果		OnEnable//效果,															SetCd&TableResourceCost,
+	// powerTable01_tbody_html += '<td>'+ item[11] +'</td>';		// 失效条件		OnDisable//结束效果,													,
+	// powerTable01_tbody_html += '<td>'+ item[12] +'</td>';		// 操作完成		OnComplete,																ForceEstablishRelation&FALSE,
+	// powerTable01_tbody_html += '<td>'+ item[13] +'</td>';		// 间隔时间		WaitNextSec//等待一段时间才能发送下一个外交请求,						0,
+	// powerTable01_tbody_html += '<td>'+ item[14] +'</td>';		// 成功概率		SuccessProbability//进行行动的成功概率,									1,
+	// powerTable01_tbody_html += '<td>'+ item[15] +'</td>';		// 暴露概率		ExposureProbability														0
+	
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][0] +'</td>';		// 项目代码		DiplomacyActions,//枚举ID一致,											23,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][1] +'</td>';		// 项目名称		Name,//名称,															强制建交,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][2] +'</td>';		// 按钮名称		ButtonName,//按钮名称,													ForceEstablishDiplomaticRelation,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][3] +'</td>';		// 需要解锁		isNeedUnlock,//是否需要解锁,											0,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][4] +'</td>';		// 所属文明		CivilTag,//文明标签,													通用,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][5] +'</td>';		// 特殊表现		Feature,																,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][6] +'</td>';		// 				,																		,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][7] +'</td>';		// 效果影响		FeatureEffect,															,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][8] +'</td>';		// 可用条件		AvalableCondition,//可用的条件,											检查是否有足够的资源&两个文明尚未正式建交&该外交行动为处于CD状态,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][9] +'</td>';		// 执行效果		OnProccessingEffect,//执行中的效果,										展示该外交行动的进度,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][10] +'</td>';		// 禁用原因		DisableEffect,//不可用的效果,											不可用原因,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][11] +'</td>';		// 				,																		,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][12] +'</td>';		// 所在位置		NormalOrSpy,//0在普通外交列表，1放在间谍网，其它值不会自动放置,			-1,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][13] +'</td>';		// 				,																		,
+	// powerTable01_tbody_html += '<td>'+ csv1.result[item.项目代码][14] +'</td>';		// 				,																		,
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	
+	item.关键特性 = item[2];
+	item.持续时间 = item[4];
+	
+	item.冷却时间 = item[5];
+	item.消耗资源 = item[6];
+	
+	item.间隔时间 = item[13];
+	
+	item.成功概率 = item[14];
+	item.暴露概率 = item[15];
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.需要解锁 = csv1.result[item.项目代码][3];
+	item.所属文明 = csv1.result[item.项目代码][4];
+	
+	item.项目名称 = textList.项目名称[item.项目代码];
+	item.文本描述 = textList.文本描述[item.项目代码];
+	
+	// 关键特性拆被分成了 [允许取消/需要同意/没有提示]
+	item.需要解锁 = item.需要解锁 === '1' ? '✔' : '-';
+	item.允许取消 = item.关键特性.includes('Cancelable') ? '✔' : '-';
+	item.需要同意 = item.关键特性.includes('NeedAgree') ? '✔' : '-';
+	item.没有提示 = item.关键特性.includes('HideHint') ? '✔' : '-';
+	
+	item.持续时间 = item.持续时间.replace(/(000)$/, 'k').replace(/\/\/(.+)+/, '');
+	item.冷却时间 = item.冷却时间.replace(/(000)$/, 'k');
+	
+	item.暴露概率 = item.暴露概率.replace(/\/\/.+/, '').replace(/114514/, '0.34') * 100 +'%';
+	item.成功概率 = item.成功概率.replace(/\/\/.+/, '') * 100 +'%';
+	
+	item.所属文明 = item.所属文明.replace('All', '通用')
+	.replace('Materialism', '物质').replace('Idealism', '精神').replace('pluralism', '亲外');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	// powerTable01_tbody_html += '<!---->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.项目代码 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.需要解锁 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.允许取消 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.需要同意 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.没有提示 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.持续时间 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.冷却时间 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.间隔时间 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.成功概率 +'</td>';
+	powerTable01_tbody_html += '<td>'+ item.暴露概率 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.消耗资源 +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ item.所属文明 +'</td>';
+	
+	// 文本描述集成了[对方获得/前置条件/存续条件/特殊效果/失效条件/操作完成]
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ xj2._hideText(item.文本描述, true) +'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

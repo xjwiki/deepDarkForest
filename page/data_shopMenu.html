@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>战场商店</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>战场商店</span><small>(购物清单)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 基本信息</h2>
+
+<p>
+	01. 在多人模式的"战场商店", 可用"字节数据"购物, 共有 <c>59</c> 项<br />
+	02. 商店物品可被分为[背景/中枢数据/勋章/外交辞令]四种, 其中[背景/勋章]仅为装饰, 没实际作用<br />
+	03. 几乎所有物品都只能被购入 1 次(仅"无限数据库"可被重复购入), 下表还展示了默认就自带的内容, 更多的细节可查阅 <a href="#heading02"># 额外拓展</a><br />
+</p>
+
+<table originalSort="1" id="powerTable01" class="powerTable table-xs table-hover showPart01" style="width:960px;">
+	<thead style="line-height:1;">
+		<tr>
+			<th sorttype="string" style="width: 66px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目图片</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 32px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目序号</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 96px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目名称</b><i class="icon fas fa-sort"></i></span></th>
+			
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>项目代码</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>商品价格</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>购入次数</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="number" style="width: 40px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>是否出现</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: 80px;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>商品类别</b><i class="icon fas fa-sort"></i></span></th>
+			<th sorttype="string" style="width: auto;padding-top:6px;"><span style="writing-mode:vertical-lr;letter-spacing:2px;"><b>文本描述</b><i class="icon fas fa-sort"></i></span></th>
+		</tr>
+	</thead>
+	<tbody style="line-height:14px;"></tbody>
+</table>
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 额外拓展</h2>
+
+<p>背景勋章: 在早期版本中, 大部分的勋章和背景, 装备后都能在联机对战里, 增加战后结算的"字节数据"奖励, 但后来结算机制经过修改, 相关功能现在已被弃用, 所以它们也就仅剩装饰功能, 如果你的字节数据不够, 那这类东西就没必要买了, 把字节数据用在创建文明或解锁文明模版可能会更有意义, 除此之外, 目前变更背景操作其实也没有效果, 因为素材尚未进行调整, 缺少美观度, 所以暂时被屏蔽了</p>
+
+<p>外交辞令: 外交辞令可以被当成是玩家的签名, 也可以在联机中当成邮件的内容发给对手, 发送邮件的操作并不需要任何资源, 且是立刻到达的, 由于目前游戏并没有联盟机制, 所以更多的时候, 外交辞令会被当成嘲讽敌人的手段, 这或许也是种策略吧, 但这对 AI 无影响</p>
+
+<p>中枢数据: 中枢数据可以通过完成剧情模式里的场景任务来获取, 除此之外, 就只能在战场商店中, 使用字节数据, 进行一比一的兑换了</p>
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+#powerTable01 .hideTr{display:none;}
+#powerTable01 .hideTd{display:none;}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+/* 数据注解
+
+Param, 既文明主义出现的概率, 由于当前的物品都不涉及这项属性, 所以不需要显示
+Bonus, 既结算奖励, 早期版本中, 部分勋章和背景对奖励结算有影响, 现在已被废弃
+
+*/
+
+// 成就系统
+let csv0 = (`// ItemAttribute,Name,Detail,Description,Type,Price,LimitCount,Content,InMainStore,Bonus,Param
+
+4000,$ItemAttribute_Name_4000,$ItemAttribute_Detail_4000,$ItemAttribute_Description_4000,5,,0,$ItemAttribute_Content_4000,0,,
+
+4001,$ItemAttribute_Name_4001,$ItemAttribute_Detail_4001,$ItemAttribute_Description_4001,5,1_5000,1,$ItemAttribute_Content_4001,1,all:-50_surv:100,
+4002,$ItemAttribute_Name_4002,$ItemAttribute_Detail_4002,$ItemAttribute_Description_4002,5,1_5000,1,$ItemAttribute_Content_4002,1,all:-10_econ:110,
+4003,$ItemAttribute_Name_4003,$ItemAttribute_Detail_4003,$ItemAttribute_Description_4003,5,1_5000,1,$ItemAttribute_Content_4003,1,all:-40_mili:100,
+4004,$ItemAttribute_Name_4004,$ItemAttribute_Detail_4004,$ItemAttribute_Description_4004,5,1_5000,1,$ItemAttribute_Content_4004,1,all:-50_intr:150,
+4005,$ItemAttribute_Name_4005,$ItemAttribute_Detail_4005,$ItemAttribute_Description_4005,5,1_5000,1,$ItemAttribute_Content_4005,1,all:-50_dip:150,
+4006,$ItemAttribute_Name_4006,$ItemAttribute_Detail_4006,$ItemAttribute_Description_4006,5,1_5000,1,$ItemAttribute_Content_4006,1,all:-50_exp:100,
+
+6001,$ItemAttribute_Name_6001,$ItemAttribute_Detail_6001,$ItemAttribute_Description_6001,6,1_100,1,$ItemAttribute_Content_6001,1,,
+6002,$ItemAttribute_Name_6002,$ItemAttribute_Detail_6002,$ItemAttribute_Description_6002,6,1_100,1,$ItemAttribute_Content_6002,1,,
+6003,$ItemAttribute_Name_6003,$ItemAttribute_Detail_6003,$ItemAttribute_Description_6003,6,1_100,1,$ItemAttribute_Content_6003,1,,
+6004,$ItemAttribute_Name_6004,$ItemAttribute_Detail_6004,$ItemAttribute_Description_6004,6,1_100,1,$ItemAttribute_Content_6004,1,,
+
+6005,$ItemAttribute_Name_6005,$ItemAttribute_Detail_6005,$ItemAttribute_Description_6005,6,1_500,1,$ItemAttribute_Content_6005,1,,
+6006,$ItemAttribute_Name_6006,$ItemAttribute_Detail_6006,$ItemAttribute_Description_6006,6,1_500,1,$ItemAttribute_Content_6006,1,,
+6007,$ItemAttribute_Name_6007,$ItemAttribute_Detail_6007,$ItemAttribute_Description_6007,6,1_500,1,$ItemAttribute_Content_6007,1,,
+6008,$ItemAttribute_Name_6008,$ItemAttribute_Detail_6008,$ItemAttribute_Description_6008,6,1_500,1,$ItemAttribute_Content_6008,1,,
+
+6009,$ItemAttribute_Name_6009,$ItemAttribute_Detail_6009,$ItemAttribute_Description_6009,6,1_1000,1,$ItemAttribute_Content_6009,1,,
+6010,$ItemAttribute_Name_6010,$ItemAttribute_Detail_6010,$ItemAttribute_Description_6010,6,1_1000,1,$ItemAttribute_Content_6010,1,,
+6011,$ItemAttribute_Name_6011,$ItemAttribute_Detail_6011,$ItemAttribute_Description_6011,6,1_1000,1,$ItemAttribute_Content_6011,1,,
+6012,$ItemAttribute_Name_6012,$ItemAttribute_Detail_6012,$ItemAttribute_Description_6012,6,1_1000,1,$ItemAttribute_Content_6012,1,,
+
+6013,$ItemAttribute_Name_6013,$ItemAttribute_Detail_6013,$ItemAttribute_Description_6013,6,1_2000,100000000,$ItemAttribute_Content_6013,1,,
+
+1000,$ItemAttribute_Name_1000,$ItemAttribute_Detail_1000,,3,,100000000,$ItemAttribute_Content_1000,0,,
+1014,$ItemAttribute_Name_1014,$ItemAttribute_Detail_1014,$ItemAttribute_Description_1014,3,1_1000,1,$ItemAttribute_Content_1014,1,all:150,
+1013,$ItemAttribute_Name_1013,$ItemAttribute_Detail_1013,$ItemAttribute_Description_1013,3,1_400,1,$ItemAttribute_Content_1013,1,all:50,
+
+1001,$ItemAttribute_Name_1001,$ItemAttribute_Detail_1001,$ItemAttribute_Description_1001,3,1_50,1,$ItemAttribute_Content_1001,1,surv:50,
+1002,$ItemAttribute_Name_1002,$ItemAttribute_Detail_1002,$ItemAttribute_Description_1002,3,1_50,1,$ItemAttribute_Content_1002,1,econ:50,
+1003,$ItemAttribute_Name_1003,$ItemAttribute_Detail_1003,$ItemAttribute_Description_1003,3,1_50,1,$ItemAttribute_Content_1003,1,mili:50,
+1004,$ItemAttribute_Name_1004,$ItemAttribute_Detail_1004,$ItemAttribute_Description_1004,3,1_50,1,$ItemAttribute_Content_1004,1,intr:50,
+1005,$ItemAttribute_Name_1005,$ItemAttribute_Detail_1005,$ItemAttribute_Description_1005,3,1_80,1,$ItemAttribute_Content_1005,1,dip:50,
+1006,$ItemAttribute_Name_1006,$ItemAttribute_Detail_1006,$ItemAttribute_Description_1006,3,1_100,1,$ItemAttribute_Content_1006,1,exp:50,
+
+1007,$ItemAttribute_Name_1007,$ItemAttribute_Detail_1007,$ItemAttribute_Description_1007,3,1_300,1,$ItemAttribute_Content_1007,1,surv:200,
+1008,$ItemAttribute_Name_1008,$ItemAttribute_Detail_1008,$ItemAttribute_Description_1008,3,1_300,1,$ItemAttribute_Content_1008,1,econ:200,
+1009,$ItemAttribute_Name_1009,$ItemAttribute_Detail_1009,$ItemAttribute_Description_1009,3,1_300,1,$ItemAttribute_Content_1009,1,mili:200,
+1010,$ItemAttribute_Name_1010,$ItemAttribute_Detail_1010,$ItemAttribute_Description_1010,3,1_400,1,$ItemAttribute_Content_1010,1,intr:200,
+1011,$ItemAttribute_Name_1011,$ItemAttribute_Detail_1011,$ItemAttribute_Description_1011,3,1_400,1,$ItemAttribute_Content_1011,1,dip:200,
+1012,$ItemAttribute_Name_1012,$ItemAttribute_Detail_1012,$ItemAttribute_Description_1012,3,1_500,1,$ItemAttribute_Content_1012,1,exp:200,
+
+2001,$ItemAttribute_Name_2001,$ItemAttribute_Detail_2001,$ItemAttribute_Description_2001,4,,1,$ItemAttribute_Content_2001,0,,
+2002,$ItemAttribute_Name_2002,$ItemAttribute_Detail_2002,$ItemAttribute_Description_2002,4,,1,$ItemAttribute_Content_2002,0,,
+2003,$ItemAttribute_Name_2003,$ItemAttribute_Detail_2003,$ItemAttribute_Description_2003,4,,1,$ItemAttribute_Content_2003,0,,
+2004,$ItemAttribute_Name_2004,$ItemAttribute_Detail_2004,$ItemAttribute_Description_2004,4,,1,$ItemAttribute_Content_2004,0,,
+2005,$ItemAttribute_Name_2005,$ItemAttribute_Detail_2005,$ItemAttribute_Description_2005,4,,1,$ItemAttribute_Content_2005,0,,
+2006,$ItemAttribute_Name_2006,$ItemAttribute_Detail_2006,$ItemAttribute_Description_2006,4,,1,$ItemAttribute_Content_2006,0,,
+
+2007,$ItemAttribute_Name_2007,$ItemAttribute_Detail_2007,$ItemAttribute_Description_2007,4,1_1000,1,$ItemAttribute_Content_2007,1,,
+2008,$ItemAttribute_Name_2008,$ItemAttribute_Detail_2008,$ItemAttribute_Description_2008,4,1_500,1,$ItemAttribute_Content_2008,1,,
+2009,$ItemAttribute_Name_2009,$ItemAttribute_Detail_2009,$ItemAttribute_Description_2009,4,1_500,1,$ItemAttribute_Content_2009,1,,
+2010,$ItemAttribute_Name_2010,$ItemAttribute_Detail_2010,$ItemAttribute_Description_2010,4,1_500,1,$ItemAttribute_Content_2010,1,,
+2011,$ItemAttribute_Name_2011,$ItemAttribute_Detail_2011,$ItemAttribute_Description_2011,4,1_500,1,$ItemAttribute_Content_2011,1,,
+2012,$ItemAttribute_Name_2012,$ItemAttribute_Detail_2012,$ItemAttribute_Description_2012,4,1_500,1,$ItemAttribute_Content_2012,1,,
+
+2013,$ItemAttribute_Name_2013,$ItemAttribute_Detail_2013,$ItemAttribute_Description_2013,4,1_50,1,$ItemAttribute_Content_2013,1,,
+2014,$ItemAttribute_Name_2014,$ItemAttribute_Detail_2014,$ItemAttribute_Description_2014,4,1_100,1,$ItemAttribute_Content_2014,1,,
+2015,$ItemAttribute_Name_2015,$ItemAttribute_Detail_2015,$ItemAttribute_Description_2015,4,1_100,1,$ItemAttribute_Content_2015,1,,
+2016,$ItemAttribute_Name_2016,$ItemAttribute_Detail_2016,$ItemAttribute_Description_2016,4,1_100,1,$ItemAttribute_Content_2016,1,,
+2017,$ItemAttribute_Name_2017,$ItemAttribute_Detail_2017,$ItemAttribute_Description_2017,4,1_100,1,$ItemAttribute_Content_2017,1,,
+2018,$ItemAttribute_Name_2018,$ItemAttribute_Detail_2018,$ItemAttribute_Description_2018,4,1_100,1,$ItemAttribute_Content_2018,1,,
+
+2019,$ItemAttribute_Name_2019,$ItemAttribute_Detail_2019,$ItemAttribute_Description_2019,4,1_150,1,$ItemAttribute_Content_2019,1,,
+2020,$ItemAttribute_Name_2020,$ItemAttribute_Detail_2020,$ItemAttribute_Description_2020,4,1_150,1,$ItemAttribute_Content_2020,1,,
+2021,$ItemAttribute_Name_2021,$ItemAttribute_Detail_2021,$ItemAttribute_Description_2021,4,1_150,1,$ItemAttribute_Content_2021,1,,
+2022,$ItemAttribute_Name_2022,$ItemAttribute_Detail_2022,$ItemAttribute_Description_2022,4,1_150,1,$ItemAttribute_Content_2022,1,,
+2023,$ItemAttribute_Name_2023,$ItemAttribute_Detail_2023,$ItemAttribute_Description_2023,4,1_150,1,$ItemAttribute_Content_2023,1,,
+2024,$ItemAttribute_Name_2024,$ItemAttribute_Detail_2024,$ItemAttribute_Description_2024,4,1_150,1,$ItemAttribute_Content_2024,1,,
+`).replace('$ItemAttribute_Detail_1000,,', '$ItemAttribute_Detail_1000,$ItemAttribute_Description_1000,') // 缺乏描述
+.split(/\n/).map(function(e){ return ((e === '' || e.indexOf('//') === 0) ? 'blankRow' : e.split(',')) });
+
+// 文本内容
+let textList = {
+	
+	项目名称 : {
+	
+	1000  : `默认勋章`					+ ` # 空`, 
+	1014  : `暗物质勋章`				+ ` # 暗物质勋章`, 
+	1013  : `氦三结晶勋章`				+ ` # 氦三结晶勋章`, 
+	
+	1001  : `星晶石勋章`				+ ` # 星晶石勋章`, 
+	1002  : `铂金石勋章`				+ ` # 铂金石勋章`, 
+	1003  : `红柱石勋章`				+ ` # 红柱石勋章`, 
+	1004  : `镀汞石勋章`				+ ` # 镀汞石勋章`, 
+	1005  : `紫火石勋章`				+ ` # 紫火石勋章`, 
+	1006  : `黄土石勋章`				+ ` # 黄土石勋章`, 
+	
+	1007  : `星晶结晶勋章`				+ ` # 星晶结晶勋章`, 
+	1008  : `铂金结晶勋章`				+ ` # 铂金结晶勋章`, 
+	1009  : `红柱结晶勋章`				+ ` # 红柱结晶勋章`, 
+	1010  : `镀汞结晶勋章`				+ ` # 镀汞结晶勋章`, 
+	1011  : `紫火结晶勋章`				+ ` # 紫火结晶勋章`, 
+	1012  : `黄土结晶勋章`				+ ` # 黄土结晶勋章`, 
+	
+	2001  : `基础01`					+ ` # 基础`, 
+	2002  : `基础02`					+ ` # 基础`, 
+	2003  : `基础03`					+ ` # 基础`, 
+	2004  : `基础04`					+ ` # 基础`, 
+	2005  : `基础05`					+ ` # 基础`, 
+	2006  : `基础06`					+ ` # 基础`, 
+	
+	2007  : `挑战01`					+ ` # 挑战1`, 
+	2008  : `挑战02`					+ ` # 挑战2`, 
+	2009  : `挑战03`					+ ` # 挑战3`, 
+	2010  : `挑战04`					+ ` # 挑战4`, 
+	2011  : `挑战05`					+ ` # 挑战5`, 
+	2012  : `挑战06`					+ ` # 挑战6`, 
+	
+	2013  : `预谋01`					+ ` # 预谋1`, 
+	2014  : `预谋02`					+ ` # 预谋2`, 
+	2015  : `预谋03`					+ ` # 预谋3`, 
+	2016  : `预谋04`					+ ` # 预谋4`, 
+	2017  : `预谋05`					+ ` # 预谋5`, 
+	2018  : `预谋06`					+ ` # 预谋6`, 
+	
+	2019  : `合谋01`					+ ` # 合谋1`, 
+	2020  : `合谋02`					+ ` # 合谋2`, 
+	2021  : `合谋03`					+ ` # 合谋3`, 
+	2022  : `合谋04`					+ ` # 合谋4`, 
+	2023  : `合谋05`					+ ` # 合谋5`, 
+	2024  : `合谋06`					+ ` # 合谋6`, 
+	
+	4000  : `默认`						+ ` # 默认`, 
+	4001  : `存在`						+ ` # 存在`, 
+	4002  : `财富`						+ ` # 财富`, 
+	4003  : `力量`						+ ` # 力量`, 
+	4004  : `和平`						+ ` # 和平`, 
+	4005  : `大同`						+ ` # 大同`, 
+	4006  : `上进`						+ ` # 上进`, 
+	
+	6001  : `数据磁盘01`				+ ` # 数据磁盘1`, 
+	6002  : `数据磁盘02`				+ ` # 数据磁盘2`, 
+	6003  : `数据磁盘03`				+ ` # 数据磁盘3`, 
+	6004  : `数据磁盘04`				+ ` # 数据磁盘4`, 
+	
+	6005  : `数据内存01`				+ ` # 数据内存条1`, 
+	6006  : `数据内存02`				+ ` # 数据内存条2`, 
+	6007  : `数据内存03`				+ ` # 数据内存条3`, 
+	6008  : `数据内存04`				+ ` # 数据内存条4`, 
+	
+	6009  : `数据硬盘01`				+ ` # 数据硬盘1`, 
+	6010  : `数据硬盘02`				+ ` # 数据硬盘2`, 
+	6011  : `数据硬盘03`				+ ` # 数据硬盘3`, 
+	6012  : `数据硬盘04`				+ ` # 数据硬盘4`, 
+	
+	6013  : `无限数据库`				+ ` # 数据库`, 
+	},
+	
+	文本描述 : {
+	
+	4000  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	
+	4001  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	4002  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	4003  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	4004  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	4005  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	4006  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	
+	6001  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6002  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6003  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6004  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6005  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6006  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6007  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6008  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6009  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6010  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6011  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6012  : `直接兑换为中枢数据, 但仅能购买一次`														+ ` # 获得后会直接兑换为中枢数据。仅能购买一次`, 
+	6013  : `直接兑换为中枢数据, 可以无限次购买`														+ ` # 获得后会直接兑换为中枢数据。可以无限次购买`, 
+	
+	1000  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1014  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1013  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	
+	1001  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1002  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1003  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1004  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1005  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1006  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	
+	1007  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1008  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1009  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1010  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1011  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	1012  : `获得后可以在战场模式个人中心佩戴(仅在联机模式下生效)`										+ ` # 获得后可以在战场模式个人中心佩戴（仅PVP模式生效）`, 
+	
+	2001  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2002  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2003  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2004  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2005  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2006  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	
+	2007  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2008  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2009  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2010  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2011  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2012  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	
+	2013  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2014  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2015  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2016  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2017  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2018  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	
+	2019  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2020  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2021  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2022  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2023  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	2024  : `获得后可作为个人签名, 也可在游戏内通过外交的"发送邮件", 传给其他玩家(但仅限联机对战)`		+ ` # 获得后可在游戏内外交面板“发送邮件”栏目使用（仅限对战）`, 
+	},
+	
+	物品详情 : {
+	
+	4000  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	
+	4001  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	4002  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	4003  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	4004  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	4005  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	4006  : `背景在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	
+	6001  : `可以直接获得中枢数据 100`								+ ` # 获得中枢数据100`, 
+	6002  : `可以直接获得中枢数据 100`								+ ` # 获得中枢数据100`, 
+	6003  : `可以直接获得中枢数据 100`								+ ` # 获得中枢数据100`, 
+	6004  : `可以直接获得中枢数据 100`								+ ` # 获得中枢数据100`, 
+	
+	6005  : `可以直接获得中枢数据 500`								+ ` # 获得中枢数据500`, 
+	6006  : `可以直接获得中枢数据 500`								+ ` # 获得中枢数据500`, 
+	6007  : `可以直接获得中枢数据 500`								+ ` # 获得中枢数据500`, 
+	6008  : `可以直接获得中枢数据 500`								+ ` # 获得中枢数据500`, 
+	
+	6009  : `可以直接获得中枢数据1000`								+ ` # 获得中枢数据1000`, 
+	6010  : `可以直接获得中枢数据1000`								+ ` # 获得中枢数据1000`, 
+	6011  : `可以直接获得中枢数据1000`								+ ` # 获得中枢数据1000`, 
+	6012  : `可以直接获得中枢数据1000`								+ ` # 获得中枢数据1000`, 
+	
+	6013  : `可以直接获得中枢数据2000`								+ ` # 获得中枢数据2000`, 
+	
+	1000  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1014  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1013  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	
+	1001  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1002  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1003  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1004  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1005  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1006  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	
+	1007  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1008  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1009  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1010  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1011  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	1012  : `勋章在过去可奖励结算, 但现在已弃用, 纯装饰`			+ ` # 无特效`, 
+	
+	2001  : `"是"`													+ ` # “是”`, 
+	2002  : `"不"`													+ ` # “不是”`, 
+	2003  : `"同意"`												+ ` # “同意”`, 
+	2004  : `"拒绝"`												+ ` # “拒绝”`, 
+	2005  : `"和平相处"`											+ ` # “让我们和平相处”`, 
+	2006  : `"唯有一战"`											+ ` # “生存压力，唯有一战”`, 
+	
+	2007  : `"你们就是虫子"`										+ ` # “你们是虫子”`, 
+	2008  : `"你们的身躯进化得非常适合为我们工作"`					+ ` # “你们的身躯进化得非常适合为我们工作”`, 
+	2009  : `"管好你自己, 不然藏好你自己"`							+ ` # “管好你自己，不然藏好你自己”`, 
+	2010  : `"你们都是克隆体吗? 这么没有教养"`						+ ` # “你们都是克隆体吗？这么没有教养”`, 
+	2011  : `"你们长脑袋只为了让自己看起来高点吗"`					+ ` # “你们长脑袋只是为了让自己看起来高一点吗”`, 
+	2012  : `"你们文明的整体文化水平大概只到胎教"`					+ ` # “你们文明的整体文化水平大概只到胎教吧”`, 
+	
+	2013  : `"接下来我会广播一个星系, 那里有一个敌人"`				+ ` # “接下来我会广播一个星系，那里有敌人”`, 
+	2014  : `"接下来我会广播一个星系, 那里有大片敌人"`				+ ` # “接下来我会广播一个星系，那里有一大片敌人”`, 
+	2015  : `"接下来我会广播一个星系, 那里是我的所在"`				+ ` # “接下来我会广播一个星系，那里是我”`, 
+	2016  : `"接下来我会广播一个星系, 再之后信息都是我发的"`		+ ` # “接下来我会广播一个星系，再之后的信息都是我发的”`, 
+	2017  : `"接下来我会广播一个星系, 那里还可以移民"`				+ ` # “接下来我会广播一个星系，那里可以移民”`, 
+	2018  : `"接下来我会广播一个星系, 那是你吗"`					+ ` # “接下来我会广播一个星系，那里是你吗”`, 
+	
+	2019  : `"我们不要互相建情报网"`								+ ` # “我们不要互相建立情报网”`, 
+	2020  : `"有攻击正在往你那边去"`								+ ` # “有攻击往你那边去了”`, 
+	2021  : `"让我们往相反方向发展"`								+ ` # “让我们往相反的方向发展”`, 
+	2022  : `"彼此休战"`											+ ` # “休战”`, 
+	2023  : `"让我跟随"`											+ ` # “让我跟随你的左右”`, 
+	2024  : `"离我远点"`											+ ` # “离我远点”`, 
+	},
+	
+	图片地址 : {
+	
+	4000  : `background/block.jpg`			+ ` # Textures/block`, 
+	
+	4001  : `background/existance.jpg`		+ ` # Textures/Shop/BackGround/Existance`, 
+	4002  : `background/treasure.jpg`		+ ` # Textures/Shop/BackGround/Treasure`, 
+	4003  : `background/power.jpg`			+ ` # Textures/Shop/BackGround/Power`, 
+	4004  : `background/peace.jpg`			+ ` # Textures/Shop/BackGround/Peace`, 
+	4005  : `background/harmony.jpg`		+ ` # Textures/Shop/BackGround/Harmony`, 
+	4006  : `background/foward.jpg`			+ ` # Textures/Shop/BackGround/Foward`, 
+	
+	6001  : `icon02.png`					+ ` # 2_100`, 
+	6002  : `icon02.png`					+ ` # 2_100`, 
+	6003  : `icon02.png`					+ ` # 2_100`, 
+	6004  : `icon02.png`					+ ` # 2_100`, 
+	
+	6005  : `icon02.png`					+ ` # 2_500`, 
+	6006  : `icon02.png`					+ ` # 2_500`, 
+	6007  : `icon02.png`					+ ` # 2_500`, 
+	6008  : `icon02.png`					+ ` # 2_500`, 
+	
+	6009  : `icon02.png`					+ ` # 2_1000`, 
+	6010  : `icon02.png`					+ ` # 2_1000`, 
+	6011  : `icon02.png`					+ ` # 2_1000`, 
+	6012  : `icon02.png`					+ ` # 2_1000`, 
+	
+	6013  : `icon02.png`					+ ` # 2_2000`, 
+	
+	1000  : `emblem/empty.png`				+ ` # Textures/Shop/Emblem/Empty`, 
+	1014  : `emblem/7_2.png`				+ ` # Textures/Shop/Emblem/7_2`, 
+	1013  : `emblem/7_1.png`				+ ` # Textures/Shop/Emblem/7_1`, 
+	
+	1001  : `emblem/1_1.png`				+ ` # Textures/Shop/Emblem/1_1`, 
+	1002  : `emblem/2_1.png`				+ ` # Textures/Shop/Emblem/2_1`, 
+	1003  : `emblem/3_1.png`				+ ` # Textures/Shop/Emblem/3_1`, 
+	1004  : `emblem/4_1.png`				+ ` # Textures/Shop/Emblem/4_1`, 
+	1005  : `emblem/5_1.png`				+ ` # Textures/Shop/Emblem/5_1`, 
+	1006  : `emblem/6_1.png`				+ ` # Textures/Shop/Emblem/6_1`, 
+	
+	1007  : `emblem/1_2.png`				+ ` # Textures/Shop/Emblem/1_2`, 
+	1008  : `emblem/2_2.png`				+ ` # Textures/Shop/Emblem/2_2`, 
+	1009  : `emblem/3_2.png`				+ ` # Textures/Shop/Emblem/3_2`, 
+	1010  : `emblem/4_2.png`				+ ` # Textures/Shop/Emblem/4_2`, 
+	1011  : `emblem/5_2.png`				+ ` # Textures/Shop/Emblem/5_2`, 
+	1012  : `emblem/6_2.png`				+ ` # Textures/Shop/Emblem/6_2`, 
+	
+	2001  : `icon01.png`					+ ` # “是”`, 
+	2002  : `icon01.png`					+ ` # “不是”`, 
+	2003  : `icon01.png`					+ ` # “同意”`, 
+	2004  : `icon01.png`					+ ` # “拒绝”`, 
+	2005  : `icon01.png`					+ ` # “让我们和平相处”`, 
+	2006  : `icon01.png`					+ ` # “生存压力，唯有一战”`, 
+	
+	2007  : `icon01.png`					+ ` # “你们是虫子”`, 
+	2008  : `icon01.png`					+ ` # “你们的身躯进化得非常适合为我们工作”`, 
+	2009  : `icon01.png`					+ ` # “管好你自己，不然藏好你自己”`, 
+	2010  : `icon01.png`					+ ` # “你们都是克隆体吗？这么没有教养”`, 
+	2011  : `icon01.png`					+ ` # “你们长脑袋只是为了让自己看起来高一点吗”`, 
+	2012  : `icon01.png`					+ ` # “你们文明的整体文化水平大概只到胎教吧”`, 
+	
+	2013  : `icon01.png`					+ ` # “接下来我会广播一个星系，那里有敌人”`, 
+	2014  : `icon01.png`					+ ` # “接下来我会广播一个星系，那里有一大片敌人”`, 
+	2015  : `icon01.png`					+ ` # “接下来我会广播一个星系，那里是我”`, 
+	2016  : `icon01.png`					+ ` # “接下来我会广播一个星系，再之后的信息都是我发的”`, 
+	2017  : `icon01.png`					+ ` # “接下来我会广播一个星系，那里可以移民”`, 
+	2018  : `icon01.png`					+ ` # “接下来我会广播一个星系，那里是你吗”`, 
+	
+	2019  : `icon01.png`					+ ` # “我们不要互相建立情报网”`, 
+	2020  : `icon01.png`					+ ` # “有攻击往你那边去了”`, 
+	2021  : `icon01.png`					+ ` # “让我们往相反的方向发展”`, 
+	2022  : `icon01.png`					+ ` # “休战”`, 
+	2023  : `icon01.png`					+ ` # “让我跟随你的左右”`, 
+	2024  : `icon01.png`					+ ` # “离我远点”`, 
+	},
+	
+	商品类别 : {
+	
+	3 : `勋章`			+ ` # 勋章`,
+	4 : `外交辞令`		+ ` # 外交辞令`,
+	5 : `背景`			+ ` # 背景`,
+	6 : `中枢数据`		+ ` # 中枢数据`,
+	},
+	
+};
+
+// ---------------------------------------------
+
+// 基本变量
+let jqi_powerTable01 = $('#powerTable01');
+let powerTable01_tbody_html = '';
+let powerTable01_group = -1;
+let powerTable01_index = -1;
+
+// 生成表格
+csv0.forEach(function(item, index){
+	
+	// powerTable01_tbody_html += '<td>'+ item[0] +'</td>';			// 项目代码			ItemAttribute,		1000,
+	// powerTable01_tbody_html += '<td>'+ item[1] +'</td>';			// 名称代码			Name,				1000 : 
+	// powerTable01_tbody_html += '<td>'+ item[2] +'</td>';			// 详情代码			Detail,				$ItemAttribute_Detail_1000,
+	// powerTable01_tbody_html += '<td>'+ item[3] +'</td>';			// 描述代码			Description,		,
+	// powerTable01_tbody_html += '<td>'+ item[4] +'</td>';			// 商品类别			Type,				3,
+	// powerTable01_tbody_html += '<td>'+ item[5] +'</td>';			// 商品价格			Price,				,
+	// powerTable01_tbody_html += '<td>'+ item[6] +'</td>';			// 购入次数			LimitCount,			100000000,
+	// powerTable01_tbody_html += '<td>'+ item[7] +'</td>';			// 图片代码			Content,			$ItemAttribute_Content_1000,
+	// powerTable01_tbody_html += '<td>'+ item[8] +'</td>';			// 是否出现			InMainStore,		0,
+	// powerTable01_tbody_html += '<td>'+ item[9] +'</td>';			// 文明概率			Bonus,				,
+	// powerTable01_tbody_html += '<td>'+ item[10] +'</td>';		// 文明主义			Param,				,
+	
+	// 空行处理
+	if(item === 'blankRow'){
+		if(csv0[index+1] !== 'blankRow'){
+		powerTable01_group+=1};
+		return;
+	}else{
+		powerTable01_index +=1;
+	};
+	
+	// -----------------------------------------
+	
+	// 数据处理
+	item.项目代码 = item[0];
+	item.是否出现 = item[8];
+	
+	item.项目序号 = powerTable01_index;
+	item.数据分组 = powerTable01_group;
+	
+	item.商品类别 = textList.商品类别[item[4]];
+	item.图片地址 = textList.图片地址[item[7].replace
+	('$ItemAttribute_Content_', '')].replace(/ # .*/, '');
+	
+	item.购入次数 = (item.是否出现 === '0' ? '0' : item[6]);
+	item.商品价格 = item[5] === '' ? '0' : item[5].slice(2);
+	
+	item.名称代码 = item[1].replace('$ItemAttribute_Name_','');
+	item.详情代码 = item[2].replace('$ItemAttribute_Detail_','');
+	item.描述代码 = item[3].replace('$ItemAttribute_Description_','');
+	
+	item.项目名称 = textList.项目名称[item.名称代码];
+	item.文本描述 = textList.文本描述[item.描述代码];
+	item.物品详情 = textList.物品详情[item.详情代码];
+	
+	item.项目图片 = (item.商品类别.includes('背景') === false
+	? `<img loading="lazy" alt="${item.项目名称}" src="../static/image/shopMenu/${item.图片地址}" style="width:64px;height:64px;" />`
+	: `<div style="width:64px;height:64px;overflow:hidden;"><img loading="lazy" alt="${item.项目名称}" src="../static/image/shopMenu/${item.图片地址}" style="width:auto;height:64px;margin-left:-64px;" /></div>`);
+	
+	item.项目图片 = /*html*/`<td class="followTip" style="padding:0;position:relative;text-align:center;" 
+		xjTip-align="right" 
+		xjTip-duration="0" xjTip-followMouse="true" xjTip-arrow="false" xjTip-shadow="false" 
+		xjTip-html="<img loading='lazy' alt='${item.项目名称}' src='../static/image/shopMenu/${item.图片地址}' style='width:auto;height:128px;' />">
+		${item.项目图片}
+		<!--◇ <img loading="lazy" alt="${item.项目名称}" src="../static/image/shopMenu/${item.图片地址}" style="width:64px;height:64px;" /> ◇-->
+	</td>`.replace(/\t|\n/g, '');
+	
+	// -----------------------------------------
+	
+	// 生成内容
+	powerTable01_tbody_html += '<tr index="'+ item.项目序号 +'" group="'+ item.数据分组 +'" style="height: 65px;">';
+	
+	powerTable01_tbody_html += '<!--◇ ◇-->'+ item.项目图片;
+	powerTable01_tbody_html += '<td>'+ (item.项目序号 + 1) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.项目名称) +'</td>';
+	
+	powerTable01_tbody_html += '<td>'+ (item.项目代码) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.商品价格) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.购入次数) +'</td>';
+	powerTable01_tbody_html += '<td>'+ (item.是否出现) +'</td>';
+	powerTable01_tbody_html += '<td>'+ xj2._hideText(item.商品类别) +'</td>';
+	
+	powerTable01_tbody_html += '<td style="padding:4px 4px 4px 4px;">'+ 
+		xj2._hideText(item.文本描述, true) 
+		+'<br />详情描述: '+ 
+		xj2._hideText(item.物品详情, true) 
+	+'</td>';
+	
+	powerTable01_tbody_html += '</tr>';
+	
+});
+$('#powerTable01 tbody').html(powerTable01_tbody_html);
+xj2._buildPowerTable('powerTable01');
+$('.followTip').xjTip();
+
+// 动态高亮
+xj2._groupedSet(jqi_powerTable01);
+jqi_powerTable01.find('thead th').click(function(){ xj2._groupedSet(jqi_powerTable01) });
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 基本信息</a>
+			<a href="#heading02">02. 额外拓展</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+

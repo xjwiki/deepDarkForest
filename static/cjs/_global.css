@@ -190,8 +190,8 @@ details > content > *:last-child{margin-bottom:0;}
 .powerTable tbody td:first-child{border-left:1px solid #ccc;}
 
 /* 分组高亮 */
-html:not([class*=xj-base]) .tr-group{background-color:#fafafa;}
-html[class~="xj-base-black"] .tr-group{background-color:#2e2e2e;}
+html:not([class*=xj-base]) .tr-group{background-color:#f5f5f5;}
+html[class~="xj-base-black"] .tr-group{background-color:#292929;}
 
 /* document.getElementById('trLength01').textContent = trShowIndexArray.length;
 <tfoot><tr><td>项目统计</td><td id="trLength01" colSpan="99"></td></tr></tfoot>

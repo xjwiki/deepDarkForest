@@ -291,9 +291,9 @@ xj2._dirRepeatAnchor = $(/*html*/`
 	<li class="xjDir-spread">
 		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-compass"></i><i class="xjDir-text">新手指南</i><i class="xjDir-sign"></i></a>
 		<ul>
-			<li><a href="./${istIndex?'page/':''}guide_start.html">				<i class="xjDir-icon fas fa-1">.</i>					<i class="xjDir-text"><span>入门引导</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}guide_concept.html">			<i class="xjDir-icon fas fa-2">.</i>					<i class="xjDir-text"><span>概念解析</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}guide_operation.html">			<i class="xjDir-icon fas fa-3">.</i>					<i class="xjDir-text"><span>操作细节</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}guide_01_start.html">				<i class="xjDir-icon fas fa-1">.</i>					<i class="xjDir-text"><span>入门引导</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}guide_02_concept.html">			<i class="xjDir-icon fas fa-2">.</i>					<i class="xjDir-text"><span>概念解析</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}guide_03_operation.html">			<i class="xjDir-icon fas fa-3">.</i>					<i class="xjDir-text"><span>操作细节</span></i></a></li>
 		</ul>
 	</li>
 	
@@ -302,7 +302,7 @@ xj2._dirRepeatAnchor = $(/*html*/`
 		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-circle-info"></i><i class="xjDir-text">游戏数据</i><i class="xjDir-sign"></i></a>
 		<ul>
 			<li><a href="./${istIndex?'page/':''}data_techList.html">			<i class="xjDir-icon fas fa-microscope"></i>			<i class="xjDir-text"><span>科技列表</span></i></a></li>
-			<li><a href="./${istIndex?'page/':''}data_building.html">			<i class="xjDir-icon fas fa-landmark"></i>				<i class="xjDir-text"><span>建筑概览</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_building.html">			<i class="xjDir-icon fas fa-building"></i>				<i class="xjDir-text"><span>建筑概览</span></i></a></li>
 			<li><a href="./${istIndex?'page/':''}data_starInfo.html">			<i class="xjDir-icon fas fa-sun"></i>					<i class="xjDir-text"><span>天体信息</span></i></a></li>
 			<li><a href="./${istIndex?'page/':''}data_starBuff.html">			<i class="xjDir-icon fas fa-diamond-turn-right"></i>	<i class="xjDir-text"><span>天体特性</span></i></a></li>
 			<li><a href="./${istIndex?'page/':''}data_weaponry.html">			<i class="xjDir-icon fas fa-rocket"></i>				<i class="xjDir-text"><span>武器参数</span></i></a></li>
@@ -317,12 +317,16 @@ xj2._dirRepeatAnchor = $(/*html*/`
 			<li><a href="./${istIndex?'page/':''}data_civParam.html">			<i class="xjDir-icon fas fa-sliders"></i>				<i class="xjDir-text"><span>文明参数</span></i></a></li>
 			<li class="xjDir-divide"></li>
 			
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>外交行动</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>议会任务</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>难度差异</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>商品属性</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>成就系统</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-question"></i>				<i class="xjDir-text"><span>关卡记录</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_askUpper.html">			<i class="xjDir-icon fas fa-landmark"></i>				<i class="xjDir-text"><span>上院任务</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_askLower.html">			<i class="xjDir-icon fas fa-clipboard-check"></i>		<i class="xjDir-text"><span>下院议案</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_messages.html">			<i class="xjDir-icon fas fa-comment-dots"></i>			<i class="xjDir-text"><span>消息提示</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_diplomac.html">			<i class="xjDir-icon fas fa-handshake-angle"></i>		<i class="xjDir-text"><span>外交行动</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_shopMenu.html">			<i class="xjDir-icon fas fa-cart-shopping"></i>			<i class="xjDir-text"><span>战场商店</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}data_achieves.html">			<i class="xjDir-icon fas fa-trophy"></i>				<i class="xjDir-text"><span>游戏成就</span></i></a></li>
+			
+			<!--◇
+			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-sailboat"></i>				<i class="xjDir-text"><span>方舟机制</span></i></a></li>
+			◇-->
 		</ul>
 	</li>
 	
@@ -330,9 +334,9 @@ xj2._dirRepeatAnchor = $(/*html*/`
 	<li class="xjDir-spread">
 		<a class="xj-ripple" href="javascript:void(0)"><i class="xjDir-icon fas fa-square-pen"></i><i class="xjDir-text">事件剧情</i><i class="xjDir-sign"></i></a>
 		<ul>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-file"></i>					<i class="xjDir-text"><span>剧情环境</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-file-lines"></i>			<i class="xjDir-text"><span>特殊场景</span></i></a></li>
-			<li class="xjDir-disabled"><a href="javascript:void(0)">			<i class="xjDir-icon fas fa-book"></i>					<i class="xjDir-text"><span>事件详情</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}scene01.html">					<i class="xjDir-icon fas fa-book"></i>					<i class="xjDir-text"><span>教程场景</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}scene02.html">					<i class="xjDir-icon fas fa-book"></i>					<i class="xjDir-text"><span>唯物之章</span></i></a></li>
+			<li><a href="./${istIndex?'page/':''}scene03.html">					<i class="xjDir-icon fas fa-book"></i>					<i class="xjDir-text"><span>唯心之章</span></i></a></li>
 		</ul>
 	</li>
 	

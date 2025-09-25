@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/icon/favicon.ico" />
+<script src="../static/cjs/_xj.plugins.setting.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="viewport" xj-viewport="{minWidth:1280}" content="width=device-width,initial-scale=1" />
+<script src="../static/plugin/xj.viewport/0.3.2/dist/xj.viewport.min.js"></script>
+
+<script src="../static/plugin/xj.storage/0.2.2/dist/xj.storage.min.js"></script>
+<script src="../static/plugin/xj.operate/0.6.0/dist/xj.operate.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.css" />
+<script src="../static/plugin/xj.ripple/0.5.0/dist/xj.ripple.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.css" />
+<script src="../static/plugin/xj.focus/0.4.0/dist/xj.focus.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.1/dist/xj.base.min.css" />
+<script src="../static/plugin/xj.base/0.4.1/dist/xj.base.min.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', 
+function(){ FastClick.attach(document.body) }, false);</script>
+<script src="../static/plugin/fastclick/1.0.6/lib/fastclick.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/fortawesome/6.7.2/css/all.min.css" />
+<script src="../static/plugin/jquery/3.7.1/dist/jquery.min.js"></script>
+
+<script src="../static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="../static/plugin/prismjs/1.25.0/themes/material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="../static/plugin/prismjs/1.25.0/themes/okaidia.min.css" />
+<script data-manual="prevent prism auto highlight pre or code" src="../static/plugin/prismjs/1.25.0/prism.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
+<script src="../static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
+<script src="../static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+
+<link rel="stylesheet" href="../static/plugin/xjTip/0.1.2/dist/xjTip.min.css" />
+<script src="../static/plugin/xjTip/0.1.2/dist/xjTip.min.js"></script>
+
+<link rel="stylesheet" href="../static/cjs/_global.css?time=2025-09-25T17:07:57UTC+8" />
+<script src="../static/cjs/_global.js?time=2025-09-25T17:07:57UTC+8"></script>
+
+<meta name="description" content="这是深暗森林这款策略游戏的攻略百科, 包含了游戏玩法和各种数据, 无论你是新手玩家或资深大佬, 在这里都应该能够有所收获" />
+<meta name="kyewords" content="深暗森林, 攻略, 百科, Deep Dark Forest, encyclopedia, guide, wiki, xjwiki" />
+
+<title>唯物之章</title>
+</head>
+<body>
+
+
+
+<div id="pub_size"><div id="pub_size_winx"></div><div id="pub_size_winy"></div></div>
+<div id="pub_pack">
+
+
+
+<div id="pub_side">
+	<div class="xjScroll" id="xjScroll01" style="width:100%;">
+		<div class="xjDir" id="xjDir01" xjDir="{createRipple:false, }" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
+			<ul>
+				<script>
+				// jQuery's :contains 筛选是模糊匹配的, 所以它会匹配到包目标含文本参数的其他节点
+				// 为了更精准, 所以这里改用 filter( ) 方法进行过滤, 以实现全匹配才选中节点的效果
+				// document.title = xj2.i18n[document.title];
+				xj2._dirRepeatAnchor.find('.xjDir-text').filter(function(e){
+				return (this.textContent.trim() === document.title) }).parents('li').addClass('xjDir-active');
+				$(document.currentScript).replaceWith(xj2._dirRepeatAnchor);
+				</script>
+			</ul>
+		</div>
+	</div>
+	<script>
+	(function(){
+		let setDirMinHeight = function(){ $('#xjScroll01').css('height', $('#pub_size')[0].clientHeight) };
+		setDirMinHeight();
+		$(window).on('resize', setDirMinHeight); 
+		if(/Mobile|Android|IOS|iPhone|iPad/i.test(navigator.userAgent)){ $(window).on('scroll', setDirMinHeight) };
+		$('#xjScroll01').xjScroll({
+			native:true, barsHide:0, barsShow:false, resizeCallbackType:'none', 
+			scrollCallback:function(returnObject){ xj.storage.sessionStorage.set('dirPositionY', returnObject.scrollY()) }, 
+			operateAfter:function(returnObject){ if(xj.storage.sessionStorage.get('dirPositionY') !== null){ returnObject.scrollY(parseInt(xj.storage.sessionStorage.get('dirPositionY'))) } },
+		});
+	})();
+	</script>
+</div>
+
+
+
+<div id="pub_wrap">
+<div id="pub_head">
+	<h1 id="pub_headText"><a class="a-unset" href=""><span>唯物之章</span><small>(低维危机)</small></a></h1>
+	
+	<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter For Search" action="https://github.com/xjwiki/deepDarkForest/search">
+		<input id="pub_headFormText" class="input-plain" type="search" name="q" autocomplete="off" placeholder="Search" value="" />
+		<button id="pub_headFormIcon" class="fas fa-search" onclick="this.parentElement.submit()"></button>
+	</form>
+	
+	<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
+		href="https://github.com/xjwiki/deepDarkForest/">
+	<i class="fab fa-github"></i></a>
+	
+	<span id="pub_headLang">
+		<button id="pub_headLangIcon" type="button" 
+		title="Select Your Adept Lang" onclick="this.focus()"><i class="fas fa-earth-asia"></i></button>
+		<div id="pub_headLangMenu">
+			<a class="a-unset" href="">简体中文</a>
+			<a class="a-unset" href="javascript:void(0)" style="opacity:0.5;cursor:not-allowed;">English</a>
+		</div>
+	</span>
+</div>
+
+
+
+<div id="pub_main">
+
+
+
+<section><h2 id="heading01">01. 历史博物</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-1a.jpg" /><span>圆规四星区, 是理事会管理的疆域里, 最为靠近边陲的一个; 如今, 全宇宙都在逐渐低维化, 而这个区域正处于毁灭的最前沿; 我从主脑程序中被分离了出来, 成为一个独立的意识, 至今已经许多年了. 但是我依然没能习惯这副义体; 希望这次的工作能够顺利吧;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>if(场景开端){ 主脑: 科学官你好, 看来你已顺利到达 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 是的, 我已经安全抵达, 目前正在准备开展工作;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>主脑: 不断扩散的低维空间已逼近圆规四星区; 这里一直是我们语言科学研究的重要地区; 它记录了上亿种已消亡的语言及文物; 时间紧迫, 转移数据和文物已经来不及了; 母世界的维度科学院提出了一种构想: 以合适的方式收容三维物体, 即使跌落到二维也能保持其三维细节; 如果建造这样的博物馆来保留文物, 可能在将来的某天, 当我们的技术足够时, 还能复原他们; 请你务必在低维化空间到来之前, 建造足够多的博物馆(任务: 建造文明博物馆×8)(可选任务: 保持凝聚力 >= 50);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 博物馆运用了最前沿的高维投影结构设计; 即便跌落到了低维空间, 也能保留所有三维的信息; 我个人对这些博物馆的数据能否被复原并不抱乐观预期; 就像宇宙的熵增是不可阻止的趋势一样, 目前并没有任何理论支持维度的逆转;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(年份 >= 150Y){ 科学官秘书: 科学官, 天璇星系广播了自己; 那里曾是我们的一个移民地. 在很久前, 那里爆发了内战, 从那时起便和我们失去了联系; 我们收到了通信请求 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>总督: 我是天璇星总督; 低维空间越来越近了, 整个星系都陷入了恐慌; 自内战以来, 我们失去了和母世界的联系, 一直都处于无政府状态; 现在雪上加霜, 许多城市陷于战火; 求求你们, 来稳住局面, 救救我们吧;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 科学官, 天璇星系过去曾是我们的一个基础科研中心; 纵使现在它已经陷入了无政府状态, 但那里的研究机构也应该还保有珍贵的研究成果; 考虑到各种因素, 我认为我们还是有必要去一趟(任务: 拆除天璇座星系上所有的贫民窟);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(年份 >= 500Y){ 科学官秘书: 低维空间已经显现了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(凝聚力 < 50){ 科学官秘书: 看来, 对于我们这样的唯物主义文明来说, 要让文明始终维持较高的凝聚力真的很难… };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>if(拆除天璇座星系上所有的贫民窟){ 总督: 科学官大人, 非常感谢您的驰援, 我们感谢您没有抛弃我们 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 经过几轮调解, 冲突终于平息了. 现在还剩下多少研究数据?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>总督: 还有很多, 都是我们尽全力保护下来的, 我这就转交给您(奖励: 获得 2000 科技点);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 总督, 这个星区即将不复存在, 请您带领该星区的难民, 回到母世界吧. 主脑会安排好你们的;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>总督: 请等一下, 科学官大人, 还有件事;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 那就抓紧报告, 天璇星总督. 科学官他还有很多其他事要做;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>总督: 天璇星系多亏科学官的援助, 居民们才有幸从战火中重生; 但是第二星区, 马上就要迎来灭顶之灾了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 第二星区在哪?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>总督: 就是这里; 第二星区是之前内战的中心战场; 实际上我们天璇星系受内战的波及不多, 那里才真的是满目疮痍; 这里一共有七个星系, 数百亿人居住在这里, 他们甚至都不知道低维空间正在逼近; 科学官大人, 如果有可能的话救救他们吧!</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 你说的这些星系, 它们和天璇星系不一样, 目前, 它们已经不剩什么有价值的研究成果了; 科学官大人, 恕我直言, 主脑给你的任务是建造博物馆, 时间紧迫, 希望你不要把资源浪费在无关紧要的事情上(可选任务: 营救所有贫民);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_08.jpg" /><span>if(营救所有贫民){ 总督: 科学官, 感谢您不辞辛劳地拯救了我们, 大家会永远记住您的 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 您在无谓的事情上浪费了时间资源, 我会如实向主脑报告的;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>if(建造文明博物馆×8){ 科学官: 博物馆已全部建造完成, 所有研究数据都能得以保留了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>主脑: 做得很好, 现在圆规四快被低维化了, 赶快回来吧;</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-1b.jpg" /><span>其实我们都明白, 在这场与低维的战争之中, 我们是不可能胜出的. 我们所做的一切努力, 只不过是为了延缓灭亡的到来; 而在这场时空竞赛中, 我们只能不停逃窜; 但即便是如此, 我还是会尽我所能, 去做一切我应该做的事; 因为这是我诞生在这个世界的职责;</span></p>
+
+<!-- 01. 古代博物馆
+
+'2-1-1-0'       : `<<CG:Textures/MissionCG/2-1a>>圆规四星区是理事会管理的疆域里靠近边陲的一个; `																			+ `<<CG:Textures/MissionCG/2-1a>>圆规四星区是理事会管理的疆域里靠近边陲的一个。`,
+'2-1-1-1'       : `<<CG:Textures/MissionCG/2-1a>>如今, 全宇宙都在逐渐低维化, 这个区域处于毁灭的最前沿; `																	+ `<<CG:Textures/MissionCG/2-1a>>如今，全宇宙都在逐渐低维化，这个区域处于毁灭的最前沿。`,
+'2-1-1-2'       : `<<CG:Textures/MissionCG/2-1a>>我从主脑中被分离出来, 成为独立意识, 已经许多年了. 但我依然没能习惯这副义体; `												+ `<<CG:Textures/MissionCG/2-1a>>我从主脑中被分离出来，成为独立意识，已经许多年了。但我依然没能习惯这副义体。`,
+'2-1-1-3'       : `<<CG:Textures/MissionCG/2-1a>>希望这次的工作能够顺利吧; `																								+ `<<CG:Textures/MissionCG/2-1a>>希望这次的工作能够顺利吧。`,
+
+————
+
+'2-1-2-0'       : `<<HeadImage:A_20>>if(场景开端){ 主脑: 科学官你好, 看来你已经顺利到达圆规四星区了 };`																		+ `<<HeadImage:A_20>>科学官你好，看来你已经顺利到达圆规四星区了。`,
+
+'2-1-2-1'       : `<<HeadImage:A_10>>科学官: 是的, 我已经准备好开展工作; `																									+ `<<HeadImage:A_10>>是的，我已经准备好开展工作。`,
+
+'2-1-2-2'       : `<<HeadImage:A_20>>主脑: 如之前所说, 不断扩散的低维空间已经逼近圆规四星区; `																				+ `<<HeadImage:A_20>>如之前所说，不断扩散的低维空间已经逼近圆规四星区。`,
+'2-1-2-3'       : `<<HeadImage:A_20>>在漫长的历史中, 圆规四星区, 一直是我们语言科学研究的重要地区; `																		+ `<<HeadImage:A_20>>在漫长的历史中，圆规四星区，一直是我们语言科学研究的重要地区。`,
+'2-1-2-4'       : `<<HeadImage:A_20>>这里记录了我们发现的上亿种已消亡的语言及文物; `																						+ `<<HeadImage:A_20>>这里记录了我们发现的上亿种已消亡的语言及文物。`,
+'2-1-2-5'       : `<<HeadImage:A_20>>时间紧迫, 如今转移这些知识和文物, 恐怕已经来不及了; `																					+ `<<HeadImage:A_20>>时间紧迫，如今转移这些知识和文物，恐怕已经来不及了。`,
+'2-1-2-6'       : `<<HeadImage:A_20>>母世界的维度科学院提出了一种构想：只要以合适的方式收容三维物体, 即使跌落到了二维, 也能保持其三维细节; `								+ `<<HeadImage:A_20>>母世界的维度科学院提出了一种构想：只要以合适的方式收容三维物体，即使跌落到了二维，也能保持其三维细节。`,
+'2-1-2-7'       : `<<HeadImage:A_20>>如果我们建造了这样的博物馆来保留文物, 可能在将来的某一天, 我们的技术能力足够之时, 还能复原他们; `										+ `<<HeadImage:A_20>>如果我们建造了这样的博物馆来保留文物，可能在将来的某一天，我们的技术能力足够之时，还能复原他们。`,
+'2-1-2-8'       : `<<HeadImage:A_20>>这就是将你派遣到圆规四的目的. 请你务必在低维化到来之前, 建造足够多的博物馆(任务: 建造文明博物馆×8)(可选任务: 保持凝聚力 >= 50);`		+ `<<HeadImage:A_20>>这就是将你派遣到圆规四的目的。请你务必在低维化到来之前，建造足够多的博物馆。`,
+
+'2-1-3-0'       : `<<HeadImage:A_11>>博物馆运用了最前沿的高维投影结构设计; `																								+ `<<HeadImage:A_11>>博物馆运用了最前沿的高维投影结构设计。`,
+'2-1-3-1'       : `<<HeadImage:A_11>>即便跌落了低维空间, 也能保留所有第三维度的信息; `																						+ `<<HeadImage:A_11>>即便跌落了低维空间，也能保留所有第三维度的信息。`,
+'2-1-3-2'       : `<<HeadImage:A_11>>我个人对这些博物馆中的数据能否被复原并不抱乐观预期; `																					+ `<<HeadImage:A_11>>我个人对这些博物馆中的数据能否被复原并不抱乐观预期。`,
+'2-1-3-3'       : `<<HeadImage:A_11>>就像宇宙的熵增是不可阻止的趋势一样, 目前并没有任何理论支持维度的逆转; `																+ `<<HeadImage:A_11>>就像宇宙的熵增是不可阻止的趋势一样，目前并没有任何理论支持维度的逆转。`,
+
+————
+
+'2-1-4-0'       : `<<HeadImage:A_11>>if(年份 >= 150){ 科学官秘书: 科学官, 天璇星系广播了自己! };`																			+ `<<HeadImage:A_11>>科学官，天璇星系广播了自己！`,
+'2-1-4-1'       : `<<HeadImage:A_11>>那里曾是我们的一个移民地. 很久前, 那里爆发了内战, 从那时起便和我们失去了联系; `														+ `<<HeadImage:A_11>>那里曾是我们的一个移民地。很久前，那里爆发了内战，从那时起便和我们失去了联系。`,
+'2-1-4-2'       : `<<HeadImage:A_11>>我们收到了一个通信请求; `																												+ `<<HeadImage:A_11>>我们收到了一个通信请求。`,
+
+'2-1-4-3'       : `<<HeadImage:M_08>>总督: 科学官, 我是天璇星总督, 你能听到吗——`																							+ `<<HeadImage:M_08>>科学官，我是天璇星总督，你能听到吗——`,
+'2-1-4-4'       : `<<HeadImage:M_08>>我们听说低维空间越来越近了, 整个星系都陷入了恐慌; `																					+ `<<HeadImage:M_08>>我们听说低维空间越来越近了，整个星系都陷入了恐慌。`,
+'2-1-4-5'       : `<<HeadImage:M_08>>自上次内战以来, 我们失去了和母世界的联系, 整个星区一直处于无政府状态; `																+ `<<HeadImage:M_08>>自上次内战以来，我们失去了和母世界的联系，整个星区一直处于无政府状态。`,
+'2-1-4-6'       : `<<HeadImage:M_08>>现在更是雪上加霜, 许多城市都陷于战火; `																								+ `<<HeadImage:M_08>>现在更是雪上加霜，许多城市都陷于战火。`,
+'2-1-4-7'       : `<<HeadImage:M_08>>求求你们, 过来稳住局面, 救救我们吧——`																									+ `<<HeadImage:M_08>>求求你们，过来稳住局面，救救我们吧——`,
+
+'2-1-4-8'       : `<<HeadImage:A_11>>科学官秘书: 科学官, 天璇星系曾经是我们的一个基础科研中心; `																			+ `<<HeadImage:A_11>>科学官，天璇星系曾经是我们的一个基础科研中心。`,
+'2-1-4-9'       : `<<HeadImage:A_11>>纵使陷入了无政府状态, 那里的研究机构也应该还保有珍贵的研究成果; `																		+ `<<HeadImage:A_11>>纵使陷入了无政府状态，那里的研究机构也应该还保有珍贵的研究成果。`,
+'2-1-4-10'      : `<<HeadImage:A_11>>我认为我们有必要去一趟(任务: 拆除天璇座星系上所有的贫民窟)`																			+ `<<HeadImage:A_11>>我认为我们有必要去一趟。`,
+
+————
+
+'2-1-6-0'       : `<<HeadImage:M_08>>if(拆除天璇座星系上所有的贫民窟){ 总督: 科学官大人, 感谢您的驰援, 我们感谢您没有抛弃我们; }`											+ `<<HeadImage:M_08>>科学官大人，感谢您的驰援，我们感谢您没有抛弃我们。`,
+
+'2-1-6-1'       : `<<HeadImage:A_11>>科学官秘书: 经过几轮调解, 冲突终于平息了. 还剩下多少研究数据?`																			+ `<<HeadImage:A_11>>经过几轮调解，冲突终于平息了。还剩下多少研究数据?`,
+
+'2-1-6-2'       : `<<HeadImage:M_08>>总督: 还有很多, 都是我们尽全力保护下来的, 我这就转交给您(奖励: 获得 2000 科技点)`														+ `<<HeadImage:M_08>>还有很多，都是我们尽全力保护下来的，我这就转交给您。`,
+
+'2-1-7-0'       : `<<HeadImage:A_11>>科学官秘书: 总督, 这里即将不存, 请带领难民船回到母世界吧. 主脑会安排好你们的; `														+ `<<HeadImage:A_11>>总督，这里即将不存，请带领难民船回到母世界吧。主脑会安排好你们的。`,
+
+'2-1-7-1'       : `<<HeadImage:M_08>>总督: 请等一下, 科学官大人, 还有一件事; `																								+ `<<HeadImage:M_08>>请等一下，科学官大人，还有一件事。`,
+
+'2-1-7-2'       : `<<HeadImage:A_11>>科学官秘书: 抓紧报告, 总督. 科学官还有很多事要做; `																					+ `<<HeadImage:A_11>>抓紧报告，总督。科学官还有很多事要做。`,
+
+'2-1-7-3'       : `<<HeadImage:M_08>>总督: 科学官大人, 天璇星系多亏您的援助, 居民们有幸从战火中重生; `																		+ `<<HeadImage:M_08>>科学官大人，天璇星系多亏您的援助，居民们有幸从战火中重生。`,
+'2-1-7-4'       : `<<HeadImage:M_08>>但是第二星区, 马上就要迎来灭顶之灾; `																									+ `<<HeadImage:M_08>>但是第二星区，马上就要迎来灭顶之灾。`,
+
+'2-1-7-5'       : `<<HeadImage:A_10>>科学官: 第二星区?`																														+ `<<HeadImage:A_10>>第二星区？`,
+
+'2-1-7-6'       : `<<HeadImage:M_08>>总督: 就是这里——`																														+ `<<HeadImage:M_08>>就是这里——`,
+'2-1-8-0'       : `<<HeadImage:M_08>>第二星区是之前内战的中心战场; `																										+ `<<HeadImage:M_08>>第二星区是之前内战的中心战场。`,
+'2-1-8-1'       : `<<HeadImage:M_08>>我们天璇星系受内战的波及不多, 那里才真的是满目疮痍了; `																				+ `<<HeadImage:M_08>>我们天璇星系受内战的波及不多，那里才真的是满目疮痍了。`,
+'2-1-8-2'       : `<<HeadImage:M_08>>这里一共七个星系, 数百亿人居住在这里, 他们甚至都不知道低维空间正在逼近; `																+ `<<HeadImage:M_08>>这里一共七个星系，数百亿人居住在这里，他们甚至都不知道低维空间正在逼近。`,
+'2-1-8-3'       : `<<HeadImage:M_08>>科学官大人, 如果有可能的话救救他们吧! `																								+ `<<HeadImage:M_08>>科学官大人，如果有可能的话救救他们吧！`,
+
+'2-1-8-4'       : `<<HeadImage:A_11>>科学官秘书: 这些星系和天璇星系不一样, 它们已经不剩什么有价值的研究成果了; `															+ `<<HeadImage:A_11>>这些星系和天璇星系不一样，它们已经不剩什么有价值的研究成果了。`,
+'2-1-8-5'       : `<<HeadImage:A_11>>科学官大人, 恕我直言, 主脑给你的任务是建造博物馆, 希望你不要把资源浪费在无关的事情上面(可选任务: 营救所有贫民)`						+ `<<HeadImage:A_11>>科学官大人，恕我直言，主脑给你的任务是建造博物馆，希望你不要把资源浪费在无关的事情上面。`,
+
+————
+
+'2-1-10-0'      : `<<HeadImage:M_08>>if(营救所有贫民){ 总督: 科学官, 感谢您不辞辛劳拯救了我们的生命, 大家会永远记住您的! };`												+ `<<HeadImage:M_08>>科学官，感谢您不辞辛劳拯救了我们的生命，大家会永远记住您的！`,
+
+'2-1-10-1'      : `<<HeadImage:A_11>>科学官秘书: 您在无谓的事情上浪费了资源, 我会如实向主脑报告的; `																		+ `<<HeadImage:A_11>>您在无谓的事情上浪费了资源，我会如实向主脑报告的。`,
+
+'2-1-12-0'      : `<<HeadImage:A_10>>if(建造文明博物馆×8){ 科学官: 博物馆已全部建造完成, 所有研究数据都能得以保留了; };`													+ `<<HeadImage:A_10>>博物馆已全部建造完成，所有研究数据都能得以保留了。`,
+
+'2-1-12-1'      : `<<HeadImage:A_20>>主脑: 做得很好, 现在圆规四已经快被全部低维化了, 赶快回来吧; `																			+ `<<HeadImage:A_20>>做得很好，现在圆规四已经快被全部低维化了，赶快回来吧。`,
+
+'2-1-5-0'       : `<<HeadImage:A_11>>if(年份 >= 500){ 科学官秘书: 科学官, 低维空间已经显现了, 我们的时间不多了 };`															+ `<<HeadImage:A_11>>科学官，低维空间已经显现了，我们的时间不多了。`,
+
+'2-1-11-0'      : `<<HeadImage:A_11>>if(保持凝聚力 < 50){ 看来对于我们这样的唯物文明来说, 要维持一个较高的凝聚力真的很难 };`												+ `<<HeadImage:A_11>>看来对于我们这样的唯物文明来说，要维持一个较高的凝聚力真的很难。`,
+
+'2-1-13-0'      : `<<CG:Textures/MissionCG/2-1b>>我们都明白, 这场与低维的战争, 我们不可能胜出. 我们所做的一切努力不过是为了延缓灭亡的到来……`								+ `<<CG:Textures/MissionCG/2-1b>>我们都明白，这场与低维的战争，我们不可能胜出。我们所做的一切努力不过是为了延缓灭亡的到来……`,
+'2-1-13-1'      : `<<CG:Textures/MissionCG/2-1b>>在这场时空竞赛中, 我们只能不停逃窜; `																						+ `<<CG:Textures/MissionCG/2-1b>>在这场时空竞赛中，我们只能不停逃窜。`,
+'2-1-13-2'      : `<<CG:Textures/MissionCG/2-1b>>即便如此, 我还是会尽我所能去做一切我应该做的; `																			+ `<<CG:Textures/MissionCG/2-1b>>即便如此，我还是会尽我所能去做一切我应该做的。`,
+'2-1-13-3'      : `<<CG:Textures/MissionCG/2-1b>>这是我诞生在这个世界的职责; `																								+ `<<CG:Textures/MissionCG/2-1b>>这是我诞生在这个世界的职责。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading02">02. 古代遗迹</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-2a.jpg" /><span>距离上次的撤离行动, 已经过去了整整 200 年; 而在这段时间里, 又有数个星系相继沦陷进低维空间. 我们的文明岌岌可危; 由于圆满地完成了上次的工作, 我被派到了海角六, 执行一项绝密任务;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>if(场景开端){ 主脑: 好久不见, 这次任务又要辛苦你了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 这是我的荣幸;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>主脑: 这位是海角六的研究员, 他将向你解释我们的行动;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 科学官您好, 那我就直入正题了; 如你所见, 目前整个文明都面临着被低维化的危机; 我们现在能做的, 除了袖手旁观, 就只有像之前圆规四一样不停地建造博物馆; 那终究不是治本之策. 因此, 我们建立了这个维度实验室, 希望找到逆转低维的方法; 希望您能为我们的研究提供科研资源的支持(任务: 完成 7 次理论突破)(可选任务: 凝聚力不要低于 50);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(凝聚力 < 50){ 科学官秘书: 看来, 对于我们这样的物质主义文明来说, 要让文明始终维持较高的凝聚力真的很难… };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>if(年份 >= 50Y){ 研究员: 尽快找到逆转低维的方法, 是我们文明的唯一生路; 我们在这片星域进行研究, 有特殊原因的; 这里曾属于一个已灭亡的古代科技文明; 它们曾在维度研究上相当有建树. 努力搜索这片星域, 也许有意想不到的收获 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>if(首次殖民到有古代图书馆的星系){ 研究员: 这应该就是古代文明的遗迹了, 希望能找到有用的东西; 我们得快点. 这片星域还有其他文明, 如果遗迹被他们破坏掉, 就棘手了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>if(再次殖民到有古代图书馆的星系){ 研究员: 又是个遗迹, 让我们来探查一番… 噢, 真是了不起的知识! 原来是这样 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>if(与太阳系逃难者文明正式建交){ 研究员: 你们是谁 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>逃难者: 我们, 是来自太阳系的逃难者;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 那是什么地方?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>逃难者: 那是拥有八颗行星的恒星系, 已被低维空间吞没;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 实际上, 我们正在这片星域寻找一些古代遗迹, 你们是否有线索?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>逃难者: 古代遗迹? 我想我们应该是能够提供一些帮助的. 不过如果你们想要线索, 就得拿有价值的东西换;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/F_06.jpg" /><span>if(签订贸易协定){ 逃难者: 我们在这偶然见过一个庞大的古代遗迹群, 不知是不是你们要找的, 但也许值得调查一下 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>if(完成了七次理论突破){ 研究员: 科学官, 我们已经得出研究结果了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 所以怎么样了?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 很遗憾… 尝试了各种方法, 都无法逆转维度衰变; 如果哪天知道如何逆转低维化, 估计离能够实现逆熵也不远了;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 谢谢你们的辛勤工作. 现在看起来, 我们离答案仍然十分的遥远;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 不过, 我们还有一个好消息的;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 是什么好消息?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 我们研读古代遗迹的内容时, 在其中找到了关于知识看管者的故事; 一些同事提出, 正是知识看管者建造了遗迹;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 那不是神话吗?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 不尽然. 现在看来, 知识看管者并非是我们的先祖虚构的, 他们至少曾真实存在过. 只是他们的先进超出了我们的想象, 且考古人员之前极少发现其存在的证据; 不过我认为, 这片星区的遗迹, 应该不是知识看管者的直系文明后代建造的; 应该是某个古代文明继承了他们的一些知识, 并建造了这些遗迹来记录;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 发现有何利益?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 知识看管者曾研究出逆转低维的方法, 能将低维化的空间重新拉回高维. 遗迹的建造者知道这个方法储存在哪儿;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: ! ! ! ! ! ! !</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_05.jpg" /><span>研究员: 建造遗迹的文明, 记载了宇宙中的四个坐标, 我们将其称之为关键坐标, 两两连线确认了一点. 那里有一个图书馆, 记载了他们对升维理论的研究; 基于遗迹的发掘, 目前, 我们已经知道了其中两个关键坐标数据; 而另外两个关键坐标的数据, 如果遗迹记载正确的话, 应该被分别藏在了水墨星区和紫罗兰星区;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 知道了, 我会向主脑报告此事;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>主脑: 报告已收到. 请你即刻前往水墨星区, 寻找剩下的关键坐标的信息;</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-2b.jpg" /><span>知识看管者, 是这个宇宙最初存在的十个神级文明之一. 过去, 我们仅从太古时代文明考古发掘的零星发现中, 窥探了这个文明神秘的一角而已; 我们只知道, 那个文明是一个研究团体, 它是由不同的文明出逃的学者们组成. 他们为了获知和研究纯粹的知识, 背离了各自的家乡, 聚集到一起; 他们的科学成就曾达到了令人难以理解的高度, 研究成果几乎已是现代科学的天花板; 我们的研究人员找到了他们知识的尾迹, 这或许是我们对抗低维化的救命稻草; 这是命运, 还是偶然? 我们对知识看管者所留下的研究成果, 产生了巨大的好奇… 前路迢迢, 充满未知. 但默默等待毁灭命运的自己, 和我躬身奉献的静默着的文明, 又一次, 燃起了探寻真理的激情;</span></p>
+
+<!-- 02. 古代遗迹群
+
+'2-2-1-0'       : `<<CG:Textures/MissionCG/2-2a>>距离上次圆规四的撤离行动已经过去了整整200年; `																										+ `<<CG:Textures/MissionCG/2-2a>>距离上次圆规四的撤离行动已经过去了整整200年。`,
+'2-2-1-1'       : `<<CG:Textures/MissionCG/2-2a>>在这段时间里, 又有数个星系相继沦陷进低维空间. 我们的文明岌岌可危; `																				+ `<<CG:Textures/MissionCG/2-2a>>在这段时间里，又有数个星系相继沦陷进低维空间。我们的文明岌岌可危。`,
+'2-2-1-2'       : `<<CG:Textures/MissionCG/2-2a>>由于圆满完成了上次的工作, 我被派到了海角六, 执行一项绝密任务; `																					+ `<<CG:Textures/MissionCG/2-2a>>由于圆满完成了上次的工作，我被派到了海角六，执行一项绝密任务。`,
+
+————
+
+'2-2-2-0'       : `<<HeadImage:A_20>>if(场景开端){ 主脑: 科学官, 好久不见, 这次又要辛苦你了; `																										+ `<<HeadImage:A_20>>科学官，好久不见，这次又要辛苦你了。`,
+
+'2-2-2-1'       : `<<HeadImage:A_10>>科学官: 这是我的荣幸; `																																		+ `<<HeadImage:A_10>>这是我的荣幸。`,
+
+'2-2-2-2'       : `<<HeadImage:A_20>>主脑: 这是海角六的研究员, 他将向你解释我们的行动; `																											+ `<<HeadImage:A_20>>这是海角六的研究员，他将向你解释我们的行动。`,
+
+'2-2-2-3'       : `<<HeadImage:M_05>>研究员: 科学官您好, 那我就直入正题了; `																														+ `<<HeadImage:M_05>>科学官您好，那我就直入正题了。`,
+'2-2-2-4'       : `<<HeadImage:M_05>>如你所见, 目前整个文明都面临着被低维化的危机; `																												+ `<<HeadImage:M_05>>如你所见，目前整个文明都面临着被低维化的危机。`,
+'2-2-2-5'       : `<<HeadImage:M_05>>我们现在能做的, 除了袖手旁观, 就只有像之前圆规四一样不停地建造博物馆; `																						+ `<<HeadImage:M_05>>我们现在能做的，除了袖手旁观，就只有像之前圆规四一样不停地建造博物馆。`,
+'2-2-2-6'       : `<<HeadImage:M_05>>那终究不是治本之策. 因此, 我们建立了这个维度实验室, 对维度理论进行研究, 希望找到逆转低维的方法; `																+ `<<HeadImage:M_05>>那终究不是治本之策。因此，我们建立了这个维度实验室，对维度理论进行研究，希望找到逆转低维的方法。`,
+'2-2-2-7'       : `<<HeadImage:M_05>>希望科学官能为我们的研究提供科研资源的支持(任务: 完成7次理论突破)(可选任务: 凝聚力不要低于 50);`																+ `<<HeadImage:M_05>>希望科学官能为我们的研究提供科研资源的支持。`,
+
+'2-2-8-0'       : `<<HeadImage:A_11>>if(凝聚力小于50){ 科学官秘书: 看来对于我们这样的物质文明来说, 要维持较高的凝聚力真的很难 };`																	+ `<<HeadImage:A_11>>看来对于我们这样的物质文明来说，要维持较高的凝聚力真的很难。`,
+
+————
+
+'2-2-3-0'       : `<<HeadImage:M_05>>if(年份 >= 50Y){ 研究员: 尽快找到逆转低维的方法, 是我们文明的唯一生路 }`																						+ `<<HeadImage:M_05>>尽快找到逆转低维的方法，是我们文明的唯一生路。`,
+'2-2-3-1'       : `<<HeadImage:M_05>>我们选择在这片星域进行研究, 有特殊的原因; `																													+ `<<HeadImage:M_05>>我们选择在这片星域进行研究，有特殊的原因。`,
+'2-2-3-2'       : `<<HeadImage:M_05>>这片星域曾属于一个已经灭亡的古代科技文明; `																													+ `<<HeadImage:M_05>>这片星域曾属于一个已经灭亡的古代科技文明。`,
+'2-2-3-3'       : `<<HeadImage:M_05>>资料显示, 它们曾经在维度研究上相当有建树. 努力搜索这片星域, 也许有意想不到的收获; `																			+ `<<HeadImage:M_05>>资料显示，它们曾经在维度研究上相当有建树。努力搜索这片星域，也许有意想不到的收获。`,
+
+'2-2-4-0'       : `<<HeadImage:M_05>>if(首次殖民到有古代图书馆的星系){ 研究员: 这应该就是古代文明的遗迹了, 希望能找到有用的东西; };`																+ `<<HeadImage:M_05>>这应该就是古代文明的遗迹了，希望能找到有用的东西。`,
+'2-2-4-1'       : `<<HeadImage:M_05>>我们得快一点. 这片星域似乎还有其他文明, 如果遗迹被他们破坏掉, 那就棘手了; `																					+ `<<HeadImage:M_05>>我们得快一点。这片星域似乎还有其他文明，如果遗迹被他们破坏掉，那就棘手了。`,
+
+'2-2-5-0'       : `<<HeadImage:M_05>>if(再次殖民到有古代图书馆的星系){ 研究员: 又是一个遗迹, 让我们来探查一番……噢, 这些真是了不起的知识! 原来是这样…… };`											+ `<<HeadImage:M_05>>又是一个遗迹，让我们来探查一番……噢，这些真是了不起的知识！原来是这样……`,
+
+————
+
+'2-2-6-0'       : `<<HeadImage:M_05>>if(与太阳系逃难者文明正式建交){ 研究员: 你们是谁? };`																											+ `<<HeadImage:M_05>>你们是谁？`,
+
+'2-2-6-1'       : `<<HeadImage:F_06>>逃难者: 我们是来自太阳系的逃难者; `																															+ `<<HeadImage:F_06>>我们是来自太阳系的逃难者。`,
+
+'2-2-6-2'       : `<<HeadImage:M_05>>研究员: 那是什么地方? `																																		+ `<<HeadImage:M_05>>那是什么地方？`,
+
+'2-2-6-3'       : `<<HeadImage:F_06>>逃难者: 那是一个拥有八颗行星的恒星系统, 已经被低维空间吞没了; `																								+ `<<HeadImage:F_06>>那是一个拥有八颗行星的恒星系统，已经被低维空间吞没了。`,
+
+'2-2-6-4'       : `<<HeadImage:M_05>>研究员: 我们正在这块星域寻找一些古代遗迹, 你们是否有线索? `																									+ `<<HeadImage:M_05>>我们正在这块星域寻找一些古代遗迹，你们是否有线索？`,
+
+'2-2-6-5'       : `<<HeadImage:F_06>>逃难者: 古代遗迹? 我们应该能提供帮助. 想要线索就拿有价值的东西来换吧(事件: 签订贸易协定)`																		+ `<<HeadImage:F_06>>古代遗迹？我们应该能提供帮助。想要线索就拿有价值的东西来换吧。`,
+
+'2-2-7-0'       : `<<HeadImage:F_06>>if(成功签订贸易协定){ 逃难者: 我们的探险者在这里偶然见过一个非常庞大的古代遗迹群, 不知道是不是你们要找的, 但也许值得调查一下 };`								+ `<<HeadImage:F_06>>我们的探险者在这里偶然见过一个非常庞大的古代遗迹群，不知道是不是你们要找的，但也许值得调查一下。`,
+
+————
+
+'2-2-9-0'       : `<<HeadImage:M_05>>if(完成 7 次理论突破){ 研究员: 科学官, 我们已经得出研究结果 };`																								+ `<<HeadImage:M_05>>科学官，我们已经得出研究结果。`,
+
+'2-2-9-1'       : `<<HeadImage:A_10>>科学官: 怎么样? `																																				+ `<<HeadImage:A_10>>怎么样？`,
+
+'2-2-9-2'       : `<<HeadImage:M_05>>研究员: 很遗憾……我们尝试了各种方法, 然而无论如何都无法逆转维度的衰变; `																						+ `<<HeadImage:M_05>>很遗憾……我们尝试了各种方法，然而无论如何都无法逆转维度的衰变。`,
+'2-2-9-3'       : `<<HeadImage:M_05>>如果哪天我们知道如何逆转低维化, 估计离能够实现逆熵也不远了; `																									+ `<<HeadImage:M_05>>如果哪天我们知道如何逆转低维化，估计离能够实现逆熵也不远了。`,
+
+'2-2-9-4'       : `<<HeadImage:A_10>>科学官: 谢谢你们的辛勤工作. 看起来, 我们离答案仍然十分遥远; `																									+ `<<HeadImage:A_10>>谢谢你们的辛勤工作。看起来，我们离答案仍然十分遥远。`,
+
+'2-2-9-5'       : `<<HeadImage:M_05>>研究员: 不过, 我们还有一个好消息; `																															+ `<<HeadImage:M_05>>不过，我们还有一个好消息。`,
+
+'2-2-9-6'       : `<<HeadImage:A_10>>科学官: 是什么? `																																				+ `<<HeadImage:A_10>>是什么？`,
+
+'2-2-9-7'       : `<<HeadImage:M_05>>研究员: 我们研读古代遗迹中遗留的一些研究成果的片段时, 竟然在其中找到了一些有关知识看管者的故事; `																+ `<<HeadImage:M_05>>我们研读古代遗迹中遗留的一些研究成果的片段时，竟然在其中找到了一些有关知识看管者的故事。`,
+'2-2-9-8'       : `<<HeadImage:M_05>>一些同事提出, 正是知识看管者建造了这些遗迹; `																													+ `<<HeadImage:M_05>>一些同事提出，正是知识看管者建造了这些遗迹。`,
+
+'2-2-9-9'       : `<<HeadImage:A_10>>科学官: 知识看管者? 那不是神话传说吗? `																														+ `<<HeadImage:A_10>>知识看管者？那不是神话传说吗？`,
+
+'2-2-9-10'      : `<<HeadImage:M_05>>研究员: 不尽然. 现在看来, 知识看管者并非是我们的先祖虚构的, 他们至少曾真实存在过. 只是他们的先进超出了我们的想象, 且考古人员之前极少发现其存在的证据; `		+ `<<HeadImage:M_05>>不尽然。现在看来，知识看管者并非是我们的先祖虚构的，他们至少曾真实存在过。只是他们的先进超出了我们的想象，且考古人员之前极少发现其存在的证据。`,
+'2-2-9-11'      : `<<HeadImage:M_05>>不过, 我认为, 这个遗迹应该不是知识看管者的直系文明后代建造的; `																								+ `<<HeadImage:M_05>>不过，我认为，这个遗迹应该不是知识看管者的直系文明后代建造的。`,
+'2-2-9-12'      : `<<HeadImage:M_05>>应该是某个古代文明继承了他们的一些知识, 并建造了这些遗迹来记录; `																								+ `<<HeadImage:M_05>>应该是某个古代文明继承了他们的一些知识，并建造了这些遗迹来记录。`,
+
+'2-2-9-13'      : `<<HeadImage:A_10>>科学官: 那么, 这些发现于我们有何利益? `																														+ `<<HeadImage:A_10>>那么，这些发现于我们有何利益？`,
+
+'2-2-9-14'      : `<<HeadImage:M_05>>研究员: 重点在于, 知识看管者曾研究出逆转低维的方法, 能将低维化的空间重新拉回高维. 遗迹的建造者知道这个方法储存在哪儿; `										+ `<<HeadImage:M_05>>重点在于，知识看管者曾研究出逆转低维的方法，能将低维化的空间重新拉回高维。遗迹的建造者知道这个方法储存在哪儿。`,
+
+'2-2-9-15'      : `<<HeadImage:A_10>>科学官: ! ! ! `																																				+ `<<HeadImage:A_10>>！！！`,
+
+'2-2-9-16'      : `<<HeadImage:M_05>>研究员: 建造遗迹的文明记载了宇宙中的四个坐标, 称为关键坐标, 两两连线确认了一点. 那里有一个图书馆, 记载了他们对升维理论的研究; `								+ `<<HeadImage:M_05>>建造遗迹的文明记载了宇宙中的四个坐标，称为关键坐标，两两连线确认了一点。那里有一个图书馆，记载了他们对升维理论的研究。`,
+'2-2-9-17'      : `<<HeadImage:M_05>>基于遗迹的发掘, 目前我们已经知道了其中两个关键坐标数据; `																										+ `<<HeadImage:M_05>>基于遗迹的发掘，目前我们已经知道了其中两个关键坐标数据。`,
+'2-2-9-18'      : `<<HeadImage:M_05>>另外两个关键坐标数据, 如果遗迹记载正确的话, 应该被分别藏在了水墨星区和紫罗兰星区; `																			+ `<<HeadImage:M_05>>另外两个关键坐标数据，如果遗迹记载正确的话，应该被分别藏在了水墨星区和紫罗兰星区。`,
+
+'2-2-9-19'      : `<<HeadImage:A_10>>知道了, 我会向主脑报告此事; `																																	+ `<<HeadImage:A_10>>知道了，我会向主脑报告此事。`,
+
+'2-2-9-20'      : `<<HeadImage:A_20>>主脑: 报告已收到. 即刻前往水墨星区, 寻找剩下的关键坐标的信息; `																								+ `<<HeadImage:A_20>>报告已收到。即刻前往水墨星区，寻找剩下的关键坐标的信息。`,
+
+————
+
+'2-2-10-0'      : `<<CG:Textures/MissionCG/2-2b>>知识看管者, 这个宇宙最初存在的十个神级文明之一. 我们仅仅从对太古时代文明考古发掘的零星发现中, 窥探了这个文明神秘的一角而已; `						+ `<<CG:Textures/MissionCG/2-2b>>知识看管者，这个宇宙最初存在的十个神级文明之一。我们仅仅从对太古时代文明考古发掘的零星发现中，窥探了这个文明神秘的一角而已。`,
+'2-2-10-1'      : `<<CG:Textures/MissionCG/2-2b>>我们只知道, 那个文明是一个研究团体, 由从不同的文明出逃的学者组成. 他们为获知和研究纯粹的知识背离了各自的家乡, 聚集到一起; `						+ `<<CG:Textures/MissionCG/2-2b>>我们只知道，那个文明是一个研究团体，由从不同的文明出逃的学者组成。他们为获知和研究纯粹的知识背离了各自的家乡，聚集到一起。`,
+'2-2-10-2'      : `<<CG:Textures/MissionCG/2-2b>>他们的科学曾经达到了令人难以理解的高度, 研究成果几乎已是现代科学的天花板; `																		+ `<<CG:Textures/MissionCG/2-2b>>他们的科学曾经达到了令人难以理解的高度，研究成果几乎已是现代科学的天花板。`,
+'2-2-10-3'      : `<<CG:Textures/MissionCG/2-2b>>我们的研究人员找到了他们知识的尾迹, 这或许是我们对抗低维化的救命稻草; `																			+ `<<CG:Textures/MissionCG/2-2b>>我们的研究人员找到了他们知识的尾迹，这或许是我们对抗低维化的救命稻草。`,
+'2-2-10-4'      : `<<CG:Textures/MissionCG/2-2b>>这是命运, 还是偶然? 我们对知识管理者所留下的研究成果, 产生了巨大的好奇……`																			+ `<<CG:Textures/MissionCG/2-2b>>这是命运，还是偶然？我们对知识管理者所留下的研究成果，产生了巨大的好奇……`,
+'2-2-10-5'      : `<<CG:Textures/MissionCG/2-2b>>前路迢迢, 充满未知. 但默默等待毁灭命运的自己, 和我躬身奉献的静默着的文明, 又一次燃起了探寻真理的激情; `											+ `<<CG:Textures/MissionCG/2-2b>>前路迢迢，充满未知。但默默等待毁灭命运的自己，和我躬身奉献的静默着的文明，又一次燃起了探寻真理的激情。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading03">03. 低维实验</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-3a.jpg" /><span>自从装配了量子脑之后, 我已经很久都没有做梦了; 不过, 在报告了知识看管者遗留下的维度逆转研究成果后, 在那次休眠的周期中, 我久违地做了梦; 梦到我们找到了知识看管者留下的数据, 窥见了维度的真理, 并且重新让这个不断跌入低维的宇宙, 重新回到了高维度; 水墨星区是一个古老的星区. 我们根据资料了解到, 这里过去似乎曾是一个未知文明的低维试验场; 但在某次低维实验之中, 发生了严重的事故, 继而导致整个星区变得千疮百孔… 根据之前在海角六获得的遗迹数据, 关键坐标中的一个就被藏在这个星区;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>if(场景开端){ 主脑: 科学官, 时间已经不多了, 我们需要尽快得知剩余坐标; 该星区遍布低维空间, 很少有人靠近. 因此, 我们指派了整个文明中最富有经验的航行者来协助你 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>探险队长: 科学官你好, 我会协助你完成任务; 如你所见, 整个星区遍布低维空间, 障碍重重; 根据主脑传来的数据, 我们的目标应该就在这里了; 这个星区里几乎就没有天然的星系, 但是有大量的人造星系. 我们也许能从中, 找到一些资源补给(任务: 到达目标星系)(可选任务: 在 1500 年之内完成);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>if(年份 >= 50Y){ 科学官: 你们是谁 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>低维警戒者: 我们是低维警戒者; 我们祖先一次失误导致这里遍布低维区域, 我们留守在此, 提醒不知情者绕过这片星区;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 你们坚定不移的奉献精神真是令人钦佩. 我们来此地为寻找一个重要的星系, 你们愿意帮助我们吗? </span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>低维警戒者: 如果你能提供对等帮助, 我们也许会考虑(可选任务: 获得低维警戒者的信任);</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>if(拒绝帮助低维警戒者){ 低维警戒者: 对你们来说, 这似乎太难了. 那祝愿你们自己能想办法抵达目标 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_02.jpg" /><span>if(给予低维警戒者帮助){ 低维警戒者: 感谢你们的贡献. 我们将一个人造星系赠与你们, 那里距离你们的目标会更近 };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-3b.jpg" /><span>我们终于到达了目标星系了, 这是这一带唯一的恒星; 在这颗恒星的不远处, 赫然有一个小型空间站, 在围绕着它旋转; 空间站几乎是一个完美的球形, 表面光滑得无可挑剔. 我们只能看到一片被扭曲的天空, 映照着下方恒星的等离子火海; 我们顺利地找到了入口. 也许是建造者没有料到会有人会造访这里, 因此, 整个遗迹都没有设防; 而在空间站的最深处, 我们得到了一份数据. 毫无疑问的, 这就是我们一直在寻找的关键坐标; 现在, 我们距离结果, 就只差一个关键坐标, 很快就可以找到知识看管者留下的升维方法了; 
+</span></p>
+
+<!-- 03. 低维试验场
+
+'2-3-1-0'       : `<<CG:Textures/MissionCG/2-3a>>自从装配了量子脑后, 我已经很久没有做梦了; `																									+ `<<CG:Textures/MissionCG/2-3a>>自从装配了量子脑后，我已经很久没有做梦了。`,
+'2-3-1-1'       : `<<CG:Textures/MissionCG/2-3a>>不过, 在报告了知识看管者遗留下的维度逆转研究成果后的那次休眠周期中, 我久违地做了梦; `															+ `<<CG:Textures/MissionCG/2-3a>>不过，在报告了知识看管者遗留下的维度逆转研究成果后的那次休眠周期中，我久违地做了梦。`,
+'2-3-1-2'       : `<<CG:Textures/MissionCG/2-3a>>梦到我们找到了知识看管者留下的数据, 窥见了维度的真理, 重新让这个不断跌入低维的宇宙回到高维度; `												+ `<<CG:Textures/MissionCG/2-3a>>梦到我们找到了知识看管者留下的数据，窥见了维度的真理，重新让这个不断跌入低维的宇宙回到高维度。`,
+'2-3-1-3'       : `<<CG:Textures/MissionCG/2-3a>> ……`																																			+ `<<CG:Textures/MissionCG/2-3a>> ……`,
+'2-3-1-4'       : `<<CG:Textures/MissionCG/2-3a>>水墨星区是一个古老的星区. 我们根据资料了解到, 这里似乎曾是一个未知文明的低维试验场; `															+ `<<CG:Textures/MissionCG/2-3a>>水墨星区是一个古老的星区。我们根据资料了解到，这里似乎曾是一个未知文明的低维试验场。`,
+'2-3-1-5'       : `<<CG:Textures/MissionCG/2-3a>>在某次低维实验中, 发生了严重的事故, 整个星区变得千疮百孔……`																					+ `<<CG:Textures/MissionCG/2-3a>>在某次低维实验中，发生了严重的事故，整个星区变得千疮百孔……`,
+'2-3-1-6'       : `<<CG:Textures/MissionCG/2-3a>>根据在海角六获得的遗迹数据, 关键坐标中的一个就被藏在这个星区; `																				+ `<<CG:Textures/MissionCG/2-3a>>根据在海角六获得的遗迹数据，关键坐标中的一个就被藏在这个星区。`,
+
+————
+
+'2-3-1-7'       : `<<HeadImage:A_20>>if(场景开端){ 主脑: 科学官, 时间已经不多了, 我们需要尽快拿到剩余的关键坐标.  };`																			+ `<<HeadImage:A_20>>科学官，时间已经不多了，我们需要尽快拿到剩余的关键坐标。`,
+'2-3-1-8'       : `<<HeadImage:A_20>>水墨星区遍布着低维空间, 很少有航海者敢靠近. 因此, 我们指派了整个文明最富有经验的航行者来协助你; `															+ `<<HeadImage:A_20>>水墨星区遍布着低维空间，很少有航海者敢靠近。因此，我们指派了整个文明最富有经验的航行者来协助你。`,
+
+'2-3-1-9'       : `<<HeadImage:M_11>>探险队长: 科学官你好, 我会协助你完成这次任务; `																											+ `<<HeadImage:M_11>>科学官你好，我会协助你完成这次任务。`,
+'2-3-2-0'       : `<<HeadImage:M_11>>如你所见, 整个星区遍布低维空间, 行进起来障碍重重; `																										+ `<<HeadImage:M_11>>如你所见，整个星区遍布低维空间，行进起来障碍重重。`,
+'2-3-3-0'       : `<<HeadImage:M_11>>根据主脑传来的数据, 我们的目标应该就在这里了; `																											+ `<<HeadImage:M_11>>根据主脑传来的数据，我们的目标应该就在这里了。`,
+'2-3-3-1'       : `<<HeadImage:M_11>>需要留意的是, 这个星区几乎没有天然星系, 但是有大量的人造星系. 我们也许能从中找到一些资源补给(任务: 到达目标遗迹星系)(可选任务: 在 1500 年内完成任务);`		+ `<<HeadImage:M_11>>需要留意的是，这个星区几乎没有天然星系，但是有大量的人造星系。我们也许能从中找到一些资源补给。`,
+
+————
+
+'2-3-4-0'       : `<<HeadImage:A_10>>if(年份 >= 50Y){ 科学官: 你们是谁?  };`																													+ `<<HeadImage:A_10>>你们是谁？`,
+
+'2-3-4-1'       : `<<HeadImage:K_02>>低维警戒者: 我们是低维警戒者; `																															+ `<<HeadImage:K_02>>我们是低维警戒者。`,
+'2-3-4-2'       : `<<HeadImage:K_02>>我们祖先的一次失误导致这里遍布低维区域, 我们留守在这里, 提醒不知情者绕过这片星区; `																		+ `<<HeadImage:K_02>>我们祖先的一次失误导致这里遍布低维区域，我们留守在这里，提醒不知情者绕过这片星区。`,
+
+'2-3-4-3'       : `<<HeadImage:A_10>>科学官: 你坚定不移的奉献精神令人钦佩. 我们来此地为寻找一个重要的星系, 你们愿意帮助我们吗? `																+ `<<HeadImage:A_10>>你坚定不移的奉献精神令人钦佩。我们来此地为寻找一个重要的星系，你们愿意帮助我们吗？`,
+
+'2-3-4-4'       : `<<HeadImage:K_02>>低维警戒者: 如果你能提供对等的帮助, 我们也许会考虑(可选任务: 获得低维警戒者的信任);`																		+ `<<HeadImage:K_02>>如果你能提供对等的帮助，我们也许会考虑。`,
+
+'2-3-5-0'       : `<<HeadImage:K_02>>if(拒绝帮助低维警戒者){ 对你们来说, 这似乎太难了. 那么祝愿你们自己能想办法抵达目标 };`																		+ `<<HeadImage:K_02>>对你们来说，这似乎太难了。那么祝愿你们自己能想办法抵达目标。`,
+'2-3-6-0'       : `<<HeadImage:K_02>>if(给予低维警戒者帮助){ 感谢你们的贡献. 我们将一个星系赠与你们, 那里离你们的目标更近 };`																	+ `<<HeadImage:K_02>>感谢你们的贡献。我们将一个星系赠与你们，那里离你们的目标更近。`,
+
+————
+
+'2-3-8-0'       : `<<CG:Textures/MissionCG/2-3b>>我们终于到达了目标, 这是这一带唯一的恒星; `																									+ `<<CG:Textures/MissionCG/2-3b>>我们终于到达了目标，这是这一带唯一的恒星。`,
+'2-3-8-1'       : `<<CG:Textures/MissionCG/2-3b>>在这颗恒星的不远处, 赫然有一个小型空间站在围绕着它旋转; `																						+ `<<CG:Textures/MissionCG/2-3b>>在这颗恒星的不远处，赫然有一个小型空间站在围绕着它旋转。`,
+'2-3-8-2'       : `<<CG:Textures/MissionCG/2-3b>>空间站几乎是一个完美的球形, 表面光滑得无可挑剔. 我们只能看到一片被扭曲的天空, 映照着下方恒星的等离子火海; `									+ `<<CG:Textures/MissionCG/2-3b>>空间站几乎是一个完美的球形，表面光滑得无可挑剔。我们只能看到一片被扭曲的天空，映照着下方恒星的等离子火海。`,
+'2-3-8-3'       : `<<CG:Textures/MissionCG/2-3b>>我们顺利地找到了入口. 也许是建造者没有料到有人会造访这里, 整个遗迹都没有设防; `																+ `<<CG:Textures/MissionCG/2-3b>>我们顺利地找到了入口。也许是建造者没有料到有人会造访这里，整个遗迹都没有设防。`,
+'2-3-8-4'       : `<<CG:Textures/MissionCG/2-3b>>在空间站的最深处, 我们得到了一份数据. 毫无疑问这就是我们要寻找的关键坐标; `																	+ `<<CG:Textures/MissionCG/2-3b>>在空间站的最深处，我们得到了一份数据。毫无疑问这就是我们要寻找的关键坐标。`,
+'2-3-8-5'       : `<<CG:Textures/MissionCG/2-3b>>现在我们只差一个关键坐标, 就可以找到知识看管者留下的升维方法了; `																				+ `<<CG:Textures/MissionCG/2-3b>>现在我们只差一个关键坐标，就可以找到知识看管者留下的升维方法了。`,
+
+————
+
+'2-3-7-0'       : `<<HeadImage:M_11>>最新版本不会出现低维空间, 所以这句也不会出现了: if(){ 探险队长: 又有新的低维空间出现了! 我们得快一点了 };`													+ `<<HeadImage:M_11>>又有新的低维空间出现了！我们得快一点了。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading04">04. 神秘三角</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-4a.jpg" /><span>我总是不由设想, 如果我们阻止了低维化的扩张, 宇宙中的文明间是否能少些战争? 如果生存空间不再如此稀缺, 文明间是否能放下猎枪, 相安无事了? 这也许只是不切实际的幻想; 低维空间的蔓延从未止步; 尽管我们无法确切知晓其他文明的状况, 但根据截获的宇宙流言, 我们有理由相信, 曾经不可一世的许多文明都已然灭亡; 紫罗兰, 传说中的高危地带. 大量的舰船航行到这里便失去了踪迹, 最勇敢的探险家也望而却步; 如今, 我们来到这里, 寻找最后一个关键的坐标数据; 这项任务能否完成将决定我们文明的存亡;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>if(场景开端){ 探险队长: 科学官, 现在我们已经到了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 请你说明一下这片星域的状况;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>探险队长: 这里比水墨星域更危险, 因为危险是看不见的;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 危险, 看不见?</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>探险队长: 是的, 水墨星域的低维空间, 至少能观测到. 但是这里; 现在我尚无法确切描述这些怪象, 我们会进一步调查的(任务: 到达目标星系)(可选任务: 在 1500 年之内完成);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>if(首次遭遇屏蔽空间){ 科学官: 怎么回事, 探险队为什么失去踪迹了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>探险队长: 技术人员发现了一些异常现象; 这片星区存在着大量的球状屏蔽空间; 无论是什么信号, 哪怕是引力波, 也无法进入; 我们的探险队应该是误入了这样一个信号阻断区域;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 我们面临的环境, 竟如此严苛;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_20.jpg" /><span>主脑: 这片星区还有很多原始文明, 屏蔽空间让他们无法得知外部信息; 在这片封闭区域内发展的文明会是什么状态, 是个非常有价值的课题; 如果能够找到这些文明, 对我们的社会学研究应该会很有助益(可选任务: 交流至少八个原始星系) };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>if(第一次殖民存在低维化装置的星系){ 探险队长: 天哪, 这是什么; 谁造了这么巨大的低维化装置; 快撤离! 快撤离 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>if(第二次殖民存在低维化装置的星系){ 探险队长: 这, 怎么可能; 这个星系上也有个低维化装置的建筑; 我们走运了, 它没有被激活… 但保险起见, 我们最好还是现在就拆掉它 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>if(第三次殖民存在低维化装置的星系){ 这个星系也有一个低维化装置; 它好像出了些故障, 真是万幸. 实在太惊险了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/M_11.jpg" /><span>if(殖民目标星系){ 探险队长: 历尽万难我们终于到达 };</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-4b.jpg" /><span>我们终于到达这一带唯一的黑洞; 在黑洞的视界边缘, 我们发现了一座静静悬浮的空间站, 仿佛已经存在了数万年; 整个空间站是纯黑色构造, 黑得异常深邃, 以至于如果不是黑洞吸积盘的微弱发光, 我们甚至很难在光学波段下观察到它; 空间站是个立方体, 长宽高分别为 1:2:4; 古老而深不可测的神级文明, 就这样默默地凝视着后来探访者的拙劣与幼稚; 我们在空间站最深处得到了一个数据, 那是我们要寻找的关键坐标; 现在, 所有的关键坐标都已经集齐了, 我们终于能够定位知识看管者存储升维研究方法的精确位置;</span></p>
+
+<!-- 04. 神秘三角区
+
+'2-4-1-0'       : `<<CG:Textures/MissionCG/2-4a>>我总是不由设想, 如果我们阻止了低维化的扩张, 宇宙中的文明间是否能少些战争? `											+ `<<CG:Textures/MissionCG/2-4a>>我总是不由设想，如果我们阻止了低维化的扩张，宇宙中的文明间是否能少些战争？`,
+'2-4-1-1'       : `<<CG:Textures/MissionCG/2-4a>>如果生存空间不再如此稀缺, 文明间是否能放下猎枪, 相安无事了? `															+ `<<CG:Textures/MissionCG/2-4a>>如果生存空间不再如此稀缺，文明间是否能放下猎枪，相安无事了？`,
+'2-4-1-2'       : `<<CG:Textures/MissionCG/2-4a>>……这也许只是不切实际的幻想; `																							+ `<<CG:Textures/MissionCG/2-4a>>……这也许只是不切实际的幻想。`,
+'2-4-1-3'       : `<<CG:Textures/MissionCG/2-4a>>低维空间的蔓延从未止步; `																								+ `<<CG:Textures/MissionCG/2-4a>>低维空间的蔓延从未止步。`,
+'2-4-1-4'       : `<<CG:Textures/MissionCG/2-4a>>尽管我们无法确切知晓其他文明的状况, 但根据截获的宇宙中的流言, 我们有理由相信, 曾经不可一世的许多文明都已然灭亡; `		+ `<<CG:Textures/MissionCG/2-4a>>尽管我们无法确切知晓其他文明的状况，但根据截获的宇宙中的流言，我们有理由相信，曾经不可一世的许多文明都已然灭亡。`,
+'2-4-1-5'       : `<<CG:Textures/MissionCG/2-4a>>紫罗兰, 传说中的高危地带. 大量的舰船航行到这里便失去了踪迹, 最勇敢的探险家也望而却步; `								+ `<<CG:Textures/MissionCG/2-4a>>紫罗兰，传说中的高危地带。大量的舰船航行到这里便失去了踪迹，最勇敢的探险家也望而却步。`,
+'2-4-1-6'       : `<<CG:Textures/MissionCG/2-4a>>如今, 我们来到这里, 寻找最后一个关键的坐标数据; `																		+ `<<CG:Textures/MissionCG/2-4a>>如今，我们来到这里，寻找最后一个关键的坐标数据。`,
+'2-4-1-7'       : `<<CG:Textures/MissionCG/2-4a>>这项任务能否完成将决定我们文明的存亡; `																				+ `<<CG:Textures/MissionCG/2-4a>>这项任务能否完成将决定我们文明的存亡。`,
+
+————
+
+'2-4-10-0'      : `<<HeadImage:M_11>>if(场景开端){ 探险队长: 科学官, 我们已经到了.  };`																					+ `<<HeadImage:M_11>>科学官，我们已经到了。`,
+
+'2-4-10-1'      : `<<HeadImage:A_10>>科学官: 队长, 请你说明一下这片星域的状况; `																						+ `<<HeadImage:A_10>>队长，请你说明一下这片星域的状况。`,
+
+'2-4-10-2'      : `<<HeadImage:M_11>>探险队长: 紫罗兰是一片比水墨更危险的星域, 毕竟这里的危险是看不见的; `																+ `<<HeadImage:M_11>>紫罗兰是一片比水墨更危险的星域，毕竟这里的危险是看不见的。`,
+
+'2-4-10-3'      : `<<HeadImage:A_10>>科学官: 看不见的? `																												+ `<<HeadImage:A_10>>看不见的？`,
+
+'2-4-10-4'      : `<<HeadImage:M_11>>探险队长: 没错, 水墨星域的低维空间, 至少我们能够观测到. 但是这里……`																+ `<<HeadImage:M_11>>没错，水墨星域的低维空间，至少我们能够观测到。但是这里……`,
+'2-4-10-5'      : `<<HeadImage:M_11>>现在我尚无法确切描述这些怪象, 我们会进一步调查的(任务: 到达目标遗迹星系)(可选任务: 在 1500 年内完成任务);`							+ `<<HeadImage:M_11>>现在我尚无法确切描述这些怪象，我们会进一步调查的。`,
+
+————
+
+'2-4-2-0'       : `<<HeadImage:A_10>>if(首次遭遇屏蔽空间){ 科学官: 怎么回事, 我们派出的探险队怎么失去踪迹了? };`														+ `<<HeadImage:A_10>>怎么回事？我们派出的探险队怎么失去踪迹了？`,
+
+'2-4-2-1'       : `<<HeadImage:M_11>>探险队长: 技术人员发现了一些异常现象……`																							+ `<<HeadImage:M_11>>技术人员发现了一些异常现象……`,
+'2-4-2-2'       : `<<HeadImage:M_11>>这片星区存在着大量的球状屏蔽空间; `																								+ `<<HeadImage:M_11>>这片星区存在着大量的球状屏蔽空间。`,
+'2-4-2-3'       : `<<HeadImage:M_11>>无论是什么信号, 哪怕是引力波, 也无法进入其中; `																					+ `<<HeadImage:M_11>>无论是什么信号，哪怕是引力波，也无法进入其中。`,
+'2-4-2-4'       : `<<HeadImage:M_11>>我们的探险队应该是误入了这样一个信号阻断的区域; `																					+ `<<HeadImage:M_11>>我们的探险队应该是误入了这样一个信号阻断的区域。`,
+
+'2-4-2-5'       : `<<HeadImage:A_10>>科学官: 我们面临的环境竟如此严苛……`																								+ `<<HeadImage:A_10>>我们面临的环境竟如此严苛……`,
+
+'2-4-3-0'       : `<<HeadImage:A_20>>if(遭遇屏蔽空间之后){ 主脑: 这一片星区还有很多原始文明, 这些屏蔽空间似乎让他们无法得知外部星系的信息.  };`							+ `<<HeadImage:A_20>>这一片星区还有很多原始文明，这些屏蔽空间似乎让他们无法得知外部星系的信息。`,
+'2-4-3-1'       : `<<HeadImage:A_20>>在这片封闭区域内发展的文明会是何状态, 会是一个非常有价值的课题; `																	+ `<<HeadImage:A_20>>在这片封闭区域内发展的文明会是何状态，会是一个非常有价值的课题。`,
+'2-4-3-2'       : `<<HeadImage:A_20>>如果能找到所有这些文明, 对我们的社会学研究应该会很有助益(可选任务: 交流至少 8 个原始星系)`											+ `<<HeadImage:A_20>>如果能找到所有这些文明，对我们的社会学研究应该会很有助益。`,
+
+————
+
+'2-4-4-0'       : `<<HeadImage:M_11>>if(第一次殖民到建有低维化装置建筑的星系){ 探险队长: 天哪, 这是什么? };`															+ `<<HeadImage:M_11>>天哪，这是什么？`,
+'2-4-5-0'       : `<<HeadImage:M_11>>是谁在这造了这么巨大的低维化装置? ! `																								+ `<<HeadImage:M_11>>是谁在这造了这么巨大的低维化装置？！`,
+'2-4-5-1'       : `<<HeadImage:M_11>>快撤离这! 快撤离! ! `																												+ `<<HeadImage:M_11>>快撤离这！快撤离！！`,
+
+'2-4-6-0'       : `<<HeadImage:M_11>>if(第二次殖民到建有低维化装置建筑的星系){ 探险队长: 这怎么可能… };`																+ `<<HeadImage:M_11>>这怎么可能……`,
+'2-4-7-0'       : `<<HeadImage:M_11>>这个星系也有一个低维化装置! `																										+ `<<HeadImage:M_11>>这个星系也有一个低维化装置！`,
+'2-4-7-1'       : `<<HeadImage:M_11>>我们走运了, 它没有被激活……保险起见, 我们最好现在就拆掉它; `																		+ `<<HeadImage:M_11>>我们走运了，它没有被激活……保险起见，我们最好现在就拆掉它。`,
+
+'2-4-7-0'       : `<<HeadImage:M_11>>if(第三次殖民到建有低维化装置建筑的星系){ 这个星系也有一个低维化装置! };`															+ `<<HeadImage:M_11>>这个星系也有一个低维化装置！`,
+'2-4-7-2'       : `<<HeadImage:M_11>>它好像出了些故障, 真是万幸. 实在太惊险了……`																						+ `<<HeadImage:M_11>>它好像出了些故障，真是万幸。实在太惊险了……`,
+
+'2-4-8-0'       : `<<HeadImage:M_11>>if(殖民目标星系){ 探险队长: 历尽万难, 我们终于到达了目标星系.  }`																	+ `<<HeadImage:M_11>>历尽万难，我们终于到达了目标星系。`,
+
+————
+
+'2-4-9-0'       : `<<CG:Textures/MissionCG/2-4b>>我们终于到达了目标——这一带唯一的黑洞; `																				+ `<<CG:Textures/MissionCG/2-4b>>我们终于到达了目标——这一带唯一的黑洞。`,
+'2-4-9-1'       : `<<CG:Textures/MissionCG/2-4b>>在黑洞的视界边缘, 我们发现了一座静静悬浮的空间站, 仿佛已经存在了数万年; `												+ `<<CG:Textures/MissionCG/2-4b>>在黑洞的视界边缘，我们发现了一座静静悬浮的空间站，仿佛已经存在了数万年。`,
+'2-4-9-2'       : `<<CG:Textures/MissionCG/2-4b>>整个空间站是纯黑色构造, 黑得异常深邃, 以至于如果不是黑洞吸积盘的微弱发光, 我们甚至很难在光学波段下观察到它; `			+ `<<CG:Textures/MissionCG/2-4b>>整个空间站是纯黑色构造，黑得异常深邃，以至于如果不是黑洞吸积盘的微弱发光，我们甚至很难在光学波段下观察到它。`,
+'2-4-9-3'       : `<<CG:Textures/MissionCG/2-4b>>空间站是一个立方体, 长宽高分别为1:2:4. 此后数百年, 无论我们用多么精确的仪器来测量, 得到的都是这个数据; `				+ `<<CG:Textures/MissionCG/2-4b>>空间站是一个立方体，长宽高分别为1：2：4。此后数百年，无论我们用多么精确的仪器来测量，得到的都是这个数据。`,
+'2-4-9-4'       : `<<CG:Textures/MissionCG/2-4b>>古老而深不可测的神一般的文明就这样默默地凝视着后来探访者的拙劣与幼稚; `												+ `<<CG:Textures/MissionCG/2-4b>>古老而深不可测的神一般的文明就这样默默地凝视着后来探访者的拙劣与幼稚。`,
+'2-4-9-5'       : `<<CG:Textures/MissionCG/2-4b>>我们在空间站的最深处得到了一个数据, 那是我们要寻找的关键坐标; `														+ `<<CG:Textures/MissionCG/2-4b>>我们在空间站的最深处得到了一个数据，那是我们要寻找的关键坐标。`,
+'2-4-9-6'       : `<<CG:Textures/MissionCG/2-4b>>所有的关键坐标已经集齐了, 我们终于能够定位知识看管者存储升维研究方法的精确位置; `										+ `<<CG:Textures/MissionCG/2-4b>>所有的关键坐标已经集齐了，我们终于能够定位知识看管者存储升维研究方法的精确位置。`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<section><h2 id="heading05">05. 最后答案</h2>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-5a.jpg" /><span>关键坐标都已取得, 它们揭示了目标: 独眼巨人阿尔法星系; 那离我们不远, 传说属于知识看管者; 我们一半疆域都被低维空间吞噬了, 寻找阻止低维空间扩散的方法迫在眉睫; 主脑给予这次行动以最高优先级, 我们的舰队浩浩荡荡地向独眼巨人阿尔法星系驶去;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(场景开端){ 科学官秘书: 科学官, 我们已经接近目标星系了, 先遣队发现了一个无人的星系, 可以作为我方的前哨 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 好, 许可驻扎;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 等等, 那些是什么… 有大量不明舰队向我们靠近; 科学官, 未知舰队攻击了我们的先头部队! 我们侥幸躲过了它们的攻击! 我们在这片星域检测到大量武装力量, 似乎要阻止我们进入这片星域; 我们接到了通讯请求, 神秘舰队似乎要和我们通话; 一阵刺耳的沙沙声后我们听到了他们的声音;</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 前方舰队, 我们无意纷争. 你们是谁, 报上名来;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>警觉思考者: 我们是警觉思考者, 知识看管者的后人. 这片星域, 是我们的禁地, 快快离去;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 我们是来寻取知识看管者所留下的维度逆转科技的; 我们愿意提供任何你们想要的东西, 来换取进入禁区的特权;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>警觉思考者: 我知道你们正在做的是什么样的事情. 但这里没有什么逆转维度的方法, 也没有谈判的余地. 离开这里, 否则我们会彻底击溃你们, 就像一直以来击败无数侵入者那样;</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 这片星域共有五个遗迹星系; 它们都被某种能量护盾所保护, 不用担心会被意外损毁; 我们需要在遗迹星系上, 建造发掘设施, 取得我们所需的信息(任务: 同时保持在 3 个遗迹星系建造有发掘设施)(可选任务: 消灭警觉思考者!);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>if(年份 >= 400Y){ 警觉思考者: 你们竟然还在觊觎着知识看管者的遗物, 这是无法被容忍的; 我们绝不会让你们得逞 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>科学官秘书: 科学官, 他们恐怕是有某种手段关闭遗迹, 我们需要抓紧占据遗迹(任务: 不能让警觉思考者关闭三个遗迹);</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(警觉思考者关闭了一个遗迹){ 科学官秘书: 注意, 警觉思考者已经移民到了一个遗迹星系上面, 并且尝试关闭遗迹 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(警觉思考者关闭了二个遗迹){ 科学官秘书: 注意, 警觉思考者已经关闭了一处的遗迹 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(警觉思考者关闭了三个遗迹){ 科学官秘书: 我们没能完成任务. 他们已经关闭了三处遗迹, 我们不可能完成发掘了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/K_09.jpg" /><span>if(任务失败){ 警觉思考者: 永远不要妄想寻找捷径, 也不要窥探超出你能力范围的知识 };</span></p>
+
+<p>—————</p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>if(第一次移民到遗迹所在星系){ 科学官: 多么宏伟的遗迹群… 我们终于来到了升维奥秘的栖身之处. 拯救我们的方法已经近在咫尺; 这个护盾到底是什么原理? 以我们的技术, 无论如何也无法在如此复杂多变的情况下, 生成如此稳定的力场 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(消灭警觉思考者){ 科学官秘书: 看门人, 真是抱歉. 我们还是取得了你们坚决守护的知识, 但我们会好好利用它的 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_11.jpg" /><span>if(建三个发掘设施){ 科学官秘书: 成功解析知识看管者留下的数据了 };</span></p>
+
+<p class="talkWrap"><img src="../static/image/scene/avatar/A_10.jpg" /><span>科学官: 马上报告主脑;</span></p>
+
+<p>—————</p>
+
+<p class="bgWrap"><img loading="lazy" src="../static/image/scene/background/2-5b.jpg" /><span>在往后一百年的岁月里, 我的量子脑中累积的思维漏洞越来越多. 主脑建议我融入主意识. 像我这样的分离意识, 保持这么长时间的自我已经是一件很稀奇的事了; 对于即将失去自我这件事, 我并不悲伤. 作为一个独立的个体, 我已经活了太久了. 然而, 我仍然有一些遗憾; 一百年前, 我们拿到知识看管者的研究数据时, 整个文明都为之振奋; 但现实却很残酷, 虽然我们按照知识看管者的方法成功进行了升维实验, 但消耗的能量却是相当惊人的, 使得这个行为在工程上毫无意义; 是啊… 如果他们真的做到了, 宇宙怎么可能还像现在一样持续向着低维跌落… 尽管如此, 我们的科学家还是没放弃, 继续进行着升维研究; 一百年的岁月中, 我们的科学家前赴后继, 终于完成了基础理论的研究. 现在, 我们能将一个足球大小的低维空间变回三维了(我不知道这么描述是否合适); 然而和低维空间接近光速的扩展速度相比, 这就是杯水车薪; 但是有总比没有好. 我们赶不上巨浪吞噬万物的速度, 但我们的确一步一个脚印在往前走了; 在回归主脑的前一日, 我提出想要去升维实验场看看. 当时科学家们正在挑战逆转规模更大的低维空间; 低维空间是完全不可视的, 我们的三维仪器无法解析光进入低维空间后的状态. 至少肉眼看来, 那就是漆黑一片,  但是听说刚刚低维化的时候, 因为极高的能量释放, 有人还是能看见二维化物体的; 因此在知识看管者的文献里, 每次进行升维操作时, 他们都会喊出一句口号. 实在不像严谨而冷酷的知识看管者的作风; 现在, 在这个完全漆黑的空间里, 我们的研究人员已经做好了升维的准备. 在倒计时完毕的一瞬间, 仿佛是仪式一般, 操作员也喊下了那一句口号: 要有光 ————</span></p>
+
+<!-- 05. 最后的答案
+
+'2-5-1-0'       : `<<CG:Textures/MissionCG/2-5a>>所有的关键坐标都已取得, 它们共同揭示了目标: 独眼巨人阿尔法星系; `																													+ `<<CG:Textures/MissionCG/2-5a>>所有的关键坐标都已取得，它们共同揭示了目标：独眼巨人阿尔法星系。`,
+'2-5-1-1'       : `<<CG:Textures/MissionCG/2-5a>>那是一个离我们不远的星域, 传说属于知识看管者; `																																	+ `<<CG:Textures/MissionCG/2-5a>>那是一个离我们不远的星域，传说属于知识看管者。`,
+'2-5-1-2'       : `<<CG:Textures/MissionCG/2-5a>>我们将近一半的疆域都被低维空间吞噬了, 寻找阻止低维空间扩散的方法迫在眉睫; `																										+ `<<CG:Textures/MissionCG/2-5a>>我们将近一半的疆域都被低维空间吞噬了，寻找阻止低维空间扩散的方法迫在眉睫。`,
+'2-5-1-3'       : `<<CG:Textures/MissionCG/2-5a>>主脑给予这次行动以最高优先级, 我们的舰队浩浩荡荡地向独眼巨人阿尔法星系驶去; `																										+ `<<CG:Textures/MissionCG/2-5a>>主脑给予这次行动以最高优先级，我们的舰队浩浩荡荡地向独眼巨人阿尔法星系驶去。`,
+
+————
+
+'2-5-1-4'       : `<<HeadImage:A_11>>if(场景开端){ 科学官秘书: 科学官, 我们已经接近目标星系了, 先遣队发现了一个无人星系, 可作为前哨.  };`																							+ `<<HeadImage:A_11>>科学官，我们已经接近目标星系了，先遣队发现了一个无人星系，可作为前哨。`,
+
+'2-5-1-5'       : `<<HeadImage:A_10>>科学官: 很好, 许可驻扎; `																																										+ `<<HeadImage:A_10>>很好，许可驻扎。`,
+
+'2-5-1-6'       : `<<HeadImage:A_11>>科学官秘书: 等等, 那些是什么……有大量不明舰队向我们靠近! `																																		+ `<<HeadImage:A_11>>等等，那些是什么……有大量不明舰队向我们靠近！`,
+
+'2-5-1-7'       : `<<CG:Textures/MissionCG/2-5b>>科学官秘书: 科学官, 未知舰队攻击了我们的先头部队! 我们侥幸躲过了它们的攻击! `																										+ `<<CG:Textures/MissionCG/2-5b>>科学官，未知舰队攻击了我们的先头部队！我们侥幸躲过了它们的攻击！`,
+'2-5-1-8'       : `<<CG:Textures/MissionCG/2-5b>>我们在这片星域检测到大量武装力量, 他们似乎要阻止我们进入这片星域; `																												+ `<<CG:Textures/MissionCG/2-5b>>我们在这片星域检测到大量武装力量，他们似乎要阻止我们进入这片星域。`,
+'2-5-1-9'       : `<<CG:Textures/MissionCG/2-5b>>我们接到了通讯请求, 神秘舰队似乎要和我们通话; `																																	+ `<<CG:Textures/MissionCG/2-5b>>我们接到了通讯请求，神秘舰队似乎要和我们通话。`,
+'2-5-1-10'      : `<<CG:Textures/MissionCG/2-5b>>一阵刺耳的沙沙声后, 我们听到了他们的声音; `																																		+ `<<CG:Textures/MissionCG/2-5b>>一阵刺耳的沙沙声后，我们听到了他们的声音。`,
+
+'2-5-1-11'      : `<<HeadImage:A_10>>科学官: 前方舰队, 我们无意引起纷争. 你们是谁, 报上名来; `																																		+ `<<HeadImage:A_10>>前方舰队，我们无意引起纷争。你们是谁，报上名来。`,
+
+'2-5-1-12'      : `<<HeadImage:K_09>>警觉思考者: 我们是警觉思考者, 知识看管者的后人. 这里是我们的禁地, 快快离去! `																													+ `<<HeadImage:K_09>>我们是警觉思考者，知识看管者的后人。这里是我们的禁地，快快离去！`,
+
+'2-5-1-13'      : `<<HeadImage:A_10>>科学官: 我们是来寻取看管者留下的维度逆转科技的; `																																				+ `<<HeadImage:A_10>>我们是来寻取看管者留下的维度逆转科技的。`,
+'2-5-1-14'      : `<<HeadImage:A_10>>这不仅是为了让我们自己活下去, 更为了推迟宇宙末日的到来. 我们愿意提供你想要的东西来换取进入禁区的特权; `																						+ `<<HeadImage:A_10>>这不仅是为了让我们自己活下去，更为了推迟宇宙末日的到来。我们愿意提供你想要的东西来换取进入禁区的特权。`,
+
+'2-5-1-15'      : `<<HeadImage:K_09>>警觉思考者: 我知道你们在做的是什么样的事. 但这里没有什么逆转维度的方法, 也没有谈判的余地. 离开这里, 否则我们会彻底击溃你们, 就像一直以来击败无数侵入者那样; `									+ `<<HeadImage:K_09>>我知道你们在做的是什么样的事。但这里没有什么逆转维度的方法，也没有谈判的余地。离开这里，否则我们会彻底击溃你们，就像一直以来击败无数侵入者那样。`,
+
+'2-5-2-0'       : `<<HeadImage:A_11>>科学官秘书: 科学官, 据我们所知, 当前星域一共有五个遗迹星系; `																																	+ `<<HeadImage:A_11>>科学官，据我们所知，当前星域一共有五个遗迹星系。`,
+'2-5-2-1'       : `<<HeadImage:A_11>>它们都被某种能量护盾所保护着, 我们不用担心它们意外被毁; `																																		+ `<<HeadImage:A_11>>它们都被某种能量护盾所保护着，我们不用担心它们意外被毁。`,
+'2-5-2-2'       : `<<HeadImage:A_11>>我们需要在遗迹星系上建造足够多的发掘设施, 来取得我们所需的信息(任务: 同时保持在 3 个遗迹星系建造有发掘设施)(可选任务: 消灭警觉思考者)`															+ `<<HeadImage:A_11>>我们需要在遗迹星系上建造足够多的发掘设施，来取得我们所需的信息。`,
+
+'2-5-3-0'       : `<<HeadImage:K_09>>if(超过 400 年了){ 警觉思考者: 你们竟还在觊觎着知识看管者的遗物, 这是无法容忍的! };`																											+ `<<HeadImage:K_09>>你们竟还在觊觎着知识看管者的遗物，这是无法容忍的！`,
+'2-5-3-1'       : `<<HeadImage:K_09>>我们绝不会让你得逞; `																																											+ `<<HeadImage:K_09>>我们绝不会让你得逞。`,
+
+'2-5-3-2'       : `<<HeadImage:A_11>>科学官秘书: 科学官, 他们恐怕是有某种手段关闭遗迹, 我们需要抓紧占据遗迹(任务: 不能让警觉思考者关闭 3 个遗迹);`																					+ `<<HeadImage:A_11>>科学官，他们恐怕是有某种手段关闭遗迹，我们需要抓紧占据遗迹！`,
+
+————
+
+'2-5-4-0'       : `<<HeadImage:A_11>>if(警觉思考者关闭了一个遗迹){ 科学官秘书: 注意, 警觉思考者已经移民了一个遗迹星系并尝试关闭遗迹 };`																								+ `<<HeadImage:A_11>>注意，警觉思考者已经移民了一个遗迹星系并尝试关闭遗迹。`,
+'2-5-5-0'       : `<<HeadImage:A_11>>if(警觉思考者关闭了二个遗迹){ 科学官秘书: 注意, 警觉思考者已经关闭了一处遗迹 };`																												+ `<<HeadImage:A_11>>注意，警觉思考者已经关闭了一处遗迹。`,
+'2-5-6-0'       : `<<HeadImage:A_11>>if(警觉思考者关闭了三个遗迹){ 科学官秘书: 科学官, 我们没能完成任务. 他们已经关闭了三处遗迹, 我们已经不可能完成发掘了 };`																		+ `<<HeadImage:A_11>>科学官，我们没能完成任务。他们已经关闭了三处遗迹，我们已经不可能完成发掘了。`,
+'2-5-6-1'       : `<<HeadImage:K_09>>if(任务失败){ 警觉思考者: 永远不要妄想寻找捷径, 不要窥探超出你能力范围的知识 };`																												+ `<<HeadImage:K_09>>永远不要妄想寻找捷径，不要窥探超出你能力范围的知识。`,
+
+'2-5-7-0'       : `<<HeadImage:A_10>>if(第一次移民到遗迹所在星系){ 科学官: 多么宏伟的遗迹群……我们终于来到了升维奥秘的栖身之处. 拯救我们于水火的方法已经近在咫尺 };`																	+ `<<HeadImage:A_10>>多么宏伟的遗迹群……我们终于来到了升维奥秘的栖身之处。拯救我们于水火的方法已经近在咫尺。`,
+'2-5-7-1'       : `<<HeadImage:A_10>>这个护盾到底是什么原理? 以我们的技术无论如何也无法在恒星系如此复杂多变的情况下生成如此稳定的力场; `																							+ `<<HeadImage:A_10>>这个护盾到底是什么原理？以我们的技术无论如何也无法在恒星系如此复杂多变的情况下生成如此稳定的力场。`,
+
+'2-5-8-0'       : `<<HeadImage:A_11>>if(消灭警觉思考者){ 科学官秘书: 看门人, 真是抱歉. 我们还是取得了您坚决守护的知识, 我们会好好利用它的.  };`																						+ `<<HeadImage:A_11>>看门人，真是抱歉。我们还是取得了您坚决守护的知识，我们会好好利用它的。`,
+
+————
+
+'2-5-9-0'       : `<<HeadImage:A_11>>if(建造了三个发掘设施){ 科学官秘书: 成功了, 我们解析了看管者留下来的数据!  }`																													+ `<<HeadImage:A_11>>成功了，我们解析了看管者留下来的数据！`,
+
+'2-5-9-1'       : `<<HeadImage:A_10>>科学官: 太好了, 我马上向主脑报告! `																																							+ `<<HeadImage:A_10>>太好了，我马上向主脑报告！`,
+
+————
+
+'2-5-10-0'      : `<<CG:Textures/MissionCG/2-5c>>往后一百年的岁月里, 我的量子脑中累积的思维漏洞越来越多. 主脑建议我融入主意识. 像我这样的分离意识, 保持这么长时间的自我已经是一件很稀奇的事了; `									+ `<<CG:Textures/MissionCG/2-5c>>往后一百年的岁月里，我的量子脑中累积的思维漏洞越来越多。主脑建议我融入主意识。像我这样的分离意识，保持这么长时间的自我已经是一件很稀奇的事了。`,
+'2-5-10-1'      : `<<CG:Textures/MissionCG/2-5c>>对于即将失去自我这件事, 我并不悲伤. 作为一个独立的个体, 我已经活了太久了. 然而, 我仍然有一些遗憾; `																				+ `<<CG:Textures/MissionCG/2-5c>>对于即将失去自我这件事，我并不悲伤。作为一个独立的个体，我已经活了太久了。然而，我仍然有一些遗憾。`,
+'2-5-10-2'      : `<<CG:Textures/MissionCG/2-5c>>一百年前, 我们拿到知识看管者的研究数据时, 整个文明都为之振奋; `																													+ `<<CG:Textures/MissionCG/2-5c>>一百年前，我们拿到知识看管者的研究数据时，整个文明都为之振奋。`,
+'2-5-10-3'      : `<<CG:Textures/MissionCG/2-5c>>但是现实却很残酷, 虽然我们按照知识看管者的方法成功进行了升维实验, 但消耗的能量却是相当惊人的, 使得这个行为在工程上毫无意义; `														+ `<<CG:Textures/MissionCG/2-5c>>但是现实却很残酷，虽然我们按照知识看管者的方法成功进行了升维实验，但消耗的能量却是相当惊人的，使得这个行为在工程上毫无意义。`,
+'2-5-10-4'      : `<<CG:Textures/MissionCG/2-5c>>是啊……如果他们真的做到了, 宇宙怎么可能还像现在一样持续向着低维跌落……`																												+ `<<CG:Textures/MissionCG/2-5c>>是啊……如果他们真的做到了，宇宙怎么可能还像现在一样持续向着低维跌落……`,
+'2-5-10-5'      : `<<CG:Textures/MissionCG/2-5c>>尽管如此, 我们的科学家还是没有放弃, 继续进行着升维研究; `																															+ `<<CG:Textures/MissionCG/2-5c>>尽管如此，我们的科学家还是没有放弃，继续进行着升维研究。`,
+'2-5-10-6'      : `<<CG:Textures/MissionCG/2-5c>>一百年的岁月中, 我们的科学家前赴后继, 终于完成了基础理论的研究. 现在我们能将一个足球大小的低维空间变回三维了（我不知道这么描述是否合适）; `										+ `<<CG:Textures/MissionCG/2-5c>>一百年的岁月中，我们的科学家前赴后继，终于完成了基础理论的研究。现在我们能将一个足球大小的低维空间变回三维了（我不知道这么描述是否合适）。`,
+'2-5-10-7'      : `<<CG:Textures/MissionCG/2-5c>>然而和低维空间接近光速的扩展速度相比, 这是杯水车薪; `																																+ `<<CG:Textures/MissionCG/2-5c>>然而和低维空间接近光速的扩展速度相比，这是杯水车薪。`,
+'2-5-10-8'      : `<<CG:Textures/MissionCG/2-5c>>但是有总比没有好. 我们赶不上巨浪吞噬万物的速度, 但我们的确一步一个脚印在往前走了; `																								+ `<<CG:Textures/MissionCG/2-5c>>但是有总比没有好。我们赶不上巨浪吞噬万物的速度，但我们的确一步一个脚印在往前走了。`,
+'2-5-10-9'      : `<<CG:Textures/MissionCG/2-5c>>在回归主脑的前一日, 我提出想要去升维实验场看看. 当时科学家们正在挑战逆转规模更大的低维空间; `																						+ `<<CG:Textures/MissionCG/2-5c>>在回归主脑的前一日，我提出想要去升维实验场看看。当时科学家们正在挑战逆转规模更大的低维空间。`,
+'2-5-10-10'     : `<<CG:Textures/MissionCG/2-5c>>低维空间是完全不可视的, 我们的三维仪器无法解析光进入低维空间后的状态. 至少肉眼看来, 那就是漆黑一片（但是听说刚刚低维化的时候, 因为极高的能量释放, 有人能看见二维化的物体）; `		+ `<<CG:Textures/MissionCG/2-5c>>低维空间是完全不可视的，我们的三维仪器无法解析光进入低维空间后的状态。至少肉眼看来，那就是漆黑一片（但是听说刚刚低维化的时候，因为极高的能量释放，有人能看见二维化的物体）。`,
+'2-5-10-11'     : `<<CG:Textures/MissionCG/2-5c>>因此在知识看管者的文献里, 每次进行升维操作时, 他们都会喊出一句口号. 实在是不像严谨而冷酷的知识看管者的作风; `																		+ `<<CG:Textures/MissionCG/2-5c>>因此在知识看管者的文献里，每次进行升维操作时，他们都会喊出一句口号。实在是不像严谨而冷酷的知识看管者的作风。`,
+'2-5-10-12'     : `<<CG:Textures/MissionCG/2-5c>>现在, 在这个完全漆黑的空间里, 我们的研究人员已经做好了升维的准备. 在倒计时完毕的一瞬间, 仿佛是仪式一般, 操作员也喊下了那一句口号: `												+ `<<CG:Textures/MissionCG/2-5c>>现在，在这个完全漆黑的空间里，我们的研究人员已经做好了升维的准备。在倒计时完毕的一瞬间，仿佛是仪式一般，操作员也喊下了那一句口号：`,
+'2-5-10-13'     : `<<CG:Textures/MissionCG/2-5d>>要有光——`																																											+ `<<CG:Textures/MissionCG/2-5d>>要有光——`,
+
+-->
+
+<hr />
+</section>
+
+
+
+<style>/* 样式设置 */
+
+.bgWrap{position:relative;}
+.bgWrap > img{position:relative;width:960px;height:540px;}
+.bgWrap > span{position:absolute;bottom:0;left:0;width:100%;color:#fff;background-color:rgba(0,0,0,0.75);padding:16px;}
+
+.talkWrap{display:flex;align-items:flex-start;}
+.talkWrap > img{flex:0 0 auto;width:40px;height:40px;margin-right:24px;border-radius:4px;}
+.talkWrap > span{flex:1 1 auto;position:relative;padding:8px 16px;box-shadow:0 0 0 1px #ccc inset;background-color:#fff;border-radius:4px 4px 4px 4px;}
+.talkWrap > span::before{position:absolute;top:8px;left:-8px;width:0;height:0;border-top:8px solid #ccc;border-left:8px solid transparent;content:"";}
+.talkWrap > span::after{position:absolute;top:9px;left:-5px;width:0;height:0;border-top:8px solid #fff;border-left:8px solid transparent;content:"";}
+</style>
+
+
+
+<script>/* 脚本逻辑 */
+(function(){
+
+// 弱化文本
+document.querySelectorAll('.talkWrap > span').forEach(function(node){ 
+	
+	// node.innerHTML = node.innerHTML.replace(/\[.+?\]/g, 
+	// function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配大括号
+	node.innerHTML = node.innerHTML.replace(/{|}/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配 else 和 if
+	node.innerHTML = node.innerHTML.replace(/(else )?if\(.+?\)/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+	// 匹配额外添加的小括号
+	node.innerHTML = node.innerHTML.replace(/\((解锁|任务|奖励|事件|注解|可选任务)\:.+?\)/g, 
+	function($0){ return '<span style="opacity:0.5;">'+ $0 +'</span>' });
+	
+});
+
+})();
+</script>
+
+
+
+</div>
+
+
+
+<div id="pub_foot">
+	<div>Licence: <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 DEED</a></div>
+	<div>Copyright © 2025-<script>document.write(new Date().getFullYear())</script> XJ.Chen | V0.1.3</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pub_tool">
+	<div id="pub_toolPack">
+		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
+		<button id="pub_toolNavigated" type="button" title="Switch Link"><i class="fas fa-list-ul"></i></button>
+		<div id="pub_toolAnchorTip">
+			<a href="#heading01">01. 历史博物</a>
+			<a href="#heading02">02. 古代遗迹</a>
+			<a href="#heading03">03. 低维实验</a>
+			<a href="#heading04">04. 神秘三角</a>
+			<a href="#heading05">05. 最后答案</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script>if(location.hostname === 'xjwiki.github.io'){ document.write(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GPWW182MG"><\/script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6GPWW182MG");<\/script>`) }else if(location.hostname.includes('192.168.') === false){ document.write(`<script>!function(a,b,c){var d,e,f,g,h;for((b[c]=b[c]||[]).push(function(){try{b.yaCounter99995599=new Ya.Metrika({id:99995599,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(a){}}),d=a.getElementsByTagName("script")[0],e="https://mc.yandex.ru/metrika/watch.js",f=a.createElement("script"),g=function(){d.parentNode.insertBefore(f,d)},h=0;h<document.scripts.length;h++)if(document.scripts[h].src===e)return;f.type="text/javascript",f.async=!0,f.src=e,"[object Opera]"==b.opera?a.addEventListener("DOMContentLoaded",g,!1):g()}(document,window,"yandex_metrika_callbacks");<\/script>`) };</script>
+</body>
+</html>
+
+
